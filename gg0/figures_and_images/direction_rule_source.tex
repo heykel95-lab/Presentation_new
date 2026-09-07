@@ -1,0 +1,74 @@
+% Plan view of the supporting intermediate-direction rule, seen along the
+% inward surface normal.
+% One panel per configured offset direction. Each panel carries the surface
+% tangents, the configured offset vector theta_offset, and the tangential lever
+% selected by the rule in Section 2.7.3. The lever is perpendicular to
+% the configured offset direction, as recorded by the right-angle marker at the origin.
+%
+% The configured direction is drawn as a single arrow rather than a two-headed
+% axis, because the rule depends on its sense and not only on its line, and the
+% arrowed arc gives the in-plane angle measured from t_1. All four offsets
+% carry the same magnitude; only the direction changes between panels.
+%
+% Palette per FIGURE_STYLE.md: black for the frame, red for the offset, blue
+% for the compliance-centre lever, matching r_c in the moment-bookkeeping
+% figure. Solid lines only, no grey and no white.
+\begin{tikzpicture}[
+    font=\small,
+    ax/.style={-{Latex[length=1.8mm]}, black},
+    cmd/.style={-{Latex[length=2.2mm]}, thick, red},
+    swp/.style={-{Latex[length=1.6mm]}, red},
+    lev/.style={-{Latex[length=2.2mm]}, thick, blue},
+    lbl/.style={font=\footnotesize, inner sep=1.8pt},
+  ]
+
+% The angle label sits at \arad. Only the -45 panel needs a larger radius: its
+% arc bisector runs just under the +t_1 axis, where the t_1 label already sits.
+\foreach \dx/\ua/\arc/\arad/\angtext/\name in {%
+    0/0/0/0.95/{}/{about $t_1$},
+    3.4/-45/1/1.25/{$-45^\circ$}/{$-45^\circ$ from $t_1$},
+    6.8/45/1/0.95/{$+45^\circ$}/{$+45^\circ$ from $t_1$},
+    10.2/90/1/0.95/{$+90^\circ$}/{about $t_2$}}
+{
+  \begin{scope}[xshift=\dx cm]
+    \pgfmathsetmacro{\ra}{\ua+90}
+    \pgfmathsetmacro{\amid}{\ua/2}
+
+    % ---- configured offset, drawn in its own sense ----------------------
+    % Drawn before the tangents so that in the two panels where the offset
+    % lies along a tangent, the thin black axis stays visible on top of it.
+    \draw[cmd] (0,0) -- (\ua:1.15);
+    \node[lbl, red] at (\ua:1.42) {$\theta_{\mathrm{offset}}$};
+
+    % ---- surface tangents ----------------------------------------------
+    % The tangent labels sit below and to the left of their arrow tips, so
+    % that in the panels where the offset lies along a tangent they clear the
+    % theta_offset label instead of sitting on it.
+    \draw[ax] (0,0) -- (0.80,0) node[lbl, below] {$t_1$};
+    \draw[ax] (0,0) -- (0,0.80) node[lbl, left] {$t_2$};
+
+    % ---- arc from t_1 to the configured direction, with its angle --------
+    % The angle is set well outside the arc radius so the value reads clear of
+    % the arc itself.
+    \ifnum\arc=1
+      \draw[swp] (0.46,0) arc (0:\ua:0.46);
+      \node[lbl, red] at (\amid:\arad) {\angtext};
+    \fi
+
+    % ---- selected tangential lever --------------------------------------
+    \draw[lev] (0,0) -- (\ra:1.10);
+    \node[lbl, blue] at (\ra:1.34) {$r_{c,t}$};
+
+    % ---- right angle between the two ------------------------------------
+    % The marker spans the quadrant from theta_offset to r_c,t, so the scope is
+    % rotated by \ua and not by \ra: rotating by the lever direction put the
+    % square in the quadrant beyond r_c,t, away from the pair it marks.
+    \begin{scope}[rotate=\ua]
+      \draw[black, thin] (0.15,0) -- (0.15,0.15) -- (0,0.15);
+    \end{scope}
+
+    \node[lbl] at (0,-1.95) {\name};
+  \end{scope}
+}
+
+\end{tikzpicture}
