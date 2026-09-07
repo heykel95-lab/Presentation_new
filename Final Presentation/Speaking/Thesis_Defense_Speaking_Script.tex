@@ -100,19 +100,19 @@ Besides choosing these directions, I can also shift the point about which the im
 
 \section*{Centre of compliance (CoC)}
 
-The tool centre point, or TCP, is the controlled reference attached to the end effector. The centre of compliance is the virtual point about which the spring--damper behaviour is defined. It is a controller setting, not a physical hinge.
+The centre of compliance is a virtual reference point for the impedance, not a physical hinge. Its position is \(p_c\), and \(r_c\) is the displacement from the tool centre point to this virtual centre.
 
-Its position is written as \(p_c\). The vector \(r_c\) points from the TCP to this virtual centre. Moving the centre away from the TCP couples translation and rotation: a translational error can then also contribute to a commanded moment.
-
-The equation summarises this effect. The complete commanded moment \(m\) contains the ordinary rotational spring--damper moment \(m_R\), plus the additional contribution \(r_c\) cross \(f\). Here, \(f\) is the commanded force introduced earlier.
-
-The diagrams isolate the normal part of that force, written as \(f_n\). The tool tilt and normal press are the same in both panels. Only the side of the tangential displacement changes. This reverses the additional moment, as indicated by the curved arrows.
-
-For a given tilt, one side can support the aligning rotation, while the opposite side can oppose it. If the centre is at the TCP, \(r_c\) is zero and this additional contribution vanishes. The ordinary rotational stiffness and damping still remain active.
-
-With the stiffness directions and compliance centre defined, I will now describe the contact experiments.
+The equation on the right gives the commanded moment at the TCP. It combines the rotational spring--damper moment, \(m_R\), with the additional contribution from the displaced centre.
 
 \[m=m_R+r_c\times f.\]
+
+Here, f is the commanded force. The two sketches below isolate its normal component, \(f_n\). They show the same tool tilt and normal press, with the compliance centre on opposite sides of the TCP.
+
+Reversing the tangential displacement reverses the additional moment. For a given entry tilt, one side can support the aligning rotation, while the opposite side can oppose it.
+
+At the TCP, \(r_c\) is zero, so the additional moment vanishes. The ordinary rotational spring and damper remain active.
+
+With the stiffness directions and compliance centre defined, I will now describe the contact experiments.
 
 \section*{Experimental procedure}
 
@@ -204,21 +204,19 @@ This completes the contact study. I will now turn to the separate study of redun
 
 \section*{Secondary study: null-space motion}
 
-The contact study concerned motion of the tool. This secondary study concerns coordinated joint motion while the Cartesian controller holds the tool pose.
+This secondary study examines coordinated joint motion while the controller holds the tool pose. Seven joint coordinates control three position and three orientation degrees of freedom. At a nonsingular configuration, one independent direction of redundant motion remains; several joints generally move together.
 
-The robot has seven joint coordinates, while the tool pose has six degrees of freedom: three for position and three for orientation. At a nonsingular configuration, one independent direction of redundant motion remains. Several joints generally move together; the freedom is not assigned to one particular joint.
+The left side shows projected damping. It opposes redundant joint velocity. The graph compares no null-space torque, in black, with damping, in red. It measures accumulated projected motion, so motion in either direction contributes. Curves are means of three trials; shading shows one sample standard deviation.
 
-Projected damping opposes redundant joint velocity. Configuration conditioning instead steers the joints towards better motion capability and can initiate motion from rest. A separate pose-hold experiment evaluated these contributions individually under a repeatable, internally commanded disturbance.
+Damping reduced accumulated motion from approximately seven point six to five point seven degrees, or about twenty-five percent.
 
-The figure on the left shows cumulative projected null-space motion, \(E_N\). Motion in both directions contributes to this accumulated quantity. The black curve has no null-space torque; the red curve uses projected damping. The curves are averages of three trials, and the shaded bands show one sample standard deviation on either side.
+The right side shows the conditioning comparison. Conditioning guides the joint configuration towards better motion capability and can initiate motion from rest. The table reports mean net projected displacement along the reference disturbance-induced direction.
 
-Damping reduced the accumulated motion from approximately seven point six to five point seven degrees, a reduction of about twenty-five percent.
+The mean was seven point five one seven degrees without null-space torque and five point six zero nine degrees with damping. For conditioning gains of one point five and two, it was zero point zero one five degrees and minus zero point zero zero six degrees. Each setting was repeated three times.
 
-The table shows a different measure: the mean net projected displacement along the reference disturbance-induced direction during the disturbance interval. It compares the inactive, damping, and two conditioning settings. The mean decreases from about seven point five degrees without null-space torque to five point six degrees with damping. For conditioning gains of one point five and two, the means are zero point zero one five degrees and minus zero point zero zero six degrees. Both are close to zero.
+These conditioning values are close to zero, but a small net displacement does not mean that the joints stayed still. Opposite motions can cancel in this measure. The stronger conditioning setting produced more back-and-forth motion.
 
-The graph shows total accumulated motion; the table shows the net displacement after motion in opposite directions cancels. A small net value does not mean that the joints did not move. The stronger conditioning setting produced more back-and-forth motion despite its small net displacement.
-
-Across the study, the largest measured TCP position error was one point three zero four millimetres, below the two-millimetre criterion. The next video illustrates the three controller settings.
+The largest TCP position error was one point three zero four millimetres, below the two-millimetre criterion. The next video illustrates the three controller settings.
 
 \section*{Disturbance demonstration}
 
