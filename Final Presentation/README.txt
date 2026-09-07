@@ -1,19 +1,23 @@
-Thesis defense presentation, gg0 theme — revision 3
+Thesis presentation, gg0 theme - September clarity revision
 
-Title slide now uses the content-slide header and footer styling.
-A small HM logo appears beside Hochschule München on the opening slide.
-All main slide titles are dark blue with a continuous full-width rule.
-Conclusion and Future work use bullet points, with Future work below Conclusion on the same slide.
-White slide backgrounds, existing figures, equations, and body content retained.
-19 main slides (including two video demonstrations) plus 3 hidden supplementary slides.
-The presentation PDF contains all 22 slides, including the 3 backups. Backup slides stay hidden in the PowerPoint slideshow. The supplementary PDF also contains those 3 backup slides.
+Active deck: Thesis_Defense_gg0_v3.pptx
+Full PDF: Thesis_Defense_gg0_v3.pdf (17 main slides + 6 backups = 23 pages).
+Supplementary_slides.pdf contains B1--B6. Backups stay hidden in the PowerPoint slideshow.
+The original navy titles, continuous rule, white background, Arial body, and HM footer are preserved.
 
-The separate Scope and next steps slide was removed. Its next steps are retained in the Future work section below Conclusion. The previous 17:45 main-talk estimate excludes the new null-space introduction and video playback; the revised talk needs re-timing.
+The Overview now has four broad numbered sections. Refresh it after slide edits with
+Speaking\build\update-overview.ps1, then export the full presentation PDF.
 
-Both video slides appear immediately before Conclusion, in this order: Contact demonstration, Disturbance demonstration, Conclusion. Both videos are embedded, start on click, and are excluded from the Overview. Both now have narration in the speaking script and PowerPoint speaker notes. The speaking PDF follows all 22 slides, including videos and backups, and its existing watcher automatically rebuilds after LaTeX edits. The presentation PDF shows static poster frames. Full video playback lasts approximately 1:57; the narration can accompany playback.
+The main controller introduction combines pose and wrench, followed by Real-time control.
+Detailed pose and null-space mathematics and the full contact response/force/moment figure are in backups.
+The contact-results sequence is followed by Contact demonstration, the combined null-space study,
+Disturbance demonstration, then Conclusion with Future work underneath.
+Both videos are embedded, start on click, and have visible viewing cues. PDF shows poster frames.
 
-Null-space control now precedes Experimental procedure; its speaking section and Overview entry are synchronized.
+Speaking\Thesis_Defense_Speaking_Script.tex follows all 23 slides, with narration and equations only.
+PowerPoint speaker notes follow the same text. Speaking\build.ps1 builds the speaking PDF directly
+in Final Presentation; -Watch rebuilds after LaTeX edits. It does not rewrite text after slide changes.
+Future editing agents must update the text and notes with each deck edit; see root AGENTS.md.
 
-Cartesian impedance torque follows Cartesian impedance wrench and introduces only the Cartesian wrench-to-joint-torque mapping. The speaking script is synchronized; the earlier talk estimate also excludes this new slide.
-
-End-effector pose follows Overview and introduces position, orientation, and the measured pose matrix before Cartesian impedance wrench. The speaking script and numbered Overview follow this order; the earlier talk estimate also excludes this slide.
+The review's 18:10 target includes both videos (51 s and 66 s); confirm the duration by rehearsal.
+Sources and figure provenance are recorded in figures_and_images\manifest.json and root AGENTS.md.

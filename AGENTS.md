@@ -14,72 +14,99 @@ The thesis entry point is `C:\Users\USER\Desktop\MyOwn\Thesis.tex`; its compiled
 
 The control repository contains `surface_grinding_controller`, `experiments`, `analysis`, and `figures`. Use these sources when checking implementation details or experimental results. Read each repository's own instructions before making changes there.
 
-## Active presentation and output location
+## Active files and theme
 
-Use "calculated from measured end-effector orientation" for the angular quantities. Avoid "inferred" (including the misspelling "infered") in the presentation and speaking text.
+- Edit `Final Presentation\Thesis_Defense_gg0_v3.pptx` and regenerate the matching PDF in that folder.
+- Keep all final PDFs directly under `C:\Users\USER\Desktop\Presentation_new\Final Presentation`.
+- Other folders (`Final`, `gg0`, `good1`, `good2`, `one`, `two`) are earlier versions, not the active deck.
+- Preserve the existing dark blue `#17365D`, Arial body text, white background, continuous title rule, small HM logo, and footer. Use serif typography for mathematics.
+- Use descriptive slide titles rather than questions. The measurement slide is titled `Angular quantities`.
+- Use formal academic wording and actual experimental results, without invented numerical examples. Avoid "inferred" / "infered" and the adjective "signed" in audience-facing material. Preserve positive/negative angle conventions. Describe the angular quantities as calculated from measured end-effector orientation.
+- Use rotations/rotation for the rotational compliance directions, as requested. Keep the title slide labelled Presentation and its date blue.
 
-Keep presentation wording formal and academic; do not introduce illustrative numerical examples. Avoid the adjective "signed" in audience-facing slide wording while preserving the positive/negative angle convention and the distinction between components and magnitudes.
+## Current structure and automatic Overview maintenance
 
-On results slides, including all three backup slides, keep axis labels and symbol definitions inside the figures; do not add separate duplicate symbol/explanation rows above or beside them (for example, t, M_t1,est, E_N, stiffness symbols, or CoC position). Preserve the scientific plots, their legends, equations, and result takeaway text. The speaking script may still explain the plotted quantities verbally. Keep Supplementary_slides.pdf synchronized with the backup slides in the full presentation PDF.
+The latest September 2026 review supersedes the earlier request to list every slide title. The Overview now has four broad sections:
 
-Use achieved entry angles rather than commanded offsets in the presentation and speaking script. The Angular quantities slide explains achieved angle and contact response only. The baseline figure on the Baseline contact response slide uses the MyOwn thesis Case-A values: phi_0 = 0.74 degrees (total angular-mismatch magnitude), theta_ach,t1 = +9.31 degrees and -9.41 degrees (signed achieved components); corresponding responses remain -0.97, +7.57 and -10.83 degrees. Never relabel phi_0 as a signed t1 component. Sources: MyOwn/chapters/05_results_and_discussion.tex and backmatter/appendix_additional_plots.tex, Table D.1. Do not substitute the different Case-D angles (+9.32/-9.36) into this baseline figure.
+1. Cartesian impedance and centre of compliance
+2. Contact experiments and results
+3. Null-space study
+4. Conclusion and future work
 
-- Work on `Final Presentation\Thesis_Defense_gg0_v3.pptx` unless the user selects another deck.
-- Keep the matching presentation PDF at `Final Presentation\Thesis_Defense_gg0_v3.pdf`.
-- The `Final`, `gg0`, `good1`, `good2`, `one`, and `two` folders contain other versions; do not confuse them with the active final deck.
-- Save final deliverables directly in `C:\Users\USER\Desktop\Presentation_new\Final Presentation`.
+Keep the numbers and text dark blue, with right-aligned numbers in a fixed-width column so their periods align. Exclude video titles, slide numbers, timings, and backup topics from the Overview. Run `Final Presentation\Speaking\build\update-overview.ps1` after each presentation edit. It reads actual visible slide order and derives section order at the Experimental procedure, Secondary study, and Conclusion boundaries. Review these boundaries if those titles change. This is an editing workflow, not a PowerPoint macro or watcher for manual deck edits.
 
-## Automatically keep the presentation Overview synchronized
+The deck currently has **17 main slides and 6 hidden backups**, in this order:
 
-As part of every presentation edit, update the Overview without requiring a separate user request:
+1. Master Thesis Presentation
+2. Motivation
+3. Overview
+4. Cartesian impedance wrench
+5. Real-time control
+6. Surface-relative compliance
+7. Centre of compliance (CoC)
+8. Experimental procedure
+9. Angular quantities
+10. Baseline contact response
+11. Effect of stiffness
+12. Effect of CoC position
+13. Contact response and interaction moment
+14. Contact demonstration
+15. Secondary study: null-space motion
+16. Disturbance demonstration
+17. Conclusion
+18. Commanded and estimated wrench (B1)
+19. Normal-force plausibility assessment (B2)
+20. Moment plausibility assessment (B3)
+21. End-effector pose representation (B4)
+22. Null-space kinematics (B5)
+23. Contact response, normal force and moment (B6)
 
-1. Locate the slide titled `Overview` (currently slide 3).
-2. Read the actual slide titles from every subsequent visible slide, in deck order, excluding video demonstration slides. The user explicitly does not want the videos mentioned in the Overview. Include all other main presentation slides through Conclusion. Hidden supplementary slides are outside the main agenda; include them if they become visible.
-3. Replace the Overview list with those exact titles. Recalculate it after adding, deleting, renaming, hiding, unhiding, or reordering slides; do not maintain a separate hard-coded title list.
-4. Display a numbered list of titles, starting at 1 and following agenda order. Right-align the numbers in a fixed-width column so the periods align vertically, including for two-digit numbers; align all titles at a common left edge. Use numbers instead of dot bullets. Do not add slide/footer numbers, durations, cumulative times, or other metadata.
-5. Use the presentation's existing dark blue, `#17365D`, for both list numbers and title text. Preserve the deck's Arial typography, heading, full-width rule, logo, and footer styling.
-6. Check the rendered Overview for clipping, wrapping, and overlap. Adjust its layout as needed to accommodate all titles clearly.
-7. Save the updated PowerPoint and regenerate its matching PDF in `Final Presentation`. The presentation PDF must include all 22 slides: 19 main slides (including two videos omitted from the Overview) plus 3 backup slides. Keep the backups hidden in the PowerPoint slideshow, but include them when exporting the PDF. For PowerPoint SaveAs PDF, temporarily unhide them in memory and close without saving those visibility changes to the PPTX. The separate `Supplementary_slides.pdf` may also be retained.
+The full presentation PDF must include **all 23 slides**. Keep B1--B6 hidden in the PowerPoint slideshow. For PowerPoint SaveAs PDF, temporarily unhide them in memory, export, and close without saving the visibility changes to the PPTX. Regenerate `Supplementary_slides.pdf` from the six backup pages. Distinguish physical slide index from footer number: main footer numbers are one lower; backups use B1--B6.
 
-The separate `Scope and next steps` slide has been removed. Keep its next steps in the `Future work` section below the Conclusion section on the same slide; both sections use bullet points: independent tool-angle measurement, selecting the CoC from entry tilt, returning it to the TCP after alignment, and testing sustained grinding. The former 17:45 main-talk estimate predates the new Null-space control introduction and excludes video playback; re-time the talk before quoting an updated total.
+Pose and wrench are combined in the main controller explanation. On the Cartesian impedance wrench slide (footer 3), use two balanced columns for position/force and orientation/moment, with a compact symbol key below. The user removed the small pose-frame illustration; do not restore it. Show measured/desired position and orientation, pose errors, and both spring-damper equations. The homogeneous transformation and SO(3) definitions belong in backup B4. Real-time control (footer 4) uses a concise four-step loop: Pose error, Wrench, Joint torques, Robot, with Measured pose on the feedback return. Keep the Cartesian mapping `F = [f; m]`, `tau_cart = J^T(q) F` prominent and the implementation in one short line (1 kHz control loop; C++ / libfranka). Keep detailed symbol definitions in the speaking text and notes; do not restore the former explanatory rows, long bullets, or complete torque command on that slide. C++/libfranka and the nominal 1 kHz loop are supported by MyOwn/chapters/03_software_implementation.tex.
 
-This rule concerns the presentation Overview, not the Overview page or timing table in the speaking script. Do not apply presentation-only formatting requests to the speaking script.
+The null-space introduction is combined with its results after the contact demonstration. Explain seven joints for six tool-pose degrees of freedom and coordinated joint motion. Do not call a particular seventh physical joint the null-space joint. Detailed rank, velocity, and torque decomposition equations belong in B5, retaining the full-rank qualification. Damping opposes redundant joint velocity; conditioning steers the configuration and can initiate motion. Do not describe conditioning as another damping term.
 
-This file instructs future editing agents to perform the synchronization as part of their work. It is not a PowerPoint macro or a background watcher for manual PowerPoint edits. Run `Speaking\build\update-overview.ps1` to refresh the numbered agenda from the actual subsequent visible slide titles, then export the presentation PDF and inspect the result.
+Conclusion has three brief Arial bullet points; Future work is beneath them on the same slide, with no second Conclusion title and no rule under Future work. Retain tilt-dependent CoC selection, return to the TCP after alignment, and direct angle measurement with sustained grinding. Do not restore Scope and next steps. The review proposes an 18:10 rehearsal target including videos; this is not a measured talk duration.
+
+## Scientific figure and interpretation rules
+
+Avoid duplicate axis glossaries around result figures, including backups. The latest review explicitly authorizes short stiffness headings with physical directional descriptions, the `r_c,t2` CoC displacement definition, and the brief model-estimate definition beside the moment plot. Preserve figure axes, legends, units, data, and uncertainty information.
+
+Use achieved entry angles instead of commanded offsets. Baseline categories are Nominal zero offset, Positive tilt (+9.31 degrees), and Negative tilt (-9.41 degrees), with horizontal-axis title Entry condition. Responses remain -0.97, +7.57, -10.83 degrees. The nominal-zero total-mismatch magnitude `phi_0 = 0.74 degrees` is retained in speaker notes only; never relabel it as an achieved t1 component. Case-D CoC curves instead use +9.32 and -9.36 degrees. Sources: MyOwn/chapters/05_results_and_discussion.tex and backmatter/appendix_additional_plots.tex, Table D.1.
+
+The angular sketch distinguishes achieved entry tilt from response relative to the held entry orientation. Gamma is calculated from end orientation back to entry; under that convention an aligning response has the same sign as entry tilt. Response magnitude is not an independent measurement of final physical alignment error.
+
+CoC is a virtual reference point, not a physical hinge. Label `m = m_R + r_c cross f` as commanded TCP moment. The shifted normal force adds a moment contribution; reversing displacement reverses that contribution. At the TCP, the additional contribution vanishes while rotational spring-damper torque remains active.
+
+For the representative contact traces, the final-second estimated normal-force means are -82.9, -79.0, -78.0 N at CoC displacements -40 mm, TCP, +40 mm. Show rounded values -83, -79, -78 N on the main slide. Approximate steady-response times are 2.3 s and 3.6 s; retain the 1.3 s comparison as an observation from these traces. Force and moment are the robot's model-based estimates, not independent sensor measurements. Keep the full three-panel figure in B6. Source: MyOwn/chapters/05_results_and_discussion.tex, contact response and model-estimated interaction wrench discussion.
+
+For the null-space study, distinguish accumulated projected motion in the damping graph from mean net projected displacement in the table. Values in degrees are 7.517 (no null-space torque), 5.609 (damping), 0.015 (conditioning gain 1.5), -0.006 (conditioning gain 2). Each setting has three trials; graph shading is one sample standard deviation. Small net displacement can coexist with back-and-forth motion. Maximum measured TCP position error is 1.304 mm, below the 2 mm criterion. Sources: Thesis_Final_Control/experiments/derived/MAIN_NS_automatic_summary.csv, analysis/make_nullspace_figure.py, and MyOwn/chapters/05_results_and_discussion.tex.
+
+Keep figure PDF/PNG/SVG variants synchronized with their LaTeX sources under `figures_and_images\sources`; record provenance in `figures_and_images\manifest.json`.
+
+## Videos and narration
+
+The videos remain embedded and start on click. Contact demonstration follows the contact results. Secondary study: null-space motion follows that video, then Disturbance demonstration, then Conclusion. Both videos are omitted from the Overview.
+
+- Contact uses `Video\Contact.mp4` (approximately 51 seconds). Its visible cue is Pre-grinding hold / fixed desired orientation / CoC at TCP. Narration covers pickup, approach, contact, and manually changing the surface during the hold. Normal pressing remains active; do not claim precisely constant measured force from video. Surface contact moment drives adaptation while the rotational spring-damper remains active. The held reference is not a commanded alignment trajectory. Sources: MyOwn/chapters/03_software_implementation.tex, Pre-Grinding Hold, and chapters/02_theoretical_background.tex, moment decomposition.
+- Disturbance uses `Video\Disturbance_trimmed.mp4` (approximately 66 seconds), with original 00:00--00:16 and 00:50--00:59 removed. The user-confirmed sequence and visible cue are no null-space torque, damping, conditioning. Do not invent numerical controller settings or phase timestamps for the video. Conditioning guides configuration and can generate motion.
+
+Narration belongs in both the speaking PDF and PowerPoint notes and can accompany playback. PDF slides show static video poster frames.
 
 ## Speaking script and automatic PDF build
 
-Two video slides are embedded in the presentation: `Disturbance demonstration` uses `Video\Disturbance_trimmed.mp4` (original 00:00--00:16 and 00:50--00:59 removed), and `Contact demonstration` uses `Video\Contact.mp4`. Place both video slides immediately before Conclusion, in this order: Contact demonstration, Disturbance demonstration, Conclusion. Keep them out of the Overview. Their narration is now authorized and included in the speaking script and PowerPoint speaker notes. Keep speaking sections for all 22 slides in exact deck order, including videos and backups, and rebuild the speaking PDF after edits. The videos add approximately 1:57 if played in full; narration can accompany playback, so re-time the talk rather than adding narration and playback durations automatically.
+After **every slide change**, update `Final Presentation\Speaking\Thesis_Defense_Speaking_Script.tex` in the same task. Use the actual deck as source of truth for titles, order, visible content, notation, and transitions. Include all 23 slide sections, including both videos and six backups. Keep PowerPoint speaker notes synchronized too.
 
-The Contact demonstration narration covers tool pickup, surface approach, contact establishment, and manual surface-orientation changes during Pre-Grinding Hold with the CoC at the TCP. Describe normal pressing as remaining active; do not claim precisely constant measured force from the video. The surface contact moment drives adaptation, while the rotational spring-damper command remains active. At the TCP, r_c = 0, so the additional CoC coupling moment r_c cross f vanishes. The held desired orientation is not a new commanded alignment trajectory. Source: MyOwn/chapters/03_software_implementation.tex, Pre-Grinding Hold, and chapters/02_theoretical_background.tex, commanded moment decomposition.
+The speaking PDF contains only each slide's title, spoken text, and equations. Do not add timing, tables, cover/maps, slide-number labels, rehearsal cues, source appendices, headers, or footers. Let paragraphs and sections flow continuously without forced page breaks or blank paragraph spacing.
 
-The Disturbance demonstration order confirmed by the user is: disturbance with no null-space torque, with projected damping, then with conditioning. Damping opposes redundant joint velocity; conditioning steers the joint configuration and can itself produce motion. Do not invent setting values or describe conditioning as another damping term. Include transitions from the null-space results to Contact demonstration, then Disturbance demonstration, then Conclusion. The videos retain their existing appearance; narration belongs in the speaking PDF and speaker notes.
-
-Keep the speaking PDF simple: only each slide's name, its spoken text, and its equations. Include the backup slide scripts in deck order. Do not add a cover/map, timing, tables, slide-number labels, rehearsal cues, source guides, headers, footers, or a separate symbol-pronunciation appendix. Keep transition sentences as ordinary spoken text. Let slide sections flow continuously, without forced page breaks or extra blank space between paragraphs; retain modest spacing around slide headings and equations.
-
-After every slide change, check and update `Final Presentation\Speaking\Thesis_Defense_Speaking_Script.tex` as part of the same task, without waiting for a separate request. Use the current PowerPoint as the source of truth for slide titles, order, visible content, terminology, equations, and the order of explanations. Add or remove script sections when slides are added or removed, and adjust transitions and references to slide layout when needed. Preserve correct scientific qualifications and equations. Rebuild and verify `Final Presentation\Thesis_Defense_Speaking_Script.pdf` before delivering the presentation changes. The LaTeX watcher only compiles changes to the `.tex` file; it does not rewrite the speaking text when the PowerPoint changes.
-
-Distinguish the physical slide index from its printed footer number when resolving requests. For example, `Surface-relative compliance` is currently physical slide 7 with footer 6; the user originally referred to it as footer 4 before the pose and torque slides were added. Use rotations/rotation instead of tilting/turning when describing the rotational compliance directions there.
-
-- LaTeX source: `Final Presentation\Speaking\Thesis_Defense_Speaking_Script.tex`.
-- Build script: `Final Presentation\Speaking\build.ps1`.
-- PDF output: `Final Presentation\Thesis_Defense_Speaking_Script.pdf`.
-- Compiler diagnostics and intermediate files: `Final Presentation\Speaking\build`.
-- Run a build from any directory with:
+- Source: `Final Presentation\Speaking\Thesis_Defense_Speaking_Script.tex`.
+- Build: `Final Presentation\Speaking\build.ps1`.
+- Output: `Final Presentation\Thesis_Defense_Speaking_Script.pdf`.
+- Logs/intermediate files: `Final Presentation\Speaking\build`.
 
 ```powershell
 powershell -ExecutionPolicy Bypass -File "C:\Users\USER\Desktop\Presentation_new\Final Presentation\Speaking\build.ps1"
 ```
 
-- Add `-Watch` to rebuild whenever the LaTeX source changes. A watcher was started during this session; do not assume it survives a restart. Check `Speaking\build\watch.pid` and the watcher logs before starting a duplicate process.
-- The speaking build uses MiKTeX/pdfLaTeX and latexmk with Perl. It automatically performs the necessary compilation passes and keeps the final PDF directly in `Final Presentation`.
-
-The introductory Null-space control slide appears immediately before Experimental procedure. Explain redundancy, projected torques, damping, and configuration conditioning before describing the studies; keep the detailed null-space results later in the deck.
-
-The null-space introduction uses dim(ker J) = 7 - rank(J) = 1 at rank 6 and J(q) qdot_null = 0, with J of size 6 by 7. Explain 3 position plus 3 orientation degrees of freedom and one redundant instantaneous motion direction. Do not describe a particular seventh physical joint as the null-space joint: the motion generally coordinates several joints. Preserve the full-rank qualification and the distinction between instantaneous kinematics and measured pose retention.
-
-The null-space introduction also shows tau_null = tau_d + tau_sigma and explains the two projected joint-torque contributions. Damping torque counters null-space joint motion; conditioning torque steers towards a configuration with better motion capability and can initiate motion at rest. Do not describe both terms as opposing or cancelling motion. Source: MyOwn/chapters/02_theoretical_background.tex, Projected Damping and Conditioning and Complete Null-Space Torque.
-
-The force-and-moment spring-damper slide is titled Cartesian impedance wrench. Cartesian impedance torque follows it and shows only F = [f; m] and tau_cart = J^T F. The user removed the complete torque command and its null-space/model-term explanations from the torque slide; keep those out of its speaking section as well. The earlier talk-duration estimate also excludes this additional slide.
-
-End-effector pose follows Overview and precedes Cartesian impedance wrench. It defines p_EE in R^3, R_EE in SO(3), and T_EE = [R_EE p_EE; 0^T 1], using the thesis convention: EE origin coincides with the controlled TCP; position and orientation are relative to the robot base frame, and the pose is obtained from the robot state. State three translational and three rotational degrees of freedom. Keep the speaking section and Overview entry synchronized. The earlier talk estimate also excludes this slide.
+Add `-Watch` to rebuild when the LaTeX source changes. Check `Speaking\build\watch.pid` and logs before starting another watcher. Do not assume the watcher survives a restart. The watcher **compiles LaTeX; it does not rewrite speaking text after PowerPoint edits**. The editing agent must do that synchronization, then build and visually verify the PDFs. MiKTeX/pdfLaTeX, latexmk, and Perl are available locally.

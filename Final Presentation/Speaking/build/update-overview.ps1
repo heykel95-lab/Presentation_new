@@ -1,4 +1,4 @@
-$ErrorActionPreference = 'Stop'
+﻿$ErrorActionPreference = 'Stop'
 Add-Type -AssemblyName System.IO.Compression.FileSystem
 Add-Type -AssemblyName System.IO.Compression
 $deck = 'C:\Users\USER\Desktop\Presentation_new\Final Presentation\Thesis_Defense_gg0_v3.pptx'
@@ -32,6 +32,19 @@ try {
   }
  }
  if (-not $overviewPath -or $titles.Count -eq 0) { throw 'Overview or subsequent slide titles not found.' }
+ # The September review replaced the detailed slide list with four broad sections.
+ # Derive the section order from the actual visible slide sequence; videos remain excluded.
+ $sectionTitles = @()
+ $currentSection = 'Cartesian impedance and centre of compliance'
+ foreach ($title in $titles) {
+  if ($title -eq 'Experimental procedure') { $currentSection = 'Contact experiments and results' }
+  elseif ($title -like 'Secondary study:*') { $currentSection = 'Null-space study' }
+  elseif ($title -eq 'Conclusion') { $currentSection = 'Conclusion and future work' }
+  if ($currentSection -notin $sectionTitles) { $sectionTitles += $currentSection }
+ }
+ if ($sectionTitles.Count -ne 4) { throw 'Expected four presentation sections; check the section boundaries after slide edits.' }
+ $titles = $sectionTitles
+
  $entry = $zip.GetEntry($overviewPath)
  $reader = New-Object IO.StreamReader($entry.Open())
  [xml]$xml = $reader.ReadToEnd()
@@ -49,10 +62,11 @@ try {
   $meta = $shape.SelectSingleNode('p:nvSpPr/p:cNvPr',$ns)
   $meta.SetAttribute('id', [string](20+2*$i))
   $meta.SetAttribute('name', 'Overview item '+($i+1))
-  $step = [Math]::Min(33, 363/[Math]::Max(1, $titles.Count-1))
-  $shape.SelectSingleNode('p:spPr/a:xfrm/a:off',$ns).SetAttribute('y',[string][int]((82+$i*$step)*12700))
-  $shape.SelectSingleNode('p:spPr/a:xfrm/a:ext',$ns).SetAttribute('cy','381000')
+  $step = 83
+  $shape.SelectSingleNode('p:spPr/a:xfrm/a:off',$ns).SetAttribute('y',[string][int]((121+$i*$step)*12700))
+  $shape.SelectSingleNode('p:spPr/a:xfrm/a:ext',$ns).SetAttribute('cy','558800')
   $shape.SelectSingleNode('p:txBody/a:p/a:r/a:t',$ns).InnerText = $titles[$i]
+  $shape.SelectSingleNode('p:txBody/a:p/a:r/a:rPr',$ns).SetAttribute('sz','2600')
   $shape.SelectSingleNode('p:txBody/a:p/a:r/a:rPr/a:solidFill/a:srgbClr',$ns).SetAttribute('val','17365D')
   $paragraph = $shape.SelectSingleNode('p:txBody/a:p/a:pPr',$ns)
   $paragraph.SetAttribute('marL','0')

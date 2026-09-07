@@ -1,0 +1,13 @@
+\documentclass[tikz,border=0pt]{standalone}
+\usepackage{graphicx,amsmath}
+\definecolor{navy}{HTML}{17365D}
+\begin{document}
+\begin{tikzpicture}[x=1bp,y=1bp]
+\node[anchor=south west,inner sep=0] at (0,0) {\includegraphics[width=417.6bp]{contact_response_time_original.pdf}};
+\fill[white] (67,130) rectangle (84,144);
+\draw[navy,densely dashed,line width=.5bp] (223.710,33) -- (223.710,124);
+\draw[navy,densely dashed,line width=.5bp] (304.841,33) -- (304.841,124);
+\node[anchor=south,font=\fontsize{9}{10}\selectfont,navy] at (223.710,130) {$\approx 2.3\,\mathrm{s}$};
+\node[anchor=south,font=\fontsize{9}{10}\selectfont,navy] at (304.841,130) {$\approx 3.6\,\mathrm{s}$};
+\end{tikzpicture}
+\end{document}

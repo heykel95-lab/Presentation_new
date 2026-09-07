@@ -1,0 +1,24 @@
+\documentclass[tikz,border=5pt]{standalone}
+\usepackage{amsmath,amssymb}
+\usetikzlibrary{arrows.meta,calc}
+\definecolor{navy}{HTML}{17365D}
+\begin{document}
+% Adapted from MyOwn/figures/ch02/reference_frames.tex: measured and desired
+% frames and the position-error arrow, with the unrelated frames omitted.
+\begin{tikzpicture}[font=\large,
+  meas/.style={-{Latex[length=2mm]},gray!70!black,thick},
+  des/.style={-{Latex[length=2mm]},navy,dashed,thick},
+  err/.style={-{Latex[length=2mm]},black,thick}]
+\coordinate (EE) at (0,0);
+\coordinate (D) at (2.5,1.8);
+\draw[meas] (EE)--++(1,0.4);
+\draw[meas] (EE)--++(0.4,-1);
+\fill[gray!70!black] (EE) circle (1.8pt);
+\draw[des] (D)--++(1,0.4);
+\draw[des] (D)--++(0.4,-1);
+\fill[navy] (D) circle (1.8pt);
+\draw[err] (EE)--(D) node[midway,above left] {$e_p$};
+\node[anchor=north east,gray!70!black] at (-0.1,-0.05) {$p_{\mathrm{EE}},R_{\mathrm{EE}}$};
+\node[anchor=south,navy] at (2.5,2.05) {$p_d,R_d$};
+\end{tikzpicture}
+\end{document}
