@@ -9,4 +9,5 @@ PDF: ..\Thesis_Defense_Speaking_Script.pdf (directly in Final Presentation).
 Compiler diagnostics and temporary files stay in Speaking\build\.
 Both build modes use this output location regardless of the calling directory.
 latexmk automatically runs all required compilation passes.
+The script includes all slide sections, including Contact demonstration and Disturbance demonstration in deck order. Their narration is included automatically when the speaking PDF rebuilds. PowerPoint notes must be kept synchronized when narration changes; the LaTeX watcher compiles the PDF and does not rewrite the slide contents.
 Requires MiKTeX (pdflatex and latexmk) and Perl, already available here.

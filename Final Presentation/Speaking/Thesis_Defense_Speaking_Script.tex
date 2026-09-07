@@ -50,15 +50,29 @@ The presentation follows these two ideas, from the controller to the experiments
 
 \section*{Overview}
 
-First, I will explain Cartesian impedance and its joint-torque mapping, surface-relative compliance, the centre of compliance, and null-space control. Then I will describe the experimental procedure and the angular quantities. The results cover the baseline contact response, the effect of stiffness, and the effect of the centre-of-compliance position. I will then connect the contact response to the interaction moment, present the separate null-space study, and finish with the conclusion and future work.
+First, I will introduce the end-effector pose, followed by the Cartesian impedance wrench and its joint-torque mapping, surface-relative compliance, the centre of compliance, and null-space control. Then I will describe the experimental procedure and the angular quantities. The results cover the baseline contact response, the effect of stiffness, and the effect of the centre-of-compliance position. I will then connect the contact response to the interaction moment, present the separate null-space study, and finish with the conclusion and future work.
 
-I will start with the spring--damper idea behind the controller.
+I will start by defining the position and orientation used by the controller.
+
+\section*{End-effector pose}
+
+EE denotes the end-effector frame attached to the controlled tool centre point, or TCP. Its pose consists of position and orientation, both described relative to the robot base frame.
+
+The position vector, \(p_{\mathrm{EE}}\), locates the TCP and has three translational degrees of freedom. The rotation matrix, \(R_{\mathrm{EE}}\), describes the orientation of the end-effector frame and has three rotational degrees of freedom. The notation \(SO(3)\) denotes the set of three-dimensional rotation matrices.
+
+\[p_{\mathrm{EE}}\in\mathbb{R}^{3},\qquad R_{\mathrm{EE}}\in SO(3).\]
+
+Together, position and orientation define the six-degree-of-freedom pose. The homogeneous transformation, \(T_{\mathrm{EE}}\), collects the rotation matrix and position vector in one matrix.
+
+\[T_{\mathrm{EE}}=\begin{bmatrix}R_{\mathrm{EE}} & p_{\mathrm{EE}}\\0^{\top} & 1\end{bmatrix}.\]
+
+The controller obtains this measured pose directly from the robot state and uses its position and orientation for feedback. The next slide explains how the differences from the desired pose generate a force and a moment through the impedance controller.
 
 
 
-\section*{Cartesian impedance}
+\section*{Cartesian impedance wrench}
 
-Cartesian impedance makes the controlled end effector behave like a virtual spring and damper around a desired pose. The end effector is the robot's controlled tool reference, and its pose consists of position and orientation.
+Cartesian impedance makes the controlled end effector behave like a virtual spring and damper around a desired pose. The resulting force and moment form the Cartesian wrench.
 
 In the upper equation, \(f\) is the commanded force. The position error \(e_p\) is the difference between the desired and measured positions. Multiplying this error by the translational stiffness \(K_p\) gives the spring contribution.
 
@@ -258,7 +272,29 @@ The second strategy, singular-value conditioning, uses a measure of how effectiv
 
 However, the stronger conditioning setting produced more back-and-forth motion. Small final displacement therefore does not necessarily mean little total motion. Across the study, the largest measured position error remained below the two-millimetre acceptance limit.
 
-I will finish with the main conclusions and proposed future work.
+Before the conclusion, two videos show the contact sequence and the response to a null-space disturbance.
+
+\section*{Contact demonstration}
+
+This video shows the robot picking up the tool, approaching the surface, and establishing contact. It then enters the pre-grinding hold.
+
+During the hold, I manually change the surface orientation. Normal pressing remains active, and the compliant tool adapts to the changed surface.
+
+Here, the centre of compliance is at the TCP. The interaction with the surface under normal pressing generates the contact moment that drives the rotation. The controller's rotational spring and damper still generate a restoring and damping moment, but the additional moment from a displaced compliance centre is zero.
+
+The tool therefore adapts through compliant contact while the desired orientation remains fixed. The next video shows the response to a null-space disturbance.
+
+\section*{Disturbance demonstration}
+
+This video shows three responses to a disturbance while the Cartesian controller holds the tool pose.
+
+First, no null-space torque is active, and the disturbance produces internal joint motion. Next, projected damping is active. Its torque opposes the null-space joint velocity and reduces the motion.
+
+Finally, conditioning is active. This torque adjusts the joint configuration to improve its motion capability. It can generate internal motion while steering the configuration, so its role differs from damping.
+
+Across the three settings, the focus is on how the arm configuration changes while the tool remains approximately in place. The quantitative comparisons were shown in the preceding null-space results.
+
+I will now finish with the main conclusions and proposed future work.
 
 
 

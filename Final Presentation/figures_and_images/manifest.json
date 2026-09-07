@@ -283,5 +283,20 @@
         "asset": "nullspace_torque_components",
         "source": "MyOwn/chapters/02_theoretical_background.tex, eq:nullspace_torque, eq:nullspace_damping_torque and eq:nullspace_sigma_torque",
         "changes": "Typeset sum of damping and conditioning torque for the Null-space control introduction; distinguish motion damping from active configuration conditioning."
+    },
+    {
+        "asset": "ee_position",
+        "source": "MyOwn/chapters/02_theoretical_background.tex, Rigid-Body Pose and Pose Error, eq:end_effector_pose; chapters/03_software_implementation.tex, robot-state feedback",
+        "changes": "Typeset position, rotation-matrix orientation and measured homogeneous pose for the End-effector pose introduction. Thesis base-frame and TCP conventions retained."
+    },
+    {
+        "asset": "ee_orientation",
+        "source": "MyOwn/chapters/02_theoretical_background.tex, Rigid-Body Pose and Pose Error, eq:end_effector_pose; chapters/03_software_implementation.tex, robot-state feedback",
+        "changes": "Typeset position, rotation-matrix orientation and measured homogeneous pose for the End-effector pose introduction. Thesis base-frame and TCP conventions retained."
+    },
+    {
+        "asset": "ee_pose",
+        "source": "MyOwn/chapters/02_theoretical_background.tex, Rigid-Body Pose and Pose Error, eq:end_effector_pose; chapters/03_software_implementation.tex, robot-state feedback",
+        "changes": "Typeset position, rotation-matrix orientation and measured homogeneous pose for the End-effector pose introduction. Thesis base-frame and TCP conventions retained."
     }
 ]
