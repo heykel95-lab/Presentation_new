@@ -1,0 +1,6 @@
+*.pdf binary
+*.pptx binary
+*.png binary
+*.jpg binary
+"Final Presentation/Thesis_Defense_gg0_v3.pptx" filter=lfs diff=lfs merge=lfs -text
+"Final Presentation/Video/*.mp4" filter=lfs diff=lfs merge=lfs -text

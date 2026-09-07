@@ -1,0 +1,107 @@
+\documentclass[tikz,border=4pt]{standalone}
+\usepackage{amsmath,amssymb,bm,setspace}
+\usepackage{tikz,pgfplots}
+\pgfplotsset{compat=1.18}
+\usetikzlibrary{arrows.meta,calc,positioning,decorations.pathreplacing}
+\begin{document}
+% Elevation sketch of the contribution the normal component of the commanded
+% force makes through a tangential compliance-centre displacement. The view is
+% taken in the surface tangent plane, with n_s up, so the two panels differ only
+% in the direction of r_c: the tool angular offset and force are identical, and
+% the moment contribution therefore reverses with the displacement.
+% Uses only tikz + arrows.meta/calc, which config/packages.tex loads.
+%
+% Colour follows the drawn palette and matches the moment-bookkeeping figure:
+% blue for the virtual displacement r_c, red for a force, black for the
+% moment and the axes. No line is grey or white, and every line is solid.
+%
+% Layout note. Each panel is kept to about 5.2 cm wide and 2.7 cm tall so the
+% pair sits near \textwidth without being scaled down; an earlier wider version
+% was shrunk by \resizebox until its labels collided. Three heights are used and
+% nothing else may be placed on them: the displacement at the TCP height, the
+% force tail above it, and the moment arc above that.
+\begin{tikzpicture}[
+    font=\small,
+    surf/.style={draw=black, fill=white},
+    tool/.style={draw=black, fill=white},
+    frc/.style={-{Latex[length=2.2mm]}, thick, red},
+    lev/.style={-{Latex[length=2.2mm]}, thick, blue},
+    mom/.style={-{Latex[length=2.2mm]}, thick, black},
+    ax/.style={-{Latex[length=1.8mm]}, black},
+    lbl/.style={font=\footnotesize, inner sep=1.8pt},
+    pt/.style={circle, fill=black, inner sep=0pt, minimum size=3.4pt},
+    cpt/.style={circle, fill=blue, inner sep=0pt, minimum size=3.4pt},
+  ]
+
+% ============ (a) displacement selected from the offset direction ===========
+\begin{scope}
+
+  % ---- surface plane ----------------------------------------------------
+  \fill[surf] (-2.6,-0.34) rectangle (2.6,0);
+  \draw[black] (-2.6,0) -- (2.6,0);
+
+  % ---- surface normal ----------------------------------------------------
+  \draw[ax] (-2.45,0) -- (-2.45,0.80) node[lbl, above] {$n_s$};
+
+  % ---- tool face, inclined and contacting at its lower edge --------------
+  \begin{scope}[shift={(0,0.125)}, rotate=-10]
+    \draw[tool] (-0.72,0) rectangle (0.72,0.30);
+    \coordinate (T) at (0,0.30);
+  \end{scope}
+
+  % ---- compliance centre and its tangential displacement, at TCP height --
+  \coordinate (P) at ($(T)+(-2.0,0)$);
+  \draw[lev] (T) -- (P);
+  \node[lbl, above, black] at ($(P)!0.32!(T)+(0,0.04)$) {$r_c$};
+  \node[cpt] at (P) {};
+  \node[lbl, left, black] at (P) {$p_c$};
+  \node[pt] at (T) {};
+  \node[lbl, anchor=south east] at ($(T)+(-0.07,0.05)$) {TCP};
+
+  % ---- normal component of the commanded force, pressing into the plane --
+  \draw[frc] ($(T)+(0,1.05)$) -- ($(T)+(0,0.14)$);
+  \node[lbl, right, black] at ($(T)+(0.72,0.60)$) {$f_n$};
+
+  % ---- the contribution it makes through the displacement ----------------
+  \coordinate (M) at ($(T)+(0,0.30)$);
+  \draw[mom] ([shift=(30:0.95)]M) arc (30:150:0.95);
+  \node[lbl] at ($(T)+(0,1.80)$) {$r_c\times f_n$};
+
+  \node at (0,-0.92) {(a) Selected displacement};
+\end{scope}
+
+% ============ (b) displacement in the opposite direction ====================
+\begin{scope}[xshift=6.0cm]
+
+  \fill[surf] (-2.6,-0.34) rectangle (2.6,0);
+  \draw[black] (-2.6,0) -- (2.6,0);
+
+  \draw[ax] (-2.45,0) -- (-2.45,0.80) node[lbl, above] {$n_s$};
+
+  \begin{scope}[shift={(0,0.125)}, rotate=-10]
+    \draw[tool] (-0.72,0) rectangle (0.72,0.30);
+    \coordinate (T2) at (0,0.30);
+  \end{scope}
+
+  % ---- the displacement is reversed; everything else is unchanged --------
+  \coordinate (P2) at ($(T2)+(2.0,0)$);
+  \draw[lev] (T2) -- (P2);
+  \node[lbl, above, black] at ($(P2)!0.32!(T2)+(0,0.04)$) {$r_c$};
+  \node[cpt] at (P2) {};
+  \node[lbl, right, black] at (P2) {$p_c$};
+  \node[pt] at (T2) {};
+  \node[lbl, anchor=south east] at ($(T2)+(-0.07,0.05)$) {TCP};
+
+  \draw[frc] ($(T2)+(0,1.05)$) -- ($(T2)+(0,0.14)$);
+  \node[lbl, right, black] at ($(T2)+(0.72,0.60)$) {$f_n$};
+
+  \coordinate (M2) at ($(T2)+(0,0.30)$);
+  \draw[mom] ([shift=(150:0.95)]M2) arc (150:30:0.95);
+  \node[lbl] at ($(T2)+(0,1.80)$) {$r_c\times f_n$};
+
+  \node at (0,-0.92) {(b) Reversed displacement};
+\end{scope}
+
+\end{tikzpicture}
+
+\end{document}

@@ -1,0 +1,54 @@
+% The surface-frame plane spanned by t_2 and n_s, viewed along t_1, fixing the
+% rotational direction that gives theta_{offset,t1}, theta_{0,t1} and
+% gamma_{t1} their sign. It is the complementary view to the surface frame of
+% reference_frames.tex, which draws t_1 and n_s in the plane of the page and
+% t_2 into it as a crossed circle; here t_1 comes out of the page as a dotted
+% circle. Both keep R_surface = [t_1 t_2 n_s] right-handed: with t_1 out of the
+% page and t_2 to the right, t_1 x t_2 = n_s points up, so a positive rotation
+% about t_1 runs counter-clockwise and takes t_2 towards n_s.
+%
+% Uses only tikz + arrows.meta, which config/packages.tex loads.
+%
+% Colour follows compliance_lever_moment.tex, where black carries the moment
+% and the axes. Nothing here is a second physical quantity, so nothing takes a
+% second colour; the rotation is separated from the frame by line weight alone.
+%
+% Layout note. The named directions and the rotation all lie in the upper half,
+% so the negative halves are drawn at about half the length of the positive
+% ones. Run at full length they left the lower half of the picture empty and
+% gave the t_1 label a long vertical line to be read against, which made the
+% symbol look like the name of that line rather than of the marker at its top.
+%
+% Clearance note. Four elements meet at the origin, so the axes are broken at
+% 0.30 and the marker is drawn at radius 0.15, leaving the diagonals free. The
+% t_1 label takes the upper-left diagonal, immediately beside the marker it
+% names. The arc is kept inside the first quadrant, from 20 to 70 degrees, so
+% that neither end approaches an axis, and its name sits beyond the arrowhead
+% on the free upper diagonal.
+\begin{tikzpicture}[
+    font=\small,
+    ax/.style={-{Latex[length=1.8mm]}, black},
+    half/.style={black},
+    rot/.style={-{Latex[length=2.2mm]}, thick, black},
+    lbl/.style={font=\footnotesize, inner sep=1.8pt},
+  ]
+
+% ===================== the (t_2, n_s) plane of the surface frame ============
+% Positive halves carry the arrowhead and the name; the negative halves are
+% drawn so that the pair reads as a plane rather than as two directions.
+\draw[ax]   (0.30,0)  -- (2.20,0)  node[lbl, right] {$t_2$};
+\draw[half] (-0.30,0) -- (-1.20,0);
+\draw[ax]   (0,0.30)  -- (0,1.85)  node[lbl, above] {$n_s$};
+\draw[half] (0,-0.30) -- (0,-1.00);
+
+% ============================ t_1, out of the page ==========================
+\draw[black, fill=white] (0,0) circle (0.15);
+\fill[black] (0,0) circle (0.05);
+\node[lbl, anchor=south east] at (-0.34,0.30) {$t_1$};
+
+% ======================= the positive direction of rotation =================
+% Counter-clockwise, by the right-hand rule about an axis out of the page.
+\draw[rot] (20:1.30) arc[start angle=20, end angle=70, radius=1.30];
+\node[lbl, anchor=south west] at (0.86,1.50) {Positive rotation};
+
+\end{tikzpicture}

@@ -1,0 +1,12 @@
+Build the speaking PDF from this folder:
+  powershell -ExecutionPolicy Bypass -File .\build.ps1
+
+Automatically rebuild whenever the LaTeX source changes:
+  powershell -ExecutionPolicy Bypass -File .\build.ps1 -Watch
+Stop watching with Ctrl+C. Keep the terminal open while editing.
+
+PDF: ..\Thesis_Defense_Speaking_Script.pdf (directly in Final Presentation).
+Compiler diagnostics and temporary files stay in Speaking\build\.
+Both build modes use this output location regardless of the calling directory.
+latexmk automatically runs all required compilation passes.
+Requires MiKTeX (pdflatex and latexmk) and Perl, already available here.

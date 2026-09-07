@@ -1,0 +1,70 @@
+Main talk: 14 slides; planned time 17:45.
+All main slides are below 2 minutes. Backup slides are hidden and excluded from this timing.
+
+01. Title — 0:30
+Introduce yourself, the degree programme and the thesis. State the application in one phrase: a rectangular tool approaching a planar surface. The measured study concerns compliant contact entry; sustained grinding is the intended subsequent application.
+Source: gg0(1).pptx, title slide; Thesis title page
+
+02. Motivation — 1:20
+Begin with the leading edge in the illustration. Small placement and mounting errors mean the tool may meet the plate at an edge rather than across its face. A rigid pose controller resists rotation. The intended behaviour is to keep pressing while allowing contact to rotate the tool. The specific research question is how directional stiffness and the virtual centre of compliance affect that response. Introduce those two settings gradually in the next slides.
+Source: Thesis, Sections 1.1–1.3; figures/ch04/setup_schematic.tex
+
+03. Overview — 0:25
+Outline the sequence once: how compliance is generated, how its reference point changes the moment, what was measured, and the main conclusion. Do not repeat the motivation.
+Source: Presentation structure
+
+04. Cartesian impedance — 1:50
+Explain the virtual spring and damper before reading the equations. A pose error creates a commanded force or moment through stiffness; a velocity difference contributes damping. Briefly introduce the symbols in the right column. K and D are directional matrices, not just scalar gains. The dot over p means velocity. The subscript d is desired and EE denotes the measured end effector. The real-time implementation maps the resulting wrench to joint torque. Avoid deriving the Jacobian or the full rigid-body dynamics in the main talk.
+Source: Thesis, Equations (2.19)–(2.21), Section 3.1
+
+05. Surface-relative compliance — 1:15
+Use the three arrows to define the surface frame. Normal means perpendicular to the plane, while the two tangents lie in the plane. For translation, the controller should yield more in the pressing direction and retain tangential position. For rotation, it should allow tilt about either tangent but retain the in-plane orientation through greater stiffness about the normal. These directional choices are more important here than the numerical gains.
+Source: Thesis, Sections 2.5, 3.2.5 and Table 4.2
+
+06. Centre of compliance — 1:55
+Introduce the TCP as the controlled reference attached to the end effector. The centre of compliance is a virtual reference for the impedance, not a physical hinge. r_c points from the TCP to the virtual centre; p_c is its position. Shifting the reference introduces translation–rotation coupling. The moment is the ordinary rotational spring–damper moment plus r_c cross f. The sketch isolates the normal-force contribution for a tangential displacement. Reversing the displacement reverses that contribution. At the TCP the additional term vanishes, but rotational stiffness remains active. This explains why one displaced centre can assist one tilt direction while opposing the other.
+Source: Thesis, Equations (2.35), (2.42), (2.49); figures/ch02/compliance_lever_moment.tex
+
+07. Experimental procedure — 1:15
+Show the four phases. The robot first orients and approaches the tool, then applies the pressing trajectory during the five-second Contact Establishment phase. The desired orientation is held at the measured entry orientation, so the observed rotation is generated through compliant contact. Explain the matched comparisons A to D without listing every numerical setting. The 57 contact trials are 19 settings repeated three times; the separate null-space study adds 12 trials. Sustained grinding is outside the quantified contact-entry study.
+Source: Thesis, Sections 4.1, 4.3 and 4.4
+
+08. Angular quantities — 1:20
+Explain the achieved entry angle and measured contact response. The achieved angle comes from robot pose at entry. Gamma describes rotation from the measured end orientation back to the held entry reference, so its sign is opposite to physical start-to-end rotation. An aligning response has the same sign as the achieved entry angle. Omit commanded offset from the presentation. Physical tool-surface angle is not independently measured.
+Source: Thesis, Section 4.5, Equations (4.1)–(4.6)
+
+09. Baseline contact response — 1:00
+Use the achieved entry conditions from the thesis: phi_0 = 0.74 degrees is total angular-mismatch magnitude; +9.31 and -9.41 degrees are signed achieved t1 components. Their measured responses remain -0.97, +7.57 and -10.83 degrees. Do not treat phi_0 as a signed t1 component. Both nonzero-angle conditions rotate towards alignment, with unequal response magnitudes.
+Source: Thesis, Section 5.2.1 and Table D.1; figures/ch05/results_case_a_bars.tex
+
+10. Effect of stiffness — 1:25
+First read the left plot. Increasing rotational stiffness from 5 to 50 newton metres per radian reduces the contact response from 7.57 to 2.73 degrees, a 63.9-percent reduction. A stiffer rotational spring resists the aligning rotation. Then contrast the nearly flat right plot: changing tangential translational stiffness from 300 to 2000 newtons per metre produces only a 0.03-degree span, or 0.4 percent of the baseline. State this conclusion within the tested parameter range rather than as a universal rule for contact mechanics.
+Source: Thesis, Section 5.2.2; Tables D.2 and D.3
+
+11. Effect of CoC position — 1:40
+Introduce the horizontal axis as the signed tangential CoC coordinate along the second tangent. Read one tilt direction at a time. For the positive entry tilt, a positive displacement supports the response and a negative displacement strongly suppresses it. For the negative entry tilt the required side reverses. Compared with the TCP baseline, the supporting side increases the final magnitude by only about four percent, while the opposing side suppresses it by about 98 to 99 percent. The main result is directional preference, not a general increase in compliance or a universally optimal offset. All tested nonzero offsets are tool-fixed; the reported coordinates are the surface projections in the flat target configuration.
+Source: Thesis, Section 5.2.3 and Table D.4
+
+12. Contact response and interaction moment — 1:35
+The figure panels are extracted as vectors from the original thesis figure, not screen captures. Point out the common black, red and blue CoC settings. The selected side develops its approximately steady response around 2.3 seconds, compared with around 3.6 seconds at the TCP. The interaction moment changes sign between the two displaced settings. The original normal-force panel and the thesis report similar final force levels, approximately -82.9, -79.0 and -78.0 newtons. The moment values are approximately +4.07, +0.73 and -2.54 newton metres. Retain the est qualifier: these are the robot’s model-based external-wrench estimates, not an independent force/torque sensor. The 1.3-second comparison is from these representative traces, not a universal rise-time statistic.
+Source: Thesis, Figure 5.8 and Section 5.2.3; figures/ch05/MAIN_D_wrench.pdf
+
+13. Secondary study: null-space motion — 1:25
+Explain redundancy in plain language: seven joints allow internal joint motion while approximately retaining the tool pose. This was a separate pose-hold study, not another contact case. The robot received the same internally commanded disturbance in twelve trials. The plot compares total projected joint motion, not just final drift: damping reduces it from 7.596 to 5.687 degrees, approximately 25 percent. The configuration-conditioning settings leave net projected displacements of 0.015 and -0.006 degrees in the tested direction. The larger conditioning torque produces more back-and-forth motion even though its final drift is small. The largest measured position error over the study is 1.304 mm, below the 2 mm criterion. No derivation of the projector is needed for the main presentation.
+Source: Thesis, Sections 4.7 and 5.3; figures/ch05/MAIN_NS_nullspace_automatic.pdf
+
+14. Conclusion — 0:50
+Close with the general answer. Cartesian compliance allows passive contact-induced rotation. Rotational stiffness changes how much the tool can respond. A tangential virtual CoC displacement primarily selects the preferred rotational direction by introducing an additional commanded moment. It must therefore be chosen with respect to the angular-offset direction; one fixed nonzero shift is not neutral for both signs. Future work comprises independent tool-angle measurement, selection of the CoC direction from measured entry tilt, return to the TCP after alignment, and evaluation during sustained grinding. These remain proposals to test. Finish and invite questions.
+Source: Thesis, Section 6.1
+
+15. Commanded and estimated wrench — BACKUP
+Optional answer to a question about the wrench estimate. Compare the final stationary portion only when quoting the percentages. This does not establish independent sensor accuracy; the command and estimate share the robot model and sign/reference-point conventions defined in the thesis. During the transient the traces need not coincide.
+Source: Thesis, Sections 4.6.1 and 5.1.1; Figure 5.1
+
+16. Normal-force plausibility assessment — BACKUP
+Optional deeper explanation. The test uses the CoC at the TCP, inactive null-space torque and a held reference. The baseline before manual displacement is subtracted from the evaluated response. With normal stiffness 1000 N/m and measured displacement -19.65 mm, the spring prediction is -19.650 N. The commanded mean is -19.640 N and the model-estimated mean -22.292 N. This supports the implemented spring relation; it is not an independent sensor calibration.
+Source: Thesis, Sections 4.6.2 and 5.1.2; Figure 5.2
+
+17. Moment plausibility assessment — BACKUP
+Optional deeper explanation. The rotational perturbation starts from the loaded stationary state. Subtracting that reference removes the pre-existing load-related moment from the comparison. The measured rotation is 6.565 degrees and rotational stiffness 15 N m/rad. The spring prediction and commanded mean are both 1.719 N m to reported precision. The model-estimated mean is 1.852 N m, a 7.75-percent difference. Time is local to this evaluation; it is not evidence of a separately recorded trial.
+Source: Thesis, Sections 4.6.2 and 5.1.2; Figure 5.3

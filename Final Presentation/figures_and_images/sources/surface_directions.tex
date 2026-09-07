@@ -1,0 +1,46 @@
+\documentclass[tikz,border=4pt]{standalone}
+\usepackage{amsmath,amssymb,bm,setspace}
+\usepackage{tikz,pgfplots}
+\pgfplotsset{compat=1.18}
+\usetikzlibrary{arrows.meta,calc,positioning,decorations.pathreplacing}
+\begin{document}
+\begin{tikzpicture}[
+    scale=1.1,
+    font=\small,
+    ax/.style={-{Latex[length=1.8mm]}, black},
+    nrm/.style={-{Latex[length=2.0mm]}, thick, black},
+    dir/.style={-{Latex[length=2.2mm]}, thick, red},
+    cmp/.style={-{Latex[length=1.8mm]}, red},
+    con/.style={dashed, thin, black},
+    lev/.style={-{Latex[length=2.2mm]}, thick, blue},
+    arc/.style={-{Latex[length=1.6mm]}, red},
+    surf/.style={draw=black, fill=white},
+    lbl/.style={font=\footnotesize, inner sep=1.8pt},
+    pt/.style={circle, fill=black, inner sep=0pt, minimum size=3.0pt},
+    cpt/.style={circle, fill=blue, inner sep=0pt, minimum size=3.0pt},
+  ]
+
+% ============ (a) the two rotations about the surface tangents ==============
+% Projected unit directions: t_1 -> (0.906,-0.423), t_2 -> (0.819,0.574),
+% n_s -> (0,1).
+\begin{scope}[shift={(-4.55,0.22)}]
+
+  % ---- a small patch of the surface the two tangents span -----------------
+  \fill[surf] (-0.345,-0.030) -- (0.516,-0.432) -- (1.212,0.056)
+           -- (0.351,0.458) -- cycle;
+  \draw[black] (-0.345,-0.030) -- (0.516,-0.432) -- (1.212,0.056)
+            -- (0.351,0.458) -- cycle;
+
+  % ---- the frame directions ----------------------------------------------
+  \draw[ax] (0,0) -- (1.586,-0.740);
+  \node[lbl, anchor=west] at (1.66,-0.79) {$t_1$};
+  \draw[ax] (0,0) -- (1.310,0.918);
+  \node[lbl, anchor=south west] at (1.36,0.96) {$t_2$};
+  \draw[nrm] (0,0) -- (0,1.20);
+  \node[lbl, anchor=east] at (-0.10,1.06) {$n_s$};
+
+
+\end{scope}
+\end{tikzpicture}
+
+\end{document}

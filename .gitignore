@@ -8,3 +8,16 @@
 .DS_Store
 Thumbs.db
 desktop.ini
+
+# Speaking-script compiler output, previews, and local backups
+/Final Presentation/Speaking/build/*
+!/Final Presentation/Speaking/build/update-overview.ps1
+/Final Presentation/overview_build/
+
+# LaTeX intermediate files
+*.aux
+*.log
+*.out
+*.fls
+*.fdb_latexmk
+*.synctex.gz

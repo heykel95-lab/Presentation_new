@@ -1,0 +1,321 @@
+% Speaking script: slide titles, spoken text, and equations only.
+\documentclass[12pt,a4paper]{article}
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage[english]{babel}
+\usepackage[a4paper,margin=22mm]{geometry}
+\usepackage{amsmath,amssymb}
+\usepackage{newtxtext,newtxmath}
+\usepackage{microtype}
+\usepackage{xcolor}
+\usepackage{setspace}
+\usepackage[hidelinks,unicode]{hyperref}
+\definecolor{navy}{HTML}{183B63}
+\hypersetup{pdftitle={Thesis Defense -- Speaking Script},pdfauthor={Heykel Khadhraoui}}
+\setstretch{1.12}
+\setlength{\parindent}{1em}
+\setlength{\parskip}{0pt}
+\setlength{\emergencystretch}{2em}
+\widowpenalty=10000
+\clubpenalty=10000
+\pagestyle{empty}
+\makeatletter
+\renewcommand\section{\@startsection{section}{1}{0pt}{14pt}{6pt}{\normalfont\Large\bfseries\color{navy}}}
+\makeatother
+\begin{document}
+
+\section*{Master Thesis Presentation}
+
+Good afternoon. My name is Heykel Khadhraoui, and today I will present my master's thesis on real-time impedance control for a seven-degree-of-freedom collaborative robot.
+
+The intended application is surface grinding with a rectangular tool. My work focuses on contact entry: how the tool can rotate towards alignment with a planar surface through compliant contact.
+
+I will begin with the problem that motivates this behaviour.
+
+
+
+\section*{Motivation}
+
+The illustration shows the basic problem. When a rectangular tool approaches a surface with a small tilt, it touches along an edge or at a corner before the whole face makes contact. Small differences in surface placement, tool mounting, and robot pose can produce this situation.
+
+A rigid pose controller tries to maintain the commanded orientation. It therefore resists the corrective rotation that contact could generate, and the contact loads can increase.
+
+The idea in this thesis is to maintain the normal press while allowing the tool to rotate through its interaction with the surface. Here, passive alignment means that contact produces the rotation, rather than an additional prescribed alignment trajectory.
+
+The main question is: how do stiffness and the centre of compliance affect this response? Stiffness determines resistance to motion. The centre of compliance is a virtual reference point that can change the rotational effect of the press.
+
+The presentation follows these two ideas, from the controller to the experiments.
+
+
+
+\section*{Overview}
+
+First, I will explain Cartesian impedance and its joint-torque mapping, surface-relative compliance, the centre of compliance, and null-space control. Then I will describe the experimental procedure and the angular quantities. The results cover the baseline contact response, the effect of stiffness, and the effect of the centre-of-compliance position. I will then connect the contact response to the interaction moment, present the separate null-space study, and finish with the conclusion and future work.
+
+I will start with the spring--damper idea behind the controller.
+
+
+
+\section*{Cartesian impedance}
+
+Cartesian impedance makes the controlled end effector behave like a virtual spring and damper around a desired pose. The end effector is the robot's controlled tool reference, and its pose consists of position and orientation.
+
+In the upper equation, \(f\) is the commanded force. The position error \(e_p\) is the difference between the desired and measured positions. Multiplying this error by the translational stiffness \(K_p\) gives the spring contribution.
+
+The second term is the damping contribution. \(D_p\) is translational damping, and the difference between the two dotted position terms is the desired minus measured linear velocity. A dot over position means velocity.
+
+The lower equation applies the same idea to rotation. Here, \(m\) is the commanded moment, which produces rotation. \(e_R\) is the orientation error, \(K_R\) is rotational stiffness, and \(D_R\) is rotational damping. Omega denotes angular velocity. Throughout both equations, the subscript d means desired, and EE means measured end effector.
+
+The stiffness and damping quantities are matrices, allowing different behaviour in different directions. Stiffness resists pose errors, while damping reduces oscillation. The implementation converts the resulting force and moment into joint torques. This gives controlled compliance during contact instead of insisting on perfectly rigid pose tracking.
+
+The next slide shows how this force and moment become joint torques.
+
+\begin{align*}
+ f &= K_p e_p + D_p\bigl(\dot p_d-\dot p_{\mathrm{EE}}\bigr),\\
+ m &= K_R e_R + D_R\bigl(\omega_d-\omega_{\mathrm{EE}}\bigr).
+\end{align*}
+
+
+
+\section*{Cartesian impedance torque}
+
+The spring--damper equations give a force and a moment at the tool. Together, they form the six-component Cartesian wrench, F. The robot is controlled through joint torques, so the controller maps this wrench to its seven joints using the transpose of the geometric Jacobian.
+
+\[F=\begin{bmatrix}f\\m\end{bmatrix},\qquad \tau_{\mathrm{cart}}=J^\top(q)F.\]
+
+The Jacobian depends on the joint configuration, q. It has six rows and seven columns, so its transpose maps the six wrench components to seven joint-torque components. Tau cart is the Cartesian impedance contribution.
+
+The key point is that the desired compliant behaviour at the tool is implemented through joint torques.
+
+The next question is which directions should be softer and which should be stiffer.
+
+\section*{Surface-relative compliance}
+
+These directions are defined relative to the configured surface. The arrow \(n_s\) is the surface normal: it is perpendicular to the plane and points outward. Pressing towards the surface therefore follows the opposite direction.
+
+The other two arrows, \(t_1\) and \(t_2\), are perpendicular tangent directions lying in the plane. Together, these three directions form the surface frame.
+
+For translation, I use softer behaviour along the normal to allow compliant pressing. Along the two tangents, higher stiffness helps retain the tool's position on the surface.
+
+For rotation, low stiffness about the two tangents allows rotations that bring the tool face towards alignment with the plane. Higher stiffness about the normal resists rotation in the plane and maintains the tool's in-plane orientation.
+
+This distinction is important: translating along a tangent and rotating about that tangent are different motions. The controller can assign a different stiffness to each.
+
+Besides choosing these directions, I can also shift the point about which the impedance is defined.
+
+
+
+\section*{Centre of compliance (CoC)}
+
+The tool centre point, or TCP, is the controlled reference attached to the end effector. The centre of compliance is the virtual point about which the spring--damper behaviour is defined. It is a controller setting, not a physical hinge.
+
+Its position is written as \(p_c\). The vector \(r_c\) points from the TCP to this virtual centre. Moving the centre away from the TCP couples translation and rotation: a translational error can then also contribute to a commanded moment.
+
+The equation summarises this effect. The complete commanded moment \(m\) contains the ordinary rotational spring--damper moment \(m_R\), plus the additional contribution \(r_c\) cross \(f\). Here, \(f\) is the commanded force introduced earlier.
+
+The diagrams isolate the normal part of that force, written as \(f_n\). The tool tilt and normal press are the same in both panels. Only the side of the tangential displacement changes. This reverses the additional moment, as indicated by the curved arrows.
+
+For a given tilt, one side can support the aligning rotation, while the opposite side can oppose it. If the centre is at the TCP, \(r_c\) is zero and this additional contribution vanishes. The ordinary rotational stiffness and damping still remain active.
+
+Before the experiments, I will introduce one more part of the controller: null-space control.
+
+\[m=m_R+r_c\times f.\]
+
+
+
+\section*{Null-space control}
+
+The robot has seven joint coordinates, while the tool pose has six degrees of freedom: three for position and three for orientation. Away from singularities, the Jacobian has rank six. Seven minus six leaves one independent direction of internal joint motion.
+
+\[\dim(\ker J)=7-\operatorname{rank}(J)=7-6=1.\]
+
+This does not mean that six particular joints control the tool and the seventh is a separate null-space joint. The redundant motion generally combines several joints. They can move together while keeping the tool pose unchanged to first order.
+
+The Jacobian, J, maps joint velocities to the tool's linear and angular velocity. For a null-space joint velocity, this product is zero.
+
+\[J(q)\,\dot q_{\mathrm{null}}=0,\qquad J\in\mathbb{R}^{6\times7}.\]
+
+The controller generates two joint-torque contributions and projects them into the null space. Their sum is the null-space torque.
+
+\[\tau_{\mathrm{null}}=\tau_d+\tau_\sigma.\]
+
+The damping torque, \(\tau_d\), counters the internal joint motion. It is proportional to the null-space joint velocity and becomes zero when the joints stop. The conditioning torque, \(\tau_\sigma\), steers the robot towards a configuration with better motion capability. It can generate internal motion even when the joints are initially at rest. So damping opposes motion, while conditioning improves the configuration.
+
+These functions were tested in a separate pose-hold experiment with an internally commanded disturbance. I compared the joint motion and checked how closely the tool maintained its position. I will show those results after the contact experiments.
+
+First, I will explain the procedure for the contact study.
+
+\section*{Experimental procedure}
+
+The contact study used a rectangular tool measuring forty by one hundred and twenty millimetres. Each experiment followed the same sequence.
+
+First, the robot oriented the tool and approached the surface. During Contact Establishment, it applied the pressing trajectory for five seconds. It then entered the pre-grinding hold.
+
+The important point is that the desired orientation remained fixed at the measured contact-entry orientation. The rotation observed afterwards was therefore generated through compliant contact.
+
+Case A established the baseline with the centre of compliance at the TCP. Cases B and C varied rotational stiffness and tangential translational stiffness. Case D varied the tangential centre-of-compliance position. Within each comparison, the other settings were kept unchanged.
+
+The contact study contained nineteen parameter settings, each repeated three times, giving fifty-seven trials. The separate null-space study added twelve trials. The quantitative contact results concern contact entry rather than sustained grinding.
+
+Before showing those results, I will distinguish the angular quantities used in the plots.
+
+
+
+\section*{Angular quantities}
+
+Two angular quantities are important here. Theta achieved about t one is the angle actually reached at contact entry relative to the configured surface reference.
+
+Gamma about t one describes the contact response. It is calculated from the measured end-effector orientations at the beginning and end of Contact Establishment.
+
+The sign convention is important. The response is defined by the rotation from the measured end orientation back to the held entry reference. Its sign is therefore opposite to the physical start-to-end rotation.
+
+In the illustrated example, the entry tilt is positive and the tool rotates towards the configured surface. The reported gamma is also positive. For the negative-tilt case, an aligning response is negative. A negative response is therefore not automatically an undesirable result.
+
+These angular quantities are calculated from measured end-effector orientations; they are not an independent measurement of the physical tool--surface angle.
+
+With this convention in mind, we can read the baseline results.
+
+\[
+\theta_{\mathrm{ach},t_1}:\ \text{entry tilt},\qquad
+\gamma_{t_1}:\ \text{contact response}.
+\]
+
+
+
+\section*{Baseline contact response}
+
+Here, the centre of compliance is at the TCP. The horizontal axis shows the achieved entry conditions. The positive and negative achieved angles about the first tangent are plus nine point three one and minus nine point four one degrees. For the near-zero case, the thesis reports phi zero as a total angular mismatch of zero point seven four degrees. This is a magnitude, not a signed angle about the first tangent. The vertical axis is the signed contact response, gamma about t one.
+
+The positive-tilt condition produced a response of plus seven point five seven degrees. The negative-tilt condition produced minus ten point eight three degrees. Under the convention just introduced, both represent rotation towards the configured surface-parallel orientation.
+
+Their magnitudes are different, so the two directions do not give identical responses. The near-zero entry condition also shows a small response of minus zero point nine seven degrees.
+
+This establishes the reference for the following comparisons: contact can produce aligning rotation for either tilt sign, even without a displaced compliance centre.
+
+I will now show what changes when stiffness is varied.
+
+
+
+\section*{Effect of stiffness}
+
+The left plot shows the effect of rotational stiffness. \(K_{R,t_1}\) means the stiffness resisting rotation about the first surface tangent. These trials used the positive-tilt condition, with the other settings held constant.
+
+Increasing this stiffness from five to fifty newton metres per radian reduced the response from seven point five seven to two point seven three degrees. That is a reduction of sixty-three point nine percent.
+
+This agrees with the spring interpretation: greater rotational stiffness opposes more of the rotation produced by contact.
+
+The right plot changes a different quantity, \(K_{p,t_2}\). This is translational stiffness along the second tangent, so it resists sliding along the surface rather than rotation.
+
+Changing it from three hundred to two thousand newtons per metre produced a response span of only zero point zero three degrees, or zero point four percent of the baseline response.
+
+Within the tested range, the alignment response was therefore much more sensitive to rotational stiffness than to tangential translational stiffness.
+
+The next comparison changes the compliance-centre position while retaining the stiffness settings.
+
+
+
+\section*{Effect of CoC position}
+
+The horizontal axis now shows \(r_{c,t_2}\), the signed centre-of-compliance displacement along the second surface tangent. The vertical axis remains the contact response about the first tangent. The two curves correspond to opposite achieved entry tilts.
+
+First, consider the positive-tilt condition. A displacement of plus forty millimetres gives a response of seven point eight seven degrees, compared with seven point five seven degrees at the TCP. This is an increase of about four percent.
+
+Moving to the opposite side, minus forty millimetres, reduces the response to only zero point one eight degrees. The aligning rotation is almost completely suppressed.
+
+For the negative-tilt condition, the useful side reverses. A negative displacement supports the negative response, while a positive displacement brings its magnitude towards zero. Because this response is negative, a more negative value means a larger response magnitude.
+
+Across the two tilt conditions, the supporting side increases the final response magnitude by about four percent, while the opposing side reduces it by approximately ninety-eight to ninety-nine percent. The main effect is therefore a preferred rotational direction, rather than a large general increase in alignment.
+
+The time histories help connect this directional effect to the interaction moment.
+
+
+
+\section*{Contact response and interaction moment}
+
+These plots compare three centre positions for the positive-entry-tilt condition. Black is minus forty millimetres, red is the TCP-centred case, and blue is plus forty millimetres. The horizontal axis, \(t\), is time during Contact Establishment.
+
+On the left, the selected positive displacement develops its approximately steady response at about two point three seconds. The TCP-centred case reaches its steady response at about three point six seconds. In these representative traces, the selected side reaches that response about one point three seconds earlier.
+
+On the right, \(M_{t_1,\mathrm{est}}\) is the estimated interaction moment about the first surface tangent, referenced to the TCP. The subscript est means model-estimated: the signal comes from the robot's external-wrench estimator rather than a separate force--torque sensor.
+
+The moment changes substantially and reverses sign between the two displaced positions. Meanwhile, the normal-force data reported in the thesis remain at similar final levels for the three positions.
+
+Together, these observations show that the direction-dependent response is reflected mainly in the interaction moment. They also indicate faster alignment for the supporting displacement in the displayed comparison.
+
+A separate experiment then examined the robot's redundant joint motion while holding the tool pose.
+
+
+
+\section*{Secondary study: null-space motion}
+
+A seven-joint robot has redundancy: its joints can change configuration while approximately retaining the same tool pose. This extra joint motion is called null-space motion.
+
+I evaluated it in a separate pose-hold experiment with a repeatable, internally commanded disturbance. The plot shows \(E_N\), the cumulative projected null-space motion. It measures the total motion accumulated, so motion back and forth both contribute.
+
+The black curve has no null-space damping. The red curve uses projected damping, with \(d_{\mathrm{null}}\) denoting the damping coefficient. Damping reduced the total motion from about seven point six to five point seven degrees, approximately twenty-five percent.
+
+The second strategy, singular-value conditioning, uses a measure of how effectively the joint configuration can produce tool motion. It adjusts the configuration to improve that measure. In the tested disturbance direction, it left almost zero final net displacement.
+
+However, the stronger conditioning setting produced more back-and-forth motion. Small final displacement therefore does not necessarily mean little total motion. Across the study, the largest measured position error remained below the two-millimetre acceptance limit.
+
+I will finish with the main conclusions and proposed future work.
+
+
+
+\section*{Conclusion}
+
+In conclusion, the implemented Cartesian impedance controller enabled passive contact-induced alignment of the rectangular tool. Rotational stiffness strongly influenced the response magnitude. A tangential centre-of-compliance displacement mainly changed the interaction moment and selected a preferred rotational direction.
+
+For future work, I propose selecting the displacement direction from the measured entry tilt and returning the centre to the TCP after alignment. This should be evaluated together with independent tool-angle measurement and sustained grinding.
+
+The main message is that the compliance-centre position should be chosen with respect to the required alignment direction.
+
+Thank you for your attention. I welcome your questions.
+
+
+
+\section*{Commanded and estimated wrench}
+
+This supplementary comparison examines the commanded and model-estimated wrench during one contact trial. Wrench means the combined force and moment. Here, \(F_n\) is the normal-force component, and \(M_{t_1}\) is the moment about the first surface tangent.
+
+Both quantities are compared using the same surface axes and TCP reference point. The model-estimated signal is the interaction estimate available from the robot.
+
+The shaded final interval is stationary. Over that interval, the estimated normal force differs from the commanded mean by two point three two percent, and the estimated moment differs by four point eight seven percent.
+
+The transient curves, particularly for the moment, do not coincide throughout the complete motion. The percentages therefore refer to the stationary comparison, not the full time history.
+
+This gives supplementary plausibility evidence for the reported wrench levels. It is not an independent validation of sensor accuracy, because the estimate comes from the robot's model-based estimator.
+
+
+
+\section*{Normal-force plausibility assessment}
+
+This assessment compares the implemented translational impedance with its quasi-static spring prediction. The controller held a captured reference, with the compliance centre at the TCP and the null-space torque inactive. A manual displacement was then applied along the surface normal.
+
+In the equation, \(K_{p,n}\) is normal translational stiffness. \(e_p\) is the position error, and \(e_{p,0}\) is its value before the perturbation. Their difference references the calculation to that starting state. Multiplication by \(n_s^\top\) selects the normal component. The subscript qs means quasi-static prediction.
+
+With a stiffness of one thousand newtons per metre and a measured normal displacement of minus nineteen point six five millimetres, the prediction is minus nineteen point six five newtons.
+
+The commanded mean is minus nineteen point six four newtons, a difference of zero point zero five percent. The model-estimated mean is minus twenty-two point two nine two newtons, thirteen point five percent from the command.
+
+The close spring-to-command agreement supports the plausibility of the implemented translational impedance relation.
+
+\[F_{n,\mathrm{qs}}=K_{p,n}\,n_s^\top\bigl(e_p-e_{p,0}\bigr).\]
+
+
+
+\section*{Moment plausibility assessment}
+
+The rotational assessment uses the same idea, but the tool is rotated about the first surface tangent while the normal load remains applied.
+
+Here, \(K_{R,t_1}\) is rotational stiffness about that tangent. \(e_R\) is the orientation-error vector, and \(e_{R,0}\) is the error before the rotational perturbation. Multiplication by \(t_1^\top\) selects the component about the first tangent.
+
+The starting reference is now the loaded stationary state. Subtracting it removes the moment already present under normal load, so the comparison isolates the response to the additional rotation.
+
+The measured rotation is six point five six five degrees. With rotational stiffness of fifteen newton metres per radian, the spring prediction and the commanded mean are both one point seven one nine newton metres to the reported precision.
+
+The model-estimated mean is one point eight five two newton metres, a difference of seven point seven five percent from the command. This supports the plausibility of the implemented rotational impedance relation.
+
+\[M_{t_1,\mathrm{qs}}=K_{R,t_1}\,t_1^\top\bigl(e_R-e_{R,0}\bigr).\]
+
+\end{document}
