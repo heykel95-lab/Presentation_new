@@ -1,0 +1,67 @@
+% Cross-section through the configured plane and the inclined tool face,
+% drawn at an instant during Surface Approach. The state ends once the closest
+% corner reaches the dashed threshold.
+% Drawn in black throughout. h_Tool(t) is the dimension from the closest corner
+% to the plane; h_clearance is the configured threshold, dashed because it is a
+% configured reference rather than a physical object. The two dimensions are
+% told apart by what they span and by their labels, not by colour.
+% Face half-length 1.25 at 12 degrees, closest corner at height 2.05, body
+% thickness 0.55 along the face normal (-sin12, cos12).
+% Column budget: the h_Tool dimension owns x=-2.30, the threshold dimension
+% x=1.45, and the normal arrow x=2.55, so no two labels share a column. The
+% gap between the last two is deliberate: drawn any closer, the dimension and
+% the normal read as a matched pair of arrows rather than as two different
+% kinds of annotation.
+% The h_Tool label sits at y=1.50, clear of the threshold line at y=0.95.
+% Line weights: the plane and tool are heavier than the dashed threshold,
+% so the configured datum reads as construction rather than as an object.
+% Both dimensions carry the same weight, since neither is subordinate.
+\begin{tikzpicture}[
+    scale=1.1,
+    font=\footnotesize,
+    plane/.style={draw=black, line width=1.0pt},
+    face/.style={draw=black, line width=1.4pt},
+    datum/.style={black, line width=0.7pt, densely dashed},
+    height/.style={{Latex[length=1.6mm]}-{Latex[length=1.6mm]},
+                   black, line width=0.8pt},
+    heightguide/.style={draw=black, thin},
+    heightlbl/.style={font=\footnotesize, inner sep=1.6pt},
+    thr/.style={{Latex[length=1.6mm]}-{Latex[length=1.6mm]}, black,
+                line width=0.8pt},
+    arr/.style={-{Latex[length=1.8mm]}, black},
+    leader/.style={draw=black, thin},
+    corner/.style={fill=black, draw=black},
+    lbl/.style={font=\footnotesize, inner sep=1.6pt},
+  ]
+
+  % ---- configured plane
+  \draw[plane] (-2.60,0) -- (2.75,0);
+  \node[lbl, anchor=west] at (-2.60,-0.34) {Configured reference};
+
+  % ---- configured clearance threshold
+  \draw[datum] (-1.75,0.95) -- (2.30,0.95);
+
+  % ---- inclined tool, closest corner at the lower left of the face
+  \draw[plane] (-1.222,2.050) -- (1.222,2.570) -- (1.108,3.108)
+               -- (-1.336,2.588) -- cycle;
+  \draw[face]  (-1.222,2.050) -- (1.222,2.570);
+  \node[lbl] at (-0.06,2.58) {Tool};
+
+  \draw[corner] (-1.222,2.050) circle (1.9pt);
+  \draw[leader] (-1.16,1.98) -- (-0.92,1.68);
+  \node[lbl, anchor=west] at (-0.85,1.62) {Closest corner};
+
+  % ---- minimum tool-face clearance
+  \draw[height] (-2.30,0) -- (-2.30,2.050);
+  \draw[heightguide] (-2.30,2.050) -- (-1.28,2.050);
+  \node[heightlbl, anchor=east] at (-2.38,1.50) {$h_{\mathrm{Tool}}(t)$};
+
+  % ---- configured threshold value
+  \draw[thr] (1.45,0) -- (1.45,0.95);
+  \node[lbl, anchor=east] at (1.35,0.475) {$h_{\mathrm{clearance}}$};
+
+  % ---- surface normal, pointing towards free space
+  \draw[arr] (2.55,0.15) -- (2.55,1.15);
+  \node[lbl, anchor=south] at (2.55,1.22) {$n_s$};
+
+\end{tikzpicture}

@@ -1,0 +1,93 @@
+% Cartesian pose hold as one controller state with selectable null-space modes.
+% The mode is chosen first; pose capture and the hold itself close the chart.
+\begin{tikzpicture}[
+    scale=1.0,
+    font=\footnotesize\setstretch{1.0},
+    state/.style={draw=black, thick, rounded corners=5mm,
+                  text width=4.20cm, align=center,
+                  inner sep=4pt, minimum height=1.0cm},
+    % Start and Stop share one terminal shape; only the colour separates them.
+    startstate/.style={draw=black, thick, rounded corners=5mm,
+                       text width=2.55cm, align=center,
+                       inner sep=4pt, minimum height=1.0cm},
+    stopstate/.style={draw=red, text=red, thick, rounded corners=5mm,
+                      text width=2.55cm, align=center,
+                      inner sep=4pt, minimum height=1.0cm},
+    % The four modes take the capsule shape as well, at the taller mode height.
+    mode/.style={draw=black, thick, rounded corners=5mm,
+                 text width=3.45cm, align=center,
+                 inner sep=4pt, minimum height=1.90cm},
+    cond/.style={font=\scriptsize\setstretch{1.0}, align=center, inner sep=0pt},
+    stopcond/.style={font=\scriptsize\setstretch{1.0}, align=center,
+                     text=red, inner sep=0pt},
+    flow/.style={-{Latex[length=2mm]}, thick, black},
+    branch/.style={thick, black},
+    stopflow/.style={-{Latex[length=2mm]}, line width=0.7pt, red},
+  ]
+
+  \node[startstate] (start) at (-4.60,6.40) {Start};
+  \node[state, text width=3.20cm] (motion) at (0.00,6.40) {Motion Generator};
+  \node[state] (selector) at (0.00,4.00) {Operator Mode Selection};
+
+  \node[mode] (none)  at (-5.90,1.20) {Mode 0\\No Null-Space Torque};
+  \node[mode] (damp)  at (-1.97,1.20)
+      {Mode 1\\Damping Torque\\Set \(d_{\mathrm{null}}\)};
+  \node[mode] (sigma) at ( 1.97,1.20)
+      {Mode 2\\Conditioning Torque\\Set \(k_\sigma\)};
+  \node[mode] (both)  at ( 5.90,1.20)
+      {Mode 3\\Damping and Conditioning Torque\\%
+       Set \(d_{\mathrm{null}},\,k_\sigma\)};
+
+  \node[state] (capture)  at (0.00,-1.80) {Capture Current EE Pose};
+  \node[state] (hold)     at (0.00,-4.20) {Cartesian Pose Hold};
+  \node[state, text width=2.90cm] (guidance) at (5.90,-3.00)
+      {Manual Guidance};
+  \node[stopstate] (stop) at (0.00,-6.60) {Stop};
+
+  % The terminal enters the first state, so this segment carries no condition.
+  \draw[flow] (start.east) -- (motion.west);
+  \draw[flow] (motion.south) -- (selector.north);
+  \node[cond, anchor=west] at (0.30,5.20)
+      {if \(q_{\mathrm{init}}\) reached};
+
+  % Selection bus: the conditions sit above it and the arrows descend below it.
+  \draw[branch] (selector.south) -- (0.00,2.90);
+  \draw[branch] (-5.90,2.90) -- (5.90,2.90);
+  \draw[flow] (-5.90,2.90) -- (none.north);
+  \draw[flow] (-1.97,2.90) -- (damp.north);
+  \draw[flow] ( 1.97,2.90) -- (sigma.north);
+  \draw[flow] ( 5.90,2.90) -- (both.north);
+  \node[cond, anchor=south] at (-5.90,2.98) {if operator types \texttt{0}};
+  \node[cond, anchor=south] at (-1.97,2.98) {if operator types \texttt{1}};
+  \node[cond, anchor=south] at ( 1.97,2.98) {if operator types \texttt{2}};
+  \node[cond, anchor=south] at ( 5.90,2.98) {if operator types \texttt{3}};
+
+  % The four modes rejoin one path into pose capture.
+  \draw[branch] (none.south)  -- (-5.90,-0.30);
+  \draw[branch] (damp.south)  -- (-1.97,-0.30);
+  \draw[branch] (sigma.south) -- ( 1.97,-0.30);
+  \draw[branch] (both.south)  -- ( 5.90,-0.30);
+  \draw[branch] (-5.90,-0.30) -- (5.90,-0.30);
+  \draw[flow] (0.00,-0.30) -- (capture.north);
+
+  \draw[flow] (capture) -- (hold);
+  \node[cond, anchor=west] at (0.30,-3.00)
+      {\(p_d=p_{\mathrm{EE}}\)\\\(R_d=R_{\mathrm{EE}}\)};
+
+  % Runtime guidance leaves the hold and returns through pose capture.
+  \draw[flow] (hold.east) -- (5.90,-4.20) -- (guidance.south);
+  \node[cond, anchor=south] at (4.07,-4.10) {if operator types \texttt{g}};
+  \draw[flow] (guidance.north) -- (5.90,-1.80) -- (capture.east);
+  \node[cond, anchor=south] at (4.07,-1.70) {if operator types \texttt{p}};
+
+  % A live switch: the mode changes inside the hold, which is not left and not
+  % re-entered, so this is a self-loop rather than a return to the selector.
+  \draw[flow] ($(hold.west)+(0,0.35)$) -- (-4.00,-3.85) -- (-4.00,-4.55)
+      -- ($(hold.west)+(0,-0.35)$);
+  \node[cond, text width=2.75cm, anchor=east] at (-4.15,-4.20)
+      {if operator types \texttt{0}, \texttt{1}, \texttt{2}, or \texttt{3}};
+
+  \draw[stopflow] (hold.south) -- (stop.north);
+  \node[stopcond, anchor=west, align=left] at (0.30,-5.40)
+      {if stop requested \(\lor\)\\robot error/reflex};
+\end{tikzpicture}

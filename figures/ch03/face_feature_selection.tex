@@ -1,0 +1,74 @@
+% Rectangular tool face in the end-effector frame, drawn in an oblique view so
+% that the corner offset can be seen to start at the end-effector origin. The
+% earlier plan view showed the face alone, which left r_face,EE and r_i,EE
+% looking like offsets from the face centre rather than from the TCP.
+%
+% Screen mapping of an end-effector point (x,y,z):
+%   X = x + 0.45y,   Y = 0.52y - z
+% with x along the half-width, y along the half-length, and z along the tool
+% axis, drawn downwards because the face sits below the flange. Half-extents
+% a = 1.0 and b = 3.0 hold the 40 x 120 mm face proportions of Section 4.1.1;
+% the centre offset c = 2.2 is enlarged so that the origin sits clear of the
+% face, and is therefore not to that scale.
+%
+%   O  = (0,0,0)    -> ( 0.00,  0.00)   end-effector origin, the TCP
+%   Fc = (0,0,c)    -> ( 0.00, -2.20)   face centre
+%   A  = ( a, b,c)  -> ( 2.35, -0.64)   the labelled corner
+%   B  = (-a, b,c)  -> ( 0.35, -0.64)
+%   C  = (-a,-b,c)  -> (-2.35, -3.76)
+%   D  = ( a,-b,c)  -> (-0.35, -3.76)
+%   W  = ( a, 0,c)  -> ( 1.00, -2.20)   tip of the half-width vector
+%   L  = ( 0, b,c)  -> ( 1.35, -0.64)   tip of the half-length vector
+%
+% The half-length label is set sloped along its own arrow. Placed horizontally
+% it runs past the slanted face edge whichever side of the arrow it is put on.
+% Uses only tikz + arrows.meta, which config/packages.tex loads.
+\begin{tikzpicture}[
+    scale=1.15,
+    font=\footnotesize,
+    face/.style={draw=black, line width=0.9pt},
+    vec/.style={-{Latex[length=1.8mm]}, black, line width=0.8pt},
+    axis/.style={-{Latex[length=1.6mm]}, black, line width=0.6pt},
+    resultant/.style={-{Latex[length=1.8mm]}, black, line width=0.8pt,
+                      densely dashed},
+    pt/.style={fill=black, draw=black},
+    lbl/.style={font=\footnotesize, inner sep=1.6pt},
+  ]
+
+  % ---- end-effector axis triad, clear of the face
+  \draw[axis] (-2.55,0.62) -- (-1.95,0.62);
+  \node[lbl, anchor=west] at (-1.92,0.62) {$x_{\mathrm{EE}}$};
+  \draw[axis] (-2.55,0.62) -- (-2.28,0.93);
+  \node[lbl, anchor=south] at (-2.26,0.95) {$y_{\mathrm{EE}}$};
+  \draw[axis] (-2.55,0.62) -- (-2.55,0.02);
+  \node[lbl, anchor=east] at (-2.61,0.30) {$z_{\mathrm{EE}}$};
+
+  % ---- the calibrated face
+  \draw[face] (2.35,-0.64) -- (0.35,-0.64) -- (-2.35,-3.76)
+              -- (-0.35,-3.76) -- cycle;
+
+  % ---- the end-effector origin, which is the TCP in the implemented model
+  \node[pt] at (0,0) [circle, inner sep=1.5pt] {};
+  \node[lbl, anchor=east] at (-0.12,0.02) {$p_{\mathrm{TCP}}$};
+
+  % ---- centre offset, then the two half-vectors from the face centre
+  \draw[vec] (0,0) -- (0,-2.20);
+  \node[lbl, anchor=east] at (-0.16,-0.85) {$r_{\mathrm{face,EE}}$};
+  \node[pt] at (0,-2.20) [circle, inner sep=1.2pt] {};
+
+  \draw[vec] (0,-2.20) -- (1.00,-2.20);
+  \node[lbl, anchor=west] at (1.25,-2.20) {$r_{\mathrm{width,EE}}$};
+
+  \draw[vec] (0,-2.20)
+    -- node[lbl, sloped, above=1.5pt, pos=0.55] {$r_{\mathrm{length,EE}}$}
+       (1.35,-0.64);
+
+  % ---- the resulting corner offset, measured from the TCP
+  \draw[resultant] (0,0) -- (2.35,-0.64);
+  \node[lbl, anchor=south] at (1.60,-0.30) {$r_{i,\mathrm{EE}}$};
+
+  % ---- the four corners
+  \foreach \x/\y in {2.35/-0.64, 0.35/-0.64, -2.35/-3.76, -0.35/-3.76}
+    {\node[pt] at (\x,\y) [circle, inner sep=1.4pt] {};}
+
+\end{tikzpicture}

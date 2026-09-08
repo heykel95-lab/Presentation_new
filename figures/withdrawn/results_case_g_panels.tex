@@ -1,0 +1,54 @@
+% Case E plotted against the achieved pose-based initial angular offset,
+% with the two centre positions as the compared series.
+% Values from Table~\ref{tab:results_case_e}.
+\begin{tikzpicture}
+\pgfplotsset{
+  every axis/.append style={
+    width=7.1cm, height=6.0cm,
+    xmin=3.5, xmax=11.5, ymin=-3.5, ymax=11.5,
+    ytick={-3,0,3,6,9},
+    grid=major,
+    grid style={gray!25, very thin},
+    tick label style={font=\footnotesize},
+    label style={font=\footnotesize},
+    % The legend entries are wider than the panel at \footnotesize, so they
+    % overhung the axis and landed on the data. \scriptsize with the extra
+    % headroom above keeps both legends clear of the curves.
+    legend style={font=\scriptsize, draw=gray!50, fill=white,
+                  cells={anchor=west}, inner sep=1.6pt, row sep=-1pt},
+    every axis plot/.append style={thick, mark size=2.1pt},
+  },
+}
+\begin{groupplot}[
+    % The right panel's two-line y-label occupies this gap. The panels are
+    % wide enough that the legend fits inside the axis frame at this
+    % separation.
+    group style={group size=2 by 1, horizontal sep=2.0cm},
+  ]
+
+\nextgroupplot[
+    xtick={4.28,9.32},
+    xlabel={\shortstack{Achieved Initial Angular Offset,\\\(\theta_{\mathrm{ach},t_1}\) [\(^\circ\)]}},
+    ylabel={\shortstack{Contact Rotation About \(t_1\),\\\(\gamma_{t_1}\) [\(^\circ\)]}},
+    title={\footnotesize (a) offset about \(t_1\)},
+    legend pos=north west,
+  ]
+\addplot[black, mark=o] coordinates {(4.28,2.55) (9.32,7.57)};
+\addlegendentry{CoC at TCP, \(r_{c,t_2}=0\,\mathrm{mm}\)}
+\addplot[blue!55!black, mark=square] coordinates {(4.28,2.70) (9.32,7.87)};
+\addlegendentry{Tangential CoC, \(r_{c,t_2}=+40\,\mathrm{mm}\)}
+
+\nextgroupplot[
+    xtick={5.16,10.03},
+    xlabel={\shortstack{Achieved Initial Angular Offset,\\\(\theta_{0,t_2}\) [\(^\circ\)]}},
+    ylabel={\shortstack{Contact Rotation About \(t_2\),\\\(\gamma_{t_2}\) [\(^\circ\)]}},
+    title={\footnotesize (b) offset about \(t_2\)},
+    legend pos=north west,
+  ]
+\addplot[black, mark=o] coordinates {(5.16,-1.40) (10.03,-1.63)};
+\addlegendentry{CoC at TCP, \(r_{c,t_1}=0\,\mathrm{mm}\)}
+\addplot[blue!55!black, mark=square] coordinates {(5.16,5.91) (10.03,4.43)};
+\addlegendentry{Tangential CoC, \(r_{c,t_1}=-40\,\mathrm{mm}\)}
+
+\end{groupplot}
+\end{tikzpicture}

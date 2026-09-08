@@ -1,0 +1,28 @@
+\begin{tikzpicture}[
+  scale=1.0,
+  physical/.style={blue!70!black, line width=1.1pt},
+  reference/.style={red!75!black, line width=1.1pt},
+  tool/.style={green!60!black, line width=1.2pt},
+  angle/.style={-{Latex[length=1.8mm]}, line width=0.9pt},
+  lbl/.style={font=\footnotesize}
+]
+  \coordinate (o) at (0,0);
+
+  % The three lines compare orientations only. The physical orientation is
+  % illustrative because it was not measured independently.
+  \draw[physical] (-4.2,0) -- (4.2,0);
+  \draw[reference] (190:4.2) -- (10:4.2);
+  \draw[tool] (212:4.2) -- (32:4.2);
+
+  \node[lbl, blue!70!black, anchor=north west] at (4.25,-0.08)
+    {Physical surface};
+  \node[lbl, red!75!black, anchor=south west] at (4.05,0.82)
+    {Configured reference};
+  \node[lbl, green!60!black, anchor=south west] at (3.52,2.34)
+    {Tool face at contact entry};
+
+  % theta_{\mathrm{ach},t_1} is drawn from the configured reference to the achieved face.
+  \draw[angle, red!75!black] (10:1.52) arc[start angle=10,end angle=32,radius=1.52];
+  \node[lbl, red!75!black, anchor=south west] at (21:1.95)
+    {$\theta_{\mathrm{ach},t_1}$};
+\end{tikzpicture}

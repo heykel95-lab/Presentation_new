@@ -1,0 +1,40 @@
+% Supporting check 2 compares displacing the centre of compliance
+% along the surface tangent against displacing it along the tool axis, for the
+% same configured orientation offset. Case-D values from Table~\ref{tab:results_case_d},
+% Tool-axis values and their standard deviations from
+% Table~\ref{tab:supporting_tool_axis}.
+\begin{tikzpicture}
+\begin{axis}[
+    width=11.0cm, height=5.8cm,
+    xmin=-48, xmax=48, ymin=-1, ymax=10,
+    xtick={-40,-20,-10,0,10,20,40},
+    ytick={0,2,4,6,8},
+    grid=major,
+    grid style={gray!25, very thin},
+    tick label style={font=\footnotesize},
+    label style={font=\footnotesize},
+    xlabel={Configured CoC Displacement [mm]},
+    ylabel={Contact Response About \(t_1\), \(\gamma_{t_1}\) [\(^\circ\)]},
+    legend style={font=\scriptsize, draw=none, fill=none,
+                  cells={anchor=west}, at={(0.5,-0.27)}, anchor=north,
+                  legend columns=2, column sep=1.5em},
+    every axis plot/.append style={thick, mark size=2.1pt},
+  ]
+
+\addplot[black, mark=o] coordinates {
+  (-40,0.18) (-20,0.99) (-10,7.45) (0,7.57) (10,7.67) (20,7.73) (40,7.87)};
+\addlegendentry{Tangential Displacement, \(r_{c,t_2}\)}
+
+\addplot[blue!55!black, mark=square,
+         error bars/.cd, y dir=both, y explicit] coordinates {
+  (-40,7.26) +- (0,0.13)
+  (-20,7.49) +- (0,0.01)
+  (-10,7.58) +- (0,0.01)
+  (0,7.57)   +- (0,0.01)
+  (10,7.58)  +- (0,0.01)
+  (20,7.55)  +- (0,0.03)
+  (40,7.60)  +- (0,0.04)};
+\addlegendentry{Tool-Axis Displacement}
+
+\end{axis}
+\end{tikzpicture}

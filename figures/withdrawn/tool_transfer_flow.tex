@@ -1,0 +1,35 @@
+\begin{tikzpicture}[
+  node distance=7mm and 18mm,
+  blk/.style={draw=gray!70!black, fill=white, rounded corners=2pt,
+              align=center, minimum width=42mm, minimum height=8mm,
+              font=\footnotesize},
+  src/.style={draw=gray!60, fill=white, rounded corners=2pt,
+              align=center, minimum width=42mm, minimum height=8mm,
+              font=\footnotesize},
+  sel/.style={draw=gray!70!black, fill=white, rounded corners=2pt,
+              align=center, minimum width=42mm, minimum height=8mm,
+              font=\footnotesize},
+  stop/.style={draw=gray!70!black, fill=white, rounded corners=2pt,
+               align=center, minimum width=34mm, minimum height=8mm,
+               font=\footnotesize},
+  sig/.style={-{Latex[length=2mm]}, thick, gray!55!black},
+  fail/.style={-{Latex[length=2mm]}, thick, red!65!black},
+  lbl/.style={font=\footnotesize, inner sep=2pt}
+]
+  \node[src] (config) {Pickup configuration\\Set stand-off};
+  \node[blk, below=of config] (solve) {Solve \(q_{\mathrm{above}}\)\\Check joint limits};
+  \node[stop, right=of solve] (abort) {Abort transfer};
+  \node[blk, below=of solve] (initial) {Move to \(q_{\mathrm{init}}\)};
+  \node[blk, below=of initial] (above) {Move to \(q_{\mathrm{above}}\)};
+  \node[blk, below=of above] (pickup) {Move to \(q_{\mathrm{pickup}}\)};
+  \node[sel, below=of pickup] (gripper) {Gripper action\\Execute and verify};
+  \node[blk, below=of gripper] (lift) {Return to \(q_{\mathrm{above}}\)};
+
+  \draw[sig] (config) -- (solve);
+  \draw[sig] (solve) -- node[lbl, right] {valid} (initial);
+  \draw[fail] (solve.east) -- node[lbl, above] {invalid} (abort.west);
+  \draw[sig] (initial) -- (above);
+  \draw[sig] (above) -- (pickup);
+  \draw[sig] (pickup) -- (gripper);
+  \draw[sig] (gripper) -- (lift);
+\end{tikzpicture}

@@ -1,0 +1,80 @@
+% Three principal selected-tool-point outcomes, drawn as the rectangular tool
+% face above the surface plane in an oblique view. The finite tool-point selection tolerance
+% can also admit a three-corner group, so these panels are not exhaustive.
+% Screen mapping of a face point (x,y,z): X = 1.55x + 0.50y, Y = 0.75y + z,
+% with x along the half-width, y along the half-length and z along n_s, so
+% the surface normal points up the page.
+% Face height 2.35, half-extents 0.40 and 0.80; the offsets lower a corner by
+% 0.18 about the half-width direction and by 0.16 about the half-length one.
+% Uses only tikz + arrows.meta, which config/packages.tex loads.
+\begin{tikzpicture}[
+    scale=1.25,
+    font=\footnotesize,
+    plane/.style={draw=black},
+    face/.style={draw=black, thick},
+    diag/.style={draw=black, thin},
+    selected/.style={fill=blue, draw=blue},
+    free/.style={fill=black, draw=black},
+    arr/.style={-{Latex[length=1.8mm]}, black},
+    height/.style={{Latex[length=1.6mm]}-{Latex[length=1.6mm]},
+                   black, line width=0.8pt},
+    heightlbl/.style={font=\footnotesize, inner sep=1.6pt},
+    lbl/.style={font=\footnotesize, inner sep=1.6pt},
+  ]
+
+  % ---- (a) offsets about both tangents: one corner leads
+  \begin{scope}
+    \draw[plane] (-1.511,-0.825) -- (0.411,-0.825) -- (1.511,0.825)
+                 -- (-0.411,0.825) -- cycle;
+    \draw[face]  (-1.02,1.41) -- (0.22,1.77) -- (1.02,3.29)
+                 -- (-0.22,2.93) -- cycle;
+    \draw[height] (-1.02,1.41) -- (-1.02,-0.60);
+    \node[heightlbl, anchor=east] at (-1.10,0.40) {$h_{\mathrm{Tool}}(t)$};
+    \foreach \x/\y in {0.22/1.77, 1.02/3.29, -0.22/2.93}
+      {\draw[free] (\x,\y) circle (1.3pt);}
+    \draw[selected] (-1.02,1.41) circle (1.9pt);
+    \node[lbl, anchor=west] at (-0.84,1.20) {\color{blue}$p_{\mathrm{Tool}}$};
+    \node[lbl, anchor=north] at (0,-1.20) {(a) Leading corner};
+  \end{scope}
+
+  % ---- (b) an offset about one tangent: two corners lead together
+  \begin{scope}[xshift=4.1cm]
+    \draw[plane] (-1.511,-0.825) -- (0.411,-0.825) -- (1.511,0.825)
+                 -- (-0.411,0.825) -- cycle;
+    \draw[face]  (-1.02,1.59) -- (0.22,1.59) -- (1.02,3.11)
+                 -- (-0.22,3.11) -- cycle;
+    \draw[height] (-0.40,1.59) -- (-0.40,-0.60);
+    \node[heightlbl, anchor=west] at (-0.32,0.50) {$h_{\mathrm{Tool}}(t)$};
+    \draw[blue, line width=1.2pt] (-1.02,1.59) -- (0.22,1.59);
+    \foreach \x/\y in {1.02/3.11, -0.22/3.11}
+      {\draw[free] (\x,\y) circle (1.3pt);}
+    \foreach \x/\y in {-1.02/1.59, 0.22/1.59}
+      {\draw[selected] (\x,\y) circle (1.7pt);}
+    \draw[selected] (-0.40,1.59) circle (1.9pt);
+    \node[lbl, anchor=east] at (-0.52,1.30) {\color{blue}$p_{\mathrm{Tool}}$};
+    \node[lbl, anchor=north] at (0,-1.20) {(b) Leading-edge midpoint};
+  \end{scope}
+
+  % ---- (c) face parallel to the surface: all four corners lead
+  \begin{scope}[xshift=8.2cm]
+    \draw[plane] (-1.511,-0.825) -- (0.411,-0.825) -- (1.511,0.825)
+                 -- (-0.411,0.825) -- cycle;
+    \draw[face]  (-1.02,1.75) -- (0.22,1.75) -- (1.02,2.95)
+                 -- (-0.22,2.95) -- cycle;
+    \draw[height] (0,2.35) -- (0,0);
+    \node[heightlbl, anchor=west] at (0.08,1.18) {$h_{\mathrm{Tool}}(t)$};
+    % the diagonals meet at the face centre, which is what the mean of four
+    % selected corners returns
+    \draw[diag] (-1.02,1.75) -- (1.02,2.95);
+    \draw[diag] (0.22,1.75) -- (-0.22,2.95);
+    \foreach \x/\y in {-1.02/1.75, 0.22/1.75, 1.02/2.95, -0.22/2.95}
+      {\draw[selected] (\x,\y) circle (1.7pt);}
+    \draw[selected] (0,2.35) circle (1.9pt);
+    \draw[blue!55!black, thin] (-1.14,2.35) -- (-0.08,2.35);
+    \node[lbl, anchor=east] at (-1.20,2.35) {\color{blue}$p_{\mathrm{Tool}}$};
+    \draw[arr] (1.85,1.05) -- (1.85,3.05);
+    \node[lbl, anchor=south] at (1.85,3.15) {$n_s$};
+    \node[lbl, anchor=north] at (0,-1.20) {(c) Tool-face centre};
+  \end{scope}
+
+\end{tikzpicture}

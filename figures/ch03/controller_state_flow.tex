@@ -1,0 +1,79 @@
+% Program-level controller states and their transition conditions.
+% Controller states use one capsule shape across all Chapter 3 flowcharts.
+\begin{tikzpicture}[
+    xscale=1.00,
+    yscale=1.00,
+    font=\footnotesize\setstretch{1.0},
+    state/.style={draw=black, thick, rounded corners=5mm,
+                  text width=3.15cm, align=center,
+                  inner sep=4pt, minimum height=1.0cm},
+    % Start and Stop share one terminal shape; only the colour separates them.
+    startstate/.style={draw=black, thick, rounded corners=5mm,
+                       text width=3.15cm, align=center,
+                       inner sep=4pt, minimum height=1.0cm},
+    stopstate/.style={draw=red, text=red, thick, rounded corners=5mm,
+                      text width=3.15cm, align=center,
+                      inner sep=4pt, minimum height=1.0cm},
+    flow/.style={-{Latex[length=2mm]}, thick, black},
+    stopflow/.style={-{Latex[length=2mm]}, line width=0.7pt, red},
+    exitflow/.style={-{Latex[length=2mm]}, line width=0.7pt, black},
+    rail/.style={line width=0.7pt, black},
+    cond/.style={font=\scriptsize\setstretch{1.0}, align=center, inner sep=0pt},
+    stopcond/.style={font=\scriptsize\setstretch{1.0}, align=center,
+                     text=red, inner sep=0pt},
+  ]
+
+  \node[startstate] (start) at (0.00, 1.75) {Start};
+  \node[state] (recovery)  at (0.00, 0.00) {Robot Recovery};
+  \node[state] (selection) at (0.00,-1.75) {Controller Selection};
+
+  \node[state] (surface)     at (-5.40,-4.40) {Contact Sequence};
+  \node[state] (pose)        at (-1.80,-4.40) {Cartesian Pose Hold};
+  \node[state] (contacthold) at ( 1.80,-4.40) {Contact-Impedance Hold};
+  \node[state] (guidance)    at ( 5.40,-4.40) {Manual Guidance};
+  \node[stopstate] (stop) at ( 0.00,-7.90) {Stop};
+
+  % The terminal enters the first state, so this segment carries no condition.
+  \draw[flow] (start) -- (recovery);
+  \draw[flow] (recovery) -- (selection);
+  \node[cond, anchor=west] at (0.30,-0.88) {if recovery succeeds};
+
+  \coordinate (split) at (0.00,-2.90);
+  \draw[flow] (selection) -- (split);
+  \draw[flow] (split) -- (-5.40,-2.90) -- (surface);
+  \draw[flow] (split) -- (-1.80,-2.90) -- (pose);
+  \draw[flow] (split) -- ( 1.80,-2.90) -- (contacthold);
+  \draw[flow] (split) -- ( 5.40,-2.90) -- (guidance);
+  \node[cond, anchor=south] at (-5.40,-2.68)
+      {if operator types \texttt{s}};
+  \node[cond, anchor=south] at (-1.80,-2.68)
+      {if operator types \texttt{h}};
+  \node[cond, anchor=south] at (1.80,-2.68)
+      {if operator types \texttt{t}};
+  \node[cond, anchor=south] at (5.40,-2.68)
+      {if operator types \texttt{g}};
+
+  % One light shared exit rail for all active controller states. It leaves in
+  % two directions: red to Stop, black back to Controller Selection.
+  \coordinate (railleft) at (-5.40,-5.80);
+  \coordinate (railright) at (5.40,-5.80);
+  \draw[exitflow] (surface) -- (railleft);
+  \draw[exitflow] (pose) -- (-1.80,-5.80);
+  \draw[exitflow] (contacthold) -- (1.80,-5.80);
+  \draw[exitflow] (guidance) -- (railright);
+  \draw[rail] (railleft) -- (railright);
+  \draw[stopflow] (0.00,-5.80) -- (stop);
+
+  % Operator return from any active controller state to the selection state.
+  \draw[exitflow] (railright) -- (7.60,-5.80) -- (7.60,-1.75)
+      -- (selection.east);
+  \node[cond, anchor=south] at (4.66,-1.65) {if operator types \texttt{m}};
+  \node[stopcond, anchor=west, align=left] at (0.38,-6.72)
+      {if stop requested \(\lor\) robot error/reflex};
+
+  % Recovery can fail before a controller state is selected.
+  \draw[stopflow] (recovery.west) -- (-7.20,0.00) -- (-7.20,-7.90)
+      -- (stop.west);
+  \node[stopcond, anchor=south] at (-5.10,0.22) {if recovery fails};
+
+\end{tikzpicture}

@@ -1,0 +1,100 @@
+% The frames named in sec:reference_frames, in one schematic elevation.
+% The arm is drawn only to place the frames; it is not a kinematic diagram and
+% carries no link lengths. The desired frame is drawn offset from the
+% end-effector frame so that the position error used by the impedance law is a
+% visible displacement rather than only an equation.
+%
+% Uses only tikz + arrows.meta/calc, which config/packages.tex loads. Colour
+% follows the established meaning: grey for measured or structural quantities,
+% orange for the commanded frame that a parameter selects, blue for the surface
+% frame the task is defined against.
+%
+% Clearance note. The end-effector cluster is the crowded part of this drawing:
+% four labels and the error arrow meet there. Three directions are kept free
+% around it and nothing else may be placed on them: up-right for the error
+% arrow to {d}, down-right for z_EE toward the surface, and up-left for the
+% frame label itself.
+\begin{tikzpicture}[
+    font=\small,
+    link/.style={draw=gray!55, line width=2.4pt, line cap=round},
+    base/.style={draw=gray!70!black, fill=gray!22},
+    surf/.style={draw=gray!70!black, fill=gray!12},
+    meas/.style={-{Latex[length=1.8mm]}, gray!55!black},
+    des/.style={-{Latex[length=1.8mm]}, densely dashed, orange!75!black},
+    tsk/.style={-{Latex[length=1.8mm]}, blue!55!black},
+    err/.style={-{Latex[length=2.0mm]}, thick, gray!45!black},
+    lbl/.style={font=\footnotesize, inner sep=1.8pt},
+    jt/.style={circle, draw=gray!60!black, fill=white, inner sep=0pt,
+               minimum size=3.4pt},
+  ]
+
+% ============================== base frame ===============================
+\draw[base] (-0.55,-0.30) rectangle (0.55,0.10);
+\node[lbl, gray!55!black] at (0,-0.54) {$\{0\}$};
+
+% The into-page axis marks the frame origin, so the two drawn axes start
+% clear of its circle rather than from the point beneath it.
+\draw[meas] (0.19,0.10) -- (1.05,0.10) node[lbl, right] {$x_0$};
+\draw[meas] (0,0.29) -- (0,1.20) node[lbl, above] {$z_0$};
+
+% ============================ schematic arm ==============================
+% Joint frames are indexed along this chain; the controller takes its poses
+% from the robot model rather than from a drawn parameterisation.
+\draw[link] (0,0.10) -- (0.95,2.55);
+\draw[link] (0.95,2.55) -- (3.30,3.15);
+\draw[link] (3.30,3.15) -- (4.45,1.85);
+\node[jt] at (0.95,2.55) {};
+\node[jt] at (3.30,3.15) {};
+
+% The base origin marker is drawn after the chain so the first link passes
+% behind it rather than through the symbol.
+\draw[gray!60!black, fill=white] (0,0.10) circle (0.13);
+\draw[gray!60!black] (-0.09,0.19) -- (0.09,0.01);
+\draw[gray!60!black] (-0.09,0.01) -- (0.09,0.19);
+\node[lbl, anchor=south east, gray!60!black] at (-0.14,0.16) {$y_0$};
+\node[lbl, gray!55!black] at (1.80,3.12) {$\{i\}$};
+
+% ========================= end-effector frame ============================
+\coordinate (EE) at (4.45,1.85);
+\node[jt] at (EE) {};
+\draw[meas] (EE) -- ++(0.86,0.34);
+\node[lbl, anchor=west, gray!55!black] at ($(EE)+(0.94,0.20)$)
+      {$x_{\mathrm{EE}}$};
+\draw[meas] (EE) -- ++(0.34,-0.86);
+\node[lbl, anchor=east, gray!55!black] at ($(EE)+(0.10,-0.78)$)
+      {$z_{\mathrm{EE}}$};
+\node[lbl, anchor=east, gray!55!black] at ($(EE)+(-0.14,-0.04)$)
+      {$\{\mathrm{EE}\}$};
+
+% ========================== desired frame {d} ============================
+\coordinate (D) at (5.90,2.95);
+\node[jt] at (D) {};
+\draw[des] (D) -- ++(0.86,0.34);
+\draw[des] (D) -- ++(0.34,-0.86);
+\node[lbl, anchor=south east, orange!65!black] at ($(D)+(-0.06,0.04)$)
+      {$\{d\}$};
+
+% ---- the position error the impedance law acts on -----------------------
+\draw[err] (EE) -- (D);
+\node[lbl, anchor=south east, gray!45!black]
+      at ($(EE)!0.55!(D)+(0.02,0.04)$) {$e_p$};
+
+% ============================ surface frame ==============================
+\begin{scope}[shift={(5.95,-0.10)}, rotate=-7]
+  \fill[surf] (-1.95,-0.30) rectangle (1.95,0);
+  \draw[gray!70!black] (-1.95,0) -- (1.95,0);
+
+  % t_2 points into the page and marks p_s, so the two drawn tangent-frame
+  % axes start clear of its circle.
+  \coordinate (S) at (-0.55,0);
+  \draw[tsk] ($(S)+(0.19,0)$) -- ++(0.96,0) node[lbl, right] {$t_1$};
+  \draw[tsk] ($(S)+(0,0.19)$) -- ++(0,0.86) node[lbl, above] {$n_s$};
+  \draw[blue!55!black, fill=white] (S) circle (0.13);
+  \draw[blue!55!black] ($(S)+(-0.09,0.09)$) -- ($(S)+(0.09,-0.09)$);
+  \draw[blue!55!black] ($(S)+(-0.09,-0.09)$) -- ($(S)+(0.09,0.09)$);
+  \node[lbl, anchor=south east, blue!50!black] at ($(S)+(-0.14,0.16)$) {$t_2$};
+  \node[lbl, anchor=north, blue!50!black] at ($(S)+(0,-0.42)$) {$p_s$};
+  \node[lbl, blue!50!black] at (1.55,0.62) {$\{S\}$};
+\end{scope}
+
+\end{tikzpicture}

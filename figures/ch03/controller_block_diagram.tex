@@ -1,0 +1,102 @@
+% Classical Cartesian feedback loop with additive model and null-space terms.
+% Rectangles name operations; crossed circles mark difference and sum junctions.
+\begin{tikzpicture}[
+    scale=0.98,
+    font=\small\setstretch{1.0},
+    blk/.style={draw=black, line width=0.75pt, minimum height=1.10cm,
+                inner xsep=0.8mm, inner ysep=0.8mm, align=center,
+                outer sep=0pt, font=\scriptsize\setstretch{1.0}},
+    main/.style={blk, minimum height=1.25cm},
+    junction/.style={circle, draw=black, line width=0.75pt,
+                     minimum size=1.10cm, inner sep=0pt, outer sep=0pt},
+    sig/.style={-{Latex[length=2mm]}, thick, black},
+    info/.style={-{Latex[length=1.8mm]}, line width=0.7pt, black},
+    lbl/.style={font=\scriptsize\setstretch{1.0}, inner sep=1.2pt},
+    sign/.style={font=\scriptsize, inner sep=0pt},
+  ]
+
+  % Dominant reference-to-robot path.
+  \node[junction] (error) at (-6.70,0.00) {};
+  \node[main] (controller) at (-3.40,0.00) {Impedance Controller};
+  \node[main] (mapping) at (-0.15,0.00) {$J^\top F$};
+  \node[junction] (sum) at (2.35,0.00) {};
+  \node[main] (robot) at (5.55,0.00) {Joint Motors};
+
+  % The crosses are drawn between opposite anchors, so each arm spans the full
+  % junction diameter whatever size the circle is given.
+  \draw[line width=0.55pt]
+      (error.45) -- (error.225)  (error.135) -- (error.315);
+  \draw[line width=0.55pt]
+      (sum.45) -- (sum.225)  (sum.135) -- (sum.315);
+
+  % The junctions carry no name: the crossed circle and its signs identify
+  % them, and the running text names them.
+
+  \draw[sig] (error.east) --
+      node[lbl, above=1.5pt] {$e_p,\ e_R$} (controller.west);
+  \draw[sig] (controller.east) --
+      node[lbl, above=1.5pt] {$F$} (mapping.west);
+  \draw[sig] (mapping.east) --
+      node[lbl, above=1.5pt] {$\tau_{\mathrm{cart}}$} (sum.west);
+  \draw[sig] (sum.east) --
+      node[lbl, above=1.5pt] {$\tau_{\mathrm{cmd}}$} (robot.west);
+
+  % The reference leaves its box normally and enters the junction from the
+  % left; the feedback enters from below. Each sign sits in the wedge between
+  % the cross arms that its own arrow points into.
+  \node[blk] (reference) at (-6.70,2.15) {Desired Cartesian Reference};
+  \coordinate (refdrop) at ($(reference.south west)!0.12!(reference.south east)$);
+  \draw[sig] (refdrop) -- (refdrop |- error.west) -- (error.west);
+  \node[lbl, anchor=south west] at ($(refdrop)+(0.12,-0.92)$)
+      {$p_d,\ R_d,\ \dot p_d,\ \omega_d$};
+  \node[sign] at ($(error.center)+(-0.30,0)$) {$+$};
+  \node[sign] at ($(error.center)+(0,-0.30)$) {$-$};
+
+  % Robot-model and null-space terms remain secondary to the main path.
+  \node[blk] (model) at (-0.15,2.15) {Robot Model};
+  \node[blk] (null) at (4.05,2.15) {Null-Space Term};
+
+  \draw[info] (model.south) -- node[lbl, left] {$J(q)$} (mapping.north);
+  \draw[info] (model.east) --
+      node[lbl, above] {$q,\ \dot q,\ J(q)$} (null.west);
+
+  % Each rectangular source is left normal to its border before a route turns.
+  % The two additive terms enter at 115 and 65 degrees, inside the top wedge, so
+  % each arrowhead points at its own sign rather than at an arm of the cross.
+  \coordinate (modelc) at ($(model.south west)!0.76!(model.south east)$);
+  \coordinate (sumc) at (sum.115);
+  \coordinate (coriolislevel) at (1.25,1.25);
+  \draw[info] (modelc) -- (modelc |- coriolislevel) --
+      node[lbl, above] {$\tau_c(q,\dot q)$}
+      (sumc |- coriolislevel) -- (sumc);
+
+  \coordinate (sumnull) at (sum.65);
+  \coordinate (nulllevel) at (4.05,0.92);
+  \draw[info] (null.south) -- (nulllevel) --
+      node[lbl, above, pos=0.32] {$\tau_{\mathrm{null}}$}
+      (sumnull |- nulllevel) -- (sumnull);
+
+  \node[sign] at ($(sum.center)+(-0.30,0)$) {$+$};
+  \node[sign] at ($(sum.center)+(0,0.36)$) {$+$};
+
+  % The robot-state interface supplies the physical feedback and model input.
+  \node[blk] (measured) at (5.55,-2.15) {Measured Robot State};
+  \draw[sig] (robot.south) --
+      node[lbl, left=4pt, pos=0.62] {Joint motion sensors} (measured.north);
+
+  % Feedback leaves the bottom edge normally and enters the error junction
+  % vertically, leaving its name clear beside the circle.
+  \coordinate (feedbacklevel) at (0.00,-3.65);
+  \draw[sig] (measured.south) -- (measured.south |- feedbacklevel) --
+      node[lbl, above]
+      {$p_{\mathrm{EE}},\ R_{\mathrm{EE}},\ \dot p_{\mathrm{EE}},\ \omega_{\mathrm{EE}}$}
+      (error.south |- feedbacklevel) -- (error.south);
+
+  % Joint state leaves the measured-state block normally through its right edge
+  % and enters the model normally through its top edge.
+  \coordinate (stateout) at ($(measured.south east)!0.62!(measured.north east)$);
+  \coordinate (statehigh) at (7.50,3.45);
+  \draw[info] (stateout) -- (stateout -| statehigh) -- (statehigh) --
+      node[lbl, above] {$q,\ \dot q$} (model.north |- statehigh) -- (model.north);
+
+\end{tikzpicture}

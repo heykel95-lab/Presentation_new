@@ -1,0 +1,101 @@
+% Contact geometry, physical action on the robot, and the directional endpoint
+% quantities reported in the professor-email comparison.
+\begin{tikzpicture}[
+  x=0.76cm,
+  y=0.76cm,
+  >=Latex,
+  label/.style={font=\footnotesize, inner sep=1.5pt},
+  smalllabel/.style={font=\scriptsize, inner sep=1.2pt}
+]
+  % ---------------------------------------------------------------
+  % Panel (a): surface-on-robot action and measured pose change.
+  % ---------------------------------------------------------------
+  \node[label, anchor=west] at (0.20,4.15)
+    {\textbf{(a) Physical action on the robot}};
+
+  \draw[very thick, black] (0.25,0.70) -- (12.45,0.70);
+  \node[smalllabel, anchor=north east] at (12.40,0.55)
+    {Configured reference plane};
+
+  \coordinate (contact) at (1.10,0.70);
+  \coordinate (tcp) at ($(contact)+(9.26:4.90)$);
+
+  \draw[very thick, black] (contact) -- ++(9.26:10.80);
+  \draw[very thick, red]   (contact) -- ++(1.99:10.80);
+  \fill[black] (contact) circle (1.4pt);
+  \fill[black] (tcp) circle (1.4pt);
+
+  \node[smalllabel, anchor=north west] at (1.35,0.55)
+    {Contact point (schematic)};
+  \node[smalllabel, anchor=south] at ($(tcp)+(0,0.26)$)
+    {$p_{\mathrm{TCP}}$};
+
+  % The surface reaction acts on the robot.  Its opposite is the
+  % robot-to-surface force used for the reported interaction convention.
+  \draw[-{Latex[length=1.9mm]}, very thick, blue]
+    (contact) -- ++(0,1.62);
+  \node[smalllabel, blue, rotate=90, anchor=south] at (0.83,1.32)
+    {$f_{\mathrm{contact}}$};
+  \node[smalllabel, blue, anchor=west] at (1.23,2.20)
+    {$+n_s$};
+
+  % Effective contact lever and its moment about the TCP.
+  \draw[-{Latex[length=1.9mm]}, thick, green!60!black]
+    (tcp) -- ($(contact)+(0.18,0.03)$);
+  \node[smalllabel, green!60!black, anchor=south east] at (4.55,1.70)
+    {$r_{\mathrm{contact/TCP}}$};
+
+  \draw[-{Latex[length=1.9mm]}, thick, green!60!black]
+    ($(tcp)+(155:1.28)$) arc[start angle=155,end angle=48,radius=1.28];
+  \node[smalllabel, green!60!black, anchor=south] at (5.95,3.03)
+    {$M_{t_1,\mathrm{contact}}<0$};
+
+  % The actual entry-to-end rotation is shown separately from the endpoint
+  % wrench signals.
+  \draw[black, -{Latex[length=2.0mm]}, thick]
+    ($(contact)+(9.26:7.55)$)
+    arc[start angle=9.26,end angle=1.99,radius=7.55];
+  \node[smalllabel, anchor=east] at (8.52,1.25)
+    {$\Delta\theta_{t_1}=-7.27^\circ$};
+
+  \node[smalllabel, anchor=south east] at (11.72,2.63)
+    {Entry: $9.26^\circ$};
+  \node[smalllabel, red, anchor=east] at (12.12,1.20)
+    {Endpoint: $1.99^\circ$};
+
+  \draw[black, thick] (2.25,3.45) circle (0.16);
+  \fill[black] (2.25,3.45) circle (1.2pt);
+  \node[label, anchor=west] at (2.52,3.45) {$+t_1$};
+
+  % Divider.
+  \draw[black, thin] (13.05,0.25) -- (13.05,4.20);
+
+  % ---------------------------------------------------------------
+  % Panel (b): stationary means under the two moment comparisons.
+  % ---------------------------------------------------------------
+  \node[label, anchor=west] at (13.55,4.15)
+    {\textbf{(b) Stationary-interval moment means}};
+
+  \node[smalllabel, anchor=west] at (13.55,3.72)
+    {Grey interval: $4$--$5\,\mathrm{s}$};
+
+  % Moments physically acting on the robot.
+  \node[smalllabel, anchor=west] at (13.55,3.26)
+    {Quasi-static balance};
+  \node[smalllabel, green!60!black, anchor=west] at (14.05,2.82)
+    {$M_{t_1,\mathrm{contact}}=-0.635\,\mathrm{N\,m}$};
+  \node[smalllabel, anchor=west] at (14.05,2.38)
+    {$M_{t_1,\mathrm{cmd}}=+0.635\,\mathrm{N\,m}$};
+  \node[smalllabel, anchor=west] at (14.05,1.94)
+    {$M_{t_1,\mathrm{contact}}+M_{t_1,\mathrm{cmd}}=0$};
+
+  \draw[black!45, thin] (13.55,1.68) -- (21.55,1.68);
+
+  % Quantities displayed in the time-history comparison.
+  \node[smalllabel, anchor=west] at (13.55,1.38)
+    {Command--estimate comparison};
+  \node[smalllabel, anchor=west] at (14.05,0.92)
+    {$M_{t_1,\mathrm{cmd}}=+0.635\,\mathrm{N\,m}$};
+  \node[smalllabel, red, anchor=west] at (14.05,0.46)
+    {$M_{t_1,\mathrm{est}}=+0.604\,\mathrm{N\,m}$};
+\end{tikzpicture}

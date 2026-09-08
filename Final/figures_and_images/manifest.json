@@ -1,0 +1,252 @@
+[
+  {
+    "asset": "HM_logo.png",
+    "source": "gg0(1).pptx / slide 2 / footer logo",
+    "changes": "None"
+  },
+  {
+    "asset": "motivation_rig",
+    "source": "figures/ch04/setup_schematic.tex",
+    "changes": "Side-elevation panel only; leading-edge label in black; no numerical data changed."
+  },
+  {
+    "asset": "surface_directions",
+    "source": "figures/ch02/lever_direction_selection.tex",
+    "changes": "Surface patch and its three axes only; rotation curls removed; white surface patch."
+  },
+  {
+    "asset": "CoC_moment",
+    "source": "figures/ch02/compliance_lever_moment.tex",
+    "changes": "Tangential illustration labelled r_c; white tool/surface fills; label text black; force and displacement arrow colours retained."
+  },
+  {
+    "asset": "angular_quantities",
+    "source": "figures/ch04/surface_reference_geometry.tex",
+    "changes": "Single-axis teaching schematic: configured, entry and end orientations; gamma arc from end back to entry. Illustrative angles only, not data."
+  },
+  {
+    "asset": "baseline_response",
+    "source": "figures/ch05/results_case_a_bars.tex",
+    "changes": "Original response values retained. All x-axis categories now use configured tilt, not an unverified near-zero achieved component. phi_0 is not relabelled as an achieved component."
+  },
+  {
+    "asset": "rotation_stiffness",
+    "source": "figures/ch05/results_case_b_stiffness.tex",
+    "changes": "Data, values and units unchanged; source typography enlarged for projection."
+  },
+  {
+    "asset": "translation_stiffness",
+    "source": "figures/ch05/results_case_c_stiffness.tex",
+    "changes": "Data, values and units unchanged; source typography enlarged for projection."
+  },
+  {
+    "asset": "CoC_position",
+    "source": "figures/ch05/results_case_d_panels.tex",
+    "changes": "Data, values and units unchanged; source typography enlarged for projection. Legend wording shortened."
+  },
+  {
+    "asset": "contact_response_time",
+    "source": "figures/ch05/MAIN_D_wrench.pdf",
+    "changes": "Vector panel extraction from original figure PDF. No screenshots and no data changes."
+  },
+  {
+    "asset": "contact_moment_time",
+    "source": "figures/ch05/MAIN_D_wrench.pdf",
+    "changes": "Vector panel extraction from original figure PDF. No screenshots and no data changes."
+  },
+  {
+    "asset": "contact_legend",
+    "source": "figures/ch05/MAIN_D_wrench.pdf",
+    "changes": "Vector panel extraction from original figure PDF. No screenshots and no data changes."
+  },
+  {
+    "asset": "nullspace_damping",
+    "source": "figures/ch05/MAIN_NS_nullspace_automatic.pdf",
+    "changes": "Vector panel extraction from original figure PDF. No screenshots and no data changes."
+  },
+  {
+    "asset": "wrench_comparison",
+    "source": "figures/ch05/MAIN_WR_contact_wrench.pdf",
+    "changes": "Original figure rendered directly; no screenshots or data changes."
+  },
+  {
+    "asset": "force_plausibility",
+    "source": "figures/ch05/MAIN_WR_force_plausibility.pdf",
+    "changes": "Original figure rendered directly; no screenshots or data changes."
+  },
+  {
+    "asset": "moment_plausibility",
+    "source": "figures/ch05/MAIN_WR_moment_plausibility.pdf",
+    "changes": "Original figure rendered directly; no screenshots or data changes."
+  },
+  {
+    "asset": "equation_force",
+    "source": "Thesis(20260907-171413).pdf / Chapters 2, 4 and 5",
+    "changes": "Typeset equation or symbol label; thesis notation retained."
+  },
+  {
+    "asset": "equation_moment",
+    "source": "Thesis(20260907-171413).pdf / Chapters 2, 4 and 5",
+    "changes": "Typeset equation or symbol label; thesis notation retained."
+  },
+  {
+    "asset": "equation_CoC",
+    "source": "Thesis(20260907-171413).pdf / Chapters 2, 4 and 5",
+    "changes": "Typeset equation or symbol label; thesis notation retained."
+  },
+  {
+    "asset": "equation_force_qs",
+    "source": "Thesis(20260907-171413).pdf / Chapters 2, 4 and 5",
+    "changes": "Typeset equation or symbol label; thesis notation retained."
+  },
+  {
+    "asset": "equation_moment_qs",
+    "source": "Thesis(20260907-171413).pdf / Chapters 2, 4 and 5",
+    "changes": "Typeset equation or symbol label; thesis notation retained."
+  },
+  {
+    "asset": "symbol_f_m",
+    "source": "Thesis(20260907-171413).pdf / Chapters 2, 4 and 5",
+    "changes": "Typeset equation or symbol label; thesis notation retained."
+  },
+  {
+    "asset": "symbol_errors",
+    "source": "Thesis(20260907-171413).pdf / Chapters 2, 4 and 5",
+    "changes": "Typeset equation or symbol label; thesis notation retained."
+  },
+  {
+    "asset": "symbol_K",
+    "source": "Thesis(20260907-171413).pdf / Chapters 2, 4 and 5",
+    "changes": "Typeset equation or symbol label; thesis notation retained."
+  },
+  {
+    "asset": "symbol_D",
+    "source": "Thesis(20260907-171413).pdf / Chapters 2, 4 and 5",
+    "changes": "Typeset equation or symbol label; thesis notation retained."
+  },
+  {
+    "asset": "symbol_velocity",
+    "source": "Thesis(20260907-171413).pdf / Chapters 2, 4 and 5",
+    "changes": "Typeset equation or symbol label; thesis notation retained."
+  },
+  {
+    "asset": "symbol_indices",
+    "source": "Thesis(20260907-171413).pdf / Chapters 2, 4 and 5",
+    "changes": "Typeset equation or symbol label; thesis notation retained."
+  },
+  {
+    "asset": "symbol_ns",
+    "source": "Thesis(20260907-171413).pdf / Chapters 2, 4 and 5",
+    "changes": "Typeset equation or symbol label; thesis notation retained."
+  },
+  {
+    "asset": "symbol_tangents",
+    "source": "Thesis(20260907-171413).pdf / Chapters 2, 4 and 5",
+    "changes": "Typeset equation or symbol label; thesis notation retained."
+  },
+  {
+    "asset": "symbol_pc",
+    "source": "Thesis(20260907-171413).pdf / Chapters 2, 4 and 5",
+    "changes": "Typeset equation or symbol label; thesis notation retained."
+  },
+  {
+    "asset": "symbol_rc",
+    "source": "Thesis(20260907-171413).pdf / Chapters 2, 4 and 5",
+    "changes": "Typeset equation or symbol label; thesis notation retained."
+  },
+  {
+    "asset": "symbol_fn",
+    "source": "Thesis(20260907-171413).pdf / Chapters 2, 4 and 5",
+    "changes": "Typeset equation or symbol label; thesis notation retained."
+  },
+  {
+    "asset": "symbol_mR",
+    "source": "Thesis(20260907-171413).pdf / Chapters 2, 4 and 5",
+    "changes": "Typeset equation or symbol label; thesis notation retained."
+  },
+  {
+    "asset": "symbol_thetaoffset",
+    "source": "Thesis(20260907-171413).pdf / Chapters 2, 4 and 5",
+    "changes": "Typeset equation or symbol label; thesis notation retained."
+  },
+  {
+    "asset": "symbol_thetaach",
+    "source": "Thesis(20260907-171413).pdf / Chapters 2, 4 and 5",
+    "changes": "Typeset equation or symbol label; thesis notation retained."
+  },
+  {
+    "asset": "symbol_gamma",
+    "source": "Thesis(20260907-171413).pdf / Chapters 2, 4 and 5",
+    "changes": "Typeset equation or symbol label; thesis notation retained."
+  },
+  {
+    "asset": "symbol_KR",
+    "source": "Thesis(20260907-171413).pdf / Chapters 2, 4 and 5",
+    "changes": "Typeset equation or symbol label; thesis notation retained."
+  },
+  {
+    "asset": "symbol_Kp",
+    "source": "Thesis(20260907-171413).pdf / Chapters 2, 4 and 5",
+    "changes": "Typeset equation or symbol label; thesis notation retained."
+  },
+  {
+    "asset": "symbol_rct2",
+    "source": "Thesis(20260907-171413).pdf / Chapters 2, 4 and 5",
+    "changes": "Typeset equation or symbol label; thesis notation retained."
+  },
+  {
+    "asset": "symbol_Mest",
+    "source": "Thesis(20260907-171413).pdf / Chapters 2, 4 and 5",
+    "changes": "Typeset equation or symbol label; thesis notation retained."
+  },
+  {
+    "asset": "symbol_FN",
+    "source": "Thesis(20260907-171413).pdf / Chapters 2, 4 and 5",
+    "changes": "Typeset equation or symbol label; thesis notation retained."
+  },
+  {
+    "asset": "symbol_M",
+    "source": "Thesis(20260907-171413).pdf / Chapters 2, 4 and 5",
+    "changes": "Typeset equation or symbol label; thesis notation retained."
+  },
+  {
+    "asset": "symbol_EN",
+    "source": "Thesis(20260907-171413).pdf / Chapters 2, 4 and 5",
+    "changes": "Typeset equation or symbol label; thesis notation retained."
+  },
+  {
+    "asset": "symbol_dnull",
+    "source": "Thesis(20260907-171413).pdf / Chapters 2, 4 and 5",
+    "changes": "Typeset equation or symbol label; thesis notation retained."
+  },
+  {
+    "asset": "symbol_t",
+    "source": "Thesis(20260907-171413).pdf / Chapters 2, 4 and 5",
+    "changes": "Typeset equation or symbol label; thesis notation retained."
+  },
+  {
+    "asset": "symbol_force_baseline",
+    "source": "Thesis(20260907-171413).pdf / Chapters 2, 4 and 5",
+    "changes": "Typeset equation or symbol label; thesis notation retained."
+  },
+  {
+    "asset": "symbol_moment_baseline",
+    "source": "Thesis(20260907-171413).pdf / Chapters 2, 4 and 5",
+    "changes": "Typeset equation or symbol label; thesis notation retained."
+  },
+  {
+    "asset": "symbol_Kpn",
+    "source": "Thesis(20260907-171413).pdf / Chapters 2, 4 and 5",
+    "changes": "Typeset equation or symbol label; thesis notation retained."
+  },
+  {
+    "asset": "symbol_est",
+    "source": "Thesis(20260907-171413).pdf / Chapters 2, 4 and 5",
+    "changes": "Typeset equation or symbol label; thesis notation retained."
+  },
+  {
+    "asset": "symbol_qs",
+    "source": "Thesis(20260907-171413).pdf / Chapters 2, 4 and 5",
+    "changes": "Typeset equation or symbol label; thesis notation retained."
+  }
+]

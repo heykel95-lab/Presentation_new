@@ -1,0 +1,135 @@
+% Three views of the compliance-centre direction rule, for Section 2.7.2. The
+% section composes two small rotations about the surface tangents, reduces the
+% composition to first order, and selects the tangential displacement
+% perpendicular to the direction that reduction produces. The three panels
+% follow that order:
+%
+%   (a) what is rotated        theta_{t_1} about t_1 and theta_{t_2} about t_2,
+%                              drawn as curls wrapping the two tangents of an
+%                              oblique view
+%   (b) what they combine to   the first-order contributions theta_{t_1} t_1 and
+%                              theta_{t_2} t_2 and their resultant, whose unit
+%                              direction is u
+%   (c) what is selected       r_{c,t} = ||r_{c,t}|| (n_s x u), drawn between the
+%                              TCP and p_c
+%
+% The two contributions in panel (b) are labelled as the products theta_{t_i}t_i
+% rather than as bare angles, so that a length in the tangent plane is never
+% read as an angle in it. The withdrawn axis-angle construction and its
+% quantities n_d, n_Tool, phi, u_a and alpha appear nowhere.
+%
+% Panel (a) uses one oblique projection, fixed here: t_1 at -25 degrees, t_2 at
+% +35 degrees, n_s up the page. Each curl is centred on its own tangent, so it
+% wraps that axis, and runs in the positive sense that follows from
+% t_1 x t_2 = n_s: the curl about t_1 carries t_2 towards n_s, and the curl
+% about t_2 carries n_s towards t_1. Both sit beyond the drawn patch of surface,
+% which is kept small for that reason, and each label sits perpendicular to its
+% own axis on the free side.
+%
+% Uses only tikz + arrows.meta, which config/packages.tex loads.
+%
+% Colour follows compliance_lever_moment.tex and case_c_direction_rule.tex: the
+% surface and the frame directions are black, red carries the angular offsets
+% and the direction they combine to, blue the compliance-centre displacement.
+%
+% Horizontal placement. Each panel is listed with the span it occupies in its
+% own scope, and the scopes are shifted so that about 0.95 units separate one
+% panel's outermost label from the next:
+%   (a) [-0.38, 1.88] at x = -4.55      (b) [-0.55, 2.05] at x = -1.17
+%   (c) [-1.18, 1.85] at x =  3.01
+\begin{tikzpicture}[
+    scale=1.1,
+    font=\small,
+    ax/.style={-{Latex[length=1.8mm]}, black},
+    nrm/.style={-{Latex[length=2.0mm]}, thick, black},
+    dir/.style={-{Latex[length=2.2mm]}, thick, red},
+    cmp/.style={-{Latex[length=1.8mm]}, red},
+    con/.style={dashed, thin, black},
+    lev/.style={-{Latex[length=2.2mm]}, thick, blue},
+    arc/.style={-{Latex[length=1.6mm]}, red},
+    surf/.style={draw=black, fill=black!8},
+    lbl/.style={font=\footnotesize, inner sep=1.8pt},
+    pt/.style={circle, fill=black, inner sep=0pt, minimum size=3.0pt},
+    cpt/.style={circle, fill=blue, inner sep=0pt, minimum size=3.0pt},
+  ]
+
+% ============ (a) the two rotations about the surface tangents ==============
+% Projected unit directions: t_1 -> (0.906,-0.423), t_2 -> (0.819,0.574),
+% n_s -> (0,1).
+\begin{scope}[shift={(-4.55,0.22)}]
+
+  % ---- a small patch of the surface the two tangents span -----------------
+  \fill[surf] (-0.345,-0.030) -- (0.516,-0.432) -- (1.212,0.056)
+           -- (0.351,0.458) -- cycle;
+  \draw[black] (-0.345,-0.030) -- (0.516,-0.432) -- (1.212,0.056)
+            -- (0.351,0.458) -- cycle;
+
+  % ---- the frame directions ----------------------------------------------
+  \draw[ax] (0,0) -- (1.586,-0.740);
+  \node[lbl, anchor=west] at (1.66,-0.79) {$t_1$};
+  \draw[ax] (0,0) -- (1.310,0.918);
+  \node[lbl, anchor=south west] at (1.36,0.96) {$t_2$};
+  \draw[nrm] (0,0) -- (0,1.20);
+  \node[lbl, anchor=east] at (-0.10,1.06) {$n_s$};
+
+  % ---- rotation about t_1, wrapping that axis and carrying t_2 to n_s -----
+  \draw[arc] plot[domain=-50:140, samples=32, variable=\s]
+    ({1.042+0.262*cos(\s)}, {-0.486+0.184*cos(\s)+0.320*sin(\s)});
+  \node[lbl, red] at (0.809,-0.984) {$\theta_{t_1}$};
+
+  % ---- rotation about t_2, wrapping that axis and carrying n_s to t_1 -----
+  \draw[arc] plot[domain=-50:140, samples=32, variable=\s]
+    ({0.860+0.290*sin(\s)}, {0.603+0.320*cos(\s)-0.135*sin(\s)});
+  \node[lbl, red] at (0.447,1.193) {$\theta_{t_2}$};
+\end{scope}
+\node[lbl] at (-3.80,-1.60) {(a) Tangent rotations};
+
+% ============ (b) their first-order contributions, and the direction =======
+\begin{scope}[shift={(-1.17,-0.30)}]
+  \draw[ax] (0,0) -- (1.70,0);
+  \node[lbl, anchor=west]  at (1.82,0) {$t_1$};
+  \draw[ax] (0,0) -- (0,1.45);
+  \node[lbl, anchor=south] at (0,1.52) {$t_2$};
+
+  % The two first-order contributions, and the parallelogram they close.
+  \draw[cmp] (0,0) -- (1.05,0);
+  \node[lbl, red, anchor=north] at (0.52,-0.08) {$\theta_{t_1}t_1$};
+  \draw[cmp] (0,0) -- (0,0.72);
+  \node[lbl, red, anchor=east] at (-0.08,0.40) {$\theta_{t_2}t_2$};
+  \draw[con] (1.05,0) -- (1.05,0.72) -- (0,0.72);
+
+  \draw[dir] (0,0) -- (1.05,0.72);
+  \node[lbl, red, anchor=south west] at (1.09,0.76) {$u$};
+\end{scope}
+\node[lbl] at (-0.42,-1.60) {(b) First-order direction};
+
+% ============ (c) the displacement selected from that direction ============
+\begin{scope}[shift={(3.01,0)}]
+  \draw[ax] (0,0) -- (1.45,0);
+  \node[lbl, anchor=west]  at (1.58,0) {$t_1$};
+  \draw[ax] (0,0) -- (0,1.45);
+  \node[lbl, anchor=south] at (0,1.57) {$t_2$};
+
+  \draw[black, fill=white] (1.05,-0.80) circle (0.13);
+  \fill[black] (1.05,-0.80) circle (0.04);
+  \node[lbl, anchor=west] at (1.25,-0.80) {$n_s$};
+
+  \draw[dir] (0,0) -- (35:1.15);
+  \node[lbl, red, anchor=west] at (35:1.35) {$u$};
+
+  \draw[lev] (0,0) -- (125:1.40);
+  \node[cpt] at (125:1.40) {};
+  \node[lbl, blue, anchor=east] at (-0.90,1.15) {$p_c$};
+  \node[lbl, blue, anchor=east] at (-0.62,0.42) {$r_{c,t}$};
+  \node[pt] at (0,0) {};
+  \node[lbl, anchor=north west] at (0.08,-0.10) {TCP};
+
+  % The square spans the quadrant between the two, so it is rotated by the
+  % direction u, the first of them.
+  \begin{scope}[rotate=35]
+    \draw[black, thin] (0.30,0) -- (0.30,0.30) -- (0,0.30);
+  \end{scope}
+\end{scope}
+\node[lbl] at (3.345,-1.60) {(c) Selected displacement};
+
+\end{tikzpicture}

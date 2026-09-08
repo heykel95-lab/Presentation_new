@@ -1,0 +1,55 @@
+% Plan view of the calibrated tool face, seen along the inward surface
+% normal. This is the view the side elevation in setup_schematic.tex cannot
+% carry: the angle between the mounting axes and the surface tangents projects
+% to nothing in elevation.
+%
+% The commanded spin of 90 degrees about the normal places the projected long
+% face axis on the t_2 line. The face is
+% 40 mm along x_EE and 120 mm along y_EE. One drawing unit is 35 mm.
+%
+% Uses only tikz + arrows.meta, which config/packages.tex loads. Colour follows
+% the established meaning: grey for the frames and the drawn geometry, orange
+% for the mounting axis whose clearance the text quantifies.
+\begin{tikzpicture}[
+    font=\small,
+    face/.style={draw=gray!70!black, fill=gray!10},
+    ax/.style={-{Latex[length=1.8mm]}, gray!60!black},
+    mnt/.style={-{Latex[length=1.8mm]}, thick, orange!75!black},
+    arc/.style={-{Latex[length=1.5mm]}, gray!55!black},
+    lbl/.style={font=\footnotesize, inner sep=1.8pt},
+  ]
+
+% ---- surface tangents, drawn past the face so they stay readable ---------
+\draw[ax] (0,0) -- (1.95,0) node[lbl, right] {$t_1$};
+\draw[ax] (0,0) -- (0,3.05) node[lbl, above] {$t_2$};
+
+% ---- the calibrated tool face and its mounting axes ------------------
+% Local x is x_EE and local y is y_EE.
+\begin{scope}
+  \draw[face] (-0.571,-1.714) rectangle (0.571,1.714);
+
+  \draw[mnt] (0,0) -- (1.15,0);
+  \node[lbl, orange!65!black] at (1.42,-0.10) {$x_{\mathrm{EE}}$};
+  \draw[mnt] (0,0) -- (0,2.05);
+
+  % Face dimensions. Node text is not turned by the enclosing scope rotation,
+  % so no rotate key belongs here: adding one tilts the label off the page
+  % horizontal rather than aligning it with the edge it measures.
+  \node[lbl, gray!55!black] at (-1.45,0) {$120\,\mathrm{mm}$};
+  \node[lbl, gray!55!black] at (0,-2.05) {$40\,\mathrm{mm}$};
+
+  % ---- rotational clearance of the pad mounting, about y_EE -------------
+  % Drawn across the midpoint of the y_EE arrow, so the arc reads as a
+  % rotation about that axis. The label is carried out to the left, clear
+  % of the face edge.
+  \begin{scope}[shift={(0,1.025)}]
+    \draw[{Latex[length=1.5mm]}-{Latex[length=1.5mm]}, orange!70!black]
+          (-0.38,0) arc (180:360:0.38);
+    \node[lbl, orange!65!black] at (-1.20,0) {$\pm2^\circ$};
+  \end{scope}
+\end{scope}
+
+% ---- the y_EE label ------------------------------------------------------
+\node[lbl, orange!65!black] at (90:2.30) {$y_{\mathrm{EE}}$};
+
+\end{tikzpicture}
