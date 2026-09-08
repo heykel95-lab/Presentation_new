@@ -14,4 +14,4 @@ Requires MiKTeX (pdflatex and latexmk) and Perl, already available here.
 
 Current structure: 17 main slides plus 6 backups, with 23 speaking sections in exact deck order.
 Update the text and PowerPoint notes after every slide edit, then rebuild this PDF.
-The Overview uses four broad sections; see the current rules in root AGENTS.md.
+The Overview lists subsequent slide titles through Conclusion, excluding videos; see root AGENTS.md.

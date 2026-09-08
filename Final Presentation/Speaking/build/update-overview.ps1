@@ -14,6 +14,7 @@ try {
  $relationships = Read-Part 'ppt/_rels/presentation.xml.rels'
  $titles = @()
  $overviewPath = $null
+ $foundConclusion = $false
  foreach ($slideId in $presentation.DocumentElement.sldIdLst.sldId) {
   $relId = $slideId.GetAttribute('id','http://schemas.openxmlformats.org/officeDocument/2006/relationships')
   $target = ($relationships.DocumentElement.Relationship | Where-Object { $_.Id -eq $relId }).Target
@@ -29,21 +30,14 @@ try {
    if ($slideXml.SelectNodes('//*[local-name()="videoFile"]').Count -gt 0) { continue }
    if (-not $title) { throw "Missing title in $partPath; cannot synchronize Overview." }
    $titles += $title
+   if ($title -eq 'Conclusion') { $foundConclusion = $true; break }
   }
  }
  if (-not $overviewPath -or $titles.Count -eq 0) { throw 'Overview or subsequent slide titles not found.' }
- # The September review replaced the detailed slide list with four broad sections.
- # Derive the section order from the actual visible slide sequence; videos remain excluded.
- $sectionTitles = @()
- $currentSection = 'Cartesian impedance and centre of compliance'
- foreach ($title in $titles) {
-  if ($title -eq 'Experimental procedure') { $currentSection = 'Contact experiments and results' }
-  elseif ($title -like 'Secondary study:*') { $currentSection = 'Null-space study' }
-  elseif ($title -eq 'Conclusion') { $currentSection = 'Conclusion and future work' }
-  if ($currentSection -notin $sectionTitles) { $sectionTitles += $currentSection }
- }
- if ($sectionTitles.Count -ne 4) { throw 'Expected four presentation sections; check the section boundaries after slide edits.' }
- $titles = $sectionTitles
+ if (-not $foundConclusion) { throw 'Visible Conclusion slide not found after Overview.' }
+ # List exact titles in slide order through Conclusion, excluding videos and hidden slides.
+ $step = [Math]::Min(34, 374 / [Math]::Max(1, $titles.Count - 1))
+ if ($step -lt 30) { throw 'The detailed Overview needs a revised layout to fit more than 13 titles legibly.' }
 
  $entry = $zip.GetEntry($overviewPath)
  $reader = New-Object IO.StreamReader($entry.Open())
@@ -62,11 +56,10 @@ try {
   $meta = $shape.SelectSingleNode('p:nvSpPr/p:cNvPr',$ns)
   $meta.SetAttribute('id', [string](20+2*$i))
   $meta.SetAttribute('name', 'Overview item '+($i+1))
-  $step = 83
-  $shape.SelectSingleNode('p:spPr/a:xfrm/a:off',$ns).SetAttribute('y',[string][int]((121+$i*$step)*12700))
-  $shape.SelectSingleNode('p:spPr/a:xfrm/a:ext',$ns).SetAttribute('cy','558800')
+  $shape.SelectSingleNode('p:spPr/a:xfrm/a:off',$ns).SetAttribute('y',[string][int]((82+$i*$step)*12700))
+  $shape.SelectSingleNode('p:spPr/a:xfrm/a:ext',$ns).SetAttribute('cy','381000')
   $shape.SelectSingleNode('p:txBody/a:p/a:r/a:t',$ns).InnerText = $titles[$i]
-  $shape.SelectSingleNode('p:txBody/a:p/a:r/a:rPr',$ns).SetAttribute('sz','2600')
+  $shape.SelectSingleNode('p:txBody/a:p/a:r/a:rPr',$ns).SetAttribute('sz','2200')
   $shape.SelectSingleNode('p:txBody/a:p/a:r/a:rPr/a:solidFill/a:srgbClr',$ns).SetAttribute('val','17365D')
   $paragraph = $shape.SelectSingleNode('p:txBody/a:p/a:pPr',$ns)
   $paragraph.SetAttribute('marL','0')
@@ -79,8 +72,8 @@ try {
   $numberMeta = $numberShape.SelectSingleNode('p:nvSpPr/p:cNvPr',$ns)
   $numberMeta.SetAttribute('id',[string](21+2*$i))
   $numberMeta.SetAttribute('name','Overview number '+($i+1))
-  $numberShape.SelectSingleNode('p:spPr/a:xfrm/a:off',$ns).SetAttribute('x','1046480')
-  $numberShape.SelectSingleNode('p:spPr/a:xfrm/a:ext',$ns).SetAttribute('cx','431800')
+  $numberShape.SelectSingleNode('p:spPr/a:xfrm/a:off',$ns).SetAttribute('x','919480')
+  $numberShape.SelectSingleNode('p:spPr/a:xfrm/a:ext',$ns).SetAttribute('cx','558800')
   $numberShape.SelectSingleNode('p:txBody/a:p/a:pPr',$ns).SetAttribute('algn','r')
   $numberShape.SelectSingleNode('p:txBody/a:p/a:r/a:t',$ns).InnerText = [string]($i+1)+'.'
   [void]$parent.AppendChild($numberShape)
@@ -91,4 +84,5 @@ try {
  $writer = New-Object IO.StreamWriter($newEntry.Open(), (New-Object Text.UTF8Encoding($false)))
  $xml.Save($writer)
  $writer.Dispose()
+ Write-Output ('Overview synchronized with ' + $titles.Count + ' slide titles through Conclusion; videos excluded.')
 } finally { $zip.Dispose() }

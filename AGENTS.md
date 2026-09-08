@@ -27,14 +27,9 @@ The control repository contains `surface_grinding_controller`, `experiments`, `a
 
 ## Current structure and automatic Overview maintenance
 
-The latest September 2026 review supersedes the earlier request to list every slide title. The Overview now has four broad sections:
+The user's latest request restores the detailed Overview: list the exact title of every visible slide after Overview through Conclusion, in presentation order, excluding both video slides and all backups. Do not replace these titles with broad section summaries. There are currently 12 entries, from Cartesian impedance wrench to Conclusion.
 
-1. Cartesian impedance and centre of compliance
-2. Contact experiments and results
-3. Null-space study
-4. Conclusion and future work
-
-Keep the numbers and text dark blue, with right-aligned numbers in a fixed-width column so their periods align. Exclude video titles, slide numbers, timings, and backup topics from the Overview. Run `Final Presentation\Speaking\build\update-overview.ps1` after each presentation edit. It reads actual visible slide order and derives section order at the Experimental procedure, Secondary study, and Conclusion boundaries. Review these boundaries if those titles change. This is an editing workflow, not a PowerPoint macro or watcher for manual deck edits.
+Use a single column of 22 pt Arial text and sequential numbering in dark blue, with right-aligned numbers in a fixed-width column so their periods align. Exclude timings and slide-footer numbers. Run `Final Presentation\Speaking\build\update-overview.ps1` after each presentation edit. It reads the actual visible slide titles, skips embedded-video slides, and stops after including Conclusion. It adjusts row spacing for up to 13 entries and reports when a larger list needs a layout revision. This is an editing workflow, not a PowerPoint macro or watcher for manual deck edits.
 
 The deck currently has **17 main slides and 6 hidden backups**, in this order:
 

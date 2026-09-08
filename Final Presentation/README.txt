@@ -5,7 +5,7 @@ Full PDF: Thesis_Defense_gg0_v3.pdf (17 main slides + 6 backups = 23 pages).
 Supplementary_slides.pdf contains B1--B6. Backups stay hidden in the PowerPoint slideshow.
 The original navy titles, continuous rule, white background, Arial body, and HM footer are preserved.
 
-The Overview now has four broad numbered sections. Refresh it after slide edits with
+The Overview lists every subsequent slide title through Conclusion, excluding videos. Refresh it after slide edits with
 Speaking\build\update-overview.ps1, then export the full presentation PDF.
 
 The main controller introduction combines pose and wrench, followed by Real-time control.
