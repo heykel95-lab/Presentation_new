@@ -17,7 +17,7 @@
   {
     "asset": "CoC_moment",
     "source": "MyOwn/figures/ch02/compliance_lever_moment.tex",
-    "changes": "Original tangential CoC illustration; white fills and black labels; panels read Supporting displacement and Reversed displacement. Enlarged on slide. No numerical examples or experimental data introduced."
+    "changes": "Original tangential CoC illustration; white fills and black labels; panels read Supporting displacement and Reversed displacement. Enlarged on slide. PNG regenerated from the matching PDF using pdftocairo -png -singlefile -r 300 so both surface-normal arrow shafts remain visible; source geometry and PDF/SVG unchanged. No numerical examples or experimental data introduced."
   },
   {
     "asset": "angular_quantities",
