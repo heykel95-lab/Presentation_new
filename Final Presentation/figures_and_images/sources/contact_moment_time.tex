@@ -3,7 +3,21 @@
 \definecolor{navy}{HTML}{17365D}
 \begin{document}
 \begin{tikzpicture}[x=1bp,y=1bp]
-\node[anchor=south west,inner sep=0] at (0,0) {\includegraphics[width=417.6bp]{contact_moment_time_original.pdf}};
-\fill[white] (67,130) rectangle (84,144);
+\path[use as bounding box] (0,0) rectangle (440,210);
+\node[anchor=south west,inner sep=0] at (62,38) {\includegraphics[width=368bp,height=156bp]{contact_moment_plot.pdf}};
+\fill[white] (63,174) rectangle (86,193);
+\draw[line width=.6bp] (59,51.9400)--(62,51.9400);\node[anchor=east,inner sep=2bp,font=\fontsize{12}{14}\selectfont] at (58,51.9400) {$ -5 $};
+\draw[line width=.6bp] (59,82.3715)--(62,82.3715);\node[anchor=east,inner sep=2bp,font=\fontsize{12}{14}\selectfont] at (58,82.3715) {$ -2.5 $};
+\draw[line width=.6bp] (59,112.8031)--(62,112.8031);\node[anchor=east,inner sep=2bp,font=\fontsize{12}{14}\selectfont] at (58,112.8031) {$ 0 $};
+\draw[line width=.6bp] (59,143.2347)--(62,143.2347);\node[anchor=east,inner sep=2bp,font=\fontsize{12}{14}\selectfont] at (58,143.2347) {$ 2.5 $};
+\draw[line width=.6bp] (59,173.6662)--(62,173.6662);\node[anchor=east,inner sep=2bp,font=\fontsize{12}{14}\selectfont] at (58,173.6662) {$ 5 $};
+\draw[line width=.6bp] (78.7273,38)--(78.7273,35);\node[anchor=north,inner sep=2bp,font=\fontsize{12}{14}\selectfont] at (78.7273,34) {0};
+\draw[line width=.6bp] (145.6230,38)--(145.6230,35);\node[anchor=north,inner sep=2bp,font=\fontsize{12}{14}\selectfont] at (145.6230,34) {1};
+\draw[line width=.6bp] (212.5187,38)--(212.5187,35);\node[anchor=north,inner sep=2bp,font=\fontsize{12}{14}\selectfont] at (212.5187,34) {2};
+\draw[line width=.6bp] (279.4144,38)--(279.4144,35);\node[anchor=north,inner sep=2bp,font=\fontsize{12}{14}\selectfont] at (279.4144,34) {3};
+\draw[line width=.6bp] (346.3101,38)--(346.3101,35);\node[anchor=north,inner sep=2bp,font=\fontsize{12}{14}\selectfont] at (346.3101,34) {4};
+\draw[line width=.6bp] (413.2058,38)--(413.2058,35);\node[anchor=north,inner sep=2bp,font=\fontsize{12}{14}\selectfont] at (413.2058,34) {5};
+\node[font=\fontsize{13}{15}\selectfont] at (246.0,9) {Time, $t$ [s]};
+\node[rotate=90,align=center,font=\fontsize{13}{15}\selectfont] at (18,116.0) {TCP moment\\$M_{t_1,\mathrm{est}}$ [N\,m]};
 \end{tikzpicture}
 \end{document}

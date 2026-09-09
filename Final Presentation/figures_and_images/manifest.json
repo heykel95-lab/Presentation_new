@@ -21,23 +21,23 @@
   },
   {
     "asset": "angular_quantities",
-    "source": "figures/ch04/surface_reference_geometry.tex",
-    "changes": "Single-axis teaching schematic: configured, entry and end orientations; gamma arc from end back to entry. Illustrative angles only, not data."
+    "source": "MyOwn/figures/ch04/surface_reference_geometry.tex at main commit 0fea99be52beef464180574f9f36878491674e9f",
+    "changes": "Latest thesis TikZ source compiled unchanged inside a standalone wrapper; synchronized PDF/PNG/SVG. Configured reference, measured contact entry, and dashed measured contact end; theta_meas,t1 and gamma_t1 with the thesis rotation convention. Added a positive anticlockwise rotation arc and plus sign in the n_s/t2 inset, from +t2 toward +n_s about the outward t1 axis; angular definitions unchanged."
   },
   {
     "asset": "baseline_response",
-    "source": "MyOwn/figures/ch05/results_case_a_bars.tex; chapters/05_results_and_discussion.tex; backmatter/appendix_additional_plots.tex, Table D.1",
-    "changes": "Categorical Entry condition axis: Nominal zero offset; Positive tilt (+9.31 degrees); Negative tilt (-9.41 degrees). Responses -0.97, +7.57, -10.83 unchanged. phi_0 = 0.74 degrees is retained in speaker notes only and is not relabelled as an achieved t1 component."
+    "source": "MyOwn/figures/ch05/results_case_a_bars.tex at main commit 0fea99be52beef464180574f9f36878491674e9f",
+    "changes": "Latest thesis TikZ source compiled unchanged inside a standalone wrapper; synchronized PDF/PNG/SVG. Measured offset axis values 0.69, 9.31, -9.41 degrees; response values unchanged at -0.97, 7.57, -10.83 degrees."
   },
   {
     "asset": "rotation_stiffness",
     "source": "figures/ch05/results_case_b_stiffness.tex",
-    "changes": "Data, values and units unchanged; source typography enlarged for projection."
+    "changes": "Data, values and units unchanged; source typography enlarged for projection. Review correction: latest theta_meas notation and Measured angular offset wording; enlarged axis/tick/legend typography with wrapped labels. Data and units preserved."
   },
   {
     "asset": "translation_stiffness",
     "source": "figures/ch05/results_case_c_stiffness.tex",
-    "changes": "Data, values and units unchanged; source typography enlarged for projection."
+    "changes": "Data, values and units unchanged; source typography enlarged for projection. Review correction: latest theta_meas notation and Measured angular offset wording; enlarged axis/tick/legend typography with wrapped labels. Data and units preserved."
   },
   {
     "asset": "CoC_position",
@@ -47,22 +47,22 @@
   {
     "asset": "contact_response_time",
     "source": "MyOwn/figures/ch05/MAIN_D_wrench.pdf; chapters/05_results_and_discussion.tex",
-    "changes": "Vector response-panel extraction, original data unchanged; panel marker removed. Approximate 2.3 s and 3.6 s annotations from the thesis; native PowerPoint dashed markers added at the corresponding time coordinates. Reproducible LaTeX wrapper and original cropped PDF retained under sources."
+    "changes": "Vector response-panel extraction, original data unchanged; panel marker removed. Approximate 2.3 s and 3.6 s annotations from the thesis; native PowerPoint dashed markers added at the corresponding time coordinates. Reproducible LaTeX wrapper and original cropped PDF retained under sources. Review correction: larger typography in reproducible LaTeX wrappers. Original vector plot regions from MAIN_D_wrench.pdf retained with exact paths, limits and tick positions; labels and legend reflowed. Source contact_*_plot.pdf crops preserve the recorded data unchanged."
   },
   {
     "asset": "contact_moment_time",
     "source": "MyOwn/figures/ch05/MAIN_D_wrench.pdf",
-    "changes": "Vector moment-panel extraction, original data unchanged; obsolete (c) panel marker removed. LaTeX wrapper and original cropped PDF retained under sources."
+    "changes": "Vector moment-panel extraction, original data unchanged; obsolete (c) panel marker removed. LaTeX wrapper and original cropped PDF retained under sources. Review correction: larger typography in reproducible LaTeX wrappers. Original vector plot regions from MAIN_D_wrench.pdf retained with exact paths, limits and tick positions; labels and legend reflowed. Source contact_*_plot.pdf crops preserve the recorded data unchanged."
   },
   {
     "asset": "contact_legend",
     "source": "figures/ch05/MAIN_D_wrench.pdf",
-    "changes": "Vector panel extraction from original figure PDF. No screenshots and no data changes."
+    "changes": "Vector panel extraction from original figure PDF. No screenshots and no data changes. Review correction: larger typography in reproducible LaTeX wrappers. Original vector plot regions from MAIN_D_wrench.pdf retained with exact paths, limits and tick positions; labels and legend reflowed. Source contact_*_plot.pdf crops preserve the recorded data unchanged."
   },
   {
     "asset": "nullspace_damping",
-    "source": "figures/ch05/MAIN_NS_nullspace_automatic.pdf",
-    "changes": "Vector panel extraction from original figure PDF. No screenshots and no data changes."
+    "source": "MyOwn/figures/ch05/MAIN_NS_nullspace_automatic.pdf, panel (a); chapters/05_results_and_discussion.tex, Null-Space Pose-Hold Results; main 0fea99b",
+    "changes": "Vector panel extraction preserving the original curves/bars, axes, units, labels, legends and uncertainty. Reproducible LaTeX crop wrapper and full source PDF retained; PDF/PNG/SVG synchronized."
   },
   {
     "asset": "wrench_comparison",
@@ -317,7 +317,7 @@
   {
     "asset": "contact_full_response",
     "source": "figures_and_images/sources/originals/ch05/MAIN_D_wrench.pdf (from MyOwn)",
-    "changes": "Original complete three-panel response, estimated normal force, and estimated TCP interaction moment figure copied unchanged for backup B6; PNG/SVG rendered directly."
+    "changes": "Original complete three-panel response, estimated normal force, and estimated TCP interaction moment figure copied unchanged for backup B6; PNG/SVG rendered directly. Review correction: larger typography in reproducible LaTeX wrappers. Original vector plot regions from MAIN_D_wrench.pdf retained with exact paths, limits and tick positions; labels and legend reflowed. Source contact_*_plot.pdf crops preserve the recorded data unchanged."
   },
   {
     "asset": "Null-space result table (native PowerPoint)",
@@ -333,5 +333,140 @@
     "asset": "orientation_reference_pair",
     "source": "MyOwn/chapters/02_theoretical_background.tex, Coordinate Frames and Pose Error",
     "changes": "LaTeX rendering of desired/measured position or orientation symbols for the paired-column wrench layout. No numerical data changed."
+  },
+  {
+    "asset": "controller_orientation_error",
+    "source": "MyOwn/chapters/02_theoretical_background.tex; MyOwn/chapters/04_experimental_setup_and_evaluation.tex",
+    "changes": "Thesis equation typeset for the presentation; notation, signs and numerical settings retained. PDF/PNG/SVG generated from the matching standalone LaTeX source."
+  },
+  {
+    "asset": "coupling_point_shift",
+    "source": "MyOwn/chapters/02_theoretical_background.tex; MyOwn/chapters/04_experimental_setup_and_evaluation.tex",
+    "changes": "Thesis equation typeset for the presentation; notation, signs and numerical settings retained. PDF/PNG/SVG generated from the matching standalone LaTeX source. Simplified for footer 8: compact A = Ad(r_c), e_c = A e only; expanded adjoint matrix removed at user request. Matching source/PDF/PNG/SVG rebuilt."
+  },
+  {
+    "asset": "coupling_displacement",
+    "source": "MyOwn/chapters/02_theoretical_background.tex; MyOwn/chapters/04_experimental_setup_and_evaluation.tex",
+    "changes": "Thesis equation typeset for the presentation; notation, signs and numerical settings retained. PDF/PNG/SVG generated from the matching standalone LaTeX source."
+  },
+  {
+    "asset": "coupling_stiffness_transform",
+    "source": "MyOwn/chapters/02_theoretical_background.tex; MyOwn/chapters/04_experimental_setup_and_evaluation.tex",
+    "changes": "Thesis equation typeset for the presentation; notation, signs and numerical settings retained. PDF/PNG/SVG generated from the matching standalone LaTeX source."
+  },
+  {
+    "asset": "coupling_damping_transform",
+    "source": "MyOwn/chapters/02_theoretical_background.tex; MyOwn/chapters/04_experimental_setup_and_evaluation.tex",
+    "changes": "Thesis equation typeset for the presentation; notation, signs and numerical settings retained. PDF/PNG/SVG generated from the matching standalone LaTeX source."
+  },
+  {
+    "asset": "coupling_stiffness_blocks",
+    "source": "MyOwn/chapters/02_theoretical_background.tex; MyOwn/chapters/04_experimental_setup_and_evaluation.tex",
+    "changes": "Thesis equation typeset for the presentation; notation, signs and numerical settings retained. PDF/PNG/SVG generated from the matching standalone LaTeX source."
+  },
+  {
+    "asset": "coupling_damping_blocks",
+    "source": "MyOwn/chapters/02_theoretical_background.tex; MyOwn/chapters/04_experimental_setup_and_evaluation.tex",
+    "changes": "Thesis equation typeset for the presentation; notation, signs and numerical settings retained. PDF/PNG/SVG generated from the matching standalone LaTeX source."
+  },
+  {
+    "asset": "null_controller_dimension",
+    "source": "MyOwn/chapters/02_theoretical_background.tex; MyOwn/chapters/04_experimental_setup_and_evaluation.tex",
+    "changes": "Thesis equation typeset for the presentation; notation, signs and numerical settings retained. PDF/PNG/SVG generated from the matching standalone LaTeX source."
+  },
+  {
+    "asset": "null_controller_velocity",
+    "source": "MyOwn/chapters/02_theoretical_background.tex; MyOwn/chapters/04_experimental_setup_and_evaluation.tex",
+    "changes": "Thesis equation typeset for the presentation; notation, signs and numerical settings retained. PDF/PNG/SVG generated from the matching standalone LaTeX source."
+  },
+  {
+    "asset": "null_controller_damping",
+    "source": "MyOwn/chapters/02_theoretical_background.tex; MyOwn/chapters/04_experimental_setup_and_evaluation.tex",
+    "changes": "Thesis equation typeset for the presentation; notation, signs and numerical settings retained. PDF/PNG/SVG generated from the matching standalone LaTeX source."
+  },
+  {
+    "asset": "null_controller_conditioning",
+    "source": "MyOwn/chapters/02_theoretical_background.tex; MyOwn/chapters/04_experimental_setup_and_evaluation.tex",
+    "changes": "Thesis equation typeset for the presentation; notation, signs and numerical settings retained. PDF/PNG/SVG generated from the matching standalone LaTeX source."
+  },
+  {
+    "asset": "null_controller_projector",
+    "source": "MyOwn/chapters/02_theoretical_background.tex; MyOwn/chapters/04_experimental_setup_and_evaluation.tex",
+    "changes": "Thesis equation typeset for the presentation; notation, signs and numerical settings retained. PDF/PNG/SVG generated from the matching standalone LaTeX source."
+  },
+  {
+    "asset": "null_experiment_disturbance",
+    "source": "MyOwn/chapters/02_theoretical_background.tex; MyOwn/chapters/04_experimental_setup_and_evaluation.tex",
+    "changes": "Thesis equation typeset for the presentation; notation, signs and numerical settings retained. PDF/PNG/SVG generated from the matching standalone LaTeX source."
+  },
+  {
+    "asset": "null_experiment_retention",
+    "source": "MyOwn/chapters/02_theoretical_background.tex; MyOwn/chapters/04_experimental_setup_and_evaluation.tex",
+    "changes": "Thesis equation typeset for the presentation; notation, signs and numerical settings retained. PDF/PNG/SVG generated from the matching standalone LaTeX source."
+  },
+  {
+    "asset": "contact_normal_gain",
+    "source": "MyOwn/chapters/02_theoretical_background.tex; MyOwn/chapters/04_experimental_setup_and_evaluation.tex",
+    "changes": "Thesis equation typeset for the presentation; notation, signs and numerical settings retained. PDF/PNG/SVG generated from the matching standalone LaTeX source."
+  },
+  {
+    "asset": "contact_rotation_gains",
+    "source": "MyOwn/chapters/02_theoretical_background.tex; MyOwn/chapters/04_experimental_setup_and_evaluation.tex",
+    "changes": "Thesis equation typeset for the presentation; notation, signs and numerical settings retained. PDF/PNG/SVG generated from the matching standalone LaTeX source."
+  },
+  {
+    "asset": "contact_tangent_gains",
+    "source": "MyOwn/chapters/02_theoretical_background.tex; MyOwn/chapters/04_experimental_setup_and_evaluation.tex",
+    "changes": "Thesis equation typeset for the presentation; notation, signs and numerical settings retained. PDF/PNG/SVG generated from the matching standalone LaTeX source."
+  },
+  {
+    "asset": "contact_damping_factor",
+    "source": "MyOwn/chapters/02_theoretical_background.tex; MyOwn/chapters/04_experimental_setup_and_evaluation.tex",
+    "changes": "Thesis equation typeset for the presentation; notation, signs and numerical settings retained. PDF/PNG/SVG generated from the matching standalone LaTeX source."
+  },
+  {
+    "asset": "nullspace_conditioning",
+    "source": "MyOwn/figures/ch05/MAIN_NS_nullspace_automatic.pdf, panel (b); chapters/05_results_and_discussion.tex, Null-Space Pose-Hold Results; main 0fea99b",
+    "changes": "Vector panel extraction preserving the original curves/bars, axes, units, labels, legends and uncertainty. Reproducible LaTeX crop wrapper and full source PDF retained; PDF/PNG/SVG synchronized."
+  },
+  {
+    "asset": "symbol_thetameas",
+    "source": "MyOwn/chapters/04_experimental_setup_and_evaluation.tex at main commit 0fea99b",
+    "changes": "Measured angular-offset symbol replacing theta_ach in the presentation definition. PDF/PNG/SVG rendered from the matching LaTeX source."
+  },
+  {
+    "asset": "nullspace_net_displacement",
+    "source": "MyOwn/figures/ch05/MAIN_NS_nullspace_automatic.pdf, panel (c); chapters/05_results_and_discussion.tex, Null-Space Pose-Hold Results; main 0fea99b",
+    "changes": "Vector panel extraction preserving the original curves/bars, axes, units, labels, legends and uncertainty. Reproducible LaTeX crop wrapper and full source PDF retained; PDF/PNG/SVG synchronized. Review correction: redraw the final -0.006 label with a visible LaTeX mathematical minus; original PDF text contained U+2212 but its glyph did not render. Bars, error bars and remaining labels unchanged."
+  },
+  {
+    "asset": "cartesian_pose_position",
+    "source": "MyOwn/chapters/02_theoretical_background.tex, coordinate frames and rigid-body pose; new schematic for the user-requested Cartesian-pose introduction.",
+    "changes": "Illustrative geometry without numerical measurements. Shows reference-frame position coordinates or positive rotations for roll, pitch and yaw; not an experimental result. Editable LaTeX source and matching PDF/PNG/SVG retained. Terminology updated to end effector (EE); schematic point labelled EE. Reference axes explicitly labelled Reference base frame, matching the robot-base expression of end-effector pose. Both pose illustrations use the identical parallel-jaw gripper macro from sources/pose_gripper.tikz, placed at the EE frame origin; a schematic symbol, not an exact tool model. Revised shared gripper to a transparent orthographic side profile with horizontal fingers; all fill and perspective faces removed. Orientation axes run from EE through the outline. User refinement: rotate the gripper -90 degrees so both fingers point downward; show a transparent 3D left-side view with depth edges and no filled faces. Use identical shared geometry and scale in both figures. Latest user refinement: opaque solid gripper with shaded faces and a small positive z rotation (+15 degrees for illustration only), retaining downward fingers and identical geometry/scale. Rotation arcs use smooth paths and clear tangent-aligned arrowheads following the positive right-hand rule. Latest refinement: one continuous opaque gripper body with filled depth faces and no internal edge strokes; further positive yaw so its front faces right. The position illustration adds a schematic chain with seven circular joint markers and connecting links from the base origin to the gripper wrist. Joint chain redrawn with five circles and steadily fanning link inclinations (about 74, 68, 54 and 26 degrees above the horizontal, then 20 below), so the chain leaves the origin between the z axis and the position vector, flattens over the top and drops onto the wrist, where the last circle rests tangentially on the gripper. No circle is drawn at the origin, so the base frame stays visible, and no joint overlaps an axis, the position vector or a projection line. Geometry remains schematic, with no numerical measurements."
+  },
+  {
+    "asset": "cartesian_pose_orientation",
+    "source": "MyOwn/chapters/02_theoretical_background.tex, coordinate frames and rigid-body pose; new schematic for the user-requested Cartesian-pose introduction.",
+    "changes": "Illustrative geometry without numerical measurements. Shows reference-frame position coordinates or positive rotations for roll, pitch and yaw; not an experimental result. Editable LaTeX source and matching PDF/PNG/SVG retained. Both pose illustrations use the identical parallel-jaw gripper macro from sources/pose_gripper.tikz, placed at the EE frame origin; a schematic symbol, not an exact tool model. Revised shared gripper to a transparent orthographic side profile with horizontal fingers; all fill and perspective faces removed. Orientation axes run from EE through the outline. User refinement: rotate the gripper -90 degrees so both fingers point downward; show a transparent 3D left-side view with depth edges and no filled faces. Use identical shared geometry and scale in both figures. Latest user refinement: opaque solid gripper with shaded faces and a small positive z rotation (+15 degrees for illustration only), retaining downward fingers and identical geometry/scale. Rotation arcs use smooth paths and clear tangent-aligned arrowheads following the positive right-hand rule. Latest refinement: one continuous opaque gripper body with filled depth faces and no internal edge strokes; further positive yaw so its front faces right. The position illustration adds a schematic chain with seven circular joint markers and connecting links from the base origin to the gripper wrist. Rotation rings redrawn: the roll, pitch and yaw curls are plotted as fine polylines rather than smoothed curves, so each arrow tip is exactly tangent to its ring, and the ring radii are enlarged relative to the tip length. Each ring is split where it crosses its own axis, the far half being drawn before the axes and the near half after them over a white casing, so the axis passes through the ring. Ring positions and labels are spaced clear of the axis tips and of the gripper. Rotation senses and the roll-pitch-yaw convention are unchanged."
+  },
+  {
+    "asset": "controller_wrench_blocks",
+    "source": "MyOwn/chapters/02_theoretical_background.tex: Cartesian impedance wrench and eq:pole_block_gains.",
+    "changes": "Combines force and moment into the decoupled wrench law. Underbraces identify 6x6 stiffness K_c and damping D_c; all off-diagonal blocks are 3x3 zero matrices. Uses the original angular velocity difference, not the derivative of the axis-angle error. Editable LaTeX with synchronized PDF/PNG/SVG."
+  },
+  {
+    "asset": "pose_joint_configuration",
+    "source": "MyOwn/chapters/02_theoretical_background.tex: forward kinematics maps seven joint coordinates to end-effector pose.",
+    "changes": "LaTeX equation p=p(q), using the same serif mathematics workflow as all controller equations; replaces inline Cambria Math. Matching PDF/PNG/SVG retained."
+  },
+  {
+    "asset": "symbol_tau_d",
+    "source": "MyOwn/chapters/02_theoretical_background.tex: null-space damping and singular-value conditioning torque notation.",
+    "changes": "Torque symbol only, appended to the matching main-slide heading. Same LaTeX serif equation style, with navy heading color. Full torque formulas remain omitted from the introduction."
+  },
+  {
+    "asset": "symbol_tau_sigma",
+    "source": "MyOwn/chapters/02_theoretical_background.tex: null-space damping and singular-value conditioning torque notation.",
+    "changes": "Torque symbol only, appended to the matching main-slide heading. Same LaTeX serif equation style, with navy heading color. Full torque formulas remain omitted from the introduction."
   }
 ]

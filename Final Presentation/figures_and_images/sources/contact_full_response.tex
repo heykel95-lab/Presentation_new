@@ -1,0 +1,48 @@
+\documentclass[tikz,border=0pt]{standalone}
+\usepackage{graphicx,amsmath}
+\definecolor{navy}{HTML}{17365D}
+\begin{document}
+\begin{tikzpicture}[x=1bp,y=1bp]
+\path[use as bounding box] (0,0) rectangle (580,430);
+\node[anchor=south west,inner sep=0] at (80,318) {\includegraphics[width=490bp,height=102bp]{contact_response_plot.pdf}};
+\fill[white] (81,400) rectangle (104,419);
+\node[anchor=north west,font=\fontsize{12}{14}\selectfont] at (85,417) {(a)};
+\draw[line width=.6bp] (77,337.1250)--(80,337.1250);\node[anchor=east,inner sep=2bp,font=\fontsize{12}{14}\selectfont] at (76,337.1250) {$ 0 $};
+\draw[line width=.6bp] (77,356.9724)--(80,356.9724);\node[anchor=east,inner sep=2bp,font=\fontsize{12}{14}\selectfont] at (76,356.9724) {$ 2.5 $};
+\draw[line width=.6bp] (77,376.8198)--(80,376.8198);\node[anchor=east,inner sep=2bp,font=\fontsize{12}{14}\selectfont] at (76,376.8198) {$ 5 $};
+\draw[line width=.6bp] (77,396.6673)--(80,396.6673);\node[anchor=east,inner sep=2bp,font=\fontsize{12}{14}\selectfont] at (76,396.6673) {$ 7.5 $};
+\draw[line width=.6bp] (77,416.5147)--(80,416.5147);\node[anchor=east,inner sep=2bp,font=\fontsize{12}{14}\selectfont] at (76,416.5147) {$ 10 $};
+\node[rotate=90,align=center,font=\fontsize{13}{15}\selectfont] at (24,369.0) {Contact response\\$\gamma_{t_1}$ [$^\circ$]};
+\node[anchor=south west,inner sep=0] at (80,192) {\includegraphics[width=490bp,height=102bp]{contact_force_plot.pdf}};
+\fill[white] (81,274) rectangle (104,293);
+\node[anchor=north west,font=\fontsize{12}{14}\selectfont] at (85,291) {(b)};
+\draw[line width=.6bp] (77,204.0427)--(80,204.0427);\node[anchor=east,inner sep=2bp,font=\fontsize{12}{14}\selectfont] at (76,204.0427) {$ -100 $};
+\draw[line width=.6bp] (77,221.6331)--(80,221.6331);\node[anchor=east,inner sep=2bp,font=\fontsize{12}{14}\selectfont] at (76,221.6331) {$ -75 $};
+\draw[line width=.6bp] (77,239.2235)--(80,239.2235);\node[anchor=east,inner sep=2bp,font=\fontsize{12}{14}\selectfont] at (76,239.2235) {$ -50 $};
+\draw[line width=.6bp] (77,256.8139)--(80,256.8139);\node[anchor=east,inner sep=2bp,font=\fontsize{12}{14}\selectfont] at (76,256.8139) {$ -25 $};
+\draw[line width=.6bp] (77,274.4043)--(80,274.4043);\node[anchor=east,inner sep=2bp,font=\fontsize{12}{14}\selectfont] at (76,274.4043) {$ 0 $};
+\draw[line width=.6bp] (77,291.9947)--(80,291.9947);\node[anchor=east,inner sep=2bp,font=\fontsize{12}{14}\selectfont] at (76,291.9947) {$ 25 $};
+\node[rotate=90,align=center,font=\fontsize{13}{15}\selectfont] at (24,243.0) {Normal force\\$F_{n,\mathrm{est}}$ [N]};
+\node[anchor=south west,inner sep=0] at (80,66) {\includegraphics[width=490bp,height=102bp]{contact_moment_plot.pdf}};
+\fill[white] (81,148) rectangle (104,167);
+\node[anchor=north west,font=\fontsize{12}{14}\selectfont] at (85,165) {(c)};
+\draw[line width=.6bp] (77,75.1146)--(80,75.1146);\node[anchor=east,inner sep=2bp,font=\fontsize{12}{14}\selectfont] at (76,75.1146) {$ -5 $};
+\draw[line width=.6bp] (77,95.0122)--(80,95.0122);\node[anchor=east,inner sep=2bp,font=\fontsize{12}{14}\selectfont] at (76,95.0122) {$ -2.5 $};
+\draw[line width=.6bp] (77,114.9097)--(80,114.9097);\node[anchor=east,inner sep=2bp,font=\fontsize{12}{14}\selectfont] at (76,114.9097) {$ 0 $};
+\draw[line width=.6bp] (77,134.8073)--(80,134.8073);\node[anchor=east,inner sep=2bp,font=\fontsize{12}{14}\selectfont] at (76,134.8073) {$ 2.5 $};
+\draw[line width=.6bp] (77,154.7048)--(80,154.7048);\node[anchor=east,inner sep=2bp,font=\fontsize{12}{14}\selectfont] at (76,154.7048) {$ 5 $};
+\draw[line width=.6bp] (102.2727,66)--(102.2727,63);\node[anchor=north,inner sep=2bp,font=\fontsize{12}{14}\selectfont] at (102.2727,62) {0};
+\draw[line width=.6bp] (191.3458,66)--(191.3458,63);\node[anchor=north,inner sep=2bp,font=\fontsize{12}{14}\selectfont] at (191.3458,62) {1};
+\draw[line width=.6bp] (280.4189,66)--(280.4189,63);\node[anchor=north,inner sep=2bp,font=\fontsize{12}{14}\selectfont] at (280.4189,62) {2};
+\draw[line width=.6bp] (369.4920,66)--(369.4920,63);\node[anchor=north,inner sep=2bp,font=\fontsize{12}{14}\selectfont] at (369.4920,62) {3};
+\draw[line width=.6bp] (458.5651,66)--(458.5651,63);\node[anchor=north,inner sep=2bp,font=\fontsize{12}{14}\selectfont] at (458.5651,62) {4};
+\draw[line width=.6bp] (547.6382,66)--(547.6382,63);\node[anchor=north,inner sep=2bp,font=\fontsize{12}{14}\selectfont] at (547.6382,62) {5};
+\node[font=\fontsize{13}{15}\selectfont] at (325.0,37) {Time, $t$ [s]};
+\node[rotate=90,align=center,font=\fontsize{13}{15}\selectfont] at (24,117.0) {TCP moment\\$M_{t_1,\mathrm{est}}$ [N\,m]};
+\begin{scope}[shift={(68,0)}]
+\draw[black,line width=1.3bp] (0,10)--(18,10);\node[anchor=west,font=\fontsize{12}{14}\selectfont] at (22,10) {$r_{c,t_2}=-40\,\mathrm{mm}$};
+\draw[red,line width=1.3bp] (170.0,10)--(188.0,10);\node[anchor=west,font=\fontsize{12}{14}\selectfont] at (192.0,10) {TCP: $r_{c,t_2}=0$};
+\draw[blue,line width=1.3bp] (340.0,10)--(358.0,10);\node[anchor=west,font=\fontsize{12}{14}\selectfont] at (362.0,10) {$r_{c,t_2}=+40\,\mathrm{mm}$};
+\end{scope}
+\end{tikzpicture}
+\end{document}

@@ -1,31 +1,28 @@
 \documentclass[tikz,border=4pt]{standalone}
-\usepackage{amsmath,amssymb,bm,setspace}
+\usepackage{amsmath,amssymb}
 \usepackage{tikz,pgfplots}
 \pgfplotsset{compat=1.18}
-\usetikzlibrary{arrows.meta,calc,positioning,decorations.pathreplacing}
+\usetikzlibrary{arrows.meta,calc,positioning}
 \begin{document}
-% Case-A zero-lever response by categorical test condition.
+% Case-A zero-lever response by measured pose-based angular offset.
 \begin{tikzpicture}
 \definecolor{barblue}{HTML}{0057B8}
 \begin{axis}[
-    width=12.3cm, height=7.0cm,
+    width=9.5cm, height=6.2cm,
     ybar,
     bar width=14pt,
     xtick=data,
     symbolic x coords={none, p10t1, m10t1},
-    xticklabels={\shortstack{Nominal zero\\offset},
-                 \shortstack{Positive tilt\\$+9.31^\circ$},
-                 \shortstack{Negative tilt\\$-9.41^\circ$}},
+    xticklabels={\(0.69\), \(9.31\), \(-9.41\)},
     ymin=-13, ymax=10,
     ytick={-12,-9,-6,-3,0,3,6,9},
     grid=major,
     grid style={gray!25, very thin},
     tick label style={font=\footnotesize},
     label style={font=\footnotesize},
-    % The nominal-zero case is a test category, not a relabelled component.
-    % Only the two known achieved t_1 components are shown numerically.
-    xlabel={Entry condition},
-    ylabel={Contact response about \(t_1\), \(\gamma_{t_1}\) [\(^\circ\)]},
+    % All conditions use the measured t1 component, including zero configured offset.
+    xlabel={Measured Angular Offset, \(\theta_{\mathrm{meas},t_1}\) [\(^\circ\)]},
+    ylabel={Contact Response About \(t_1\), \(\gamma_{t_1}\) [\(^\circ\)]},
     nodes near coords,
     nodes near coords style={font=\scriptsize, /pgf/number format/fixed,
                              /pgf/number format/precision=2},

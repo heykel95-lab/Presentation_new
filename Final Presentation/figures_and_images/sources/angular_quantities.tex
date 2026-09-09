@@ -1,27 +1,58 @@
 \documentclass[tikz,border=4pt]{standalone}
-\usepackage{amsmath,amssymb,bm,setspace}
+\usepackage{amsmath,amssymb}
 \usepackage{tikz,pgfplots}
 \pgfplotsset{compat=1.18}
-\usetikzlibrary{arrows.meta,calc,positioning,decorations.pathreplacing}
+\usetikzlibrary{arrows.meta,calc,positioning}
 \begin{document}
-\begin{tikzpicture}[font=\small,
-   ref/.style={black,densely dashed,line width=0.9pt},
-   entry/.style={blue!65!black,line width=1.1pt},
-   finish/.style={black,line width=1.1pt},
-   ang/.style={-{Latex[length=2mm]},black,line width=1pt},
-   lbl/.style={font=\small,inner sep=2pt}]
-\draw[ref] (-2.7,0) -- (4.1,0);
-\draw[entry] (210:2.7) -- (30:4.1);
-\draw[finish] (188:2.7) -- (8:4.1);
-\node[lbl,anchor=west] at (4.2,0) {Configured surface};
-\node[lbl,anchor=west] at (3.65,2.12) {Entry orientation};
-\node[lbl,anchor=west] at (4.2,0.66) {End orientation};
-\draw[ang] (0:1.45) arc[start angle=0,end angle=30,radius=1.45];
-\node[lbl,anchor=west] at (1.30,-0.38) {$\theta_{\mathrm{ach},t_1}$};
-\draw[ang] (8:2.90) arc[start angle=8,end angle=30,radius=2.90];
-\node[lbl,anchor=west] at (3.02,1.18) {$\gamma_{t_1}$};
-\draw[black,fill=white] (-2.4,1.2) circle (0.09);
-\fill[black] (-2.4,1.2) circle (0.025);
-\node[lbl,anchor=west] at (-2.18,1.2) {$t_1$};
+% Schematic pure t_1 rotation. A simultaneous 90-degree rotation of both
+% normals gives their plane traces, preserving the angular offset.
+% Both tool-face directions use the same calibrated tool-to-EE relation.
+% The common origin compares orientations only; it is not a contact point.
+\begin{tikzpicture}[
+  scale=1.0,
+  reference/.style={red!75!black, line width=1.1pt},
+  entry/.style={green!60!black, line width=1.3pt},
+  endpoint/.style={blue!70!black, line width=1.1pt, dashed},
+  angle/.style={-{Latex[length=2.0mm]}, line width=0.9pt},
+  axis/.style={-{Latex[length=1.6mm]}, black, line width=0.7pt},
+  lbl/.style={font=\footnotesize, inner sep=2pt}
+]
+  % Three directly labelled orientations with a single common origin.
+  \draw[reference] (0,0) -- (7.5,0);
+  \draw[entry] (0,0) -- (32:7.5);
+  \draw[endpoint] (0,0) -- (10:7.5);
+
+  \node[lbl,green!60!black,anchor=west] at (6.55,3.97)
+    {Contact entry, $t_{\mathrm{start}}$};
+  \node[lbl,blue!70!black,anchor=west] at (7.65,1.30)
+    {Contact end, $t_{\mathrm{end}}$};
+  \node[lbl,red!75!black,anchor=west] at (7.65,0)
+    {Configured reference};
+
+  % Outer arc: configured plane -> entry orientation. Its crossing of the end
+  % ray is meaningful: the measured entry offset spans the entire sector.
+  \draw[angle,red!75!black] (0:4.8)
+    arc[start angle=0,end angle=32,radius=4.8];
+  \node[lbl,red!75!black,anchor=west] at (5.03,1.96)
+    {$\theta_{\mathrm{meas},t_1}$};
+
+  % Inner arc: measured end -> held entry orientation, matching R_CE.
+  \draw[angle,blue!70!black] (10:2.8)
+    arc[start angle=10,end angle=32,radius=2.8];
+  \node[lbl,blue!70!black] at (1.70,0.66) {$\gamma_{t_1}$};
+
+  % Surface-frame inset: t_1 x t_2 = n_s. Positive rotation is anticlockwise.
+  \begin{scope}[shift={(0.30,2.65)}]
+    \draw[axis] (0.18,0) -- (1.1,0) node[lbl,right] {$t_2$};
+    \draw[axis] (0,0.18) -- (0,1.1) node[lbl,above] {$n_s$};
+    % Positive rotation about t_1 runs from +t_2 toward +n_s.
+    \draw[angle,black] (15:0.62)
+      arc[start angle=15,end angle=75,radius=0.62];
+    \node[lbl,font=\normalsize] at (0.60,0.60) {$+$};
+    \draw[black] (0,0) circle (0.11);
+    \fill[black] (0,0) circle (0.035);
+    \node[lbl,anchor=north east] at (-0.15,-0.15) {$t_1$};
+  \end{scope}
 \end{tikzpicture}
+
 \end{document}

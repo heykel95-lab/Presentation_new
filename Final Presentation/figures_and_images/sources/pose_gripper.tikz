@@ -1,0 +1,40 @@
+% One continuous opaque gripper body, with no drawn internal edge lines.
+% Fingers remain downward. A further positive yaw makes its open face look right.
+% R_z(110 deg) is illustrative geometry, not an experimental angle.
+\newcommand{\PoseGripper}{%
+  \pgfmathsetmacro{\GripYaw}{110}
+  \pgfmathsetmacro{\GripXX}{cos(\GripYaw)-0.55*sin(\GripYaw)}
+  \pgfmathsetmacro{\GripXY}{-0.42*sin(\GripYaw)}
+  \pgfmathsetmacro{\GripYX}{-sin(\GripYaw)-0.55*cos(\GripYaw)}
+  \pgfmathsetmacro{\GripYY}{-0.42*cos(\GripYaw)}
+  \begin{scope}[x={(\GripXX cm,\GripXY cm)},
+    y={(\GripYX cm,\GripYY cm)},z={(0cm,1cm)}]
+    % Visible side faces of the same extruded body; flat fills without strokes.
+    \path[fill=black!42]
+      (-0.23,-0.14,-0.38)--(-0.23,0.14,-0.38)
+      --(-0.23,0.14,0.48)--(-0.23,-0.14,0.48)--cycle;
+    \path[fill=black!42]
+      (0.42,-0.14,-0.38)--(0.42,0.14,-0.38)
+      --(0.42,0.14,0.90)--(0.42,-0.14,0.90)--cycle;
+    \path[fill=black!12]
+      (0.42,-0.14,0.90)--(0.42,0.14,0.90)
+      --(0.16,0.14,0.90)--(0.16,-0.14,0.90)--cycle;
+    \path[fill=black!42]
+      (0.16,-0.14,0.90)--(0.16,0.14,0.90)
+      --(0.16,0.14,1.13)--(0.16,-0.14,1.13)--cycle;
+    \path[fill=black!12]
+      (0.16,-0.14,1.13)--(0.16,0.14,1.13)
+      --(-0.16,0.14,1.13)--(-0.16,-0.14,1.13)--cycle;
+    \path[fill=black!12]
+      (-0.16,-0.14,0.90)--(-0.16,0.14,0.90)
+      --(-0.42,0.14,0.90)--(-0.42,-0.14,0.90)--cycle;
+    % A single filled contour joins both fingers, palm and wrist.
+    \path[fill=black!27]
+      (-0.42,-0.14,-0.38)--(-0.23,-0.14,-0.38)
+      --(-0.23,-0.14,0.48)--(0.23,-0.14,0.48)
+      --(0.23,-0.14,-0.38)--(0.42,-0.14,-0.38)
+      --(0.42,-0.14,0.90)--(0.16,-0.14,0.90)
+      --(0.16,-0.14,1.13)--(-0.16,-0.14,1.13)
+      --(-0.16,-0.14,0.90)--(-0.42,-0.14,0.90)--cycle;
+  \end{scope}
+}

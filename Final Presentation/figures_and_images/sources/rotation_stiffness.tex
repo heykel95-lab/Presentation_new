@@ -4,8 +4,8 @@
 \pgfplotsset{compat=1.18}
 \usetikzlibrary{arrows.meta,calc,positioning,decorations.pathreplacing}
 \begin{document}
-% Case-B rotational-stiffness comparison. The legend gives the achieved
-% achieved angular-offset range across the three stiffness settings.
+% Case-B rotational-stiffness comparison. The legend gives the measured
+% measured angular-offset range across the three stiffness settings.
 \begin{tikzpicture}
 \begin{axis}[
     width=12.5cm, height=7.0cm,
@@ -14,17 +14,17 @@
     ytick={0,2,4,6,8,10},
     grid=major,
     grid style={gray!25, very thin},
-    tick label style={font=\normalsize},
-    label style={font=\normalsize},
-    xlabel={Rotational Stiffness About \(t_1\), \(K_{R,t_1}\) [N\,m/rad]},
-    ylabel={Contact Response About \(t_1\), \(\gamma_{t_1}\) [\(^\circ\)]},
-    legend style={font=\small, draw=none, fill=none,
-                  cells={anchor=west}, at={(0.5,-0.24)}, anchor=north},
+    tick label style={font=\fontsize{12}{14}\selectfont},
+    label style={font=\fontsize{13}{15}\selectfont},
+    xlabel={\shortstack{Rotational stiffness about $t_1$\\$K_{R,t_1}$ [N\,m/rad]}},
+    ylabel={Contact response, \(\gamma_{t_1}\) [\(^\circ\)]},
+    legend style={font=\fontsize{12}{14}\selectfont, draw=none, fill=none,
+                  cells={anchor=west}, at={(0.5,-0.36)}, anchor=north},
     every axis plot/.append style={thick, mark size=2.3pt},
   ]
 \addplot[black, mark=o] coordinates {
   (5,7.57) (15,7.29) (50,2.73)};
-\addlegendentry{Achieved Angular Offset, \(\theta_{\mathrm{ach},t_1}=(9.31\text{--}9.32)^\circ\)}
+\addlegendentry{\shortstack[l]{Measured angular offset\\\(\theta_{\mathrm{meas},t_1}=(9.31\text{--}9.32)^\circ\)}}
 \end{axis}
 \end{tikzpicture}
 
