@@ -468,5 +468,10 @@
     "asset": "symbol_tau_sigma",
     "source": "MyOwn/chapters/02_theoretical_background.tex: null-space damping and singular-value conditioning torque notation.",
     "changes": "Torque symbol only, appended to the matching main-slide heading. Same LaTeX serif equation style, with navy heading color. Full torque formulas remain omitted from the introduction."
+  },
+  {
+    "asset": "contact_wrench_three_panels",
+    "source": "MyOwn/figures/ch05/MAIN_D_wrench.pdf and chapters/05_results_and_discussion.tex, contact response and interaction wrench discussion",
+    "changes": "Restore the normal-force panel on footer slide 19. Three aligned panels in original response, estimated normal-force, estimated TCP-moment order. Original cropped vector curves, axis limits, tick positions and colors preserved. LaTeX wrapper supplies readable labels and the thesis response-time annotations. Shared legend retained in PowerPoint. PDF, PNG and SVG synchronized. Data source hash matches MyOwn."
   }
 ]
