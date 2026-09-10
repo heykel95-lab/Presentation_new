@@ -1,6 +1,6 @@
 \documentclass[tikz,border=4pt]{standalone}
 \usepackage{amsmath,amssymb}
-\usetikzlibrary{arrows.meta}
+\usetikzlibrary{arrows.meta,decorations.markings}
 \definecolor{navy}{HTML}{17365D}
 \definecolor{xaxis}{HTML}{B6252D}
 \definecolor{yaxis}{HTML}{217A3C}
@@ -17,6 +17,24 @@
  curl/.style={line width=1.1pt,line cap=round,line join=round,
    samples=140,variable=\t},
  curltip/.style={-{Latex[length=2.4mm,width=1.6mm]}},
+ % Mark the final tangent directly for pitch and roll. A normal end arrow
+ % shortens this finely sampled path and leaves a hooked stroke past the tip.
+ tangenttip/.style={line cap=butt,postaction={decorate},decoration={markings,
+   mark=at position 1 with {
+     % Local x follows the final path tangent. Put the exact triangle tip at
+     % the endpoint, avoiding the automatic arrow-tip setback and overrun.
+     \pgfpathmoveto{\pgfpointorigin}
+     \pgfpathlineto{\pgfpoint{-2.2mm}{0.75mm}}
+     \pgfpathlineto{\pgfpoint{-2.2mm}{-0.75mm}}
+     \pgfpathclose\pgfusepath{fill}}}},
+ % The pitch shaft ends at the centre of the triangle's base. Extend the tip
+ % forwards along that endpoint tangent so the curve cannot enter a side edge.
+ pitchtip/.style={line cap=butt,postaction={decorate},decoration={markings,
+   mark=at position 1 with {
+     \pgfpathmoveto{\pgfpoint{2.2mm}{0mm}}
+     \pgfpathlineto{\pgfpoint{0mm}{0.75mm}}
+     \pgfpathlineto{\pgfpoint{0mm}{-0.75mm}}
+     \pgfpathclose\pgfusepath{fill}}}},
  % White casing under whichever part of a ring passes in front of its own axis.
  casing/.style={white,line width=3pt,line cap=butt,line join=round,
    samples=140,variable=\t}]
@@ -26,7 +44,7 @@
 % far side is drawn before the axes and the near half after them over a white
 % casing, so the axis passes through each ring instead of over it.
 \draw[curl,zaxis,domain=350:500] plot ({0.7*cos(\t)},{0.7*sin(\t)},2.1);
-\draw[curl,xaxis,domain=5:115] plot (2.1,{0.7*cos(\t)},{0.7*sin(\t)});
+\draw[curl,xaxis,domain=25:115] plot (2.1,{0.7*cos(\t)},{0.7*sin(\t)});
 
 % Reference axes start at EE; the opaque gripper hides the portions behind it.
 \draw[axis,xaxis] (0,0,0)--(3.2,0,0) node[right] {$x$};
@@ -35,8 +53,8 @@
 
 % The pitch ring lies in a plane of constant y, so its axis runs in front of the
 % ring on the origin side and behind it on the far side.
-\draw[casing,domain=343:663] plot ({0.55*sin(\t)},2.05,{0.55*cos(\t)});
-\draw[curl,curltip,yaxis,domain=343:663]
+\draw[casing,domain=310:606] plot ({0.55*sin(\t)},2.05,{0.55*cos(\t)});
+\draw[curl,pitchtip,yaxis,domain=310:606]
  plot ({0.55*sin(\t)},2.05,{0.55*cos(\t)});
 \draw[white,line width=3pt,line cap=butt] (0,1.15,0)--(0,2.07,0);
 \draw[yaxis,line width=1pt,line cap=butt] (0,1.15,0)--(0,2.07,0);
@@ -48,8 +66,10 @@
 \draw[casing,domain=498:650] plot ({0.7*cos(\t)},{0.7*sin(\t)},2.1);
 \draw[curl,curltip,zaxis,domain=498:650]
  plot ({0.7*cos(\t)},{0.7*sin(\t)},2.1);
-\draw[casing,domain=113:340] plot (2.1,{0.7*cos(\t)},{0.7*sin(\t)});
-\draw[curl,curltip,xaxis,domain=113:340]
+\draw[casing,domain=113:360] plot (2.1,{0.7*cos(\t)},{0.7*sin(\t)});
+\draw[curl,xaxis,domain=113:354]
+ plot (2.1,{0.7*cos(\t)},{0.7*sin(\t)});
+\path[curl,tangenttip,xaxis,domain=113:360]
  plot (2.1,{0.7*cos(\t)},{0.7*sin(\t)});
 
 % Labels sit clear of the rings and of the axis tips.

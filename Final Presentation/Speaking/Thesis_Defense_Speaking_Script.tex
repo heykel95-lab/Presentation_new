@@ -1,3 +1,5 @@
+% Figure synchronization 2026-09-10: pitch shaft meets the arrowhead at its base centre. Spoken text and notes remain unchanged.
+% Figure synchronization 2026-09-10: pitch and roll arrow tips corrected, yaw preserved.
 % Layout synchronization 2026-09-10: native blue bullets added to subsection headings. Slide wording, equations and spoken text are unchanged.
 % Equation groups aligned at their equality signs in the presentation and narration.
 % Speaking script: slide titles, spoken text, and equations only.
@@ -60,7 +62,7 @@ I will first define the Cartesian pose, then explain how the controller corrects
 
 Cartesian pose describes both the position and the orientation of the end effector, abbreviated EE, relative to the robot base frame, used here as the reference frame. In three-dimensional space, the end effector's position and orientation together have six degrees of freedom: three for translation and three for rotation.
 
-Both illustrations show the same solid three-dimensional gripper, with its fingers pointing downward and its front turned towards the right about the reference z axis. The marked EE origin lies between the fingers. In the left illustration, seven circular joint markers and their connecting links form a schematic chain from the base-frame origin to the gripper. This illustrates how the joint configuration determines the end-effector pose. The curved arrows in the right illustration indicate positive rotations according to the right-hand rule.
+Both illustrations show the same solid three-dimensional gripper, with its fingers pointing downward and its front turned towards the right about the reference z axis. The marked EE origin lies between the fingers. In the left illustration, five circular joint markers and their connecting links form a schematic chain from the base-frame origin to the gripper. This illustrates how the joint configuration determines the end-effector pose. The curved arrows in the right illustration indicate positive rotations according to the right-hand rule.
 
 The left illustration shows the position vector \(p\). Its three coordinates, \(x\), \(y\), and \(z\), locate the end-effector frame origin in this reference base frame. This position depends on the configuration of all seven robot joint angles through forward kinematics, written \(p=p(q)\). The vector \(q\) collects those seven joint angles. Orientation also depends on the joint configuration.
 
@@ -187,7 +189,7 @@ I will now introduce the two experiments used to evaluate the controller.
 
 \section*{Contact experiment}
 
-The contact experiment uses a rectangular tool measuring forty by one hundred and twenty millimetres against a planar surface. The robot first establishes the tool orientation and approaches the surface. It then enters the five-second Contact Establishment phase and subsequently the pre-grinding hold.
+The contact experiment uses a rectangular tool measuring forty by one hundred and twenty millimetres against a planar surface. The process sequence shown is tool orientation, surface approach, contact establishment, and surface grinding. The experiments presented here evaluate the five-second Contact Establishment phase.
 
 During approach, translational stiffness is one hundred and fifty newtons per metre in each surface direction. Rotational stiffness about the two tangents is one hundred and eighty newton metres per radian. During Contact Establishment, the settings shown on the left provide compliant normal pressing and soft rotations about the surface tangents.
 
