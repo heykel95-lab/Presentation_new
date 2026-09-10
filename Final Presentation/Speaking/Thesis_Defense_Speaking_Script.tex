@@ -194,15 +194,16 @@ The contact experiment uses a rectangular tool measuring forty by one hundred an
 During approach, translational stiffness is one hundred and fifty newtons per metre in each surface direction. Rotational stiffness about the two tangents is one hundred and eighty newton metres per radian. During Contact Establishment, the settings shown on the left provide compliant normal pressing and soft rotations about the surface tangents.
 
 \[K_{p,n}=350\,\mathrm{N/m},\qquad K_{R,t_1}=K_{R,t_2}=5\,\mathrm{N\,m/rad}.\]
-\[K_{p,t_1}=K_{p,t_2}=2000\,\mathrm{N/m},\qquad\zeta=1.0.\]
+\[K_{p,t_1}=K_{p,t_2}=2000\,\mathrm{N/m}.\]
+\[K_{R,n}=50\,\mathrm{N\,m/rad}.\]
 
-Normal and tangential translation are specified separately from rotations about the surface tangents. These are the common contact settings before applying the CoC transformation. The damping coefficients are calculated from the directional stiffness and Cartesian inertia, using the stated damping factor. Normal translation is softer than tangential translation, and the tangent rotations are much softer than during approach.
+Normal and tangential translation are specified separately from rotations. Rotational stiffness about the surface normal is fifty newton metres per radian. These are the common contact settings before applying the CoC transformation. Normal translation is softer than tangential translation, and the tangent rotations are much softer than during approach.
 
 The selected tool-point reference advances towards the surface. Contact restricts translation, so the resulting position error generates the pressing force. The desired orientation remains fixed at the measured contact-entry orientation. There is no commanded alignment trajectory.
 
 Case A establishes the TCP-centred baseline for nominal zero, positive and negative entry tilt. Case B varies rotational stiffness about $t_1$, including five, fifteen and fifty newton metres per radian. Case C varies translational stiffness along $t_2$, using three hundred, eight hundred and two thousand newtons per metre. The $t_1$ translational stiffness remains fixed. Case D varies the tangential CoC displacement between minus forty and plus forty millimetres for both entry-tilt directions.
 
-There are nineteen settings, each repeated three times, giving fifty-seven trials. Within each comparison, the other settings remain unchanged. The separate null-space experiment is introduced next.
+Within each comparison, the other settings remain unchanged. The separate null-space experiment is introduced next.
 
 \section*{Null-space experiment}
 
@@ -226,7 +227,7 @@ Before the consistency checks, I will define the angular quantities used in the 
 
 The measured angular offset and the contact response describe two different rotations. The measured angular offset, \(\theta_{\mathrm{meas},t_1}\), describes the tool orientation at contact entry relative to the configured surface reference. It is calculated from the measured end-effector orientation and the calibrated tool normal.
 
-The Chapter Four sketch shows the configured reference in red, the contact-entry orientation in solid green, and the contact-end orientation in dashed blue. Both tool-face directions are reconstructed from measured end-effector orientations using the same calibrated tool normal. Their common origin compares orientations. It is not a contact point. The first surface tangent points out of the page, so positive rotation is anticlockwise by the right-hand rule. The curved arrow and plus sign in the surface-frame inset show this direction from positive t two towards the surface normal.
+The Chapter Four sketch shows the configured reference in red, the contact-entry orientation in solid green, and the contact-end orientation in dashed blue. Both tool-face directions are reconstructed from measured end-effector orientations using the same calibrated tool normal. Their common origin compares orientations. It is not a contact point. The first surface tangent points out of the page, so positive rotation is anticlockwise by the right-hand rule. The curved arrow and plus sign above and to the right of the inset origin show positive rotation from positive t two towards the surface normal.
 
 The outer arc gives the measured angular offset from the configured reference to the entry orientation. The inner arc gives the contact response, \(\gamma_{t_1}\), from the measured end orientation back to the held entry orientation. The response therefore has the opposite sign to the start-to-end end-effector rotation. For rotation towards parallel alignment with the configured surface, it has the same sign as the measured angular offset.
 
@@ -310,7 +311,7 @@ Increasing this stiffness from five to fifty newton metres per radian reduced th
 
 This agrees with the spring interpretation: greater rotational stiffness opposes more of the rotation produced by contact.
 
-The right plot changes a different quantity, \(K_{p,t_2}\). This is translational stiffness along the second tangent, so it resists sliding along the surface rather than rotation.
+The right plot varies \(K_{p,t_2}\), the translational stiffness along the second surface tangent. Rotation about \(t_1\) can be accompanied by tangential motion along \(t_2\), which is why this stiffness was selected. Lower stiffness gives less restoring force for the same tangential position error.
 
 Changing it from three hundred to two thousand newtons per metre produced a response span of only three hundredths of a degree, or about zero point four percent of the baseline response.
 

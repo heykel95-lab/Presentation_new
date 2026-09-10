@@ -22,7 +22,7 @@
   {
     "asset": "angular_quantities",
     "source": "MyOwn/figures/ch04/surface_reference_geometry.tex at main commit 0fea99be52beef464180574f9f36878491674e9f",
-    "changes": "Latest thesis TikZ source compiled unchanged inside a standalone wrapper; synchronized PDF/PNG/SVG. Configured reference, measured contact entry, and dashed measured contact end; theta_meas,t1 and gamma_t1 with the thesis rotation convention. Added a positive anticlockwise rotation arc and plus sign in the n_s/t2 inset, from +t2 toward +n_s about the outward t1 axis; angular definitions unchanged."
+    "changes": "Latest thesis TikZ source compiled unchanged inside a standalone wrapper; synchronized PDF/PNG/SVG. Configured reference, measured contact entry, and dashed measured contact end; theta_meas,t1 and gamma_t1 with the thesis rotation convention. Added a positive anticlockwise rotation arc and plus sign in the n_s/t2 inset, from +t2 toward +n_s about the outward t1 axis; angular definitions unchanged. Moved the inset positive-rotation arc and plus farther from the origin: radius 0.82 and plus position (0.80, 0.80). Directions and the remaining geometry are unchanged."
   },
   {
     "asset": "baseline_response",
@@ -473,5 +473,10 @@
     "asset": "contact_wrench_three_panels",
     "source": "MyOwn/figures/ch05/MAIN_D_wrench.pdf and chapters/05_results_and_discussion.tex, contact response and interaction wrench discussion",
     "changes": "Restore the normal-force panel on footer slide 19. Three aligned panels in original response, estimated normal-force, estimated TCP-moment order. Original cropped vector curves, axis limits, tick positions and colors preserved. LaTeX wrapper supplies readable labels and the thesis response-time annotations. Shared legend retained in PowerPoint. PDF, PNG and SVG synchronized. Data source hash matches MyOwn."
+  },
+  {
+    "asset": "contact_normal_rotation",
+    "source": "MyOwn/chapters/04_experimental_setup_and_evaluation.tex, common Cartesian stiffness table, Contact-establishment row",
+    "changes": "Added K_R,n = 50 N m/rad to Contact experiment, footer 10. LaTeX source with matching PDF/PNG/SVG. Equation scale and equals-sign position match existing contact settings."
   }
 ]
