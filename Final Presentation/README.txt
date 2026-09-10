@@ -33,3 +33,5 @@ Review corrections: measured angular-offset legends throughout; visible -0.006 d
 Conclusion combines five contact and null-space findings from the earlier presentation and thesis in the concise style of commit 558d22e. Future work covers a more rigid tool mount and adaptive CoC selection with return to the TCP after alignment. Audience-facing slide text and narration contain no semicolons.
 
 Footer slide 19 shows contact response, estimated normal force, and estimated TCP moment together, using the original thesis curves and a shared legend. The matching LaTeX source and PDF/PNG/SVG figure variants are included.
+
+Blue subsection and parameter headings use native round navy bullets, with consistent hanging spacing and the original text, equation and figure alignment.
