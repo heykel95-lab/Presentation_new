@@ -114,21 +114,7 @@ Here, q denotes the measured joint positions. The geometric Jacobian, J, depends
 
 I implemented this feedback controller in C++ using libfranka. Its nominal torque-control frequency is one kilohertz, or one update every millisecond.
 
-The next slide explains how the compliant behaviour is chosen relative to the surface.
-
-\section*{Surface-relative compliance}
-
-These directions are defined relative to the configured surface. The arrow \(n_s\) is the surface normal: it is perpendicular to the plane and points outward. Pressing towards the surface therefore follows the opposite direction.
-
-The other two arrows, \(t_1\) and \(t_2\), are perpendicular tangent directions lying in the plane. Together, these three directions form the surface frame.
-
-For translation, I use softer behaviour along the normal to allow compliant pressing. Along the two tangents, higher stiffness helps retain the tool's position on the surface.
-
-For rotation, low stiffness about the two tangents allows rotations that bring the tool face towards alignment with the plane. Higher stiffness about the normal resists rotation in the plane and maintains the tool's in-plane orientation.
-
-This distinction is important: translating along a tangent and rotating about that tangent are different motions. The controller can assign a different stiffness to each.
-
-Besides choosing these directions, I can also shift the point about which the impedance is defined.
+The next slide introduces the centre of compliance, the virtual reference point at which the impedance is defined.
 
 \section*{Centre of compliance (CoC)}
 
@@ -154,7 +140,7 @@ The preceding sketches introduced the centre of compliance and its displacement 
 \[
 A=\mathrm{Ad}(r_c),\qquad e_c=Ae.
 \]
-This is a local small-angle model. The stiffness and damping matrices are specified independently for translation and rotation at the CoC, with all components expressed in the robot base frame.
+The point-shift relation applies locally for small rotations, with all components expressed in the robot base frame.
 
 The two columns show how the same point shift transforms stiffness and damping to the TCP:
 \[
@@ -163,7 +149,7 @@ K_{\mathrm{TCP}} &= A^{\top}K_cA,\\[4pt]
 D_{\mathrm{TCP}} &= A^{\top}D_cA.
 \end{aligned}
 \]
-The transformed matrices generally contain off-diagonal terms when the CoC displacement is non-zero. Translation and rotation are then coupled: translational error and velocity can contribute to the commanded moment, while rotational error and velocity can contribute to the commanded force.
+CoC displacement generally introduces non-zero off-diagonal blocks in the transformed stiffness matrix \(K_{\mathrm{TCP}}\) and damping matrix \(D_{\mathrm{TCP}}\). Translation and rotation are then coupled: translational error and velocity can contribute to the commanded moment, while rotational error and velocity can contribute to the commanded force.
 
 This is the matrix form of the moment contribution illustrated on the preceding slide. At the TCP, \(r_c\) is zero, the point shift becomes the identity, and the additional coupling vanishes. The ordinary translational and rotational spring-damper laws remain active.
 
@@ -185,7 +171,21 @@ The lower columns distinguish the two controller functions. The damping torque, 
 
 A singularity is a configuration where the Jacobian loses rank. The conditioning objective steers towards better local conditioning, but it does not guarantee avoidance of every singular configuration.
 
-I will now introduce the two experiments used to evaluate the controller.
+With both controllers introduced, I will now explain the surface-relative settings used in the contact experiment.
+
+\section*{Surface-relative compliance}
+
+These directions are defined relative to the configured surface. The arrow \(n_s\) is the surface normal: it is perpendicular to the plane and points outward. Pressing towards the surface therefore follows the opposite direction.
+
+The other two arrows, \(t_1\) and \(t_2\), are perpendicular tangent directions lying in the plane. Together, these three directions form the surface frame.
+
+For translation, I use softer behaviour along the normal to allow compliant pressing. Along the two tangents, higher stiffness helps retain the tool's position on the surface.
+
+For rotation, low stiffness about the two tangents allows rotations that bring the tool face towards alignment with the plane. Higher stiffness about the normal resists rotation in the plane and maintains the tool's in-plane orientation.
+
+This distinction is important: translating along a tangent and rotating about that tangent are different motions. The controller can assign a different stiffness to each.
+
+The next slide introduces the contact experiment and its stiffness settings.
 
 \section*{Contact experiment}
 
