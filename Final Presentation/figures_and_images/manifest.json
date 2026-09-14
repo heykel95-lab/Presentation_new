@@ -61,8 +61,9 @@
   },
   {
     "asset": "nullspace_damping",
-    "source": "MyOwn/figures/ch05/MAIN_NS_nullspace_automatic.pdf, panel (a); chapters/05_results_and_discussion.tex, Null-Space Pose-Hold Results; main 0fea99b",
-    "changes": "Vector panel extraction preserving the original curves/bars, axes, units, labels, legends and uncertainty. Reproducible LaTeX crop wrapper and full source PDF retained; PDF/PNG/SVG synchronized."
+    "source": "MyOwn/code/python/figures/make_nullspace_figure.py and the 12 archived MAIN_NS7/MAIN_NS8 log files. Synchronized MyOwn/figures/ch05/MAIN_NS_nullspace_automatic.pdf. Individual vector panels exported reproducibly with --panel-dir.",
+    "changes": "Panel (a) includes no null-space torque, projected damping and conditioning at 1.5 and 2.0 N m. Cumulative projected motion uses recorded 5–9 s, displayed as 0–4 s. Endpoint means are 7.598, 5.689, 0.288 and 1.687 degrees. Curves show three-trial means with one sample standard deviation. The original no-torque and damping values are unchanged. All PDF/PNG/SVG variants and the LaTeX wrapper are synchronized.",
+    "source_pdf_sha256": "ce0a4b6dadc81f8f272cd92d9ea770b4773588be7ba26f8848149b1d1f525785"
   },
   {
     "asset": "wrench_comparison",
@@ -341,8 +342,8 @@
   },
   {
     "asset": "coupling_point_shift",
-    "source": "MyOwn/chapters/02_theoretical_background.tex; MyOwn/chapters/04_experimental_setup_and_evaluation.tex",
-    "changes": "Thesis equation typeset for the presentation; notation, signs and numerical settings retained. PDF/PNG/SVG generated from the matching standalone LaTeX source. Simplified for footer 8: compact A = Ad(r_c), e_c = A e only; expanded adjoint matrix removed at user request. Matching source/PDF/PNG/SVG rebuilt."
+    "source": "MyOwn/chapters/02_theoretical_background.tex: eq:offset_adjoint, eq:coupled_tcp_stiffness, eq:coupled_tcp_damping, and eq:commanded_moment_decomposition.",
+    "changes": "Simplified to A = Ad(r_c), omitting the error mapping. Synchronized standalone LaTeX source and PDF/PNG/SVG outputs. The slide focuses on transforming stiffness and damping and the resulting force-moment coupling."
   },
   {
     "asset": "coupling_displacement",
@@ -381,18 +382,18 @@
   },
   {
     "asset": "null_controller_damping",
-    "source": "MyOwn/chapters/02_theoretical_background.tex; MyOwn/chapters/04_experimental_setup_and_evaluation.tex",
-    "changes": "Thesis equation typeset for the presentation; notation, signs and numerical settings retained. PDF/PNG/SVG generated from the matching standalone LaTeX source."
+    "source": "MyOwn/chapters/02_theoretical_background.tex: null-space projectors and projected damping and conditioning. Verified against Thesis_Final_Control/surface_grinding_controller/src/control/robot_support.cpp.",
+    "changes": "Existing synchronized LaTeX/PDF/PNG/SVG equation artwork reused unchanged on the hidden Null-space torques and projector backup. Torque coefficients, direction selector, pseudoinverse, and kinematic projector are defined beside the equations or in the notes."
   },
   {
     "asset": "null_controller_conditioning",
-    "source": "MyOwn/chapters/02_theoretical_background.tex; MyOwn/chapters/04_experimental_setup_and_evaluation.tex",
-    "changes": "Thesis equation typeset for the presentation; notation, signs and numerical settings retained. PDF/PNG/SVG generated from the matching standalone LaTeX source."
+    "source": "MyOwn/chapters/02_theoretical_background.tex: null-space projectors and projected damping and conditioning. Verified against Thesis_Final_Control/surface_grinding_controller/src/control/robot_support.cpp.",
+    "changes": "Existing synchronized LaTeX/PDF/PNG/SVG equation artwork reused unchanged on the hidden Null-space torques and projector backup. Torque coefficients, direction selector, pseudoinverse, and kinematic projector are defined beside the equations or in the notes."
   },
   {
     "asset": "null_controller_projector",
-    "source": "MyOwn/chapters/02_theoretical_background.tex; MyOwn/chapters/04_experimental_setup_and_evaluation.tex",
-    "changes": "Thesis equation typeset for the presentation; notation, signs and numerical settings retained. PDF/PNG/SVG generated from the matching standalone LaTeX source."
+    "source": "MyOwn/chapters/02_theoretical_background.tex: null-space projectors and projected damping and conditioning. Verified against Thesis_Final_Control/surface_grinding_controller/src/control/robot_support.cpp.",
+    "changes": "Existing synchronized LaTeX/PDF/PNG/SVG equation artwork reused unchanged on the hidden Null-space torques and projector backup. Torque coefficients, direction selector, pseudoinverse, and kinematic projector are defined beside the equations or in the notes."
   },
   {
     "asset": "null_experiment_disturbance",
@@ -426,8 +427,9 @@
   },
   {
     "asset": "nullspace_conditioning",
-    "source": "MyOwn/figures/ch05/MAIN_NS_nullspace_automatic.pdf, panel (b); chapters/05_results_and_discussion.tex, Null-Space Pose-Hold Results; main 0fea99b",
-    "changes": "Vector panel extraction preserving the original curves/bars, axes, units, labels, legends and uncertainty. Reproducible LaTeX crop wrapper and full source PDF retained; PDF/PNG/SVG synchronized."
+    "source": "MyOwn/code/python/figures/make_nullspace_figure.py and the 12 archived MAIN_NS7/MAIN_NS8 log files. Synchronized MyOwn/figures/ch05/MAIN_NS_nullspace_automatic.pdf. Individual vector panels exported reproducibly with --panel-dir.",
+    "changes": "Panel (b) shows only absolute minimum-singular-value trajectories for no null-space torque, projected damping and conditioning at 1.5 and 2.0 N m. The former maximum-position-error subplot is removed. The four original three-trial mean traces and sample-standard-deviation bands are unchanged and occupy the full panel width. Metrics use recorded 5–9 s, displayed as 0–4 s. Raw data and diagnostic calculations remain unchanged. Synchronized LaTeX/PDF/PNG/SVG variants.",
+    "source_pdf_sha256": "ce0a4b6dadc81f8f272cd92d9ea770b4773588be7ba26f8848149b1d1f525785"
   },
   {
     "asset": "symbol_thetameas",
@@ -436,8 +438,9 @@
   },
   {
     "asset": "nullspace_net_displacement",
-    "source": "MyOwn/figures/ch05/MAIN_NS_nullspace_automatic.pdf, panel (c); chapters/05_results_and_discussion.tex, Null-Space Pose-Hold Results; main 0fea99b",
-    "changes": "Vector panel extraction preserving the original curves/bars, axes, units, labels, legends and uncertainty. Reproducible LaTeX crop wrapper and full source PDF retained; PDF/PNG/SVG synchronized. Review correction: redraw the final -0.006 label with a visible LaTeX mathematical minus; original PDF text contained U+2212 but its glyph did not render. Bars, error bars and remaining labels unchanged."
+    "source": "MyOwn/code/python/figures/make_nullspace_figure.py and the 12 archived MAIN_NS7/MAIN_NS8 log files. Synchronized MyOwn/figures/ch05/MAIN_NS_nullspace_automatic.pdf. Individual vector panels exported reproducibly with --panel-dir.",
+    "changes": "Panel (c). Recomputed integrated projected velocity over recorded 5–9 s, with the common direction recalculated from the baseline mean vector. Mean net displacements 7.516, 5.609, 0.015 and -0.011 degrees. The mathematical minus is rendered by the generator, without a masking overlay. Three trials per setting, error bars are one sample standard deviation. Original raw logs unchanged. Original panel order, labels, units, colors and uncertainty retained. Synchronized LaTeX/PDF/PNG/SVG variants.",
+    "source_pdf_sha256": "ce0a4b6dadc81f8f272cd92d9ea770b4773588be7ba26f8848149b1d1f525785"
   },
   {
     "asset": "cartesian_pose_position",
@@ -478,5 +481,10 @@
     "asset": "contact_normal_rotation",
     "source": "MyOwn/chapters/04_experimental_setup_and_evaluation.tex, common Cartesian stiffness table, Contact-establishment row",
     "changes": "Added K_R,n = 50 N m/rad to Contact experiment, footer 10. LaTeX source with matching PDF/PNG/SVG. Equation scale and equals-sign position match existing contact settings."
+  },
+  {
+    "asset": "coc_displacement_definition",
+    "source": "MyOwn/chapters/02_theoretical_background.tex, TCP-to-CoC displacement definition and eq:offset_adjoint.",
+    "changes": "Standalone serif equation r_c = p_c - p_TCP. Defines the displacement on Translation–rotation coupling before its use in A and the K/D transformations. Synchronized editable LaTeX and PDF/PNG/SVG outputs."
   }
 ]
