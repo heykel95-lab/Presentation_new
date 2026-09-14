@@ -68,6 +68,7 @@
 \item The measured pose feeds back into the control loop. The C++ controller uses libfranka and updates every millisecond.
 \end{itemize}
 
+% Layout synchronized: displacement and impedance-reference descriptions share a left edge. Spoken text unchanged.
 \section*{Translation–rotation coupling}
 \begin{itemize}
 \item The tool centre point (TCP) is the controlled reference point attached to the EE. The centre of compliance (CoC) at \(p_c\) is a virtual reference for stiffness and damping.
@@ -136,7 +137,7 @@ F_{n,\mathrm{qs}}=(1000\,\mathrm{N/m})\cdot(-0.019650\,\mathrm{m})=-19.650\,\mat
 \section*{Moment plausibility assessment}
 \begin{itemize}
 \item I manually rotate the tool about surface tangent one while keeping the normal push. This checks the spring-moment prediction with the desired pose fixed and CoC at the TCP.
-\item After subtracting the loaded baseline, the measured rotational error change is \(6.565^\circ\), about six and a half degrees. With a stiffness of 15 newton metres per radian, converting this change to radians gives:
+\item The measured rotational error changes by \(6.565^\circ\) relative to the loaded baseline. With a stiffness of 15 newton metres per radian, converting this change to radians gives:
 \[
 M_{t_1,\mathrm{qs}}=(15\,\mathrm{N\,m/rad})\cdot(6.565\cdot\frac{\pi}{180}\,\mathrm{rad})\approx1.719\,\mathrm{N\,m}
 \]
