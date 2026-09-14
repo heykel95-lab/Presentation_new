@@ -55,7 +55,7 @@
 \begin{itemize}
 \item Stiffness acts like a spring: for the same error, higher stiffness gives a larger restoring force or moment.
 \item Position errors generate forces, and orientation errors generate moments. Damping opposes differences from the desired linear and angular velocities.
-\item Force and moment form a wrench, controlled by six-by-six matrices with three-by-three blocks. The zero off-diagonal blocks mean translation and rotation are decoupled here.
+\item Force and moment form a Cartesian wrench, controlled by six-by-six matrices with three-by-three blocks. The zero off-diagonal blocks mean translation and rotation are decoupled here.
 \end{itemize}
 
 \section*{Real-time control}
@@ -126,15 +126,21 @@ J(q)\dot q_{\mathrm{null}}=0
 \section*{Normal-force plausibility assessment}
 \begin{itemize}
 \item I manually push the tool about 20 millimetres along the surface normal, with the CoC at the TCP. This checks the spring-force prediction with the desired pose fixed.
-\item The measured normal position-error change is \(-19.65\) millimetres. The spring predicts \(-19.65\) newtons, closely matching the commanded \(-19.64\) newtons.
-\item The robot's model estimate is \(-22.292\) newtons, a 13.50 percent difference from the command.
+\item The stiffness is 1000 newtons per metre and the measured position-error change is \(-19.650\) millimetres. Their product gives the spring-force prediction:
+\[
+F_{n,\mathrm{qs}}=(1000\,\mathrm{N/m})\cdot(-0.019650\,\mathrm{m})=-19.650\,\mathrm{N}
+\]
+\item In the shaded stationary interval, the commanded mean is \(-19.640\) newtons, only 0.05 percent from the calculation. The robot's model estimate is \(-22.292\) newtons, 13.50 percent from the command.
 \end{itemize}
 
 \section*{Moment plausibility assessment}
 \begin{itemize}
 \item I manually rotate the tool about surface tangent one while keeping the normal push. This checks the spring-moment prediction with the desired pose fixed and CoC at the TCP.
-\item The measured rotational error changes by \(6.565^\circ\), about six and a half degrees. We subtract the moment already present under the normal push.
-\item The predicted and commanded moments are both 1.719 newton metres. The model estimate is 1.852 newton metres, about 7.75 percent higher.
+\item After subtracting the loaded baseline, the measured rotational error change is \(6.565^\circ\), about six and a half degrees. With a stiffness of 15 newton metres per radian, converting this change to radians gives:
+\[
+M_{t_1,\mathrm{qs}}=(15\,\mathrm{N\,m/rad})\cdot(6.565\cdot\frac{\pi}{180}\,\mathrm{rad})\approx1.719\,\mathrm{N\,m}
+\]
+\item In the shaded stationary interval, the commanded mean matches the calculated 1.719 newton metres. The robot's model estimate is 1.852 newton metres, 7.75 percent from the command.
 \end{itemize}
 
 \section*{Commanded and estimated wrench}

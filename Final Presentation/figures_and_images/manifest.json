@@ -97,13 +97,13 @@
   },
   {
     "asset": "equation_force_qs",
-    "source": "Thesis(20260907-171413).pdf / Chapters 2, 4 and 5",
-    "changes": "Typeset equation or symbol label; thesis notation retained."
+    "source": "MyOwn/chapters/04_experimental_setup_and_evaluation.tex and chapters/05_results_and_discussion.tex, quasi-static plausibility assessment, commit 07507c72ebb00f5694887add193edbb20026e7c5",
+    "changes": "Retain the spring law and add the measured numerical substitution with stiffness and units. Force: (1000 N/m) times (-0.019650 m) = -19.650 N. Moment: (15 N m/rad) times (6.565 pi/180 rad), rounded to 1.719 N m. 20 pt LaTeX mathematics, two lines aligned at the equals signs. PDF, 300 dpi PNG, SVG, and editable LaTeX synchronized. Plot data unchanged."
   },
   {
     "asset": "equation_moment_qs",
-    "source": "Thesis(20260907-171413).pdf / Chapters 2, 4 and 5",
-    "changes": "Typeset equation or symbol label; thesis notation retained."
+    "source": "MyOwn/chapters/04_experimental_setup_and_evaluation.tex and chapters/05_results_and_discussion.tex, quasi-static plausibility assessment, commit 07507c72ebb00f5694887add193edbb20026e7c5",
+    "changes": "Retain the spring law and add the measured numerical substitution with stiffness and units. Force: (1000 N/m) times (-0.019650 m) = -19.650 N. Moment: (15 N m/rad) times (6.565 pi/180 rad), rounded to 1.719 N m. 20 pt LaTeX mathematics, two lines aligned at the equals signs. PDF, 300 dpi PNG, SVG, and editable LaTeX synchronized. Plot data unchanged."
   },
   {
     "asset": "symbol_f_m",
