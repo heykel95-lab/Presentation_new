@@ -32,12 +32,14 @@
   {
     "asset": "rotation_stiffness",
     "source": "MyOwn/figures/ch04/surface_reference_geometry.tex; MyOwn/figures/ch05; MyOwn/code/python/figures/contact_angular_error/",
-    "changes": "2026-09-15: replaced contact-response gamma with calibrated-surface angular error theta_err,t1, calculated from the logged full normal-error vector with entry-offset sign convention. Endpoint plots use all 69 original reports (0.01-degree precision), three-trial means and sample SD. Three complete recorded time histories supply representative curves. Timing uses a common 0.1-degree angular error band: 2.5 and 3.6 s. Force and moment measurements, units, axes, colours and model-estimate qualification retained. Synchronized editable LaTeX, PDF, PNG and SVG."
+    "changes": "2026-09-15: replaced contact-response gamma with calibrated-surface angular error theta_err,t1, calculated from the logged full normal-error vector with entry-offset sign convention. Endpoint plots use all 69 original reports (0.01-degree precision), three-trial means and sample SD. Three complete recorded time histories supply representative curves. Timing uses a common 0.1-degree angular error band: 2.5 and 3.6 s. Force and moment measurements, units, axes, colours and model-estimate qualification retained. Synchronized editable LaTeX, PDF, PNG and SVG.",
+    "presentation_layout": "Effect of rotational stiffness retains the original rotation_stiffness image at unchanged aspect ratio, enlarged and centred."
   },
   {
     "asset": "translation_stiffness",
     "source": "MyOwn/figures/ch04/surface_reference_geometry.tex; MyOwn/figures/ch05; MyOwn/code/python/figures/contact_angular_error/",
-    "changes": "2026-09-15: replaced contact-response gamma with calibrated-surface angular error theta_err,t1, calculated from the logged full normal-error vector with entry-offset sign convention. Endpoint plots use all 69 original reports (0.01-degree precision), three-trial means and sample SD. Three complete recorded time histories supply representative curves. Timing uses a common 0.1-degree angular error band: 2.5 and 3.6 s. Force and moment measurements, units, axes, colours and model-estimate qualification retained. Synchronized editable LaTeX, PDF, PNG and SVG."
+    "changes": "2026-09-15: replaced contact-response gamma with calibrated-surface angular error theta_err,t1, calculated from the logged full normal-error vector with entry-offset sign convention. Endpoint plots use all 69 original reports (0.01-degree precision), three-trial means and sample SD. Three complete recorded time histories supply representative curves. Timing uses a common 0.1-degree angular error band: 2.5 and 3.6 s. Force and moment measurements, units, axes, colours and model-estimate qualification retained. Synchronized editable LaTeX, PDF, PNG and SVG.",
+    "presentation_status": "Removed from the active presentation on 2026-09-15 at the user request. Plot, directional heading, takeaway and Conclusion finding removed. Source assets retained."
   },
   {
     "asset": "CoC_position",

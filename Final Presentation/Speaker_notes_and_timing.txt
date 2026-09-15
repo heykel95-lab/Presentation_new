@@ -73,9 +73,8 @@ Baseline angular error
 • The error magnitude decreased for both larger entry tilts, and the negative entry error changed sign. The nominal-zero condition increased from 0.69° to 1.65°.
 • The bars show three-trial means, with one sample standard deviation. These are first-tangent components relative to the calibrated surface, calculated from recorded endpoints at 0.01° precision.
 
-Effect of stiffness
+Effect of rotational stiffness
 • Increasing rotational stiffness from 5 to 50 newton metres per radian increased the angular error from 1.75° to 6.58°. The stiffer rotational spring allowed less contact-induced correction.
-• Across the tested tangential stiffness range, angular error varied by 0.07°. Translation along the second tangent was varied while the first remained fixed.
 
 Effect of CoC position
 • The plot covers minus 80 to plus 80 millimetres, with three repetitions per setting. For positive entry tilt, the smallest tested angular error was 1.17° at plus 80 millimetres. At minus 80 millimetres, 9.35° remained.
@@ -127,7 +126,6 @@ Net null-space displacement
 Conclusion
 • Contact reduced angular error for both larger entry tilts while the desired orientation stayed fixed. The error is relative to the calibrated surface and retains calibration and tool-mount uncertainty.
 • Higher rotational stiffness increased angular error from 1.75° to 6.58°.
-• Tested tangential stiffness changes had little effect, with a 0.07° span. The first tangent remained fixed.
 • CoC displacement changes angular error and can carry it through zero. At the TCP, the added moment vanishes while the rotational spring and damper remain active.
 • Damping reduced arm motion, and conditioning countered the tested disturbance direction. Nearly zero net displacement coexisted with back-and-forth motion.
 • Future work is a more rigid tool mount and adaptive CoC selection. After alignment, the adaptive CoC should return to the TCP.
