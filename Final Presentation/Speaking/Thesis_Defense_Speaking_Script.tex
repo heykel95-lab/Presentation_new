@@ -1,4 +1,4 @@
-% Essential speaking points synchronized with all 26 slides and PowerPoint notes.
+% Essential speaking points synchronized with all 28 slides and PowerPoint notes.
 % 2026-09-15: controller error sketches and simplified axis-angle equation synchronized with PowerPoint notes.
 % All standalone PowerPoint equations remain native and editable.
 \documentclass[12pt,a4paper]{article}
@@ -63,7 +63,8 @@
 
 \section*{Cartesian impedance controller}
 \begin{itemize}
-\item Position error points from the measured to the desired position. Rotation error uses a correction angle \(\phi\) and unit axis \(u\).
+\item Positional error points from measured to desired position. Rotational error uses a correction angle \(\phi\) and unit axis \(u\).
+\item The sketch compares measured and desired tool orientations at one position. The axis points out of the page.
 \item Stiffness produces force and moment. Damping opposes velocity differences.
 \item Force and moment form a wrench. Its six-by-six stiffness and damping matrices have three-by-three blocks, with zero off-diagonal blocks here.
 \item Before the point shift, the stiffness and damping matrices are diagonal in the surface frame.
@@ -110,6 +111,7 @@ r_c=p_c-p_{\mathrm{TCP}}
 \item The position reference advances into the surface to generate pressing force. The desired orientation stays at its entry value, so contact moments drive the rotation.
 \end{itemize}
 
+% Angular-figure labels retain descriptions, omit normal-vector symbols, and omit the end-time argument from theta_err,t1. Spoken definitions are unchanged.
 \section*{Angular quantities}
 \begin{itemize}
 \item The red arrow is the inward calibrated surface normal. The green and blue arrows show the tool normals calculated from measured EE orientation at contact entry and end.
@@ -191,6 +193,22 @@ M_{t_1,\mathrm{qs}}=(15\,\mathrm{N\,m/rad})\cdot(6.57\cdot\frac{\pi}{180}\,\math
 \item Cumulative motion, \(E_N\), adds projected joint movement in both directions. These degrees describe arm motion, not rotation of the tool.
 \item Damping reduces it from \(7.60^\circ\) to \(5.69^\circ\), about 25.1 percent. Conditioning gives \(0.29^\circ\) at \(k_\sigma=1.5\) and \(1.69^\circ\) at \(k_\sigma=2\).
 \item Curves show three-trial means over the displayed four-second interval. Shading shows one sample standard deviation.
+\end{itemize}
+
+\section*{Null-space displacement over time}
+\begin{itemize}
+\item This plot retains movement direction. Motion back towards the start reduces the displacement.
+\item The seven projected joint velocities are integrated without taking their magnitude. Each trial uses the same reference direction as the net-displacement comparison. Positive motion follows the disturbance response without null-space torque.
+\item The left plot shows all four settings. The right plot enlarges the conditioning curves, in the same degree units. Both show three-trial means and one sample standard deviation.
+\item Conditioning produces movement away and back towards the starting value. These are projected joint displacements, not tool rotations.
+\end{itemize}
+
+\section*{Joint motion over time}
+\begin{itemize}
+\item These curves show the measured angle of joint one relative to its value at disturbance onset. Joint one receives the largest equivalent disturbance torque in every trial.
+\item The left panel shows all four settings over four seconds. Each curve is an individual trial, with markers at the original samples taken at about 20 hertz.
+\item The right panel enlarges the first second for both conditioning settings. At the larger torque magnitude of 2 newton metres, all three trials show repeated motion reversals. The curves at 1.5 newton metres increase more smoothly.
+\item Subtracting the starting angle preserves both directions of joint movement. Conditioning was already active before the disturbance, so the settings can begin at different arm configurations.
 \end{itemize}
 
 \section*{Jacobian conditioning}

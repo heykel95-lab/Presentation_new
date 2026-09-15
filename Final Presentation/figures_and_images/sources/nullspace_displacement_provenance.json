@@ -1,0 +1,103 @@
+{
+  "recorded_interval_s": [
+    5,
+    9
+  ],
+  "columns": [
+    "time",
+    "nullspace_speed",
+    "nullspace_dq_1",
+    "nullspace_dq_2",
+    "nullspace_dq_3",
+    "nullspace_dq_4",
+    "nullspace_dq_5",
+    "nullspace_dq_6",
+    "nullspace_dq_7"
+  ],
+  "sources": [
+    {
+      "condition": "MAIN_NS7_baseline_20N_200mm",
+      "repetition": "r01",
+      "source": "C:\\Users\\USER\\Desktop\\MyOwn\\code\\python\\experiments\\results\\MAIN_NS7_baseline_20N_200mm\\r01\\surface_grinding_controller_log.csv",
+      "sha256": "f3938de24539f46233e3dd4f11cd9279f2ee50579ae8a71666a9caa9f9c8de24",
+      "recorded_window_samples": 3964
+    },
+    {
+      "condition": "MAIN_NS7_baseline_20N_200mm",
+      "repetition": "r02",
+      "source": "C:\\Users\\USER\\Desktop\\MyOwn\\code\\python\\experiments\\results\\MAIN_NS7_baseline_20N_200mm\\r02\\surface_grinding_controller_log.csv",
+      "sha256": "b056198c2bf035bd7b435b745a7b301afb626650345ad44ceec2f3c6876a44db",
+      "recorded_window_samples": 3990
+    },
+    {
+      "condition": "MAIN_NS7_baseline_20N_200mm",
+      "repetition": "r03",
+      "source": "C:\\Users\\USER\\Desktop\\MyOwn\\code\\python\\experiments\\results\\MAIN_NS7_baseline_20N_200mm\\r03\\surface_grinding_controller_log.csv",
+      "sha256": "681ce9ae9eb8fb70de84c1c02cf7c00bd884bf3a01e04baa01adcc871d4ad268",
+      "recorded_window_samples": 3978
+    },
+    {
+      "condition": "MAIN_NS7_damping_2p0_20N_200mm",
+      "repetition": "r01",
+      "source": "C:\\Users\\USER\\Desktop\\MyOwn\\code\\python\\experiments\\results\\MAIN_NS7_damping_2p0_20N_200mm\\r01\\surface_grinding_controller_log.csv",
+      "sha256": "d9bd745c6a9ba79f12138df71dd56b014825b876c3b778edb834ba26bb0530b3",
+      "recorded_window_samples": 3977
+    },
+    {
+      "condition": "MAIN_NS7_damping_2p0_20N_200mm",
+      "repetition": "r02",
+      "source": "C:\\Users\\USER\\Desktop\\MyOwn\\code\\python\\experiments\\results\\MAIN_NS7_damping_2p0_20N_200mm\\r02\\surface_grinding_controller_log.csv",
+      "sha256": "0b3717b9dc1f2b44a78ae7d8022e46c3cc55079f56e73dfcee48e0a08a79d3b6",
+      "recorded_window_samples": 3983
+    },
+    {
+      "condition": "MAIN_NS7_damping_2p0_20N_200mm",
+      "repetition": "r03",
+      "source": "C:\\Users\\USER\\Desktop\\MyOwn\\code\\python\\experiments\\results\\MAIN_NS7_damping_2p0_20N_200mm\\r03\\surface_grinding_controller_log.csv",
+      "sha256": "1facca14c498e5d44070155b5695b5a27b8e3c700d9105a850eb9861f75cb7a0",
+      "recorded_window_samples": 3990
+    },
+    {
+      "condition": "MAIN_NS8_ksigma_1p5_20N_200mm",
+      "repetition": "r01",
+      "source": "C:\\Users\\USER\\Desktop\\MyOwn\\code\\python\\experiments\\results\\MAIN_NS8_ksigma_1p5_20N_200mm\\r01\\surface_grinding_controller_log.csv",
+      "sha256": "46e40e6c74a9c52b9e70d64b4d91ac4958fd67329659dc1705dfb46118df6724",
+      "recorded_window_samples": 3994
+    },
+    {
+      "condition": "MAIN_NS8_ksigma_1p5_20N_200mm",
+      "repetition": "r02",
+      "source": "C:\\Users\\USER\\Desktop\\MyOwn\\code\\python\\experiments\\results\\MAIN_NS8_ksigma_1p5_20N_200mm\\r02\\surface_grinding_controller_log.csv",
+      "sha256": "fe2685270b324e3ce43e359fe2e84f8455a124c5b5aecd122a618fb3f5ea149f",
+      "recorded_window_samples": 3981
+    },
+    {
+      "condition": "MAIN_NS8_ksigma_1p5_20N_200mm",
+      "repetition": "r03",
+      "source": "C:\\Users\\USER\\Desktop\\MyOwn\\code\\python\\experiments\\results\\MAIN_NS8_ksigma_1p5_20N_200mm\\r03\\surface_grinding_controller_log.csv",
+      "sha256": "a5bdd487d7bb2144a53dc8bc8f3b4fae2a793e7f1e5d3fe8f0a45caaf5efea51",
+      "recorded_window_samples": 3979
+    },
+    {
+      "condition": "MAIN_NS8_ksigma_2p0_20N_200mm",
+      "repetition": "r01",
+      "source": "C:\\Users\\USER\\Desktop\\MyOwn\\code\\python\\experiments\\results\\MAIN_NS8_ksigma_2p0_20N_200mm\\r01\\surface_grinding_controller_log.csv",
+      "sha256": "8d0a1648ca05a45a3f4b71df5b49348669aa77311c9f8bdc0199ea68e96cf8cc",
+      "recorded_window_samples": 3969
+    },
+    {
+      "condition": "MAIN_NS8_ksigma_2p0_20N_200mm",
+      "repetition": "r02",
+      "source": "C:\\Users\\USER\\Desktop\\MyOwn\\code\\python\\experiments\\results\\MAIN_NS8_ksigma_2p0_20N_200mm\\r02\\surface_grinding_controller_log.csv",
+      "sha256": "fac81548338aa65227ef2368e15a09ba43c2be20022b457a91a302cc1cc61c47",
+      "recorded_window_samples": 3972
+    },
+    {
+      "condition": "MAIN_NS8_ksigma_2p0_20N_200mm",
+      "repetition": "r03",
+      "source": "C:\\Users\\USER\\Desktop\\MyOwn\\code\\python\\experiments\\results\\MAIN_NS8_ksigma_2p0_20N_200mm\\r03\\surface_grinding_controller_log.csv",
+      "sha256": "0805dcc238a7243dd81f2af5cb2033fd9a7be35ac3c15815f822d98587b9e083",
+      "recorded_window_samples": 3958
+    }
+  ]
+}

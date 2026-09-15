@@ -22,7 +22,8 @@ Cartesian pose
 • Forward kinematics calculates the pose from all seven joint angles, with p=p(q) for position. The controller uses a rotation matrix for orientation.
 
 Cartesian impedance controller
-• Position error points from the measured to the desired position. Rotation error uses a correction angle φ and unit axis u.
+• Positional error points from measured to desired position. Rotational error uses a correction angle φ and unit axis u.
+• The sketch compares measured and desired tool orientations at one position. The axis points out of the page.
 • Stiffness produces force and moment. Damping opposes velocity differences.
 • Force and moment form a wrench. Its six-by-six stiffness and damping matrices have three-by-three blocks, with zero off-diagonal blocks here.
 • Before the point shift, the stiffness and damping matrices are diagonal in the surface frame.
@@ -100,6 +101,18 @@ Cumulative null-space motion
 • Cumulative motion, E_N, adds projected joint movement in both directions. These degrees describe arm motion, not rotation of the tool.
 • Damping reduces it from 7.60° to 5.69°, about 25.1 percent. Conditioning gives 0.29° at k_σ=1.5 and 1.69° at k_σ=2.
 • Curves show three-trial means over the displayed four-second interval. Shading shows one sample standard deviation.
+
+Null-space displacement over time
+• This plot retains movement direction. Motion back towards the start reduces the displacement.
+• The seven projected joint velocities are integrated without taking their magnitude. Each trial uses the same reference direction as the net-displacement comparison. Positive motion follows the disturbance response without null-space torque.
+• The left plot shows all four settings. The right plot enlarges the conditioning curves, in the same degree units. Both show three-trial means and one sample standard deviation.
+• Conditioning produces movement away and back towards the starting value. These are projected joint displacements, not tool rotations.
+
+Joint motion over time
+• These curves show the measured angle of joint one relative to its value at disturbance onset. Joint one receives the largest equivalent disturbance torque in every trial.
+• The left panel shows all four settings over four seconds. Each curve is an individual trial, with markers at the original samples taken at about 20 hertz.
+• The right panel enlarges the first second for both conditioning settings. At the larger torque magnitude of 2 newton metres, all three trials show repeated motion reversals. The curves at 1.5 newton metres increase more smoothly.
+• Subtracting the starting angle preserves both directions of joint movement. Conditioning was already active before the disturbance, so the settings can begin at different arm configurations.
 
 Jacobian conditioning
 • A smaller minimum singular value means some tool motions require larger joint velocities. Zero means the EE loses an instantaneous motion direction.

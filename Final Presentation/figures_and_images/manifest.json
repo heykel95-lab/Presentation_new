@@ -22,7 +22,7 @@
   {
     "asset": "angular_quantities",
     "source": "MyOwn/figures/ch04/surface_reference_geometry.tex; MyOwn/chapters/04_experimental_setup_and_evaluation.tex",
-    "changes": "Explicit normal-vector illustration: inward calibrated surface normal -n_s in red, calibrated tool normals at measured contact entry in solid green and contact end in dashed blue. Both angle arcs begin at -n_s. The surface-frame inset is rotated consistently, with t2 up, ns left and t1 out of the page. This is a pure first-tangent orientation schematic, with no measured angles or contact locations depicted. Editable LaTeX and PDF/PNG/SVG synchronized."
+    "changes": "Explicit normal-vector illustration: inward calibrated surface normal -n_s in red, calibrated tool normals at measured contact entry in solid green and contact end in dashed blue. Both angle arcs begin at -n_s. The surface-frame inset is rotated consistently, with t2 up, ns left and t1 out of the page. This is a pure first-tangent orientation schematic, with no measured angles or contact locations depicted. Editable LaTeX and PDF/PNG/SVG synchronized. Label simplification: retain the three descriptive arrow labels, omit their normal-vector symbols, and use theta_err,t1 without its end-time argument. Arrow geometry and the coordinate-frame inset are preserved. Matching thesis figure updated."
   },
   {
     "asset": "baseline_response",
@@ -543,7 +543,7 @@
   {
     "asset": "rotation_error_sketch",
     "source": "sources/rotation_error_sketch.tex",
-    "changes": "New schematic for Cartesian impedance controller. Measured state in navy and desired state in green. Axis-angle correction from measured to desired orientation. Unit axis u points out of the page. The phi arc follows the right-hand rule. Illustrative geometry only, with no experimental numbers. Editable LaTeX and PDF/PNG/SVG retained."
+    "changes": "Measured and desired orientations of the same tool face about one fixed origin. Solid navy measured face and dashed green desired outline. The phi arc runs from measured to desired orientation about unit axis u, explicitly shown out of the page. Illustrative axis-angle geometry only. Paired slide headings read Positional error and Rotational error. Editable LaTeX and PDF/PNG/SVG synchronized."
   },
   {
     "asset": "coupling_error_transform",
@@ -554,5 +554,15 @@
     "asset": "coupling_wrench_transform",
     "source": "MyOwn/chapters/02_theoretical_background.tex, compliance-centre point-shift model",
     "changes": "Native editable Office Math and matching standalone LaTeX/PDF/PNG/SVG equation."
+  },
+  {
+    "asset": "nullspace_displacement_time",
+    "source": "Archived MAIN_NS7/MAIN_NS8 projected joint velocities, recorded 5-9 s. Portable samples and provenance are under sources/nullspace_displacement_*.",
+    "changes": "New displacement history after Cumulative null-space motion. The vector velocity is integrated without its norm, then projected onto the same fixed reference direction as the net-displacement bars. Three-trial means and sample SD use common recorded timestamps without imputation. The left panel shows all four settings, and the right enlarges conditioning. Endpoints reproduce the published net values. Generator: sources/make_nullspace_displacement.py."
+  },
+  {
+    "asset": "joint_motion_time",
+    "source": "Original MAIN_NS7/MAIN_NS8 joint-state diagnostic files, q1_deg and phase_time_s. All 12 trial identities verified against thesis main-log hashes. Portable sources/make_joint_motion.py and joint_motion_*.",
+    "changes": "Individual measured joint-1 angle changes from disturbance onset. All four settings over 0-4 s, conditioning close-up over 0-1 s. Nominal 20 Hz measured timestamps, no smoothing, averaging, interpolation or integration. Same figure in the thesis."
   }
 ]

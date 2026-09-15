@@ -1,0 +1,137 @@
+{
+  "definition": "Delta_q1(t_d) = q1(t_d+5s) - q1(5s), in degrees",
+  "display_time": "t_d = phase_time_s - 5 s, labelled t on figures",
+  "individual_trials": true,
+  "averaging": false,
+  "integration": false,
+  "interpolation": false,
+  "smoothing": false,
+  "duplicates": "Periodic sample rows used. Duplicate event rows have identical measured joint angles, verified before extraction.",
+  "joint_selection": "Joint 1 has the largest peak absolute directly commanded disturbance torque in each of the 12 trials",
+  "panels": [
+    {
+      "time_s": [
+        0,
+        4
+      ],
+      "settings": "all four"
+    },
+    {
+      "time_s": [
+        0,
+        1
+      ],
+      "settings": "both conditioning magnitudes"
+    }
+  ],
+  "trials": [
+    {
+      "condition": "MAIN_NS7_baseline_20N_200mm",
+      "repetition": "r01",
+      "samples": 81,
+      "initial_q1_deg": 0.837085333,
+      "min_change_deg": 0.0,
+      "max_change_deg": 4.95537286,
+      "end_change_deg": 4.927382666
+    },
+    {
+      "condition": "MAIN_NS7_baseline_20N_200mm",
+      "repetition": "r02",
+      "samples": 81,
+      "initial_q1_deg": 0.85943874,
+      "min_change_deg": 0.0,
+      "max_change_deg": 6.010300032,
+      "end_change_deg": 5.972717334
+    },
+    {
+      "condition": "MAIN_NS7_baseline_20N_200mm",
+      "repetition": "r03",
+      "samples": 81,
+      "initial_q1_deg": 0.861978947,
+      "min_change_deg": -7.912600000004044e-05,
+      "max_change_deg": 6.267269346,
+      "end_change_deg": 6.231053087
+    },
+    {
+      "condition": "MAIN_NS7_damping_2p0_20N_200mm",
+      "repetition": "r01",
+      "samples": 81,
+      "initial_q1_deg": 0.861430594,
+      "min_change_deg": -3.164399999999734e-05,
+      "max_change_deg": 4.498373857,
+      "end_change_deg": 4.456036786
+    },
+    {
+      "condition": "MAIN_NS7_damping_2p0_20N_200mm",
+      "repetition": "r02",
+      "samples": 81,
+      "initial_q1_deg": 0.860093588,
+      "min_change_deg": -0.00010756600000005889,
+      "max_change_deg": 4.291161695,
+      "end_change_deg": 4.248777564
+    },
+    {
+      "condition": "MAIN_NS7_damping_2p0_20N_200mm",
+      "repetition": "r03",
+      "samples": 81,
+      "initial_q1_deg": 0.860459301,
+      "min_change_deg": -9.59200000000271e-05,
+      "max_change_deg": 4.164915016,
+      "end_change_deg": 4.126462039000001
+    },
+    {
+      "condition": "MAIN_NS8_ksigma_1p5_20N_200mm",
+      "repetition": "r01",
+      "samples": 81,
+      "initial_q1_deg": 0.307630019,
+      "min_change_deg": -0.00016214300000000348,
+      "max_change_deg": 0.067654557,
+      "end_change_deg": 0.009930729000000027
+    },
+    {
+      "condition": "MAIN_NS8_ksigma_1p5_20N_200mm",
+      "repetition": "r02",
+      "samples": 81,
+      "initial_q1_deg": 0.294950724,
+      "min_change_deg": 0.0,
+      "max_change_deg": 0.06585033699999998,
+      "end_change_deg": 0.014245640000000004
+    },
+    {
+      "condition": "MAIN_NS8_ksigma_1p5_20N_200mm",
+      "repetition": "r03",
+      "samples": 81,
+      "initial_q1_deg": 0.298603566,
+      "min_change_deg": -0.0003852560000000005,
+      "max_change_deg": 0.06626794899999999,
+      "end_change_deg": 0.014714824000000015
+    },
+    {
+      "condition": "MAIN_NS8_ksigma_2p0_20N_200mm",
+      "repetition": "r01",
+      "samples": 81,
+      "initial_q1_deg": 0.307788396,
+      "min_change_deg": -0.024710271000000006,
+      "max_change_deg": 0.06151995099999996,
+      "end_change_deg": -0.015042094000000006
+    },
+    {
+      "condition": "MAIN_NS8_ksigma_2p0_20N_200mm",
+      "repetition": "r02",
+      "samples": 81,
+      "initial_q1_deg": 0.289627953,
+      "min_change_deg": 0.0,
+      "max_change_deg": 0.09195101500000002,
+      "end_change_deg": 0.03171169400000001
+    },
+    {
+      "condition": "MAIN_NS8_ksigma_2p0_20N_200mm",
+      "repetition": "r03",
+      "samples": 81,
+      "initial_q1_deg": 0.299975055,
+      "min_change_deg": -0.01542222700000001,
+      "max_change_deg": 0.07687314,
+      "end_change_deg": 0.002677843999999985
+    }
+  ]
+}
