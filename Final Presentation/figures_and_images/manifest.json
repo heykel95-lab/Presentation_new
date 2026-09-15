@@ -12,7 +12,7 @@
   {
     "asset": "surface_directions",
     "source": "MyOwn/figures/ch02/surface_tool_frame.tikz, shared with panel (a) of lever_direction_selection.tex",
-    "changes": "Tool resting on the surface beside the shared reference axes. Identical TikZ core in thesis and presentation."
+    "changes": "Tool resting on the surface beside the shared reference axes. Its 120 mm length follows t2 and its 40 mm width follows t1. Equal positive and negative t2 half-lengths about the centred shaft. Identical TikZ core in thesis and presentation."
   },
   {
     "asset": "CoC_moment",
