@@ -16,6 +16,7 @@ The control repository contains `surface_grinding_controller`, `experiments`, `a
 
 ## Active files and theme
 
+- Keep shared plots and figures synchronized with the thesis by default. A change to their geometry, data, uncertainty, symbols, labels, axes, tick orientation, limits, grid or visual conventions must be applied to the corresponding sources and generators in both repositories in the same task. Update the rendered assets and both compiled documents, then inspect the affected slide and thesis page. This includes the symmetric tool figure, angular-error illustration and result plots. Respect any explicit instruction limiting a change to one document. Check the existing files first so an already synchronized figure is not rebuilt unnecessarily.
 - Edit `Final Presentation\Thesis_Defense_gg0_v3.pptx` and regenerate the matching PDF in that folder.
 - Keep all final PDFs directly under `C:\Users\USER\Desktop\Presentation_new\Final Presentation`.
 - Other folders (`Final`, `gg0`, `good1`, `good2`, `one`, `two`) are earlier versions, not the active deck.
