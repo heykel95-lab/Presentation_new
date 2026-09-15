@@ -1,9 +1,9 @@
 Active defense presentation
 
-Thesis_Defense_gg0_v3.pptx contains 26 main slides and two hidden backups.
-Thesis_Defense_gg0_v3.pdf contains all 28 slides. Supplementary_slides.pdf contains the two backups from physical pages 27 and 28.
+Thesis_Defense_gg0_v3.pptx contains 28 main slides and two hidden backups.
+Thesis_Defense_gg0_v3.pdf contains all 30 slides. Supplementary_slides.pdf contains the two backups from physical pages 29 and 30.
 Contact demonstration is visible at physical slide 3, immediately after Motivation, with no viewing-cue text beneath the video. Overview follows at physical slide 4.
-Null-space torques and projector (B1) and Disturbance demonstration (B2) remain hidden at physical slides 27 and 28.
+Null-space torques and projector (B1) and Disturbance demonstration (B2) remain hidden at physical slides 29 and 30.
 Native chapter sections, six-entry Overview, original theme, equations and embedded videos are retained. Both videos start on click.
 
 The contact results use angular error relative to the calibrated surface normal.
@@ -14,13 +14,13 @@ The three representative full time histories retain model-estimated normal force
 Timing compares entry into and remaining within 0.1 degree of the angular error: approximately 2.5 s at +40 mm and 3.6 s at the TCP.
 Calibration and mount uncertainty affects the estimate of physical alignment. A zero first-tangent component alone does not establish complete alignment.
 
-Speaking/Thesis_Defense_Speaking_Script.tex and PowerPoint notes are synchronized with all 28 slides.
+Speaking/Thesis_Defense_Speaking_Script.tex and PowerPoint notes are synchronized with all 30 slides.
 Speaking/build.ps1 builds Thesis_Defense_Speaking_Script.pdf. No talk duration has been measured.
 Speaker_notes_and_timing.txt now contains the same spoken points without obsolete timings.
 
 Figure assets and editable sources are in figures_and_images. Provenance is in figures_and_images/manifest.json.
 Reproducible data: MyOwn/code/python/figures/contact_angular_error/.
-After editing slides, run Speaking/build/update-overview.ps1, rebuild the speaking script and export all 28 PDF pages.
+After editing slides, run Speaking/build/update-overview.ps1, rebuild the speaking script and export all 30 PDF pages.
 
 Equations (2026-09-15)
 The 36 active standalone formula and symbol shapes are native editable PowerPoint equations from their LaTeX sources. Direct conversion succeeded, so IguanaTex is not required.
@@ -29,7 +29,7 @@ Keep formula changes synchronized between the LaTeX source, native PowerPoint eq
 
 Controller error sketches (2026-09-15): position error and axis-angle correction are illustrated separately. The rotational equation is e_R = phi u. The rotation-matrix identity was removed. Both new images and their LaTeX/PDF/PNG/SVG sources are in figures_and_images.
 
-Review update: the separate null-space theory, experiment and five result slides follow all contact results. Displayed numbers use at most two decimal places or scientific notation. The shared surface-frame sketch includes the tool.
+Review update: the separate null-space theory, experiment and eight result slides follow all contact results. Displayed numbers use at most two decimal places or scientific notation. The shared surface-frame sketch includes the tool.
 
 The reviewed PDF was exported directly from PowerPoint. The full PDF includes both hidden backups.
 Null-space label formatting is reproducible with figures_and_images/sources/format_nullspace_for_presentation.py using the thesis analysis and archived results.
@@ -54,3 +54,5 @@ the individual measured joint-angle histories. Define the projection and the
 measured angle change in the methodology. Do not alternate motion and
 displacement as short names for these quantities. Keep symbols, calculations,
 data, units, signs, uncertainty, filenames and internal identifiers unchanged.
+
+Additional joint-motion views: footer 23 shows repetition 1 for each setting, and footer 24 shows the mean of three onset-relative joint-1 histories with one sample standard deviation. They follow the unchanged all-repetitions view at footer 22. Axes and conditioning close-ups match. Means use exact common measured timestamps without interpolation. Rebuild with figures_and_images/sources/make_joint_motion_views.py --repetition r01. Source samples and the original shared thesis figure remain unchanged.

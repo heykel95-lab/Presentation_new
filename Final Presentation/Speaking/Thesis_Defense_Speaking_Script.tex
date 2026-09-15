@@ -1,4 +1,4 @@
-% Essential speaking points synchronized with all 28 slides and PowerPoint notes.
+% Essential speaking points synchronized with all 30 slides and PowerPoint notes.
 % 2026-09-15: controller error sketches and simplified axis-angle equation synchronized with PowerPoint notes.
 % All standalone PowerPoint equations remain native and editable.
 \documentclass[12pt,a4paper]{article}
@@ -203,6 +203,22 @@ M_{t_1,\mathrm{qs}}=(15\,\mathrm{N\,m/rad})\cdot(6.57\cdot\frac{\pi}{180}\,\math
 \item The left panel shows all four settings over four seconds. Each curve is an individual trial, with markers at the original samples taken at about 20 hertz.
 \item The right panel enlarges the first second for both conditioning settings. At the larger torque magnitude of 2 newton metres, all three trials show repeated motion reversals. The curves at 1.5 newton metres increase more smoothly.
 \item Subtracting the starting angle preserves both directions of joint movement. Conditioning was already active before the disturbance, so the settings can begin at different arm configurations.
+\end{itemize}
+
+\section*{Joint motion: one trial per setting}
+\begin{itemize}
+\item This view shows repetition one for each setting, using the same repetition number throughout the comparison.
+\item The measured angle of joint one is shown relative to its value at disturbance onset. The axes and conditioning close-up match the preceding slide.
+\item The larger conditioning torque shows repeated motion reversals in the first second. The lower conditioning setting increases more smoothly during this interval.
+\item This is one trial per setting. The next slide combines the three trials using their mean and sample standard deviation.
+\end{itemize}
+
+\section*{Joint motion: mean of three trials}
+\begin{itemize}
+\item This view uses the arithmetic mean of the three trials for every setting. Shading shows one sample standard deviation, matching the uncertainty convention of the other result plots.
+\item The starting angle is subtracted separately in each trial. The three angle changes are then averaged at their common measured times.
+\item Repeated reversals remain visible at the larger conditioning torque in the first-second close-up. Averaging reduces reversals that occur at different times in the individual trials.
+\item These curves show joint one. The cumulative and net joint-motion quantities instead use the projected motion of all seven joints. Conditioning was active before and during the disturbance.
 \end{itemize}
 
 \section*{Jacobian conditioning}

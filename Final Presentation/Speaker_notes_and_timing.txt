@@ -114,6 +114,18 @@ Joint motion over time
 • The right panel enlarges the first second for both conditioning settings. At the larger torque magnitude of 2 newton metres, all three trials show repeated motion reversals. The curves at 1.5 newton metres increase more smoothly.
 • Subtracting the starting angle preserves both directions of joint movement. Conditioning was already active before the disturbance, so the settings can begin at different arm configurations.
 
+Joint motion: one trial per setting
+• This view shows repetition one for each setting, using the same repetition number throughout the comparison.
+• The measured angle of joint one is shown relative to its value at disturbance onset. The axes and conditioning close-up match the preceding slide.
+• The larger conditioning torque shows repeated motion reversals in the first second. The lower conditioning setting increases more smoothly during this interval.
+• This is one trial per setting. The next slide combines the three trials using their mean and sample standard deviation.
+
+Joint motion: mean of three trials
+• This view uses the arithmetic mean of the three trials for every setting. Shading shows one sample standard deviation, matching the uncertainty convention of the other result plots.
+• The starting angle is subtracted separately in each trial. The three angle changes are then averaged at their common measured times.
+• Repeated reversals remain visible at the larger conditioning torque in the first-second close-up. Averaging reduces reversals that occur at different times in the individual trials.
+• These curves show joint one. The cumulative and net joint-motion quantities instead use the projected motion of all seven joints. Conditioning was active before and during the disturbance.
+
 Jacobian conditioning
 • A smaller minimum singular value means some tool motions require larger joint velocities. Zero means the EE loses an instantaneous motion direction.
 • It falls with no null-space torque and with damping. Both conditioning settings keep it nearly constant during the disturbance.

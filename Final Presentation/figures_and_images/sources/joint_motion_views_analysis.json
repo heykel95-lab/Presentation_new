@@ -1,0 +1,101 @@
+{
+  "input_sha256": "bc8baf60544bd217e8032945505676075a044b7f794a8600d28b2824d6302a19",
+  "definition": "Delta q1(t) = q1(t+5 s) - q1(5 s), in degrees",
+  "single_repetition": "r01",
+  "selection_rule": "Same repetition number for every setting",
+  "mean": "Arithmetic mean of three onset-relative joint-angle changes at exact common recorded timestamps",
+  "uncertainty": "One sample standard deviation across three trials, ddof=1",
+  "interpolation": false,
+  "time_rounding": false,
+  "smoothing": false,
+  "integration": false,
+  "absolute_values": false,
+  "recorded_interval_s": [
+    5,
+    9
+  ],
+  "display_interval_s": [
+    0,
+    4
+  ],
+  "conditioning_detail_s": [
+    0,
+    1
+  ],
+  "conditions": [
+    {
+      "condition": "MAIN_NS7_baseline_20N_200mm",
+      "single_repetition": "r01",
+      "single_samples": 81,
+      "mean_common_samples": 80,
+      "single_endpoint_deg": 4.927382666,
+      "mean_endpoint_deg": 5.7103843623333335,
+      "sample_sd_endpoint_deg": 0.6902920270908377,
+      "unshared_recorded_times_s": {
+        "r01": [
+          5.201
+        ],
+        "r02": [
+          5.2
+        ],
+        "r03": [
+          5.2
+        ]
+      }
+    },
+    {
+      "condition": "MAIN_NS7_damping_2p0_20N_200mm",
+      "single_repetition": "r01",
+      "single_samples": 81,
+      "mean_common_samples": 81,
+      "single_endpoint_deg": 4.456036786,
+      "mean_endpoint_deg": 4.277092129666666,
+      "sample_sd_endpoint_deg": 0.1666018140258306,
+      "unshared_recorded_times_s": {
+        "r01": [],
+        "r02": [],
+        "r03": []
+      }
+    },
+    {
+      "condition": "MAIN_NS8_ksigma_1p5_20N_200mm",
+      "single_repetition": "r01",
+      "single_samples": 81,
+      "mean_common_samples": 80,
+      "single_endpoint_deg": 0.009930729000000027,
+      "mean_endpoint_deg": 0.012963731000000015,
+      "sample_sd_endpoint_deg": 0.0026371119156127884,
+      "unshared_recorded_times_s": {
+        "r01": [
+          8.802
+        ],
+        "r02": [
+          8.8
+        ],
+        "r03": [
+          8.8
+        ]
+      }
+    },
+    {
+      "condition": "MAIN_NS8_ksigma_2p0_20N_200mm",
+      "single_repetition": "r01",
+      "single_samples": 81,
+      "mean_common_samples": 80,
+      "single_endpoint_deg": -0.015042094000000006,
+      "mean_endpoint_deg": 0.006449147999999997,
+      "sample_sd_endpoint_deg": 0.023603945083026875,
+      "unshared_recorded_times_s": {
+        "r01": [
+          6.65
+        ],
+        "r02": [
+          6.652
+        ],
+        "r03": [
+          6.65
+        ]
+      }
+    }
+  ]
+}

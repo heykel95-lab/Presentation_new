@@ -574,5 +574,15 @@
     "source": "sources/controller_wrench_blocks.tex and MyOwn/chapters/02_theoretical_background.tex, eq:pole_block_gains, eq:coupled_tcp_stiffness, eq:coupled_tcp_damping",
     "changes": "Full force/moment matrix equation, with A^T and A around both block-diagonal stiffness and damping matrices. Underbraces identify the TCP matrices. Preserves the actual linear/angular velocity differences and the small-rotation model. Replaces two compact transformation equations on footer 7.",
     "presentation_representation": "Native editable PowerPoint Office Math. LaTeX source and matching PDF/PNG/SVG retained."
+  },
+  {
+    "asset": "joint_motion_single",
+    "source": "sources/make_joint_motion_views.py and unchanged joint_motion_samples.csv.gz. Source identities in joint_motion_provenance.json. Derived values and alignment audit in joint_motion_views_analysis.json / joint_motion_mean_curves.csv.",
+    "changes": "One measured joint-1 trajectory per setting, repetition r01 for all four settings. Original measured timestamps. Full 0-4 s and first-second conditioning views. Same axes as the all-repetitions figure."
+  },
+  {
+    "asset": "joint_motion_mean",
+    "source": "sources/make_joint_motion_views.py and unchanged joint_motion_samples.csv.gz. Source identities in joint_motion_provenance.json. Derived values and alignment audit in joint_motion_views_analysis.json / joint_motion_mean_curves.csv.",
+    "changes": "Arithmetic mean of three onset-relative measured joint-1 trajectories per setting. Shading is one sample standard deviation. Exact recorded times common to each setting, no interpolation or smoothing. Same axes and intervals as the all-repetitions figure."
   }
 ]

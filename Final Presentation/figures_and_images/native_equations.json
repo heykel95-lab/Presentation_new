@@ -240,7 +240,7 @@
     "font_size_pt": 26.59
   },
   {
-    "slide": 27,
+    "slide": 29,
     "shape": "Equation - null_controller_projector",
     "source": "sources/null_controller_projector.tex",
     "latex": "\\displaystyle N_\\tau=I_7-J^{\\top}J^{+\\top},\\qquad\\tau_{\\mathrm{null}}=\\tau_d+\\tau_\\sigma",
@@ -248,7 +248,7 @@
     "font_size_pt": 22.33
   },
   {
-    "slide": 27,
+    "slide": 29,
     "shape": "Equation - null_controller_damping",
     "source": "sources/null_controller_damping.tex",
     "latex": "\\displaystyle \\tau_d=-d_{\\mathrm{null}}N_\\tau\\dot q",
@@ -256,7 +256,7 @@
     "font_size_pt": 22.33
   },
   {
-    "slide": 27,
+    "slide": 29,
     "shape": "Equation - null_controller_conditioning",
     "source": "sources/null_controller_conditioning.tex",
     "latex": "\\displaystyle \\tau_\\sigma=k_\\sigma N_\\tau(s_\\sigma v_7)",
