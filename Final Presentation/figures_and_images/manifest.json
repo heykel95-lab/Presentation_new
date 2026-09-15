@@ -44,7 +44,7 @@
   {
     "asset": "CoC_position",
     "source": "MyOwn/figures/ch05/results_case_d_panels.tex; MyOwn/code/python/figures/contact_angular_error/grouped_results.csv; MyOwn/code/python/figures/contact_angular_error/wider_coc_source_audit.json",
-    "changes": "2026-09-15: extended the calibrated-normal angular-error comparison to -80 and +80 mm for both entry directions. All nine tested positions retain three-trial means and sample SD from completed terminal endpoint records at 0.01-degree precision. The 12 added records have matching effective settings apart from the intended CoC displacement. Lowest positive-entry mean error: 1.17 degrees at +80 mm. Lowest negative-entry mean error: 0.94 degrees at +10 mm. Synchronized editable LaTeX, PDF, PNG and SVG with the thesis. Each tested CoC position has its own labelled tick and dotted vertical gridline."
+    "changes": "2026-09-15: extended the calibrated-normal angular-error comparison to -80 and +80 mm for both entry directions. All nine tested positions retain three-trial means and sample SD from completed terminal endpoint records at 0.01-degree precision. The 12 added records have matching effective settings apart from the intended CoC displacement. Lowest positive-entry mean error: 1.17 degrees at +80 mm. Lowest negative-entry mean error: 0.94 degrees at +10 mm. Synchronized editable LaTeX, PDF, PNG and SVG with the thesis. Each tested CoC position has its own labelled tick and dotted vertical gridline. X-axis values are horizontal and centred, with clear spacing between nearby values. All nine measured positions, gridlines, data and uncertainty are preserved."
   },
   {
     "asset": "contact_response_time",
