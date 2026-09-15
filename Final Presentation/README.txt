@@ -9,7 +9,7 @@ Native chapter sections, six-entry Overview, original theme, equations and embed
 The contact results use angular error relative to the calibrated surface normal.
 The plotted quantity is the first-tangent component theta_err,t1. It comes from measured end-effector orientation and the calibrated tool normal.
 The entry value is theta_meas,t1. The angular error replaces the former end-to-entry contact response.
-Endpoint means and sample standard deviations use all 57 original terminal-report records at 0.01-degree precision.
+Endpoint means and sample standard deviations use all 69 original terminal-report records at 0.01-degree precision. The CoC comparison includes the completed -80 mm and +80 mm conditions for both entry directions.
 The three representative full time histories retain model-estimated normal force and TCP moment.
 Timing compares entry into and remaining within 0.1 degree of the angular error: approximately 2.5 s at +40 mm and 3.6 s at the TCP.
 Calibration and mount uncertainty affects the estimate of physical alignment. A zero first-tangent component alone does not establish complete alignment.

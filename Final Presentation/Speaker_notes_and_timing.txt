@@ -77,8 +77,8 @@ Effect of stiffness
 • Across the tested tangential stiffness range, angular error varied by 0.07°. Translation along the second tangent was varied while the first remained fixed.
 
 Effect of CoC position
-• For positive entry tilt, the smallest tested angular error was 1.48° at plus 40 millimetres. At minus 40 millimetres, 9.13° remained.
-• For negative entry tilt, the smallest angular error magnitude was 0.94° at plus 10 millimetres. At minus 40 millimetres, the error component crossed zero and ended at +1.99°.
+• The plot covers minus 80 to plus 80 millimetres, with three repetitions per setting. For positive entry tilt, the smallest tested angular error was 1.17° at plus 80 millimetres. At minus 80 millimetres, 9.35° remained.
+• For negative entry tilt, the smallest angular error magnitude was 0.94° at plus 10 millimetres. At minus 80 millimetres, the error component crossed zero and ended at +2.23°.
 • CoC displacement changes the remaining error component and can reverse its direction. Greater rotation therefore does not always give a smaller angular error.
 
 Angular error and interaction wrench

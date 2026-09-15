@@ -2,7 +2,7 @@
 
 The endpoint panels (`baseline_response`, `rotation_stiffness`,
 `translation_stiffness`, `CoC_position`) contain the regenerated means and
-sample standard deviations from 57 terminal endpoint reports over 19 settings.
+sample standard deviations from 69 terminal endpoint reports over 23 settings.
 Terminal values were archived to 0.01 degree. A standard deviation displayed
 as 0.00 degree represents repeated rounded values, not zero uncertainty.
 
@@ -38,3 +38,10 @@ end-effector orientation, projected on the first tangent. It reverses the
 archived tool-to-reference normal-error component. It is not a subtraction of
 finite orientation-angle components. Zero refers to the calibrated normal,
 with residual calibration and mounting limitations.
+
+The CoC comparison includes -80 and +80 mm for both entry directions. All
+nine positions use three-repeat means and sample SD from the same calibrated
+normal-error endpoint records as the thesis. The 12 additional reports and
+matched effective settings are audited in `wider_coc_source_audit.json` in
+the thesis contact-angular-error data folder. Representative wrench traces
+remain at -40 mm, TCP and +40 mm.
