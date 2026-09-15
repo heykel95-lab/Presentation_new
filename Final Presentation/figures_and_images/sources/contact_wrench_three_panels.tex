@@ -1,18 +1,21 @@
 \documentclass[tikz,border=0pt]{standalone}
 \usepackage{graphicx,amsmath}
 \definecolor{navy}{HTML}{17365D}
+% Timing: earliest entry into a +/-0.1 degree band about the final normal
+% error that is retained through contact end. Exact archived samples give
+% 2.489 s at +40 mm and 3.601 s at TCP, rounded here to 2.5 s and 3.6 s.
 \begin{document}
 \begin{tikzpicture}[x=1bp,y=1bp]
 \path[use as bounding box] (0,0) rectangle (900,230);
 \begin{scope}[shift={(0,0)}]
-\node[anchor=south west,inner sep=0] at (64,42) {\includegraphics[width=224bp,height=172bp]{contact_response_plot.pdf}};
-\fill[white] (64.46,180.275) rectangle (74.98,212.314);
+\node[anchor=south west,inner sep=0] at (64,42) {\includegraphics[width=224bp,height=172bp]{contact_error_plot.pdf}};
 \node[anchor=north west,inner sep=1bp,font=\fontsize{12}{14}\selectfont] at (67,212) {(a)};
-\draw[line width=.6bp] (61,74.250000)--(64,74.250000);\node[anchor=east,inner sep=2bp,font=\fontsize{12}{14}\selectfont] at (60,74.250000) {$0$};
-\draw[line width=.6bp] (61,107.718165)--(64,107.718165);\node[anchor=east,inner sep=2bp,font=\fontsize{12}{14}\selectfont] at (60,107.718165) {$2.5$};
-\draw[line width=.6bp] (61,141.186329)--(64,141.186329);\node[anchor=east,inner sep=2bp,font=\fontsize{12}{14}\selectfont] at (60,141.186329) {$5$};
-\draw[line width=.6bp] (61,174.654663)--(64,174.654663);\node[anchor=east,inner sep=2bp,font=\fontsize{12}{14}\selectfont] at (60,174.654663) {$7.5$};
-\draw[line width=.6bp] (61,208.122827)--(64,208.122827);\node[anchor=east,inner sep=2bp,font=\fontsize{12}{14}\selectfont] at (60,208.122827) {$10$};
+\draw[line width=.6bp] (61,42.000000)--(64,42.000000);\node[anchor=east,inner sep=2bp,font=\fontsize{12}{14}\selectfont] at (60,42.000000) {$0$};
+\draw[line width=.6bp] (61,73.272727)--(64,73.272727);\node[anchor=east,inner sep=2bp,font=\fontsize{12}{14}\selectfont] at (60,73.272727) {$2$};
+\draw[line width=.6bp] (61,104.545455)--(64,104.545455);\node[anchor=east,inner sep=2bp,font=\fontsize{12}{14}\selectfont] at (60,104.545455) {$4$};
+\draw[line width=.6bp] (61,135.818182)--(64,135.818182);\node[anchor=east,inner sep=2bp,font=\fontsize{12}{14}\selectfont] at (60,135.818182) {$6$};
+\draw[line width=.6bp] (61,167.090909)--(64,167.090909);\node[anchor=east,inner sep=2bp,font=\fontsize{12}{14}\selectfont] at (60,167.090909) {$8$};
+\draw[line width=.6bp] (61,198.363636)--(64,198.363636);\node[anchor=east,inner sep=2bp,font=\fontsize{12}{14}\selectfont] at (60,198.363636) {$10$};
 \draw[line width=.6bp] (74.181806,42)--(74.181806,39);\node[anchor=north,inner sep=2bp,font=\fontsize{12}{14}\selectfont] at (74.181806,38) {0};
 \draw[line width=.6bp] (114.900937,42)--(114.900937,39);\node[anchor=north,inner sep=2bp,font=\fontsize{12}{14}\selectfont] at (114.900937,38) {1};
 \draw[line width=.6bp] (155.620069,42)--(155.620069,39);\node[anchor=north,inner sep=2bp,font=\fontsize{12}{14}\selectfont] at (155.620069,38) {2};
@@ -20,8 +23,8 @@
 \draw[line width=.6bp] (237.058331,42)--(237.058331,39);\node[anchor=north,inner sep=2bp,font=\fontsize{12}{14}\selectfont] at (237.058331,38) {4};
 \draw[line width=.6bp] (277.777463,42)--(277.777463,39);\node[anchor=north,inner sep=2bp,font=\fontsize{12}{14}\selectfont] at (277.777463,38) {5};
 \node[font=\fontsize{13}{15}\selectfont] at (176,11) {Time, $t$ [s]};
-\node[rotate=90,align=center,font=\fontsize{13}{15}\selectfont] at (17,128) {Contact response\\$\gamma_{t_1}$ [$^\circ$]};
-\draw[navy,densely dashed,line width=.7bp] (167.854545,42)--(167.854545,193);\node[navy,font=\fontsize{11}{13}\selectfont] at (167.854545,204) {$\approx 2.3\,\mathrm{s}$};
+\node[rotate=90,align=center,font=\fontsize{13}{15}\selectfont] at (17,128) {Angular error\\$\theta_{\mathrm{err},t_1}$ [$^\circ$]};
+\draw[navy,densely dashed,line width=.7bp] (176.000000,42)--(176.000000,193);\node[navy,font=\fontsize{11}{13}\selectfont] at (176.000000,204) {$\approx 2.5\,\mathrm{s}$};
 \draw[navy,densely dashed,line width=.7bp] (220.800000,42)--(220.800000,193);\node[navy,font=\fontsize{11}{13}\selectfont] at (220.800000,204) {$\approx 3.6\,\mathrm{s}$};
 \end{scope}
 \begin{scope}[shift={(300,0)}]

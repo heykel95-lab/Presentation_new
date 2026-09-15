@@ -1,0 +1,26 @@
+\documentclass[tikz,border=0pt]{standalone}
+\usepackage{amsmath,amssymb}
+\usetikzlibrary{arrows.meta}
+\definecolor{measured}{HTML}{17365D}
+\definecolor{desired}{HTML}{228833}
+\input{pose_gripper.tikz}
+\begin{document}
+% Schematic displacement, not experimental positions or distances.
+% Identical tool orientation at both positions isolates translation.
+\begin{tikzpicture}[font=\fontsize{15}{18}\selectfont,
+ >={Latex[length=2.5mm,width=1.8mm]}]
+\path[use as bounding box] (0,0) rectangle (8,4.4);
+\coordinate (M) at (1.3,1.25);
+\coordinate (D) at (6.3,2.45);
+\begin{scope}[shift={(M)},scale=.8]\PoseGripper\end{scope}
+\begin{scope}[shift={(D)},scale=.8]\PoseGripper\end{scope}
+\draw[->,measured,line width=1.3pt,shorten >=3pt,shorten <=3pt]
+ (M)--(D) node[midway,above=3pt,fill=white,inner sep=1pt] {$e_p$};
+\fill[measured] (M) circle (2.6pt);
+\fill[desired] (D) circle (2.6pt);
+\node[measured,anchor=north] at (1.3,.7) {$p_{\mathrm{EE}}$};
+\node[desired,anchor=north] at (6.3,1.9) {$p_d$};
+\node[measured] at (1.3,2.65) {Measured};
+\node[desired] at (6.3,3.85) {Desired};
+\end{tikzpicture}
+\end{document}

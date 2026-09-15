@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="213.285pt" height="131.031pt" viewBox="0 0 213.285 131.031">
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="213.285" height="131.031" viewBox="0 0 213.285 131.031">
 <defs>
 <g>
 <g id="glyph-0-0">
@@ -100,8 +100,8 @@
 <use xlink:href="#glyph-0-2" x="102.218337" y="57.383637"/>
 <use xlink:href="#glyph-0-7" x="106.88855" y="57.383637"/>
 </g>
-<path fill-rule="nonzero" fill="rgb(100%, 100%, 100%)" fill-opacity="1" stroke-width="0.3985" stroke-linecap="butt" stroke-linejoin="miter" stroke="rgb(34.999084%, 34.999084%, 34.999084%)" stroke-opacity="1" stroke-miterlimit="10" d="M -13.530803 98.657129 L -16.151604 81.633724 L -9.603535 81.633724 L -7.419534 98.657129 Z M -13.530803 98.657129 " transform="matrix(0.992659, 0, 0, -0.992659, 101.638506, 162.319615)"/>
-<path fill-rule="nonzero" fill="rgb(100%, 100%, 100%)" fill-opacity="1" stroke-width="0.3985" stroke-linecap="butt" stroke-linejoin="miter" stroke="rgb(34.999084%, 34.999084%, 34.999084%)" stroke-opacity="1" stroke-miterlimit="10" d="M 13.531138 98.657129 L 16.151939 81.633724 L 9.603871 81.633724 L 7.419869 98.657129 Z M 13.531138 98.657129 " transform="matrix(0.992659, 0, 0, -0.992659, 101.638506, 162.319615)"/>
+<path fill-rule="nonzero" fill="rgb(100%, 100%, 100%)" fill-opacity="1" stroke-width="0.3985" stroke-linecap="butt" stroke-linejoin="miter" stroke="rgb(34.999084%, 34.999084%, 34.999084%)" stroke-opacity="1" stroke-miterlimit="10" d="M -13.530803 98.657129 L -14.841203 74.117611 L -8.729935 75.085655 L -7.419534 98.657129 Z M -13.530803 98.657129 " transform="matrix(0.992659, 0, 0, -0.992659, 101.638506, 162.319615)"/>
+<path fill-rule="nonzero" fill="rgb(100%, 100%, 100%)" fill-opacity="1" stroke-width="0.3985" stroke-linecap="butt" stroke-linejoin="miter" stroke="rgb(34.999084%, 34.999084%, 34.999084%)" stroke-opacity="1" stroke-miterlimit="10" d="M 13.531138 98.657129 L 15.715139 78.957831 L 9.603871 77.989787 L 7.419869 98.657129 Z M 13.531138 98.657129 " transform="matrix(0.992659, 0, 0, -0.992659, 101.638506, 162.319615)"/>
 <g fill="rgb(25%, 25%, 25%)" fill-opacity="1">
 <use xlink:href="#glyph-0-8" x="123.765869" y="75.03113"/>
 <use xlink:href="#glyph-0-9" x="129.837225" y="75.03113"/>

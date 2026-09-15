@@ -1,37 +1,35 @@
-Thesis presentation, gg0 theme - September clarity revision
+Active defense presentation
 
-Active deck: Thesis_Defense_gg0_v3.pptx
-Full PDF: Thesis_Defense_gg0_v3.pdf (24 main slides + 3 backups = 27 pages).
-Supplementary_slides.pdf contains B1--B3. Backups stay hidden in the PowerPoint slideshow.
-The original navy titles, continuous rule, white background, Arial body, and HM footer are preserved.
+Thesis_Defense_gg0_v3.pptx contains 24 main slides and two hidden backups.
+Thesis_Defense_gg0_v3.pdf contains all 26 slides. Supplementary_slides.pdf contains the two backups from physical pages 25 and 26.
+Contact demonstration is visible at physical slide 3, immediately after Motivation, with no viewing-cue text beneath the video. Overview follows at physical slide 4.
+Null-space torques and projector (B1) and Disturbance demonstration (B2) remain hidden at physical slides 25 and 26.
+Native chapter sections, six-entry Overview, original theme, equations and embedded videos are retained. Both videos start on click.
 
-The single Overview lists six chapter names only. Native PowerPoint sections group the detailed slides within each chapter. Refresh it after slide edits with
-Speaking\build\update-overview.ps1, then export the full presentation PDF.
+The contact results use angular error relative to the calibrated surface normal.
+The plotted quantity is the first-tangent component theta_err,t1. It comes from measured end-effector orientation and the calibrated tool normal.
+The entry value is theta_meas,t1. The angular error replaces the former end-to-entry contact response.
+Endpoint means and sample standard deviations use all 57 original terminal-report records at 0.01-degree precision.
+The three representative full time histories retain model-estimated normal force and TCP moment.
+Timing compares entry into and remaining within 0.1 degree of the angular error: approximately 2.5 s at +40 mm and 3.6 s at the TCP.
+Calibration and mount uncertainty affects the estimate of physical alignment. A zero first-tangent component alone does not establish complete alignment.
 
-Cartesian pose follows Overview, illustrating x, y, z and roll, pitch, yaw.
-The subsequent controller introduction combines pose error and wrench, followed by the real-time loop, surface directions,
-CoC geometry and moment interpretation followed by the coupling matrices, and null-space control. Both experiments precede the consistency checks.
-Normal-force and moment plausibility precede commanded-versus-estimated wrench, then the baseline and parameter results.
-The contact-results sequence is followed by all three thesis null-space panels: cumulative motion, conditioning/Cartesian retention, and net displacement,
-then Conclusion with Future work underneath. The full contact response/force/moment figure is backup B1.
-The former pose-representation and null-space-kinematics backups have been removed.
-The videos are consecutive hidden backups: Contact demonstration (B2), then Disturbance demonstration (B3).
-Both videos are embedded, start on click, and have visible viewing cues. PDF shows poster frames.
+Speaking/Thesis_Defense_Speaking_Script.tex and PowerPoint notes are synchronized with all 26 slides.
+Speaking/build.ps1 builds Thesis_Defense_Speaking_Script.pdf. No talk duration has been measured.
+Speaker_notes_and_timing.txt now contains the same spoken points without obsolete timings.
 
-Speaking\Thesis_Defense_Speaking_Script.tex follows all 27 slides, with narration and equations only.
-PowerPoint speaker notes follow the same text. Speaking\build.ps1 builds the speaking PDF directly
-in Final Presentation; -Watch rebuilds after LaTeX edits. It does not rewrite text after slide changes.
-Future editing agents must update the text and notes with each deck edit; see root AGENTS.md.
+Figure assets and editable sources are in figures_and_images. Provenance is in figures_and_images/manifest.json.
+Reproducible data: MyOwn/code/python/figures/contact_angular_error/.
+After editing slides, run Speaking/build/update-overview.ps1, rebuild the speaking script and export all 26 PDF pages.
 
-The earlier 18:10 rehearsal target predates this expanded sequence; the revised talk duration has not been measured.
-Sources and figure provenance are recorded in figures_and_images\manifest.json and root AGENTS.md.
-Angular quantities and the baseline plot use MyOwn main commit 0fea99b: measured angular offset theta_meas,t1,
-contact-entry/contact-end orientation sketch, and baseline offsets 0.69, 9.31, -9.41 degrees.
+Equations (2026-09-15)
+All 37 standalone formula and symbol pictures have been replaced with native editable PowerPoint equations from their existing LaTeX sources. Direct conversion succeeded, so IguanaTex is not required.
+Click inside a formula to edit it using PowerPoint Equation tools. The LaTeX sources remain in figures_and_images/sources. native_equations.json maps each equation to its slide, shape name and exact LaTeX. Each equation also has the source in its alternative text.
+Keep formula changes synchronized between the LaTeX source, native PowerPoint equation, source catalog, speaking script and notes. Editing a .tex file alone does not automatically update the PowerPoint equation. Graphs and schematic illustrations retain their editable figure sources.
 
-Review corrections: measured angular-offset legends throughout; visible -0.006 degree net-displacement label; larger plot labels; separate tangential-translation parameter label; consistent blue subsection headings.
+Controller error sketches (2026-09-15): position error and axis-angle correction are illustrated separately. The rotational equation is e_R = phi u. The rotation-matrix identity was removed. Both new images and their LaTeX/PDF/PNG/SVG sources are in figures_and_images.
 
-Conclusion combines five contact and null-space findings from the earlier presentation and thesis in the concise style of commit 558d22e. Future work covers a more rigid tool mount and adaptive CoC selection with return to the TCP after alignment. Audience-facing slide text and narration contain no semicolons.
+Review update: the separate null-space theory, experiment and three result slides follow all contact results. Displayed numbers use at most two decimal places or scientific notation. The shared surface-frame sketch includes the tool.
 
-Footer slide 19 shows contact response, estimated normal force, and estimated TCP moment together, using the original thesis curves and a shared legend. The matching LaTeX source and PDF/PNG/SVG figure variants are included.
-
-Blue subsection and parameter headings use native round navy bullets, with consistent hanging spacing and the original text, equation and figure alignment.
+The reviewed PDF was exported directly from PowerPoint. The full PDF includes both hidden backups.
+Null-space label formatting is reproducible with figures_and_images/sources/format_nullspace_for_presentation.py using the thesis analysis and archived results.

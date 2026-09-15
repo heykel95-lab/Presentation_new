@@ -30,8 +30,17 @@
   \node[gray!55!black] at (0,4.97) {\footnotesize Hand};
 
   % ---- custom aluminium fingers ---------------------------------------
-  \draw[metal] (-0.62,4.52) -- (-0.74,3.74) -- (-0.44,3.74) -- (-0.34,4.52) -- cycle;
-  \draw[metal] ( 0.62,4.52) -- ( 0.74,3.74) -- ( 0.44,3.74) -- ( 0.34,4.52) -- cycle;
+  % Finger tips follow the tool's upper edge exactly, with no visible gap.
+  % For the tool at (-0.62,2.98), height 0.42 and tilt 9 degrees:
+  % y_top(x) = 2.98 + 0.42/cos(9) + (x+0.62)*tan(9).
+  \pgfmathsetmacro{\tipLeftOuter}{2.98+0.42/cos(9)+(-0.68+0.62)*tan(9)}
+  \pgfmathsetmacro{\tipLeftInner}{2.98+0.42/cos(9)+(-0.40+0.62)*tan(9)}
+  \pgfmathsetmacro{\tipRightOuter}{2.98+0.42/cos(9)+(0.72+0.62)*tan(9)}
+  \pgfmathsetmacro{\tipRightInner}{2.98+0.42/cos(9)+(0.44+0.62)*tan(9)}
+  \draw[metal] (-0.62,4.52) -- (-0.68,\tipLeftOuter)
+    -- (-0.40,\tipLeftInner) -- (-0.34,4.52) -- cycle;
+  \draw[metal] (0.62,4.52) -- (0.72,\tipRightOuter)
+    -- (0.44,\tipRightInner) -- (0.34,4.52) -- cycle;
   \node[gray!50!black, anchor=west] at (0.86,4.12) {\footnotesize Custom fingers};
 
   % ---- wooden tool -----------------------------------------------------

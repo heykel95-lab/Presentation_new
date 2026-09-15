@@ -1,57 +1,54 @@
 \documentclass[tikz,border=4pt]{standalone}
 \usepackage{amsmath,amssymb}
-\usepackage{tikz,pgfplots}
-\pgfplotsset{compat=1.18}
 \usetikzlibrary{arrows.meta,calc,positioning}
 \begin{document}
-% Schematic pure t_1 rotation. A simultaneous 90-degree rotation of both
-% normals gives their plane traces, preserving the angular offset.
-% Both tool-face directions use the same calibrated tool-to-EE relation.
-% The common origin compares orientations only; it is not a contact point.
+% Schematic pure t_1 rotation, shown using actual normal vectors.
+% The comparison reference is the inward calibrated normal -n_s.
+% The coordinate view is rotated in plane: -n_s is right, t_2 is up.
+% Positive rotation about outward t_1 is anticlockwise.
+% Tool directions are R_EE(t) n_Tool,EE, not nominal end-effector axes.
+% The common origin compares orientations only, not contact positions.
 \begin{tikzpicture}[
   scale=1.0,
-  reference/.style={red!75!black, line width=1.1pt},
-  entry/.style={green!60!black, line width=1.3pt},
-  endpoint/.style={blue!70!black, line width=1.1pt, dashed},
+  reference/.style={red!75!black, line width=1.1pt,-{Latex[length=2.3mm]}},
+  entry/.style={green!60!black, line width=1.3pt,-{Latex[length=2.3mm]}},
+  endpoint/.style={blue!70!black, line width=1.1pt,dashed,-{Latex[length=2.3mm]}},
   angle/.style={-{Latex[length=2.0mm]}, line width=0.9pt},
   axis/.style={-{Latex[length=1.6mm]}, black, line width=0.7pt},
-  lbl/.style={font=\footnotesize, inner sep=2pt}
+  lbl/.style={font=\footnotesize, inner sep=2pt,align=left}
 ]
-  % Three directly labelled orientations with a single common origin.
   \draw[reference] (0,0) -- (7.5,0);
   \draw[entry] (0,0) -- (32:7.5);
   \draw[endpoint] (0,0) -- (10:7.5);
 
   \node[lbl,green!60!black,anchor=west] at (6.55,3.97)
-    {Contact entry, $t_{\mathrm{start}}$};
+    {Tool normal at entry\\$n_{\mathrm{Tool}}(t_{\mathrm{start}})$};
   \node[lbl,blue!70!black,anchor=west] at (7.65,1.30)
-    {Contact end, $t_{\mathrm{end}}$};
+    {Tool normal at end\\$n_{\mathrm{Tool}}(t_{\mathrm{end}})$};
   \node[lbl,red!75!black,anchor=west] at (7.65,0)
-    {Configured reference};
+    {Calibrated surface normal\\$-n_s$};
 
-  % Outer arc: configured plane -> entry orientation. Its crossing of the end
-  % ray is meaningful: the measured entry offset spans the entire sector.
+  % Both angular quantities begin at the same calibrated reference.
   \draw[angle,red!75!black] (0:4.8)
     arc[start angle=0,end angle=32,radius=4.8];
   \node[lbl,red!75!black,anchor=west] at (5.03,1.96)
     {$\theta_{\mathrm{meas},t_1}$};
+  \draw[angle,blue!70!black] (0:2.8)
+    arc[start angle=0,end angle=10,radius=2.8];
+  \node[lbl,blue!70!black,anchor=north] at (2.70,-0.18)
+    {$\theta_{\mathrm{err},t_1}(t_{\mathrm{end}})$};
 
-  % Inner arc: measured end -> held entry orientation, matching R_CE.
-  \draw[angle,blue!70!black] (10:2.8)
-    arc[start angle=10,end angle=32,radius=2.8];
-  \node[lbl,blue!70!black] at (1.70,0.66) {$\gamma_{t_1}$};
-
-  % Surface-frame inset: t_1 x t_2 = n_s. Positive rotation is anticlockwise.
-  \begin{scope}[shift={(0.30,2.65)}]
-    \draw[axis] (0.18,0) -- (1.1,0) node[lbl,right] {$t_2$};
-    \draw[axis] (0,0.18) -- (0,1.1) node[lbl,above] {$n_s$};
-    % Positive rotation about t_1 runs from +t_2 toward +n_s.
-    \draw[angle,black] (15:0.82)
-      arc[start angle=15,end angle=75,radius=0.82];
-    \node[lbl,font=\normalsize] at (0.80,0.80) {$+$};
+  % Right-handed surface frame in the same rotated view as the normal arrows.
+  % t_1 x t_2 = n_s, so positive rotation runs from +t_2 to +n_s.
+  \begin{scope}[shift={(1.0,2.65)}]
+    \draw[axis] (-0.18,0) -- (-1.0,0) node[lbl,left] {$n_s$};
+    \draw[axis] (0,0.18) -- (0,1.1) node[lbl,above] {$t_2$};
+    \draw[angle,black] (105:0.72)
+      arc[start angle=105,end angle=165,radius=0.72];
+    \node[lbl,font=\normalsize] at (-0.73,0.78) {$+$};
     \draw[black] (0,0) circle (0.11);
     \fill[black] (0,0) circle (0.035);
-    \node[lbl,anchor=north east] at (-0.15,-0.15) {$t_1$};
+    \node[lbl,anchor=north west] at (0.15,-0.15) {$t_1$};
   \end{scope}
 \end{tikzpicture}
 

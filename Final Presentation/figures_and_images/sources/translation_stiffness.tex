@@ -12,18 +12,21 @@
     xmin=220, xmax=2080, ymin=0, ymax=10,
     xtick={300,800,2000},
     ytick={0,2,4,6,8,10},
-    grid=major,
+    ymajorgrids=true, xmajorgrids=false,
     grid style={gray!25, very thin},
     tick label style={font=\fontsize{12}{14}\selectfont},
     label style={font=\fontsize{13}{15}\selectfont},
     xlabel={\shortstack{Translational stiffness along $t_2$\\$K_{p,t_2}$ [N/m]}},
-    ylabel={Contact response, \(\gamma_{t_1}\) [\(^\circ\)]},
+    ylabel={Angular error, \(\theta_{\mathrm{err},t_1}\) [\(^\circ\)]},
     legend style={font=\fontsize{12}{14}\selectfont, draw=none, fill=none,
                   cells={anchor=west}, at={(0.5,-0.36)}, anchor=north},
     every axis plot/.append style={thick, mark size=2.3pt},
   ]
-\addplot[black, mark=o] coordinates {
-  (300,7.59) (800,7.56) (2000,7.57)};
+\addplot[black, mark=o, mark options={fill=white},
+         error bars/.cd, y dir=both, y explicit] coordinates {
+  (300,1.683333333) +- (0,0.011547005)
+  (800,1.690000000) +- (0,0.010000000)
+  (2000,1.750000000) +- (0,0.000000000)};
 \addlegendentry{\shortstack[l]{Measured angular offset\\\(\theta_{\mathrm{meas},t_1}=(9.24\text{--}9.31)^\circ\)}}
 \end{axis}
 \end{tikzpicture}
