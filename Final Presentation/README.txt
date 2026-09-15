@@ -23,7 +23,7 @@ Reproducible data: MyOwn/code/python/figures/contact_angular_error/.
 After editing slides, run Speaking/build/update-overview.ps1, rebuild the speaking script and export all 28 PDF pages.
 
 Equations (2026-09-15)
-All 37 standalone formula and symbol pictures have been replaced with native editable PowerPoint equations from their existing LaTeX sources. Direct conversion succeeded, so IguanaTex is not required.
+The 36 active standalone formula and symbol shapes are native editable PowerPoint equations from their LaTeX sources. Direct conversion succeeded, so IguanaTex is not required.
 Click inside a formula to edit it using PowerPoint Equation tools. The LaTeX sources remain in figures_and_images/sources. native_equations.json maps each equation to its slide, shape name and exact LaTeX. Each equation also has the source in its alternative text.
 Keep formula changes synchronized between the LaTeX source, native PowerPoint equation, source catalog, speaking script and notes. Editing a .tex file alone does not automatically update the PowerPoint equation. Graphs and schematic illustrations retain their editable figure sources.
 
@@ -39,3 +39,5 @@ Directional motion history: Null-space displacement over time is footer 21, imme
 Joint motion over time is footer 22, immediately after the directional projected-displacement history. The same measured joint-1 figure is used in the thesis. All three trials of each setting are shown, with a first-second conditioning close-up. Rebuild with figures_and_images/sources/make_joint_motion.py. Portable 20 Hz samples, source hashes and validation are stored beside it.
 
 Stiffness results: physical slide 16 (footer 15) shows only Effect of rotational stiffness. The K_p,t2 sweep plot, its takeaway and the tangential-stiffness conclusion/narration have been removed from the presentation. The common contact settings remain part of the experimental method.
+
+Full wrench matrix: footer 7 uses the force/moment and error/velocity columns from footer 5, with A-transpose and A around both stiffness and damping blocks. Underbraces identify K_TCP and D_TCP. The full equation replaces the two compact transformation equations and remains natively editable. Source: figures_and_images/sources/coupling_wrench_blocks.tex.

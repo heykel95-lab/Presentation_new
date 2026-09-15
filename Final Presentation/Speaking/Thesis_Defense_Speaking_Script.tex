@@ -85,15 +85,10 @@
 \section*{Translation–rotation coupling}
 \begin{itemize}
 \item The tool centre point (TCP) is the controlled reference point attached to the EE. The centre of compliance (CoC) at \(p_c\) is a virtual reference for stiffness and damping.
-\item Moving the CoC changes how position and rotation errors generate force and moment. Its displacement from the TCP is \(r_c\):
-\[
-r_c=p_c-p_{\mathrm{TCP}}
-\]
-\item For small rotations, we express the shifted stiffness and damping at the TCP. Non-zero off-diagonal blocks show the coupling:
-\[
-\begin{aligned}K_{\mathrm{TCP}}&=A^\top K_cA,\\D_{\mathrm{TCP}}&=A^\top D_cA.\end{aligned}
-\]
-\item The error at the CoC is \(e_c=Ae\). Its wrench is calculated there and transformed to the TCP as \(F_{\mathrm{TCP}}=A^\top F_c\). These are the small-rotation point-shift relations.
+\item Moving the CoC changes how position and rotation errors generate force and moment. Its displacement from the TCP is \(r_c=p_c-p_{\mathrm{TCP}}\).
+\item The full matrix equation uses the same force--moment column and position--rotation error column as the Cartesian controller. The \(A^\top\) and \(A\) transformations shift both stiffness and damping to the TCP.
+\item The underbraces identify the TCP stiffness and damping matrices. Their off-diagonal blocks couple translation and rotation.
+\item The error transforms as \(e_c=Ae\), and the wrench transforms as \(F_{\mathrm{TCP}}=A^\top F_c\). These point-shift relations use the small-rotation model.
 \end{itemize}
 
 \section*{Centre of compliance (CoC)}

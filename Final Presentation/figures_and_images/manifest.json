@@ -374,13 +374,15 @@
     "asset": "coupling_stiffness_transform",
     "source": "MyOwn/chapters/02_theoretical_background.tex; MyOwn/chapters/04_experimental_setup_and_evaluation.tex",
     "changes": "Thesis equation typeset for the presentation; notation, signs and numerical settings retained. PDF/PNG/SVG generated from the matching standalone LaTeX source.",
-    "presentation_representation": "Native editable PowerPoint Office Math, converted directly from the existing LaTeX source on 2026-09-15. Cambria Math. Formula source also retained in shape alternative text and native_equations.json. Legacy image variants retained as source assets."
+    "presentation_representation": "Native editable PowerPoint Office Math, converted directly from the existing LaTeX source on 2026-09-15. Cambria Math. Formula source also retained in shape alternative text and native_equations.json. Legacy image variants retained as source assets.",
+    "presentation_status": "Combined into the native coupling_wrench_blocks equation on footer 7, 2026-09-15. Source assets retained."
   },
   {
     "asset": "coupling_damping_transform",
     "source": "MyOwn/chapters/02_theoretical_background.tex; MyOwn/chapters/04_experimental_setup_and_evaluation.tex",
     "changes": "Thesis equation typeset for the presentation; notation, signs and numerical settings retained. PDF/PNG/SVG generated from the matching standalone LaTeX source.",
-    "presentation_representation": "Native editable PowerPoint Office Math, converted directly from the existing LaTeX source on 2026-09-15. Cambria Math. Formula source also retained in shape alternative text and native_equations.json. Legacy image variants retained as source assets."
+    "presentation_representation": "Native editable PowerPoint Office Math, converted directly from the existing LaTeX source on 2026-09-15. Cambria Math. Formula source also retained in shape alternative text and native_equations.json. Legacy image variants retained as source assets.",
+    "presentation_status": "Combined into the native coupling_wrench_blocks equation on footer 7, 2026-09-15. Source assets retained."
   },
   {
     "asset": "coupling_stiffness_blocks",
@@ -566,5 +568,11 @@
     "asset": "joint_motion_time",
     "source": "Original MAIN_NS7/MAIN_NS8 joint-state diagnostic files, q1_deg and phase_time_s. All 12 trial identities verified against thesis main-log hashes. Portable sources/make_joint_motion.py and joint_motion_*.",
     "changes": "Individual measured joint-1 angle changes from disturbance onset. All four settings over 0-4 s, conditioning close-up over 0-1 s. Nominal 20 Hz measured timestamps, no smoothing, averaging, interpolation or integration. Same figure in the thesis."
+  },
+  {
+    "asset": "coupling_wrench_blocks",
+    "source": "sources/controller_wrench_blocks.tex and MyOwn/chapters/02_theoretical_background.tex, eq:pole_block_gains, eq:coupled_tcp_stiffness, eq:coupled_tcp_damping",
+    "changes": "Full force/moment matrix equation, with A^T and A around both block-diagonal stiffness and damping matrices. Underbraces identify the TCP matrices. Preserves the actual linear/angular velocity differences and the small-rotation model. Replaces two compact transformation equations on footer 7.",
+    "presentation_representation": "Native editable PowerPoint Office Math. LaTeX source and matching PDF/PNG/SVG retained."
   }
 ]
