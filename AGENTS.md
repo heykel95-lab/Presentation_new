@@ -169,7 +169,8 @@ These decisions replace the earlier interleaved chapter assignments above.
 Remove the arm-disturbance purpose sentence from Null-space controller.
 Keep all schedule and duration text off Null-space experiment. Its scientific
 timeline remains documented in the thesis. Place the singularity explanation
-under Conditioning. Damping reduces null-space motion. Conditioning chooses
+as unbulleted text within Conditioning, without a separate Singularity heading.
+Damping reduces null-space motion. Conditioning chooses
 a local direction with larger minimum singular value.
 Use angular error without final throughout the slides, figures and narration.
 Display presentation values with at most two decimal places, using powers of

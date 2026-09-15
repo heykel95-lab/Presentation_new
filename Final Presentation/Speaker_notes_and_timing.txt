@@ -89,8 +89,7 @@ Angular error and interaction wrench
 Null-space controller
 • The contact results are complete. The separate null-space study concerns the arm's redundant joint motion. At full Jacobian rank, seven joints leave one null-space direction with zero instantaneous EE motion.
 • Damping reduces null-space motion by opposing redundant joint velocity.
-• Conditioning chooses between two local null-space directions and drives towards the one with the larger minimum singular value. It can initiate joint motion.
-• At a singularity, the EE loses an instantaneous motion direction. Near it, some EE motions require very large joint velocities. A larger minimum singular value indicates better local conditioning under the same Jacobian convention.
+• Conditioning chooses between two local null-space directions and drives towards the one with the larger minimum singular value. It can initiate joint motion. At a singularity, the EE loses an instantaneous motion direction. Near it, some EE motions require very large joint velocities. A larger minimum singular value indicates better local conditioning under the same Jacobian convention.
 
 Null-space experiment
 • The desired position and orientation stay fixed while joint torques apply a repeatable disturbance. This is equivalent to a virtual 20-newton point force on link three.
