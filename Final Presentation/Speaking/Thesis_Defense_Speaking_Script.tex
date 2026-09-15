@@ -179,22 +179,22 @@ M_{t_1,\mathrm{qs}}=(15\,\mathrm{N\,m/rad})\cdot(6.57\cdot\frac{\pi}{180}\,\math
 \begin{itemize}
 \item The desired position and orientation stay fixed while joint torques apply a repeatable disturbance. This is equivalent to a virtual 20-newton point force on link three.
 \item We compare no null-space torque, damping, and two conditioning settings, with three trials each. Conditioning is active before and during the disturbance.
-\item We compare total projected joint motion, minimum singular value, and net projected displacement.
+\item We compare cumulative joint motion, minimum singular value, and net joint motion.
 \end{itemize}
 
-\section*{Cumulative null-space motion}
+\section*{Cumulative joint motion}
 \begin{itemize}
-\item Cumulative motion, \(E_N\), adds projected joint movement in both directions. These degrees describe arm motion, not rotation of the tool.
+\item Cumulative joint motion, \(E_N\), adds projected joint movement in both directions. These degrees describe arm motion, not rotation of the tool.
 \item Damping reduces it from \(7.60^\circ\) to \(5.69^\circ\), about 25.1 percent. Conditioning gives \(0.29^\circ\) at \(k_\sigma=1.5\) and \(1.69^\circ\) at \(k_\sigma=2\).
 \item Curves show three-trial means over the displayed four-second interval. Shading shows one sample standard deviation.
 \end{itemize}
 
-\section*{Null-space displacement over time}
+\section*{Net joint motion over time}
 \begin{itemize}
-\item This plot retains movement direction. Motion back towards the start reduces the displacement.
-\item The seven projected joint velocities are integrated without taking their magnitude. Each trial uses the same reference direction as the net-displacement comparison. Positive motion follows the disturbance response without null-space torque.
+\item This plot retains movement direction. Motion back towards the start reduces the net joint motion.
+\item The seven projected joint velocities are integrated without taking their magnitude. Each trial uses the same reference direction as the comparison of net joint motion. Positive motion follows the disturbance response without null-space torque.
 \item The left plot shows all four settings. The right plot enlarges the conditioning curves, in the same degree units. Both show three-trial means and one sample standard deviation.
-\item Conditioning produces movement away and back towards the starting value. These are projected joint displacements, not tool rotations.
+\item Conditioning produces movement away and back towards the starting value. These are projected joint motion values, not tool rotations.
 \end{itemize}
 
 \section*{Joint motion over time}
@@ -212,11 +212,11 @@ M_{t_1,\mathrm{qs}}=(15\,\mathrm{N\,m/rad})\cdot(6.57\cdot\frac{\pi}{180}\,\math
 \item Curves show three-trial means over the same four-second interval and use the same Jacobian convention. Shading shows one sample standard deviation.
 \end{itemize}
 
-\section*{Net null-space displacement}
+\section*{Net joint motion}
 \begin{itemize}
-\item Net displacement measures projected joint movement remaining after opposite motions cancel. It is \(7.52^\circ\) without null-space torque and \(5.61^\circ\) with damping.
-\item Mean conditioning displacements are only \(1.5\times10^{-2}\,{}^\circ\) and \(-1.1\times10^{-2}\,{}^\circ\). Conditioning counters the disturbance in the tested direction.
-\item Cumulative motions are \(0.29^\circ\) and \(1.69^\circ\). The larger value is consistent with more back-and-forth motion despite similarly small net displacement.
+\item Net joint motion measures projected joint movement remaining after opposite motions cancel. It is \(7.52^\circ\) without null-space torque and \(5.61^\circ\) with damping.
+\item Mean net joint motion values with conditioning are only \(1.5\times10^{-2}\,{}^\circ\) and \(-1.1\times10^{-2}\,{}^\circ\). Conditioning counters the disturbance in the tested direction.
+\item Cumulative joint motion values are \(0.29^\circ\) and \(1.69^\circ\). The larger value is consistent with more back-and-forth motion despite similarly small net joint motion.
 \end{itemize}
 
 \section*{Conclusion}
@@ -224,7 +224,7 @@ M_{t_1,\mathrm{qs}}=(15\,\mathrm{N\,m/rad})\cdot(6.57\cdot\frac{\pi}{180}\,\math
 \item Contact reduced angular error for both larger entry tilts while the desired orientation stayed fixed. The error is relative to the calibrated surface and retains calibration and tool-mount uncertainty.
 \item Higher rotational stiffness increased angular error from \(1.75^\circ\) to \(6.58^\circ\).
 \item CoC displacement changes angular error and can carry it through zero. At the TCP, the added moment vanishes while the rotational spring and damper remain active.
-\item Damping reduced arm motion, and conditioning countered the tested disturbance direction. Nearly zero net displacement coexisted with back-and-forth motion.
+\item Damping reduced arm motion, and conditioning countered the tested disturbance direction. Nearly zero net joint motion coexisted with back-and-forth motion.
 \item Future work is a more rigid tool mount and adaptive CoC selection. After alignment, the adaptive CoC should return to the TCP.
 \end{itemize}
 

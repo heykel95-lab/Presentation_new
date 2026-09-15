@@ -90,7 +90,7 @@ def plot(out):
   ax.tick_params(length=3,width=.6)
   ax.spines[['top','right']].set_visible(False)
  axes[0].set_xlim(0,4); axes[0].set_xticks([0,1,2,3,4]); axes[0].set_ylim(-.2,6.6);axes[0].set_yticks([0,2,4,6])
- axes[0].set_ylabel('Joint 1 Angle Change, '+r'$\Delta q_1$ [$^\circ$]')
+ axes[0].set_ylabel('Joint 1 Motion, '+r'$\Delta q_1$ [$^\circ$]')
  axes[1].set_xlim(0,1);axes[1].set_xticks([0,.25,.5,.75,1]);axes[1].set_ylim(-.03,.06);axes[1].set_yticks([-.02,0,.02,.04,.06]);axes[1].set_ylabel(r'$\Delta q_1$ [$^\circ$]')
  axes[1].xaxis.set_major_formatter(FuncFormatter(lambda x,p:f'{x:g}'))
  axes[1].yaxis.set_major_formatter(FuncFormatter(lambda x,p:'0' if abs(x)<1e-10 else f'{x:.2f}'))

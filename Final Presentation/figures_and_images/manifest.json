@@ -64,7 +64,7 @@
   {
     "asset": "nullspace_damping",
     "source": "MyOwn/code/python/figures/make_nullspace_figure.py and the 12 archived MAIN_NS7/MAIN_NS8 log files. Synchronized MyOwn/figures/ch05/MAIN_NS_nullspace_automatic.pdf. Individual vector panels exported reproducibly with --panel-dir.",
-    "changes": "Panel (a) includes no null-space torque, projected damping and conditioning at 1.5 and 2.0 N m. Cumulative projected motion uses recorded 5–9 s, displayed as 0–4 s. Endpoint means are 7.598, 5.689, 0.288 and 1.687 degrees. Curves show three-trial means with one sample standard deviation. The original no-torque and damping values are unchanged. All PDF/PNG/SVG variants and the LaTeX wrapper are synchronized. Time-axis label shortened to Time, t [s]. The 0-4 s display, numerical summary, plotted geometry, dimensions, uncertainty, and series styles are unchanged. Vertical axis shortened to Cumulative Motion, E_N [degrees], on one line. The numeric summary and full-figure drawing geometry remain identical. The narrower panel crop is placed with the existing plot scale and right edge preserved.",
+    "changes": "Panel (a): Cumulative Joint Motion, E_N [degrees]. All four settings use the recorded 5-9 s interval, displayed as 0-4 s. Endpoint means remain 7.598, 5.689, 0.288 and 1.687 degrees. Curves show three-trial means and one sample standard deviation. The two-line axis label matches the thesis. PDF, PNG, SVG and LaTeX wrapper are synchronized.",
     "source_pdf_sha256": "2e28cfad33d670ca3e61cfec09bb0c073deb83835bb862e2a844d8ce1bb703a0"
   },
   {
@@ -473,7 +473,7 @@
   {
     "asset": "nullspace_net_displacement",
     "source": "MyOwn/code/python/figures/make_nullspace_figure.py and the 12 archived MAIN_NS7/MAIN_NS8 log files. Synchronized MyOwn/figures/ch05/MAIN_NS_nullspace_automatic.pdf. Individual vector panels exported reproducibly with --panel-dir.",
-    "changes": "Panel (c). Recomputed integrated projected velocity over recorded 5–9 s, with the common direction recalculated from the baseline mean vector. Mean net displacements 7.516, 5.609, 0.015 and -0.011 degrees. The mathematical minus is rendered by the generator, without a masking overlay. Three trials per setting, error bars are one sample standard deviation. Original raw logs unchanged. Original panel order, labels, units, colors and uncertainty retained. Synchronized LaTeX/PDF/PNG/SVG variants.",
+    "changes": "Panel (c): Net Joint Motion, Delta eta [degrees]. Integrated projected joint velocity over recorded 5-9 s, resolved along the baseline mean direction. Means remain 7.516, 5.609, 0.015 and -0.011 degrees, with one sample standard deviation. Presentation labels use two decimals or powers of ten. Symbols, positive/negative directions, input logs and numerical summary are unchanged. Naming matches the thesis.",
     "source_pdf_sha256": "2e28cfad33d670ca3e61cfec09bb0c073deb83835bb862e2a844d8ce1bb703a0"
   },
   {
@@ -562,12 +562,12 @@
   {
     "asset": "nullspace_displacement_time",
     "source": "Archived MAIN_NS7/MAIN_NS8 projected joint velocities, recorded 5-9 s. Portable samples and provenance are under sources/nullspace_displacement_*.",
-    "changes": "New displacement history after Cumulative null-space motion. The vector velocity is integrated without its norm, then projected onto the same fixed reference direction as the net-displacement bars. Three-trial means and sample SD use common recorded timestamps without imputation. The left panel shows all four settings, and the right enlarges conditioning. Endpoints reproduce the published net values. Generator: sources/make_nullspace_displacement.py."
+    "changes": "Net joint motion over time, Delta eta [degrees]. Directional integral of projected joint velocity with no absolute value, using the same baseline reference as panel (c). Original recorded 5-9 s, displayed as 0-4 s, three-trial mean and sample SD. All four settings and enlarged conditioning detail. Data and endpoint checks unchanged."
   },
   {
     "asset": "joint_motion_time",
     "source": "Original MAIN_NS7/MAIN_NS8 joint-state diagnostic files, q1_deg and phase_time_s. All 12 trial identities verified against thesis main-log hashes. Portable sources/make_joint_motion.py and joint_motion_*.",
-    "changes": "Individual measured joint-1 angle changes from disturbance onset. All four settings over 0-4 s, conditioning close-up over 0-1 s. Nominal 20 Hz measured timestamps, no smoothing, averaging, interpolation or integration. Same figure in the thesis."
+    "changes": "Joint 1 Motion, Delta q1 [degrees]. Individual measured angle changes from disturbance onset, all four settings over 0-4 s and conditioning close-up over 0-1 s. Original 20 Hz timestamps, with no smoothing, averaging, interpolation or integration. Identical figure in the thesis and presentation."
   },
   {
     "asset": "coupling_wrench_blocks",

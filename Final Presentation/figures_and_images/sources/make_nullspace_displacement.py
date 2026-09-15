@@ -117,7 +117,7 @@ def plot(time,means,sds,out):
     for ax in axes:
         ax.set_xlim(0,4);ax.set_xticks([0,1,2,3,4]);ax.set_xlabel(r'Time, $t$ [s]')
         ax.axhline(0,color='.4',linewidth=.8,zorder=0)
-    axes[0].set_ylabel('Projected Displacement,\n'+r'$\Delta\eta$ [$^\circ$]')
+    axes[0].set_ylabel('Net Joint Motion,\n'+r'$\Delta\eta$ [$^\circ$]')
     axes[0].set_ylim(-.3,8.7);axes[0].yaxis.set_major_locator(MultipleLocator(2))
     axes[1].set_ylabel(r'$\Delta\eta$ [$^\circ$]')
     axes[1].set_ylim(-.045,.085);axes[1].yaxis.set_major_locator(MultipleLocator(.04))

@@ -34,10 +34,23 @@ Review update: the separate null-space theory, experiment and five result slides
 The reviewed PDF was exported directly from PowerPoint. The full PDF includes both hidden backups.
 Null-space label formatting is reproducible with figures_and_images/sources/format_nullspace_for_presentation.py using the thesis analysis and archived results.
 
-Directional motion history: Null-space displacement over time is footer 21, immediately after the cumulative plot at footer 20. The four-setting plot and enlarged conditioning view retain movement direction and use the same reference axis as the net-displacement bars. Rebuild with figures_and_images/sources/make_nullspace_displacement.py. Its portable recorded-sample archive, source hashes and numerical checks are stored beside the generator.
+Directional motion history: Net joint motion over time is footer 21, immediately after the cumulative plot at footer 20. The four-setting plot and enlarged conditioning view retain movement direction and use the same reference axis as the net joint motion bars. Rebuild with figures_and_images/sources/make_nullspace_displacement.py. Its portable recorded-sample archive, source hashes and numerical checks are stored beside the generator.
 
 Joint motion over time is footer 22, immediately after the directional projected-displacement history. The same measured joint-1 figure is used in the thesis. All three trials of each setting are shown, with a first-second conditioning close-up. Rebuild with figures_and_images/sources/make_joint_motion.py. Portable 20 Hz samples, source hashes and validation are stored beside it.
 
 Stiffness results: physical slide 16 (footer 15) shows only Effect of rotational stiffness. The K_p,t2 sweep plot, its takeaway and the tangential-stiffness conclusion/narration have been removed from the presentation. The common contact settings remain part of the experimental method.
 
 Full wrench matrix: footer 7 uses the force/moment and error/velocity columns from footer 5, with A-transpose and A around both stiffness and damping blocks. Underbraces identify K_TCP and D_TCP. The full equation replaces the two compact transformation equations and remains natively editable. Source: figures_and_images/sources/coupling_wrench_blocks.tex.
+
+## Consistent joint-motion names (2026-09-15)
+
+Use cumulative joint motion for E_N and net joint motion for Delta eta in
+plots, captions, text, the symbol list and the presentation. Retain cumulative
+and net because the quantities differ: the former accumulates projected
+velocity magnitude, while the latter projects the integrated joint velocity
+onto the common reference direction and permits cancellation. Use Net joint
+motion over time for its directional history, and Joint motion over time for
+the individual measured joint-angle histories. Define the projection and the
+measured angle change in the methodology. Do not alternate motion and
+displacement as short names for these quantities. Keep symbols, calculations,
+data, units, signs, uncertainty, filenames and internal identifiers unchanged.

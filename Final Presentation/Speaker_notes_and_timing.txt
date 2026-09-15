@@ -95,18 +95,18 @@ Null-space controller
 Null-space experiment
 • The desired position and orientation stay fixed while joint torques apply a repeatable disturbance. This is equivalent to a virtual 20-newton point force on link three.
 • We compare no null-space torque, damping, and two conditioning settings, with three trials each. Conditioning is active before and during the disturbance.
-• We compare total projected joint motion, minimum singular value, and net projected displacement.
+• We compare cumulative joint motion, minimum singular value, and net joint motion.
 
-Cumulative null-space motion
-• Cumulative motion, E_N, adds projected joint movement in both directions. These degrees describe arm motion, not rotation of the tool.
+Cumulative joint motion
+• Cumulative joint motion, E_N, adds projected joint movement in both directions. These degrees describe arm motion, not rotation of the tool.
 • Damping reduces it from 7.60° to 5.69°, about 25.1 percent. Conditioning gives 0.29° at k_σ=1.5 and 1.69° at k_σ=2.
 • Curves show three-trial means over the displayed four-second interval. Shading shows one sample standard deviation.
 
-Null-space displacement over time
-• This plot retains movement direction. Motion back towards the start reduces the displacement.
-• The seven projected joint velocities are integrated without taking their magnitude. Each trial uses the same reference direction as the net-displacement comparison. Positive motion follows the disturbance response without null-space torque.
+Net joint motion over time
+• This plot retains movement direction. Motion back towards the start reduces the net joint motion.
+• The seven projected joint velocities are integrated without taking their magnitude. Each trial uses the same reference direction as the comparison of net joint motion. Positive motion follows the disturbance response without null-space torque.
 • The left plot shows all four settings. The right plot enlarges the conditioning curves, in the same degree units. Both show three-trial means and one sample standard deviation.
-• Conditioning produces movement away and back towards the starting value. These are projected joint displacements, not tool rotations.
+• Conditioning produces movement away and back towards the starting value. These are projected joint motion values, not tool rotations.
 
 Joint motion over time
 • These curves show the measured angle of joint one relative to its value at disturbance onset. Joint one receives the largest equivalent disturbance torque in every trial.
@@ -119,16 +119,16 @@ Jacobian conditioning
 • It falls with no null-space torque and with damping. Both conditioning settings keep it nearly constant during the disturbance.
 • Curves show three-trial means over the same four-second interval and use the same Jacobian convention. Shading shows one sample standard deviation.
 
-Net null-space displacement
-• Net displacement measures projected joint movement remaining after opposite motions cancel. It is 7.52° without null-space torque and 5.61° with damping.
-• Mean conditioning displacements are only 1.5×10^-2 ° and -1.1×10^-2 °. Conditioning counters the disturbance in the tested direction.
-• Cumulative motions are 0.29° and 1.69°. The larger value is consistent with more back-and-forth motion despite similarly small net displacement.
+Net joint motion
+• Net joint motion measures projected joint movement remaining after opposite motions cancel. It is 7.52° without null-space torque and 5.61° with damping.
+• Mean net joint motion values with conditioning are only 1.5×10^-2 ° and -1.1×10^-2 °. Conditioning counters the disturbance in the tested direction.
+• Cumulative joint motion values are 0.29° and 1.69°. The larger value is consistent with more back-and-forth motion despite similarly small net joint motion.
 
 Conclusion
 • Contact reduced angular error for both larger entry tilts while the desired orientation stayed fixed. The error is relative to the calibrated surface and retains calibration and tool-mount uncertainty.
 • Higher rotational stiffness increased angular error from 1.75° to 6.58°.
 • CoC displacement changes angular error and can carry it through zero. At the TCP, the added moment vanishes while the rotational spring and damper remain active.
-• Damping reduced arm motion, and conditioning countered the tested disturbance direction. Nearly zero net displacement coexisted with back-and-forth motion.
+• Damping reduced arm motion, and conditioning countered the tested disturbance direction. Nearly zero net joint motion coexisted with back-and-forth motion.
 • Future work is a more rigid tool mount and adaptive CoC selection. After alignment, the adaptive CoC should return to the TCP.
 
 Null-space torques and projector
