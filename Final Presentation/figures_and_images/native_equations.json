@@ -31,46 +31,6 @@
   },
   {
     "slide": 6,
-    "shape": "Equation - symbol_K",
-    "source": "sources/symbol_K.tex",
-    "latex": "\\displaystyle K_p,\\;K_R",
-    "font": "Cambria Math",
-    "font_size_pt": 22.0,
-    "font_weight": "regular",
-    "color": "#000000"
-  },
-  {
-    "slide": 6,
-    "shape": "Equation - symbol_D",
-    "source": "sources/symbol_D.tex",
-    "latex": "\\displaystyle D_p,\\;D_R",
-    "font": "Cambria Math",
-    "font_size_pt": 22.0,
-    "font_weight": "regular",
-    "color": "#000000"
-  },
-  {
-    "slide": 6,
-    "shape": "Equation - symbol_velocity",
-    "source": "sources/symbol_velocity.tex",
-    "latex": "\\displaystyle \\dot p,\\;\\omega",
-    "font": "Cambria Math",
-    "font_size_pt": 22.0,
-    "font_weight": "regular",
-    "color": "#000000"
-  },
-  {
-    "slide": 6,
-    "shape": "Equation - symbol_indices",
-    "source": "sources/symbol_indices.tex",
-    "latex": "\\displaystyle d,\\;\\mathrm{EE}",
-    "font": "Cambria Math",
-    "font_size_pt": 22.0,
-    "font_weight": "regular",
-    "color": "#000000"
-  },
-  {
-    "slide": 6,
     "shape": "Equation - controller_wrench_blocks",
     "source": "sources/controller_wrench_blocks.tex",
     "latex": "\\displaystyle\nF=\\begin{bmatrix}f\\\\m\\end{bmatrix}\n=\\underbrace{\\begin{bmatrix}K_p&\\mathrm{0}\\\\\\mathrm{0}&K_R\\end{bmatrix}}_{K_c}\n\\begin{bmatrix}e_p\\\\e_R\\end{bmatrix}\n+\\underbrace{\\begin{bmatrix}D_p&\\mathrm{0}\\\\\\mathrm{0}&D_R\\end{bmatrix}}_{D_c}\n\\begin{bmatrix}\\dot p_d-\\dot p_{\\mathrm{EE}}\\\\\\omega_d-\\omega_{\\mathrm{EE}}\\end{bmatrix}",
@@ -244,26 +204,6 @@
     "shape": "Equation - symbol_tangents",
     "source": "sources/symbol_tangents.tex",
     "latex": "\\displaystyle t_1,\\;t_2",
-    "font": "Cambria Math",
-    "font_size_pt": 22.0,
-    "font_weight": "regular",
-    "color": "#000000"
-  },
-  {
-    "slide": 11,
-    "shape": "Equation - symbol_thetaerr",
-    "source": "sources/symbol_thetaerr.tex",
-    "latex": "\\displaystyle \\theta_{\\mathrm{err},t_1}",
-    "font": "Cambria Math",
-    "font_size_pt": 22.0,
-    "font_weight": "regular",
-    "color": "#000000"
-  },
-  {
-    "slide": 11,
-    "shape": "Equation - symbol_thetameas",
-    "source": "sources/symbol_thetameas.tex",
-    "latex": "\\displaystyle \\theta_{\\mathrm{meas},t_1}",
     "font": "Cambria Math",
     "font_size_pt": 22.0,
     "font_weight": "regular",

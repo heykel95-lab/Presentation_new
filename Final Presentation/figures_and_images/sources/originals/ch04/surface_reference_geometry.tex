@@ -1,6 +1,7 @@
 % Schematic pure t_1 rotation, shown using actual normal vectors.
 % The comparison reference is the inward calibrated normal -n_s.
-% The coordinate view is rotated in plane: -n_s is right, t_2 is up.
+% The main comparison is unchanged. Its inward reference -n_s points right.
+% The separate frame inset is rotated clockwise: n_s is up and t_2 is right.
 % Positive rotation about outward t_1 is anticlockwise.
 % Tool directions are R_EE(t) n_Tool,EE, not nominal end-effector axes.
 % The common origin compares orientations only, not contact positions.
@@ -13,6 +14,8 @@
   axis/.style={-{Latex[length=1.6mm]}, black, line width=0.7pt},
   lbl/.style={font=\footnotesize, inner sep=2pt,align=left}
 ]
+  % Preserve the original drawing bounds while rotating only the inset.
+  \path[use as bounding box] (-13.51439pt,-17.0435pt) rectangle (318.50218pt,118.51297pt);
   \draw[reference] (0,0) -- (7.5,0);
   \draw[entry] (0,0) -- (32:7.5);
   \draw[endpoint] (0,0) -- (10:7.5);
@@ -34,14 +37,14 @@
   \node[lbl,blue!70!black,anchor=north] at (6.20,-0.18)
     {$\theta_{\mathrm{err},t_1}$};
 
-  % Right-handed surface frame in the same rotated view as the normal arrows.
+  % Right-handed surface-frame inset in its separately rotated view.
   % t_1 x t_2 = n_s, so positive rotation runs from +t_2 to +n_s.
   \begin{scope}[shift={(1.0,2.65)}]
-    \draw[axis] (-0.18,0) -- (-1.0,0) node[lbl,left] {$n_s$};
-    \draw[axis] (0,0.18) -- (0,1.1) node[lbl,above] {$t_2$};
-    \draw[angle,black] (105:0.72)
-      arc[start angle=105,end angle=165,radius=0.72];
-    \node[lbl,font=\normalsize] at (-0.73,0.78) {$+$};
+    \draw[axis] (0,0.18) -- (0,1.0) node[lbl,above] {$n_s$};
+    \draw[axis] (0.18,0) -- (1.1,0) node[lbl,right] {$t_2$};
+    \draw[angle,black] (15:0.72)
+      arc[start angle=15,end angle=75,radius=0.72];
+    \node[lbl,font=\normalsize] at (0.78,0.73) {$+$};
     \draw[black] (0,0) circle (0.11);
     \fill[black] (0,0) circle (0.035);
     \node[lbl,anchor=north west] at (0.15,-0.15) {$t_1$};
