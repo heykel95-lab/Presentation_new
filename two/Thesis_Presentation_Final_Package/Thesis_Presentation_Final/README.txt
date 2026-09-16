@@ -14,9 +14,18 @@ Main figure mapping:
 - fig_4_1_experimental_system.png: robot/tool/surface setup
 - fig_5_1_wrench_comparison.png: commanded vs model-estimated wrench
 - fig_5_2_force_plausibility.png, fig_5_3_moment_plausibility.png: quasi-static plausibility
-- fig_5_4_baseline.png: Case A
+- fig_4_2_measured_angles.png: measured entry angle and contact response, slide 8
+- fig_5_4_baseline.png: Case A, with measured entry offset 0.69 degrees instead of a zero tick
 - fig_5_5_rotational_stiffness.png: Case B
 - fig_5_6_translational_stiffness.png: Case C
 - fig_5_7_coc_position.png: Case D
 - fig_5_8_interaction_wrench.png: CoC interaction-wrench mechanism
 - fig_5_9_nullspace.png: null-space pose-hold results
+
+Authoritative files and updates:
+This is the final presentation package. Use Thesis_Presentation_Final.pptx and
+Thesis_Presentation_Final.pdf here, not the good0/good1/good2 variants.
+After every presentation edit, automatically regenerate the PDF in the same task
+and refresh the preview/ and preview2/ PDF copies. Shared thesis-figure changes
+update the source assets, embedded pictures and PDFs together.
+See ../../../PRESENTATION.md for the standing workflow, notation and slide mapping.
