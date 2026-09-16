@@ -32,11 +32,11 @@
 \coordinate (J3) at (1.64,0.85,3.09);
 \coordinate (J4) at (2.31,1.15,3.46);
 \coordinate (J5) at (3.00,1.40,3.365);
-\draw[black!55,line width=2.2pt,line cap=butt,line join=round]
+\draw[robotblue!75!white,line width=2.2pt,line cap=butt,line join=round]
   (J0)--(J1)--(J2)--(J3)--(J4)--(J5);
 \draw[axis,navy,line width=1.2pt] (O)--(P) node[midway,below right] {$p$};
 \foreach \joint in {J1,J2,J3,J4,J5}{
-  \filldraw[fill=white,draw=black!75,line width=0.9pt]
+  \filldraw[fill=white,draw=robotblue,line width=0.9pt]
     (\joint) circle (3.0pt);
 }
 \begin{scope}[shift={(P)}]

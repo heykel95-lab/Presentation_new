@@ -60,3 +60,5 @@ Additional joint-motion views: footer 23 shows repetition 1 for each setting, an
 Coupling slide simplification (2026-09-16): removed Error at the CoC, Wrench at the TCP and their standalone equations from footer 7. Retained the full shifted wrench matrix. Notes and speaking text describe the transformed stiffness and damping directly.
 
 Jacobian velocity equation (2026-09-16): Real-time control, footer 6, displays [p_dot_EE; omega_EE] = J(q) q_dot as an editable equation instead of the verbal velocity mapping. The thesis uses this same differential-kinematics equation.
+
+Robot illustration palette (2026-09-16): on footers 4 and 5 only, the pose and positional-error figures use theme blue for the robot and grippers, with lighter blue depth shading. Their three figure asset sets are regenerated from the existing LaTeX/TikZ sources. Geometry and axis/reference colours are preserved.

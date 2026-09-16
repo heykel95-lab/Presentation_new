@@ -216,3 +216,7 @@ displacement as short names for these quantities. Keep symbols, calculations,
 data, units, signs, uncertainty, filenames and internal identifiers unchanged.
 
 Additional joint-motion views (2026-09-16): retain the all-repetitions figure at footer 22. Add Joint motion: one trial per setting at footer 23, using r01 for every setting, then Joint motion: mean of three trials at footer 24. Both new figures use the same axes, colours, 0--4 s interval and first-second conditioning close-up. The mean is calculated after subtracting each trial's onset angle, using exact recorded times common to the three trials within each setting. Shading is one sample standard deviation, never a confidence interval. No interpolation or smoothing is applied. The new views and generator are presentation additions. The shared original figure stays unchanged in both documents. The full PDF contains 30 pages, with hidden backups at physical pages 29 and 30.
+
+## Blue robot and end-effector illustrations (2026-09-16)
+
+On presentation footers 4 and 5 only (Cartesian pose and Cartesian impedance controller), use theme blue #17365D for the drawn robot and gripper bodies, with lighter blue shading for depth. Apply this palette to the two pose figures and the positional-error grippers. Retain the line-and-circle robot chain, continuous opaque gripper geometry, reference-axis colours and the green dashed desired-orientation reference. The measured rotational-error tool face already uses navy. This request is limited to those two presentation slides.
