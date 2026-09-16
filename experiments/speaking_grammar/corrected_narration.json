@@ -1,0 +1,99 @@
+{
+  "Master Thesis Presentation": [
+    "Hello everyone. Today, I will be presenting what I have been working on over the past few months.",
+    "I developed a surface grinding controller for a seven-degree-of-freedom Franka robot. The control method I used is Cartesian impedance control."
+  ],
+  "Motivation": [
+    "Let’s dive into the motivation for this work. The main problem in surface grinding is that we cannot perfectly represent the real surface in our code and ensure that the configured and real surfaces are perfectly aligned.",
+    "Second, joint friction prevents us from achieving perfect alignment between the grinding tool and the configured plane. Because of these two problems, the tool first makes contact with the surface at an edge as it approaches.",
+    "The idea is to use impedance control, which, unlike conventional rigid control, allows the tool to respond to external forces and moments by making rotation compliant, for example. In this way, we can passively use the contact moment to bring the tool flat against the surface."
+  ],
+  "Cartesian pose": [
+    "To begin, let’s first introduce Cartesian pose. Cartesian pose describes the position and orientation of the gripper, also called the end effector.",
+    "It has three positional degrees of freedom and three rotational degrees of freedom. The pose is determined through forward kinematics from the positions of all seven joints."
+  ],
+  "Cartesian impedance controller": [
+    "To understand the control method used here, impedance control uses a spring–damper model that produces a force to correct position and a moment to correct rotation. Together, the force and moment form what is called a wrench.",
+    "As we can see in the matrix form, force and moment are decoupled and do not affect each other when K and D are diagonal. K and D are the impedance parameters for stiffness and damping."
+  ],
+  "Real-time control": [
+    "The wrench is then mapped to joint torques through the transpose of the Jacobian. These torques command all seven joints to move and correct the pose error.",
+    "The controller operates in real time, with an update every millisecond."
+  ],
+  "Translation–rotation coupling": [
+    "An interesting idea presented in this work is to couple force and moment so that a pressing force also produces a rotational moment. This moment can either support or oppose passive alignment.",
+    "The idea is to choose a different reference point for the pressing force, moving it from the tool centre point to a point called the centre of compliance. This creates a lever arm that can produce an additional moment, which can either support or oppose alignment.",
+    "We transform the impedance parameters to this reference point so that the matrices now contain off-diagonal terms. This produces coupling between translation and rotation."
+  ],
+  "Centre of compliance (CoC)": [
+    "We can illustrate this behaviour here. If the centre of compliance is on this side, the right-hand rule gives a supporting moment.",
+    "If it is on the other side, we obtain an opposing moment."
+  ],
+  "Contact experiment": [
+    "Our contact experiment proceeds as follows. First, we orient the tool towards the configured surface and slowly approach it along its normal.",
+    "Once contact occurs, the tool aligns passively until it is completely flat. Grinding then begins along the tangential direction t₂.",
+    "To achieve this behaviour, we choose the impedance parameters as follows. For translation, we choose a compliant normal stiffness to allow pressing against the surface, while the tangential directions remain stiff to prevent unwanted movement during alignment.",
+    "For rotation, the normal direction is stiff, while the tangential directions are compliant to allow the tool to rotate."
+  ],
+  "Angular quantities": [
+    "To understand our experiments, we first need to introduce some metrics. The measured angular offset is the angle between the configured surface and the tool before contact.",
+    "The angular error is the angle between the tool and the configured surface."
+  ],
+  "Normal-force plausibility assessment": [
+    "Let’s first see whether our controller does what it is supposed to do. In this experiment, pushing the end effector about 20 mm along the surface normal, with Kₚ,ₙ equal to 1000, should produce a force of about −19 N in the quasi-static model.",
+    "We can see in the plot that the mean commanded force is close to the quasi-static prediction because our motion is very slow and almost static. For the model estimate, which serves as our measurement here, the difference also remains small, at about 13 percent."
+  ],
+  "Moment plausibility assessment": [
+    "We do the same for the moment. A rotation of about 6 degrees, with a rotational stiffness of 15, would produce a moment of about 1.72 N m.",
+    "The result is similar here: the commanded moment matches the quasi-static prediction, while the model-estimated measurement differs by about 8 percent. This proves that our control method is correct and produces the correct commanded forces and moments for the given error."
+  ],
+  "Commanded and estimated wrench": [
+    "Next, we compare the commanded force and moment with the measurements during contact. At first, as the tool approaches the surface, the model cannot measure anything because of friction, and motion begins only after a certain force is reached.",
+    "The force then starts to ramp down until contact occurs at around 0.4 seconds, where we can see this jump. The tool then starts aligning, with force and moment changing linearly.",
+    "Once the tool is flat, the force and moment become stationary, and the measurement is exactly equal to the command. For the moment, we also observe a larger gap between the estimated and commanded values during alignment.",
+    "This proves that alignment occurs through an external contact moment and is achieved passively."
+  ],
+  "Baseline angular error": [
+    "Next, this plot shows the final angular error for three different starting orientations: 0, +10 and −10 degrees. We can deduce that alignment is not perfectly symmetrical because of friction, and that the remaining errors are due to errors in measuring the pose and configuring the surface."
+  ],
+  "Effect of rotational stiffness": [
+    "This plot shows that higher rotational stiffness produces a larger angular error when Kᵣ,ₜ₁ is varied between 5, 15 and 50. A tenfold increase in rotational stiffness therefore produces an error about three times as large."
+  ],
+  "Effect of CoC position": [
+    "Next, this plot shows how the centre of compliance affects the final error. We moved the centre of compliance from −80 to +80 mm for two starting rotations, +10 and −10 degrees.",
+    "Looking at the blue curve for the −10-degree rotation, a negative centre-of-compliance displacement supports alignment, and the tool ends up approximately flat, with an error of about 2 degrees. The error becomes smaller as the displacement approaches zero, after which it becomes progressively worse.",
+    "For the black curve, with a +10-degree starting rotation, the tool remains flat until the displacement reaches about −20 mm, after which the error becomes larger. The lever arm mainly affects the contact moment from about 20 mm onwards, while the behaviour is almost the same for lever arms of −10, 0 and +10 mm."
+  ],
+  "Angular error and interaction wrench": [
+    "Next, we vary the centre of compliance between −40, 0 and +40 mm and examine how the angular error, measured force and measured moment change over time. With an opposing centre of compliance, there is no correction at all, while a supporting centre of compliance makes the response approximately one second faster, so the tool becomes flat sooner.",
+    "The blue force curve for the supporting configuration is lower during the transient response. This tells us that less pressing force is needed with a supporting centre of compliance, while the forces are equal in the stationary response.",
+    "For the opposing centre of compliance, the force is higher because the end effector remains closer to the surface when no alignment occurs. The measured contact force is therefore higher than in the other cases because the end effector is not at the same position.",
+    "For the supporting moment, we also notice a response that is about one second faster. The contact moment drops when the tool is almost flat, and the small movement back brings the tool into a completely flat orientation.",
+    "Again, less contact moment is needed because of the lever arm and the additional moment it produces. For the opposing configuration, the moment continues to develop until it reaches a stationary value.",
+    "This tells us that the moment develops until the tool reaches a certain orientation, without becoming completely flat."
+  ],
+  "Null-space controller": [
+    "Another study in this work analysed null-space behaviour, and a null-space controller was developed. Our Cartesian pose has six degrees of freedom, while the robot has seven, so one degree of freedom is redundant and allows motion without changing the pose.",
+    "We want to eliminate this behaviour, so we introduced two torques. One torque damps this motion, and the other corrects it towards a better configuration, farther from a singularity, by increasing the minimum singular value of the Jacobian.",
+    "A singularity is an unfavourable configuration in which the Jacobian loses rank. The robot then cannot move in a particular direction, or would need very high joint velocities to achieve that motion."
+  ],
+  "Null-space experiment": [
+    "To study this case, we added a commanded torque disturbance corresponding to a disturbance force of 20 N on link three. Through the Jacobian mapping, this disturbance acted directly on joint one."
+  ],
+  "Cumulative joint motion": [
+    "This plot shows four cases while the disturbance is active: no corrective null-space torque, damping torque alone, conditioning torque alone, and the combined damping and conditioning torques. Without control, the absolute cumulative motion of the disturbed joint increases.",
+    "With damping, this motion is reduced. Conditioning reduces it further, and the combined torques reduce it even more."
+  ],
+  "Jacobian conditioning": [
+    "Next, looking at the minimum singular values, we see that without conditioning there is no correction of the singular value. The combined setting performs slightly better than conditioning alone."
+  ],
+  "Joint motion over time": [
+    "Next, we look at the motion of the joint on which the disturbance acted. Again, damping reduces the motion, while conditioning alone produces slightly more motion than the combined setting.",
+    "We can see that conditioning torque alone causes back-and-forth motion as it corrects the null-space disturbance. Adding damping makes this back-and-forth behaviour smoother."
+  ],
+  "Conclusion": [
+    "To conclude, the contact moment brought the tool flat against the surface when rotational stiffness was compliant. Higher rotational stiffness left a larger angular error, and the centre of compliance could either support or oppose the contact moment.",
+    "Finally, the null-space controller opposed the external disturbance affecting the redundant joint motion. Future work could use a more rigid tool mount for better measurements and adaptive centre-of-compliance selection to support the contact moment.",
+    "Thank you for your attention."
+  ]
+}

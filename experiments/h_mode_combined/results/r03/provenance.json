@@ -1,0 +1,12 @@
+{
+  "repeat": 3,
+  "started_utc": "2026-09-16T13:46:27Z",
+  "binary_sha256": "0182afd0f6a4fab22ed3b38afb0ed2b141996a6e42d3e47d6503f4723cf4f8d3",
+  "controller_commit": "0210e7f2cca8d60ec72bf2e56e4a00d0440b037a",
+  "exit_code": 0,
+  "files": {
+    "surface_grinding_controller_sigma_debug.csv": "0eee7296d43872838fe0b934f0707dd261fefe61eb435f06eedc84a686ce7caf",
+    "surface_grinding_controller_log.csv": "bc0e521330ce912bf29bb868db5a4659ac777a5144a9532823fd207a7a8311c9"
+  },
+  "acquisition_checks_passed": true
+}

@@ -1,0 +1,15 @@
+{
+  "repeat": 3,
+  "started_utc": "2026-09-16T14:03:20Z",
+  "binary_sha256": "0182afd0f6a4fab22ed3b38afb0ed2b141996a6e42d3e47d6503f4723cf4f8d3",
+  "controller_commit": "0210e7f2cca8d60ec72bf2e56e4a00d0440b037a",
+  "condition": "MAIN_NS10_combined_ksigma_1p5_dnull_2p0_20N_200mm",
+  "k_sigma_Nm": 1.5,
+  "d_null_Nms_per_rad": 2,
+  "exit_code": 0,
+  "files": {
+    "surface_grinding_controller_sigma_debug.csv": "6b234cfad8330f1616775fca2a207d6393dbfd0662173a51d7990a0e22197303",
+    "surface_grinding_controller_log.csv": "0b2be393177779afdc91b1ed24ae55ffb92a087de34089aba2a7260ea6447b38"
+  },
+  "acquisition_checks_passed": true
+}

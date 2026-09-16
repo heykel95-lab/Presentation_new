@@ -1,0 +1,36 @@
+{
+  "main_conditions": [
+    "MAIN_NS7_baseline_20N_200mm",
+    "MAIN_NS7_damping_2p0_20N_200mm",
+    "MAIN_NS8_ksigma_2p0_20N_200mm",
+    "MAIN_NS9_combined_ksigma_2p0_dnull_2p0_20N_200mm"
+  ],
+  "unchanged_processing": true,
+  "recorded_interval_s": [
+    5,
+    9
+  ],
+  "three_trial_means_and_sample_sd": true,
+  "main_cumulative_means_deg": [
+    7.598236593905292,
+    5.689359484781199,
+    1.686990667788855,
+    0.8312711146194921
+  ],
+  "parameter_comparison": [
+    {
+      "k_sigma_Nm": 1.5,
+      "conditioning_mean_deg": 0.28761101080292345,
+      "combined_mean_deg": 0.192175002577159,
+      "conditioning_sample_sd_deg": 0.004812287926346954,
+      "combined_sample_sd_deg": 0.009410494282323285
+    },
+    {
+      "k_sigma_Nm": 2,
+      "conditioning_mean_deg": 1.686990667788855,
+      "combined_mean_deg": 0.8312711146194921,
+      "conditioning_sample_sd_deg": 0.14214219927712093,
+      "combined_sample_sd_deg": 0.1379181348596131
+    }
+  ]
+}

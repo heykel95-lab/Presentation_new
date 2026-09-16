@@ -1,0 +1,39 @@
+{
+  "slides": 34,
+  "main_slides": 25,
+  "hidden_backups": 9,
+  "updated_physical_slides": [
+    1,
+    2,
+    27
+  ],
+  "native_equations_preserved": true,
+  "unrelated_slides_and_pdf_pages_preserved": true,
+  "internal_relationships_resolved": 302,
+  "video_objects": 3,
+  "new_video_click_triggers_verified": 2,
+  "media": [
+    {
+      "clip": 1,
+      "frames": 968,
+      "upright": true,
+      "audio_payload_preserved": true,
+      "full_decode_passed": true,
+      "source_sha256": "c336de852265aaef41a28f7643e82589857d390310471a60dffdf4cb0abad15c",
+      "presentation_sha256": "1120208df52bf632084f849842f810e779cf6e86ca70f9f64cb21ad911d0391e"
+    },
+    {
+      "clip": 2,
+      "frames": 928,
+      "upright": true,
+      "audio_payload_preserved": true,
+      "full_decode_passed": true,
+      "source_sha256": "40b7798a4bac2c70cd775462b068063293ef474c84c8e030e39f344c5caba0c4",
+      "presentation_sha256": "5bf2b3e250d1153e770dabdb91d66ba7f1ae5a100591f71e93439bb0cc49db5a"
+    }
+  ],
+  "full_pdf_pages": 34,
+  "supplementary_pdf_pages": 9,
+  "speaking_order_matches": true,
+  "visual_review": "Title, Motivation and disturbance demonstration inspected. Full photo, readable thesis figure, upright posters and original title rule verified."
+}

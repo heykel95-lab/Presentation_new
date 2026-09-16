@@ -1,7 +1,11 @@
 \documentclass[border=3pt]{standalone}
-\usepackage{amsmath,amssymb}
+\usepackage{amsmath,xcolor}
+\usepackage{unicode-math}
+\setmathfont{Cambria Math}
+% Compile with LuaLaTeX on a system with Cambria Math installed.
+% Presentation standard: 22 pt, regular weight, black.
 \begin{document}
-{\fontsize{20}{25}\selectfont $\displaystyle
+{\fontsize{22}{27}\selectfont \color{black}$\displaystyle
 \begin{aligned}
 F_{n,\mathrm{qs}}&=K_{p,n}\,n_s^\top(e_p-e_{p,0})\\[2pt]
 &=\left(1000\,\mathrm{N/m}\right)\cdot\left(-19.65\cdot10^{-3}\,\mathrm{m}\right)

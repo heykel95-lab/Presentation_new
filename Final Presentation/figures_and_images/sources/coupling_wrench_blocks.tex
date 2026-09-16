@@ -1,10 +1,14 @@
 \documentclass[border=3pt]{standalone}
-\usepackage{amsmath,amssymb}
+\usepackage{amsmath,xcolor}
+\usepackage{unicode-math}
+\setmathfont{Cambria Math}
+% Compile with LuaLaTeX on a system with Cambria Math installed.
+% Presentation standard: 22 pt, regular weight, black.
 \begin{document}
-{\fontsize{22}{27}\selectfont $\displaystyle
+{\fontsize{22}{27}\selectfont \color{black}$\displaystyle
 F_{\mathrm{TCP}}=\begin{bmatrix}f\\m\end{bmatrix}
-=\underbrace{A^\top\begin{bmatrix}K_p&\mathbf{0}\\\mathbf{0}&K_R\end{bmatrix}A}_{K_{\mathrm{TCP}}}
+=\underbrace{A^\top\begin{bmatrix}K_p&\mathrm{0}\\\mathrm{0}&K_R\end{bmatrix}A}_{K_{\mathrm{TCP}}}
 \begin{bmatrix}e_p\\e_R\end{bmatrix}
-+\underbrace{A^\top\begin{bmatrix}D_p&\mathbf{0}\\\mathbf{0}&D_R\end{bmatrix}A}_{D_{\mathrm{TCP}}}
++\underbrace{A^\top\begin{bmatrix}D_p&\mathrm{0}\\\mathrm{0}&D_R\end{bmatrix}A}_{D_{\mathrm{TCP}}}
 \begin{bmatrix}\dot p_d-\dot p_{\mathrm{EE}}\\\omega_d-\omega_{\mathrm{EE}}\end{bmatrix}$}
 \end{document}

@@ -1,0 +1,28 @@
+{
+  "changed_physical_slides": [
+    1,
+    2,
+    27
+  ],
+  "total_slides": 34,
+  "hidden_backups": 9,
+  "removed_obsolete_embedded_media": [
+    "ppt/media/media2.mp4",
+    "ppt/media/image58.png"
+  ],
+  "overview_chapters": [
+    "Introduction",
+    "Cartesian controller",
+    "Contact experiments",
+    "Contact results",
+    "Null-space control and experiments",
+    "Conclusion and future work"
+  ],
+  "native_equations_preserved": true,
+  "contact_video_preserved": true,
+  "new_videos": [
+    "Nullspace1_presentation.mp4",
+    "Nullspace2_presentation.mp4"
+  ],
+  "pdf_method": "Original pages retained, with exact thesis vector figure, photo and video poster replacements. Motivation text glyphs redrawn at matching positions."
+}

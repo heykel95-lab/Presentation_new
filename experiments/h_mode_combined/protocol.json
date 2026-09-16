@@ -1,0 +1,41 @@
+{
+  "condition": "MAIN_NS9_combined_ksigma_2p0_dnull_2p0_20N_200mm",
+  "controller_commit": "0210e7f2cca8d60ec72bf2e56e4a00d0440b037a",
+  "source_archive_sha256": "dec76fa1e5e0eae38b20b8f713c600575643538e79cad2472e5bf38a327f1320",
+  "reference_parameters": "/home/hm-panda/Desktop/Thesis_Final_Control/experiments/results/MAIN_NS8_ksigma_2p0_20N_200mm/r01/params_effective",
+  "parameter_change": {
+    "nullspace_mode": [
+      2,
+      3
+    ]
+  },
+  "startup_mode": "h",
+  "repetitions": 3,
+  "k_sigma_Nm": 2,
+  "d_null_Nms_per_rad": 2,
+  "recorded_interval_s": [
+    5,
+    9
+  ],
+  "run_duration_s": 18,
+  "status": "complete",
+  "source_params_sha256": {
+    "Run_Settings.txt": "11ef04786476925f9ad9afd1fbf64ac8f7b2b32d4b5d2c3fe0f7c432be822a2a",
+    "Plane_Definition.txt": "f2c6b1e8a8671ba5b928f8175048a92654be4b4fab7b80debd584792b24e8432",
+    "SetUp_Phase.txt": "cc1f3267e6e98ef224e044273d7e1f8c40700ec36388e988d691b63b56b5a487",
+    "Auto_Damping.txt": "8d576713e5b040e6fdcc7466d613ddcc4f052ddd77b3f431c2449986870cd6e3",
+    "Tool_Orientation.txt": "6450c811b068f13290f7908bbf602ab42e6319f94b0292e1e0b09e9a022a8859",
+    "Clearance_Gate.txt": "cc84d0de8826b7ea9d3b7f364cbfdcc66879102770fa99f76e8b9e87c1adeac5",
+    "Tool_Geometry.txt": "686c8ed9cbc6152b2a3991f363120de281c7afa36d9cd635d00617ecb029156a",
+    "Q_Init.txt": "873a28dcf7380b921e799762e2126b518e9b1ad435440a4f72d60b2405474bdf",
+    "hold.txt": "2771eb2c415632b7bad10a1d234f7ebbdc157e100e16eea58225d06530f66529",
+    "Nullspace.txt": "7192e7ff70a6b70721c06c2bb36d92a4cbbfd85b79c0ba99e2b8660803ac9ec7",
+    "Grind_Phase.txt": "015e48792a1c22012814d2252361c62f0f67c5fbd73be431a60d39664e9886d6",
+    "Approach_Phase.txt": "f0600052d8a0b6ddbb1145ce59a15c835dce1c564a9b75591a18da07d8a7fad8",
+    "Gripper_Action.txt": "59d66df3e32537501bc539bf4506b602727be3fda428cd31f3f89a50a40954fc",
+    "guidance.txt": "70361307d85e663582d54ca3ff257881c4913153a56d5d69a9104747ff1bc5b9",
+    "safety.txt": "6ca5aa9ce9d3e7d0c939a7f1ccc47ae623e427867ce1bc32020176315dcdc923"
+  },
+  "presentation_scope": "Final Presentation only",
+  "results": "results/r01, results/r02, results/r03"
+}

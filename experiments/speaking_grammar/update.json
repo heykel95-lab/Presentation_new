@@ -1,0 +1,130 @@
+{
+  "updated_sections": 22,
+  "slides": [
+    {
+      "physical_slide": 1,
+      "title": "Master Thesis Presentation",
+      "notes_part": "ppt/notesSlides/notesSlide1.xml"
+    },
+    {
+      "physical_slide": 2,
+      "title": "Motivation",
+      "notes_part": "ppt/notesSlides/notesSlide2.xml"
+    },
+    {
+      "physical_slide": 5,
+      "title": "Cartesian pose",
+      "notes_part": "ppt/notesSlides/notesSlide5.xml"
+    },
+    {
+      "physical_slide": 6,
+      "title": "Cartesian impedance controller",
+      "notes_part": "ppt/notesSlides/notesSlide6.xml"
+    },
+    {
+      "physical_slide": 7,
+      "title": "Real-time control",
+      "notes_part": "ppt/notesSlides/notesSlide7.xml"
+    },
+    {
+      "physical_slide": 8,
+      "title": "Translation\u2013rotation coupling",
+      "notes_part": "ppt/notesSlides/notesSlide8.xml"
+    },
+    {
+      "physical_slide": 9,
+      "title": "Centre of compliance (CoC)",
+      "notes_part": "ppt/notesSlides/notesSlide9.xml"
+    },
+    {
+      "physical_slide": 10,
+      "title": "Contact experiment",
+      "notes_part": "ppt/notesSlides/notesSlide11.xml"
+    },
+    {
+      "physical_slide": 11,
+      "title": "Angular quantities",
+      "notes_part": "ppt/notesSlides/notesSlide12.xml"
+    },
+    {
+      "physical_slide": 12,
+      "title": "Normal-force plausibility assessment",
+      "notes_part": "ppt/notesSlides/notesSlide14.xml"
+    },
+    {
+      "physical_slide": 13,
+      "title": "Moment plausibility assessment",
+      "notes_part": "ppt/notesSlides/notesSlide15.xml"
+    },
+    {
+      "physical_slide": 14,
+      "title": "Commanded and estimated wrench",
+      "notes_part": "ppt/notesSlides/notesSlide16.xml"
+    },
+    {
+      "physical_slide": 15,
+      "title": "Baseline angular error",
+      "notes_part": "ppt/notesSlides/notesSlide17.xml"
+    },
+    {
+      "physical_slide": 16,
+      "title": "Effect of rotational stiffness",
+      "notes_part": "ppt/notesSlides/notesSlide18.xml"
+    },
+    {
+      "physical_slide": 17,
+      "title": "Effect of CoC position",
+      "notes_part": "ppt/notesSlides/notesSlide19.xml"
+    },
+    {
+      "physical_slide": 18,
+      "title": "Angular error and interaction wrench",
+      "notes_part": "ppt/notesSlides/notesSlide20.xml"
+    },
+    {
+      "physical_slide": 19,
+      "title": "Null-space controller",
+      "notes_part": "ppt/notesSlides/notesSlide10.xml"
+    },
+    {
+      "physical_slide": 20,
+      "title": "Null-space experiment",
+      "notes_part": "ppt/notesSlides/notesSlide13.xml"
+    },
+    {
+      "physical_slide": 21,
+      "title": "Cumulative joint motion",
+      "notes_part": "ppt/notesSlides/notesSlide31.xml"
+    },
+    {
+      "physical_slide": 22,
+      "title": "Jacobian conditioning",
+      "notes_part": "ppt/notesSlides/notesSlide32.xml"
+    },
+    {
+      "physical_slide": 23,
+      "title": "Joint motion over time",
+      "notes_part": "ppt/notesSlides/notesSlide33.xml"
+    },
+    {
+      "physical_slide": 25,
+      "title": "Conclusion",
+      "notes_part": "ppt/notesSlides/notesSlide24.xml"
+    }
+  ],
+  "unchanged_sections": [
+    "Contact demonstration",
+    "Overview",
+    "Effect of conditioning torque",
+    "Null-space torques and projector",
+    "Disturbance demonstration",
+    "Cumulative joint motion: all settings",
+    "Jacobian conditioning: all settings",
+    "Joint motion: mean of three trials",
+    "Joint motion: all individual trials",
+    "Joint motion: one trial per setting",
+    "Net joint motion over time",
+    "Net joint motion"
+  ],
+  "scope": "Grammar-only narration update. Visible slides, figures, equations and media unchanged."
+}

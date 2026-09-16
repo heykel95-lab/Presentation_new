@@ -1,0 +1,21 @@
+{
+  "source": "MyOwn-thesis/Thesis.pdf",
+  "pdf_sha256": "8780ab44ba9fe456644d1fdc93804a3526f9d4a714d3823a0f7ab876af3a2794",
+  "physical_page": 27,
+  "printed_page": 1,
+  "figure": "1.1",
+  "caption": "Sources of angular offset at surface entry.",
+  "clip_pt": [
+    108.0,
+    574.0,
+    479.0,
+    695.5
+  ],
+  "source_tex_sha256": "4c86d012360fba42aeb4c470923bf5d1bf975c508df380c6021b809f50ea0490",
+  "photo_source": "/home/hm-panda/Downloads/20260916_150937.jpg",
+  "photo_sha256": "05c5e10557c885a7ff7cf0486572e80f8a60cf0837c94389abcd08002b56a325",
+  "photo_size_px": [
+    2858,
+    2908
+  ]
+}

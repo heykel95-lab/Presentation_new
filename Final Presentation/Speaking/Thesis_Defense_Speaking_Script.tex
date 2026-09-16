@@ -1,4 +1,5 @@
-% Essential speaking points synchronized with all 30 slides and PowerPoint notes.
+% 2026-09-16: user-supplied narration, grammar-only edit. Technical review is separate.
+% Essential speaking points synchronized with all 34 slides and PowerPoint notes.
 % 2026-09-15: controller error sketches and simplified axis-angle equation synchronized with PowerPoint notes.
 % All standalone PowerPoint equations remain native and editable.
 \documentclass[12pt,a4paper]{article}
@@ -7,7 +8,7 @@
 \usepackage[english]{babel}
 \usepackage[a4paper,margin=22mm]{geometry}
 \usepackage{amsmath,amssymb}
-\usepackage{newtxtext,newtxmath}
+\IfFileExists{newtxtext.sty}{\usepackage{newtxtext,newtxmath}}{\usepackage{mathptmx}}
 \usepackage{microtype}
 \usepackage{xcolor}
 \usepackage{setspace}
@@ -26,19 +27,20 @@
 \renewcommand\section{\@startsection{section}{1}{0pt}{14pt}{6pt}{\normalfont\Large\bfseries\color{navy}}}
 \makeatother
 \setlist[itemize]{leftmargin=1.35em,label=\textcolor{navy}{\textbullet},itemsep=2pt,parsep=0pt,topsep=3pt,partopsep=0pt}
+% All 35 PowerPoint equations and symbol keys: 22 pt regular Cambria Math.
 \begin{document}
 
 \section*{Master Thesis Presentation}
 \begin{itemize}
-\item Good afternoon, my name is Heykel Khadhraoui. I developed a surface grinding controller for a seven-joint robot.
-\item Normal pressing and compliant rotation allow contact to move the tool towards alignment. A separate experiment tests how the arm responds to disturbances.
+\item Hello everyone. Today, I will be presenting what I have been working on over the past few months.
+\item I developed a surface grinding controller for a seven-degree-of-freedom Franka robot. The control method I used is Cartesian impedance control.
 \end{itemize}
 
 \section*{Motivation}
 \begin{itemize}
-\item Grinding needs the tool face aligned with the physical surface. The configured normal comes from calibration against the plate, with residual uncertainty.
-\item With a tilted tool, normal pressing creates a contact moment. Low rotational stiffness lets this moment turn the tool towards alignment.
-\item Cartesian impedance makes position and rotation compliant. The desired orientation stays fixed while the rotational spring and damper remain active.
+\item Let's dive into the motivation for this work. The main problem in surface grinding is that we cannot perfectly represent the real surface in our code and ensure that the configured and real surfaces are perfectly aligned.
+\item Second, joint friction prevents us from achieving perfect alignment between the grinding tool and the configured plane. (Suggested wording: friction can contribute to the difference between desired and achieved orientation. These experiments do not isolate friction as the sole cause.) Because of these two problems, the tool first makes contact with the surface at an edge as it approaches.
+\item The idea is to use impedance control, which, unlike conventional rigid control, allows the tool to respond to external forces and moments by making rotation compliant, for example. (More precise: compare this with stiff position control. Conventional control is not always rigid.) In this way, we can passively use the contact moment to bring the tool flat against the surface. (Suggested wording: contact moments rotate the tool towards alignment. Complete physical flatness is not established by the recorded angular-error component.)
 \end{itemize}
 
 \section*{Contact demonstration}
@@ -57,201 +59,155 @@
 % Figure palette synchronized (2026-09-16): blue robot and gripper bodies on footers 4 and 5 only. Spoken explanations are unchanged.
 \section*{Cartesian pose}
 \begin{itemize}
-\item The end effector (EE) is the tool or gripper at the end of the arm. Its Cartesian pose describes position and rotation relative to the robot base frame.
-\item Position uses x, y, and z, while roll, pitch, and yaw illustrate rotation. Together they give six degrees of freedom.
-\item Forward kinematics calculates the pose from all seven joint angles, with \(p=p(q)\) for position. The controller uses a rotation matrix for orientation.
+\item To begin, let's first introduce Cartesian pose. Cartesian pose describes the position and orientation of the gripper, also called the end effector.
+\item It has three positional degrees of freedom and three rotational degrees of freedom. The pose is determined through forward kinematics from the positions of all seven joints.
 \end{itemize}
 
-% Rotational-error figure uses solid navy and dashed lighter blue (2026-09-16). Spoken definitions are unchanged.
-% Rotational-error caption removed (2026-09-16). The u symbol and axis convention remain.
 \section*{Cartesian impedance controller}
 \begin{itemize}
-\item Positional error points from measured to desired position. Rotational error uses a correction angle \(\phi\) and unit axis \(u\).
-\item The sketch compares measured and desired tool orientations at one position. The axis points out of the page.
-\item Stiffness produces force and moment. Damping opposes velocity differences.
-\item Force and moment form a wrench. Its six-by-six stiffness and damping matrices have three-by-three blocks, with zero off-diagonal blocks here.
-\item Before the point shift, the stiffness and damping matrices are diagonal in the surface frame.
+\item To understand the control method used here, impedance control uses a spring--damper model that produces a force to correct position and a moment to correct rotation. Together, the force and moment form what is called a wrench.
+\item As we can see in the matrix form, force and moment are decoupled and do not affect each other when K and D are diagonal. K and D are the impedance parameters for stiffness and damping. (Clarification: translation and rotation are decoupled in this impedance law before shifting the reference point. This does not mean the robot dynamics or physical contact are completely uncoupled.)
 \end{itemize}
 
 \section*{Real-time control}
 \begin{itemize}
-\item The robot receives joint torques. We generate the Cartesian contribution from the wrench using the Jacobian transpose:
+\item The wrench is then mapped to joint torques through the transpose of the Jacobian. These torques command all seven joints to move and correct the pose error.
 \[
 \tau_{\mathrm{cart}}=J^\top(q)F
 \]
-\item The Jacobian maps the seven joint velocities to the EE's linear and angular velocities. Model compensation and enabled null-space torques complete the command.
 \[
 \begin{bmatrix}\dot p_{\mathrm{EE}}\\\omega_{\mathrm{EE}}\end{bmatrix}=J(q)\dot q
 \]
-\item The measured pose feeds back into the control loop. The C++ controller uses libfranka and updates every millisecond.
+\item The controller operates in real time, with an update every millisecond.
 \end{itemize}
-
-% Layout synchronized: displacement and impedance-reference descriptions share a left edge. Spoken text unchanged.
 
 \section*{Translation–rotation coupling}
 \begin{itemize}
-\item The tool centre point (TCP) is the controlled reference point attached to the EE. The centre of compliance (CoC) at \(p_c\) is a virtual reference for stiffness and damping.
-\item Moving the CoC changes how position and rotation errors generate force and moment. Its displacement from the TCP is \(r_c=p_c-p_{\mathrm{TCP}}\).
-\item The \(A^\top\) and \(A\) transformations shift both stiffness and damping to the TCP. The resulting matrices act on the TCP pose error and velocity differences.
-\item Their off-diagonal blocks couple translation and rotation. This uses the local small-rotation model.
+\item An interesting idea presented in this work is to couple force and moment so that a pressing force also produces a rotational moment. This moment can either support or oppose passive alignment.
+\item The idea is to choose a different reference point for the pressing force, moving it from the tool centre point to a point called the centre of compliance. This creates a lever arm that can produce an additional moment, which can either support or oppose alignment. (Clarification: the CoC is a virtual reference for the entire impedance model. Moving it does not move the physical contact point.)
+\item We transform the impedance parameters to this reference point so that the matrices now contain off-diagonal terms. This produces coupling between translation and rotation. (Correction: define stiffness and damping at the CoC, then transform them to the TCP. The resulting TCP matrices have off-diagonal blocks that couple translation and rotation.)
 \end{itemize}
 
 \section*{Centre of compliance (CoC)}
 \begin{itemize}
-\item Shifting the CoC can change both the commanded force and moment. The shifted controller's force acts as if applied at \(p_c\):
-
-\item The added moment can support or oppose alignment. For the same force, reversing the displacement reverses this contribution.
-\item With the CoC at the TCP, the added contribution vanishes. The rotational spring and damper still produce \(m_R\).
+\item We can illustrate this behaviour here. If the centre of compliance is on this side, the right-hand rule gives a supporting moment.
+\item If it is on the other side, we obtain an opposing moment.
 \end{itemize}
 
 \section*{Contact experiment}
 \begin{itemize}
-\item The process goes from tool orientation and surface approach to contact establishment, then grinding. These experiments evaluate the five-second contact-establishment phase.
-\item Low normal stiffness allows compliant pressing, while higher tangential stiffness resists sideways movement. Rotational stiffness is higher about the normal and lower about the surface tangents.
-\item The position reference advances into the surface to generate pressing force. The desired orientation stays at its entry value, so contact moments drive the rotation.
+\item Our contact experiment proceeds as follows. First, we orient the tool towards the configured surface and slowly approach it along its normal.
+\item Once contact occurs, the tool aligns passively until it is completely flat. Grinding then begins along the tangential direction \(t_2\). (Suggested wording: the tool rotates towards alignment during contact establishment. Perfect flatness is not guaranteed, and the reported experiments evaluate this five-second phase rather than grinding performance.)
+\item To achieve this behaviour, we choose the impedance parameters as follows. For translation, we choose a compliant normal stiffness to allow pressing against the surface, while the tangential directions remain stiff to prevent unwanted movement during alignment.
+\item For rotation, the normal direction is stiff, while the tangential directions are compliant to allow the tool to rotate.
 \end{itemize}
 
-% Angular-figure labels retain descriptions, omit normal-vector symbols, and omit the end-time argument from theta_err,t1. Spoken definitions are unchanged.
 \section*{Angular quantities}
 \begin{itemize}
-\item The red arrow is the inward calibrated surface normal. The green and blue arrows show the tool normals calculated from measured EE orientation at contact entry and end.
-\item Both angle arcs start from the red reference. The entry angle is the measured angular offset, and the angular error is the remaining difference about the first surface tangent.
-\item Smaller magnitude means less error in this component. Calibration and mount errors affect the estimate of physical alignment.
+\item To understand our experiments, we first need to introduce some metrics. The measured angular offset is the angle between the configured surface and the tool before contact.
+\item The angular error is the angle between the tool and the configured surface. (More precise: the plots use the angular-error component about the first surface tangent, calculated from the tool normal and calibrated surface normal. The measured angular offset is its value at contact entry.)
 \end{itemize}
-
-% Disturbance equation: J(q) denotes the translational link-point Jacobian.
 
 \section*{Normal-force plausibility assessment}
 \begin{itemize}
-\item I manually push the tool about 20 millimetres along the surface normal, with the CoC at the TCP. This checks the spring-force prediction with the desired pose fixed.
-\item The stiffness is 1000 newtons per metre and the measured position-error change is \(-19.65\) millimetres. Their product gives the spring-force prediction:
+\item Let's first see whether our controller does what it is supposed to do. In this experiment, pushing the end effector about 20 mm along the surface normal, with \(K_{p,n}\) equal to 1000, should produce a force of about \ensuremath{-}19 N in the quasi-static model. (Correction: state the stiffness unit as N/m. The measured error change is \ensuremath{-}19.65 mm, giving a quasi-static prediction of \ensuremath{-}19.65 N.)
 \[
 F_{n,\mathrm{qs}}=(1000\,\mathrm{N/m})\cdot(-19.65\times10^{-3}\,\mathrm{m})=-19.65\,\mathrm{N}
 \]
-\item In the shaded stationary interval, the commanded mean is \(-19.64\) newtons, only 0.05 percent from the calculation. The robot's model estimate is \(-22.29\) newtons, 13.50 percent from the command.
+\item We can see in the plot that the mean commanded force is close to the quasi-static prediction because our motion is very slow and almost static. For the model estimate, which serves as our measurement here, the difference also remains small, at about 13 percent. (Clarification: compare means in the shaded stationary interval. The estimate differs from the command by 13.50\% and comes from the robot model, not an independent force sensor.)
 \end{itemize}
 
 \section*{Moment plausibility assessment}
 \begin{itemize}
-\item I manually rotate the tool about surface tangent one while keeping the normal push. This checks the spring-moment prediction with the desired pose fixed and CoC at the TCP.
-\item The measured rotational error changes by \(6.57^\circ\) relative to the loaded baseline. With a stiffness of 15 newton metres per radian, converting this change to radians gives:
+\item We do the same for the moment. A rotation of about 6 degrees, with a rotational stiffness of 15, would produce a moment of about 1.72 N m. (Correction: use approximately 6.57 degrees and a stiffness of 15 N m/rad. Convert the angle to radians to obtain approximately 1.72 N m.)
 \[
 M_{t_1,\mathrm{qs}}=(15\,\mathrm{N\,m/rad})\cdot(6.57\cdot\frac{\pi}{180}\,\mathrm{rad})\approx1.72\,\mathrm{N\,m}
 \]
-\item In the shaded stationary interval, the commanded mean matches the calculated 1.72 newton metres. The robot's model estimate is 1.85 newton metres, 7.75 percent from the command.
+\item The result is similar here: the commanded moment matches the quasi-static prediction, while the model-estimated measurement differs by about 8 percent. This proves that our control method is correct and produces the correct commanded forces and moments for the given error. (Suggested wording: these tests support the plausibility of the implemented impedance relations. Agreement in two quasi-static tests does not prove the entire controller correct.)
 \end{itemize}
 
 \section*{Commanded and estimated wrench}
 \begin{itemize}
-\item A separate contact-establishment trial compares commanded force and moment with the robot's model estimates. The CoC is at the TCP.
-\item During the final stationary interval, mean differences are 2.32 percent for force and 4.87 percent for moment. The curves differ more during motion.
+\item Next, we compare the commanded force and moment with the measurements during contact. At first, as the tool approaches the surface, the model cannot measure anything because of friction, and motion begins only after a certain force is reached. (Correction: the model estimate is available before motion. Friction can affect motion onset and estimation, but this plot alone does not identify the cause of the initial behaviour.)
+\item The force then starts to ramp down until contact occurs at around 0.4 seconds, where we can see this jump. The tool then starts aligning, with force and moment changing linearly. (Suggested wording: a change is visible near 0.4 seconds, followed by changing force and moment. Identifying first contact requires an event reference, and the moment is not linear throughout.)
+\item Once the tool is flat, the force and moment become stationary, and the measurement is exactly equal to the command. (Correction: say stationary contact and close agreement. The stationary mean differences are 2.32\% for force and 4.87\% for moment, and this plot does not establish perfect flatness.) For the moment, we also observe a larger gap between the estimated and commanded values during alignment.
+\item This proves that alignment occurs through an external contact moment and is achieved passively. (Suggested wording: this is consistent with contact-driven rotation while the desired orientation remains fixed. The gap between commanded and estimated moments alone does not prove passive alignment.)
 \end{itemize}
 
 \section*{Baseline angular error}
 \begin{itemize}
-\item With the CoC at the TCP, entry offsets of \(0.69^\circ\), \(+9.31^\circ\), and \(-9.41^\circ\) gave angular errors of \(1.65^\circ\), \(1.75^\circ\), and \(1.41^\circ\).
-\item The error magnitude decreased for both larger entry tilts, and the negative entry error changed sign. The nominal-zero condition increased from \(0.69^\circ\) to \(1.65^\circ\).
-\item The bars show three-trial means, with one sample standard deviation. These are first-tangent components relative to the calibrated surface, calculated from recorded endpoints at \(0.01^\circ\) precision.
+\item Next, this plot shows the final angular error for three different starting orientations: 0, +10 and \ensuremath{-}10 degrees. (Clarification: those are nominal commands. The measured entry offsets are 0.69, +9.31 and \ensuremath{-}9.41 degrees, with final errors of 1.65, 1.75 and 1.41 degrees.) We can deduce that alignment is not perfectly symmetrical because of friction, and that the remaining errors are due to errors in measuring the pose and configuring the surface. (Suggested wording: the two entry directions give different errors. Friction, calibration and tool-mount uncertainty may contribute, but the experiments do not separate their individual effects.)
 \end{itemize}
 
 \section*{Effect of rotational stiffness}
 \begin{itemize}
-\item Increasing rotational stiffness from 5 to 50 newton metres per radian increased the angular error from \(1.75^\circ\) to \(6.58^\circ\). The stiffer rotational spring allowed less contact-induced correction.
+\item This plot shows that higher rotational stiffness produces a larger angular error when \(K_{R,t_1}\) is varied between 5, 15 and 50. A tenfold increase in rotational stiffness therefore produces an error about three times as large. (Correction: the error increases from 1.75 to 6.58 degrees, approximately 3.76 times, or nearly four times. Rotational stiffness is measured in N m/rad.)
 \end{itemize}
 
 \section*{Effect of CoC position}
 \begin{itemize}
-\item The plot covers minus 80 to plus 80 millimetres, with three repetitions per setting. For positive entry tilt, the smallest tested angular error was \(1.17^\circ\) at plus 80 millimetres. At minus 80 millimetres, \(9.35^\circ\) remained.
-\item For negative entry tilt, the smallest angular error magnitude was \(0.94^\circ\) at plus 10 millimetres. At minus 80 millimetres, the error component crossed zero and ended at \(+2.23^\circ\).
-\item CoC displacement changes the remaining error component and can reverse its direction. Greater rotation therefore does not always give a smaller angular error.
+\item Next, this plot shows how the centre of compliance affects the final error. We moved the centre of compliance from \ensuremath{-}80 to +80 mm for two starting rotations, +10 and \ensuremath{-}10 degrees. (Clarification: +10 and \ensuremath{-}10 degrees are nominal starting commands. The plotted conditions have measured entry tilts of approximately +9.32 and \ensuremath{-}9.36 degrees.)
+\item Looking at the blue curve for the \ensuremath{-}10-degree rotation, a negative centre-of-compliance displacement supports alignment, and the tool ends up approximately flat, with an error of about 2 degrees. The error becomes smaller as the displacement approaches zero, after which it becomes progressively worse. (Correction: the error magnitude continues improving from 1.41 degrees at 0 mm to 0.94 degrees at +10 mm, then worsens. A residual error of about 2 degrees does not establish perfect flatness.)
+\item For the black curve, with a +10-degree starting rotation, the tool remains flat until the displacement reaches about \ensuremath{-}20 mm, after which the error becomes larger. The lever arm mainly affects the contact moment from about 20 mm onwards, while the behaviour is almost the same for lever arms of \ensuremath{-}10, 0 and +10 mm. (Correction: positive-entry error is already 8.33 degrees at \ensuremath{-}20 mm, versus 1.89 degrees at \ensuremath{-}10 mm. The tested points show a sharp change between them, not a universal 20 mm threshold.)
 \end{itemize}
 
 \section*{Angular error and interaction wrench}
 \begin{itemize}
-\item In these traces, the error enters and stays within \(0.1^\circ\) of its final value after about 2.5 seconds at plus 40 millimetres. At the TCP this takes 3.6 seconds, about 1.1 seconds longer.
-\item Final estimated normal forces are similar, at about \(-83\), \(-79\), and \(-78\) newtons.
-\item The interaction moment reverses with CoC displacement. These forces and moments come from the robot's model estimate.
+\item Next, we vary the centre of compliance between \ensuremath{-}40, 0 and +40 mm and examine how the angular error, measured force and measured moment change over time. With an opposing centre of compliance, there is no correction at all, while a supporting centre of compliance makes the response approximately one second faster, so the tool becomes flat sooner. (Correction: say little correction at \ensuremath{-}40 mm. The 2.5 versus 3.6 seconds compares settling within 0.1 degree of each trace's own endpoint, not the time to become flat.)
+\item The blue force curve for the supporting configuration is lower during the transient response. This tells us that less pressing force is needed with a supporting centre of compliance, while the forces are equal in the stationary response. (Correction: the stationary forces are similar, approximately \ensuremath{-}83, \ensuremath{-}79 and \ensuremath{-}78 N. A lower transient in one representative trial does not establish a generally lower required pressing force.)
+\item For the opposing centre of compliance, the force is higher because the end effector remains closer to the surface when no alignment occurs. The measured contact force is therefore higher than in the other cases because the end effector is not at the same position. (Suggested wording: the opposing configuration has a somewhat larger force magnitude here. Attributing this specifically to end-effector position requires checking the recorded position error and transformed impedance terms.)
+\item For the supporting moment, we also notice a response that is about one second faster. The contact moment drops when the tool is almost flat, and the small movement back brings the tool into a completely flat orientation. (Correction: the quantified one-second improvement concerns angular-error settling. The final errors are about 1.75 degrees at the TCP and 1.49 degrees at +40 mm, so complete flatness is not demonstrated.)
+\item Again, less contact moment is needed because of the lever arm and the additional moment it produces. For the opposing configuration, the moment continues to develop until it reaches a stationary value. (Correction: the estimated TCP moments change direction, with stationary values about +4.07, +0.73 and \ensuremath{-}2.54 N m at \ensuremath{-}40, 0 and +40 mm. The supporting case does not simply require less contact moment.)
+\item This tells us that the moment develops until the tool reaches a certain orientation, without becoming completely flat.
 \end{itemize}
 
 \section*{Null-space controller}
 \begin{itemize}
-\item The contact results are complete. The separate null-space study concerns the arm's redundant joint motion. At full Jacobian rank, seven joints leave one null-space direction with zero instantaneous EE motion.
-\item Damping reduces null-space motion by opposing redundant joint velocity.
-\item Conditioning chooses between two local null-space directions and drives towards the one with the larger minimum singular value. It can initiate joint motion. At a singularity, the EE loses an instantaneous motion direction. Near it, some EE motions require very large joint velocities. A larger minimum singular value indicates better local conditioning under the same Jacobian convention.
+\item Another study in this work analysed null-space behaviour, and a null-space controller was developed. Our Cartesian pose has six degrees of freedom, while the robot has seven, so one degree of freedom is redundant and allows motion without changing the pose. (Clarification: one null-space direction exists when the Jacobian has full row rank. It combines motions of several joints and gives zero instantaneous end-effector velocity.)
+\item We want to eliminate this behaviour, so we introduced two torques. One torque damps this motion, and the other corrects it towards a better configuration, farther from a singularity, by increasing the minimum singular value of the Jacobian. (Suggested wording: regulate unwanted redundant motion. Damping suppresses motion, while conditioning deliberately moves along the null space to improve local conditioning.)
+\item A singularity is an unfavourable configuration in which the Jacobian loses rank. The robot then cannot move in a particular direction, or would need very high joint velocities to achieve that motion. (More precise: at a singularity, an instantaneous motion direction is lost. Near a singularity, achieving some end-effector velocities requires very large joint velocities.)
 \end{itemize}
 
 \section*{Null-space experiment}
 \begin{itemize}
-\item The desired position and orientation stay fixed while joint torques apply a repeatable disturbance. This is equivalent to a virtual 20-newton point force on link three.
-\item We compare no null-space torque, damping, and two conditioning settings, with three trials each. Conditioning is active before and during the disturbance.
-\item We compare cumulative joint motion, minimum singular value, and net joint motion.
+\item To study this case, we added a commanded torque disturbance corresponding to a disturbance force of 20 N on link three. Through the Jacobian mapping, this disturbance acted directly on joint one. (Correction: this is a virtual 20 N point force on link three, implemented as joint torques through its point Jacobian. Joint one receives the largest equivalent disturbance torque, not the only torque.)
 \end{itemize}
 
 \section*{Cumulative joint motion}
 \begin{itemize}
-\item Cumulative joint motion, \(E_N\), adds projected joint movement in both directions. These degrees describe arm motion, not rotation of the tool.
-\item Damping reduces it from \(7.60^\circ\) to \(5.69^\circ\), about 25.1 percent. Conditioning gives \(0.29^\circ\) at \(k_\sigma=1.5\) and \(1.69^\circ\) at \(k_\sigma=2\).
-\item Curves show three-trial means over the displayed four-second interval. Shading shows one sample standard deviation.
-\end{itemize}
-
-\section*{Net joint motion over time}
-\begin{itemize}
-\item This plot retains movement direction. Motion back towards the start reduces the net joint motion.
-\item The seven projected joint velocities are integrated without taking their magnitude. Each trial uses the same reference direction as the comparison of net joint motion. Positive motion follows the disturbance response without null-space torque.
-\item The left plot shows all four settings. The right plot enlarges the conditioning curves, in the same degree units. Both show three-trial means and one sample standard deviation.
-\item Conditioning produces movement away and back towards the starting value. These are projected joint motion values, not tool rotations.
-\end{itemize}
-
-\section*{Joint motion over time}
-\begin{itemize}
-\item These curves show the measured angle of joint one relative to its value at disturbance onset. Joint one receives the largest equivalent disturbance torque in every trial.
-\item The left panel shows all four settings over four seconds. Each curve is an individual trial, with markers at the original samples taken at about 20 hertz.
-\item The right panel enlarges the first second for both conditioning settings. At the larger torque magnitude of 2 newton metres, all three trials show repeated motion reversals. The curves at 1.5 newton metres increase more smoothly.
-\item Subtracting the starting angle preserves both directions of joint movement. Conditioning was already active before the disturbance, so the settings can begin at different arm configurations.
-\end{itemize}
-
-\section*{Joint motion: one trial per setting}
-\begin{itemize}
-\item This view shows repetition one for each setting, using the same repetition number throughout the comparison.
-\item The measured angle of joint one is shown relative to its value at disturbance onset. The axes and conditioning close-up match the preceding slide.
-\item The larger conditioning torque shows repeated motion reversals in the first second. The lower conditioning setting increases more smoothly during this interval.
-\item This is one trial per setting. The next slide combines the three trials using their mean and sample standard deviation.
-\end{itemize}
-
-\section*{Joint motion: mean of three trials}
-\begin{itemize}
-\item This view uses the arithmetic mean of the three trials for every setting. Shading shows one sample standard deviation, matching the uncertainty convention of the other result plots.
-\item The starting angle is subtracted separately in each trial. The three angle changes are then averaged at their common measured times.
-\item Repeated reversals remain visible at the larger conditioning torque in the first-second close-up. Averaging reduces reversals that occur at different times in the individual trials.
-\item These curves show joint one. The cumulative and net joint-motion quantities instead use the projected motion of all seven joints. Conditioning was active before and during the disturbance.
+\item This plot shows four cases while the disturbance is active: no corrective null-space torque, damping torque alone, conditioning torque alone, and the combined damping and conditioning torques. Without control, the absolute cumulative motion of the disturbed joint increases. (Correction: cumulative joint motion accumulates the magnitude of projected motion using all seven joint velocities. It is not the absolute angle travelled by the disturbed joint alone.)
+\item With damping, this motion is reduced. Conditioning reduces it further, and the combined torques reduce it even more.
 \end{itemize}
 
 \section*{Jacobian conditioning}
 \begin{itemize}
-\item A smaller minimum singular value means some tool motions require larger joint velocities. Zero means the EE loses an instantaneous motion direction.
-\item It falls with no null-space torque and with damping. Both conditioning settings keep it nearly constant during the disturbance.
-\item Curves show three-trial means over the same four-second interval and use the same Jacobian convention. Shading shows one sample standard deviation.
+\item Next, looking at the minimum singular values, we see that without conditioning there is no correction of the singular value. The combined setting performs slightly better than conditioning alone. (Suggested wording: conditioning alone and combined control keep the minimum singular value nearly constant. The small difference in their absolute levels does not establish that combined control improves conditioning more.)
 \end{itemize}
 
-\section*{Net joint motion}
+\section*{Joint motion over time}
 \begin{itemize}
-\item Net joint motion measures projected joint movement remaining after opposite motions cancel. It is \(7.52^\circ\) without null-space torque and \(5.61^\circ\) with damping.
-\item Mean net joint motion values with conditioning are only \(1.5\times10^{-2}\,{}^\circ\) and \(-1.1\times10^{-2}\,{}^\circ\). Conditioning counters the disturbance in the tested direction.
-\item Cumulative joint motion values are \(0.29^\circ\) and \(1.69^\circ\). The larger value is consistent with more back-and-forth motion despite similarly small net joint motion.
+\item Next, we look at the motion of the joint on which the disturbance acted. Again, damping reduces the motion, while conditioning alone produces slightly more motion than the combined setting. (Clarification: this plot shows the measured joint-one angle relative to disturbance onset. The earlier cumulative metric describes projected motion across all seven joints.)
+\item We can see that conditioning torque alone causes back-and-forth motion as it corrects the null-space disturbance. Adding damping makes this back-and-forth behaviour smoother. (Suggested wording: adding damping reduces cumulative motion, but reversals remain. A smoother response is not established by the cumulative-motion reduction alone.)
+\end{itemize}
+
+\section*{Effect of conditioning torque}
+\begin{itemize}
+\item The previous slides used 2 newton metres to make the contrasting responses visible. The lower tested conditioning torque of 1.5 newton metres produced less cumulative motion in both conditions.
+\item Conditioning alone gives 0.29 and 1.69 degrees at the two magnitudes. With the same damping coefficient of 2 newton metre seconds per radian, the combined values are 0.19 and 0.83 degrees.
+\item These are three-trial means. The complete curves and their sample standard deviations are retained in the backup slides.
+\item Increasing conditioning torque did not reduce motion in these trials. Its magnitude and damping should be considered together.
 \end{itemize}
 
 \section*{Conclusion}
 \begin{itemize}
-\item Contact reduced angular error for both larger entry tilts while the desired orientation stayed fixed. The error is relative to the calibrated surface and retains calibration and tool-mount uncertainty.
-\item Higher rotational stiffness increased angular error from \(1.75^\circ\) to \(6.58^\circ\).
-\item CoC displacement changes angular error and can carry it through zero. At the TCP, the added moment vanishes while the rotational spring and damper remain active.
-\item Damping reduced arm motion, and conditioning countered the tested disturbance direction. Nearly zero net joint motion coexisted with back-and-forth motion.
-\item Future work is a more rigid tool mount and adaptive CoC selection. After alignment, the adaptive CoC should return to the TCP.
+\item To conclude, the contact moment brought the tool flat against the surface when rotational stiffness was compliant. Higher rotational stiffness left a larger angular error, and the centre of compliance could either support or oppose the contact moment. (Suggested wording: compliant rotation allowed contact moments to reduce angular error. Residual errors and calibration uncertainty remain, so say towards alignment rather than completely flat.)
+\item Finally, the null-space controller opposed the external disturbance affecting the redundant joint motion. Future work could use a more rigid tool mount for better measurements and adaptive centre-of-compliance selection to support the contact moment.
+\item Thank you for your attention.
 \end{itemize}
 
 \section*{Null-space torques and projector}
 \begin{itemize}
-\item The kinematic projector selects null-space torque directions. It uses the Jacobian \mbox{pseudoinverse \(J^+\)}.
+\item The kinematic projector selects null-space torque directions. It uses the Jacobian pseudoinverse \(J^+\).
 \[
 N_\tau=I_7-J^\top J^{+\top}
 \]
@@ -272,9 +228,53 @@ N_\tau=I_7-J^\top J^{+\top}
 
 \section*{Disturbance demonstration}
 \begin{itemize}
-\item The controller holds the tool pose throughout the video. Without null-space torque, the disturbance moves the arm.
-\item Damping opposes the joint motion.
-\item Conditioning actively changes the arm configuration and can initiate motion. The tool stays approximately in place.
+\item These two recordings show manual disturbances applied to the robot arm. They provide a qualitative view of its joint motion.
+\item The experimental plots provide the quantitative comparison between the null-space settings.
+\end{itemize}
+
+\section*{Cumulative joint motion: all settings}
+\begin{itemize}
+\item This backup retains all six settings with three trials each. Cumulative motion includes movement in both directions.
+\item The complete curves use the same interval and sample-standard-deviation bands as the main comparison.
+\end{itemize}
+
+\section*{Jacobian conditioning: all settings}
+\begin{itemize}
+\item This backup compares absolute minimum singular value for all six settings under the same Jacobian convention.
+\item The conditioning and combined settings keep the indicator nearly constant. Small absolute differences do not establish a meaningful advantage.
+\end{itemize}
+
+\section*{Joint motion: mean of three trials}
+\begin{itemize}
+\item This backup extends the main joint-one mean plot to all six settings. Shading is one sample standard deviation across three onset-relative histories.
+\item Means use exact common measured times without interpolation or smoothing.
+\end{itemize}
+
+\section*{Joint motion: all individual trials}
+\begin{itemize}
+\item All three measured joint-one histories are shown for each of the six settings. The first-second close-up retains the original recorded samples.
+\item These individual trials show variation and reversals that can be reduced in a mean curve.
+\end{itemize}
+
+\section*{Joint motion: one trial per setting}
+\begin{itemize}
+\item This backup uses repetition one for each of the six settings, selected by the same rule throughout.
+\item The measured joint-one angle is relative to disturbance onset. The first-second close-up compares the two conditioning magnitudes with both combined settings.
+\item Individual reversals remain visible. The six-setting three-trial mean is available in the preceding backup comparison.
+\end{itemize}
+
+\section*{Net joint motion over time}
+\begin{itemize}
+\item Net joint motion retains direction, so returning motion reduces its value. All seven projected joint velocities are integrated using the same fixed baseline reference direction.
+\item The left plot shows six settings. The right plot enlarges conditioning and both combined settings in the same degree units.
+\item Both combined conditions also end near zero. Curves show three-trial means and one sample standard deviation.
+\end{itemize}
+
+\section*{Net joint motion}
+\begin{itemize}
+\item Net joint motion is the projected motion remaining after opposite movements cancel. It is 7.52 degrees without null-space torque and 5.61 degrees with damping alone.
+\item Both conditioning settings and both combined settings end near zero. The combined mean is about two thousandths of a degree at 1.5 newton metres and minus twelve thousandths at 2 newton metres.
+\item Adding damping lowers cumulative motion from 0.29 to 0.19 degrees at 1.5 newton metres and from 1.69 to 0.83 degrees at 2 newton metres. Small net motion alone does not mean that the arm was stationary.
 \end{itemize}
 
 \end{document}

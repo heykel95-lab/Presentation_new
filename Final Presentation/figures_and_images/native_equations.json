@@ -5,7 +5,9 @@
     "source": "sources/pose_joint_configuration.tex",
     "latex": "\\displaystyle p=p(q)",
     "font": "Cambria Math",
-    "font_size_pt": 21.92
+    "font_size_pt": 22.0,
+    "font_weight": "regular",
+    "color": "#000000"
   },
   {
     "slide": 6,
@@ -13,7 +15,9 @@
     "source": "sources/position_error_definition.tex",
     "latex": "\\displaystyle e_p=p_d-p_{\\mathrm{EE}}",
     "font": "Cambria Math",
-    "font_size_pt": 21.92
+    "font_size_pt": 22.0,
+    "font_weight": "regular",
+    "color": "#000000"
   },
   {
     "slide": 6,
@@ -21,7 +25,9 @@
     "source": "sources/controller_orientation_error.tex",
     "latex": "\\displaystyle e_R=\\phi u",
     "font": "Cambria Math",
-    "font_size_pt": 21.83
+    "font_size_pt": 22.0,
+    "font_weight": "regular",
+    "color": "#000000"
   },
   {
     "slide": 6,
@@ -29,7 +35,9 @@
     "source": "sources/symbol_K.tex",
     "latex": "\\displaystyle K_p,\\;K_R",
     "font": "Cambria Math",
-    "font_size_pt": 17.92
+    "font_size_pt": 22.0,
+    "font_weight": "regular",
+    "color": "#000000"
   },
   {
     "slide": 6,
@@ -37,7 +45,9 @@
     "source": "sources/symbol_D.tex",
     "latex": "\\displaystyle D_p,\\;D_R",
     "font": "Cambria Math",
-    "font_size_pt": 17.91
+    "font_size_pt": 22.0,
+    "font_weight": "regular",
+    "color": "#000000"
   },
   {
     "slide": 6,
@@ -45,7 +55,9 @@
     "source": "sources/symbol_velocity.tex",
     "latex": "\\displaystyle \\dot p,\\;\\omega",
     "font": "Cambria Math",
-    "font_size_pt": 17.9
+    "font_size_pt": 22.0,
+    "font_weight": "regular",
+    "color": "#000000"
   },
   {
     "slide": 6,
@@ -53,15 +65,19 @@
     "source": "sources/symbol_indices.tex",
     "latex": "\\displaystyle d,\\;\\mathrm{EE}",
     "font": "Cambria Math",
-    "font_size_pt": 17.93
+    "font_size_pt": 22.0,
+    "font_weight": "regular",
+    "color": "#000000"
   },
   {
     "slide": 6,
     "shape": "Equation - controller_wrench_blocks",
     "source": "sources/controller_wrench_blocks.tex",
-    "latex": "\\displaystyle\nF=\\begin{bmatrix}f\\\\m\\end{bmatrix}\n=\\underbrace{\\begin{bmatrix}K_p&\\mathbf{0}\\\\\\mathbf{0}&K_R\\end{bmatrix}}_{K_c}\n\\begin{bmatrix}e_p\\\\e_R\\end{bmatrix}\n+\\underbrace{\\begin{bmatrix}D_p&\\mathbf{0}\\\\\\mathbf{0}&D_R\\end{bmatrix}}_{D_c}\n\\begin{bmatrix}\\dot p_d-\\dot p_{\\mathrm{EE}}\\\\\\omega_d-\\omega_{\\mathrm{EE}}\\end{bmatrix}",
+    "latex": "\\displaystyle\nF=\\begin{bmatrix}f\\\\m\\end{bmatrix}\n=\\underbrace{\\begin{bmatrix}K_p&\\mathrm{0}\\\\\\mathrm{0}&K_R\\end{bmatrix}}_{K_c}\n\\begin{bmatrix}e_p\\\\e_R\\end{bmatrix}\n+\\underbrace{\\begin{bmatrix}D_p&\\mathrm{0}\\\\\\mathrm{0}&D_R\\end{bmatrix}}_{D_c}\n\\begin{bmatrix}\\dot p_d-\\dot p_{\\mathrm{EE}}\\\\\\omega_d-\\omega_{\\mathrm{EE}}\\end{bmatrix}",
     "font": "Cambria Math",
-    "font_size_pt": 25.4
+    "font_size_pt": 22.0,
+    "font_weight": "regular",
+    "color": "#000000"
   },
   {
     "slide": 6,
@@ -69,7 +85,9 @@
     "source": "sources/equation_force.tex",
     "latex": "\\displaystyle f=K_p e_p+D_p(\\dot p_d-\\dot p_{\\mathrm{EE}})",
     "font": "Cambria Math",
-    "font_size_pt": 21.85
+    "font_size_pt": 22.0,
+    "font_weight": "regular",
+    "color": "#000000"
   },
   {
     "slide": 6,
@@ -77,7 +95,9 @@
     "source": "sources/equation_moment.tex",
     "latex": "\\displaystyle m=K_R e_R+D_R(\\omega_d-\\omega_{\\mathrm{EE}})",
     "font": "Cambria Math",
-    "font_size_pt": 21.81
+    "font_size_pt": 22.0,
+    "font_weight": "regular",
+    "color": "#000000"
   },
   {
     "slide": 7,
@@ -85,7 +105,9 @@
     "source": "sources/cartesian_torque_mapping.tex",
     "latex": "\\displaystyle\nF=\\begin{bmatrix}f\\\\m\\end{bmatrix},\\qquad\n\\tau_{\\mathrm{cart}}=J^\\top(q)F",
     "font": "Cambria Math",
-    "font_size_pt": 32.43
+    "font_size_pt": 22.0,
+    "font_weight": "regular",
+    "color": "#000000"
   },
   {
     "slide": 7,
@@ -93,7 +115,9 @@
     "source": "sources/jacobian_velocity_mapping.tex",
     "latex": "\\displaystyle\\begin{bmatrix}\\dot p_{\\mathrm{EE}}\\\\\\omega_{\\mathrm{EE}}\\end{bmatrix}=J(q)\\dot q",
     "font": "Cambria Math",
-    "font_size_pt": 24
+    "font_size_pt": 22.0,
+    "font_weight": "regular",
+    "color": "#000000"
   },
   {
     "slide": 8,
@@ -101,7 +125,9 @@
     "source": "sources/coupling_point_shift.tex",
     "latex": "\\displaystyle A=\\mathrm{Ad}(r_c)",
     "font": "Cambria Math",
-    "font_size_pt": 21.92
+    "font_size_pt": 22.0,
+    "font_weight": "regular",
+    "color": "#000000"
   },
   {
     "slide": 8,
@@ -109,7 +135,9 @@
     "source": "sources/symbol_pc.tex",
     "latex": "\\displaystyle p_c",
     "font": "Cambria Math",
-    "font_size_pt": 26.94
+    "font_size_pt": 22.0,
+    "font_weight": "regular",
+    "color": "#000000"
   },
   {
     "slide": 8,
@@ -117,7 +145,9 @@
     "source": "sources/coc_displacement_definition.tex",
     "latex": "\\displaystyle r_c=p_c-p_{\\mathrm{TCP}}",
     "font": "Cambria Math",
-    "font_size_pt": 21.93
+    "font_size_pt": 22.0,
+    "font_weight": "regular",
+    "color": "#000000"
   },
   {
     "slide": 19,
@@ -125,7 +155,9 @@
     "source": "sources/null_controller_dimension.tex",
     "latex": "\\displaystyle \\dim(\\ker J)=7-6=1",
     "font": "Cambria Math",
-    "font_size_pt": 21.89
+    "font_size_pt": 22.0,
+    "font_weight": "regular",
+    "color": "#000000"
   },
   {
     "slide": 19,
@@ -133,7 +165,9 @@
     "source": "sources/null_controller_velocity.tex",
     "latex": "\\displaystyle J(q)\\,\\dot q_{\\mathrm{null}}=0",
     "font": "Cambria Math",
-    "font_size_pt": 21.89
+    "font_size_pt": 22.0,
+    "font_weight": "regular",
+    "color": "#000000"
   },
   {
     "slide": 19,
@@ -141,7 +175,9 @@
     "source": "sources/symbol_tau_d.tex",
     "latex": "\\displaystyle \\tau_d",
     "font": "Cambria Math",
-    "font_size_pt": 21.92
+    "font_size_pt": 22.0,
+    "font_weight": "regular",
+    "color": "#000000"
   },
   {
     "slide": 19,
@@ -149,7 +185,9 @@
     "source": "sources/symbol_tau_sigma.tex",
     "latex": "\\displaystyle \\tau_\\sigma",
     "font": "Cambria Math",
-    "font_size_pt": 21.92
+    "font_size_pt": 22.0,
+    "font_weight": "regular",
+    "color": "#000000"
   },
   {
     "slide": 10,
@@ -157,7 +195,9 @@
     "source": "sources/contact_normal_gain.tex",
     "latex": "\\displaystyle K_{p,n}=350\\,\\mathrm{N/m}",
     "font": "Cambria Math",
-    "font_size_pt": 21.76
+    "font_size_pt": 22.0,
+    "font_weight": "regular",
+    "color": "#000000"
   },
   {
     "slide": 10,
@@ -165,7 +205,9 @@
     "source": "sources/contact_rotation_gains.tex",
     "latex": "\\displaystyle K_{R,t_1}=K_{R,t_2}=5\\,\\mathrm{N\\,m/rad}",
     "font": "Cambria Math",
-    "font_size_pt": 21.75
+    "font_size_pt": 22.0,
+    "font_weight": "regular",
+    "color": "#000000"
   },
   {
     "slide": 10,
@@ -173,7 +215,9 @@
     "source": "sources/contact_tangent_gains.tex",
     "latex": "\\displaystyle K_{p,t_1}=K_{p,t_2}=2000\\,\\mathrm{N/m}",
     "font": "Cambria Math",
-    "font_size_pt": 21.73
+    "font_size_pt": 22.0,
+    "font_weight": "regular",
+    "color": "#000000"
   },
   {
     "slide": 10,
@@ -181,7 +225,9 @@
     "source": "sources/contact_normal_rotation.tex",
     "latex": "\\displaystyle K_{R,n}=50\\,\\mathrm{N\\,m/rad}",
     "font": "Cambria Math",
-    "font_size_pt": 21.74
+    "font_size_pt": 22.0,
+    "font_weight": "regular",
+    "color": "#000000"
   },
   {
     "slide": 10,
@@ -189,7 +235,9 @@
     "source": "sources/symbol_ns.tex",
     "latex": "\\displaystyle n_s",
     "font": "Cambria Math",
-    "font_size_pt": 22.51
+    "font_size_pt": 22.0,
+    "font_weight": "regular",
+    "color": "#000000"
   },
   {
     "slide": 10,
@@ -197,7 +245,9 @@
     "source": "sources/symbol_tangents.tex",
     "latex": "\\displaystyle t_1,\\;t_2",
     "font": "Cambria Math",
-    "font_size_pt": 17.97
+    "font_size_pt": 22.0,
+    "font_weight": "regular",
+    "color": "#000000"
   },
   {
     "slide": 11,
@@ -205,7 +255,9 @@
     "source": "sources/symbol_thetaerr.tex",
     "latex": "\\displaystyle \\theta_{\\mathrm{err},t_1}",
     "font": "Cambria Math",
-    "font_size_pt": 20.26
+    "font_size_pt": 22.0,
+    "font_weight": "regular",
+    "color": "#000000"
   },
   {
     "slide": 11,
@@ -213,7 +265,9 @@
     "source": "sources/symbol_thetameas.tex",
     "latex": "\\displaystyle \\theta_{\\mathrm{meas},t_1}",
     "font": "Cambria Math",
-    "font_size_pt": 20.32
+    "font_size_pt": 22.0,
+    "font_weight": "regular",
+    "color": "#000000"
   },
   {
     "slide": 20,
@@ -221,7 +275,9 @@
     "source": "sources/null_experiment_disturbance.tex",
     "latex": "\\displaystyle \\tau_{\\mathrm{dist}}=J(q)^{\\top}f_{\\mathrm{dist}}",
     "font": "Cambria Math",
-    "font_size_pt": 21.85
+    "font_size_pt": 22.0,
+    "font_weight": "regular",
+    "color": "#000000"
   },
   {
     "slide": 12,
@@ -229,7 +285,9 @@
     "source": "sources/equation_force_qs.tex",
     "latex": "\\displaystyle\n\\begin{aligned}\nF_{n,\\mathrm{qs}}&=K_{p,n}\\,n_s^\\top(e_p-e_{p,0})\\\\[2pt]\n&=\\left(1000\\,\\mathrm{N/m}\\right)\\cdot\\left(-19.65\\cdot10^{-3}\\,\\mathrm{m}\\right)\n=-19.65\\,\\mathrm{N}\n\\end{aligned}",
     "font": "Cambria Math",
-    "font_size_pt": 19.93
+    "font_size_pt": 22.0,
+    "font_weight": "regular",
+    "color": "#000000"
   },
   {
     "slide": 13,
@@ -237,7 +295,9 @@
     "source": "sources/equation_moment_qs.tex",
     "latex": "\\displaystyle\n\\begin{aligned}\nM_{t_1,\\mathrm{qs}}&=K_{R,t_1}\\,t_1^\\top(e_R-e_{R,0})\\\\[2pt]\n&=\\left(15\\,\\mathrm{N\\,m/rad}\\right)\\cdot\n\\left(6.57\\cdot\\frac{\\pi}{180}\\,\\mathrm{rad}\\right)\n\\approx1.72\\,\\mathrm{N\\,m}\n\\end{aligned}",
     "font": "Cambria Math",
-    "font_size_pt": 19.93
+    "font_size_pt": 22.0,
+    "font_weight": "regular",
+    "color": "#000000"
   },
   {
     "slide": 17,
@@ -245,38 +305,48 @@
     "source": "sources/symbol_rct2.tex",
     "latex": "\\displaystyle r_{c,t_2}",
     "font": "Cambria Math",
-    "font_size_pt": 26.59
+    "font_size_pt": 22.0,
+    "font_weight": "regular",
+    "color": "#000000"
   },
   {
-    "slide": 29,
+    "slide": 26,
     "shape": "Equation - null_controller_projector",
     "source": "sources/null_controller_projector.tex",
     "latex": "\\displaystyle N_\\tau=I_7-J^{\\top}J^{+\\top},\\qquad\\tau_{\\mathrm{null}}=\\tau_d+\\tau_\\sigma",
     "font": "Cambria Math",
-    "font_size_pt": 22.33
+    "font_size_pt": 22.0,
+    "font_weight": "regular",
+    "color": "#000000"
   },
   {
-    "slide": 29,
+    "slide": 26,
     "shape": "Equation - null_controller_damping",
     "source": "sources/null_controller_damping.tex",
     "latex": "\\displaystyle \\tau_d=-d_{\\mathrm{null}}N_\\tau\\dot q",
     "font": "Cambria Math",
-    "font_size_pt": 22.33
+    "font_size_pt": 22.0,
+    "font_weight": "regular",
+    "color": "#000000"
   },
   {
-    "slide": 29,
+    "slide": 26,
     "shape": "Equation - null_controller_conditioning",
     "source": "sources/null_controller_conditioning.tex",
     "latex": "\\displaystyle \\tau_\\sigma=k_\\sigma N_\\tau(s_\\sigma v_7)",
     "font": "Cambria Math",
-    "font_size_pt": 22.35
+    "font_size_pt": 22.0,
+    "font_weight": "regular",
+    "color": "#000000"
   },
   {
     "slide": 8,
     "shape": "Equation - coupling_wrench_blocks",
     "source": "sources/coupling_wrench_blocks.tex",
-    "latex": "\\displaystyle\nF_{\\mathrm{TCP}}=\\begin{bmatrix}f\\\\m\\end{bmatrix}\n=\\underbrace{A^\\top\\begin{bmatrix}K_p&\\mathbf{0}\\\\\\mathbf{0}&K_R\\end{bmatrix}A}_{K_{\\mathrm{TCP}}}\n\\begin{bmatrix}e_p\\\\e_R\\end{bmatrix}\n+\\underbrace{A^\\top\\begin{bmatrix}D_p&\\mathbf{0}\\\\\\mathbf{0}&D_R\\end{bmatrix}A}_{D_{\\mathrm{TCP}}}\n\\begin{bmatrix}\\dot p_d-\\dot p_{\\mathrm{EE}}\\\\\\omega_d-\\omega_{\\mathrm{EE}}\\end{bmatrix}",
+    "latex": "\\displaystyle\nF_{\\mathrm{TCP}}=\\begin{bmatrix}f\\\\m\\end{bmatrix}\n=\\underbrace{A^\\top\\begin{bmatrix}K_p&\\mathrm{0}\\\\\\mathrm{0}&K_R\\end{bmatrix}A}_{K_{\\mathrm{TCP}}}\n\\begin{bmatrix}e_p\\\\e_R\\end{bmatrix}\n+\\underbrace{A^\\top\\begin{bmatrix}D_p&\\mathrm{0}\\\\\\mathrm{0}&D_R\\end{bmatrix}A}_{D_{\\mathrm{TCP}}}\n\\begin{bmatrix}\\dot p_d-\\dot p_{\\mathrm{EE}}\\\\\\omega_d-\\omega_{\\mathrm{EE}}\\end{bmatrix}",
     "font": "Cambria Math",
-    "font_size_pt": 22
+    "font_size_pt": 22.0,
+    "font_weight": "regular",
+    "color": "#000000"
   }
 ]

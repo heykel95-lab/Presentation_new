@@ -1,0 +1,35 @@
+{
+  "slides": 34,
+  "visible": 25,
+  "hidden_physical_slides": [
+    26,
+    27,
+    28,
+    29,
+    30,
+    31,
+    32,
+    33,
+    34
+  ],
+  "pdf_pages": 34,
+  "supplementary_pages": 9,
+  "resolved_internal_relationships": 298,
+  "native_equation_shapes_preserved": 35,
+  "embedded_videos_preserved": 2,
+  "notes_slides": 34,
+  "speaking_title_order_matches": true,
+  "native_table_matches_analysis": true,
+  "main_selection_matches_six_condition_analysis": true,
+  "original_media_preserved": true,
+  "first_19_pdf_pages_pixel_identical": true,
+  "supplementary_pages_pixel_identical_to_full_pdf": true,
+  "artifacts_sha256": {
+    "Thesis_Defense_gg0_v3.pptx": "5640e548d9aa2626c04fed181025179b9d1512cd4cce0dc02acfdec8d1e6420f",
+    "Thesis_Defense_gg0_v3.pdf": "6a1d7e9862ac55b71e2f5672668635037177014dff7242e057ab88a4092262cf",
+    "Supplementary_slides.pdf": "7c7f46ab27cfac10aa78f5ffe7a884b98957be0016434ab073bc357892f245ed"
+  },
+  "speaking_pdf_pages": 8,
+  "speaking_build_no_overflow_or_latex_warnings": true,
+  "visual_review": "Main result slides, all nine backups and changed speaking pages reviewed."
+}

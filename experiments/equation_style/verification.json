@@ -1,0 +1,71 @@
+{
+  "equations": 35,
+  "font": "Cambria Math",
+  "base_size_pt": 22,
+  "weight": "regular",
+  "color": "#000000",
+  "math_tokens_and_structures_preserved": true,
+  "all_equations_remain_native_and_editable": true,
+  "slides": 34,
+  "main": 25,
+  "hidden_backups": 9,
+  "native_sections_order_and_visibility_preserved": true,
+  "internal_relationships_resolved": 302,
+  "all_media_and_playback_relationships_preserved": true,
+  "embedded_videos": 3,
+  "unchanged_pdf_pages_pixel_identical": 22,
+  "headers_and_footers_pixel_identical": true,
+  "changed_slides_preservation": [
+    {
+      "physical_slide": 5,
+      "changed_pixels_outside_edit_regions": 0
+    },
+    {
+      "physical_slide": 6,
+      "changed_pixels_outside_edit_regions": 0
+    },
+    {
+      "physical_slide": 7,
+      "changed_pixels_outside_edit_regions": 0
+    },
+    {
+      "physical_slide": 8,
+      "changed_pixels_outside_edit_regions": 0
+    },
+    {
+      "physical_slide": 10,
+      "changed_pixels_outside_edit_regions": 0
+    },
+    {
+      "physical_slide": 11,
+      "changed_pixels_outside_edit_regions": 0
+    },
+    {
+      "physical_slide": 12,
+      "changed_pixels_outside_edit_regions": 0
+    },
+    {
+      "physical_slide": 13,
+      "changed_pixels_outside_edit_regions": 0
+    },
+    {
+      "physical_slide": 17,
+      "changed_pixels_outside_edit_regions": 0
+    },
+    {
+      "physical_slide": 19,
+      "changed_pixels_outside_edit_regions": 0
+    },
+    {
+      "physical_slide": 20,
+      "changed_pixels_outside_edit_regions": 0
+    },
+    {
+      "physical_slide": 26,
+      "changed_pixels_outside_edit_regions": 0
+    }
+  ],
+  "supplementary_pages_match_full_pdf": 9,
+  "spoken_content_preserved": true,
+  "visual_review": "All 12 changed pages reviewed, including both wrench matrices, symbol keys and backup equations."
+}

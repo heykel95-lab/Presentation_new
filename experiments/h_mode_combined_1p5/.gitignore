@@ -1,0 +1,4 @@
+/runtime/
+/review/
+__pycache__/
+!results/*/terminal.log

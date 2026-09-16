@@ -1,0 +1,13 @@
+{
+  "slides": 30,
+  "hidden_backups": 2,
+  "conditions": 6,
+  "trials_per_condition": 3,
+  "plots_updated": 7,
+  "old_five_condition_metrics_unchanged": true,
+  "fixed_net_motion_reference_unchanged": true,
+  "native_equations_and_embedded_videos_preserved": true,
+  "unchanged_pdf_pages_pixel_identical": 21,
+  "three_new_trials_passed": true,
+  "visual_review": "Experiment and seven result slides inspected."
+}

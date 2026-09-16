@@ -1,0 +1,15 @@
+experiment preflight (no robot connection)
+q_init_case = horizontal_table_search
+surface t1 = [-0.905786, -0.422854, +0.027332]
+surface t2 = [+0.423385, -0.905776, +0.017765]
+surface normal = [+0.017245, +0.027663, +0.999469]
+tool offsets [t1,t2] = [+0.0, +0.0] deg
+calibrated tool axis EE = [-0.00601124, +0.00024589, +0.99998190]
+Kp frame = surface [t1,t2,n]
+Kp diagonal in selected frame = [2000.0, 2000.0, 800.0] N/m
+KR surface diagonal = [5.0, 5.0, 50.0] Nm/rad
+coupled set-up = off
+automatic disturbance = link 3, point [+0.0, +0.0, +200.0] mm
+disturbance force = 20.00 N, torque-norm limit = 3.00 Nm
+disturbance timing = 5.0 -> 7.0 -> 8.0 + 1.0 s
+preflight: PASS
