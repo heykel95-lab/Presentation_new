@@ -23,7 +23,7 @@ Reproducible data: MyOwn/code/python/figures/contact_angular_error/.
 After editing slides, run Speaking/build/update-overview.ps1, rebuild the speaking script and export all 30 PDF pages.
 
 Equations (2026-09-15)
-The 34 active standalone formula and symbol shapes are native editable PowerPoint equations from their LaTeX sources. Direct conversion succeeded, so IguanaTex is not required.
+The 35 active standalone formula and symbol shapes are native editable PowerPoint equations from their LaTeX sources. Direct conversion succeeded, so IguanaTex is not required.
 Click inside a formula to edit it using PowerPoint Equation tools. The LaTeX sources remain in figures_and_images/sources. native_equations.json maps each equation to its slide, shape name and exact LaTeX. Each equation also has the source in its alternative text.
 Keep formula changes synchronized between the LaTeX source, native PowerPoint equation, source catalog, speaking script and notes. Editing a .tex file alone does not automatically update the PowerPoint equation. Graphs and schematic illustrations retain their editable figure sources.
 
@@ -58,3 +58,5 @@ data, units, signs, uncertainty, filenames and internal identifiers unchanged.
 Additional joint-motion views: footer 23 shows repetition 1 for each setting, and footer 24 shows the mean of three onset-relative joint-1 histories with one sample standard deviation. They follow the unchanged all-repetitions view at footer 22. Axes and conditioning close-ups match. Means use exact common measured timestamps without interpolation. Rebuild with figures_and_images/sources/make_joint_motion_views.py --repetition r01. Source samples and the original shared thesis figure remain unchanged.
 
 Coupling slide simplification (2026-09-16): removed Error at the CoC, Wrench at the TCP and their standalone equations from footer 7. Retained the full shifted wrench matrix. Notes and speaking text describe the transformed stiffness and damping directly.
+
+Jacobian velocity equation (2026-09-16): Real-time control, footer 6, displays [p_dot_EE; omega_EE] = J(q) q_dot as an editable equation instead of the verbal velocity mapping. The thesis uses this same differential-kinematics equation.

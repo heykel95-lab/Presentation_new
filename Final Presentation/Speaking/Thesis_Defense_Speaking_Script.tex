@@ -76,7 +76,10 @@
 \[
 \tau_{\mathrm{cart}}=J^\top(q)F
 \]
-\item The Jacobian maps joint velocities to the EE's linear and angular velocities. Model compensation and enabled null-space torques complete the command.
+\item The Jacobian maps the seven joint velocities to the EE's linear and angular velocities. Model compensation and enabled null-space torques complete the command.
+\[
+\begin{bmatrix}\dot p_{\mathrm{EE}}\\\omega_{\mathrm{EE}}\end{bmatrix}=J(q)\dot q
+\]
 \item The measured pose feeds back into the control loop. The C++ controller uses libfranka and updates every millisecond.
 \end{itemize}
 

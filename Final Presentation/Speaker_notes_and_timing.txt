@@ -30,7 +30,7 @@ Cartesian impedance controller
 
 Real-time control
 • The robot receives joint torques. We generate the Cartesian contribution from the wrench using the Jacobian transpose:
-• The Jacobian maps joint velocities to the EE's linear and angular velocities. Model compensation and enabled null-space torques complete the command.
+• The Jacobian maps the seven joint velocities to the EE's linear and angular velocities. Model compensation and enabled null-space torques complete the command.
 • The measured pose feeds back into the control loop. The C++ controller uses libfranka and updates every millisecond.
 
 Translation–rotation coupling

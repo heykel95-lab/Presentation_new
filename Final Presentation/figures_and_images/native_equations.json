@@ -88,6 +88,14 @@
     "font_size_pt": 32.43
   },
   {
+    "slide": 7,
+    "shape": "Equation - jacobian_velocity_mapping",
+    "source": "sources/jacobian_velocity_mapping.tex",
+    "latex": "\\displaystyle\\begin{bmatrix}\\dot p_{\\mathrm{EE}}\\\\\\omega_{\\mathrm{EE}}\\end{bmatrix}=J(q)\\dot q",
+    "font": "Cambria Math",
+    "font_size_pt": 24
+  },
+  {
     "slide": 8,
     "shape": "Equation - coupling_point_shift",
     "source": "sources/coupling_point_shift.tex",

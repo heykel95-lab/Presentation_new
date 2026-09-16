@@ -586,5 +586,10 @@
     "asset": "joint_motion_mean",
     "source": "sources/make_joint_motion_views.py and unchanged joint_motion_samples.csv.gz. Source identities in joint_motion_provenance.json. Derived values and alignment audit in joint_motion_views_analysis.json / joint_motion_mean_curves.csv.",
     "changes": "Arithmetic mean of three onset-relative measured joint-1 trajectories per setting. Shading is one sample standard deviation. Exact recorded times common to each setting, no interpolation or smoothing. Same axes and intervals as the all-repetitions figure."
+  },
+  {
+    "asset": "jacobian_velocity_mapping",
+    "source": "MyOwn/chapters/02_theoretical_background.tex, eq:differential_kinematics",
+    "changes": "Native editable equation [p_dot_EE; omega_EE] = J(q) q_dot replaces the verbal joint-to-EE velocity mapping on Real-time control, footer 6. Linear velocity precedes angular velocity. Matching LaTeX, PDF, PNG and SVG sources retained."
   }
 ]
