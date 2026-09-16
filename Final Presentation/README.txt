@@ -62,3 +62,5 @@ Coupling slide simplification (2026-09-16): removed Error at the CoC, Wrench at 
 Jacobian velocity equation (2026-09-16): Real-time control, footer 6, displays [p_dot_EE; omega_EE] = J(q) q_dot as an editable equation instead of the verbal velocity mapping. The thesis uses this same differential-kinematics equation.
 
 Robot illustration palette (2026-09-16): on footers 4 and 5 only, the pose and positional-error figures use theme blue for the robot and grippers, with lighter blue depth shading. Their three figure asset sets are regenerated from the existing LaTeX/TikZ sources. Geometry and axis/reference colours are preserved.
+
+Rotational-error palette (2026-09-16): the slide-5 tool face is filled theme blue, with a lighter-blue dashed desired orientation. Solid and dashed outlines distinguish the orientations. Geometry and the black correction angle and axis are preserved.

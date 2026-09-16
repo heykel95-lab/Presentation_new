@@ -550,7 +550,8 @@
   {
     "asset": "rotation_error_sketch",
     "source": "sources/rotation_error_sketch.tex",
-    "changes": "Measured and desired orientations of the same tool face about one fixed origin. Solid navy measured face and dashed green desired outline. The phi arc runs from measured to desired orientation about unit axis u, explicitly shown out of the page. Illustrative axis-angle geometry only. Paired slide headings read Positional error and Rotational error. Editable LaTeX and PDF/PNG/SVG synchronized."
+    "changes": "Measured and desired orientations of the same tool face about one fixed origin. Solid navy measured face and dashed blue desired outline. The phi arc runs from measured to desired orientation about unit axis u, explicitly shown out of the page. Illustrative axis-angle geometry only. Paired slide headings read Positional error and Rotational error. Editable LaTeX and PDF/PNG/SVG synchronized.",
+    "presentation_palette": "2026-09-16: solid theme-blue (#17365D) measured tool face, with a lighter-blue (#4472C4) dashed desired outline and matching direction/label. Angle and axis remain black. Geometry, labels and scientific meaning are unchanged."
   },
   {
     "asset": "coupling_error_transform",
