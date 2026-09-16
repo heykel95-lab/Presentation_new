@@ -265,22 +265,6 @@
   },
   {
     "slide": 8,
-    "shape": "Equation - coupling_error_transform",
-    "source": "sources/coupling_error_transform.tex",
-    "latex": "\\displaystyle e_c=Ae",
-    "font": "Cambria Math",
-    "font_size_pt": 22
-  },
-  {
-    "slide": 8,
-    "shape": "Equation - coupling_wrench_transform",
-    "source": "sources/coupling_wrench_transform.tex",
-    "latex": "\\displaystyle F_{\\mathrm{TCP}}=A^\\top F_c",
-    "font": "Cambria Math",
-    "font_size_pt": 22
-  },
-  {
-    "slide": 8,
     "shape": "Equation - coupling_wrench_blocks",
     "source": "sources/coupling_wrench_blocks.tex",
     "latex": "\\displaystyle\nF_{\\mathrm{TCP}}=\\begin{bmatrix}f\\\\m\\end{bmatrix}\n=\\underbrace{A^\\top\\begin{bmatrix}K_p&\\mathbf{0}\\\\\\mathbf{0}&K_R\\end{bmatrix}A}_{K_{\\mathrm{TCP}}}\n\\begin{bmatrix}e_p\\\\e_R\\end{bmatrix}\n+\\underbrace{A^\\top\\begin{bmatrix}D_p&\\mathbf{0}\\\\\\mathbf{0}&D_R\\end{bmatrix}A}_{D_{\\mathrm{TCP}}}\n\\begin{bmatrix}\\dot p_d-\\dot p_{\\mathrm{EE}}\\\\\\omega_d-\\omega_{\\mathrm{EE}}\\end{bmatrix}",

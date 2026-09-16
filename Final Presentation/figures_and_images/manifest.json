@@ -552,12 +552,14 @@
   {
     "asset": "coupling_error_transform",
     "source": "MyOwn/chapters/02_theoretical_background.tex, compliance-centre point-shift model",
-    "changes": "Native editable Office Math and matching standalone LaTeX/PDF/PNG/SVG equation."
+    "changes": "Native editable Office Math and matching standalone LaTeX/PDF/PNG/SVG equation.",
+    "presentation_status": "Removed from footer 7 with its heading on 2026-09-16 at the user request. Source assets retained. The full shifted wrench equation remains on the slide."
   },
   {
     "asset": "coupling_wrench_transform",
     "source": "MyOwn/chapters/02_theoretical_background.tex, compliance-centre point-shift model",
-    "changes": "Native editable Office Math and matching standalone LaTeX/PDF/PNG/SVG equation."
+    "changes": "Native editable Office Math and matching standalone LaTeX/PDF/PNG/SVG equation.",
+    "presentation_status": "Removed from footer 7 with its heading on 2026-09-16 at the user request. Source assets retained. The full shifted wrench equation remains on the slide."
   },
   {
     "asset": "nullspace_displacement_time",
