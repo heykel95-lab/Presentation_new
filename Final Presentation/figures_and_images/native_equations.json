@@ -225,7 +225,7 @@
     "source": "sources/equation_force_qs.tex",
     "latex": "\\displaystyle\n\\begin{aligned}\nF_{n,\\mathrm{qs}}&=K_{p,n}\\,n_s^\\top(e_p-e_{p,0})\\\\[2pt]\n&=\\left(1000\\,\\mathrm{N/m}\\right)\\cdot\\left(-19.65\\cdot10^{-3}\\,\\mathrm{m}\\right)\n=-19.65\\,\\mathrm{N}\n\\end{aligned}",
     "font": "Cambria Math",
-    "font_size_pt": 22.0,
+    "font_size_pt": 20.0,
     "font_weight": "regular",
     "color": "#000000"
   },
@@ -233,9 +233,9 @@
     "slide": 13,
     "shape": "Equation - equation_moment_qs",
     "source": "sources/equation_moment_qs.tex",
-    "latex": "\\displaystyle\n\\begin{aligned}\nM_{t_1,\\mathrm{qs}}&=K_{R,t_1}\\,t_1^\\top(e_R-e_{R,0})\\\\[2pt]\n&=\\left(15\\,\\mathrm{N\\,m/rad}\\right)\\cdot\n\\left(6.57\\cdot\\frac{\\pi}{180}\\,\\mathrm{rad}\\right)\n\\approx1.72\\,\\mathrm{N\\,m}\n\\end{aligned}",
+    "latex": "\\displaystyle\n\\begin{aligned}\nM_{t_1,\\mathrm{qs}}&=K_{R,t_1}\\,t_1^\\top(e_R-e_{R,0})\\\\[2pt]\n&=\\left(15\\,\\mathrm{N.m/rad}\\right)\\cdot\n\\left(6.57\\cdot\\frac{\\pi}{180}\\,\\mathrm{rad}\\right)\n\\approx1.72\\,\\mathrm{N.m}\n\\end{aligned}",
     "font": "Cambria Math",
-    "font_size_pt": 22.0,
+    "font_size_pt": 20.0,
     "font_weight": "regular",
     "color": "#000000"
   },
@@ -250,7 +250,7 @@
     "color": "#000000"
   },
   {
-    "slide": 26,
+    "slide": 25,
     "shape": "Equation - null_controller_projector",
     "source": "sources/null_controller_projector.tex",
     "latex": "\\displaystyle N_\\tau=I_7-J^{\\top}J^{+\\top},\\qquad\\tau_{\\mathrm{null}}=\\tau_d+\\tau_\\sigma",
@@ -260,7 +260,7 @@
     "color": "#000000"
   },
   {
-    "slide": 26,
+    "slide": 25,
     "shape": "Equation - null_controller_damping",
     "source": "sources/null_controller_damping.tex",
     "latex": "\\displaystyle \\tau_d=-d_{\\mathrm{null}}N_\\tau\\dot q",
@@ -270,7 +270,7 @@
     "color": "#000000"
   },
   {
-    "slide": 26,
+    "slide": 25,
     "shape": "Equation - null_controller_conditioning",
     "source": "sources/null_controller_conditioning.tex",
     "latex": "\\displaystyle \\tau_\\sigma=k_\\sigma N_\\tau(s_\\sigma v_7)",

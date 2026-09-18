@@ -4,6 +4,10 @@
 
 Keep the current speaking script and PowerPoint speaker notes unchanged until the user explicitly asks for changes. Do not rewrite, shorten, correct, or automatically synchronize the spoken wording during other presentation work. This instruction takes precedence over the earlier narration-editing and synchronization requirements below.
 
+## Impedance-reference slide order (2026-09-18)
+
+On Translation–rotation coupling, footer 7 / physical slide 8, introduce the reference-point change before its mathematical definitions. Use Shifting the impedance reference point as the heading, retain the full TCP definition, and identify p_c as Virtual centre of compliance (CoC): new reference. Place Choosing an impedance reference point away from the TCP couples force and moment. and The commanded force acts as if applied at the virtual point p_c. directly below this introduction. Follow them with the displacement definition and the A = Ad(r_c) definition labelled Point-shift adjoint, matching the thesis terminology. Use Displacement from TCP to CoC only on the displacement row and do not repeat TCP → CoC on the adjoint row. Keep the full native wrench matrix below these definitions and the off-diagonal-block result underneath it. Preserve the equation contents and typography, including the italic serif p and subscript c in the moved sentence. Speaking text and speaker notes remain unchanged. This order supersedes the earlier instruction to keep the two moved explanations at the bottom of this slide.
+
 ## Controller symbol-key removal (2026-09-16)
 
 On Cartesian impedance controller (footer 5, physical slide 6), keep the four symbol-definition pairs below the decoupling sentence removed: stiffness, damping, linear/angular velocity, and desired/measured indices. Retain the decoupling sentence, headings, controller equations, sketches and footer. This supersedes earlier instructions to retain the compact symbol key. Preserve the unused source assets for provenance and remove only these four active entries from `native_equations.json`. This removal left 31 active native equations and symbols. The later Angular quantities definition removal reduces the current count to 29. Speaking text and notes remain unchanged.
@@ -20,9 +24,47 @@ On Centre of compliance (CoC), footer 8 / physical slide 9, omit Opposite displa
 
 On Angular quantities, footer 10 / physical slide 11, remove all three bottom statements: Smaller magnitude means less angular error about the first tangent. Calculated from measured EE orientation and the calibrated tool normal. Positive and negative values indicate opposite tilt directions. Keep the angular diagram and its rotated frame inset unchanged. Also remove both right-hand definition blocks, Measured angular offset / Entry tilt relative to the calibrated surface and Angular error / Tool-normal tilt relative to the calibrated surface, and their two standalone theta symbols, as requested next on 2026-09-16. Preserve the symbols embedded in the shared diagram. Remove only these two active symbol entries from native_equations.json and retain their unused sources. The active native-equation count is now 29. These statements and definition blocks must not be restored on the slide. Speaking text, speaker notes and the thesis remain unchanged by this slide-only removal.
 
+Angular figure placement (2026-09-18): centre the existing figure on Angular quantities, footer 10 / physical slide 11, horizontally on the slide and vertically in the content area between the title and footer. Its centre is at 480 pt horizontally and 275 pt from the slide top. Preserve its size, crop, embedded image, labels, inset and shared thesis assets. Speaking text and notes remain unchanged.
+
 ## Validation-slide layout (2026-09-16)
 
 On Normal-force plausibility assessment and Moment plausibility assessment, footers 11 and 12 / physical slides 12 and 13, remove the separate Measured error change lines. Place the unchanged plots above the Manual push / Manual rotation sentence and the unchanged native calculation equation. Keep the two mean-comparison bullets alongside the lower explanation, with clear wrapping and the same result-statement style. Preserve measured values inside equations, plot dimensions, data, units, legends, thesis figures, speaking text and notes. This supersedes the earlier instruction to retain the measured-error labels and place the manual-action sentence and equation above the plot.
+
+Validation quantity summaries (2026-09-18): on Normal-force plausibility assessment and Moment plausibility assessment, footers 11 and 12 / physical slides 12 and 13, show three matching result bullets on the lower right: Quasi-static prediction, Commanded mean, and Model-estimated mean. Put each value on its own continuation line. Force values are −19.65 N, −19.64 N and −22.29 N. Moment values are 1.72 N m, 1.72 N m and 1.85 N m. Omit the previous parenthetical percentage comparisons and calculation wording from these visible summaries. Keep the plots, native equations, manual-action headings, speaking text and notes unchanged. This supersedes the earlier requirement for only two mean-comparison bullets.
+
+Wrench comparison sentence removal (2026-09-18): on Commanded and estimated wrench, footer 13 / physical slide 14, omit both Stationary force difference: 2.32% and Stationary moment difference: 4.87%. Remove the complete sentences, not only their percentages. Preserve the existing plot, its size and position, the title, footer, speaking text and notes.
+
+## Centred validation-slide layout (2026-09-18)
+
+On Normal-force plausibility assessment and Moment plausibility assessment, footers 11 and 12 / physical slides 12 and 13, keep the lower section centred beneath the unchanged plot. The manual-action sentence is centred above the native equation. The three comparisons form one evenly spaced horizontal row below the equation, with each value beneath its label. Use unbulleted, regular 18 pt Arial in black for the manual-action sentence, labels and values on these two slides only. Use 20 pt regular black Cambria Math for these two native equations, preserving their mathematical structures and equals-sign alignment. Their editable LaTeX, catalog entries and PDF/PNG/SVG assets match this size. All other native equations retain 22 pt. On the moment slide, keep each numerical value together with N.m using a nonbreaking space. The native equation uses compact upright N.m and N.m/rad units. Preserve all numerical values, plot dimensions and contents, title and footer styling, speaking text and notes. This supersedes the lower-right bullet layout and the general blue-bullet/22 pt equation rules only for these two lower sections.
+
+Baseline chart-only layout (2026-09-18): on Baseline angular error, footer 14 / physical slide 15, remove the three right-hand notes: Centre of compliance at the TCP, Both larger entry tilts ended closer to zero, and Negative entry error changed sign. Centre the unchanged chart at 480 pt horizontally and 275 pt from the slide top. Preserve its dimensions, bars, values, error bars, axes, labels and shared thesis assets. Keep speaking text and notes unchanged.
+
+Wrench figure centring (2026-09-18): on Commanded and estimated wrench, footer 13 / physical slide 14, centre the existing two-panel figure at 480 pt horizontally and 275 pt from the slide top. Preserve its dimensions, curves, labels, legend, shaded intervals and shared thesis assets. Keep the two removed comparison sentences absent and leave speaking text and notes unchanged. This supersedes the earlier instruction to retain the figure's original position.
+
+Rotational-stiffness sentence removal (2026-09-18): on Effect of rotational stiffness, footer 15 / physical slide 16, omit Angular error increased from 1.75° to 6.58°. Keep the chart and the Resistance to rotation about t1 heading unchanged, including their positions and dimensions. Speaking text, notes and thesis assets remain unchanged.
+
+## CoC-position result layout (2026-09-18)
+
+On Effect of CoC position, footer 16 / physical slide 17, remove the three result statements and the heading Smallest tested error magnitude. Centre the existing chart and its retained native r_c,t2 symbol with the CoC displacement along t2 definition above it. Preserve chart dimensions, data, axes, grid, labels, legend and source assets. Keep speaking text and speaker notes unchanged. This supersedes earlier instructions to retain those result statements.
+
+## Interaction-wrench plot layout (2026-09-18)
+
+On Angular error and interaction wrench, footer 17 / physical slide 18, remove the three result sentences about moment reversal, response timing and final normal force. Use the presentation layout variants contact_wrench_three_panels_balanced and contact_legend_balanced. Give the three plots matching near-square data areas, independently reflowed tick and axis labels, headings centred over their axes, and a compact shared legend centred beneath them. Do not stretch the entire plot image or its lettering. Retain the original shared vector data panels, recorded values, limits, units, colours and timing annotations. These are presentation composition variants, with the original assets and thesis figure retained. Keep speaking text and speaker notes unchanged.
+
+## Null-space explanation and bullet hierarchy (2026-09-18)
+
+On Null-space controller, footer 18 / physical slide 19, use Redundant direction: and Primary Cartesian task: as the two introductory headings. Explain that there is one null-space direction at full Jacobian rank, several joints move together, and null-space motion preserves the instantaneous EE motion. Follow with Damping torque and Conditioning torque, retaining their native torque symbols and placing a colon after each complete heading. Remove bullets from all four headings and place native round navy bullets on the explanations below them, with 20 pt regular Arial body text and 20 pt hanging indents. State that damping opposes and damps null-space velocity, while conditioning adjusts the joint configuration to improve Jacobian conditioning. Keep the short singularity consequences, both native kinematic equations, and the full-rank qualification. Do not describe conditioning as tracking a prescribed null-space position. Preserve native mathematical contents and typography, speaking text and speaker notes. This supersedes the earlier bullet-heading style and wording on this slide only.
+
+## Null-space plot consistency and table-slide removal (2026-09-18)
+
+Remove Effect of conditioning torque, formerly footer 23 / physical slide 24. Retain its archived slide, notes and source values for provenance, but do not restore it to the active deck. Conclusion becomes footer 23 / physical slide 24. The deck now has 24 main slides and nine hidden backups at physical slides 25–33, and the full PDF has 33 pages. The nine-page supplementary PDF and all remaining speaking text and notes stay unchanged.
+
+On Joint motion over time, footer 22 / physical slide 23, both panels use the identical y-axis label Joint 1 Motion, Delta q_1 [degrees]. Panel (b) shows the full 0–4 s interval with all original common recorded samples and the complete one-sample-SD bands. Remove First second from its title. Match the colours, solid lines, line widths, marker shapes and sizes to Jacobian conditioning, footer 21 / physical slide 22, using spaced markers rather than a marker on every sample. Remove (SI) from the combined-control legend on footers 21 and 22. Preserve data, limits on the full-range panel, uncertainty calculations, other slide content, the shared thesis figures and six-setting backup assets. Regenerate these presentation-only main plots with make_nullspace_narrative.py --only conditioning joint. This supersedes the former first-second main-panel view and instruction to retain the conditioning-torque table.
+
+## Conclusion wording follows the speaking text (2026-09-18)
+
+On Conclusion, footer 23 / physical slide 24, retain four conclusion sentences and two future-work sentences. Use: Compliant rotation allowed contact moments to reduce angular error. Higher rotational stiffness left a larger angular error. The CoC could support or oppose the contact moment. Null-space control reduced redundant motion under disturbance. Under Future work, use: Use a more rigid tool mount for better measurements. Adapt the CoC to support the contact moment, then return it to the TCP after alignment. Retain the regular 22 pt Arial treatment and native navy bullets. The final point has one continuation line after the comma, not a second bullet or sentence. This visible-slide wording follows the user's closing speech while preserving the qualification against guaranteed perfect alignment. Keep the speaking script and speaker notes unchanged. These sentences supersede the earlier visible Conclusion wording.
 
 ## Repository locations
 
@@ -59,11 +101,11 @@ The control repository contains `surface_grinding_controller`, `experiments`, `a
 
 The Overview is a single slide listing only six chapter names: Introduction, Cartesian controller, Contact experiments, Contact results, Null-space control and experiments, and Conclusion and future work. Do not restore individual slide titles, a second Overview page, or the word continued.
 
-The presentation uses native PowerPoint sections for these chapters. Introduction contains the title, Motivation, Contact demonstration, and Overview. Cartesian controller contains Cartesian pose through Centre of compliance (CoC). Contact experiments contains Contact experiment, Angular quantities, and the three consistency checks. Contact results contains Baseline angular error through Angular error and interaction wrench. Null-space control and experiments contains physical slides 19–24. Conclusion and future work contains Conclusion at physical slide 25. A separate Backup section holds B1–B9 and is omitted from Overview.
+The presentation uses native PowerPoint sections for these chapters. Introduction contains the title, Motivation, Contact demonstration, and Overview. Cartesian controller contains Cartesian pose through Centre of compliance (CoC). Contact experiments contains Contact experiment, Angular quantities, and the three consistency checks. Contact results contains Baseline angular error through Angular error and interaction wrench. Null-space control and experiments contains physical slides 19–23. Conclusion and future work contains Conclusion at physical slide 24. A separate Backup section holds B1–B9 and is omitted from Overview.
 
 Use one column of 22 pt Arial, with right-aligned dark-blue numbers in a fixed-width column and consistent row spacing. Run `Final Presentation/Speaking/build/update-overview.ps1` after each presentation edit, or its portable XML equivalent in `experiments/nullspace_narrative/restructure_presentation.py` when PowerShell is unavailable. Both derive the six chapter rows from native PowerPoint sections and exclude Backup. Maintain chapter assignments when adding or moving slides.
 
-The user approved the following narrative on 2026-09-16. It supersedes earlier slide orders and instructions to keep only two backups. The deck has **25 main slides and 9 hidden backups**:
+The user approved the following narrative on 2026-09-16, with the conditioning-torque table removed on 2026-09-18. It supersedes earlier slide orders and instructions to keep only two backups. The deck has **24 main slides and 9 hidden backups**:
 
 1. Master Thesis Presentation
 2. Motivation
@@ -88,21 +130,20 @@ The user approved the following narrative on 2026-09-16. It supersedes earlier s
 21. Cumulative joint motion
 22. Jacobian conditioning
 23. Joint motion over time
-24. Effect of conditioning torque
-25. Conclusion
-26. Null-space torques and projector (B1)
-27. Disturbance demonstration (B2)
-28. Cumulative joint motion: all settings (B3)
-29. Jacobian conditioning: all settings (B4)
-30. Joint motion: mean of three trials (B5)
-31. Joint motion: all individual trials (B6)
-32. Joint motion: one trial per setting (B7)
-33. Net joint motion over time (B8)
-34. Net joint motion (B9)
+24. Conclusion
+25. Null-space torques and projector (B1)
+26. Disturbance demonstration (B2)
+27. Cumulative joint motion: all settings (B3)
+28. Jacobian conditioning: all settings (B4)
+29. Joint motion: mean of three trials (B5)
+30. Joint motion: all individual trials (B6)
+31. Joint motion: one trial per setting (B7)
+32. Net joint motion over time (B8)
+33. Net joint motion (B9)
 
-The full presentation PDF includes **all 34 slides**. Keep B1–B9 hidden in the PowerPoint slideshow at physical slides 26–34. For PowerPoint SaveAs PDF, temporarily unhide all nine backups in memory, export, and close without saving those visibility changes. `Supplementary_slides.pdf` contains physical pages 26–34, giving nine pages. Main footer numbers are one lower than physical slide indices. The title slide retains its original furniture and no added number.
+The full presentation PDF includes **all 33 slides**. Keep B1–B9 hidden in the PowerPoint slideshow at physical slides 25–33. For PowerPoint SaveAs PDF, temporarily unhide all nine backups in memory, export, and close without saving those visibility changes. `Supplementary_slides.pdf` contains physical pages 25–33, giving nine pages. Main footer numbers are one lower than physical slide indices. The title slide retains its original furniture and no added number.
 
-The main null-space story holds enabled settings fixed at k_sigma = 2 N m and d_null = 2 N m s/rad: no torque, damping alone, conditioning alone, then combined. Its three plots show cumulative motion, Jacobian conditioning and the mean joint-1 history with one sample SD. Follow these with an editable table comparing three-trial mean cumulative motion at k_sigma = 1.5 and 2, each with and without damping. The table values are 0.29° and 0.19° at 1.5, then 1.69° and 0.83° at 2. The lower tested conditioning magnitude produced less motion, and adding damping reduced motion at both magnitudes. Explain that near-zero net motion can coexist with repeated reversals. Keep all seven complete six-setting views in B3–B9. The original four-setting thesis figures remain unchanged because this extension is presentation-only.
+The main null-space story holds enabled settings fixed at k_sigma = 2 N m and d_null = 2 N m s/rad: no torque, damping alone, conditioning alone, then combined. Its three plots show cumulative motion, Jacobian conditioning and the mean joint-1 history with one sample SD, followed directly by Conclusion. The former conditioning-torque comparison table is archived and omitted from the active deck. Its source values remain 0.29° and 0.19° at 1.5, then 1.69° and 0.83° at 2. Explain that near-zero net motion can coexist with repeated reversals. Keep all seven complete six-setting views in B3–B9. The original four-setting thesis figures remain unchanged because this extension is presentation-only.
 
 Rebuild the complete six-setting figures with `figures_and_images/sources/make_combined_nullspace.py`, then the main subset with `make_nullspace_narrative.py`. See `experiments/nullspace_narrative/README.md` for deck rebuilding and validation. The older `experiments/h_mode_combined/update_presentation.py` restores the superseded 30-slide structure and must not be run directly on the active narrative.
 

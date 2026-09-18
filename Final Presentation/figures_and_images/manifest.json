@@ -117,7 +117,7 @@
   {
     "asset": "equation_force_qs",
     "source": "MyOwn/chapters/04_experimental_setup_and_evaluation.tex and chapters/05_results_and_discussion.tex, quasi-static plausibility assessment, commit 07507c72ebb00f5694887add193edbb20026e7c5",
-    "changes": "Retain the spring law and add the measured numerical substitution with stiffness and units. Force: (1000 N/m) times (-0.019650 m) = -19.650 N. Moment: (15 N m/rad) times (6.565 pi/180 rad), rounded to 1.719 N m. 20 pt LaTeX mathematics, two lines aligned at the equals signs. PDF, 300 dpi PNG, SVG, and editable LaTeX synchronized. Plot data unchanged.",
+    "changes": "Native editable equation and matching LaTeX/PDF/PNG/SVG use 20 pt regular black Cambria Math for the centred validation-slide layout (2026-09-18).",
     "presentation_representation": "Native editable PowerPoint Office Math, converted directly from the existing LaTeX source on 2026-09-15. Cambria Math. Formula source also retained in shape alternative text and native_equations.json. Legacy image variants retained as source assets.",
     "equation_style": {
       "font": "Cambria Math",
@@ -130,7 +130,7 @@
   {
     "asset": "equation_moment_qs",
     "source": "MyOwn/chapters/04_experimental_setup_and_evaluation.tex and chapters/05_results_and_discussion.tex, quasi-static plausibility assessment, commit 07507c72ebb00f5694887add193edbb20026e7c5",
-    "changes": "Retain the spring law and add the measured numerical substitution with stiffness and units. Force: (1000 N/m) times (-0.019650 m) = -19.650 N. Moment: (15 N m/rad) times (6.565 pi/180 rad), rounded to 1.719 N m. 20 pt LaTeX mathematics, two lines aligned at the equals signs. PDF, 300 dpi PNG, SVG, and editable LaTeX synchronized. Plot data unchanged.",
+    "changes": "Native editable equation and matching LaTeX/PDF/PNG/SVG use 20 pt regular black Cambria Math for the centred validation-slide layout (2026-09-18). Moment units use N.m and N.m/rad.",
     "presentation_representation": "Native editable PowerPoint Office Math, converted directly from the existing LaTeX source on 2026-09-15. Cambria Math. Formula source also retained in shape alternative text and native_equations.json. Legacy image variants retained as source assets.",
     "equation_style": {
       "font": "Cambria Math",
@@ -885,12 +885,14 @@
   {
     "asset": "nullspace_conditioning_main",
     "source": "sources/make_nullspace_narrative.py; sources/combined_nullspace_provenance.json",
-    "changes": "Main narrative subset: no torque, damping 2, conditioning 2, combined 2+2. Same recorded samples, means, sample SD and 5–9 s interval. The full six-setting figure is retained in hidden backup."
+    "changes": "Main narrative subset: no torque, damping 2, conditioning 2, combined 2+2. Same recorded samples, means, sample SD and 5–9 s interval. The full six-setting figure is retained in hidden backup.",
+    "presentation_update_2026_09_18": "Footer 21: remove (SI) from combined-control legend. Preserve data and curve styles."
   },
   {
     "asset": "joint_motion_mean_main",
     "source": "sources/make_nullspace_narrative.py; sources/combined_nullspace_provenance.json",
-    "changes": "Main narrative subset: no torque, damping 2, conditioning 2, combined 2+2. Same recorded samples, means, sample SD and 5–9 s interval. The full six-setting figure is retained in hidden backup."
+    "changes": "Main narrative subset: no torque, damping 2, conditioning 2, combined 2+2. Same recorded samples, means, sample SD and 5–9 s interval. The full six-setting figure is retained in hidden backup.",
+    "presentation_update_2026_09_18": "Footer 22: identical Joint 1 Motion y-axis labels, full 0-4 s conditioning-and-combined panel, matching sparse-marker line styles from footer 21, and no (SI) suffix. Preserve original common samples and one sample SD."
   },
   {
     "asset": "title_robot",
@@ -901,5 +903,15 @@
     "asset": "thesis_figure_1_1",
     "source": "MyOwn-thesis/Thesis.pdf, page 27, Figure 1.1. sources/thesis_figure_1_1_source.tex",
     "changes": "Exact vector extraction, replacing the Motivation photograph. PDF, PNG and SVG variants retained."
+  },
+  {
+    "asset": "contact_wrench_three_panels_balanced",
+    "source": "sources/contact_wrench_three_panels_balanced.tex",
+    "changes": "2026-09-18: presentation layout variant for footer 17. Near-square data areas with separately reflowed, undistorted tick and axis labels. Compact centred legend. Original vector data panels, values, units, colours, limits, timing markers and thesis figure retained."
+  },
+  {
+    "asset": "contact_legend_balanced",
+    "source": "sources/contact_legend_balanced.tex",
+    "changes": "2026-09-18: presentation layout variant for footer 17. Near-square data areas with separately reflowed, undistorted tick and axis labels. Compact centred legend. Original vector data panels, values, units, colours, limits, timing markers and thesis figure retained."
   }
 ]

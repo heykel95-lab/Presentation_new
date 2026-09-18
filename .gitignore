@@ -21,3 +21,8 @@ desktop.ini
 *.fls
 *.fdb_latexmk
 *.synctex.gz
+
+# Local rendering workspaces and Python bytecode
+/tmp/
+__pycache__/
+*.pyc

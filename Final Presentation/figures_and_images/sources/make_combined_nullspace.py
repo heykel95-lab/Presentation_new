@@ -178,7 +178,7 @@ def plots(groups,info):
   exponent=int(np.floor(np.log10(abs(v)))) if v else 0
   label=f'${v:.2f}$' if abs(v)>=.1 or not v else f'${v/10**exponent:.2f}'+r'\times10^{'+str(exponent)+'}$'
   ax.text(i,v+s+.2 if v>=0 else v-s-.2,label,ha='center',va='bottom' if v>=0 else 'top',fontsize=11)
- ax.set_xticks(range(6));ax.set_xticklabels(['No torque','Damping\n$d_{null}=2$','Conditioning\n$k_\sigma=1.5$','Conditioning\n$k_\sigma=2$','Combined\n$k_\sigma=1.5$, $d_{null}=2$','Combined\n$k_\sigma=2$, $d_{null}=2$'],fontsize=10)
+ ax.set_xticks(range(6));ax.set_xticklabels(['No torque','Damping\n$d_{null}=2$','Conditioning\n$k_\\sigma=1.5$','Conditioning\n$k_\\sigma=2$','Combined\n$k_\\sigma=1.5$, $d_{null}=2$','Combined\n$k_\\sigma=2$, $d_{null}=2$'],fontsize=10)
  ax.set_ylabel(r'Net Joint Motion, $\Delta\eta$ [$^\circ$]');ax.set_ylim(-.7,8.4);ax.axhline(0,color='.4',lw=.7);ax.grid(axis='y',alpha=.25);ax.set_axisbelow(True);ax.set_title('(c)',loc='left')
  for s in ['top','right']:ax.spines[s].set_visible(False)
  fig.text(.5,.05,'Three-trial mean and one sample standard deviation. Coefficients in SI units.',ha='center',fontsize=10)
