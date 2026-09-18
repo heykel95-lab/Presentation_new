@@ -38,6 +38,13 @@ The generator preserves audited reports byte-for-byte and checks numerical
 identity within floating-point roundoff across platforms.
 Speaking text and notes are frozen. Do not synchronize them during slide edits.
 
+Footer 20 reports the two cumulative-motion comparisons as percentage
+reductions: 25.1% for damping alone versus no null-space torque, and 50.7%
+for combined control versus conditioning alone at 2 N m. Each is
+`100 * (1 - comparison_mean / reference_mean)`, calculated from the
+full-precision three-trial means in `nullspace_narrative_analysis.json`
+and rounded to one decimal place. The plot and its data remain unchanged.
+
 ## Reproduce the current Matplotlib plots
 
 The generator and all required data are versioned together under
