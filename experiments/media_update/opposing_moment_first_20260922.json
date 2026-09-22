@@ -1,0 +1,336 @@
+{
+  "date": "2026-09-22",
+  "move": "Opposing moment from B7 / physical 33 to B1 / physical 27",
+  "main_slides": 26,
+  "hidden_backups": 8,
+  "total_slides": 34,
+  "supplementary_pages": 8,
+  "main_slide_contents_and_order_unchanged": true,
+  "backup_contents_unchanged_except_footer": true,
+  "notes_media_playback_and_all_other_package_parts_unchanged": true,
+  "pdf_content_pixel_identical_except_footer": true,
+  "supplementary_pdf_matches_full_pdf": true,
+  "native_equation_count": 29,
+  "catalog_entries_reindexed": 3,
+  "all_native_equations_verified": true,
+  "overview_refreshed_from_sections": [
+    "Introduction",
+    "Cartesian controller",
+    "Contact experiments",
+    "Contact results",
+    "Null-space control and experiments",
+    "Conclusion and future work"
+  ],
+  "changed_pptx_parts": [
+    "ppt/slides/slide21.xml",
+    "ppt/slides/slide22.xml",
+    "ppt/slides/slide25.xml",
+    "ppt/slides/slide28.xml",
+    "ppt/slides/slide12.xml",
+    "ppt/slides/slide17.xml",
+    "ppt/presentation.xml",
+    "docProps/app.xml",
+    "ppt/slides/slide39.xml"
+  ],
+  "slide_order": [
+    {
+      "old_physical": 1,
+      "path": "ppt/slides/slide1.xml",
+      "sid": "256",
+      "title": "Master Thesis Presentation",
+      "physical": 1,
+      "footer": "0"
+    },
+    {
+      "old_physical": 2,
+      "path": "ppt/slides/slide2.xml",
+      "sid": "257",
+      "title": "Motivation",
+      "physical": 2,
+      "footer": "1"
+    },
+    {
+      "old_physical": 3,
+      "path": "ppt/slides/slide3.xml",
+      "sid": "274",
+      "title": "Contact demonstration",
+      "physical": 3,
+      "footer": "2"
+    },
+    {
+      "old_physical": 4,
+      "path": "ppt/slides/slide4.xml",
+      "sid": "258",
+      "title": "Overview",
+      "physical": 4,
+      "footer": "3"
+    },
+    {
+      "old_physical": 5,
+      "path": "ppt/slides/slide5.xml",
+      "sid": "288",
+      "title": "Cartesian pose",
+      "physical": 5,
+      "footer": "4"
+    },
+    {
+      "old_physical": 6,
+      "path": "ppt/slides/slide35.xml",
+      "sid": "297",
+      "title": "Surface frame",
+      "physical": 6,
+      "footer": "5"
+    },
+    {
+      "old_physical": 7,
+      "path": "ppt/slides/slide6.xml",
+      "sid": "259",
+      "title": "Cartesian impedance controller",
+      "physical": 7,
+      "footer": "6"
+    },
+    {
+      "old_physical": 8,
+      "path": "ppt/slides/slide7.xml",
+      "sid": "277",
+      "title": "Real-time control",
+      "physical": 8,
+      "footer": "7"
+    },
+    {
+      "old_physical": 9,
+      "path": "ppt/slides/slide9.xml",
+      "sid": "261",
+      "title": "Centre of compliance (CoC)",
+      "physical": 9,
+      "footer": "8"
+    },
+    {
+      "old_physical": 10,
+      "path": "ppt/slides/slide8.xml",
+      "sid": "283",
+      "title": "Translation–rotation coupling",
+      "physical": 10,
+      "footer": "9"
+    },
+    {
+      "old_physical": 11,
+      "path": "ppt/slides/slide11.xml",
+      "sid": "262",
+      "title": "Contact experiment",
+      "physical": 11,
+      "footer": "10"
+    },
+    {
+      "old_physical": 12,
+      "path": "ppt/slides/slide38.xml",
+      "sid": "300",
+      "title": "Plausibility experiment",
+      "physical": 12,
+      "footer": "11"
+    },
+    {
+      "old_physical": 13,
+      "path": "ppt/slides/slide14.xml",
+      "sid": "272",
+      "title": "Normal-force plausibility assessment",
+      "physical": 13,
+      "footer": "12"
+    },
+    {
+      "old_physical": 14,
+      "path": "ppt/slides/slide15.xml",
+      "sid": "273",
+      "title": "Moment plausibility assessment",
+      "physical": 14,
+      "footer": "13"
+    },
+    {
+      "old_physical": 15,
+      "path": "ppt/slides/slide16.xml",
+      "sid": "271",
+      "title": "Commanded and estimated wrench",
+      "physical": 15,
+      "footer": "14"
+    },
+    {
+      "old_physical": 16,
+      "path": "ppt/slides/slide18.xml",
+      "sid": "265",
+      "title": "Effect of rotational stiffness",
+      "physical": 16,
+      "footer": "15"
+    },
+    {
+      "old_physical": 17,
+      "path": "ppt/slides/slide19.xml",
+      "sid": "266",
+      "title": "Effect of CoC position",
+      "physical": 17,
+      "footer": "16"
+    },
+    {
+      "old_physical": 18,
+      "path": "ppt/slides/slide20.xml",
+      "sid": "267",
+      "title": "Angular error and interaction wrench",
+      "physical": 18,
+      "footer": "17"
+    },
+    {
+      "old_physical": 19,
+      "path": "ppt/slides/slide10.xml",
+      "sid": "284",
+      "title": "Null-space controller",
+      "physical": 19,
+      "footer": "18"
+    },
+    {
+      "old_physical": 20,
+      "path": "ppt/slides/slide36.xml",
+      "sid": "298",
+      "title": "Disturbance demonstration",
+      "physical": 20,
+      "footer": "19"
+    },
+    {
+      "old_physical": 21,
+      "path": "ppt/slides/slide37.xml",
+      "sid": "299",
+      "title": "Disturbance demonstration",
+      "physical": 21,
+      "footer": "20"
+    },
+    {
+      "old_physical": 22,
+      "path": "ppt/slides/slide13.xml",
+      "sid": "285",
+      "title": "Null-space experiment",
+      "physical": 22,
+      "footer": "21"
+    },
+    {
+      "old_physical": 23,
+      "path": "ppt/slides/slide31.xml",
+      "sid": "294",
+      "title": "Cumulative joint motion",
+      "physical": 23,
+      "footer": "22"
+    },
+    {
+      "old_physical": 24,
+      "path": "ppt/slides/slide32.xml",
+      "sid": "295",
+      "title": "Jacobian conditioning",
+      "physical": 24,
+      "footer": "23"
+    },
+    {
+      "old_physical": 25,
+      "path": "ppt/slides/slide33.xml",
+      "sid": "296",
+      "title": "Joint motion over time",
+      "physical": 25,
+      "footer": "24"
+    },
+    {
+      "old_physical": 26,
+      "path": "ppt/slides/slide24.xml",
+      "sid": "270",
+      "title": "Conclusion",
+      "physical": 26,
+      "footer": "25"
+    },
+    {
+      "old_physical": 33,
+      "path": "ppt/slides/slide39.xml",
+      "sid": "301",
+      "title": "Opposing moment",
+      "physical": 27,
+      "footer": "B1",
+      "old_footer": "B7"
+    },
+    {
+      "old_physical": 27,
+      "path": "ppt/slides/slide25.xml",
+      "sid": "289",
+      "title": "Null-space torques and projector",
+      "physical": 28,
+      "footer": "B2",
+      "old_footer": "B1"
+    },
+    {
+      "old_physical": 28,
+      "path": "ppt/slides/slide21.xml",
+      "sid": "268",
+      "title": "Cumulative joint motion: all settings",
+      "physical": 29,
+      "footer": "B3",
+      "old_footer": "B2"
+    },
+    {
+      "old_physical": 29,
+      "path": "ppt/slides/slide22.xml",
+      "sid": "286",
+      "title": "Jacobian conditioning: all settings",
+      "physical": 30,
+      "footer": "B4",
+      "old_footer": "B3"
+    },
+    {
+      "old_physical": 30,
+      "path": "ppt/slides/slide28.xml",
+      "sid": "291",
+      "title": "Joint motion: all individual trials",
+      "physical": 31,
+      "footer": "B5",
+      "old_footer": "B4"
+    },
+    {
+      "old_physical": 31,
+      "path": "ppt/slides/slide12.xml",
+      "sid": "263",
+      "title": "Angular quantities",
+      "physical": 32,
+      "footer": "B6",
+      "old_footer": "B5"
+    },
+    {
+      "old_physical": 32,
+      "path": "ppt/slides/slide17.xml",
+      "sid": "264",
+      "title": "Baseline angular error",
+      "physical": 33,
+      "footer": "B7",
+      "old_footer": "B6"
+    },
+    {
+      "old_physical": 34,
+      "path": "ppt/slides/slide40.xml",
+      "sid": "302",
+      "title": "Sources of angular offset",
+      "physical": 34,
+      "footer": "B8"
+    }
+  ],
+  "installed_file_sha256": {
+    "/home/hm-panda/Desktop/Presentation_new/Final Presentation/Thesis_Defense_gg0_v3.pptx": "16bf888d8aa4d1671c59fa81208241fdc738c076003b5fbf5570b32592edb0e6",
+    "/home/hm-panda/Desktop/Presentation_new/Final Presentation/Thesis_Defense_gg0_v3.pdf": "b9e614221f49d80a24c0b0c30847536d2da2dcae07da970b2cde9d2883d6f666",
+    "/home/hm-panda/Desktop/Presentation_new/Final Presentation/Supplementary_slides.pdf": "2d28d60fd4dcb0f410d85bdb2f682964e99db06ff7c3894c6366432e342c35d4",
+    "/home/hm-panda/Desktop/Presentation_new/Final Presentation/figures_and_images/native_equations.json": "ea54ea89462525ec9b31f5a5ac523f1668189a81b6de8fbfa0ae988569426576",
+    "/home/hm-panda/Desktop/Presentation_new/Final Presentation/figures_and_images/manifest.json": "451c838b4b37f60d552826a4b8b6b9b23ba547c9770b3ce8061f55243e5790fc"
+  },
+  "unchanged_file_sha256": {
+    "/home/hm-panda/Desktop/Presentation_new/Final Presentation/Speaker_notes_and_timing.txt": "339b7beaf775db8ac69291800a840b94805ceccd5155b91e6f7890198305ee43",
+    "/home/hm-panda/Desktop/Presentation_new/Final Presentation/Thesis_Defense_Speaking_Script.pdf": "1eac49abc1c7e298d34d3f5138a4a9efc5874608f0ac5478a44b6293bf4bf048",
+    "/home/hm-panda/Desktop/Presentation_new/Final Presentation/Thesis_Defense_Speaking_Script_updated.pdf": "1eac49abc1c7e298d34d3f5138a4a9efc5874608f0ac5478a44b6293bf4bf048",
+    "/home/hm-panda/Desktop/Presentation_new/Final Presentation/Speaking/Thesis_Defense_Speaking_Script.tex": "3eba8ab195904af0307e9646fc850c68a9deca8c696679b6d6a7f8fd9b04dce1",
+    "/home/hm-panda/Desktop/Presentation_new/Final Presentation/figures_and_images/angular_quantities.pdf": "27384398cf8d4f3c0ff6af1cd6298cdab3f7531c9a9bdfdd05c0ba81525cdfd9",
+    "/home/hm-panda/Desktop/Presentation_new/Final Presentation/figures_and_images/angular_quantities.png": "18e2e47983082db968d213656b72de60079989b29daff46d2130bbf45c40c3c8",
+    "/home/hm-panda/Desktop/Presentation_new/Final Presentation/figures_and_images/angular_quantities.svg": "0256284da24325eed6a4c66ae5d6cc41d130f6e0e5d91d710b2962a3695c325f",
+    "/home/hm-panda/Desktop/Presentation_new/Final Presentation/figures_and_images/thesis_figure_1_1.pdf": "b37946c8c7150daf26a78c50efb5be9a79eacdd48ae21fd8177fef5a860b497e",
+    "/home/hm-panda/Desktop/Presentation_new/Final Presentation/figures_and_images/thesis_figure_1_1.png": "8f3d0193663b255602e074e8e67fc7b7e02771c80c8a7bfdc388347326505334",
+    "/home/hm-panda/Desktop/Presentation_new/Final Presentation/figures_and_images/thesis_figure_1_1.svg": "4138adc0bc567c59cbaa0a0cb240d4ae5e62771e587a53cb3a99a74bb7c499cd"
+  },
+  "visual_inspection": "Opposing moment confirmed on physical page 27 with B1 footer, original centred video poster and unchanged layout."
+}

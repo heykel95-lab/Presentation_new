@@ -173,15 +173,3 @@ Joint motion: one trial per setting
 This backup uses repetition one for each of the six settings, selected by the same rule throughout.
 The measured joint-one angle is relative to disturbance onset. The first-second close-up compares the two conditioning magnitudes with both combined settings.
 Individual reversals remain visible. The six-setting three-trial mean is available in the preceding backup comparison.
-
-Net joint motion over time
---------------------------
-Net joint motion retains direction, so returning motion reduces its value. All seven projected joint velocities are integrated using the same fixed baseline reference direction.
-The left plot shows six settings. The right plot enlarges conditioning and both combined settings in the same degree units.
-Both combined conditions also end near zero. Curves show three-trial means and one sample standard deviation.
-
-Net joint motion
-----------------
-Net joint motion is the projected motion remaining after opposite movements cancel. It is 7.52 degrees without null-space torque and 5.61 degrees with damping alone.
-Both conditioning settings and both combined settings end near zero. The combined mean is about two thousandths of a degree at 1.5 newton metres and minus twelve thousandths at 2 newton metres.
-Adding damping lowers cumulative motion from 0.29 to 0.19 degrees at 1.5 newton metres and from 1.69 to 0.83 degrees at 2 newton metres. Small net motion alone does not mean that the arm was stationary.

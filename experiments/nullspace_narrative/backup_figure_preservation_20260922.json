@@ -1,0 +1,25 @@
+{
+  "date": "2026-09-22",
+  "scope": "User clarified that the revert refers to the latest backup cleanup",
+  "older_design_restoration_applied": false,
+  "active_presentation_and_thesis_files_unchanged": true,
+  "comparison_snapshot": "/tmp/nullspace_backup_cleanup/before_Thesis_Defense_gg0_v3.pptx",
+  "slides": [
+    {
+      "current_footer": "B6",
+      "previous_footer": "B10",
+      "title": "Angular quantities",
+      "picture_xml_identical": true,
+      "embedded_image_bytes_identical": true,
+      "pdf_changed_pixels_above_footer_at_120dpi": 0
+    },
+    {
+      "current_footer": "B9",
+      "previous_footer": "B13",
+      "title": "Sources of angular offset",
+      "picture_xml_identical": true,
+      "embedded_image_bytes_identical": true,
+      "pdf_changed_pixels_above_footer_at_120dpi": 0
+    }
+  ]
+}

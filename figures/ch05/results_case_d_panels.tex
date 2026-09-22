@@ -1,40 +1,54 @@
-% Case-D tangential lever variation for both directions of the achieved
-% angular offset about t_1. Error bars show the sample standard deviation of the three
-% repetitions at each setting.
+% Generated from the archived contact-error endpoint summary.
+% Error bars show sample standard deviations across three repetitions.
 \begin{tikzpicture}
-\pgfplotsset{
-  every axis/.append style={
-    width=11.5cm, height=7.0cm,
-    xmin=-48, xmax=48, ymin=-13, ymax=13,
-    xtick={-40,-20,0,20,40},
-    ytick={-12,-9,-6,-3,0,3,6,9,12},
-    ymajorgrids=true,
-    xmajorgrids=false,
+\begin{axis}[
+    width=15.5cm, height=7.0cm,
+    xmin=-108, xmax=108, ymin=-37, ymax=37,
+    xtick={-100,-90,-80,-40,-20,-10,0,10,20,40,80,90,100}, ytick={-30,-20,-10,0,10,20,30},
+    xlabel={Tangential CoC Position, \(r_{c,t_2}\) [mm]},
+    ylabel={Angular Error About \(t_1\), \(\theta_{\mathrm{err},t_1}\) [\(^\circ\)]},
+    ymajorgrids=true, xmajorgrids=true,
     grid style={gray!25, very thin},
     tick label style={font=\footnotesize},
     label style={font=\footnotesize},
     legend style={font=\scriptsize, draw=none, fill=none,
-                  cells={anchor=west}, at={(0.5,-0.24)}, anchor=north,
-                  legend columns=2, column sep=1.2em},
-    every axis plot/.append style={thick, mark size=2.1pt},
-  },
-}
-\begin{axis}[
-    xlabel={Tangential CoC Position, \(r_{c,t_2}\) [mm]},
-    ylabel={Contact Response About \(t_1\), \(\gamma_{t_1}\) [\(^\circ\)]},
+                  cells={anchor=west}, at={(0.5,-0.24)}, anchor=north},
+    every axis plot/.append style={thick, mark size=2.3pt},
+    x grid style={gray!65, thin, densely dotted},
+    xticklabel style={rotate=0, anchor=north, font=\fontsize{8}{10}\selectfont},
+    xlabel style={yshift=0pt},
   ]
-\addplot[black, mark=o, error bars/.cd, y dir=both, y explicit] coordinates {
-  (-40,0.18) +- (0,0.07) (-20,0.99) +- (0,0.44)
-  (-10,7.45) +- (0,0.02) (0,7.57) +- (0,0.01)
-  (10,7.67) +- (0,0.01) (20,7.73) +- (0,0.01)
-  (40,7.87) +- (0,0.01)};
-\addlegendentry{Achieved Angular Offset, \(\theta_{\mathrm{ach},t_1}=9.32^\circ\)}
-\addplot[blue!55!black, mark=square, error bars/.cd, y dir=both, y explicit] coordinates {
-  (-40,-11.30) +- (0,0.11) (-20,-11.18) +- (0,0.09)
-  (-10,-11.14) +- (0,0.07) (0,-10.83) +- (0,0.06)
-  (10,-10.36) +- (0,0.21) (20,-5.01) +- (0,0.07)
-  (40,-0.09) +- (0,0.01)};
-\addlegendentry{Achieved Angular Offset, \(\theta_{\mathrm{ach},t_1}=-9.36^\circ\)}
-
+\addplot[black, mark=o, mark options={fill=white},
+         error bars/.cd, y dir=both, y explicit] coordinates {
+  (-100,31.766666667) +- (0,1.331628076)
+  (-90,10.523333333) +- (0,0.385529938)
+  (-80,9.346666667) +- (0,0.015275252)
+  (-40,9.126666667) +- (0,0.070237692)
+  (-20,8.326666667) +- (0,0.423595719)
+  (-10,1.890000000) +- (0,0.010000000)
+  (0,1.750000000) +- (0,0.000000000)
+  (10,1.680000000) +- (0,0.010000000)
+  (20,1.603333333) +- (0,0.005773503)
+  (40,1.480000000) +- (0,0.010000000)
+  (80,1.166666667) +- (0,0.030550505)
+  (90,1.113333333) +- (0,0.064291005)
+  (100,0.830000000) +- (0,0.060827625)};
+\addlegendentry{Measured Angular Offset, \(\theta_{\mathrm{meas},t_1}=9.33^\circ\)}
+\addplot[blue!55!black, mark=square, mark options={fill=white},
+         error bars/.cd, y dir=both, y explicit] coordinates {
+  (-100,2.763333333) +- (0,0.141891978)
+  (-90,2.480000000) +- (0,0.030000000)
+  (-80,2.230000000) +- (0,0.078102497)
+  (-40,1.986666667) +- (0,0.020816660)
+  (-20,1.863333333) +- (0,0.011547005)
+  (-10,1.816666667) +- (0,0.011547005)
+  (0,1.413333333) +- (0,0.056862407)
+  (10,0.936666667) +- (0,0.214553801)
+  (20,-4.396666667) +- (0,0.055075705)
+  (40,-9.236666667) +- (0,0.030550505)
+  (80,-9.556666667) +- (0,0.028867513)
+  (90,-11.906666667) +- (0,0.565714887)
+  (100,-33.983333333) +- (0,1.156820355)};
+\addlegendentry{Measured Angular Offset, \(\theta_{\mathrm{meas},t_1}=-9.38^\circ\)}
 \end{axis}
 \end{tikzpicture}

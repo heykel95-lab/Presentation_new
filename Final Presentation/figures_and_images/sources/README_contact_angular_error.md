@@ -2,7 +2,7 @@
 
 The endpoint panels (`baseline_response`, `rotation_stiffness`,
 `translation_stiffness`, `CoC_position`) contain the regenerated means and
-sample standard deviations from 69 terminal endpoint reports over 23 settings.
+sample standard deviations from 93 terminal endpoint reports over 31 settings.
 Terminal values were archived to 0.01 degree. A standard deviation displayed
 as 0.00 degree represents repeated rounded values, not zero uncertainty.
 
@@ -42,9 +42,12 @@ archived tool-to-reference normal-error component. It is not a subtraction of
 finite orientation-angle components. Zero refers to the calibrated normal,
 with residual calibration and mounting limitations.
 
-The CoC comparison includes -80 and +80 mm for both entry directions. All
-nine positions use three-repeat means and sample SD from the same calibrated
-normal-error endpoint records as the thesis. The 12 additional reports and
-matched effective settings are audited in `wider_coc_source_audit.json` in
-the thesis contact-angular-error data folder. Representative wrench traces
-remain at -40 mm, TCP and +40 mm.
+The CoC comparison includes thirteen positions from -100 to +100 mm,
+including +/-90 mm, with three-repeat means and sample SD. The 24 trials
+at +/-90 and +/-100 mm were acquired on 2026-09-21 in a later session with
+matching saved calibration and impedance parameters. All original points
+remain unchanged. See experiments/coc_extension/README.md and its audit.
+Representative wrench traces remain at -40 mm, TCP and +40 mm.
+
+Regenerate both plot variants from the control checkout with
+`python3 analysis/make_coc_position_figure.py` after `git lfs pull`.

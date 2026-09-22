@@ -1,0 +1,37 @@
+{
+  "slide_title": "Real-time control",
+  "physical_slide": 8,
+  "footer": 7,
+  "shape": "Equation - cartesian_torque_mapping",
+  "change": "Remove the cart subscript from tau. The torque mapping is tau = J^T(q) F.",
+  "font": "Cambria Math",
+  "font_size_pt": 22,
+  "equation_count": 29,
+  "pdf_slide_edit": {
+    "removed_cart": 1,
+    "shifted_tail_glyphs": 7,
+    "removed_stale_accessibility_text": 1
+  },
+  "pdf_asset_edit": {
+    "removed_cart": 1,
+    "shifted_tail_glyphs": 7,
+    "removed_stale_accessibility_text": 0
+  },
+  "overview_chapters": [
+    "Introduction",
+    "Cartesian controller",
+    "Contact experiments",
+    "Contact results",
+    "Null-space control and experiments",
+    "Conclusion and future work"
+  ],
+  "verification": {
+    "only_target_slide_xml_changed": true,
+    "all_other_equation_tokens_and_structures_preserved": true,
+    "all_other_33_pdf_pages_pixel_identical": true,
+    "changed_page_differences_confined_to_equation": true,
+    "existing_notes_and_speaking_files_byte_identical": true,
+    "native_equation_count": 29,
+    "revised_equation_and_slide_visually_reviewed": true
+  }
+}

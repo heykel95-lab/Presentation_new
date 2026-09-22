@@ -1,0 +1,125 @@
+{
+  "date": "2026-09-22",
+  "method": "Direct crops from compiled Thesis.pdf",
+  "thesis_pdf_sha256": "7af59561699c6e4fec7b7f2711037029d0942a924c9ecc8f1247ab6a83a229a1",
+  "targets": [
+    {
+      "asset": "angular_quantities",
+      "physical": 32,
+      "footer": "B6",
+      "slide": "ppt/slides/slide12.xml",
+      "shape": "Figure - angular_quantities",
+      "thesis_page": 79,
+      "caption": "Figure 4.2:",
+      "clip": [
+        120,
+        230,
+        472,
+        373
+      ],
+      "pdf_sha256": "f31da7386e5f31de8341b58ac927162dc8e53075cc12e3d99e6ac669b11d5d3b",
+      "png_sha256": "7fe1a5aa91e2e2fed4e29f4f210d3f591b4ddd89bbd7a49223a132a8e148695e",
+      "old_box_pt": [
+        234.5408661417323,
+        171.36614173228347,
+        725.4591338582677,
+        378.633937007874
+      ],
+      "new_box_pt": [
+        234.5408661417323,
+        175.28228346456692,
+        725.4591338582677,
+        374.71779527559056
+      ],
+      "media_part": "ppt/media/image38.png"
+    },
+    {
+      "asset": "thesis_figure_1_1",
+      "physical": 34,
+      "footer": "B8",
+      "slide": "ppt/slides/slide40.xml",
+      "shape": "Surface entry concept",
+      "thesis_page": 28,
+      "caption": "Figure 1.1:",
+      "clip": [
+        108,
+        574,
+        479,
+        695.5
+      ],
+      "pdf_sha256": "88f69c679477c6554c8651b3283ab4b106ffdc6f921396000117f94eebc00436",
+      "png_sha256": "56fd78d6848546c1ec15d7f685e8fb9db7ba87b3e605a2175290f75c568296c4",
+      "old_box_pt": [
+        70.0,
+        140.72771653543307,
+        890.0,
+        409.27220472440945
+      ],
+      "new_box_pt": [
+        70.0,
+        140.72771653543307,
+        890.0,
+        409.27220472440945
+      ],
+      "media_part": "ppt/media/thesis_figure_1_1_corrected.png"
+    }
+  ],
+  "changed_pptx_parts": [
+    "ppt/media/image38.png",
+    "ppt/slides/slide12.xml",
+    "ppt/media/thesis_figure_1_1_corrected.png",
+    "ppt/slides/slide40.xml"
+  ],
+  "main_slides": 26,
+  "hidden_backups": 8,
+  "total_slides": 34,
+  "supplementary_pages": 8,
+  "thesis_pages": 122,
+  "changed_thesis_pages": [
+    28
+  ],
+  "thesis_text_and_text_positions_unchanged": true,
+  "other_32_slides_pixel_identical": true,
+  "notes_videos_equations_order_sections_unchanged": true,
+  "affected_slides_unchanged_outside_figure": true,
+  "supplementary_matches_full_pdf": true,
+  "surface_endpoints_align_with_dashed_reference": true,
+  "physical_surface_angle_degrees": 19.00001067562279,
+  "visual_inspection": {
+    "slides": [
+      32,
+      34
+    ],
+    "thesis_pages": [
+      28,
+      79
+    ],
+    "passed": true
+  },
+  "source_edit": "Shorten red and blue surface segments at horizontal coordinates -2.40 and +2.40; retain original canvas and all other drawing commands.",
+  "installed_file_sha256": {
+    "/home/hm-panda/Desktop/Presentation_new/Final Presentation/Thesis_Defense_gg0_v3.pptx": "e45d3b6406f798f8175db16bfb973a3e1cb732878cae173852d22ff321337023",
+    "/home/hm-panda/Desktop/Presentation_new/Final Presentation/Thesis_Defense_gg0_v3.pdf": "6e3b88abccbb34599cc8a1957d3d157f83e30b93f2e37395ac2b96b4c87f1526",
+    "/home/hm-panda/Desktop/Presentation_new/Final Presentation/Supplementary_slides.pdf": "6767f8cc9ceb79f37d38a047d619831e949b73c4f42834aa656fc8dbe49c74a0",
+    "/home/hm-panda/Desktop/Presentation_new/Final Presentation/figures_and_images/manifest.json": "da41d8c8380d2b7814f9e08e6e8338d5ea857c6b5a067529766b2f4256daee52",
+    "/home/hm-panda/Desktop/Presentation_new/Final Presentation/figures_and_images/sources/thesis_figure_1_1_source.tex": "ac61fe0819fae16c226f39860a6a9bcda95d6c5f96d65596e2eb6dc4c2b2e487",
+    "/home/hm-panda/Desktop/MyOwn-thesis/figures/ch01/surface_entry_concept.tex": "ac61fe0819fae16c226f39860a6a9bcda95d6c5f96d65596e2eb6dc4c2b2e487",
+    "/home/hm-panda/Desktop/MyOwn-thesis/FIGURE_STYLE.md": "edf21f45b45837660a4555efd17ea83418ce121da349651dad0da35feb0d410c",
+    "/home/hm-panda/Desktop/MyOwn-thesis/Thesis.pdf": "7af59561699c6e4fec7b7f2711037029d0942a924c9ecc8f1247ab6a83a229a1",
+    "/home/hm-panda/Desktop/Presentation_new/Final Presentation/figures_and_images/angular_quantities.pdf": "f31da7386e5f31de8341b58ac927162dc8e53075cc12e3d99e6ac669b11d5d3b",
+    "/home/hm-panda/Desktop/MyOwn-thesis/figures/ch04/surface_reference_geometry.pdf": "f31da7386e5f31de8341b58ac927162dc8e53075cc12e3d99e6ac669b11d5d3b",
+    "/home/hm-panda/Desktop/Presentation_new/Final Presentation/figures_and_images/angular_quantities.png": "7fe1a5aa91e2e2fed4e29f4f210d3f591b4ddd89bbd7a49223a132a8e148695e",
+    "/home/hm-panda/Desktop/MyOwn-thesis/figures/ch04/surface_reference_geometry.png": "7fe1a5aa91e2e2fed4e29f4f210d3f591b4ddd89bbd7a49223a132a8e148695e",
+    "/home/hm-panda/Desktop/Presentation_new/Final Presentation/figures_and_images/angular_quantities.svg": "00853887913f0de515f09f868391bd7cba89ea02136f0195e2f1b6e0ee5a8c70",
+    "/home/hm-panda/Desktop/MyOwn-thesis/figures/ch04/surface_reference_geometry.svg": "00853887913f0de515f09f868391bd7cba89ea02136f0195e2f1b6e0ee5a8c70",
+    "/home/hm-panda/Desktop/Presentation_new/Final Presentation/figures_and_images/thesis_figure_1_1.pdf": "88f69c679477c6554c8651b3283ab4b106ffdc6f921396000117f94eebc00436",
+    "/home/hm-panda/Desktop/MyOwn-thesis/figures/ch01/surface_entry_concept.pdf": "88f69c679477c6554c8651b3283ab4b106ffdc6f921396000117f94eebc00436",
+    "/home/hm-panda/Desktop/Presentation_new/Final Presentation/figures_and_images/thesis_figure_1_1.png": "56fd78d6848546c1ec15d7f685e8fb9db7ba87b3e605a2175290f75c568296c4",
+    "/home/hm-panda/Desktop/MyOwn-thesis/figures/ch01/surface_entry_concept.png": "56fd78d6848546c1ec15d7f685e8fb9db7ba87b3e605a2175290f75c568296c4",
+    "/home/hm-panda/Desktop/Presentation_new/Final Presentation/figures_and_images/thesis_figure_1_1.svg": "0a2e779b71185ae26e3149f556da893cdc92c2b60fa29d83856838004f6244f0",
+    "/home/hm-panda/Desktop/MyOwn-thesis/figures/ch01/surface_entry_concept.svg": "0a2e779b71185ae26e3149f556da893cdc92c2b60fa29d83856838004f6244f0"
+  },
+  "sources_and_rendered_assets_identical_between_repositories": true,
+  "archive": "experiments/media_update/archive/20260922_before_direct_thesis_figures",
+  "all_other_guarded_input_hashes_unchanged": true
+}

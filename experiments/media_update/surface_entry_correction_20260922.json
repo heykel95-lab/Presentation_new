@@ -1,0 +1,99 @@
+{
+  "date": "2026-09-22",
+  "new_slide": {
+    "title": "Sources of angular offset",
+    "physical": 39,
+    "footer": "B13",
+    "path": "ppt/slides/slide40.xml",
+    "hidden": true
+  },
+  "main_slides": 26,
+  "hidden_backups": 13,
+  "total_slides": 39,
+  "supplementary_pages": 13,
+  "figure_box_pt": [
+    70.0,
+    137.72097315437622,
+    890.0,
+    412.2790268456238
+  ],
+  "figure_png_sha256": "8e97abd8a2c98a639fec21e4fbbd85267eb5ef2a70054cc39626a318f588bf74",
+  "all_existing_slides_notes_and_media_unchanged": true,
+  "all_relationships_resolve": true,
+  "new_slide_notes_empty": true,
+  "overview_chapters": [
+    "Introduction",
+    "Cartesian controller",
+    "Contact experiments",
+    "Contact results",
+    "Null-space control and experiments",
+    "Conclusion and future work"
+  ],
+  "changed_existing_parts": [
+    "[Content_Types].xml",
+    "ppt/presentation.xml",
+    "ppt/_rels/presentation.xml.rels",
+    "docProps/app.xml"
+  ],
+  "new_parts": [
+    "ppt/media/thesis_figure_1_1_corrected.png",
+    "ppt/notesSlides/_rels/notesSlide40.xml.rels",
+    "ppt/notesSlides/notesSlide40.xml",
+    "ppt/slides/_rels/slide40.xml.rels",
+    "ppt/slides/slide40.xml"
+  ],
+  "pdf_method": "All 38 existing PowerPoint PDF pages retained. New backup uses the corrected shared vector figure.",
+  "existing_38_pdf_pages_pixel_identical": true,
+  "supplementary_matches_full_pdf": true,
+  "existing_12_supplementary_pages_pixel_identical": true,
+  "native_equation_count": 29,
+  "original_diagram_geometry_and_angle_arcs_unchanged": true,
+  "other_thesis_sources_unchanged": true,
+  "thesis_pages": 122,
+  "changed_thesis_pdf_pages": [
+    28,
+    29,
+    30
+  ],
+  "thesis_figure_physical_page": 28,
+  "thesis_figure_printed_page": 1,
+  "no_thesis_prose_edits": true,
+  "final_latex_pass_no_unresolved_references_or_overfull_boxes": true,
+  "visual_review": {
+    "presentation_physical_page": 39,
+    "thesis_physical_pages": [
+      28,
+      29
+    ],
+    "renderer": "Poppler pdftoppm",
+    "passed": true
+  },
+  "installed_file_sha256": {
+    "/home/hm-panda/Desktop/Presentation_new/Final Presentation/Thesis_Defense_gg0_v3.pptx": "74a8ebaceb20a707c9baae025f406d2c9bdb367003839e873bd657b98bb0ecc9",
+    "/home/hm-panda/Desktop/Presentation_new/Final Presentation/Thesis_Defense_gg0_v3.pdf": "e0c970d31cde8869aaa5f16aab1640a318622193c241d1d12c56714956525964",
+    "/home/hm-panda/Desktop/Presentation_new/Final Presentation/Supplementary_slides.pdf": "2c56668b978ec7614c4ff7385bdd1ad11daea98e7f7c1642c0aa2f02ad16d443",
+    "/home/hm-panda/Desktop/Presentation_new/Final Presentation/figures_and_images/manifest.json": "22b98899307245a2bf2bd9a5aad93613961a5676491dc5c1ab0008348fb517bd",
+    "/home/hm-panda/Desktop/Presentation_new/Final Presentation/figures_and_images/sources/thesis_figure_1_1_source.tex": "e02e318cea89abebfd084f2dcdf75583c20a19d7bbd3022ce4c4cd080a4f7e9b",
+    "/home/hm-panda/Desktop/Presentation_new/Final Presentation/figures_and_images/sources/render_thesis_figure_1_1.tex": "8d2516630c20215e9f3eabe24004a425673531cfa5db8f04081719e5bcc4825c",
+    "/home/hm-panda/Desktop/MyOwn-thesis/figures/ch01/surface_entry_concept.tex": "e02e318cea89abebfd084f2dcdf75583c20a19d7bbd3022ce4c4cd080a4f7e9b",
+    "/home/hm-panda/Desktop/MyOwn-thesis/figures/ch01/render_surface_entry_concept.tex": "80f0442dd7de9c26f6d4e8bc549f7793419f8c21109d484de1f866fb473d8b99",
+    "/home/hm-panda/Desktop/MyOwn-thesis/FIGURE_STYLE.md": "2ff259ef00269f82306bb8c26d7d6794524b1602c42eceeff285440600af6f31",
+    "/home/hm-panda/Desktop/MyOwn-thesis/Thesis.pdf": "03fe9140d65e0e8ac8e37c1e94bcff019664b0e614f94311a0cdc6fb89015fc4",
+    "/home/hm-panda/Desktop/Presentation_new/Final Presentation/figures_and_images/thesis_figure_1_1.pdf": "7ac054ab5db784c14a23cc6f716f02dee36a9c2ce1afd8e01cf078e0931fa314",
+    "/home/hm-panda/Desktop/MyOwn-thesis/figures/ch01/surface_entry_concept.pdf": "7ac054ab5db784c14a23cc6f716f02dee36a9c2ce1afd8e01cf078e0931fa314",
+    "/home/hm-panda/Desktop/Presentation_new/Final Presentation/figures_and_images/thesis_figure_1_1.png": "8e97abd8a2c98a639fec21e4fbbd85267eb5ef2a70054cc39626a318f588bf74",
+    "/home/hm-panda/Desktop/MyOwn-thesis/figures/ch01/surface_entry_concept.png": "8e97abd8a2c98a639fec21e4fbbd85267eb5ef2a70054cc39626a318f588bf74",
+    "/home/hm-panda/Desktop/Presentation_new/Final Presentation/figures_and_images/thesis_figure_1_1.svg": "a17394bb104a3efc3b2322c86d56e3d75f1cb324e932c651b055d975e345f556",
+    "/home/hm-panda/Desktop/MyOwn-thesis/figures/ch01/surface_entry_concept.svg": "a17394bb104a3efc3b2322c86d56e3d75f1cb324e932c651b055d975e345f556"
+  },
+  "sources_and_rendered_assets_identical_between_repositories": true,
+  "archive": "experiments/surface_entry_correction/archive/20260922_before",
+  "frozen_file_sha256": {
+    "/home/hm-panda/Desktop/MyOwn-thesis/TODOS.md": "37bd4b14bcc694176e57c758dc0a447c38a9f13372eed5ab8d593aac034ab771",
+    "/home/hm-panda/Desktop/Presentation_new/Final Presentation/figures_and_images/native_equations.json": "945bcf419db46e5bad19aaaa14cb3d50b6f6ecc6e53e8f8b1182101e60383e10",
+    "/home/hm-panda/Desktop/Presentation_new/Final Presentation/Speaker_notes_and_timing.txt": "339b7beaf775db8ac69291800a840b94805ceccd5155b91e6f7890198305ee43",
+    "/home/hm-panda/Desktop/Presentation_new/Final Presentation/Thesis_Defense_Speaking_Script_updated.pdf": "1eac49abc1c7e298d34d3f5138a4a9efc5874608f0ac5478a44b6293bf4bf048",
+    "/home/hm-panda/Desktop/Presentation_new/Final Presentation/Thesis_Defense_Speaking_Script.pdf": "1eac49abc1c7e298d34d3f5138a4a9efc5874608f0ac5478a44b6293bf4bf048",
+    "/home/hm-panda/Desktop/Presentation_new/Final Presentation/Speaking/Thesis_Defense_Speaking_Script.tex": "3eba8ab195904af0307e9646fc850c68a9deca8c696679b6d6a7f8fd9b04dce1"
+  }
+}

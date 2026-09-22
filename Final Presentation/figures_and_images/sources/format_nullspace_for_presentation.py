@@ -30,15 +30,8 @@ def sigma_panel(ax, groups):
             ha='left', va='bottom', fontsize=8)
     return result
 
-def value_label(value):
-    if 0 < abs(value) < 0.1:
-        return f'${value*100:.1f}' + r'\times10^{-2}$'
-    return f'${value:.2f}$'
-
 analysis.sigma_panel = sigma_panel
-analysis._net_value_label = value_label
 groups = analysis.load_conditions()
 if len(groups) != len(analysis.CONDITIONS):
     raise ValueError('All four conditions are required')
-analysis.net_displacements(groups)
 analysis.make_figure(groups, str(args.out_dir.resolve()))

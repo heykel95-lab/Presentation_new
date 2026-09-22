@@ -1,0 +1,129 @@
+{
+  "date": "2026-09-22",
+  "reference_thesis_commit": "be7aa4d0865eea56af36aeefb4594c29ca7dc35e",
+  "angular_pdf_source_commit": "33b7dc535754da84779a31318f6912d0860d62d2",
+  "restored_figures": [
+    {
+      "physical": 32,
+      "footer": "B6",
+      "title": "Angular quantities",
+      "path": "ppt/slides/slide12.xml",
+      "shape": "Figure - angular_quantities",
+      "asset": "angular_quantities",
+      "description": "Committed thesis figure appearance restored: blue angular-error arc inside the red measured-offset arc. Surface-frame inset has n_s leftwards, t_2 upwards and t_1 out of the page. Reference PDF from thesis commit be7aa4d, matching source from 33b7dc5.",
+      "old_box_pt": [
+        234.5408661417323,
+        174.62062992125985,
+        725.4591338582677,
+        375.3793700787402
+      ],
+      "new_box_pt": [
+        234.5408661417323,
+        171.36614173228347,
+        725.4591338582677,
+        378.633937007874
+      ],
+      "media_part": "ppt/media/image38.png",
+      "restored_png_sha256": "18e2e47983082db968d213656b72de60079989b29daff46d2130bbf45c40c3c8"
+    },
+    {
+      "physical": 35,
+      "footer": "B9",
+      "title": "Sources of angular offset",
+      "path": "ppt/slides/slide40.xml",
+      "shape": "Surface entry concept",
+      "asset": "thesis_figure_1_1",
+      "description": "Original thesis surface-entry diagram. Single-row legend: Configured surface, Physical surface, Tool face. Black dashed desired-direction datum and both difference arcs retained. Figure source from thesis commit be7aa4d.",
+      "old_box_pt": [
+        70.0,
+        137.72094488188975,
+        890.0,
+        412.27897637795274
+      ],
+      "new_box_pt": [
+        70.0,
+        140.72771653543307,
+        890.0,
+        409.27220472440945
+      ],
+      "media_part": "ppt/media/thesis_figure_1_1_corrected.png",
+      "restored_png_sha256": "8f3d0193663b255602e074e8e67fc7b7e02771c80c8a7bfdc388347326505334"
+    }
+  ],
+  "changed_pptx_parts": [
+    "ppt/media/image38.png",
+    "ppt/slides/slide12.xml",
+    "ppt/media/thesis_figure_1_1_corrected.png",
+    "ppt/slides/slide40.xml"
+  ],
+  "main_slides": 26,
+  "hidden_backups": 9,
+  "total_slides": 35,
+  "supplementary_pages": 9,
+  "native_equation_count": 29,
+  "all_other_slide_objects_notes_media_order_and_sections_unchanged": true,
+  "other_33_pdf_pages_pixel_identical": true,
+  "affected_slides_unchanged_outside_figure_rectangles": true,
+  "supplementary_matches_full_pdf": true,
+  "overview_refreshed_from_sections": [
+    "Introduction",
+    "Cartesian controller",
+    "Contact experiments",
+    "Contact results",
+    "Null-space control and experiments",
+    "Conclusion and future work"
+  ],
+  "thesis_pages": 122,
+  "changed_thesis_pdf_pages": [
+    28,
+    29,
+    30,
+    79
+  ],
+  "thesis_figure_physical_pages": {
+    "surface_entry": 28,
+    "angular": 79
+  },
+  "no_thesis_prose_changes": true,
+  "final_latex_pass_no_unresolved_references_or_overfull_boxes": true,
+  "installed_file_sha256": {
+    "/home/hm-panda/Desktop/Presentation_new/Final Presentation/Thesis_Defense_gg0_v3.pptx": "250f6957bc5f877d625c3535259316079bc8d36256b6157afab5c651b8da1eec",
+    "/home/hm-panda/Desktop/Presentation_new/Final Presentation/Thesis_Defense_gg0_v3.pdf": "ac907eea9553e492d76709f72c6b1e5de673ff237bda565a5de0570ac96e9533",
+    "/home/hm-panda/Desktop/Presentation_new/Final Presentation/Supplementary_slides.pdf": "fc1061dc12bb9d664c8cbe8f4ec9000d0ac2f75c67dd90a7043415a85c67599b",
+    "/home/hm-panda/Desktop/Presentation_new/Final Presentation/figures_and_images/manifest.json": "4a0464501b667b60bd47b2538fcb3d71f7afd8425399df2f1024a87750e47129",
+    "/home/hm-panda/Desktop/Presentation_new/Final Presentation/figures_and_images/sources/angular_quantities.tex": "51e4158c4720bf97afa0f4c4e3683423ad96de3d900aeeded366843e8e4ea5d1",
+    "/home/hm-panda/Desktop/Presentation_new/Final Presentation/figures_and_images/sources/originals/ch04/surface_reference_geometry.tex": "7d328e667fc1555073e159913e9904f870d918429bdd9b10de2c4fa4cfed973d",
+    "/home/hm-panda/Desktop/Presentation_new/Final Presentation/figures_and_images/sources/thesis_figure_1_1_source.tex": "4c86d012360fba42aeb4c470923bf5d1bf975c508df380c6021b809f50ea0490",
+    "/home/hm-panda/Desktop/MyOwn-thesis/figures/ch01/surface_entry_concept.tex": "4c86d012360fba42aeb4c470923bf5d1bf975c508df380c6021b809f50ea0490",
+    "/home/hm-panda/Desktop/MyOwn-thesis/figures/ch04/surface_reference_geometry.tex": "7d328e667fc1555073e159913e9904f870d918429bdd9b10de2c4fa4cfed973d",
+    "/home/hm-panda/Desktop/MyOwn-thesis/figures/ch04/render_surface_reference_geometry.tex": "041538ed918b4350019bba85d88991b0f5746fae0168eeea5fc9b5babae0d37f",
+    "/home/hm-panda/Desktop/MyOwn-thesis/FIGURE_STYLE.md": "935ef0001d11ef3da5a25da6d61339a013e771f3c6b9815181dd5e7b10a3c112",
+    "/home/hm-panda/Desktop/MyOwn-thesis/Thesis.pdf": "03e8e4ac3296445e46d781b2a57dda56c7918b2b3080e3c0459db2a3a8096ace",
+    "/home/hm-panda/Desktop/Presentation_new/Final Presentation/figures_and_images/angular_quantities.pdf": "27384398cf8d4f3c0ff6af1cd6298cdab3f7531c9a9bdfdd05c0ba81525cdfd9",
+    "/home/hm-panda/Desktop/MyOwn-thesis/figures/ch04/surface_reference_geometry.pdf": "27384398cf8d4f3c0ff6af1cd6298cdab3f7531c9a9bdfdd05c0ba81525cdfd9",
+    "/home/hm-panda/Desktop/Presentation_new/Final Presentation/figures_and_images/angular_quantities.png": "18e2e47983082db968d213656b72de60079989b29daff46d2130bbf45c40c3c8",
+    "/home/hm-panda/Desktop/MyOwn-thesis/figures/ch04/surface_reference_geometry.png": "18e2e47983082db968d213656b72de60079989b29daff46d2130bbf45c40c3c8",
+    "/home/hm-panda/Desktop/Presentation_new/Final Presentation/figures_and_images/angular_quantities.svg": "0256284da24325eed6a4c66ae5d6cc41d130f6e0e5d91d710b2962a3695c325f",
+    "/home/hm-panda/Desktop/MyOwn-thesis/figures/ch04/surface_reference_geometry.svg": "0256284da24325eed6a4c66ae5d6cc41d130f6e0e5d91d710b2962a3695c325f",
+    "/home/hm-panda/Desktop/Presentation_new/Final Presentation/figures_and_images/thesis_figure_1_1.pdf": "b37946c8c7150daf26a78c50efb5be9a79eacdd48ae21fd8177fef5a860b497e",
+    "/home/hm-panda/Desktop/MyOwn-thesis/figures/ch01/surface_entry_concept.pdf": "b37946c8c7150daf26a78c50efb5be9a79eacdd48ae21fd8177fef5a860b497e",
+    "/home/hm-panda/Desktop/Presentation_new/Final Presentation/figures_and_images/thesis_figure_1_1.png": "8f3d0193663b255602e074e8e67fc7b7e02771c80c8a7bfdc388347326505334",
+    "/home/hm-panda/Desktop/MyOwn-thesis/figures/ch01/surface_entry_concept.png": "8f3d0193663b255602e074e8e67fc7b7e02771c80c8a7bfdc388347326505334",
+    "/home/hm-panda/Desktop/Presentation_new/Final Presentation/figures_and_images/thesis_figure_1_1.svg": "4138adc0bc567c59cbaa0a0cb240d4ae5e62771e587a53cb3a99a74bb7c499cd",
+    "/home/hm-panda/Desktop/MyOwn-thesis/figures/ch01/surface_entry_concept.svg": "4138adc0bc567c59cbaa0a0cb240d4ae5e62771e587a53cb3a99a74bb7c499cd"
+  },
+  "sources_and_rendered_assets_identical_between_repositories": true,
+  "visual_inspection": {
+    "slides": [
+      32,
+      35
+    ],
+    "thesis_pages": [
+      28,
+      79
+    ],
+    "passed": true
+  },
+  "archive": "experiments/backup_figure_restore/archive/20260922_before_committed_restore",
+  "all_other_tracked_input_hashes_unchanged": true
+}

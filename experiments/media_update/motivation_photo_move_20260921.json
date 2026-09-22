@@ -1,0 +1,39 @@
+{
+  "changed_physical_slides": [
+    1,
+    2
+  ],
+  "photo_source": "Final Presentation/figures_and_images/title_robot.jpg",
+  "photo_sha256": "05c5e10557c885a7ff7cf0486572e80f8a60cf0837c94389abcd08002b56a325",
+  "photo_destination_pt": [
+    521.6,
+    71.50104968509447,
+    921.6,
+    478.4989503149055
+  ],
+  "overview_chapters": [
+    "Introduction",
+    "Cartesian controller",
+    "Contact experiments",
+    "Contact results",
+    "Null-space control and experiments",
+    "Conclusion and future work"
+  ],
+  "pdf_method": "Preserve the existing PDF page content streams. Remove the title photograph and old Motivation figure drawing, translate the original Motivation text blocks, and insert the unmodified photograph. Original fonts and glyph spacing retained.",
+  "verification": {
+    "changed_package_parts": [
+      "ppt/slides/slide1.xml",
+      "ppt/slides/slide2.xml",
+      "ppt/slides/_rels/slide1.xml.rels",
+      "ppt/slides/_rels/slide2.xml.rels"
+    ],
+    "unaffected_pdf_pages_pixel_identical": 31,
+    "slide_headers_and_footers_unchanged": true,
+    "all_slide_text_unchanged": true,
+    "notes_and_speaking_files_unchanged": true,
+    "photo_original_bytes_and_aspect_ratio_preserved": true,
+    "all_package_relationships_resolve": true,
+    "poppler_visual_review_passed": true,
+    "poppler_title_content_outside_photo_pixel_identical": true
+  }
+}

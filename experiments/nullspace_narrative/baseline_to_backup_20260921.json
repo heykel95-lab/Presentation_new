@@ -1,0 +1,422 @@
+{
+  "date": "2026-09-21",
+  "moved_slide": "Baseline angular error",
+  "previous_physical": 15,
+  "new_physical": 34,
+  "new_footer": "B11",
+  "main_slides": 23,
+  "hidden_backups": 11,
+  "total_slides": 34,
+  "supplementary_pages": 11,
+  "native_equation_count": 29,
+  "notes_and_media_unchanged": true,
+  "slide_contents_unchanged_except_footer_and_hidden_status": true,
+  "frozen_file_sha256": {
+    "Final Presentation/Speaker_notes_and_timing.txt": "339b7beaf775db8ac69291800a840b94805ceccd5155b91e6f7890198305ee43",
+    "Final Presentation/Thesis_Defense_Speaking_Script_updated.pdf": "1eac49abc1c7e298d34d3f5138a4a9efc5874608f0ac5478a44b6293bf4bf048",
+    "Final Presentation/Thesis_Defense_Speaking_Script.pdf": "1eac49abc1c7e298d34d3f5138a4a9efc5874608f0ac5478a44b6293bf4bf048",
+    "Final Presentation/Speaking/Thesis_Defense_Speaking_Script.tex": "3eba8ab195904af0307e9646fc850c68a9deca8c696679b6d6a7f8fd9b04dce1"
+  },
+  "changed_pptx_parts": [
+    "ppt/slides/slide32.xml",
+    "ppt/slides/slide33.xml",
+    "ppt/slides/slide17.xml",
+    "ppt/slides/slide18.xml",
+    "ppt/slides/slide19.xml",
+    "ppt/slides/slide20.xml",
+    "ppt/slides/slide10.xml",
+    "ppt/presentation.xml",
+    "docProps/app.xml",
+    "ppt/slides/slide24.xml",
+    "ppt/slides/slide31.xml",
+    "ppt/slides/slide13.xml"
+  ],
+  "overview_chapters": [
+    "Introduction",
+    "Cartesian controller",
+    "Contact experiments",
+    "Contact results",
+    "Null-space control and experiments",
+    "Conclusion and future work"
+  ],
+  "slide_order": [
+    {
+      "physical": 1,
+      "path": "ppt/slides/slide1.xml",
+      "title": "Master Thesis Presentation"
+    },
+    {
+      "physical": 2,
+      "path": "ppt/slides/slide2.xml",
+      "title": "Motivation"
+    },
+    {
+      "physical": 3,
+      "path": "ppt/slides/slide3.xml",
+      "title": "Contact demonstration"
+    },
+    {
+      "physical": 4,
+      "path": "ppt/slides/slide4.xml",
+      "title": "Overview"
+    },
+    {
+      "physical": 5,
+      "path": "ppt/slides/slide5.xml",
+      "title": "Cartesian pose"
+    },
+    {
+      "physical": 6,
+      "path": "ppt/slides/slide35.xml",
+      "title": "Surface frame"
+    },
+    {
+      "physical": 7,
+      "path": "ppt/slides/slide6.xml",
+      "title": "Cartesian impedance controller"
+    },
+    {
+      "physical": 8,
+      "path": "ppt/slides/slide7.xml",
+      "title": "Real-time control"
+    },
+    {
+      "physical": 9,
+      "path": "ppt/slides/slide9.xml",
+      "title": "Centre of compliance (CoC)"
+    },
+    {
+      "physical": 10,
+      "path": "ppt/slides/slide8.xml",
+      "title": "Translation–rotation coupling"
+    },
+    {
+      "physical": 11,
+      "path": "ppt/slides/slide11.xml",
+      "title": "Contact experiment"
+    },
+    {
+      "physical": 12,
+      "path": "ppt/slides/slide14.xml",
+      "title": "Normal-force plausibility assessment"
+    },
+    {
+      "physical": 13,
+      "path": "ppt/slides/slide15.xml",
+      "title": "Moment plausibility assessment"
+    },
+    {
+      "physical": 14,
+      "path": "ppt/slides/slide16.xml",
+      "title": "Commanded and estimated wrench"
+    },
+    {
+      "physical": 15,
+      "path": "ppt/slides/slide18.xml",
+      "title": "Effect of rotational stiffness"
+    },
+    {
+      "physical": 16,
+      "path": "ppt/slides/slide19.xml",
+      "title": "Effect of CoC position"
+    },
+    {
+      "physical": 17,
+      "path": "ppt/slides/slide20.xml",
+      "title": "Angular error and interaction wrench"
+    },
+    {
+      "physical": 18,
+      "path": "ppt/slides/slide10.xml",
+      "title": "Null-space controller"
+    },
+    {
+      "physical": 19,
+      "path": "ppt/slides/slide13.xml",
+      "title": "Null-space experiment"
+    },
+    {
+      "physical": 20,
+      "path": "ppt/slides/slide31.xml",
+      "title": "Cumulative joint motion"
+    },
+    {
+      "physical": 21,
+      "path": "ppt/slides/slide32.xml",
+      "title": "Jacobian conditioning"
+    },
+    {
+      "physical": 22,
+      "path": "ppt/slides/slide33.xml",
+      "title": "Joint motion over time"
+    },
+    {
+      "physical": 23,
+      "path": "ppt/slides/slide24.xml",
+      "title": "Conclusion"
+    },
+    {
+      "physical": 24,
+      "path": "ppt/slides/slide25.xml",
+      "title": "Null-space torques and projector"
+    },
+    {
+      "physical": 25,
+      "path": "ppt/slides/slide26.xml",
+      "title": "Disturbance demonstration"
+    },
+    {
+      "physical": 26,
+      "path": "ppt/slides/slide21.xml",
+      "title": "Cumulative joint motion: all settings"
+    },
+    {
+      "physical": 27,
+      "path": "ppt/slides/slide22.xml",
+      "title": "Jacobian conditioning: all settings"
+    },
+    {
+      "physical": 28,
+      "path": "ppt/slides/slide30.xml",
+      "title": "Joint motion: mean of three trials"
+    },
+    {
+      "physical": 29,
+      "path": "ppt/slides/slide28.xml",
+      "title": "Joint motion: all individual trials"
+    },
+    {
+      "physical": 30,
+      "path": "ppt/slides/slide29.xml",
+      "title": "Joint motion: one trial per setting"
+    },
+    {
+      "physical": 31,
+      "path": "ppt/slides/slide27.xml",
+      "title": "Net joint motion over time"
+    },
+    {
+      "physical": 32,
+      "path": "ppt/slides/slide23.xml",
+      "title": "Net joint motion"
+    },
+    {
+      "physical": 33,
+      "path": "ppt/slides/slide12.xml",
+      "title": "Angular quantities"
+    },
+    {
+      "physical": 34,
+      "path": "ppt/slides/slide17.xml",
+      "title": "Baseline angular error"
+    }
+  ],
+  "pdf_page_comparisons": [
+    {
+      "new_physical": 1,
+      "previous_physical": 1,
+      "changed_pixels": 0,
+      "identical_except_footer": true
+    },
+    {
+      "new_physical": 2,
+      "previous_physical": 2,
+      "changed_pixels": 0,
+      "identical_except_footer": true
+    },
+    {
+      "new_physical": 3,
+      "previous_physical": 3,
+      "changed_pixels": 0,
+      "identical_except_footer": true
+    },
+    {
+      "new_physical": 4,
+      "previous_physical": 4,
+      "changed_pixels": 0,
+      "identical_except_footer": true
+    },
+    {
+      "new_physical": 5,
+      "previous_physical": 5,
+      "changed_pixels": 0,
+      "identical_except_footer": true
+    },
+    {
+      "new_physical": 6,
+      "previous_physical": 6,
+      "changed_pixels": 0,
+      "identical_except_footer": true
+    },
+    {
+      "new_physical": 7,
+      "previous_physical": 7,
+      "changed_pixels": 0,
+      "identical_except_footer": true
+    },
+    {
+      "new_physical": 8,
+      "previous_physical": 8,
+      "changed_pixels": 0,
+      "identical_except_footer": true
+    },
+    {
+      "new_physical": 9,
+      "previous_physical": 9,
+      "changed_pixels": 0,
+      "identical_except_footer": true
+    },
+    {
+      "new_physical": 10,
+      "previous_physical": 10,
+      "changed_pixels": 0,
+      "identical_except_footer": true
+    },
+    {
+      "new_physical": 11,
+      "previous_physical": 11,
+      "changed_pixels": 0,
+      "identical_except_footer": true
+    },
+    {
+      "new_physical": 12,
+      "previous_physical": 12,
+      "changed_pixels": 0,
+      "identical_except_footer": true
+    },
+    {
+      "new_physical": 13,
+      "previous_physical": 13,
+      "changed_pixels": 0,
+      "identical_except_footer": true
+    },
+    {
+      "new_physical": 14,
+      "previous_physical": 14,
+      "changed_pixels": 0,
+      "identical_except_footer": true
+    },
+    {
+      "new_physical": 15,
+      "previous_physical": 16,
+      "changed_pixels": 28,
+      "identical_except_footer": true
+    },
+    {
+      "new_physical": 16,
+      "previous_physical": 17,
+      "changed_pixels": 25,
+      "identical_except_footer": true
+    },
+    {
+      "new_physical": 17,
+      "previous_physical": 18,
+      "changed_pixels": 30,
+      "identical_except_footer": true
+    },
+    {
+      "new_physical": 18,
+      "previous_physical": 19,
+      "changed_pixels": 29,
+      "identical_except_footer": true
+    },
+    {
+      "new_physical": 19,
+      "previous_physical": 20,
+      "changed_pixels": 27,
+      "identical_except_footer": true
+    },
+    {
+      "new_physical": 20,
+      "previous_physical": 21,
+      "changed_pixels": 47,
+      "identical_except_footer": true
+    },
+    {
+      "new_physical": 21,
+      "previous_physical": 22,
+      "changed_pixels": 28,
+      "identical_except_footer": true
+    },
+    {
+      "new_physical": 22,
+      "previous_physical": 23,
+      "changed_pixels": 24,
+      "identical_except_footer": true
+    },
+    {
+      "new_physical": 23,
+      "previous_physical": 24,
+      "changed_pixels": 25,
+      "identical_except_footer": true
+    },
+    {
+      "new_physical": 24,
+      "previous_physical": 25,
+      "changed_pixels": 0,
+      "identical_except_footer": true
+    },
+    {
+      "new_physical": 25,
+      "previous_physical": 26,
+      "changed_pixels": 0,
+      "identical_except_footer": true
+    },
+    {
+      "new_physical": 26,
+      "previous_physical": 27,
+      "changed_pixels": 0,
+      "identical_except_footer": true
+    },
+    {
+      "new_physical": 27,
+      "previous_physical": 28,
+      "changed_pixels": 0,
+      "identical_except_footer": true
+    },
+    {
+      "new_physical": 28,
+      "previous_physical": 29,
+      "changed_pixels": 0,
+      "identical_except_footer": true
+    },
+    {
+      "new_physical": 29,
+      "previous_physical": 30,
+      "changed_pixels": 0,
+      "identical_except_footer": true
+    },
+    {
+      "new_physical": 30,
+      "previous_physical": 31,
+      "changed_pixels": 0,
+      "identical_except_footer": true
+    },
+    {
+      "new_physical": 31,
+      "previous_physical": 32,
+      "changed_pixels": 0,
+      "identical_except_footer": true
+    },
+    {
+      "new_physical": 32,
+      "previous_physical": 33,
+      "changed_pixels": 0,
+      "identical_except_footer": true
+    },
+    {
+      "new_physical": 33,
+      "previous_physical": 34,
+      "changed_pixels": 0,
+      "identical_except_footer": true
+    },
+    {
+      "new_physical": 34,
+      "previous_physical": 15,
+      "changed_pixels": 46,
+      "identical_except_footer": true
+    }
+  ],
+  "supplementary_matches_full_pdf": true,
+  "original_ten_backup_pages_unchanged": true
+}

@@ -1,5 +1,11 @@
 # Combined H-mode null-space experiment
 
+2026-09-21 scope update: the user also requested the three main-presentation
+null-space plots in the thesis. Their four-setting comparison now appears there,
+including combined control at k_sigma = 2 N m. Other thesis plots are unchanged.
+This supersedes the earlier presentation-only restriction below. See
+../thesis_nullspace_sync/README.md.
+
 Three robot trials completed on 2026-09-16. Mode 3 enables both terms:
 `tau_null = -d_null N_tau dq + k_sigma N_tau n_best`, with
 `d_null = 2 N m s/rad` and `k_sigma = 2 N m`.

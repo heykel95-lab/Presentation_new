@@ -1,0 +1,48 @@
+{
+  "date": "2026-09-22",
+  "scope": "Remove the superseded directional-displacement quantity from all active thesis and presentation material",
+  "active_quantities": [
+    "Cumulative projected joint motion E_N across all seven joints",
+    "Minimum singular value sigma_min",
+    "Measured joint-1 angle change Delta q_1(t)"
+  ],
+  "presentation": {
+    "active_slides": 34,
+    "powerpoint_note_pages_updated": 6,
+    "obsolete_speaking_sections_removed": 2,
+    "obsolete_active_assets_removed": 21,
+    "visible_slides_changed": false,
+    "speaker_notes_changed": true,
+    "speaking_script_changed": true,
+    "pptx_sha256": "14b74f2b6fd5810d0d8e6e6be14149dac947ad22a66f7e989c77149173bd1da4",
+    "pdf_sha256": "6e3b88abccbb34599cc8a1957d3d157f83e30b93f2e37395ac2b96b4c87f1526",
+    "supplementary_pdf_sha256": "6767f8cc9ceb79f37d38a047d619831e949b73c4f42834aa656fc8dbe49c74a0",
+    "speaking_pdf_pages": 7,
+    "speaking_pdf_sha256": "f370c871c26fc905372627be5384dfdb521ec8689b86cd696b794d2f38734711"
+  },
+  "thesis": {
+    "compiled_pages": 121,
+    "compiled_document_changed": false,
+    "reason": "The compiled thesis had already been cleaned in the preceding metric update.",
+    "analysis_generator_updated": true,
+    "regression_test_updated": true,
+    "derived_summary_updated": true,
+    "stale_pdf_files_moved_to_archive": 2,
+    "pdf_sha256": "8f1ce5bae19d522b7a60266e466e84b7c26d07a26352aa2c8f91b3f9a87ff62d"
+  },
+  "verification": {
+    "nullspace_regression_checks": 53,
+    "nullspace_regression_failures": 0,
+    "powerpoint_changed_package_entries": 6,
+    "powerpoint_changed_entries_are_note_xml_only": true,
+    "thesis_pdfs_scanned": 47,
+    "thesis_pdf_matches": 0,
+    "presentation_pdfs_scanned": 133,
+    "presentation_pdf_matches": 0,
+    "active_text_source_matches": 0,
+    "active_pptx_xml_matches": 0,
+    "presentation_formatter_smoke_test": "passed",
+    "thesis_generator_smoke_test": "passed"
+  },
+  "archive": "experiments/nullspace_narrative/archive/net_displacement_cleanup_20260922"
+}

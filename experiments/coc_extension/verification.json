@@ -1,0 +1,262 @@
+{
+  "date": "2026-09-21",
+  "slide_title": "Effect of CoC position",
+  "physical_slide": 16,
+  "position_mm": [
+    -100,
+    -90,
+    -80,
+    -40,
+    -20,
+    -10,
+    0,
+    10,
+    20,
+    40,
+    80,
+    90,
+    100
+  ],
+  "plotted_trials": 78,
+  "new_trials": 24,
+  "repeats_per_condition": 3,
+  "changed_pptx_parts": [
+    "ppt/media/image49.png",
+    "ppt/slides/slide19.xml"
+  ],
+  "notes_unchanged": true,
+  "frozen_file_sha256": {
+    "Final Presentation/Speaker_notes_and_timing.txt": "339b7beaf775db8ac69291800a840b94805ceccd5155b91e6f7890198305ee43",
+    "Final Presentation/Thesis_Defense_Speaking_Script_updated.pdf": "1eac49abc1c7e298d34d3f5138a4a9efc5874608f0ac5478a44b6293bf4bf048",
+    "Final Presentation/Thesis_Defense_Speaking_Script.pdf": "1eac49abc1c7e298d34d3f5138a4a9efc5874608f0ac5478a44b6293bf4bf048",
+    "Final Presentation/Speaking/Thesis_Defense_Speaking_Script.tex": "3eba8ab195904af0307e9646fc850c68a9deca8c696679b6d6a7f8fd9b04dce1"
+  },
+  "unchanged_other_pdf_pages": 33,
+  "total_slides": 34,
+  "native_equations": 29,
+  "overview_chapters": [
+    "Introduction",
+    "Cartesian controller",
+    "Contact experiments",
+    "Contact results",
+    "Null-space control and experiments",
+    "Conclusion and future work"
+  ],
+  "figure_rect_pt": [
+    130.0,
+    115.0,
+    830.0,
+    444.5522104162296
+  ],
+  "slide_order": [
+    {
+      "physical": 1,
+      "title": "Master Thesis Presentation",
+      "part": "ppt/slides/slide1.xml",
+      "hidden": false
+    },
+    {
+      "physical": 2,
+      "title": "Motivation",
+      "part": "ppt/slides/slide2.xml",
+      "hidden": false
+    },
+    {
+      "physical": 3,
+      "title": "Contact demonstration",
+      "part": "ppt/slides/slide3.xml",
+      "hidden": false
+    },
+    {
+      "physical": 4,
+      "title": "Overview",
+      "part": "ppt/slides/slide4.xml",
+      "hidden": false
+    },
+    {
+      "physical": 5,
+      "title": "Cartesian pose",
+      "part": "ppt/slides/slide5.xml",
+      "hidden": false
+    },
+    {
+      "physical": 6,
+      "title": "Surface frame",
+      "part": "ppt/slides/slide35.xml",
+      "hidden": false
+    },
+    {
+      "physical": 7,
+      "title": "Cartesian impedance controller",
+      "part": "ppt/slides/slide6.xml",
+      "hidden": false
+    },
+    {
+      "physical": 8,
+      "title": "Real-time control",
+      "part": "ppt/slides/slide7.xml",
+      "hidden": false
+    },
+    {
+      "physical": 9,
+      "title": "Centre of compliance (CoC)",
+      "part": "ppt/slides/slide9.xml",
+      "hidden": false
+    },
+    {
+      "physical": 10,
+      "title": "Translation\u2013rotation coupling",
+      "part": "ppt/slides/slide8.xml",
+      "hidden": false
+    },
+    {
+      "physical": 11,
+      "title": "Contact experiment",
+      "part": "ppt/slides/slide11.xml",
+      "hidden": false
+    },
+    {
+      "physical": 12,
+      "title": "Normal-force plausibility assessment",
+      "part": "ppt/slides/slide14.xml",
+      "hidden": false
+    },
+    {
+      "physical": 13,
+      "title": "Moment plausibility assessment",
+      "part": "ppt/slides/slide15.xml",
+      "hidden": false
+    },
+    {
+      "physical": 14,
+      "title": "Commanded and estimated wrench",
+      "part": "ppt/slides/slide16.xml",
+      "hidden": false
+    },
+    {
+      "physical": 15,
+      "title": "Effect of rotational stiffness",
+      "part": "ppt/slides/slide18.xml",
+      "hidden": false
+    },
+    {
+      "physical": 16,
+      "title": "Effect of CoC position",
+      "part": "ppt/slides/slide19.xml",
+      "hidden": false
+    },
+    {
+      "physical": 17,
+      "title": "Angular error and interaction wrench",
+      "part": "ppt/slides/slide20.xml",
+      "hidden": false
+    },
+    {
+      "physical": 18,
+      "title": "Null-space controller",
+      "part": "ppt/slides/slide10.xml",
+      "hidden": false
+    },
+    {
+      "physical": 19,
+      "title": "Null-space experiment",
+      "part": "ppt/slides/slide13.xml",
+      "hidden": false
+    },
+    {
+      "physical": 20,
+      "title": "Cumulative joint motion",
+      "part": "ppt/slides/slide31.xml",
+      "hidden": false
+    },
+    {
+      "physical": 21,
+      "title": "Jacobian conditioning",
+      "part": "ppt/slides/slide32.xml",
+      "hidden": false
+    },
+    {
+      "physical": 22,
+      "title": "Joint motion over time",
+      "part": "ppt/slides/slide33.xml",
+      "hidden": false
+    },
+    {
+      "physical": 23,
+      "title": "Conclusion",
+      "part": "ppt/slides/slide24.xml",
+      "hidden": false
+    },
+    {
+      "physical": 24,
+      "title": "Null-space torques and projector",
+      "part": "ppt/slides/slide25.xml",
+      "hidden": true
+    },
+    {
+      "physical": 25,
+      "title": "Disturbance demonstration",
+      "part": "ppt/slides/slide26.xml",
+      "hidden": true
+    },
+    {
+      "physical": 26,
+      "title": "Cumulative joint motion: all settings",
+      "part": "ppt/slides/slide21.xml",
+      "hidden": true
+    },
+    {
+      "physical": 27,
+      "title": "Jacobian conditioning: all settings",
+      "part": "ppt/slides/slide22.xml",
+      "hidden": true
+    },
+    {
+      "physical": 28,
+      "title": "Joint motion: mean of three trials",
+      "part": "ppt/slides/slide30.xml",
+      "hidden": true
+    },
+    {
+      "physical": 29,
+      "title": "Joint motion: all individual trials",
+      "part": "ppt/slides/slide28.xml",
+      "hidden": true
+    },
+    {
+      "physical": 30,
+      "title": "Joint motion: one trial per setting",
+      "part": "ppt/slides/slide29.xml",
+      "hidden": true
+    },
+    {
+      "physical": 31,
+      "title": "Net joint motion over time",
+      "part": "ppt/slides/slide27.xml",
+      "hidden": true
+    },
+    {
+      "physical": 32,
+      "title": "Net joint motion",
+      "part": "ppt/slides/slide23.xml",
+      "hidden": true
+    },
+    {
+      "physical": 33,
+      "title": "Angular quantities",
+      "part": "ppt/slides/slide12.xml",
+      "hidden": true
+    },
+    {
+      "physical": 34,
+      "title": "Baseline angular error",
+      "part": "ppt/slides/slide17.xml",
+      "hidden": true
+    }
+  ],
+  "original_document_sha256": {
+    "/home/hm-panda/Desktop/Presentation_new/Final Presentation/Thesis_Defense_gg0_v3.pptx": "a80eba7184f52797f74ffbeccbc4ec83807a81c2f955ab19f84964ab49d406c5",
+    "/home/hm-panda/Desktop/Presentation_new/Final Presentation/Thesis_Defense_gg0_v3.pdf": "060e30ed968e38677fe4d71d4a033dcb83549c2169ce3ed8ed32d3da0694982a"
+  },
+  "figure_source_sha256": "43ce0d199ab8e331e6917a4fe118fd9168a0f84fb3818a545bfe829166854003"
+}

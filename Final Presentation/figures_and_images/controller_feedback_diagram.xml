@@ -1,0 +1,1486 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<p:spTree xmlns:p="http://schemas.openxmlformats.org/presentationml/2006/main" xmlns:a="http://schemas.openxmlformats.org/drawingml/2006/main">
+  <p:sp>
+    <p:nvSpPr>
+      <p:cNvPr id="1000" name="Feedback diagram - Desired reference block"/>
+      <p:cNvSpPr txBox="0"/>
+      <p:nvPr/>
+    </p:nvSpPr>
+    <p:spPr>
+      <a:xfrm>
+        <a:off x="558800" y="2717800"/>
+        <a:ext cx="1905000" cy="558800"/>
+      </a:xfrm>
+      <a:prstGeom prst="rect">
+        <a:avLst/>
+      </a:prstGeom>
+      <a:noFill/>
+      <a:ln w="15875">
+        <a:solidFill>
+          <a:srgbClr val="000000"/>
+        </a:solidFill>
+      </a:ln>
+    </p:spPr>
+    <p:txBody>
+      <a:bodyPr wrap="none" lIns="0" rIns="0" tIns="0" bIns="0" anchor="ctr">
+        <a:noAutofit/>
+      </a:bodyPr>
+      <a:lstStyle/>
+      <a:p>
+        <a:pPr algn="ctr" marL="0" indent="0">
+          <a:lnSpc>
+            <a:spcPct val="100000"/>
+          </a:lnSpc>
+          <a:buNone/>
+        </a:pPr>
+        <a:r>
+          <a:rPr sz="1700" b="0">
+            <a:solidFill>
+              <a:srgbClr val="000000"/>
+            </a:solidFill>
+            <a:latin typeface="Arial"/>
+            <a:ea typeface="Arial"/>
+            <a:cs typeface="Arial"/>
+          </a:rPr>
+          <a:t>Desired reference</a:t>
+        </a:r>
+      </a:p>
+    </p:txBody>
+  </p:sp>
+  <p:sp>
+    <p:nvSpPr>
+      <p:cNvPr id="1001" name="Feedback diagram - Impedance controller block"/>
+      <p:cNvSpPr txBox="0"/>
+      <p:nvPr/>
+    </p:nvSpPr>
+    <p:spPr>
+      <a:xfrm>
+        <a:off x="3708400" y="3733800"/>
+        <a:ext cx="2387600" cy="685800"/>
+      </a:xfrm>
+      <a:prstGeom prst="rect">
+        <a:avLst/>
+      </a:prstGeom>
+      <a:noFill/>
+      <a:ln w="15875">
+        <a:solidFill>
+          <a:srgbClr val="000000"/>
+        </a:solidFill>
+      </a:ln>
+    </p:spPr>
+    <p:txBody>
+      <a:bodyPr wrap="none" lIns="0" rIns="0" tIns="0" bIns="0" anchor="ctr">
+        <a:noAutofit/>
+      </a:bodyPr>
+      <a:lstStyle/>
+      <a:p>
+        <a:pPr algn="ctr" marL="0" indent="0">
+          <a:lnSpc>
+            <a:spcPct val="100000"/>
+          </a:lnSpc>
+          <a:buNone/>
+        </a:pPr>
+        <a:r>
+          <a:rPr sz="1700" b="0">
+            <a:solidFill>
+              <a:srgbClr val="000000"/>
+            </a:solidFill>
+            <a:latin typeface="Arial"/>
+            <a:ea typeface="Arial"/>
+            <a:cs typeface="Arial"/>
+          </a:rPr>
+          <a:t>Impedance controller</a:t>
+        </a:r>
+      </a:p>
+    </p:txBody>
+  </p:sp>
+  <p:sp>
+    <p:nvSpPr>
+      <p:cNvPr id="1002" name="Feedback diagram - Jacobian transpose block"/>
+      <p:cNvSpPr txBox="0"/>
+      <p:nvPr/>
+    </p:nvSpPr>
+    <p:spPr>
+      <a:xfrm>
+        <a:off x="7175500" y="3733800"/>
+        <a:ext cx="1168400" cy="685800"/>
+      </a:xfrm>
+      <a:prstGeom prst="rect">
+        <a:avLst/>
+      </a:prstGeom>
+      <a:noFill/>
+      <a:ln w="15875">
+        <a:solidFill>
+          <a:srgbClr val="000000"/>
+        </a:solidFill>
+      </a:ln>
+    </p:spPr>
+    <p:txBody>
+      <a:bodyPr wrap="none" lIns="0" rIns="0" tIns="0" bIns="0" anchor="ctr">
+        <a:noAutofit/>
+      </a:bodyPr>
+      <a:lstStyle/>
+      <a:p>
+        <a:pPr algn="ctr" marL="0" indent="0">
+          <a:lnSpc>
+            <a:spcPct val="100000"/>
+          </a:lnSpc>
+          <a:buNone/>
+        </a:pPr>
+        <a:r>
+          <a:rPr sz="2200" b="0">
+            <a:solidFill>
+              <a:srgbClr val="000000"/>
+            </a:solidFill>
+            <a:latin typeface="Arial"/>
+            <a:ea typeface="Arial"/>
+            <a:cs typeface="Arial"/>
+          </a:rPr>
+          <a:t></a:t>
+        </a:r>
+      </a:p>
+    </p:txBody>
+  </p:sp>
+  <p:sp>
+    <p:nvSpPr>
+      <p:cNvPr id="1003" name="Feedback diagram - Jacobian transpose operation"/>
+      <p:cNvSpPr txBox="1"/>
+      <p:nvPr/>
+    </p:nvSpPr>
+    <p:spPr>
+      <a:xfrm>
+        <a:off x="7226300" y="3784600"/>
+        <a:ext cx="1066800" cy="584200"/>
+      </a:xfrm>
+      <a:prstGeom prst="rect">
+        <a:avLst/>
+      </a:prstGeom>
+      <a:noFill/>
+      <a:ln w="0">
+        <a:noFill/>
+      </a:ln>
+    </p:spPr>
+    <p:txBody>
+      <a:bodyPr wrap="none" lIns="0" rIns="0" tIns="0" bIns="0" anchor="ctr">
+        <a:noAutofit/>
+      </a:bodyPr>
+      <a:lstStyle/>
+      <a:p>
+        <a:pPr algn="ctr" marL="0" indent="0">
+          <a:lnSpc>
+            <a:spcPct val="100000"/>
+          </a:lnSpc>
+          <a:buNone/>
+        </a:pPr>
+        <a:r>
+          <a:rPr sz="2200" b="0">
+            <a:solidFill>
+              <a:srgbClr val="000000"/>
+            </a:solidFill>
+            <a:latin typeface="Cambria Math"/>
+            <a:ea typeface="Cambria Math"/>
+            <a:cs typeface="Cambria Math"/>
+          </a:rPr>
+          <a:t>𝐽</a:t>
+        </a:r>
+        <a:r>
+          <a:rPr sz="1540" b="0" baseline="35000">
+            <a:solidFill>
+              <a:srgbClr val="000000"/>
+            </a:solidFill>
+            <a:latin typeface="Arial"/>
+            <a:ea typeface="Arial"/>
+            <a:cs typeface="Arial"/>
+          </a:rPr>
+          <a:t>T</a:t>
+        </a:r>
+        <a:r>
+          <a:rPr sz="2200" b="0">
+            <a:solidFill>
+              <a:srgbClr val="000000"/>
+            </a:solidFill>
+            <a:latin typeface="Cambria Math"/>
+            <a:ea typeface="Cambria Math"/>
+            <a:cs typeface="Cambria Math"/>
+          </a:rPr>
+          <a:t>(𝑞)</a:t>
+        </a:r>
+      </a:p>
+    </p:txBody>
+  </p:sp>
+  <p:sp>
+    <p:nvSpPr>
+      <p:cNvPr id="1004" name="Feedback diagram - Robot block"/>
+      <p:cNvSpPr txBox="0"/>
+      <p:nvPr/>
+    </p:nvSpPr>
+    <p:spPr>
+      <a:xfrm>
+        <a:off x="10350500" y="3733800"/>
+        <a:ext cx="1295400" cy="685800"/>
+      </a:xfrm>
+      <a:prstGeom prst="rect">
+        <a:avLst/>
+      </a:prstGeom>
+      <a:noFill/>
+      <a:ln w="15875">
+        <a:solidFill>
+          <a:srgbClr val="000000"/>
+        </a:solidFill>
+      </a:ln>
+    </p:spPr>
+    <p:txBody>
+      <a:bodyPr wrap="none" lIns="0" rIns="0" tIns="0" bIns="0" anchor="ctr">
+        <a:noAutofit/>
+      </a:bodyPr>
+      <a:lstStyle/>
+      <a:p>
+        <a:pPr algn="ctr" marL="0" indent="0">
+          <a:lnSpc>
+            <a:spcPct val="100000"/>
+          </a:lnSpc>
+          <a:buNone/>
+        </a:pPr>
+        <a:r>
+          <a:rPr sz="1900" b="0">
+            <a:solidFill>
+              <a:srgbClr val="000000"/>
+            </a:solidFill>
+            <a:latin typeface="Arial"/>
+            <a:ea typeface="Arial"/>
+            <a:cs typeface="Arial"/>
+          </a:rPr>
+          <a:t>Robot</a:t>
+        </a:r>
+      </a:p>
+    </p:txBody>
+  </p:sp>
+  <p:sp>
+    <p:nvSpPr>
+      <p:cNvPr id="1005" name="Feedback diagram - Reference minus measured state"/>
+      <p:cNvSpPr txBox="0"/>
+      <p:nvPr/>
+    </p:nvSpPr>
+    <p:spPr>
+      <a:xfrm>
+        <a:off x="2057400" y="3848100"/>
+        <a:ext cx="457200" cy="457200"/>
+      </a:xfrm>
+      <a:prstGeom prst="ellipse">
+        <a:avLst/>
+      </a:prstGeom>
+      <a:noFill/>
+      <a:ln w="15875">
+        <a:solidFill>
+          <a:srgbClr val="000000"/>
+        </a:solidFill>
+      </a:ln>
+    </p:spPr>
+  </p:sp>
+  <p:cxnSp>
+    <p:nvCxnSpPr>
+      <p:cNvPr id="1006" name="Feedback diagram - Reference minus measured state cross rising"/>
+      <p:cNvCxnSpPr/>
+      <p:nvPr/>
+    </p:nvCxnSpPr>
+    <p:spPr>
+      <a:xfrm flipV="1">
+        <a:off x="2124355" y="3915055"/>
+        <a:ext cx="323289" cy="323289"/>
+      </a:xfrm>
+      <a:prstGeom prst="straightConnector1">
+        <a:avLst/>
+      </a:prstGeom>
+      <a:ln w="10160">
+        <a:solidFill>
+          <a:srgbClr val="000000"/>
+        </a:solidFill>
+      </a:ln>
+    </p:spPr>
+  </p:cxnSp>
+  <p:cxnSp>
+    <p:nvCxnSpPr>
+      <p:cNvPr id="1007" name="Feedback diagram - Reference minus measured state cross falling"/>
+      <p:cNvCxnSpPr/>
+      <p:nvPr/>
+    </p:nvCxnSpPr>
+    <p:spPr>
+      <a:xfrm>
+        <a:off x="2124355" y="3915055"/>
+        <a:ext cx="323289" cy="323289"/>
+      </a:xfrm>
+      <a:prstGeom prst="straightConnector1">
+        <a:avLst/>
+      </a:prstGeom>
+      <a:ln w="10160">
+        <a:solidFill>
+          <a:srgbClr val="000000"/>
+        </a:solidFill>
+      </a:ln>
+    </p:spPr>
+  </p:cxnSp>
+  <p:sp>
+    <p:nvSpPr>
+      <p:cNvPr id="1008" name="Feedback diagram - Reference minus measured state left plus"/>
+      <p:cNvSpPr txBox="1"/>
+      <p:nvPr/>
+    </p:nvSpPr>
+    <p:spPr>
+      <a:xfrm>
+        <a:off x="2082800" y="4000500"/>
+        <a:ext cx="139700" cy="152400"/>
+      </a:xfrm>
+      <a:prstGeom prst="rect">
+        <a:avLst/>
+      </a:prstGeom>
+      <a:noFill/>
+      <a:ln w="0">
+        <a:noFill/>
+      </a:ln>
+    </p:spPr>
+    <p:txBody>
+      <a:bodyPr wrap="none" lIns="0" rIns="0" tIns="0" bIns="0" anchor="ctr">
+        <a:noAutofit/>
+      </a:bodyPr>
+      <a:lstStyle/>
+      <a:p>
+        <a:pPr algn="ctr" marL="0" indent="0">
+          <a:lnSpc>
+            <a:spcPct val="100000"/>
+          </a:lnSpc>
+          <a:buNone/>
+        </a:pPr>
+        <a:r>
+          <a:rPr sz="1100" b="0">
+            <a:solidFill>
+              <a:srgbClr val="000000"/>
+            </a:solidFill>
+            <a:latin typeface="Arial"/>
+            <a:ea typeface="Arial"/>
+            <a:cs typeface="Arial"/>
+          </a:rPr>
+          <a:t>+</a:t>
+        </a:r>
+      </a:p>
+    </p:txBody>
+  </p:sp>
+  <p:sp>
+    <p:nvSpPr>
+      <p:cNvPr id="1009" name="Feedback diagram - Reference minus measured state lower minus"/>
+      <p:cNvSpPr txBox="1"/>
+      <p:nvPr/>
+    </p:nvSpPr>
+    <p:spPr>
+      <a:xfrm>
+        <a:off x="2209800" y="4140200"/>
+        <a:ext cx="152400" cy="139700"/>
+      </a:xfrm>
+      <a:prstGeom prst="rect">
+        <a:avLst/>
+      </a:prstGeom>
+      <a:noFill/>
+      <a:ln w="0">
+        <a:noFill/>
+      </a:ln>
+    </p:spPr>
+    <p:txBody>
+      <a:bodyPr wrap="none" lIns="0" rIns="0" tIns="0" bIns="0" anchor="ctr">
+        <a:noAutofit/>
+      </a:bodyPr>
+      <a:lstStyle/>
+      <a:p>
+        <a:pPr algn="ctr" marL="0" indent="0">
+          <a:lnSpc>
+            <a:spcPct val="100000"/>
+          </a:lnSpc>
+          <a:buNone/>
+        </a:pPr>
+        <a:r>
+          <a:rPr sz="1100" b="0">
+            <a:solidFill>
+              <a:srgbClr val="000000"/>
+            </a:solidFill>
+            <a:latin typeface="Arial"/>
+            <a:ea typeface="Arial"/>
+            <a:cs typeface="Arial"/>
+          </a:rPr>
+          <a:t>−</a:t>
+        </a:r>
+      </a:p>
+    </p:txBody>
+  </p:sp>
+  <p:sp>
+    <p:nvSpPr>
+      <p:cNvPr id="1010" name="Feedback diagram - Additive torque sum"/>
+      <p:cNvSpPr txBox="0"/>
+      <p:nvPr/>
+    </p:nvSpPr>
+    <p:spPr>
+      <a:xfrm>
+        <a:off x="8864600" y="3848100"/>
+        <a:ext cx="457200" cy="457200"/>
+      </a:xfrm>
+      <a:prstGeom prst="ellipse">
+        <a:avLst/>
+      </a:prstGeom>
+      <a:noFill/>
+      <a:ln w="15875">
+        <a:solidFill>
+          <a:srgbClr val="000000"/>
+        </a:solidFill>
+      </a:ln>
+    </p:spPr>
+  </p:sp>
+  <p:cxnSp>
+    <p:nvCxnSpPr>
+      <p:cNvPr id="1011" name="Feedback diagram - Additive torque sum cross rising"/>
+      <p:cNvCxnSpPr/>
+      <p:nvPr/>
+    </p:nvCxnSpPr>
+    <p:spPr>
+      <a:xfrm flipV="1">
+        <a:off x="8931555" y="3915055"/>
+        <a:ext cx="323289" cy="323289"/>
+      </a:xfrm>
+      <a:prstGeom prst="straightConnector1">
+        <a:avLst/>
+      </a:prstGeom>
+      <a:ln w="10160">
+        <a:solidFill>
+          <a:srgbClr val="000000"/>
+        </a:solidFill>
+      </a:ln>
+    </p:spPr>
+  </p:cxnSp>
+  <p:cxnSp>
+    <p:nvCxnSpPr>
+      <p:cNvPr id="1012" name="Feedback diagram - Additive torque sum cross falling"/>
+      <p:cNvCxnSpPr/>
+      <p:nvPr/>
+    </p:nvCxnSpPr>
+    <p:spPr>
+      <a:xfrm>
+        <a:off x="8931555" y="3915055"/>
+        <a:ext cx="323289" cy="323289"/>
+      </a:xfrm>
+      <a:prstGeom prst="straightConnector1">
+        <a:avLst/>
+      </a:prstGeom>
+      <a:ln w="10160">
+        <a:solidFill>
+          <a:srgbClr val="000000"/>
+        </a:solidFill>
+      </a:ln>
+    </p:spPr>
+  </p:cxnSp>
+  <p:sp>
+    <p:nvSpPr>
+      <p:cNvPr id="1013" name="Feedback diagram - Additive torque sum left plus"/>
+      <p:cNvSpPr txBox="1"/>
+      <p:nvPr/>
+    </p:nvSpPr>
+    <p:spPr>
+      <a:xfrm>
+        <a:off x="8890000" y="4000500"/>
+        <a:ext cx="139700" cy="152400"/>
+      </a:xfrm>
+      <a:prstGeom prst="rect">
+        <a:avLst/>
+      </a:prstGeom>
+      <a:noFill/>
+      <a:ln w="0">
+        <a:noFill/>
+      </a:ln>
+    </p:spPr>
+    <p:txBody>
+      <a:bodyPr wrap="none" lIns="0" rIns="0" tIns="0" bIns="0" anchor="ctr">
+        <a:noAutofit/>
+      </a:bodyPr>
+      <a:lstStyle/>
+      <a:p>
+        <a:pPr algn="ctr" marL="0" indent="0">
+          <a:lnSpc>
+            <a:spcPct val="100000"/>
+          </a:lnSpc>
+          <a:buNone/>
+        </a:pPr>
+        <a:r>
+          <a:rPr sz="1100" b="0">
+            <a:solidFill>
+              <a:srgbClr val="000000"/>
+            </a:solidFill>
+            <a:latin typeface="Arial"/>
+            <a:ea typeface="Arial"/>
+            <a:cs typeface="Arial"/>
+          </a:rPr>
+          <a:t>+</a:t>
+        </a:r>
+      </a:p>
+    </p:txBody>
+  </p:sp>
+  <p:sp>
+    <p:nvSpPr>
+      <p:cNvPr id="1014" name="Feedback diagram - Additive torque sum upper plus"/>
+      <p:cNvSpPr txBox="1"/>
+      <p:nvPr/>
+    </p:nvSpPr>
+    <p:spPr>
+      <a:xfrm>
+        <a:off x="9017000" y="3873500"/>
+        <a:ext cx="152400" cy="139700"/>
+      </a:xfrm>
+      <a:prstGeom prst="rect">
+        <a:avLst/>
+      </a:prstGeom>
+      <a:noFill/>
+      <a:ln w="0">
+        <a:noFill/>
+      </a:ln>
+    </p:spPr>
+    <p:txBody>
+      <a:bodyPr wrap="none" lIns="0" rIns="0" tIns="0" bIns="0" anchor="ctr">
+        <a:noAutofit/>
+      </a:bodyPr>
+      <a:lstStyle/>
+      <a:p>
+        <a:pPr algn="ctr" marL="0" indent="0">
+          <a:lnSpc>
+            <a:spcPct val="100000"/>
+          </a:lnSpc>
+          <a:buNone/>
+        </a:pPr>
+        <a:r>
+          <a:rPr sz="1100" b="0">
+            <a:solidFill>
+              <a:srgbClr val="000000"/>
+            </a:solidFill>
+            <a:latin typeface="Arial"/>
+            <a:ea typeface="Arial"/>
+            <a:cs typeface="Arial"/>
+          </a:rPr>
+          <a:t>+</a:t>
+        </a:r>
+      </a:p>
+    </p:txBody>
+  </p:sp>
+  <p:cxnSp>
+    <p:nvCxnSpPr>
+      <p:cNvPr id="1015" name="Feedback diagram - Desired reference down"/>
+      <p:cNvCxnSpPr/>
+      <p:nvPr/>
+    </p:nvCxnSpPr>
+    <p:spPr>
+      <a:xfrm>
+        <a:off x="711200" y="3276600"/>
+        <a:ext cx="0" cy="800100"/>
+      </a:xfrm>
+      <a:prstGeom prst="straightConnector1">
+        <a:avLst/>
+      </a:prstGeom>
+      <a:ln w="15875">
+        <a:solidFill>
+          <a:srgbClr val="000000"/>
+        </a:solidFill>
+      </a:ln>
+    </p:spPr>
+  </p:cxnSp>
+  <p:cxnSp>
+    <p:nvCxnSpPr>
+      <p:cNvPr id="1016" name="Feedback diagram - Desired reference to plus"/>
+      <p:cNvCxnSpPr/>
+      <p:nvPr/>
+    </p:nvCxnSpPr>
+    <p:spPr>
+      <a:xfrm>
+        <a:off x="711200" y="4076700"/>
+        <a:ext cx="1346200" cy="0"/>
+      </a:xfrm>
+      <a:prstGeom prst="straightConnector1">
+        <a:avLst/>
+      </a:prstGeom>
+      <a:ln w="15875">
+        <a:solidFill>
+          <a:srgbClr val="000000"/>
+        </a:solidFill>
+        <a:tailEnd type="triangle" w="sm" len="sm"/>
+      </a:ln>
+    </p:spPr>
+  </p:cxnSp>
+  <p:sp>
+    <p:nvSpPr>
+      <p:cNvPr id="1017" name="Feedback diagram - Desired signal label"/>
+      <p:cNvSpPr txBox="1"/>
+      <p:nvPr/>
+    </p:nvSpPr>
+    <p:spPr>
+      <a:xfrm>
+        <a:off x="914400" y="3454400"/>
+        <a:ext cx="1549400" cy="292100"/>
+      </a:xfrm>
+      <a:prstGeom prst="rect">
+        <a:avLst/>
+      </a:prstGeom>
+      <a:noFill/>
+      <a:ln w="0">
+        <a:noFill/>
+      </a:ln>
+    </p:spPr>
+    <p:txBody>
+      <a:bodyPr wrap="none" lIns="0" rIns="0" tIns="0" bIns="0" anchor="ctr">
+        <a:noAutofit/>
+      </a:bodyPr>
+      <a:lstStyle/>
+      <a:p>
+        <a:pPr algn="ctr" marL="0" indent="0">
+          <a:lnSpc>
+            <a:spcPct val="100000"/>
+          </a:lnSpc>
+          <a:buNone/>
+        </a:pPr>
+        <a:r>
+          <a:rPr sz="1450" b="0">
+            <a:solidFill>
+              <a:srgbClr val="000000"/>
+            </a:solidFill>
+            <a:latin typeface="Arial"/>
+            <a:ea typeface="Arial"/>
+            <a:cs typeface="Arial"/>
+          </a:rPr>
+          <a:t>Reference state</a:t>
+        </a:r>
+      </a:p>
+    </p:txBody>
+  </p:sp>
+  <p:cxnSp>
+    <p:nvCxnSpPr>
+      <p:cNvPr id="1018" name="Feedback diagram - Errors to impedance"/>
+      <p:cNvCxnSpPr/>
+      <p:nvPr/>
+    </p:nvCxnSpPr>
+    <p:spPr>
+      <a:xfrm>
+        <a:off x="2514600" y="4076700"/>
+        <a:ext cx="1193800" cy="0"/>
+      </a:xfrm>
+      <a:prstGeom prst="straightConnector1">
+        <a:avLst/>
+      </a:prstGeom>
+      <a:ln w="15875">
+        <a:solidFill>
+          <a:srgbClr val="000000"/>
+        </a:solidFill>
+        <a:tailEnd type="triangle" w="sm" len="sm"/>
+      </a:ln>
+    </p:spPr>
+  </p:cxnSp>
+  <p:sp>
+    <p:nvSpPr>
+      <p:cNvPr id="1019" name="Feedback diagram - Pose and velocity error signal"/>
+      <p:cNvSpPr txBox="1"/>
+      <p:nvPr/>
+    </p:nvSpPr>
+    <p:spPr>
+      <a:xfrm>
+        <a:off x="2514600" y="3467100"/>
+        <a:ext cx="1193800" cy="482600"/>
+      </a:xfrm>
+      <a:prstGeom prst="rect">
+        <a:avLst/>
+      </a:prstGeom>
+      <a:noFill/>
+      <a:ln w="0">
+        <a:noFill/>
+      </a:ln>
+    </p:spPr>
+    <p:txBody>
+      <a:bodyPr wrap="none" lIns="0" rIns="0" tIns="0" bIns="0" anchor="ctr">
+        <a:noAutofit/>
+      </a:bodyPr>
+      <a:lstStyle/>
+      <a:p>
+        <a:pPr algn="ctr" marL="0" indent="0">
+          <a:lnSpc>
+            <a:spcPts val="1450"/>
+          </a:lnSpc>
+          <a:buNone/>
+        </a:pPr>
+        <a:r>
+          <a:rPr sz="1450" b="0">
+            <a:solidFill>
+              <a:srgbClr val="000000"/>
+            </a:solidFill>
+            <a:latin typeface="Arial"/>
+            <a:ea typeface="Arial"/>
+            <a:cs typeface="Arial"/>
+          </a:rPr>
+          <a:t>Pose and</a:t>
+        </a:r>
+      </a:p>
+      <a:p>
+        <a:pPr algn="ctr" marL="0" indent="0">
+          <a:lnSpc>
+            <a:spcPts val="1450"/>
+          </a:lnSpc>
+          <a:buNone/>
+        </a:pPr>
+        <a:r>
+          <a:rPr sz="1450" b="0">
+            <a:solidFill>
+              <a:srgbClr val="000000"/>
+            </a:solidFill>
+            <a:latin typeface="Arial"/>
+            <a:ea typeface="Arial"/>
+            <a:cs typeface="Arial"/>
+          </a:rPr>
+          <a:t>velocity errors</a:t>
+        </a:r>
+      </a:p>
+    </p:txBody>
+  </p:sp>
+  <p:sp>
+    <p:nvSpPr>
+      <p:cNvPr id="1020" name="Feedback diagram - Impedance parameter description"/>
+      <p:cNvSpPr txBox="1"/>
+      <p:nvPr/>
+    </p:nvSpPr>
+    <p:spPr>
+      <a:xfrm>
+        <a:off x="3708400" y="2781300"/>
+        <a:ext cx="2387600" cy="254000"/>
+      </a:xfrm>
+      <a:prstGeom prst="rect">
+        <a:avLst/>
+      </a:prstGeom>
+      <a:noFill/>
+      <a:ln w="0">
+        <a:noFill/>
+      </a:ln>
+    </p:spPr>
+    <p:txBody>
+      <a:bodyPr wrap="none" lIns="0" rIns="0" tIns="0" bIns="0" anchor="ctr">
+        <a:noAutofit/>
+      </a:bodyPr>
+      <a:lstStyle/>
+      <a:p>
+        <a:pPr algn="ctr" marL="0" indent="0">
+          <a:lnSpc>
+            <a:spcPct val="100000"/>
+          </a:lnSpc>
+          <a:buNone/>
+        </a:pPr>
+        <a:r>
+          <a:rPr sz="1450" b="0">
+            <a:solidFill>
+              <a:srgbClr val="000000"/>
+            </a:solidFill>
+            <a:latin typeface="Arial"/>
+            <a:ea typeface="Arial"/>
+            <a:cs typeface="Arial"/>
+          </a:rPr>
+          <a:t>Stiffness and damping</a:t>
+        </a:r>
+      </a:p>
+    </p:txBody>
+  </p:sp>
+  <p:sp>
+    <p:nvSpPr>
+      <p:cNvPr id="1021" name="Feedback diagram - Impedance parameter symbols"/>
+      <p:cNvSpPr txBox="1"/>
+      <p:nvPr/>
+    </p:nvSpPr>
+    <p:spPr>
+      <a:xfrm>
+        <a:off x="4419600" y="3060700"/>
+        <a:ext cx="965200" cy="381000"/>
+      </a:xfrm>
+      <a:prstGeom prst="rect">
+        <a:avLst/>
+      </a:prstGeom>
+      <a:noFill/>
+      <a:ln w="0">
+        <a:noFill/>
+      </a:ln>
+    </p:spPr>
+    <p:txBody>
+      <a:bodyPr wrap="none" lIns="0" rIns="0" tIns="0" bIns="0" anchor="ctr">
+        <a:noAutofit/>
+      </a:bodyPr>
+      <a:lstStyle/>
+      <a:p>
+        <a:pPr algn="ctr" marL="0" indent="0">
+          <a:lnSpc>
+            <a:spcPct val="100000"/>
+          </a:lnSpc>
+          <a:buNone/>
+        </a:pPr>
+        <a:r>
+          <a:rPr sz="2200" b="0">
+            <a:solidFill>
+              <a:srgbClr val="000000"/>
+            </a:solidFill>
+            <a:latin typeface="Cambria Math"/>
+            <a:ea typeface="Cambria Math"/>
+            <a:cs typeface="Cambria Math"/>
+          </a:rPr>
+          <a:t>𝐾</a:t>
+        </a:r>
+        <a:r>
+          <a:rPr sz="2200" b="0">
+            <a:solidFill>
+              <a:srgbClr val="000000"/>
+            </a:solidFill>
+            <a:latin typeface="Arial"/>
+            <a:ea typeface="Arial"/>
+            <a:cs typeface="Arial"/>
+          </a:rPr>
+          <a:t xml:space="preserve">, </a:t>
+        </a:r>
+        <a:r>
+          <a:rPr sz="2200" b="0">
+            <a:solidFill>
+              <a:srgbClr val="000000"/>
+            </a:solidFill>
+            <a:latin typeface="Cambria Math"/>
+            <a:ea typeface="Cambria Math"/>
+            <a:cs typeface="Cambria Math"/>
+          </a:rPr>
+          <a:t>𝐷</a:t>
+        </a:r>
+      </a:p>
+    </p:txBody>
+  </p:sp>
+  <p:cxnSp>
+    <p:nvCxnSpPr>
+      <p:cNvPr id="1022" name="Feedback diagram - Parameters to impedance"/>
+      <p:cNvCxnSpPr/>
+      <p:nvPr/>
+    </p:nvCxnSpPr>
+    <p:spPr>
+      <a:xfrm>
+        <a:off x="4902200" y="3467100"/>
+        <a:ext cx="0" cy="266700"/>
+      </a:xfrm>
+      <a:prstGeom prst="straightConnector1">
+        <a:avLst/>
+      </a:prstGeom>
+      <a:ln w="15875">
+        <a:solidFill>
+          <a:srgbClr val="000000"/>
+        </a:solidFill>
+        <a:tailEnd type="triangle" w="sm" len="sm"/>
+      </a:ln>
+    </p:spPr>
+  </p:cxnSp>
+  <p:cxnSp>
+    <p:nvCxnSpPr>
+      <p:cNvPr id="1023" name="Feedback diagram - Wrench to Jacobian transpose"/>
+      <p:cNvCxnSpPr/>
+      <p:nvPr/>
+    </p:nvCxnSpPr>
+    <p:spPr>
+      <a:xfrm>
+        <a:off x="6096000" y="4076700"/>
+        <a:ext cx="1079500" cy="0"/>
+      </a:xfrm>
+      <a:prstGeom prst="straightConnector1">
+        <a:avLst/>
+      </a:prstGeom>
+      <a:ln w="15875">
+        <a:solidFill>
+          <a:srgbClr val="000000"/>
+        </a:solidFill>
+        <a:tailEnd type="triangle" w="sm" len="sm"/>
+      </a:ln>
+    </p:spPr>
+  </p:cxnSp>
+  <p:sp>
+    <p:nvSpPr>
+      <p:cNvPr id="1024" name="Feedback diagram - Wrench signal"/>
+      <p:cNvSpPr txBox="1"/>
+      <p:nvPr/>
+    </p:nvSpPr>
+    <p:spPr>
+      <a:xfrm>
+        <a:off x="6413500" y="3556000"/>
+        <a:ext cx="457200" cy="419100"/>
+      </a:xfrm>
+      <a:prstGeom prst="rect">
+        <a:avLst/>
+      </a:prstGeom>
+      <a:noFill/>
+      <a:ln w="0">
+        <a:noFill/>
+      </a:ln>
+    </p:spPr>
+    <p:txBody>
+      <a:bodyPr wrap="none" lIns="0" rIns="0" tIns="0" bIns="0" anchor="ctr">
+        <a:noAutofit/>
+      </a:bodyPr>
+      <a:lstStyle/>
+      <a:p>
+        <a:pPr algn="ctr" marL="0" indent="0">
+          <a:lnSpc>
+            <a:spcPct val="100000"/>
+          </a:lnSpc>
+          <a:buNone/>
+        </a:pPr>
+        <a:r>
+          <a:rPr sz="2200" b="0">
+            <a:solidFill>
+              <a:srgbClr val="000000"/>
+            </a:solidFill>
+            <a:latin typeface="Cambria Math"/>
+            <a:ea typeface="Cambria Math"/>
+            <a:cs typeface="Cambria Math"/>
+          </a:rPr>
+          <a:t>𝐹</a:t>
+        </a:r>
+      </a:p>
+    </p:txBody>
+  </p:sp>
+  <p:cxnSp>
+    <p:nvCxnSpPr>
+      <p:cNvPr id="1025" name="Feedback diagram - Cartesian torque to sum"/>
+      <p:cNvCxnSpPr/>
+      <p:nvPr/>
+    </p:nvCxnSpPr>
+    <p:spPr>
+      <a:xfrm>
+        <a:off x="8343900" y="4076700"/>
+        <a:ext cx="520700" cy="0"/>
+      </a:xfrm>
+      <a:prstGeom prst="straightConnector1">
+        <a:avLst/>
+      </a:prstGeom>
+      <a:ln w="15875">
+        <a:solidFill>
+          <a:srgbClr val="000000"/>
+        </a:solidFill>
+        <a:tailEnd type="triangle" w="sm" len="sm"/>
+      </a:ln>
+    </p:spPr>
+  </p:cxnSp>
+  <p:sp>
+    <p:nvSpPr>
+      <p:cNvPr id="1026" name="Feedback diagram - Cartesian torque signal"/>
+      <p:cNvSpPr txBox="1"/>
+      <p:nvPr/>
+    </p:nvSpPr>
+    <p:spPr>
+      <a:xfrm>
+        <a:off x="8382000" y="3556000"/>
+        <a:ext cx="444500" cy="419100"/>
+      </a:xfrm>
+      <a:prstGeom prst="rect">
+        <a:avLst/>
+      </a:prstGeom>
+      <a:noFill/>
+      <a:ln w="0">
+        <a:noFill/>
+      </a:ln>
+    </p:spPr>
+    <p:txBody>
+      <a:bodyPr wrap="none" lIns="0" rIns="0" tIns="0" bIns="0" anchor="ctr">
+        <a:noAutofit/>
+      </a:bodyPr>
+      <a:lstStyle/>
+      <a:p>
+        <a:pPr algn="ctr" marL="0" indent="0">
+          <a:lnSpc>
+            <a:spcPct val="100000"/>
+          </a:lnSpc>
+          <a:buNone/>
+        </a:pPr>
+        <a:r>
+          <a:rPr sz="2200" b="0">
+            <a:solidFill>
+              <a:srgbClr val="000000"/>
+            </a:solidFill>
+            <a:latin typeface="Cambria Math"/>
+            <a:ea typeface="Cambria Math"/>
+            <a:cs typeface="Cambria Math"/>
+          </a:rPr>
+          <a:t>𝜏</a:t>
+        </a:r>
+      </a:p>
+    </p:txBody>
+  </p:sp>
+  <p:cxnSp>
+    <p:nvCxnSpPr>
+      <p:cNvPr id="1027" name="Feedback diagram - Commanded torque to robot"/>
+      <p:cNvCxnSpPr/>
+      <p:nvPr/>
+    </p:nvCxnSpPr>
+    <p:spPr>
+      <a:xfrm>
+        <a:off x="9321800" y="4076700"/>
+        <a:ext cx="1028700" cy="0"/>
+      </a:xfrm>
+      <a:prstGeom prst="straightConnector1">
+        <a:avLst/>
+      </a:prstGeom>
+      <a:ln w="15875">
+        <a:solidFill>
+          <a:srgbClr val="000000"/>
+        </a:solidFill>
+        <a:tailEnd type="triangle" w="sm" len="sm"/>
+      </a:ln>
+    </p:spPr>
+  </p:cxnSp>
+  <p:sp>
+    <p:nvSpPr>
+      <p:cNvPr id="1028" name="Feedback diagram - Commanded torque signal"/>
+      <p:cNvSpPr txBox="1"/>
+      <p:nvPr/>
+    </p:nvSpPr>
+    <p:spPr>
+      <a:xfrm>
+        <a:off x="9423400" y="3556000"/>
+        <a:ext cx="812800" cy="419100"/>
+      </a:xfrm>
+      <a:prstGeom prst="rect">
+        <a:avLst/>
+      </a:prstGeom>
+      <a:noFill/>
+      <a:ln w="0">
+        <a:noFill/>
+      </a:ln>
+    </p:spPr>
+    <p:txBody>
+      <a:bodyPr wrap="none" lIns="0" rIns="0" tIns="0" bIns="0" anchor="ctr">
+        <a:noAutofit/>
+      </a:bodyPr>
+      <a:lstStyle/>
+      <a:p>
+        <a:pPr algn="ctr" marL="0" indent="0">
+          <a:lnSpc>
+            <a:spcPct val="100000"/>
+          </a:lnSpc>
+          <a:buNone/>
+        </a:pPr>
+        <a:r>
+          <a:rPr sz="2200" b="0">
+            <a:solidFill>
+              <a:srgbClr val="000000"/>
+            </a:solidFill>
+            <a:latin typeface="Cambria Math"/>
+            <a:ea typeface="Cambria Math"/>
+            <a:cs typeface="Cambria Math"/>
+          </a:rPr>
+          <a:t>𝜏</a:t>
+        </a:r>
+        <a:r>
+          <a:rPr sz="1540" b="0" baseline="-25000">
+            <a:solidFill>
+              <a:srgbClr val="000000"/>
+            </a:solidFill>
+            <a:latin typeface="Arial"/>
+            <a:ea typeface="Arial"/>
+            <a:cs typeface="Arial"/>
+          </a:rPr>
+          <a:t>cmd</a:t>
+        </a:r>
+      </a:p>
+    </p:txBody>
+  </p:sp>
+  <p:sp>
+    <p:nvSpPr>
+      <p:cNvPr id="1029" name="Feedback diagram - Additional torque sources"/>
+      <p:cNvSpPr txBox="1"/>
+      <p:nvPr/>
+    </p:nvSpPr>
+    <p:spPr>
+      <a:xfrm>
+        <a:off x="7899400" y="2717800"/>
+        <a:ext cx="2387600" cy="266700"/>
+      </a:xfrm>
+      <a:prstGeom prst="rect">
+        <a:avLst/>
+      </a:prstGeom>
+      <a:noFill/>
+      <a:ln w="0">
+        <a:noFill/>
+      </a:ln>
+    </p:spPr>
+    <p:txBody>
+      <a:bodyPr wrap="none" lIns="0" rIns="0" tIns="0" bIns="0" anchor="ctr">
+        <a:noAutofit/>
+      </a:bodyPr>
+      <a:lstStyle/>
+      <a:p>
+        <a:pPr algn="ctr" marL="0" indent="0">
+          <a:lnSpc>
+            <a:spcPct val="100000"/>
+          </a:lnSpc>
+          <a:buNone/>
+        </a:pPr>
+        <a:r>
+          <a:rPr sz="1550" b="0">
+            <a:solidFill>
+              <a:srgbClr val="000000"/>
+            </a:solidFill>
+            <a:latin typeface="Arial"/>
+            <a:ea typeface="Arial"/>
+            <a:cs typeface="Arial"/>
+          </a:rPr>
+          <a:t>Model + null-space</a:t>
+        </a:r>
+      </a:p>
+    </p:txBody>
+  </p:sp>
+  <p:sp>
+    <p:nvSpPr>
+      <p:cNvPr id="1030" name="Feedback diagram - Additional torque signal"/>
+      <p:cNvSpPr txBox="1"/>
+      <p:nvPr/>
+    </p:nvSpPr>
+    <p:spPr>
+      <a:xfrm>
+        <a:off x="8597900" y="3035300"/>
+        <a:ext cx="990600" cy="254000"/>
+      </a:xfrm>
+      <a:prstGeom prst="rect">
+        <a:avLst/>
+      </a:prstGeom>
+      <a:noFill/>
+      <a:ln w="0">
+        <a:noFill/>
+      </a:ln>
+    </p:spPr>
+    <p:txBody>
+      <a:bodyPr wrap="none" lIns="0" rIns="0" tIns="0" bIns="0" anchor="ctr">
+        <a:noAutofit/>
+      </a:bodyPr>
+      <a:lstStyle/>
+      <a:p>
+        <a:pPr algn="ctr" marL="0" indent="0">
+          <a:lnSpc>
+            <a:spcPct val="100000"/>
+          </a:lnSpc>
+          <a:buNone/>
+        </a:pPr>
+        <a:r>
+          <a:rPr sz="1450" b="0">
+            <a:solidFill>
+              <a:srgbClr val="000000"/>
+            </a:solidFill>
+            <a:latin typeface="Arial"/>
+            <a:ea typeface="Arial"/>
+            <a:cs typeface="Arial"/>
+          </a:rPr>
+          <a:t>Torques</a:t>
+        </a:r>
+      </a:p>
+    </p:txBody>
+  </p:sp>
+  <p:cxnSp>
+    <p:nvCxnSpPr>
+      <p:cNvPr id="1031" name="Feedback diagram - Other torques to plus"/>
+      <p:cNvCxnSpPr/>
+      <p:nvPr/>
+    </p:nvCxnSpPr>
+    <p:spPr>
+      <a:xfrm>
+        <a:off x="9093200" y="3378200"/>
+        <a:ext cx="0" cy="469900"/>
+      </a:xfrm>
+      <a:prstGeom prst="straightConnector1">
+        <a:avLst/>
+      </a:prstGeom>
+      <a:ln w="15875">
+        <a:solidFill>
+          <a:srgbClr val="000000"/>
+        </a:solidFill>
+        <a:tailEnd type="triangle" w="sm" len="sm"/>
+      </a:ln>
+    </p:spPr>
+  </p:cxnSp>
+  <p:cxnSp>
+    <p:nvCxnSpPr>
+      <p:cNvPr id="1032" name="Feedback diagram - Robot state down"/>
+      <p:cNvCxnSpPr/>
+      <p:nvPr/>
+    </p:nvCxnSpPr>
+    <p:spPr>
+      <a:xfrm>
+        <a:off x="10998200" y="4419600"/>
+        <a:ext cx="0" cy="914400"/>
+      </a:xfrm>
+      <a:prstGeom prst="straightConnector1">
+        <a:avLst/>
+      </a:prstGeom>
+      <a:ln w="15875">
+        <a:solidFill>
+          <a:srgbClr val="000000"/>
+        </a:solidFill>
+      </a:ln>
+    </p:spPr>
+  </p:cxnSp>
+  <p:cxnSp>
+    <p:nvCxnSpPr>
+      <p:cNvPr id="1033" name="Feedback diagram - Measured state return"/>
+      <p:cNvCxnSpPr/>
+      <p:nvPr/>
+    </p:nvCxnSpPr>
+    <p:spPr>
+      <a:xfrm flipH="1">
+        <a:off x="2286000" y="5334000"/>
+        <a:ext cx="8712200" cy="0"/>
+      </a:xfrm>
+      <a:prstGeom prst="straightConnector1">
+        <a:avLst/>
+      </a:prstGeom>
+      <a:ln w="15875">
+        <a:solidFill>
+          <a:srgbClr val="000000"/>
+        </a:solidFill>
+      </a:ln>
+    </p:spPr>
+  </p:cxnSp>
+  <p:cxnSp>
+    <p:nvCxnSpPr>
+      <p:cNvPr id="1034" name="Feedback diagram - Measured feedback to minus"/>
+      <p:cNvCxnSpPr/>
+      <p:nvPr/>
+    </p:nvCxnSpPr>
+    <p:spPr>
+      <a:xfrm flipV="1">
+        <a:off x="2286000" y="4305300"/>
+        <a:ext cx="0" cy="1028700"/>
+      </a:xfrm>
+      <a:prstGeom prst="straightConnector1">
+        <a:avLst/>
+      </a:prstGeom>
+      <a:ln w="15875">
+        <a:solidFill>
+          <a:srgbClr val="000000"/>
+        </a:solidFill>
+        <a:tailEnd type="triangle" w="sm" len="sm"/>
+      </a:ln>
+    </p:spPr>
+  </p:cxnSp>
+  <p:sp>
+    <p:nvSpPr>
+      <p:cNvPr id="1035" name="Feedback diagram - Measured Cartesian feedback label"/>
+      <p:cNvSpPr txBox="1"/>
+      <p:nvPr/>
+    </p:nvSpPr>
+    <p:spPr>
+      <a:xfrm>
+        <a:off x="2959100" y="4902200"/>
+        <a:ext cx="4114800" cy="304800"/>
+      </a:xfrm>
+      <a:prstGeom prst="rect">
+        <a:avLst/>
+      </a:prstGeom>
+      <a:noFill/>
+      <a:ln w="0">
+        <a:noFill/>
+      </a:ln>
+    </p:spPr>
+    <p:txBody>
+      <a:bodyPr wrap="none" lIns="0" rIns="0" tIns="0" bIns="0" anchor="ctr">
+        <a:noAutofit/>
+      </a:bodyPr>
+      <a:lstStyle/>
+      <a:p>
+        <a:pPr algn="ctr" marL="0" indent="0">
+          <a:lnSpc>
+            <a:spcPct val="100000"/>
+          </a:lnSpc>
+          <a:buNone/>
+        </a:pPr>
+        <a:r>
+          <a:rPr sz="1600" b="0">
+            <a:solidFill>
+              <a:srgbClr val="000000"/>
+            </a:solidFill>
+            <a:latin typeface="Arial"/>
+            <a:ea typeface="Arial"/>
+            <a:cs typeface="Arial"/>
+          </a:rPr>
+          <a:t>Measured state</a:t>
+        </a:r>
+      </a:p>
+    </p:txBody>
+  </p:sp>
+  <p:sp>
+    <p:nvSpPr>
+      <p:cNvPr id="1036" name="Feedback diagram - State definition"/>
+      <p:cNvSpPr txBox="1"/>
+      <p:nvPr/>
+    </p:nvSpPr>
+    <p:spPr>
+      <a:xfrm>
+        <a:off x="2959100" y="5397500"/>
+        <a:ext cx="4114800" cy="254000"/>
+      </a:xfrm>
+      <a:prstGeom prst="rect">
+        <a:avLst/>
+      </a:prstGeom>
+      <a:noFill/>
+      <a:ln w="0">
+        <a:noFill/>
+      </a:ln>
+    </p:spPr>
+    <p:txBody>
+      <a:bodyPr wrap="none" lIns="0" rIns="0" tIns="0" bIns="0" anchor="ctr">
+        <a:noAutofit/>
+      </a:bodyPr>
+      <a:lstStyle/>
+      <a:p>
+        <a:pPr algn="ctr" marL="0" indent="0">
+          <a:lnSpc>
+            <a:spcPct val="100000"/>
+          </a:lnSpc>
+          <a:buNone/>
+        </a:pPr>
+        <a:r>
+          <a:rPr sz="1500" b="0">
+            <a:solidFill>
+              <a:srgbClr val="000000"/>
+            </a:solidFill>
+            <a:latin typeface="Arial"/>
+            <a:ea typeface="Arial"/>
+            <a:cs typeface="Arial"/>
+          </a:rPr>
+          <a:t>State: pose and velocity</a:t>
+        </a:r>
+      </a:p>
+    </p:txBody>
+  </p:sp>
+  <p:sp>
+    <p:nvSpPr>
+      <p:cNvPr id="1037" name="Feedback diagram - Measured robot state label"/>
+      <p:cNvSpPr txBox="1"/>
+      <p:nvPr/>
+    </p:nvSpPr>
+    <p:spPr>
+      <a:xfrm>
+        <a:off x="7937500" y="5397500"/>
+        <a:ext cx="2882900" cy="254000"/>
+      </a:xfrm>
+      <a:prstGeom prst="rect">
+        <a:avLst/>
+      </a:prstGeom>
+      <a:noFill/>
+      <a:ln w="0">
+        <a:noFill/>
+      </a:ln>
+    </p:spPr>
+    <p:txBody>
+      <a:bodyPr wrap="none" lIns="0" rIns="0" tIns="0" bIns="0" anchor="ctr">
+        <a:noAutofit/>
+      </a:bodyPr>
+      <a:lstStyle/>
+      <a:p>
+        <a:pPr algn="ctr" marL="0" indent="0">
+          <a:lnSpc>
+            <a:spcPct val="100000"/>
+          </a:lnSpc>
+          <a:buNone/>
+        </a:pPr>
+        <a:r>
+          <a:rPr sz="1500" b="0">
+            <a:solidFill>
+              <a:srgbClr val="000000"/>
+            </a:solidFill>
+            <a:latin typeface="Arial"/>
+            <a:ea typeface="Arial"/>
+            <a:cs typeface="Arial"/>
+          </a:rPr>
+          <a:t>Measured robot state</a:t>
+        </a:r>
+      </a:p>
+    </p:txBody>
+  </p:sp>
+  <p:sp>
+    <p:nvSpPr>
+      <p:cNvPr id="1038" name="Feedback diagram - Measured state branch"/>
+      <p:cNvSpPr txBox="0"/>
+      <p:nvPr/>
+    </p:nvSpPr>
+    <p:spPr>
+      <a:xfrm>
+        <a:off x="7734300" y="5308600"/>
+        <a:ext cx="50800" cy="50800"/>
+      </a:xfrm>
+      <a:prstGeom prst="ellipse">
+        <a:avLst/>
+      </a:prstGeom>
+      <a:solidFill>
+        <a:srgbClr val="000000"/>
+      </a:solidFill>
+      <a:ln w="0">
+        <a:noFill/>
+      </a:ln>
+    </p:spPr>
+  </p:sp>
+  <p:cxnSp>
+    <p:nvCxnSpPr>
+      <p:cNvPr id="1039" name="Feedback diagram - Measured q to Jacobian"/>
+      <p:cNvCxnSpPr/>
+      <p:nvPr/>
+    </p:nvCxnSpPr>
+    <p:spPr>
+      <a:xfrm flipV="1">
+        <a:off x="7759700" y="4419600"/>
+        <a:ext cx="0" cy="914400"/>
+      </a:xfrm>
+      <a:prstGeom prst="straightConnector1">
+        <a:avLst/>
+      </a:prstGeom>
+      <a:ln w="15875">
+        <a:solidFill>
+          <a:srgbClr val="000000"/>
+        </a:solidFill>
+        <a:tailEnd type="triangle" w="sm" len="sm"/>
+      </a:ln>
+    </p:spPr>
+  </p:cxnSp>
+  <p:sp>
+    <p:nvSpPr>
+      <p:cNvPr id="1040" name="Feedback diagram - Joint configuration signal"/>
+      <p:cNvSpPr txBox="1"/>
+      <p:nvPr/>
+    </p:nvSpPr>
+    <p:spPr>
+      <a:xfrm>
+        <a:off x="7874000" y="4660900"/>
+        <a:ext cx="419100" cy="406400"/>
+      </a:xfrm>
+      <a:prstGeom prst="rect">
+        <a:avLst/>
+      </a:prstGeom>
+      <a:noFill/>
+      <a:ln w="0">
+        <a:noFill/>
+      </a:ln>
+    </p:spPr>
+    <p:txBody>
+      <a:bodyPr wrap="none" lIns="0" rIns="0" tIns="0" bIns="0" anchor="ctr">
+        <a:noAutofit/>
+      </a:bodyPr>
+      <a:lstStyle/>
+      <a:p>
+        <a:pPr algn="ctr" marL="0" indent="0">
+          <a:lnSpc>
+            <a:spcPct val="100000"/>
+          </a:lnSpc>
+          <a:buNone/>
+        </a:pPr>
+        <a:r>
+          <a:rPr sz="2200" b="0">
+            <a:solidFill>
+              <a:srgbClr val="000000"/>
+            </a:solidFill>
+            <a:latin typeface="Cambria Math"/>
+            <a:ea typeface="Cambria Math"/>
+            <a:cs typeface="Cambria Math"/>
+          </a:rPr>
+          <a:t>𝑞</a:t>
+        </a:r>
+      </a:p>
+    </p:txBody>
+  </p:sp>
+</p:spTree>

@@ -30,7 +30,8 @@
 \coordinate (origin) at (0,0);
 \coordinate (toolpivot) at (0,1.30);
 \coordinate (labelcolumn) at (3.60,0);
-\draw[reference] (-3.35,0) -- (3.35,0);
+% Match the left and right limits of the desired-orientation datum.
+\draw[reference] (-2.40,0) -- (2.40,0);
 \draw[datum] (-2.40,1.30) -- (2.40,1.30);
 \draw[tool, rotate around={10:(0,1.30)}] (-2.10,1.30) -- (2.10,1.30);
 % The tool tip, drawn perpendicular to the face where the datum crosses it,
@@ -46,11 +47,19 @@
   {Desired--achieved difference};
 
 % Placement and calibration can leave the physical surface angularly offset.
-\draw[physical, rotate around={19:(origin)}] (-3.35,0) -- (3.35,0);
+% Keep the 19-degree slope with the same horizontal endpoints as the datum.
+\draw[physical] (-2.40,{-2.40*tan(19)}) -- (2.40,{2.40*tan(19)});
 \draw[conceptangle]
   (0:1.90) arc[start angle=0,end angle=19,radius=1.90];
 \coordinate (surfaceanglemid) at (9.5:1.90);
 \node[lbl, anchor=west] (surfacelabel) at (labelcolumn |- surfaceanglemid)
   {Configured--physical difference};
 
+% Retain the original canvas so trimming the surfaces does not move or resize
+% the legend, tool, angle markers, or surrounding thesis content.
+\pgfresetboundingbox
+\begin{scope}[reset cm]
+  \path[use as bounding box] (-110.1638pt,-36.23709pt)
+    rectangle (258.45518pt,80.31772pt);
+\end{scope}
 \end{tikzpicture}

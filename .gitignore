@@ -26,3 +26,6 @@ desktop.ini
 /tmp/
 __pycache__/
 *.pyc
+
+# Local rollback copies; final assets and verification records stay tracked
+/experiments/**/archive/

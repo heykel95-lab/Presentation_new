@@ -1,0 +1,77 @@
+{
+  "date": "2026-09-21",
+  "slide": {
+    "title": "Contact experiment",
+    "physical": 11,
+    "footer": 10
+  },
+  "source_slide": {
+    "title": "Surface frame",
+    "physical": 6,
+    "footer": 5
+  },
+  "image": {
+    "asset": "figures_and_images/surface_directions.png",
+    "embedded_part": "ppt/media/image33.png",
+    "sha256": "41202182141c6ffb3cc9fe836db2300d3c00937d43257bea37601d0dd6007255",
+    "box_pt": [
+      60.0,
+      165.15355,
+      420.0,
+      447.84331377952753
+    ],
+    "bytes_unchanged": true
+  },
+  "settings_translation_x_pt": 220,
+  "translated_shapes": [
+    "Contact settings heading",
+    "Normal label",
+    "Equation - contact_normal_gain",
+    "Rotation label",
+    "Equation - contact_rotation_gains",
+    "Equation - contact_tangent_gains",
+    "Tangential translation label",
+    "Normal rotation label",
+    "Equation - contact_normal_rotation"
+  ],
+  "earlier_surface_slide_unchanged": true,
+  "equation_contents_unchanged": true,
+  "changed_pptx_parts": [
+    "ppt/slides/slide11.xml"
+  ],
+  "notes_media_sections_order_and_other_slides_unchanged": true,
+  "overview_refreshed_from_sections": [
+    "Introduction",
+    "Cartesian controller",
+    "Contact experiments",
+    "Contact results",
+    "Null-space control and experiments",
+    "Conclusion and future work"
+  ],
+  "main_slides": 26,
+  "hidden_backups": 12,
+  "total_slides": 38,
+  "native_equation_count": 29,
+  "pdf_method": "Existing PowerPoint PDF retained, contact settings translated as vectors and identical surface-frame image inserted.",
+  "other_37_pdf_pages_pixel_identical": true,
+  "settings_pdf_pixels_identical_after_translation": true,
+  "title_process_and_footer_pixels_unchanged": true,
+  "equation_catalog_verified": true,
+  "preserved_file_sha256": {
+    "Final Presentation/Supplementary_slides.pdf": "899277e833faa54471f850a873804f1396eb7b649b1a9ae18680a9f196c9f282",
+    "Final Presentation/figures_and_images/native_equations.json": "945bcf419db46e5bad19aaaa14cb3d50b6f6ecc6e53e8f8b1182101e60383e10",
+    "Final Presentation/Speaker_notes_and_timing.txt": "339b7beaf775db8ac69291800a840b94805ceccd5155b91e6f7890198305ee43",
+    "Final Presentation/Thesis_Defense_Speaking_Script_updated.pdf": "1eac49abc1c7e298d34d3f5138a4a9efc5874608f0ac5478a44b6293bf4bf048",
+    "Final Presentation/Thesis_Defense_Speaking_Script.pdf": "1eac49abc1c7e298d34d3f5138a4a9efc5874608f0ac5478a44b6293bf4bf048",
+    "Final Presentation/Speaking/Thesis_Defense_Speaking_Script.tex": "3eba8ab195904af0307e9646fc850c68a9deca8c696679b6d6a7f8fd9b04dce1"
+  },
+  "installed_file_sha256": {
+    "Final Presentation/Thesis_Defense_gg0_v3.pptx": "50fa5d947a2d44a8c15d5deb18b91dd53801a5315f5aa46fa6d94361d0f66878",
+    "Final Presentation/Thesis_Defense_gg0_v3.pdf": "30fec375646cf8028cda8d3861bef7642e37d6166863ae81b9134baf8a4b0509"
+  },
+  "visual_review": {
+    "physical_page": 11,
+    "renderer": "Poppler pdftoppm",
+    "passed": true
+  }
+}

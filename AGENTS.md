@@ -1,8 +1,108 @@
 # Thesis and presentation workspace
 
+## Directional displacement metric removed from active deliverables (2026-09-22)
+
+The null-space evaluation in both the thesis and presentation uses only
+cumulative projected joint motion (E_N) across all seven joints, minimum
+singular value \(\sigma_{\min}\), and measured joint-1 angle change
+\(\Delta q_1(t)\). Keep the three-slide presentation sequence Cumulative joint
+motion, Jacobian conditioning, and Joint motion over time. Do not restore the
+superseded directional-displacement derivation, symbols, plots, backup slides,
+speaker-note text, speaking-script sections, figure assets, or generator paths
+to any active document. Historical raw records may remain only in the external
+experiment archive for provenance.
+
 ## Preserve the user's speaking text (2026-09-16)
 
 Keep the current speaking script and PowerPoint speaker notes unchanged until the user explicitly asks for changes. Do not rewrite, shorten, correct, or automatically synchronize the spoken wording during other presentation work. This instruction takes precedence over the earlier narration-editing and synchronization requirements below.
+
+## Copy the backup figures directly from the thesis (2026-09-22)
+
+For Angular quantities (B6 / physical slide 32) and Sources of angular offset (B8 / physical slide 34), use complete figure crops directly from the compiled thesis PDF. Do not reconstruct their diagrams independently. Preserve all labels, arrows, colours and relative geometry. Their current sources are thesis Figure 4.2 on PDF page 79 and Figure 1.1 on PDF page 28. Keep the existing slide figure widths and centres and scale proportionally. The original three-entry legend, dashed desired direction, perpendicular tool tip and both difference arcs remain in Figure 1.1. The angular figure retains its inner blue arc and existing frame inset.
+
+In Figure 1.1, shorten the red configured surface and blue physical surface so both left and right endpoints share the dashed desired-orientation line's horizontal limits, x = -2.40 and +2.40. Keep the blue surface's 19-degree schematic tilt and all other drawing elements unchanged. Make this shared change in the thesis TikZ source, retain the original canvas, rebuild the thesis, and use that exact compiled rendering in B8. Synchronize source copies and PDF/PNG/SVG assets in both repositories. Keep thesis prose, all speaker notes, speaking files, other slides and slide order unchanged. The deck remains 26 main slides and eight hidden backups. See `experiments/media_update/direct_thesis_backup_figures_20260922.json` and `direct_thesis_backup_figures.py`. This supersedes the independent restoration/export methods below.
+
+## Opposing moment is the first backup (2026-09-22)
+
+Place Opposing moment at B1 / physical slide 27, immediately after Conclusion. Keep it hidden and preserve its complete video, audio, poster, dimensions, click-to-play behaviour and notes. The backup order is now B1 Opposing moment, B2 Null-space torques and projector, B3 Cumulative joint motion: all settings, B4 Jacobian conditioning: all settings, B5 Joint motion: all individual trials, B6 Angular quantities, B7 Baseline angular error, and B8 Sources of angular offset. There remain 26 main slides and eight hidden backups, 34 slides in total. Update backup footers, native section order, the three equation catalog entries on the torque backup, and both presentation PDFs. Keep all slide contents, figure assets, speaking material and the thesis unchanged. This supersedes earlier backup placements below. See `experiments/media_update/opposing_moment_first_20260922.json`.
+
+## Backup demonstration removed and main captions simplified (2026-09-22)
+
+Remove the former hidden B2 Disturbance demonstration / physical slide 28, containing demonstration 1, from the active deck. Preserve its original slide, notes and embedded recording in `experiments/media_update/archive/removed_backup_demo_20260922.pptx` and its matching archive PDF. Source recordings remain unchanged.
+
+The two main Disturbance demonstration slides remain at physical slides 20–21 / footers 19–20. Their captions are now Demonstration · Part 1 and Demonstration · Part 2. Remove the recording identifier 2 and the displayed time ranges from both captions. Preserve the original two clips, exact split at 00:23, playback, audio, poster images, dimensions, titles and notes. Do not remove the part numbers or alter the clips themselves.
+
+There are 26 main slides and eight hidden backups at physical slides 27–34. The full PDF has 34 pages and Supplementary_slides.pdf has eight. B1 is Null-space torques and projector, B2 Cumulative joint motion: all settings, B3 Jacobian conditioning: all settings, B4 Joint motion: all individual trials, B5 Angular quantities, B6 Baseline angular error, B7 Opposing moment, and B8 Sources of angular offset. The restored angular and surface-entry figures are unchanged and have moved only in numbering, from B6/B9 to B5/B8. Keep all 29 native equations, five active embedded videos, remaining speaker notes and speaking files unchanged. Native sections and Overview follow this order. This supersedes the earlier B2 demonstration requirement and backup counts below. See `experiments/media_update/backup_demo_removed_20260922.json`.
+
+## B6 and B9 restored to committed thesis figure designs (2026-09-22)
+
+The user selected the last committed thesis figures as the restoration reference and explicitly requested the same restoration in the presentation and thesis. On Angular quantities (B6 / physical slide 32), use the exact committed `figures/ch04/surface_reference_geometry.pdf` from thesis commit `be7aa4d`. It has the blue angular-error arc inside the red measured-offset arc, at radius 2.8, with its label at (2.70, -0.18). The matching editable source is from `33b7dc5`. The later source-only move to radius 6.3 had not been applied to the committed figure PDF and must not be reapplied. Keep the frame inset with n_s leftwards, t_2 upwards and t_1 out of the page. Preserve the figure width and centre, using proportional scaling.
+
+On Sources of angular offset (B9 / physical slide 35), restore the original single-row legend from the committed Chapter 1 source: Configured surface, Physical surface and Tool face. Retain the original black dashed desired-direction datum, perpendicular tool tip, two difference arcs and their labels. This reverses the four-entry, two-row legend update. Match both restored sources and PDF/PNG/SVG assets in the thesis and presentation, and rebuild the two documents. The source/compiled-figure mismatch is resolved in favour of the author-selected committed appearance. Other slide contents, 35-slide order, nine hidden backups, speaking material and thesis prose remain unchanged. See `experiments/media_update/committed_backup_figures_20260922.json`. This supersedes the earlier angular source-only match, rotated inset, and four-entry legend instructions below.
+
+## Redundant null-space backups removed (2026-09-22)
+
+Remove the former B5 Joint motion: mean of three trials, B7 Joint motion: one trial per setting, B8 Net joint motion over time, and B9 Net joint motion from the active presentation. The mean view overlaps the main joint-1 comparison, the single-trial view is contained in the all-individual-trials plot, and the two net-motion views add an unnecessary second motion explanation to the cumulative-motion and joint-1 narrative. Preserve the four original slides, plots and notes in `experiments/nullspace_narrative/archive/removed_nullspace_backups_20260922.pptx` and its matching archive PDF. Retain their source assets and data, but do not restore these slides automatically.
+
+Keep the three useful null-space plot backups: Cumulative joint motion: all settings (B3), Jacobian conditioning: all settings (B4), and Joint motion: all individual trials (B5). The first two extend the main comparison to both conditioning magnitudes, and the third retains trial variation. The other backups are B1 Null-space torques and projector, B2 Disturbance demonstration, B6 Angular quantities, B7 Baseline angular error, B8 Opposing moment, and B9 Sources of angular offset. There are 26 unchanged main slides and nine hidden backups, physical slides 27–35. The full PDF has 35 pages and the supplementary PDF nine. All remaining notes, speaking files, 29 native equations, six embedded videos and thesis files are unchanged. Update backup footers and native sections to this order. These counts and placements supersede earlier records below. See `experiments/nullspace_narrative/backup_cleanup_20260922.json`.
+
+## Simplified controller signal labels (2026-09-22)
+
+On Real-time control (footer 7 / physical slide 8), label the desired signal Reference state, the combined controller input Pose and velocity errors, and the Cartesian feedback Measured state. Define State: pose and velocity once beneath the left feedback line. Keep velocity explicit, since damping acts on velocity error. The combined input is one editable textbox with two lines, Pose and / velocity errors. Preserve all operation blocks, summing circles, signs, parameters, signal connections, the measured q branch, both native equations and the 1 ms cycle statement. This is a presentation-only label simplification. Keep the thesis, speaking script and speaker notes unchanged. Matching diagram PDF/PNG/SVG/DrawingML come from the shared generator. See `experiments/controller_feedback_diagram/verification_20260922.json`.
+
+## Surface-entry figure in backup and thesis (2026-09-22)
+
+The former Motivation diagram is now hidden backup B13, Sources of angular offset, at physical slide 39. Keep Motivation's robot photograph unchanged. The shared diagram and thesis Figure 1.1 explicitly identify four legend entries: Configured surface (solid red), Physical surface (solid blue), Desired tool orientation (dashed black), and Achieved tool orientation (solid green). The existing horizontal dashed desired reference remains parallel to the configured surface. Preserve the original object geometry, schematic tilts, tool tip, and both labelled difference arcs. Arrange the four legend entries in two rows, with surfaces above tool orientations. The previous three-entry legend left the desired reference unnamed and must not be restored.
+
+Keep the thesis source `MyOwn-thesis/figures/ch01/surface_entry_concept.tex` and presentation source `figures_and_images/sources/thesis_figure_1_1_source.tex` identical, with matching PDF/PNG/SVG assets and compiled documents. The earlier presentation assets are archived. The deck has 26 main slides and thirteen hidden backups at physical slides 27–39. The full PDF has 39 pages and the supplementary PDF thirteen. All previous slide contents, speaking files, speaker notes, 29 native equations and six videos remain unchanged. The new backup has blank notes. These counts supersede earlier records below. See `experiments/media_update/surface_entry_correction_20260922.json`.
+
+## Surface image also on Contact experiment (2026-09-21)
+
+Keep the shared surface/tool diagram on both Surface frame (footer 5 / physical slide 6) and Contact experiment (footer 10 / physical slide 11). On Contact experiment, the unchanged `surface_directions.png` image is on the left at 360 pt width, with the existing contact-settings block translated 220 pt to the right. Preserve the process sequence, native equation contents and alignment, numerical values, title, footer and notes. The earlier Surface frame slide and its symbol definitions remain unchanged. This supersedes the instruction to leave Contact experiment without the figure and centre its settings. Only the image is repeated, without adding another symbol glossary. There are still 26 main slides, twelve hidden backups and 29 active native equations. See `experiments/media_update/contact_surface_copy_20260921.json`.
+
+## Plausibility and opposing-moment videos (2026-09-21)
+
+Plausibility experiment is physical slide 12 / footer 11, immediately after Contact experiment and before the Normal-force and Moment plausibility assessment plot slides. It belongs to the Contact experiments section. Opposing moment is hidden backup B12 at physical slide 38. Both videos are embedded, start on click, and appear upright and uncropped in a centred 420 pt square. Preserve their complete recordings and original audio. The source files `Video/Plausibility Experiment.mp4` and `Video/Opposing Moment.mp4` remain unchanged. The presentation copies `Plausibility_experiment_presentation.mp4` and `Opposing_moment_presentation.mp4` normalize rotation into the pixels, retaining all 419 and 311 video frames respectively and copying the AAC audio unchanged. Do not infer numerical controller settings from the recordings.
+
+The deck now has 26 main slides and twelve hidden backups at physical slides 27–38. Conclusion is physical slide 26. The split demonstration 2 is now at physical slides 20–21 before Null-space experiment (22), with the main null-space plots at 23–25. B2, containing demonstration 1, is at physical slide 28. The full PDF has 38 pages and the supplementary PDF twelve. Native sections, Overview, main footers and the 29-entry equation catalog follow this order. Existing slide content, notes, speaking files and earlier embedded videos remain unchanged. The two new slides have empty notes. These positions and counts supersede earlier records below. See `experiments/media_update/contact_videos_20260921.json`.
+
+## Disturbance demonstration 2 before the null-space experiment (2026-09-21)
+
+The second recording from backup B2 is split at exactly 00:23 and introduced in the main sequence immediately before Null-space experiment. Physical slides 19 and 20 (footers 18 and 19) show the two consecutive parts, each centred at its original size and playing independently on click. Their captions identify Demonstration 2, Part 1 / Part 2, and the original intervals 00:00–00:23 / 00:23–end. The embedded files are `Video/Nullspace2_part1_0000-0023.mp4` and `Video/Nullspace2_part2_0023-end.mp4`. All 928 original video frames are retained across the two clips, with the second beginning at original frame 690 / 23.000 s. Audio is retained and re-encoded for the cut. Original source videos remain unchanged. Do not assign unverified controller settings to the recordings.
+
+Null-space controller remains physical slide 18. Null-space experiment is now physical slide 21, the three main null-space result plots are at 22–24, and Conclusion is at 25. The deck has 25 main slides and eleven hidden backups, with B1–B11 at physical slides 26–36. B2 at physical slide 27 retains only demonstration 1, centred at its existing size. The full PDF has 36 pages and the supplementary PDF eleven. Native sections, Overview and the 29-entry equation catalog follow this order. All existing notes and speaking files are unchanged, and the new slides have blank notes. These counts and video placements supersede earlier records below. See `experiments/media_update/nullspace2_split_20260921.json`.
+
+## Main null-space plots shared with the thesis (2026-09-21)
+
+The user limited thesis plot synchronization to the null-space experiment and explicitly selected main presentation plots only. The thesis includes the exact `nullspace_cumulative_main.pdf`, `nullspace_conditioning_main.pdf` and `joint_motion_mean_main.pdf` from current main slides 20–22. Its older combined three-panel null-space figure and individual-trial joint-motion figure are archived and excluded. The comparison uses no torque, damping alone, conditioning alone at k_sigma = 2 N m, and combined control with d_null = 2 N m s/rad. Related null-space descriptions follow these four settings and three-trial means with one sample SD. Other thesis plots, including all contact results, remain unchanged. This supersedes earlier instructions limiting the combined-control main plots to the presentation. Presentation content, speaking text and notes remain unchanged by this thesis-only synchronization. See `experiments/thesis_nullspace_sync/verification_20260921.json`.
+
+## Baseline angular error moves to backup (2026-09-21)
+
+Baseline angular error is now hidden backup B11 at physical slide 34, immediately after Angular quantities (B10, now physical slide 33). Preserve its chart, dimensions, position, data, labels, title and notes. Do not restore it to the main sequence. Update main footers, native sections, Overview and the equation catalog to follow the move. There are now 23 main slides and eleven hidden backups, with Conclusion at physical slide 23 and B1–B11 at physical slides 24–34. The full PDF remains 34 pages and the supplementary PDF contains all eleven backups. Speaking text and speaker notes remain unchanged. These positions and counts supersede the earlier records below.
+
+## Angular quantities matches thesis and moves to backup (2026-09-21)
+
+Angular quantities, formerly footer 10 and then footer 11 / physical slide 12 after the Surface frame insertion, is now hidden backup B10 at physical slide 34. Its diagram uses the exact current thesis LaTeX in `MyOwn-thesis/figures/ch04/surface_reference_geometry.tex`, copied to `figures_and_images/sources/originals/ch04/surface_reference_geometry.tex`. Match the thesis's 12 pt document base and Latin Modern fonts. The frame inset has n_s leftwards, t_2 upwards and t_1 out of the page, with the positive-rotation arc and main angle geometry from the thesis source. This supersedes the older rotated-inset instructions. The existing full thesis PDF and standalone figure PDF contain older renderings, so the current LaTeX source is authoritative for this match. Preserve the image width and centre at (480 pt, 275 pt), scaling proportionally. Keep the removed definition blocks and bottom statements absent. Archive the previous presentation assets and synchronize the local LaTeX, PDF, PNG, SVG and embedded image. The thesis files, speaking script and speaker notes remain unchanged. The presentation now contains 24 main slides and ten hidden backups, with Conclusion at physical slide 24 and B1–B10 at physical slides 25–34. The full PDF has 34 pages and the supplementary PDF has ten pages. This supersedes earlier main/backup counts and Angular quantities placement.
+
+## Robot photograph moved to Motivation (2026-09-21)
+
+The user moved the full `title_robot.jpg` photograph from the title slide to Motivation, replacing thesis Figure 1.1. Do not display this photograph on the title slide. On Motivation, keep the uncropped photograph on the right and the unchanged Problem and Idea text stacked on the left, retaining the existing fonts, bullets and line breaks. Preserve the title slide's text, university logos and date. Retain the unused thesis Figure 1.1 assets for provenance. This supersedes the earlier title-photo placement and Motivation figure layout. Speaking text and speaker notes remain unchanged.
+
+## Surface frame before the controller (2026-09-21)
+
+The user explicitly chose to split the surface-frame material out of Contact experiment. Surface frame is now footer 5 / physical slide 6, immediately after Cartesian pose (footer 4) and before Cartesian impedance controller (now footer 6). It retains the shared tool/surface-frame diagram, Surface-relative compliance heading, and both native normal/tangent symbols and definitions. Contact experiment remains later, now footer 10 / physical slide 11, with its process sequence and four stiffness settings. Centre its retained settings block beneath the process sequence. Do not recombine the two slides. The diagram asset, equations, scientific values and existing speaking material remain unchanged. The new slide has blank speaker notes. All later main footers increase by one. There are now 25 main slides and nine hidden backups, with Conclusion at physical slide 25 and B1–B9 at physical slides 26–34. This supersedes earlier slide-number references and the earlier combined-slide requirement. There are still 29 active native equations and symbols.
+
+## Torque subscript removal (2026-09-21)
+
+On Real-time control, now footer 7 / physical slide 8 (formerly footer 6), show the torque mapping as tau = J^T(q) F, with no cart subscript on tau. Preserve the native equation's other mathematical contents, 22 pt regular black Cambria Math, placement and the rest of the slide. Keep its LaTeX source, alternative description, catalog and PDF/PNG/SVG assets synchronized. Speaking text, speaker notes and the thesis remain unchanged by this presentation-only notation edit.
+
+## Classical feedback diagram on Real-time control (2026-09-21)
+
+Use the thesis Figure 3.2 block-diagram conventions on Real-time control (footer 7 / physical slide 8, formerly footer 6): black rectangular operations, crossed circular summing junctions with explicit signs, labelled signals and orthogonal connections ending at block boundaries. Desired reference and negative measured feedback enter the first junction. Pose and velocity errors enter the impedance controller, with K and D shown as parameter inputs. Its wrench F passes through J^T(q), receiving measured q, to the torque sum. The second positive input collects model and null-space torque terms. The resulting commanded torque drives the robot. Keep the measured-state feedback and its branch explicit. All blocks, labels, circles and connectors are native editable PowerPoint shapes. Retain both unchanged native equations above the diagram, under Joint-torque mapping and Jacobian, and the 1 ms cycle line below. This presentation-only simplification uses the thesis style without modifying the thesis figure. Sources and matching diagram PDF/PNG/SVG/DrawingML are generated by `figures_and_images/sources/make_controller_feedback_diagram.py`. Speaking material stays unchanged. This supersedes the earlier four unboxed stage labels and their disconnected arrows, as well as the previous equation positions on this slide.
+
+## CoC illustration before coupling (2026-09-21)
+
+Introduce the Centre of compliance (CoC) illustration before the Translation–rotation coupling equations. The complete CoC slide is now footer 8 / physical slide 9, immediately after Real-time control. Translation–rotation coupling follows at footer 9 / physical slide 10. Preserve both slides' contents and layouts, including the Supporting moment and Opposing moment panels and the internal introduction-before-definitions order on the coupling slide. Keep both slides in the Cartesian controller section and update the native equation catalog to the new positions. This supersedes the earlier instruction to introduce coupling before the geometric CoC sketch. Speaking text and speaker notes remain unchanged.
 
 ## Impedance-reference slide order (2026-09-18)
 
@@ -105,53 +205,54 @@ The control repository contains `surface_grinding_controller`, `experiments`, `a
 
 The Overview is a single slide listing only six chapter names: Introduction, Cartesian controller, Contact experiments, Contact results, Null-space control and experiments, and Conclusion and future work. Do not restore individual slide titles, a second Overview page, or the word continued.
 
-The presentation uses native PowerPoint sections for these chapters. Introduction contains the title, Motivation, Contact demonstration, and Overview. Cartesian controller contains Cartesian pose through Centre of compliance (CoC). Contact experiments contains Contact experiment, Angular quantities, and the three consistency checks. Contact results contains Baseline angular error through Angular error and interaction wrench. Null-space control and experiments contains physical slides 19–23. Conclusion and future work contains Conclusion at physical slide 24. A separate Backup section holds B1–B9 and is omitted from Overview.
+The presentation uses native PowerPoint sections for these chapters. Introduction contains the title, Motivation, Contact demonstration, and Overview. Cartesian controller contains Cartesian pose, Surface frame, and the controller material through Translation–rotation coupling, with the Centre of compliance (CoC) illustration immediately before coupling. Contact experiments contains Contact experiment and the three consistency checks. Contact results contains Effect of rotational stiffness through Angular error and interaction wrench. Null-space control and experiments contains physical slides 18–22. Conclusion and future work contains Conclusion at physical slide 23. A separate Backup section holds B1–B11, including Angular quantities at B10 and Baseline angular error at B11, and is omitted from Overview.
 
 Use one column of 22 pt Arial, with right-aligned dark-blue numbers in a fixed-width column and consistent row spacing. Run `Final Presentation/Speaking/build/update-overview.ps1` after each presentation edit, or its portable XML equivalent in `experiments/nullspace_narrative/restructure_presentation.py` when PowerShell is unavailable. Both derive the six chapter rows from native PowerPoint sections and exclude Backup. Maintain chapter assignments when adding or moving slides.
 
-The user approved the following narrative on 2026-09-16, with the conditioning-torque table removed on 2026-09-18. It supersedes earlier slide orders and instructions to keep only two backups. The deck has **24 main slides and 9 hidden backups**:
+The user approved the following narrative on 2026-09-16, with the conditioning-torque table removed on 2026-09-18, the Surface frame introduction split out, the CoC illustration moved before coupling, and Angular quantities and Baseline angular error moved to backup on 2026-09-21. It supersedes earlier slide orders and backup counts. The deck has **23 main slides and 11 hidden backups**:
 
 1. Master Thesis Presentation
 2. Motivation
 3. Contact demonstration
 4. Overview
 5. Cartesian pose
-6. Cartesian impedance controller
-7. Real-time control
-8. Translation–rotation coupling
+6. Surface frame
+7. Cartesian impedance controller
+8. Real-time control
 9. Centre of compliance (CoC)
-10. Contact experiment
-11. Angular quantities
+10. Translation–rotation coupling
+11. Contact experiment
 12. Normal-force plausibility assessment
 13. Moment plausibility assessment
 14. Commanded and estimated wrench
-15. Baseline angular error
-16. Effect of rotational stiffness
-17. Effect of CoC position
-18. Angular error and interaction wrench
-19. Null-space controller
-20. Null-space experiment
-21. Cumulative joint motion
-22. Jacobian conditioning
-23. Joint motion over time
-24. Conclusion
-25. Null-space torques and projector (B1)
-26. Disturbance demonstration (B2)
-27. Cumulative joint motion: all settings (B3)
-28. Jacobian conditioning: all settings (B4)
-29. Joint motion: mean of three trials (B5)
-30. Joint motion: all individual trials (B6)
-31. Joint motion: one trial per setting (B7)
-32. Net joint motion over time (B8)
-33. Net joint motion (B9)
+15. Effect of rotational stiffness
+16. Effect of CoC position
+17. Angular error and interaction wrench
+18. Null-space controller
+19. Null-space experiment
+20. Cumulative joint motion
+21. Jacobian conditioning
+22. Joint motion over time
+23. Conclusion
+24. Null-space torques and projector (B1)
+25. Disturbance demonstration (B2)
+26. Cumulative joint motion: all settings (B3)
+27. Jacobian conditioning: all settings (B4)
+28. Joint motion: mean of three trials (B5)
+29. Joint motion: all individual trials (B6)
+30. Joint motion: one trial per setting (B7)
+31. Net joint motion over time (B8)
+32. Net joint motion (B9)
+33. Angular quantities (B10)
+34. Baseline angular error (B11)
 
-The full presentation PDF includes **all 33 slides**. Keep B1–B9 hidden in the PowerPoint slideshow at physical slides 25–33. For PowerPoint SaveAs PDF, temporarily unhide all nine backups in memory, export, and close without saving those visibility changes. `Supplementary_slides.pdf` contains physical pages 25–33, giving nine pages. Main footer numbers are one lower than physical slide indices. The title slide retains its original furniture and no added number.
+The full presentation PDF includes **all 34 slides**. Keep B1–B11 hidden in the PowerPoint slideshow at physical slides 24–34. For PowerPoint SaveAs PDF, temporarily unhide all eleven backups in memory, export, and close without saving those visibility changes. `Supplementary_slides.pdf` contains physical pages 24–34, giving eleven pages. Main footer numbers are one lower than physical slide indices. The title slide retains its original furniture and no added number.
 
 The main null-space story holds enabled settings fixed at k_sigma = 2 N m and d_null = 2 N m s/rad: no torque, damping alone, conditioning alone, then combined. Its three plots show cumulative motion, Jacobian conditioning and the mean joint-1 history with one sample SD, followed directly by Conclusion. The former conditioning-torque comparison table is archived and omitted from the active deck. Its source values remain 0.29° and 0.19° at 1.5, then 1.69° and 0.83° at 2. Explain that near-zero net motion can coexist with repeated reversals. Keep all seven complete six-setting views in B3–B9. The original four-setting thesis figures remain unchanged because this extension is presentation-only.
 
 Rebuild the complete six-setting figures with `figures_and_images/sources/make_combined_nullspace.py`, then the main subset with `make_nullspace_narrative.py`. See `experiments/nullspace_narrative/README.md` for deck rebuilding and validation. The older `experiments/h_mode_combined/update_presentation.py` restores the superseded 30-slide structure and must not be run directly on the active narrative.
 
-The introduction shows Contact demonstration immediately after Motivation, followed by Overview. The presentation then introduces the Cartesian controller, contact experiments, validation and contact results. Null-space theory, experiment and results form a separate block after the contact results. The consistency checks proceed in this order: normal-force plausibility, moment plausibility, commanded and estimated wrench. All three use TCP-centred configurations where described in the thesis. Results proceed from the baseline to rotational stiffness, CoC location, angular-error/wrench traces, null-space damping, and Jacobian conditioning.
+The introduction shows Contact demonstration immediately after Motivation, followed by Overview. The presentation then introduces the Cartesian controller, contact experiments, validation and contact results. Null-space theory, experiment and results form a separate block after the contact results. The consistency checks proceed in this order: normal-force plausibility, moment plausibility, commanded and estimated wrench. All three use TCP-centred configurations where described in the thesis. Main results proceed through rotational stiffness, CoC location, angular-error/wrench traces, null-space damping, and Jacobian conditioning. Baseline angular error is retained in backup B11.
 
 Above the normal-force and moment plausibility plots, retain the short manual-push heading with about 20 mm, the manual-rotation heading, and the measured rotational error change of 6.565 degrees. Remove the visible setup lines `Along the surface normal`, `Fixed pose reference · CoC at TCP`, and `Normal push held · Fixed pose reference`. Do not restore them. Keep their scientific details in the speaking text and notes. The normal push is about 20 mm (2 cm), not 2 mm. The measured EE movement is +19.650 mm along the surface normal, giving a normal position-error change of -19.650 mm because the controller uses desired minus measured position. The moment test manually rotates the tool about surface tangent t1 while retaining the normal push. Label 6.565 degrees as the measured rotational error change relative to the loaded baseline, not as a commanded angle or a physical rotation direction. Both checks keep the captured desired position and orientation fixed, with CoC at TCP. Keep the existing plots and equation dimensions, with the remaining setup headings and measured error on the left and the equation on the right above each plot. Introduce these actions first in the speaking bullets and notes. Sources: MyOwn chapters 04 and 05, professoremail/T_MODE_MANUAL_D_REPEAT_PROTOCOL.md, analyse_t_mode_consistency.py and T_MODE_MANUAL_D_REPEAT_r01_controller_log.csv. These validation displacements are separate from the removed null-space position-error subplot and its former 2 mm criterion. On Commanded and estimated wrench (physical slide 14, footer 13), omit the Separate trial during contact establishment bullet, as requested on 2026-09-15. Its stationary force and moment comparisons come from a separate TCP-centred contact trial, not the preceding manual perturbations. Keep that transition clear in the narration.
 
@@ -177,7 +278,7 @@ Contact metric update (2026-09-15): all 69 contact trials have original terminal
 
 Avoid duplicate axis glossaries around result figures, including backups. Retain short stiffness headings with physical directional descriptions and the `r_c,t2` CoC displacement definition. The user removed the `est: robot's model-based estimate` line from the contact-response and interaction-moment slide; keep that explanation in the speaking text and notes. Preserve figure axes, legends, units, data, and uncertainty information.
 
-Use measured pose-based entry-offset notation `theta_meas,t1`. The baseline horizontal axis is Measured Angular Offset, with 0.69, 9.31 and -9.41 degrees. The main contact metric is now final angular error `theta_err,t1(t_end)` relative to the calibrated surface normal. The three baseline mean final components are 1.65, 1.75 and 1.41 degrees. Both larger entry tilts have smaller final error magnitude, and the negative entry error changes sign. The nominal-zero component increases. Rotational stiffness 5, 15 and 50 N m/rad gives final errors 1.75, 2.04 and 6.58 degrees. Case-D legends retain the across-setting entry means +9.32 and -9.36 degrees. Its lowest tested final-error magnitude is 1.17 degrees at +80 mm for positive entry tilt and 0.94 degrees at +10 mm for negative entry tilt. More rotation can carry the error component through zero and increase its magnitude. Do not restore gamma-based response values or their old percentage comparisons. Sources: MyOwn/code/python/figures/contact_angular_error, chapters/04_experimental_setup_and_evaluation.tex, chapters/05_results_and_discussion.tex and backmatter/appendix_additional_plots.tex.
+Use measured pose-based entry-offset notation `theta_meas,t1`. The baseline horizontal axis is Measured Angular Offset, with 0.69, 9.31 and -9.41 degrees. The main contact metric is now final angular error `theta_err,t1(t_end)` relative to the calibrated surface normal. The three baseline mean final components are 1.65, 1.75 and 1.41 degrees. Both larger entry tilts have smaller final error magnitude, and the negative entry error changes sign. The nominal-zero component increases. Rotational stiffness 5, 15 and 50 N m/rad gives final errors 1.75, 2.04 and 6.58 degrees. Case-D legends retain the across-setting entry means +9.33 and -9.38 degrees. Its lowest tested final-error magnitude is 0.83 degrees at +100 mm for positive entry tilt and 0.94 degrees at +10 mm for negative entry tilt. More rotation can carry the error component through zero and increase its magnitude. Do not restore gamma-based response values or their old percentage comparisons. Sources: MyOwn/code/python/figures/contact_angular_error, chapters/04_experimental_setup_and_evaluation.tex, chapters/05_results_and_discussion.tex and backmatter/appendix_additional_plots.tex.
 
 `Angular quantities` (physical slide 12, footer 11) follows Contact experiment. Define Measured angular offset as entry tilt relative to the calibrated surface. Define Angular error as tool-normal tilt relative to the calibrated surface. The angular-error vector is the shortest rotation from the inward configured normal `-n_s` to `R_EE(t) n_Tool,EE`, resolved about the first surface tangent. It is the negative of the logged normal-error vector and equals the measured angular offset at entry. Smaller component magnitude means less error about that tangent. Positive and negative values indicate opposite tilt directions. The configured surface normal comes from plate-seated calibration. The calibrated tool normal, transformed by measured EE orientation, estimates the physical tool direction. Calibration and tool-mount uncertainty remains unquantified. A zero first-tangent component alone does not establish zero total normal-angle error. Keep this metric distinct from controller orientation error e_R relative to the held pose. Do not use scalar entry-offset minus gamma as the calculation.
 
@@ -263,9 +364,9 @@ The CoC sketch slide has no commanded-moment equation or separate m_R key.
 Use the shared surface_tool_frame.tikz core for the tool/surface-frame drawing
 in the presentation and thesis direction-rule figure.
 
-Wider CoC comparison (2026-09-15): show -80, -40, -20, -10, 0, 10, 20, 40 and +80 mm for both entry directions. Use three-repeat means and sample SD from the same audited 69-trial/23-setting main-contact summary as the thesis. The added 12 reports completed the five-second contact phase, with saved settings matching the corresponding +/-40 mm trials except for CoC displacement. Keep the representative wrench time histories at -40 mm, TCP and +40 mm. The lowest positive-entry mean error is 1.17 degrees at +80 mm (33.3% below TCP), while the negative-entry minimum remains 0.94 degrees at +10 mm (33.7% below TCP).
+Wider CoC comparison (extended 2026-09-21): show -100, -90, -80, -40, -20, -10, 0, 10, 20, 40, 80, 90 and 100 mm for both entry directions. Use three-repeat means and sample SD from 78 plotted terminal reports within the 93-trial/31-setting main-contact summary. The 24 new trials at +/-90 and +/-100 mm completed the five-second contact phase in a later session with matching saved calibration and impedance parameters. Preserve every original point and the representative -40/TCP/+40 mm time histories. Positive-entry minimum: 0.83 degrees at +100 mm, 52.6% below TCP. Negative-entry minimum: 0.94 degrees at +10 mm, 33.7% below TCP. Across-position entry means: +9.33/-9.38 degrees. Regenerate with Thesis_Final_Control/analysis/make_coc_position_figure.py. The plot has a 15.5 cm source axis width, a vertical range containing every error bar, and 10-degree y ticks. Its slide image is 700 pt wide, centred and scaled proportionally. Sources, assets, embedded picture and slide PDF match the thesis data. Speaking material stays frozen.
 
-CoC axis grid (2026-09-15): the plot on footer 16 (physical slide 17) labels every measured r_c,t2 position: -80, -40, -20, -10, 0, 10, 20, 40 and 80 mm. Draw a visible dotted vertical gridline through each tested position and preserve proportional spacing, all measured points and their error bars. Keep every x tick label horizontal and centred below its tick. Use 8 pt x tick text so the nearby central values remain separate, with normal spacing between the tick row, axis title and legend. Apply the same grid to the thesis Case-D figure.
+CoC axis grid (2026-09-15): the plot on footer 16 (physical slide 17) labels every measured r_c,t2 position: -100, -90, -80, -40, -20, -10, 0, 10, 20, 40, 80, 90 and 100 mm. Draw a visible dotted vertical gridline through each tested position and preserve proportional spacing, all measured points and their error bars. Keep every x tick label horizontal and centred below its tick. Use 8 pt x tick text so the nearby central values remain separate, with normal spacing between the tick row, axis title and legend. Apply the same grid to the thesis Case-D figure.
 
 Shared tool geometry (2026-09-15): on Contact experiment (footer 9) and in the thesis direction-rule figure, draw the 120 mm tool length along t2 and the 40 mm width along t1. Place the tool-face centre and shaft at the frame origin, with the long centreline on t2 and equal half-lengths in both t2 directions. Draw the axes behind the opaque tool and retain their visible arrows, with n_s continuing above the shaft. Keep the identical surface_tool_frame.tikz core in both repositories.
 

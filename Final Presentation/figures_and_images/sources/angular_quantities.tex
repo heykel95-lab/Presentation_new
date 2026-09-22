@@ -2,57 +2,5 @@
 \usepackage{amsmath,amssymb}
 \usetikzlibrary{arrows.meta,calc,positioning}
 \begin{document}
-% Schematic pure t_1 rotation, shown using actual normal vectors.
-% The comparison reference is the inward calibrated normal -n_s.
-% The main comparison is unchanged. Its inward reference -n_s points right.
-% The separate frame inset is rotated clockwise: n_s is up and t_2 is right.
-% Positive rotation about outward t_1 is anticlockwise.
-% Tool directions are R_EE(t) n_Tool,EE, not nominal end-effector axes.
-% The common origin compares orientations only, not contact positions.
-\begin{tikzpicture}[
-  scale=1.0,
-  reference/.style={red!75!black, line width=1.1pt,-{Latex[length=2.3mm]}},
-  entry/.style={green!60!black, line width=1.3pt,-{Latex[length=2.3mm]}},
-  endpoint/.style={blue!70!black, line width=1.1pt,dashed,-{Latex[length=2.3mm]}},
-  angle/.style={-{Latex[length=2.0mm]}, line width=0.9pt},
-  axis/.style={-{Latex[length=1.6mm]}, black, line width=0.7pt},
-  lbl/.style={font=\footnotesize, inner sep=2pt,align=left}
-]
-  % Preserve the original drawing bounds while rotating only the inset.
-  \path[use as bounding box] (-13.51439pt,-17.0435pt) rectangle (318.50218pt,118.51297pt);
-  \draw[reference] (0,0) -- (7.5,0);
-  \draw[entry] (0,0) -- (32:7.5);
-  \draw[endpoint] (0,0) -- (10:7.5);
-
-  \node[lbl,green!60!black,anchor=west] at (6.55,3.97)
-    {Tool normal at entry};
-  \node[lbl,blue!70!black,anchor=west] at (7.65,1.30)
-    {Tool normal at end};
-  \node[lbl,red!75!black,anchor=west] at (7.65,0)
-    {Calibrated surface normal};
-
-  % Both angular quantities begin at the same calibrated reference.
-  \draw[angle,red!75!black] (0:4.8)
-    arc[start angle=0,end angle=32,radius=4.8];
-  \node[lbl,red!75!black,anchor=west] at (5.03,1.96)
-    {$\theta_{\mathrm{meas},t_1}$};
-  \draw[angle,blue!70!black] (0:6.3)
-    arc[start angle=0,end angle=10,radius=6.3];
-  \node[lbl,blue!70!black,anchor=north] at (6.20,-0.18)
-    {$\theta_{\mathrm{err},t_1}$};
-
-  % Right-handed surface-frame inset in its separately rotated view.
-  % t_1 x t_2 = n_s, so positive rotation runs from +t_2 to +n_s.
-  \begin{scope}[shift={(1.0,2.65)}]
-    \draw[axis] (0,0.18) -- (0,1.0) node[lbl,above] {$n_s$};
-    \draw[axis] (0.18,0) -- (1.1,0) node[lbl,right] {$t_2$};
-    \draw[angle,black] (15:0.72)
-      arc[start angle=15,end angle=75,radius=0.72];
-    \node[lbl,font=\normalsize] at (0.78,0.73) {$+$};
-    \draw[black] (0,0) circle (0.11);
-    \fill[black] (0,0) circle (0.035);
-    \node[lbl,anchor=north west] at (0.15,-0.15) {$t_1$};
-  \end{scope}
-\end{tikzpicture}
-
+\input{originals/ch04/surface_reference_geometry.tex}
 \end{document}

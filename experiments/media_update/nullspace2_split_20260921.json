@@ -1,0 +1,676 @@
+{
+  "date": "2026-09-21",
+  "source_video": "Video/Nullspace2_presentation.mp4",
+  "cut_seconds": 23,
+  "main_slides": 25,
+  "hidden_backups": 11,
+  "total_slides": 36,
+  "supplementary_pages": 11,
+  "slide_order": [
+    {
+      "physical": 1,
+      "path": "ppt/slides/slide1.xml",
+      "title": "Master Thesis Presentation",
+      "footer": "",
+      "hidden": false
+    },
+    {
+      "physical": 2,
+      "path": "ppt/slides/slide2.xml",
+      "title": "Motivation",
+      "footer": "1",
+      "hidden": false
+    },
+    {
+      "physical": 3,
+      "path": "ppt/slides/slide3.xml",
+      "title": "Contact demonstration",
+      "footer": "2",
+      "hidden": false
+    },
+    {
+      "physical": 4,
+      "path": "ppt/slides/slide4.xml",
+      "title": "Overview",
+      "footer": "3",
+      "hidden": false
+    },
+    {
+      "physical": 5,
+      "path": "ppt/slides/slide5.xml",
+      "title": "Cartesian pose",
+      "footer": "4",
+      "hidden": false
+    },
+    {
+      "physical": 6,
+      "path": "ppt/slides/slide35.xml",
+      "title": "Surface frame",
+      "footer": "5",
+      "hidden": false
+    },
+    {
+      "physical": 7,
+      "path": "ppt/slides/slide6.xml",
+      "title": "Cartesian impedance controller",
+      "footer": "6",
+      "hidden": false
+    },
+    {
+      "physical": 8,
+      "path": "ppt/slides/slide7.xml",
+      "title": "Real-time control",
+      "footer": "7",
+      "hidden": false
+    },
+    {
+      "physical": 9,
+      "path": "ppt/slides/slide9.xml",
+      "title": "Centre of compliance (CoC)",
+      "footer": "8",
+      "hidden": false
+    },
+    {
+      "physical": 10,
+      "path": "ppt/slides/slide8.xml",
+      "title": "Translation–rotation coupling",
+      "footer": "9",
+      "hidden": false
+    },
+    {
+      "physical": 11,
+      "path": "ppt/slides/slide11.xml",
+      "title": "Contact experiment",
+      "footer": "10",
+      "hidden": false
+    },
+    {
+      "physical": 12,
+      "path": "ppt/slides/slide14.xml",
+      "title": "Normal-force plausibility assessment",
+      "footer": "11",
+      "hidden": false
+    },
+    {
+      "physical": 13,
+      "path": "ppt/slides/slide15.xml",
+      "title": "Moment plausibility assessment",
+      "footer": "12",
+      "hidden": false
+    },
+    {
+      "physical": 14,
+      "path": "ppt/slides/slide16.xml",
+      "title": "Commanded and estimated wrench",
+      "footer": "13",
+      "hidden": false
+    },
+    {
+      "physical": 15,
+      "path": "ppt/slides/slide18.xml",
+      "title": "Effect of rotational stiffness",
+      "footer": "14",
+      "hidden": false
+    },
+    {
+      "physical": 16,
+      "path": "ppt/slides/slide19.xml",
+      "title": "Effect of CoC position",
+      "footer": "15",
+      "hidden": false
+    },
+    {
+      "physical": 17,
+      "path": "ppt/slides/slide20.xml",
+      "title": "Angular error and interaction wrench",
+      "footer": "16",
+      "hidden": false
+    },
+    {
+      "physical": 18,
+      "path": "ppt/slides/slide10.xml",
+      "title": "Null-space controller",
+      "footer": "17",
+      "hidden": false
+    },
+    {
+      "physical": 19,
+      "path": "ppt/slides/slide36.xml",
+      "title": "Disturbance demonstration",
+      "footer": "18",
+      "hidden": false
+    },
+    {
+      "physical": 20,
+      "path": "ppt/slides/slide37.xml",
+      "title": "Disturbance demonstration",
+      "footer": "19",
+      "hidden": false
+    },
+    {
+      "physical": 21,
+      "path": "ppt/slides/slide13.xml",
+      "title": "Null-space experiment",
+      "footer": "20",
+      "hidden": false
+    },
+    {
+      "physical": 22,
+      "path": "ppt/slides/slide31.xml",
+      "title": "Cumulative joint motion",
+      "footer": "21",
+      "hidden": false
+    },
+    {
+      "physical": 23,
+      "path": "ppt/slides/slide32.xml",
+      "title": "Jacobian conditioning",
+      "footer": "22",
+      "hidden": false
+    },
+    {
+      "physical": 24,
+      "path": "ppt/slides/slide33.xml",
+      "title": "Joint motion over time",
+      "footer": "23",
+      "hidden": false
+    },
+    {
+      "physical": 25,
+      "path": "ppt/slides/slide24.xml",
+      "title": "Conclusion",
+      "footer": "24",
+      "hidden": false
+    },
+    {
+      "physical": 26,
+      "path": "ppt/slides/slide25.xml",
+      "title": "Null-space torques and projector",
+      "footer": "B1",
+      "hidden": true
+    },
+    {
+      "physical": 27,
+      "path": "ppt/slides/slide26.xml",
+      "title": "Disturbance demonstration",
+      "footer": "B2",
+      "hidden": true
+    },
+    {
+      "physical": 28,
+      "path": "ppt/slides/slide21.xml",
+      "title": "Cumulative joint motion: all settings",
+      "footer": "B3",
+      "hidden": true
+    },
+    {
+      "physical": 29,
+      "path": "ppt/slides/slide22.xml",
+      "title": "Jacobian conditioning: all settings",
+      "footer": "B4",
+      "hidden": true
+    },
+    {
+      "physical": 30,
+      "path": "ppt/slides/slide30.xml",
+      "title": "Joint motion: mean of three trials",
+      "footer": "B5",
+      "hidden": true
+    },
+    {
+      "physical": 31,
+      "path": "ppt/slides/slide28.xml",
+      "title": "Joint motion: all individual trials",
+      "footer": "B6",
+      "hidden": true
+    },
+    {
+      "physical": 32,
+      "path": "ppt/slides/slide29.xml",
+      "title": "Joint motion: one trial per setting",
+      "footer": "B7",
+      "hidden": true
+    },
+    {
+      "physical": 33,
+      "path": "ppt/slides/slide27.xml",
+      "title": "Net joint motion over time",
+      "footer": "B8",
+      "hidden": true
+    },
+    {
+      "physical": 34,
+      "path": "ppt/slides/slide23.xml",
+      "title": "Net joint motion",
+      "footer": "B9",
+      "hidden": true
+    },
+    {
+      "physical": 35,
+      "path": "ppt/slides/slide12.xml",
+      "title": "Angular quantities",
+      "footer": "B10",
+      "hidden": true
+    },
+    {
+      "physical": 36,
+      "path": "ppt/slides/slide17.xml",
+      "title": "Baseline angular error",
+      "footer": "B11",
+      "hidden": true
+    }
+  ],
+  "page_map_zero_based": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15,
+    16,
+    17,
+    24,
+    24,
+    18,
+    19,
+    20,
+    21,
+    22,
+    23,
+    24,
+    25,
+    26,
+    27,
+    28,
+    29,
+    30,
+    31,
+    32,
+    33
+  ],
+  "changed_video_pages": [
+    19,
+    20,
+    27
+  ],
+  "changed_footer_pages": [
+    19,
+    20,
+    21,
+    22,
+    23,
+    24,
+    25
+  ],
+  "native_equation_count": 29,
+  "existing_notes_unchanged": true,
+  "other_slide_contents_unchanged_except_footer": true,
+  "overview_chapters": [
+    "Introduction",
+    "Cartesian controller",
+    "Contact experiments",
+    "Contact results",
+    "Null-space control and experiments",
+    "Conclusion and future work"
+  ],
+  "all_internal_relationships_resolve": true,
+  "removed_embedded_parts": [
+    "ppt/media/Nullspace2_presentation.mp4",
+    "ppt/media/Nullspace2_poster.png"
+  ],
+  "changed_existing_parts": [
+    "[Content_Types].xml",
+    "ppt/slides/slide26.xml",
+    "ppt/slides/_rels/slide26.xml.rels",
+    "ppt/slides/slide32.xml",
+    "ppt/slides/slide33.xml",
+    "ppt/presentation.xml",
+    "ppt/_rels/presentation.xml.rels",
+    "docProps/app.xml",
+    "ppt/slides/slide24.xml",
+    "ppt/slides/slide31.xml",
+    "ppt/slides/slide13.xml"
+  ],
+  "new_parts": [
+    "ppt/media/Nullspace2_part1_0000-0023.mp4",
+    "ppt/media/Nullspace2_part1_0000-0023_poster.png",
+    "ppt/media/Nullspace2_part2_0023-end.mp4",
+    "ppt/media/Nullspace2_part2_0023-end_poster.png",
+    "ppt/notesSlides/_rels/notesSlide36.xml.rels",
+    "ppt/notesSlides/_rels/notesSlide37.xml.rels",
+    "ppt/notesSlides/notesSlide36.xml",
+    "ppt/notesSlides/notesSlide37.xml",
+    "ppt/slides/_rels/slide36.xml.rels",
+    "ppt/slides/_rels/slide37.xml.rels",
+    "ppt/slides/slide36.xml",
+    "ppt/slides/slide37.xml"
+  ],
+  "pdf_method": "Original PowerPoint PDF pages retained, with video posters, captions, titles and affected footers updated.",
+  "pdf_page_comparisons": [
+    {
+      "physical": 1,
+      "previous_physical": 1,
+      "identical_except_footer": true,
+      "changed_pixels": 0
+    },
+    {
+      "physical": 2,
+      "previous_physical": 2,
+      "identical_except_footer": true,
+      "changed_pixels": 0
+    },
+    {
+      "physical": 3,
+      "previous_physical": 3,
+      "identical_except_footer": true,
+      "changed_pixels": 0
+    },
+    {
+      "physical": 4,
+      "previous_physical": 4,
+      "identical_except_footer": true,
+      "changed_pixels": 0
+    },
+    {
+      "physical": 5,
+      "previous_physical": 5,
+      "identical_except_footer": true,
+      "changed_pixels": 0
+    },
+    {
+      "physical": 6,
+      "previous_physical": 6,
+      "identical_except_footer": true,
+      "changed_pixels": 0
+    },
+    {
+      "physical": 7,
+      "previous_physical": 7,
+      "identical_except_footer": true,
+      "changed_pixels": 0
+    },
+    {
+      "physical": 8,
+      "previous_physical": 8,
+      "identical_except_footer": true,
+      "changed_pixels": 0
+    },
+    {
+      "physical": 9,
+      "previous_physical": 9,
+      "identical_except_footer": true,
+      "changed_pixels": 0
+    },
+    {
+      "physical": 10,
+      "previous_physical": 10,
+      "identical_except_footer": true,
+      "changed_pixels": 0
+    },
+    {
+      "physical": 11,
+      "previous_physical": 11,
+      "identical_except_footer": true,
+      "changed_pixels": 0
+    },
+    {
+      "physical": 12,
+      "previous_physical": 12,
+      "identical_except_footer": true,
+      "changed_pixels": 0
+    },
+    {
+      "physical": 13,
+      "previous_physical": 13,
+      "identical_except_footer": true,
+      "changed_pixels": 0
+    },
+    {
+      "physical": 14,
+      "previous_physical": 14,
+      "identical_except_footer": true,
+      "changed_pixels": 0
+    },
+    {
+      "physical": 15,
+      "previous_physical": 15,
+      "identical_except_footer": true,
+      "changed_pixels": 0
+    },
+    {
+      "physical": 16,
+      "previous_physical": 16,
+      "identical_except_footer": true,
+      "changed_pixels": 0
+    },
+    {
+      "physical": 17,
+      "previous_physical": 17,
+      "identical_except_footer": true,
+      "changed_pixels": 0
+    },
+    {
+      "physical": 18,
+      "previous_physical": 18,
+      "identical_except_footer": true,
+      "changed_pixels": 0
+    },
+    {
+      "physical": 21,
+      "previous_physical": 19,
+      "identical_except_footer": true,
+      "changed_pixels": 48
+    },
+    {
+      "physical": 22,
+      "previous_physical": 20,
+      "identical_except_footer": true,
+      "changed_pixels": 51
+    },
+    {
+      "physical": 23,
+      "previous_physical": 21,
+      "identical_except_footer": true,
+      "changed_pixels": 27
+    },
+    {
+      "physical": 24,
+      "previous_physical": 22,
+      "identical_except_footer": true,
+      "changed_pixels": 26
+    },
+    {
+      "physical": 25,
+      "previous_physical": 23,
+      "identical_except_footer": true,
+      "changed_pixels": 27
+    },
+    {
+      "physical": 26,
+      "previous_physical": 24,
+      "identical_except_footer": true,
+      "changed_pixels": 0
+    },
+    {
+      "physical": 28,
+      "previous_physical": 26,
+      "identical_except_footer": true,
+      "changed_pixels": 0
+    },
+    {
+      "physical": 29,
+      "previous_physical": 27,
+      "identical_except_footer": true,
+      "changed_pixels": 0
+    },
+    {
+      "physical": 30,
+      "previous_physical": 28,
+      "identical_except_footer": true,
+      "changed_pixels": 0
+    },
+    {
+      "physical": 31,
+      "previous_physical": 29,
+      "identical_except_footer": true,
+      "changed_pixels": 0
+    },
+    {
+      "physical": 32,
+      "previous_physical": 30,
+      "identical_except_footer": true,
+      "changed_pixels": 0
+    },
+    {
+      "physical": 33,
+      "previous_physical": 31,
+      "identical_except_footer": true,
+      "changed_pixels": 0
+    },
+    {
+      "physical": 34,
+      "previous_physical": 32,
+      "identical_except_footer": true,
+      "changed_pixels": 0
+    },
+    {
+      "physical": 35,
+      "previous_physical": 33,
+      "identical_except_footer": true,
+      "changed_pixels": 0
+    },
+    {
+      "physical": 36,
+      "previous_physical": 34,
+      "identical_except_footer": true,
+      "changed_pixels": 0
+    }
+  ],
+  "supplementary_matches_full_pdf": true,
+  "all_existing_notes_and_other_embedded_media_unchanged": true,
+  "independent_click_playback_verified": true,
+  "frozen_file_sha256": {
+    "Final Presentation/Speaker_notes_and_timing.txt": "339b7beaf775db8ac69291800a840b94805ceccd5155b91e6f7890198305ee43",
+    "Final Presentation/Thesis_Defense_Speaking_Script_updated.pdf": "1eac49abc1c7e298d34d3f5138a4a9efc5874608f0ac5478a44b6293bf4bf048",
+    "Final Presentation/Thesis_Defense_Speaking_Script.pdf": "1eac49abc1c7e298d34d3f5138a4a9efc5874608f0ac5478a44b6293bf4bf048",
+    "Final Presentation/Speaking/Thesis_Defense_Speaking_Script.tex": "3eba8ab195904af0307e9646fc850c68a9deca8c696679b6d6a7f8fd9b04dce1"
+  },
+  "video_checks": [
+    {
+      "file": "Nullspace2_presentation.mp4",
+      "sha256": "5bf2b3e250d1153e770dabdb91d66ba7f1ae5a100591f71e93439bb0cc49db5a",
+      "streams": [
+        {
+          "type": "vide",
+          "timescale": 90000,
+          "duration": 30.933333333333334,
+          "samples": 928
+        },
+        {
+          "type": "soun",
+          "timescale": 48000,
+          "duration": 30.932854166666665,
+          "samples": 1450
+        }
+      ]
+    },
+    {
+      "file": "Nullspace2_part1_0000-0023.mp4",
+      "sha256": "d651e9490e6a3ba0812be5f3be15d14f5a7231d1b0c4d8e3ccc7d99c0b1dae2f",
+      "streams": [
+        {
+          "type": "vide",
+          "timescale": 90000,
+          "duration": 23.0,
+          "samples": 690
+        },
+        {
+          "type": "soun",
+          "timescale": 48000,
+          "duration": 23.021333333333335,
+          "samples": 1080
+        }
+      ],
+      "full_decode_passed": true
+    },
+    {
+      "file": "Nullspace2_part2_0023-end.mp4",
+      "sha256": "ec0bef0886518bd77adbd0cede74d5b9d3e2d249b03ea320680c9996c91d7672",
+      "streams": [
+        {
+          "type": "vide",
+          "timescale": 90000,
+          "duration": 7.933333333333334,
+          "samples": 238
+        },
+        {
+          "type": "soun",
+          "timescale": 48000,
+          "duration": 7.9541875,
+          "samples": 373
+        }
+      ],
+      "full_decode_passed": true
+    }
+  ],
+  "first_and_last_frame_checks": [
+    {
+      "original_frame": 0,
+      "time_s": 0.0,
+      "output_frame": "part1_01.png",
+      "psnr_db": 49.61623826978127
+    },
+    {
+      "original_frame": 689,
+      "time_s": 22.966666666666665,
+      "output_frame": "part1_02.png",
+      "psnr_db": 45.265131280965946
+    },
+    {
+      "original_frame": 690,
+      "time_s": 23.0,
+      "output_frame": "part2_01.png",
+      "psnr_db": 47.00742455717201
+    },
+    {
+      "original_frame": 927,
+      "time_s": 30.9,
+      "output_frame": "part2_02.png",
+      "psnr_db": 45.94542289366514
+    }
+  ],
+  "installed_file_sha256": {
+    "Final Presentation/Thesis_Defense_gg0_v3.pptx": "4c73b1f97cc721c7a8eff0e46df5d73278aa9aac625a0ea165563620996fb53d",
+    "Final Presentation/Thesis_Defense_gg0_v3.pdf": "d79769d50597a5e8e7c6a792dfc74932d6910e86e8933af50aa268ab67c3f45a",
+    "Final Presentation/Supplementary_slides.pdf": "76da5667d85b483f122e94f6317ed7e467da7b7550c0db247ee5f9574bb72814",
+    "Final Presentation/figures_and_images/native_equations.json": "008a17a6d96a698bacabca5a5300f03c325c33c0f564529f1bb903f62d721ba9",
+    "Final Presentation/Video/Nullspace2_part1_0000-0023.mp4": "d651e9490e6a3ba0812be5f3be15d14f5a7231d1b0c4d8e3ccc7d99c0b1dae2f",
+    "Final Presentation/Video/Nullspace2_part1_0000-0023_poster.png": "4a7de04b5d2adf6335261ee1d14126e3365f4a6a8e8f42252f6d4271f7b8f796",
+    "Final Presentation/Video/Nullspace2_part2_0023-end.mp4": "ec0bef0886518bd77adbd0cede74d5b9d3e2d249b03ea320680c9996c91d7672",
+    "Final Presentation/Video/Nullspace2_part2_0023-end_poster.png": "28d30fccf163963891e5ad900e2bd1294b880090939e4218a927488eeea4be5b"
+  },
+  "original_video_sha256": {
+    "Final Presentation/Video/Nullspace2.mp4": "40b7798a4bac2c70cd775462b068063293ef474c84c8e030e39f344c5caba0c4",
+    "Final Presentation/Video/Nullspace2_presentation.mp4": "5bf2b3e250d1153e770dabdb91d66ba7f1ae5a100591f71e93439bb0cc49db5a"
+  },
+  "visual_review": {
+    "reviewed_physical_pages": [
+      19,
+      20,
+      27
+    ],
+    "renderer": "Poppler pdftoppm",
+    "passed": true
+  },
+  "new_slide_notes_empty": true
+}

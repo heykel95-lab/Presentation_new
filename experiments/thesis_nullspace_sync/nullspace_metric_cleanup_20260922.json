@@ -1,0 +1,61 @@
+{
+  "date": "2026-09-22",
+  "scope": "Null-space evaluation consistency in the thesis and presentation",
+  "presentation": {
+    "changed": false,
+    "reason": "The active deck already uses the requested narrative and contains no active net-motion backup plot.",
+    "main_sequence": [
+      {"physical_slide": 23, "title": "Cumulative joint motion"},
+      {"physical_slide": 24, "title": "Jacobian conditioning"},
+      {"physical_slide": 25, "title": "Joint motion over time"}
+    ],
+    "speaker_notes_changed": false,
+    "speaking_script_changed": false,
+    "sha256": {
+      "pptx": "e45d3b6406f798f8175db16bfb973a3e1cb732878cae173852d22ff321337023",
+      "pdf": "6e3b88abccbb34599cc8a1957d3d157f83e30b93f2e37395ac2b96b4c87f1526",
+      "supplementary_pdf": "6767f8cc9ceb79f37d38a047d619831e949b73c4f42834aa656fc8dbe49c74a0"
+    }
+  },
+  "thesis": {
+    "removed": [
+      "Net projected joint-motion derivation Delta q_null",
+      "Reference direction v_ref",
+      "Directional net-motion scalar Delta eta",
+      "The corresponding global symbol-list entries"
+    ],
+    "retained_quantities": [
+      "Cumulative projected joint motion E_N across all seven joints",
+      "Minimum singular value sigma_min",
+      "Measured joint-1 angle change Delta q_1(t) relative to disturbance onset"
+    ],
+    "added_explanation": [
+      "Joint 1 illustrates the temporal response because it receives the largest peak absolute equivalent disturbance-torque component in all twelve selected trials.",
+      "A near-zero final Delta q_1 describes only joint 1, while E_N remains positive for accumulated motion that later reverses."
+    ],
+    "modified_files": [
+      "chapters/04_experimental_setup_and_evaluation.tex",
+      "chapters/05_results_and_discussion.tex",
+      "frontmatter/symbols.tex",
+      "THESIS_WRITING_GUIDE.md",
+      "FIGURE_STYLE.md",
+      "Thesis.pdf"
+    ],
+    "compiled_pages": 121,
+    "undefined_references": 0,
+    "overfull_boxes": 0,
+    "output_sha256": "8f1ce5bae19d522b7a60266e466e84b7c26d07a26352aa2c8f91b3f9a87ff62d"
+  },
+  "data_check": {
+    "selected_conditions": [
+      "No null-space torque",
+      "Projected damping, d_null = 2 N m s/rad",
+      "Conditioning, k_sigma = 2 N m",
+      "Combined, k_sigma = 2 and d_null = 2"
+    ],
+    "trials_per_condition": 3,
+    "selected_trials": 12,
+    "criterion": "Largest peak absolute component among tau_disturbance_1 through tau_disturbance_7",
+    "joint_1_largest_count": 12
+  }
+}

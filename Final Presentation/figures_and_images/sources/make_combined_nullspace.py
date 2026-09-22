@@ -40,7 +40,7 @@ def params(path):
 
 def refresh():
  frames=[];joints=[];audit=[]
- known=json.loads((HERE/'nullspace_displacement_provenance.json').read_text())['sources']
+ known=json.loads((HERE/'nullspace_trial_provenance.json').read_text())['sources']
  hashes={(x['condition'],x['repetition']):x['sha256'] for x in known}
  ref=params(OLD/CONDITIONS[3][0]/'r01/params_effective')
  relevant=['q_init_case']+[f'q_init_table_{j}' for j in range(1,8)]+[k for k in ref if k.startswith(('hold_','disturbance_'))]+['nullspace_alpha','nullspace_sigma_deadband','nullspace_svd_relative_tolerance','log_every_n_cycles','experiment_duration','sigma_debug_log_period']
@@ -95,22 +95,18 @@ def calculate():
    w=d[(d.condition==cid)&(d.repetition==rep)];t=w.time.to_numpy();dq=w[COLS[3:]].to_numpy();speed=w.nullspace_speed.to_numpy()
    assert np.all(np.diff(t)>0) and np.max(abs(np.linalg.norm(dq,axis=1)-speed))<2e-9
    q=j[(j.condition==cid)&(j.repetition==rep)]
-   runs.append({'time':t,'cumulative':np.degrees(integrate(speed,t)),'vector':integrate(dq,t),'sigma':w.sigma_current.to_numpy(),'qt':q.phase_time_s.to_numpy(),'q':q.q1_deg.to_numpy()-q.q1_deg.iloc[0]})
+   runs.append({'time':t,'cumulative':np.degrees(integrate(speed,t)),'sigma':w.sigma_current.to_numpy(),'qt':q.phase_time_s.to_numpy(),'q':q.q1_deg.to_numpy()-q.q1_deg.iloc[0]})
   groups.append(runs)
- reference=np.mean([r['vector'][-1] for r in groups[0]],axis=0);reference/=np.linalg.norm(reference)
  report=[]
  for ci,runs in enumerate(groups):
-  for r in runs:r['net']=np.degrees(r['vector']@reference)
   record={'condition':CONDITIONS[ci][0]}
-  for k in ['cumulative','net','q','sigma']:
+  for k in ['cumulative','q','sigma']:
    vals=np.array([r[k][-1] for r in runs]);record[k+'_mean']=float(vals.mean());record[k+'_sd']=float(vals.std(ddof=1));record[k+'_trials']=vals.tolist()
   record['sigma_change_mean']=float(np.mean([r['sigma'][-1]-r['sigma'][0] for r in runs]))
   report.append(record)
  assert np.allclose([r['cumulative_mean'] for r in report[:4]],np.degrees([.132614246,.0992980553,.0050197591,.0294435416]),atol=3e-8,rtol=0)
- assert np.allclose([r['net_mean'] for r in report[:4]],np.degrees([.131175694,.0978973381,.000253676218,-.000185304078]),atol=3e-8,rtol=0)
- info={'conditions':report,'reference_direction':reference.tolist(),'recorded_interval_s':[5,9],'display_interval_s':[0,4],'interpolation':False,'smoothing':False,'uncertainty':'One sample SD across three trials, ddof=1','original_endpoints_verified':True,'combined_cumulative_reduction_vs_sigma2_percent':100*(1-report[4]['cumulative_mean']/report[3]['cumulative_mean']),'combined_cumulative_reduction_vs_sigma1p5_percent':100*(1-report[5]['cumulative_mean']/report[2]['cumulative_mean']),'acquisition_note':'Combined conditions acquired in a later session with the exact archived source revision and matching saved settings. Session effects are not independently controlled.'}
+ info={'conditions':report,'recorded_interval_s':[5,9],'display_interval_s':[0,4],'interpolation':False,'smoothing':False,'uncertainty':'One sample SD across three trials, ddof=1','original_endpoints_verified':True,'combined_cumulative_reduction_vs_sigma2_percent':100*(1-report[4]['cumulative_mean']/report[3]['cumulative_mean']),'combined_cumulative_reduction_vs_sigma1p5_percent':100*(1-report[5]['cumulative_mean']/report[2]['cumulative_mean']),'acquisition_note':'Combined conditions acquired in a later session with the exact archived source revision and matching saved settings. Session effects are not independently controlled.'}
  assert np.isclose(report[4]['cumulative_mean'],.8312711146194921,atol=1e-12,rtol=0)
- assert np.isclose(report[4]['net_mean'],-.01211755419277461,atol=1e-12,rtol=0)
  (HERE/'combined_nullspace_analysis.json').write_text(json.dumps(info,indent=2)+'\n')
  pd.DataFrame(report).drop(columns=[c for c in pd.DataFrame(report) if c.endswith('_trials')]).to_csv(HERE/'combined_nullspace_summary.csv',index=False)
  return groups,info
@@ -148,42 +144,28 @@ def plots(groups,info):
   if key=='sigma':ax.yaxis.set_major_formatter(FuncFormatter(lambda v,p:f'{v*10:.2f}'));ax.text(0,1.02,r'$\times10^{-1}$',transform=ax.transAxes);ax.set_yticks([.214,.215,.216,.217]);ax.set_title('',loc='left');ax.set_title('(b)',loc='right',fontsize=12)
   else:ax.set_ylim(bottom=0)
   legend(fig);save(fig,name)
- for key,name,view in [('net','nullspace_displacement_time','mean'),('q','joint_motion_time','all'),('q','joint_motion_single','single'),('q','joint_motion_mean','mean')]:
+ for key,name,view in [('q','joint_motion_time','all'),('q','joint_motion_single','single'),('q','joint_motion_mean','mean')]:
   fig=plt.figure(figsize=(9,4.5));axes=[fig.add_axes([.09,.34,.43,.56]),fig.add_axes([.68,.34,.29,.56])]
   for ci,runs in enumerate(groups):
    _,_,c,mark=CONDITIONS[ci]
    for ai,ax in enumerate(axes):
     if ai==1 and ci<2:continue
     if view=='mean':
-     t,m,sd=mean(runs,key);sel=t<=1 if ai==1 and key=='q' else np.ones(len(t),dtype=bool)
+     t,m,sd=mean(runs,key);sel=t<=1 if ai==1 else np.ones(len(t),dtype=bool)
      ix=np.flatnonzero(sel);ix=ix[np.unique(np.linspace(0,len(ix)-1,min(900,len(ix))).astype(int))]
-     ax.plot(t[ix],m[ix],color=c,lw=1,marker=mark,markevery=1 if key=='q' else 115,ms=2.5,mfc='white');ax.fill_between(t[ix],(m-sd)[ix],(m+sd)[ix],color=c,alpha=.12,lw=0)
+     ax.plot(t[ix],m[ix],color=c,lw=1,marker=mark,markevery=1,ms=2.5,mfc='white');ax.fill_between(t[ix],(m-sd)[ix],(m+sd)[ix],color=c,alpha=.12,lw=0)
     else:
      for ri,r in enumerate(runs[:1] if view=='single' else runs):
       t=r['qt']-5;sel=t<=1 if ai else np.ones(len(t),dtype=bool)
       ax.plot(t[sel],r['q'][sel],color=c,linestyle=['-','--',':'][ri],lw=.85,marker=mark,ms=2.1,mfc='white')
   for ax in axes:style(ax);ax.axhline(0,color='.5',lw=.6)
-  axes[0].set_ylabel((r'Joint 1 Motion, $\Delta q_1$' if key=='q' else r'Net Joint Motion, $\Delta\eta$')+r' [$^\circ$]')
-  axes[1].set_ylabel((r'$\Delta q_1$' if key=='q' else r'$\Delta\eta$')+r' [$^\circ$]')
-  axes[0].set_title('(a) All settings',fontsize=11);axes[1].set_title('(b) Conditioning and combined'+('\nFirst second' if key=='q' else ''),fontsize=10)
-  axes[0].set_ylim((-.2,6.6) if key=='q' else (-.3,8.7))
-  if key=='q':axes[1].set_xlim(0,1);axes[1].set_xticks([0,.25,.5,.75,1]);axes[1].set_ylim(-.03,.075)
+  axes[0].set_ylabel(r'Joint 1 Motion, $\Delta q_1$ [$^\circ$]')
+  axes[1].set_ylabel(r'$\Delta q_1$ [$^\circ$]')
+  axes[0].set_title('(a) All settings',fontsize=11);axes[1].set_title('(b) Conditioning and combined\nFirst second',fontsize=10)
+  axes[0].set_ylim(-.2,6.6)
+  axes[1].set_xlim(0,1);axes[1].set_xticks([0,.25,.5,.75,1]);axes[1].set_ylim(-.03,.075)
   axes[1].yaxis.set_major_formatter(FuncFormatter(lambda v,p:'0' if abs(v)<1e-10 else f'{v:.2f}'))
   legend(fig);save(fig,name)
- fig=plt.figure(figsize=(9,4.2));ax=fig.add_axes([.09,.32,.88,.60])
- order=[0,1,2,3,5,4]
- vals=[info['conditions'][i]['net_mean'] for i in order];sd=[info['conditions'][i]['net_sd'] for i in order]
- ax.bar(range(6),vals,yerr=sd,color=[CONDITIONS[i][2] for i in order],width=.58,capsize=3,alpha=.8)
- for i,(v,s) in enumerate(zip(vals,sd)):
-  exponent=int(np.floor(np.log10(abs(v)))) if v else 0
-  label=f'${v:.2f}$' if abs(v)>=.1 or not v else f'${v/10**exponent:.2f}'+r'\times10^{'+str(exponent)+'}$'
-  ax.text(i,v+s+.2 if v>=0 else v-s-.2,label,ha='center',va='bottom' if v>=0 else 'top',fontsize=11)
- ax.set_xticks(range(6));ax.set_xticklabels(['No torque','Damping\n$d_{null}=2$','Conditioning\n$k_\\sigma=1.5$','Conditioning\n$k_\\sigma=2$','Combined\n$k_\\sigma=1.5$, $d_{null}=2$','Combined\n$k_\\sigma=2$, $d_{null}=2$'],fontsize=10)
- ax.set_ylabel(r'Net Joint Motion, $\Delta\eta$ [$^\circ$]');ax.set_ylim(-.7,8.4);ax.axhline(0,color='.4',lw=.7);ax.grid(axis='y',alpha=.25);ax.set_axisbelow(True);ax.set_title('(c)',loc='left')
- for s in ['top','right']:ax.spines[s].set_visible(False)
- fig.text(.5,.05,'Three-trial mean and one sample standard deviation. Coefficients in SI units.',ha='center',fontsize=10)
- save(fig,'nullspace_net_displacement')
-
 if __name__=='__main__':
  parser=argparse.ArgumentParser(description=__doc__);parser.add_argument('--refresh',action='store_true');args=parser.parse_args()
  if args.refresh:refresh()

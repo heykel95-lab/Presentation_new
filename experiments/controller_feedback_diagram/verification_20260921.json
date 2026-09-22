@@ -1,0 +1,48 @@
+{
+  "slide_title": "Real-time control",
+  "physical_slide": 8,
+  "footer": 7,
+  "source": "MyOwn-thesis/figures/ch03/controller_block_diagram.tex, thesis Figure 3.2, physical page 57",
+  "scope": "Presentation-only simplified native block diagram. The thesis is unchanged.",
+  "diagram_shapes": 41,
+  "reference_junction": "desired reference minus measured state",
+  "impedance_inputs": [
+    "pose error",
+    "velocity error",
+    "K",
+    "D"
+  ],
+  "main_path": [
+    "signed difference junction",
+    "impedance controller",
+    "Jacobian transpose",
+    "additive torque sum",
+    "robot"
+  ],
+  "additional_torques": "Model and null-space terms",
+  "feedback": [
+    "measured pose and velocity to negative junction",
+    "measured joint configuration q to Jacobian transpose"
+  ],
+  "native_equation_count": 29,
+  "existing_native_equations_preserved": true,
+  "overview_chapters": [
+    "Introduction",
+    "Cartesian controller",
+    "Contact experiments",
+    "Contact results",
+    "Null-space control and experiments",
+    "Conclusion and future work"
+  ],
+  "verification": {
+    "only_real_time_control_slide_changed": true,
+    "all_29_native_equations_preserved": true,
+    "other_33_pdf_pages_pixel_identical": true,
+    "headers_and_footers_unchanged": true,
+    "existing_notes_speaking_files_and_supplementary_pdf_unchanged": true,
+    "nine_arrowheads_at_signal_destinations": true,
+    "two_crossed_signed_junctions_and_one_branch_dot": true,
+    "all_new_shapes_editable": true,
+    "all_labels_fit_and_fonts_cover_all_glyphs": true
+  }
+}

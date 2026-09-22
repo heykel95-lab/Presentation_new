@@ -1,0 +1,490 @@
+{
+  "date": "2026-09-22",
+  "removed_slides": [
+    {
+      "old_physical": 31,
+      "path": "ppt/slides/slide30.xml",
+      "sid": "293",
+      "rid": "rIdJointMotionMean",
+      "title": "Joint motion: mean of three trials",
+      "hidden": true,
+      "reason": "Additional mean view repeats the main joint-1 comparison. Retained individual trials provide the extra six-setting detail."
+    },
+    {
+      "old_physical": 33,
+      "path": "ppt/slides/slide29.xml",
+      "sid": "292",
+      "rid": "rIdJointMotionSingle",
+      "title": "Joint motion: one trial per setting",
+      "hidden": true,
+      "reason": "Every selected repetition is already included in the retained all-individual-trials view."
+    },
+    {
+      "old_physical": 34,
+      "path": "ppt/slides/slide27.xml",
+      "sid": "290",
+      "rid": "rIdDisplacementHistory",
+      "title": "Net joint motion over time",
+      "hidden": true,
+      "reason": "Adds a separate net projected-motion metric beyond the cumulative-motion and joint-1 narrative."
+    },
+    {
+      "old_physical": 35,
+      "path": "ppt/slides/slide23.xml",
+      "sid": "287",
+      "rid": "rId24",
+      "title": "Net joint motion",
+      "hidden": true,
+      "reason": "Endpoint summary repeats the near-zero net-motion takeaway of the removed time-history view."
+    }
+  ],
+  "retained_nullspace_plot_backups": [
+    {
+      "old_physical": 29,
+      "path": "ppt/slides/slide21.xml",
+      "sid": "268",
+      "rid": "rId22",
+      "title": "Cumulative joint motion: all settings",
+      "hidden": true,
+      "physical": 29,
+      "footer": "B3"
+    },
+    {
+      "old_physical": 30,
+      "path": "ppt/slides/slide22.xml",
+      "sid": "286",
+      "rid": "rId23",
+      "title": "Jacobian conditioning: all settings",
+      "hidden": true,
+      "physical": 30,
+      "footer": "B4"
+    },
+    {
+      "old_physical": 32,
+      "path": "ppt/slides/slide28.xml",
+      "sid": "291",
+      "rid": "rIdJointMotion",
+      "title": "Joint motion: all individual trials",
+      "hidden": true,
+      "physical": 31,
+      "footer": "B5"
+    }
+  ],
+  "main_slides": 26,
+  "hidden_backups": 9,
+  "total_slides": 35,
+  "supplementary_pages": 9,
+  "native_equation_count": 29,
+  "all_main_slide_xml_and_pdf_pages_unchanged": true,
+  "retained_backup_contents_unchanged_except_footer": true,
+  "all_remaining_notes_and_embedded_media_byte_identical": true,
+  "removed_slides_and_notes_preserved_exactly_in_archive": true,
+  "pdf_archive_contains_four_original_pages": true,
+  "supplementary_pdf_matches_active_backup_pages": true,
+  "all_package_relationships_resolve": true,
+  "overview_refreshed_from_sections": [
+    "Introduction",
+    "Cartesian controller",
+    "Contact experiments",
+    "Contact results",
+    "Null-space control and experiments",
+    "Conclusion and future work"
+  ],
+  "changed_pptx_parts": [
+    "[Content_Types].xml",
+    "ppt/slides/slide28.xml",
+    "ppt/slides/slide12.xml",
+    "ppt/slides/slide17.xml",
+    "ppt/presentation.xml",
+    "ppt/_rels/presentation.xml.rels",
+    "docProps/app.xml",
+    "ppt/slides/slide39.xml",
+    "ppt/slides/slide40.xml"
+  ],
+  "removed_pptx_parts": [
+    "ppt/notesSlides/_rels/notesSlide23.xml.rels",
+    "ppt/notesSlides/_rels/notesSlide27.xml.rels",
+    "ppt/notesSlides/_rels/notesSlide29.xml.rels",
+    "ppt/notesSlides/_rels/notesSlide30.xml.rels",
+    "ppt/notesSlides/notesSlide23.xml",
+    "ppt/notesSlides/notesSlide27.xml",
+    "ppt/notesSlides/notesSlide29.xml",
+    "ppt/notesSlides/notesSlide30.xml",
+    "ppt/slides/_rels/slide23.xml.rels",
+    "ppt/slides/_rels/slide27.xml.rels",
+    "ppt/slides/_rels/slide29.xml.rels",
+    "ppt/slides/_rels/slide30.xml.rels",
+    "ppt/slides/slide23.xml",
+    "ppt/slides/slide27.xml",
+    "ppt/slides/slide29.xml",
+    "ppt/slides/slide30.xml"
+  ],
+  "slide_order": [
+    {
+      "old_physical": 1,
+      "path": "ppt/slides/slide1.xml",
+      "sid": "256",
+      "rid": "rId2",
+      "title": "Master Thesis Presentation",
+      "hidden": false,
+      "physical": 1,
+      "footer": "0"
+    },
+    {
+      "old_physical": 2,
+      "path": "ppt/slides/slide2.xml",
+      "sid": "257",
+      "rid": "rId3",
+      "title": "Motivation",
+      "hidden": false,
+      "physical": 2,
+      "footer": "1"
+    },
+    {
+      "old_physical": 3,
+      "path": "ppt/slides/slide3.xml",
+      "sid": "274",
+      "rid": "rId4",
+      "title": "Contact demonstration",
+      "hidden": false,
+      "physical": 3,
+      "footer": "2"
+    },
+    {
+      "old_physical": 4,
+      "path": "ppt/slides/slide4.xml",
+      "sid": "258",
+      "rid": "rId5",
+      "title": "Overview",
+      "hidden": false,
+      "physical": 4,
+      "footer": "3"
+    },
+    {
+      "old_physical": 5,
+      "path": "ppt/slides/slide5.xml",
+      "sid": "288",
+      "rid": "rId6",
+      "title": "Cartesian pose",
+      "hidden": false,
+      "physical": 5,
+      "footer": "4"
+    },
+    {
+      "old_physical": 6,
+      "path": "ppt/slides/slide35.xml",
+      "sid": "297",
+      "rid": "rIdSurfaceFrameIntroduction",
+      "title": "Surface frame",
+      "hidden": false,
+      "physical": 6,
+      "footer": "5"
+    },
+    {
+      "old_physical": 7,
+      "path": "ppt/slides/slide6.xml",
+      "sid": "259",
+      "rid": "rId7",
+      "title": "Cartesian impedance controller",
+      "hidden": false,
+      "physical": 7,
+      "footer": "6"
+    },
+    {
+      "old_physical": 8,
+      "path": "ppt/slides/slide7.xml",
+      "sid": "277",
+      "rid": "rId8",
+      "title": "Real-time control",
+      "hidden": false,
+      "physical": 8,
+      "footer": "7"
+    },
+    {
+      "old_physical": 9,
+      "path": "ppt/slides/slide9.xml",
+      "sid": "261",
+      "rid": "rId10",
+      "title": "Centre of compliance (CoC)",
+      "hidden": false,
+      "physical": 9,
+      "footer": "8"
+    },
+    {
+      "old_physical": 10,
+      "path": "ppt/slides/slide8.xml",
+      "sid": "283",
+      "rid": "rId9",
+      "title": "Translation–rotation coupling",
+      "hidden": false,
+      "physical": 10,
+      "footer": "9"
+    },
+    {
+      "old_physical": 11,
+      "path": "ppt/slides/slide11.xml",
+      "sid": "262",
+      "rid": "rId12",
+      "title": "Contact experiment",
+      "hidden": false,
+      "physical": 11,
+      "footer": "10"
+    },
+    {
+      "old_physical": 12,
+      "path": "ppt/slides/slide38.xml",
+      "sid": "300",
+      "rid": "rIdContactVideo1",
+      "title": "Plausibility experiment",
+      "hidden": false,
+      "physical": 12,
+      "footer": "11"
+    },
+    {
+      "old_physical": 13,
+      "path": "ppt/slides/slide14.xml",
+      "sid": "272",
+      "rid": "rId15",
+      "title": "Normal-force plausibility assessment",
+      "hidden": false,
+      "physical": 13,
+      "footer": "12"
+    },
+    {
+      "old_physical": 14,
+      "path": "ppt/slides/slide15.xml",
+      "sid": "273",
+      "rid": "rId16",
+      "title": "Moment plausibility assessment",
+      "hidden": false,
+      "physical": 14,
+      "footer": "13"
+    },
+    {
+      "old_physical": 15,
+      "path": "ppt/slides/slide16.xml",
+      "sid": "271",
+      "rid": "rId17",
+      "title": "Commanded and estimated wrench",
+      "hidden": false,
+      "physical": 15,
+      "footer": "14"
+    },
+    {
+      "old_physical": 16,
+      "path": "ppt/slides/slide18.xml",
+      "sid": "265",
+      "rid": "rId19",
+      "title": "Effect of rotational stiffness",
+      "hidden": false,
+      "physical": 16,
+      "footer": "15"
+    },
+    {
+      "old_physical": 17,
+      "path": "ppt/slides/slide19.xml",
+      "sid": "266",
+      "rid": "rId20",
+      "title": "Effect of CoC position",
+      "hidden": false,
+      "physical": 17,
+      "footer": "16"
+    },
+    {
+      "old_physical": 18,
+      "path": "ppt/slides/slide20.xml",
+      "sid": "267",
+      "rid": "rId21",
+      "title": "Angular error and interaction wrench",
+      "hidden": false,
+      "physical": 18,
+      "footer": "17"
+    },
+    {
+      "old_physical": 19,
+      "path": "ppt/slides/slide10.xml",
+      "sid": "284",
+      "rid": "rId11",
+      "title": "Null-space controller",
+      "hidden": false,
+      "physical": 19,
+      "footer": "18"
+    },
+    {
+      "old_physical": 20,
+      "path": "ppt/slides/slide36.xml",
+      "sid": "298",
+      "rid": "rIdNullspace2Part1",
+      "title": "Disturbance demonstration",
+      "hidden": false,
+      "physical": 20,
+      "footer": "19"
+    },
+    {
+      "old_physical": 21,
+      "path": "ppt/slides/slide37.xml",
+      "sid": "299",
+      "rid": "rIdNullspace2Part2",
+      "title": "Disturbance demonstration",
+      "hidden": false,
+      "physical": 21,
+      "footer": "20"
+    },
+    {
+      "old_physical": 22,
+      "path": "ppt/slides/slide13.xml",
+      "sid": "285",
+      "rid": "rId14",
+      "title": "Null-space experiment",
+      "hidden": false,
+      "physical": 22,
+      "footer": "21"
+    },
+    {
+      "old_physical": 23,
+      "path": "ppt/slides/slide31.xml",
+      "sid": "294",
+      "rid": "rIdNarrative1",
+      "title": "Cumulative joint motion",
+      "hidden": false,
+      "physical": 23,
+      "footer": "22"
+    },
+    {
+      "old_physical": 24,
+      "path": "ppt/slides/slide32.xml",
+      "sid": "295",
+      "rid": "rIdNarrative2",
+      "title": "Jacobian conditioning",
+      "hidden": false,
+      "physical": 24,
+      "footer": "23"
+    },
+    {
+      "old_physical": 25,
+      "path": "ppt/slides/slide33.xml",
+      "sid": "296",
+      "rid": "rIdNarrative3",
+      "title": "Joint motion over time",
+      "hidden": false,
+      "physical": 25,
+      "footer": "24"
+    },
+    {
+      "old_physical": 26,
+      "path": "ppt/slides/slide24.xml",
+      "sid": "270",
+      "rid": "rId25",
+      "title": "Conclusion",
+      "hidden": false,
+      "physical": 26,
+      "footer": "25"
+    },
+    {
+      "old_physical": 27,
+      "path": "ppt/slides/slide25.xml",
+      "sid": "289",
+      "rid": "rId26",
+      "title": "Null-space torques and projector",
+      "hidden": true,
+      "physical": 27,
+      "footer": "B1"
+    },
+    {
+      "old_physical": 28,
+      "path": "ppt/slides/slide26.xml",
+      "sid": "275",
+      "rid": "rId27",
+      "title": "Disturbance demonstration",
+      "hidden": true,
+      "physical": 28,
+      "footer": "B2"
+    },
+    {
+      "old_physical": 29,
+      "path": "ppt/slides/slide21.xml",
+      "sid": "268",
+      "rid": "rId22",
+      "title": "Cumulative joint motion: all settings",
+      "hidden": true,
+      "physical": 29,
+      "footer": "B3"
+    },
+    {
+      "old_physical": 30,
+      "path": "ppt/slides/slide22.xml",
+      "sid": "286",
+      "rid": "rId23",
+      "title": "Jacobian conditioning: all settings",
+      "hidden": true,
+      "physical": 30,
+      "footer": "B4"
+    },
+    {
+      "old_physical": 32,
+      "path": "ppt/slides/slide28.xml",
+      "sid": "291",
+      "rid": "rIdJointMotion",
+      "title": "Joint motion: all individual trials",
+      "hidden": true,
+      "physical": 31,
+      "footer": "B5"
+    },
+    {
+      "old_physical": 36,
+      "path": "ppt/slides/slide12.xml",
+      "sid": "263",
+      "rid": "rId13",
+      "title": "Angular quantities",
+      "hidden": true,
+      "physical": 32,
+      "footer": "B6"
+    },
+    {
+      "old_physical": 37,
+      "path": "ppt/slides/slide17.xml",
+      "sid": "264",
+      "rid": "rId18",
+      "title": "Baseline angular error",
+      "hidden": true,
+      "physical": 33,
+      "footer": "B7"
+    },
+    {
+      "old_physical": 38,
+      "path": "ppt/slides/slide39.xml",
+      "sid": "301",
+      "rid": "rIdContactVideo2",
+      "title": "Opposing moment",
+      "hidden": true,
+      "physical": 34,
+      "footer": "B8"
+    },
+    {
+      "old_physical": 39,
+      "path": "ppt/slides/slide40.xml",
+      "sid": "302",
+      "rid": "rIdSurfaceEntryBackup",
+      "title": "Sources of angular offset",
+      "hidden": true,
+      "physical": 35,
+      "footer": "B9"
+    }
+  ],
+  "installed_file_sha256": {
+    "Final Presentation/Thesis_Defense_gg0_v3.pptx": "d047fc3e3a9e745c4d8594093da58040677d665cb1b8ee4df481e3f1b0a9839f",
+    "Final Presentation/Thesis_Defense_gg0_v3.pdf": "929a1b18e80902ee366400857c4bde9796aec5eb21ef9273c81faf81be215251",
+    "Final Presentation/Supplementary_slides.pdf": "e8a7aa03e0799da0ca9052cc2d91fe1caa1d5c547b9dcf9a6bfbb828dea1d0ca",
+    "experiments/nullspace_narrative/archive/removed_nullspace_backups_20260922.pptx": "9a303bc789eb9937dbfeb42971fae017bf2c8c167fadf777d5f5fb17a1a8bd23",
+    "experiments/nullspace_narrative/archive/removed_nullspace_backups_20260922.pdf": "142fa4ea760d8d95829fc28c33d38a2e609c4053e8058e0a0328fb787a0343f4"
+  },
+  "unchanged_file_sha256": {
+    "Final Presentation/figures_and_images/native_equations.json": "945bcf419db46e5bad19aaaa14cb3d50b6f6ecc6e53e8f8b1182101e60383e10",
+    "Final Presentation/Speaker_notes_and_timing.txt": "339b7beaf775db8ac69291800a840b94805ceccd5155b91e6f7890198305ee43",
+    "Final Presentation/Thesis_Defense_Speaking_Script.pdf": "1eac49abc1c7e298d34d3f5138a4a9efc5874608f0ac5478a44b6293bf4bf048",
+    "Final Presentation/Thesis_Defense_Speaking_Script_updated.pdf": "1eac49abc1c7e298d34d3f5138a4a9efc5874608f0ac5478a44b6293bf4bf048",
+    "Final Presentation/Speaking/Thesis_Defense_Speaking_Script.tex": "3eba8ab195904af0307e9646fc850c68a9deca8c696679b6d6a7f8fd9b04dce1"
+  },
+  "all_29_equation_catalog_entries_verified_against_native_shapes": true,
+  "visual_inspection": "Reviewed all seven original null-space backup plots and inspected the updated individual-trial slide and final backup footer."
+}

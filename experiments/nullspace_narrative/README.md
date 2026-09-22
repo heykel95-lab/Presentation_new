@@ -1,5 +1,105 @@
 # Null-space presentation narrative
 
+2026-09-22: Opposing moment has moved to B1. Null-space torques and projector
+is now B2, followed by the three detailed null-space plots at B3–B5. Their
+contents and relative order are unchanged. There are still 26 main slides
+and eight hidden backups. See
+`../media_update/opposing_moment_first_20260922.json` for the current order.
+
+2026-09-22: the backup demonstration formerly at B2 is removed and archived.
+There are now 26 main slides and eight hidden backups. The useful null-space
+plot backups are B2 Cumulative joint motion: all settings, B3 Jacobian
+conditioning: all settings, and B4 Joint motion: all individual trials.
+The main demonstration clips stay at physical slides 20–21 with the simplified
+captions Demonstration · Part 1 / Demonstration · Part 2. Figures, data, video
+contents and speaking material are unchanged. The restored angular and
+surface-entry figures are now B5 and B8. See
+`../media_update/backup_demo_removed_20260922.json`. These numbers supersede
+the historical records below.
+
+Backup cleanup, 2026-09-22: four redundant plot slides are removed from the
+active deck: Joint motion: mean of three trials (former B5), Joint motion:
+one trial per setting (former B7), Net joint motion over time (former B8),
+and Net joint motion (former B9). The main joint-1 mean already provides the
+mean comparison, and all individual trials contain the selected single trial.
+The two net-motion views add a second motion explanation beyond the retained
+cumulative-motion and joint-1 narrative.
+
+The remaining null-space plot backups are B3 Cumulative joint motion: all
+settings, B4 Jacobian conditioning: all settings, and B5 Joint motion: all
+individual trials. They add the second conditioning magnitude and trial
+variation to the main comparison. B1 and B2 retain the torque equations and
+demonstration video. Angular quantities, Baseline angular error, Opposing
+moment and Sources of angular offset are B6–B9.
+
+There are 26 unchanged main slides and nine hidden backups at physical
+slides 27–35. The full PDF has 35 pages and the supplementary PDF nine.
+`remove_redundant_backups.py` stages the removal, updates backup footers and
+sections, refreshes Overview, and checks all package relationships. The
+four original slides and their exact notes are preserved in
+`archive/removed_nullspace_backups_20260922.pptx`, with a matching archive PDF.
+Their plot assets and data are retained. All remaining notes, speaking files,
+29 native equations, six videos and thesis files are unchanged. See
+`backup_cleanup_20260922.json`. This order supersedes the historical counts
+and backup placements below.
+
+Latest backup addition, 2026-09-22: the corrected former Motivation diagram,
+Sources of angular offset, is hidden B13 at physical slide 39. There are
+26 main slides and thirteen hidden backups. The full PDF has 39 pages and
+the supplementary PDF thirteen. Main-slide positions and all null-space
+plots remain unchanged. See `../media_update/surface_entry_correction_20260922.json`.
+
+Latest contact-video update, 2026-09-21: Plausibility experiment was inserted
+at physical slide 12 before the plausibility plots, and Opposing moment was
+added as hidden B12 at physical slide 38. The deck now has 26 main slides and
+twelve hidden backups. The split demonstration 2 is at 20–21, Null-space
+experiment at 22, the main null-space plots at 23–25, and Conclusion at 26.
+The full PDF has 38 pages and the supplementary PDF twelve. All existing notes
+and scientific slide contents remain unchanged. See
+`../media_update/contact_videos_20260921.json`. These indices supersede the
+historical update records below.
+
+Latest video update, 2026-09-21: demonstration 2 is split at 00:23 across
+physical slides 19 and 20, immediately before Null-space experiment (now 21).
+The main result plots follow at 22–24 and Conclusion at 25. There are now
+25 main slides and eleven hidden backups at 26–36. B2 retains demonstration 1.
+The full PDF has 36 pages and the supplementary PDF eleven. All existing notes
+and speaking files are unchanged. See
+`../media_update/nullspace2_split_20260921.json`. These positions supersede
+the historical counts and slide indices below.
+
+Latest backup update, 2026-09-21: Baseline angular error moved to hidden B11
+at physical slide 34. Its chart and slide content are unchanged. There are now
+23 main slides and eleven hidden backups, with Conclusion at physical slide 23
+and B1–B11 at 24–34. Angular quantities remains B10, now physical slide 33.
+The full PDF has 34 pages and the supplementary PDF has eleven. Notes and
+speaking files are unchanged. See `baseline_to_backup_20260921.json` for the
+current order and verification. This supersedes the earlier counts below.
+
+Latest backup update, 2026-09-21: Angular quantities moved from physical
+slide 12 to hidden B10 at physical slide 34. Its diagram now matches the current
+thesis LaTeX source. There are 24 main slides and ten hidden backups, with
+Conclusion at physical slide 24 and B1–B10 at 25–34. The full PDF has 34 pages
+and the supplementary PDF has ten. Notes and speaking files are unchanged.
+See `../angular_quantities_backup/verification_20260921.json` for the current order.
+
+Latest order update, 2026-09-21: Centre of compliance (CoC), now physical
+slide 9 / footer 8, precedes Translation–rotation coupling, now physical
+slide 10 / footer 9. The illustration introduces the idea before the equations.
+Both complete slides retain their content and notes. The native Cartesian
+controller section and full PDF follow this order, the Overview is refreshed
+from the sections, and all 29 native equations remain mapped to their shapes.
+See `coc_visual_first_20260921.json` for the current order and verification.
+
+Current structure, 2026-09-21: a separate Surface frame slide was inserted
+after Cartesian pose, at footer 5 / physical slide 6, before the controller.
+The experimental process and stiffness settings remain on Contact experiment.
+There are now 25 main slides and nine hidden backups, with Conclusion at
+physical slide 25 and backups at 26–34. The conditioning-torque table stays
+archived. Existing notes and speaking files are unchanged. The new slide has
+blank notes. This supersedes the historical page counts and positions below.
+See `surface_frame_split_20260921.json` for the Surface frame insertion record.
+
 The user approved this structure on 2026-09-16. No new trials or signal
 processing were introduced by this presentation edit. The same 18 recorded
 trials support both the main comparison and the detailed backups.
