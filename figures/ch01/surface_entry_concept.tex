@@ -5,20 +5,24 @@
     physical/.style={blue!70!black, line width=1.1pt},
     tool/.style={green!55!black, line width=1.1pt},
     datum/.style={black, line width=0.8pt, densely dashed},
-    conceptangle/.style={line width=1.5pt},
+    conceptangle/.style={line width=0.8pt,
+      {Latex[length=1.15mm,width=1.10mm]}-{Latex[length=1.15mm,width=1.10mm]}},
     lbl/.style={font=\footnotesize, align=center},
   ]
 
-% Shared legend. The swatch-to-swatch spacing is set so that no entry's text
-% reaches the next swatch; check it in the compiled page after any edit.
-\draw[reference] (-4.60,2.20) -- (-3.85,2.20);
-\node[lbl, red!75!black, anchor=west] at (-3.70,2.20)
+% Shared legend below the geometry: surfaces first, then tool directions.
+% Keep both rows clear of the physical surface and preserve the line styles.
+\draw[reference] (-1.30,-1.22) -- (-0.55,-1.22);
+\node[lbl, red!75!black, anchor=west] at (-0.40,-1.22)
   {Configured surface};
-\draw[physical] (-0.95,2.20) -- (-0.20,2.20);
-\node[lbl, blue!70!black, anchor=west] at (-0.05,2.20)
+\draw[physical] (3.25,-1.22) -- (4.00,-1.22);
+\node[lbl, blue!70!black, anchor=west] at (4.15,-1.22)
   {Physical surface};
-\draw[tool] (2.40,2.20) -- (3.15,2.20);
-\node[lbl, green!55!black, anchor=west] at (3.30,2.20)
+\draw[datum] (-1.30,-1.66) -- (-0.55,-1.66);
+\node[lbl, black, anchor=west] at (-0.40,-1.66)
+  {Desired orientation};
+\draw[tool] (3.25,-1.66) -- (4.00,-1.66);
+\node[lbl, green!55!black, anchor=west] at (4.15,-1.66)
   {Tool face};
 
 % The configured surface gives the desired parallel tool direction, carried to
@@ -26,7 +30,9 @@
 % retains a small schematic difference from it.
 \coordinate (origin) at (0,0);
 \coordinate (toolpivot) at (0,1.30);
-\draw[reference] (-3.35,0) -- (3.35,0);
+\coordinate (labelcolumn) at (3.60,0);
+% Match the left and right limits of the desired-orientation datum.
+\draw[reference] (-2.40,0) -- (2.40,0);
 \draw[datum] (-2.40,1.30) -- (2.40,1.30);
 \draw[tool, rotate around={10:(0,1.30)}] (-2.10,1.30) -- (2.10,1.30);
 % The tool tip, drawn perpendicular to the face where the datum crosses it,
@@ -35,16 +41,25 @@
 \draw[tool, rotate around={10:(0,1.30)}] (0,1.30) -- (0,1.65);
 \begin{scope}[shift={(toolpivot)}]
   \draw[conceptangle]
-    (180:1.90) arc[start angle=180,end angle=190,radius=1.90];
+    (0:1.90) arc[start angle=0,end angle=10,radius=1.90];
+  \coordinate (toolanglemid) at (5:1.90);
 \end{scope}
-\node[lbl, anchor=north] at (-1.95,0.68)
+\node[lbl, anchor=west] (toollabel) at (labelcolumn |- toolanglemid)
   {Desired--achieved difference};
 
 % Placement and calibration can leave the physical surface angularly offset.
-\draw[physical, rotate around={19:(origin)}] (-3.35,0) -- (3.35,0);
+% Keep the 19-degree slope with the same horizontal endpoints as the datum.
+\draw[physical] (-2.40,{-2.40*tan(19)}) -- (2.40,{2.40*tan(19)});
 \draw[conceptangle]
-  (0:1.42) arc[start angle=0,end angle=19,radius=1.42];
-\node[lbl, anchor=north] at (1.42,-0.18)
+  (0:1.90) arc[start angle=0,end angle=19,radius=1.90];
+\coordinate (surfaceanglemid) at (9.5:1.90);
+\node[lbl, anchor=west] (surfacelabel) at (labelcolumn |- surfaceanglemid)
   {Configured--physical difference};
 
+% Retain the original canvas size, with room for the two-row legend below.
+\pgfresetboundingbox
+\begin{scope}[reset cm]
+  \path[use as bounding box] (-110.1638pt,-60pt)
+    rectangle (258.45518pt,56.55481pt);
+\end{scope}
 \end{tikzpicture}

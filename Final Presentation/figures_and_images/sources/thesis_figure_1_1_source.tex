@@ -10,19 +10,20 @@
     lbl/.style={font=\footnotesize, align=center},
   ]
 
-% Shared legend. The swatch-to-swatch spacing is set so that no entry's text
-% reaches the next swatch; check it in the compiled page after any edit.
-\begin{scope}[xshift=2.25cm]
-\draw[reference] (-4.60,2.20) -- (-3.85,2.20);
-\node[lbl, red!75!black, anchor=west] at (-3.70,2.20)
+% Shared legend below the geometry: surfaces first, then tool directions.
+% Keep both rows clear of the physical surface and preserve the line styles.
+\draw[reference] (-1.30,-1.22) -- (-0.55,-1.22);
+\node[lbl, red!75!black, anchor=west] at (-0.40,-1.22)
   {Configured surface};
-\draw[physical] (-0.95,2.20) -- (-0.20,2.20);
-\node[lbl, blue!70!black, anchor=west] at (-0.05,2.20)
+\draw[physical] (3.25,-1.22) -- (4.00,-1.22);
+\node[lbl, blue!70!black, anchor=west] at (4.15,-1.22)
   {Physical surface};
-\draw[tool] (2.40,2.20) -- (3.15,2.20);
-\node[lbl, green!55!black, anchor=west] at (3.30,2.20)
+\draw[datum] (-1.30,-1.66) -- (-0.55,-1.66);
+\node[lbl, black, anchor=west] at (-0.40,-1.66)
+  {Desired orientation};
+\draw[tool] (3.25,-1.66) -- (4.00,-1.66);
+\node[lbl, green!55!black, anchor=west] at (4.15,-1.66)
   {Tool face};
-\end{scope}
 
 % The configured surface gives the desired parallel tool direction, carried to
 % the tool as a short reference ray. The orientation reached before approach
@@ -55,11 +56,10 @@
 \node[lbl, anchor=west] (surfacelabel) at (labelcolumn |- surfaceanglemid)
   {Configured--physical difference};
 
-% Retain the original canvas so trimming the surfaces does not move or resize
-% the legend, tool, angle markers, or surrounding thesis content.
+% Retain the original canvas size, with room for the two-row legend below.
 \pgfresetboundingbox
 \begin{scope}[reset cm]
-  \path[use as bounding box] (-110.1638pt,-36.23709pt)
-    rectangle (258.45518pt,80.31772pt);
+  \path[use as bounding box] (-110.1638pt,-60pt)
+    rectangle (258.45518pt,56.55481pt);
 \end{scope}
 \end{tikzpicture}

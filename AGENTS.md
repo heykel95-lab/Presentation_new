@@ -1,5 +1,17 @@
 # Thesis and presentation workspace
 
+## Compact Figure 4.2 (2026-09-23)
+
+The three normal arrows in thesis Figure 4.2 and Angular quantities (B3 / physical
+slide 29) are 5.4 drawing units long instead of 7.5. Keep the schematic angles,
+colours, line styles, descriptions and label sizes. Move both angle arcs, their
+labels and the surface-frame inset closer: the red arc radius is 3.6 and the
+inner blue radius is 2.1. Use the exact compiled thesis crop and reduce the slide
+image's width and height at unchanged text scale, preserving its centre. This
+supersedes the older fixed-width and fixed-radius instructions for this figure.
+Synchronize both presentation PDFs and editable source copies. See
+`experiments/media_update/figure_4_2_compact_20260923.json`.
+
 ## All-settings backups B3 and B4 removed (2026-09-22)
 
 Remove Cumulative joint motion: all settings and Jacobian conditioning: all
@@ -57,7 +69,7 @@ Keep the current speaking script and PowerPoint speaker notes unchanged until th
 
 ## Copy the backup figures directly from the thesis (2026-09-22)
 
-For Angular quantities (B6 / physical slide 32) and Sources of angular offset (B8 / physical slide 34), use complete figure crops directly from the compiled thesis PDF. Do not reconstruct their diagrams independently. Preserve all labels, arrows, colours and relative geometry. Their current sources are thesis Figure 4.2 on PDF page 79 and Figure 1.1 on PDF page 28. Keep the existing slide figure widths and centres and scale proportionally. The original three-entry legend, dashed desired direction, perpendicular tool tip and both difference arcs remain in Figure 1.1. The angular figure retains its inner blue arc and existing frame inset.
+For Angular quantities (B6 / physical slide 32) and Sources of angular offset (B8 / physical slide 34), use complete figure crops directly from the compiled thesis PDF. Do not reconstruct their diagrams independently. Preserve all labels, arrows, colours and relative geometry. Their current sources are thesis Figure 4.2 on PDF page 79 and Figure 1.1 on PDF page 28. Keep the existing slide figure widths and centres and scale proportionally. Figure 1.1 uses a two-row legend below the geometry: Configured surface and Physical surface, then Desired orientation and Tool face. The Desired orientation swatch is black and dashed. Keep the perpendicular tool tip and both difference arcs. This legend ruling was updated on 2026-09-23 for both the thesis and presentation. The angular figure retains its inner blue arc and existing frame inset.
 
 In Figure 1.1, shorten the red configured surface and blue physical surface so both left and right endpoints share the dashed desired-orientation line's horizontal limits, x = -2.40 and +2.40. Keep the blue surface's 19-degree schematic tilt and all other drawing elements unchanged. Make this shared change in the thesis TikZ source, retain the original canvas, rebuild the thesis, and use that exact compiled rendering in B8. Synchronize source copies and PDF/PNG/SVG assets in both repositories. Keep thesis prose, all speaker notes, speaking files, other slides and slide order unchanged. The deck remains 26 main slides and eight hidden backups. See `experiments/media_update/direct_thesis_backup_figures_20260922.json` and `direct_thesis_backup_figures.py`. This supersedes the independent restoration/export methods below.
 
@@ -77,7 +89,7 @@ There are 26 main slides and eight hidden backups at physical slides 27–34. Th
 
 The user selected the last committed thesis figures as the restoration reference and explicitly requested the same restoration in the presentation and thesis. On Angular quantities (B6 / physical slide 32), use the exact committed `figures/ch04/surface_reference_geometry.pdf` from thesis commit `be7aa4d`. It has the blue angular-error arc inside the red measured-offset arc, at radius 2.8, with its label at (2.70, -0.18). The matching editable source is from `33b7dc5`. The later source-only move to radius 6.3 had not been applied to the committed figure PDF and must not be reapplied. Keep the frame inset with n_s leftwards, t_2 upwards and t_1 out of the page. Preserve the figure width and centre, using proportional scaling.
 
-On Sources of angular offset (B9 / physical slide 35), restore the original single-row legend from the committed Chapter 1 source: Configured surface, Physical surface and Tool face. Retain the original black dashed desired-direction datum, perpendicular tool tip, two difference arcs and their labels. This reverses the four-entry, two-row legend update. Match both restored sources and PDF/PNG/SVG assets in the thesis and presentation, and rebuild the two documents. The source/compiled-figure mismatch is resolved in favour of the author-selected committed appearance. Other slide contents, 35-slide order, nine hidden backups, speaking material and thesis prose remain unchanged. See `experiments/media_update/committed_backup_figures_20260922.json`. This supersedes the earlier angular source-only match, rotated inset, and four-entry legend instructions below.
+On Sources of angular offset (now B5 / physical slide 31), use the 2026-09-23 legend below the geometry: Configured surface and Physical surface, then Desired orientation and Tool face. Retain the original black dashed desired-direction datum, perpendicular tool tip, two difference arcs and their labels. The 2026-09-23 legend ruling replaces the earlier three-entry restoration. Match both restored sources and PDF/PNG/SVG assets in the thesis and presentation, and rebuild the two documents. The source/compiled-figure mismatch is resolved in favour of the author-selected committed appearance. Other slide contents, 35-slide order, nine hidden backups, speaking material and thesis prose remain unchanged. See `experiments/media_update/committed_backup_figures_20260922.json`. This supersedes the earlier angular source-only match, rotated inset, and four-entry legend instructions below.
 
 ## Redundant null-space backups removed (2026-09-22)
 
@@ -91,7 +103,7 @@ On Real-time control (footer 7 / physical slide 8), label the desired signal Ref
 
 ## Surface-entry figure in backup and thesis (2026-09-22)
 
-The former Motivation diagram is now hidden backup B13, Sources of angular offset, at physical slide 39. Keep Motivation's robot photograph unchanged. The shared diagram and thesis Figure 1.1 explicitly identify four legend entries: Configured surface (solid red), Physical surface (solid blue), Desired tool orientation (dashed black), and Achieved tool orientation (solid green). The existing horizontal dashed desired reference remains parallel to the configured surface. Preserve the original object geometry, schematic tilts, tool tip, and both labelled difference arcs. Arrange the four legend entries in two rows, with surfaces above tool orientations. The previous three-entry legend left the desired reference unnamed and must not be restored.
+The former Motivation diagram is now hidden backup B13, Sources of angular offset, at physical slide 39. Keep Motivation's robot photograph unchanged. The shared diagram and thesis Figure 1.1 explicitly identify four legend entries: Configured surface (solid red), Physical surface (solid blue), Desired orientation (dashed black), and Tool face (solid green). The existing horizontal dashed desired reference remains parallel to the configured surface. Preserve the original object geometry, schematic tilts, tool tip, and both labelled difference arcs. Arrange the four legend entries below the geometry in two rows, with the surfaces in the first row. The previous three-entry legend left the desired reference unnamed and must not be restored.
 
 Keep the thesis source `MyOwn-thesis/figures/ch01/surface_entry_concept.tex` and presentation source `figures_and_images/sources/thesis_figure_1_1_source.tex` identical, with matching PDF/PNG/SVG assets and compiled documents. The earlier presentation assets are archived. The deck has 26 main slides and thirteen hidden backups at physical slides 27–39. The full PDF has 39 pages and the supplementary PDF thirteen. All previous slide contents, speaking files, speaker notes, 29 native equations and six videos remain unchanged. The new backup has blank notes. These counts supersede earlier records below. See `experiments/media_update/surface_entry_correction_20260922.json`.
 

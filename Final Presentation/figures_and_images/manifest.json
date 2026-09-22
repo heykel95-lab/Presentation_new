@@ -21,13 +21,13 @@
   },
   {
     "asset": "angular_quantities",
-    "source": "Direct vector and raster crops from MyOwn-thesis/Thesis.pdf, Figure 4.2, physical PDF page 79.",
-    "changes": "2026-09-22: direct thesis figure replaces the independent presentation asset. Complete figure retained, including its inner blue angle arc and frame inset. B6 / physical slide 32. Width and centre preserved with proportional scaling.",
-    "thesis_source_sha256": "7d328e667fc1555073e159913e9904f870d918429bdd9b10de2c4fa4cfed973d",
+    "source": "Direct crop of MyOwn/Thesis.pdf, Figure 4.2, physical page 77.",
+    "changes": "2026-09-23: three normal arrows shortened from 7.5 to 5.4 drawing units; arcs, labels and inset brought closer. Angles, colours and label sizes preserved. Exact compiled thesis crop; slide image reduced proportionally at unchanged text scale.",
+    "thesis_source_sha256": "76b53ffe71a90dd6dce8351c755a493df1dfe3cfd1308c898bfc0a84eb1f123a",
     "backup_slide": "B3",
     "physical_slide": 29,
-    "placement_update": "2026-09-22: renumbered after removal of the B3/B4 all-settings result slides. Figure assets unchanged.",
-    "extraction_report": "experiments/media_update/direct_thesis_backup_figures_20260922.json"
+    "placement_update": "2026-09-23: B3, physical slide 29; image reduced to 407.24 by 173.63 pt at its existing centre and label scale.",
+    "extraction_report": "experiments/media_update/figure_4_2_compact_20260923.json"
   },
   {
     "asset": "baseline_response",
@@ -883,13 +883,13 @@
   },
   {
     "asset": "thesis_figure_1_1",
-    "source": "Direct vector and raster crops from MyOwn-thesis/Thesis.pdf, Figure 1.1, physical PDF page 28.",
-    "changes": "2026-09-22: configured and physical surface endpoints share the dashed desired-orientation datum horizontal limits. Source edited in the thesis, and the complete compiled figure copied directly into B8 / physical slide 34. Other geometry and labels unchanged.",
-    "source_tex_sha256": "ac61fe0819fae16c226f39860a6a9bcda95d6c5f96d65596e2eb6dc4c2b2e487",
+    "source": "Direct vector and raster crops from MyOwn/Thesis.pdf, Figure 1.1, physical PDF page 27.",
+    "changes": "2026-09-23: shared legend moved below the geometry in two rows; black dashed Desired orientation entry added. Original geometry, canvas size and slide placement retained.",
+    "source_tex_sha256": "2a91d046143fddddac4017a90ed7835643c70a2e0cf4efd57f36b958fc384655",
     "backup_slide": "B5",
     "physical_slide": 31,
     "placement_update": "2026-09-22: renumbered after removal of the B3/B4 all-settings result slides. Figure assets unchanged.",
-    "extraction_report": "experiments/media_update/direct_thesis_backup_figures_20260922.json"
+    "extraction_report": "experiments/media_update/figure_1_1_legend_20260923.json"
   },
   {
     "asset": "contact_wrench_three_panels_balanced",

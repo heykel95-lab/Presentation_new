@@ -1,4 +1,8 @@
+2026-09-23: Figure 4.2 on Angular quantities (B3 / physical slide 29) now has shorter normal arrows and a compact layout. It uses the exact thesis rendering with unchanged angles, colours and label sizes. Both presentation PDFs and figure sources match. See ../experiments/media_update/figure_4_2_compact_20260923.json.
+
 Active defense presentation
+
+2026-09-23: Figure 1.1 on B5 / physical slide 31 has its four-entry legend below the geometry, including the black dashed Desired orientation entry. The figure is copied directly from the rebuilt thesis. The full and supplementary PDFs and editable figure source are synchronized. All other slide contents and speaking files are unchanged. This replaces the earlier three-entry legend restoration.
 
 2026-09-22: Removed B3 Cumulative joint motion: all settings and B4 Jacobian conditioning: all settings at the user's request. Original slides and notes are archived, with figure assets, data and generators retained. The deck now has 26 main slides and five hidden backups: B1 Opposing moment, B2 Null-space torques and projector, B3 Angular quantities, B4 Baseline angular error, B5 Sources of angular offset. The full PDF has 31 pages and Supplementary_slides.pdf has five. Remaining content, notes, videos, equations and speaking files are unchanged. These counts supersede the records below. See ../experiments/nullspace_narrative/all_settings_removed_20260922.json.
 

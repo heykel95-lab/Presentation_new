@@ -13,30 +13,30 @@
   axis/.style={-{Latex[length=1.6mm]}, black, line width=0.7pt},
   lbl/.style={font=\footnotesize, inner sep=2pt,align=left}
 ]
-  \draw[reference] (0,0) -- (7.5,0);
-  \draw[entry] (0,0) -- (32:7.5);
-  \draw[endpoint] (0,0) -- (10:7.5);
+  \draw[reference] (0,0) -- (5.4,0);
+  \draw[entry] (0,0) -- (32:5.4);
+  \draw[endpoint] (0,0) -- (10:5.4);
 
-  \node[lbl,green!60!black,anchor=west] at (6.55,3.97)
+  \node[lbl,green!60!black,anchor=west] at (4.75,2.86)
     {Tool normal at entry};
-  \node[lbl,blue!70!black,anchor=west] at (7.65,1.30)
+  \node[lbl,blue!70!black,anchor=west] at (5.55,0.94)
     {Tool normal at end};
-  \node[lbl,red!75!black,anchor=west] at (7.65,0)
+  \node[lbl,red!75!black,anchor=west] at (5.55,0)
     {Calibrated surface normal};
 
   % Both angular quantities begin at the same calibrated reference.
-  \draw[angle,red!75!black] (0:4.8)
-    arc[start angle=0,end angle=32,radius=4.8];
-  \node[lbl,red!75!black,anchor=west] at (5.03,1.96)
+  \draw[angle,red!75!black] (0:3.6)
+    arc[start angle=0,end angle=32,radius=3.6];
+  \node[lbl,red!75!black,anchor=west] at (3.80,1.47)
     {$\theta_{\mathrm{meas},t_1}$};
-  \draw[angle,blue!70!black] (0:2.8)
-    arc[start angle=0,end angle=10,radius=2.8];
-  \node[lbl,blue!70!black,anchor=north] at (2.70,-0.18)
+  \draw[angle,blue!70!black] (0:2.1)
+    arc[start angle=0,end angle=10,radius=2.1];
+  \node[lbl,blue!70!black,anchor=north] at (2.00,-0.18)
     {$\theta_{\mathrm{err},t_1}$};
 
   % Right-handed surface frame in the same rotated view as the normal arrows.
   % t_1 x t_2 = n_s, so positive rotation runs from +t_2 to +n_s.
-  \begin{scope}[shift={(1.0,2.65)}]
+  \begin{scope}[shift={(1.0,2.05)}]
     \draw[axis] (-0.18,0) -- (-1.0,0) node[lbl,left] {$n_s$};
     \draw[axis] (0,0.18) -- (0,1.1) node[lbl,above] {$t_2$};
     \draw[angle,black] (105:0.72)

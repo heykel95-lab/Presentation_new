@@ -1,0 +1,56 @@
+{
+  "date": "2026-09-23",
+  "figure": "4.2",
+  "thesis_page": 77,
+  "source": "figures/ch04/surface_reference_geometry.tex",
+  "thesis_pages": 120,
+  "clip": [
+    150.0,
+    206.0,
+    442.0,
+    330.5
+  ],
+  "normal_arrow_lengths_before": 7.5,
+  "normal_arrow_lengths_after": 5.4,
+  "arrow_shortening_percent": 28,
+  "red_arc_radius": 3.6,
+  "blue_arc_radius": 2.1,
+  "angles_colours_and_label_sizes_unchanged": true,
+  "physical_slide": 29,
+  "backup": "B3",
+  "old_box_pt": [
+    234.5408661417323,
+    175.28228346456692,
+    725.4591338582677,
+    374.71779527559056
+  ],
+  "new_box_pt": [
+    276.38047244094486,
+    188.1828346456693,
+    683.6195275590551,
+    361.8172440944882
+  ],
+  "changed_pptx_parts": [
+    "ppt/media/image38.png",
+    "ppt/slides/slide12.xml"
+  ],
+  "total_slides": 31,
+  "hidden_backups": 5,
+  "other_30_slides_pixel_identical": true,
+  "notes_equations_videos_sections_and_order_unchanged": true,
+  "affected_slide_unchanged_outside_figure": true,
+  "supplementary_matches_full_pdf": true,
+  "changed_thesis_pages": [
+    77,
+    78,
+    79
+  ],
+  "artifact_tool_import_blocker": "Error: Unsupported a14:m payload. Expected m:oMathPara or m:oMath.",
+  "method": "Exact compiled thesis crop; only the existing image and its proportional dimensions change in the preserved deck.",
+  "asset_sha256": {
+    "pdf": "f1eb4049a7a83f52fb726771be88c229c7147f19262eb0dc358deffee568b925",
+    "png": "2d2bb282a0a3c495c47eafc53302427f72f58f71bdc4cc9c71cedb0d39aa65d0",
+    "svg": "497eb5ad5a6b872ea28b7a1f01b687bdb467e6e895cab088a1426c543502f1a8"
+  },
+  "visual_inspection_passed": true
+}
