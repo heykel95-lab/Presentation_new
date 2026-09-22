@@ -1,5 +1,44 @@
 # Thesis and presentation workspace
 
+## All-settings backups B3 and B4 removed (2026-09-22)
+
+Remove Cumulative joint motion: all settings and Jacobian conditioning: all
+settings, formerly B3/B4 at physical slides 29/30, at the user's request.
+Preserve their original slides and notes in
+`experiments/nullspace_narrative/archive/removed_B3_B4_all_settings_20260922.pptx`
+and its matching archive PDF. Keep their figure assets, data and generators.
+Do not restore these slides automatically.
+
+The active deck now has 26 main slides and five hidden backups, 31 slides in
+total. The backups are B1 Opposing moment, B2 Null-space torques and projector,
+B3 Angular quantities, B4 Baseline angular error, and B5 Sources of angular
+offset, at physical slides 27–31. The full PDF has 31 pages and
+Supplementary_slides.pdf has five. Preserve remaining content, notes, videos,
+all 29 native equations, speaking files and thesis files. Refresh native
+sections, backup footers and the six-chapter Overview. This supersedes the
+earlier backup counts and requirements to retain these two all-settings slides.
+See `experiments/nullspace_narrative/all_settings_removed_20260922.json`.
+
+## Individual-trials backup B5 removed (2026-09-22)
+
+Remove Joint motion: all individual trials, formerly B5 / physical slide 31,
+from the active deck at the user's request. Preserve the original slide and
+notes in `experiments/nullspace_narrative/archive/removed_B5_individual_trials_20260922.pptx`
+and its matching archive PDF. Keep its figure assets, data and generators.
+Do not restore this slide automatically.
+
+The deck now has 26 main slides and seven hidden backups, 33 slides in total.
+The backup order is B1 Opposing moment, B2 Null-space torques and projector,
+B3 Cumulative joint motion: all settings, B4 Jacobian conditioning: all settings,
+B5 Angular quantities, B6 Baseline angular error, and B7 Sources of angular
+offset. They occupy physical slides 27–33. The full presentation PDF has
+33 pages and Supplementary_slides.pdf has seven. Update backup footers and
+native sections, and refresh the six-chapter Overview. Preserve every remaining
+slide's content, notes, videos, all 29 native equations, the speaking files and
+the thesis. This supersedes earlier backup counts and the requirement to retain
+the individual-trials slide below. See
+`experiments/nullspace_narrative/individual_trials_removed_20260922.json`.
+
 ## Directional displacement metric removed from active deliverables (2026-09-22)
 
 The null-space evaluation in both the thesis and presentation uses only

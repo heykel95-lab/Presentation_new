@@ -24,9 +24,9 @@
     "source": "Direct vector and raster crops from MyOwn-thesis/Thesis.pdf, Figure 4.2, physical PDF page 79.",
     "changes": "2026-09-22: direct thesis figure replaces the independent presentation asset. Complete figure retained, including its inner blue angle arc and frame inset. B6 / physical slide 32. Width and centre preserved with proportional scaling.",
     "thesis_source_sha256": "7d328e667fc1555073e159913e9904f870d918429bdd9b10de2c4fa4cfed973d",
-    "backup_slide": "B6",
-    "physical_slide": 32,
-    "placement_update": "2026-09-22: renumbered after Opposing moment moved to B1. Figure assets unchanged.",
+    "backup_slide": "B3",
+    "physical_slide": 29,
+    "placement_update": "2026-09-22: renumbered after removal of the B3/B4 all-settings result slides. Figure assets unchanged.",
     "extraction_report": "experiments/media_update/direct_thesis_backup_figures_20260922.json"
   },
   {
@@ -832,12 +832,14 @@
   {
     "asset": "nullspace_damping_combined",
     "source": "sources/make_combined_nullspace.py; sources/combined_nullspace_provenance.json",
-    "changes": "Includes three measured mode-3 trials at each of k_sigma=1.5 and 2 N m, both with d_null=2 N m s/rad. Original four conditions verified. Exact 5–9 s interval, three-trial mean/sample SD, same reference direction, no smoothing/interpolation. Presentation-only extension. PDF/PNG/SVG synchronized."
+    "changes": "Includes three measured mode-3 trials at each of k_sigma=1.5 and 2 N m, both with d_null=2 N m s/rad. Original four conditions verified. Exact 5–9 s interval, three-trial mean/sample SD, same reference direction, no smoothing/interpolation. Presentation-only extension. PDF/PNG/SVG synchronized.",
+    "presentation_status": "2026-09-22: all-settings backup removed at the user request. Original slide and notes preserved in experiments/nullspace_narrative/archive/removed_B3_B4_all_settings_20260922.pptx. Figure assets, data and generator retained."
   },
   {
     "asset": "joint_motion_time_combined",
     "source": "sources/make_combined_nullspace.py; sources/combined_nullspace_provenance.json",
-    "changes": "Includes three measured mode-3 trials at each of k_sigma=1.5 and 2 N m, both with d_null=2 N m s/rad. Original four conditions verified. Exact 5–9 s interval, three-trial mean/sample SD, same reference direction, no smoothing/interpolation. Presentation-only extension. PDF/PNG/SVG synchronized."
+    "changes": "Includes three measured mode-3 trials at each of k_sigma=1.5 and 2 N m, both with d_null=2 N m s/rad. Original four conditions verified. Exact 5–9 s interval, three-trial mean/sample SD, same reference direction, no smoothing/interpolation. Presentation-only extension. PDF/PNG/SVG synchronized.",
+    "presentation_status": "2026-09-22: B5 Joint motion: all individual trials removed at the user request. Original slide and notes preserved in experiments/nullspace_narrative/archive/removed_B5_individual_trials_20260922.pptx. Figure assets, data and generator retained."
   },
   {
     "asset": "joint_motion_single_combined",
@@ -854,7 +856,8 @@
   {
     "asset": "nullspace_conditioning_combined",
     "source": "sources/make_combined_nullspace.py; sources/combined_nullspace_provenance.json",
-    "changes": "Includes three measured mode-3 trials at each of k_sigma=1.5 and 2 N m, both with d_null=2 N m s/rad. Original four conditions verified. Exact 5–9 s interval, three-trial mean/sample SD, same reference direction, no smoothing/interpolation. Presentation-only extension. PDF/PNG/SVG synchronized."
+    "changes": "Includes three measured mode-3 trials at each of k_sigma=1.5 and 2 N m, both with d_null=2 N m s/rad. Original four conditions verified. Exact 5–9 s interval, three-trial mean/sample SD, same reference direction, no smoothing/interpolation. Presentation-only extension. PDF/PNG/SVG synchronized.",
+    "presentation_status": "2026-09-22: all-settings backup removed at the user request. Original slide and notes preserved in experiments/nullspace_narrative/archive/removed_B3_B4_all_settings_20260922.pptx. Figure assets, data and generator retained."
   },
   {
     "asset": "nullspace_cumulative_main",
@@ -883,9 +886,9 @@
     "source": "Direct vector and raster crops from MyOwn-thesis/Thesis.pdf, Figure 1.1, physical PDF page 28.",
     "changes": "2026-09-22: configured and physical surface endpoints share the dashed desired-orientation datum horizontal limits. Source edited in the thesis, and the complete compiled figure copied directly into B8 / physical slide 34. Other geometry and labels unchanged.",
     "source_tex_sha256": "ac61fe0819fae16c226f39860a6a9bcda95d6c5f96d65596e2eb6dc4c2b2e487",
-    "backup_slide": "B8",
-    "physical_slide": 34,
-    "placement_update": "2026-09-22: renumbered after removal of the backup demonstration. Figure and assets unchanged.",
+    "backup_slide": "B5",
+    "physical_slide": 31,
+    "placement_update": "2026-09-22: renumbered after removal of the B3/B4 all-settings result slides. Figure assets unchanged.",
     "extraction_report": "experiments/media_update/direct_thesis_backup_figures_20260922.json"
   },
   {

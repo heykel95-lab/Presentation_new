@@ -1,5 +1,32 @@
 # Null-space presentation narrative
 
+2026-09-22: Removed B3 Cumulative joint motion: all settings and B4 Jacobian
+conditioning: all settings at the user's request. The current deck has 26
+main slides and five hidden backups, 31 slides in total. The main three
+null-space result slides are unchanged. The backups are B1 Opposing moment,
+B2 Null-space torques and projector, B3 Angular quantities, B4 Baseline angular
+error, and B5 Sources of angular offset. Original removed slides and notes are
+in `archive/removed_B3_B4_all_settings_20260922.pptx` and its matching PDF.
+All source assets and data remain available. Full/supplementary PDFs have
+31/five pages. Remaining notes, media, equations and speaking files are
+unchanged. See `all_settings_removed_20260922.json`. The preservation script
+`remove_individual_trials_backup.py` uses the optional `b3_b4` profile for this
+removal. These counts supersede the historical records below.
+
+2026-09-22: Removed B5 Joint motion: all individual trials at the user's request.
+There are now 26 main slides and seven hidden backups, 33 slides in total.
+The remaining detailed null-space plots are B3 Cumulative joint motion: all
+settings and B4 Jacobian conditioning: all settings. Angular quantities,
+Baseline angular error and Sources of angular offset are renumbered B5–B7.
+The original B5 slide and notes are preserved in
+`archive/removed_B5_individual_trials_20260922.pptx` and its matching PDF.
+Source assets, data and generators remain available. The full and supplementary
+PDFs have 33 and seven pages respectively. All retained content, notes, media,
+29 native equations and speaking files are unchanged. See
+`individual_trials_removed_20260922.json` for verification and
+`remove_individual_trials_backup.py` for the preservation workflow.
+These counts supersede the historical records below.
+
 2026-09-22: Opposing moment has moved to B1. Null-space torques and projector
 is now B2, followed by the three detailed null-space plots at B3–B5. Their
 contents and relative order are unchanged. There are still 26 main slides
