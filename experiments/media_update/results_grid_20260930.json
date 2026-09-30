@@ -1,0 +1,1298 @@
+{
+  "date": "2026-09-30",
+  "task": "Match every Results grid to thesis Figure 5.7",
+  "horizontal_grid": "RGB 0.875, solid, 0.2 TeX pt",
+  "vertical_grid": "RGB 0.675, densely dotted, 0.4 TeX pt",
+  "changed_pptx_parts": [
+    "ppt/media/image41.png",
+    "ppt/media/image43.png",
+    "ppt/media/image44.png",
+    "ppt/media/image46.png",
+    "ppt/media/image45.png",
+    "ppt/media/nullspace_cumulative_main.png",
+    "ppt/media/image50.png",
+    "ppt/media/nullspace_conditioning_main.png",
+    "ppt/media/joint_motion_mean_main.png"
+  ],
+  "changed_slides": [
+    {
+      "page": 13,
+      "name": "force_plausibility",
+      "media": "ppt/media/image41.png",
+      "box": [
+        155.0,
+        65.0,
+        805.0,
+        334.6105511811024
+      ]
+    },
+    {
+      "page": 14,
+      "name": "moment_plausibility",
+      "media": "ppt/media/image43.png",
+      "box": [
+        155.0,
+        65.0,
+        805.0,
+        334.6105511811024
+      ]
+    },
+    {
+      "page": 15,
+      "name": "wrench_comparison",
+      "media": "ppt/media/image44.png",
+      "box": [
+        187.5,
+        89.46393700787402,
+        772.5,
+        460.53614173228345
+      ]
+    },
+    {
+      "page": 16,
+      "name": "rotation_stiffness",
+      "media": "ppt/media/image46.png",
+      "box": [
+        230.0,
+        84.0,
+        730.0,
+        444.32385826771656
+      ]
+    },
+    {
+      "page": 18,
+      "name": "contact_wrench_three_panels",
+      "media": "ppt/media/image50.png",
+      "box": [
+        30.0,
+        115.0,
+        930.0,
+        425.0
+      ]
+    },
+    {
+      "page": 23,
+      "name": "nullspace_cumulative_main",
+      "media": "ppt/media/nullspace_cumulative_main.png",
+      "box": [
+        100.0,
+        62.0,
+        860.0,
+        416.6666929133858
+      ]
+    },
+    {
+      "page": 24,
+      "name": "nullspace_conditioning_main",
+      "media": "ppt/media/nullspace_conditioning_main.png",
+      "box": [
+        100.0,
+        62.0,
+        860.0,
+        416.6666929133858
+      ]
+    },
+    {
+      "page": 25,
+      "name": "joint_motion_mean_main",
+      "media": "ppt/media/joint_motion_mean_main.png",
+      "box": [
+        110.0,
+        52.0,
+        850.0,
+        422.0
+      ]
+    },
+    {
+      "page": 30,
+      "name": "baseline_response",
+      "media": "ppt/media/image45.png",
+      "box": [
+        216.83826771653543,
+        87.41740157480315,
+        743.161653543307,
+        462.58259842519686
+      ]
+    }
+  ],
+  "data_curves_uncertainty_ranges_ticks_and_thesis_quantity_names_unchanged": true,
+  "other_22_slides_pixel_identical": true,
+  "notes_equations_videos_and_picture_positions_unchanged": true,
+  "supplementary_matches_full_pdf": true,
+  "force_moment_panel_cache_exactly_matches_archived_plot_samples": true,
+  "thesis": {
+    "changed_pdf_pages": [
+      86,
+      87,
+      88,
+      89,
+      90,
+      92,
+      94,
+      95,
+      96
+    ],
+    "reference_figure_5_7_pixel_identical": true,
+    "all_other_109_pages_pixel_identical": true,
+    "all_results_grid_colours_and_linewidths_match": true,
+    "grid_checks": [
+      {
+        "pdf_page": 86,
+        "horizontal_lines": 8,
+        "vertical_lines": 12,
+        "horizontal_widths": [
+          0.1992601603269577
+        ],
+        "vertical_widths": [
+          0.3985203206539154
+        ]
+      },
+      {
+        "pdf_page": 87,
+        "horizontal_lines": 7,
+        "vertical_lines": 16,
+        "horizontal_widths": [
+          0.1992601603269577
+        ],
+        "vertical_widths": [
+          0.3985203206539154
+        ]
+      },
+      {
+        "pdf_page": 88,
+        "horizontal_lines": 1,
+        "vertical_lines": 1,
+        "horizontal_widths": [
+          0.1992499977350235
+        ],
+        "vertical_widths": [
+          0.398499995470047
+        ]
+      },
+      {
+        "pdf_page": 89,
+        "horizontal_lines": 1,
+        "vertical_lines": 1,
+        "horizontal_widths": [
+          0.1992499977350235
+        ],
+        "vertical_widths": [
+          0.398499995470047
+        ]
+      },
+      {
+        "pdf_page": 90,
+        "horizontal_lines": 1,
+        "vertical_lines": 1,
+        "horizontal_widths": [
+          0.1992499977350235
+        ],
+        "vertical_widths": [
+          0.398499995470047
+        ]
+      },
+      {
+        "pdf_page": 91,
+        "horizontal_lines": 1,
+        "vertical_lines": 1,
+        "horizontal_widths": [
+          0.1992499977350235
+        ],
+        "vertical_widths": [
+          0.398499995470047
+        ]
+      },
+      {
+        "pdf_page": 92,
+        "horizontal_lines": 17,
+        "vertical_lines": 18,
+        "horizontal_widths": [
+          0.19926275312900543
+        ],
+        "vertical_widths": [
+          0.39852550625801086
+        ]
+      },
+      {
+        "pdf_page": 94,
+        "horizontal_lines": 5,
+        "vertical_lines": 5,
+        "horizontal_widths": [
+          0.19926275312900543
+        ],
+        "vertical_widths": [
+          0.39852550625801086
+        ]
+      },
+      {
+        "pdf_page": 95,
+        "horizontal_lines": 4,
+        "vertical_lines": 5,
+        "horizontal_widths": [
+          0.19926275312900543
+        ],
+        "vertical_widths": [
+          0.39852550625801086
+        ]
+      },
+      {
+        "pdf_page": 96,
+        "horizontal_lines": 13,
+        "vertical_lines": 10,
+        "horizontal_widths": [
+          0.19926275312900543
+        ],
+        "vertical_widths": [
+          0.39852550625801086
+        ]
+      }
+    ]
+  },
+  "data_verification": {
+    "controller_wrench:before:MAIN_WR_contact_wrench": [
+      {
+        "lines": [
+          "6bd2caae13b4f9b3a470663ac8aea1f5765329dedc17a7e7e7004a6bf102877f",
+          "7e1250e86e9641ac825a8479bf29739691754b4acbdd4a581118082b596571f6"
+        ],
+        "bands": [],
+        "limits": [
+          [
+            -0.25,
+            5.25
+          ],
+          [
+            -94.330414381645,
+            6.126095727086563
+          ]
+        ],
+        "xticks": [
+          -1.0,
+          0.0,
+          1.0,
+          2.0,
+          3.0,
+          4.0,
+          5.0,
+          6.0
+        ],
+        "yticks": [
+          -120.0,
+          -90.0,
+          -60.0,
+          -30.0,
+          0.0,
+          30.0
+        ],
+        "xlabel": "",
+        "ylabel": "Normal Force,\n$F_n$ [N]",
+        "position": [
+          0.1373948717677281,
+          0.6235514601139602,
+          0.8406539087200767,
+          0.2896964031339031
+        ]
+      },
+      {
+        "lines": [
+          "9c9b133522ad5504b4850e358cb4bbd05d6bdd12692a5fd8584dc34245469cae",
+          "c1cb83b30dcc20b0d01395c8fc32ae9b1dc48913b101f5a06358e8b2272b9ee6"
+        ],
+        "bands": [],
+        "limits": [
+          [
+            -0.25,
+            5.25
+          ],
+          [
+            -0.16767415255098017,
+            3.472148990318004
+          ]
+        ],
+        "xticks": [
+          -1.0,
+          0.0,
+          1.0,
+          2.0,
+          3.0,
+          4.0,
+          5.0,
+          6.0
+        ],
+        "yticks": [
+          -1.0,
+          0.0,
+          1.0,
+          2.0,
+          3.0,
+          4.0
+        ],
+        "xlabel": "Time, $t$ [s]",
+        "ylabel": "Moment About $t_1$,\n$M_{t_1}$ [N m]",
+        "position": [
+          0.1373948717677281,
+          0.23463853276353275,
+          0.8406539087200767,
+          0.2896964031339032
+        ]
+      }
+    ],
+    "controller_wrench:before:MAIN_WR_force_plausibility": [
+      {
+        "lines": [
+          "44b12fd9ed178e51a18daebcc72e79eaf47e6e3aec69a043c89fdcf348eec226",
+          "8176a58115f1aad5d8817c5bb11508ef9212e3c2e49414b7aba2fc5e63e54edc",
+          "0ee21468d58e7d85231a58cf9ff25984c3c61bcd9c002ef03d93e78574d24977"
+        ],
+        "bands": [],
+        "limits": [
+          [
+            0.0,
+            13.497
+          ],
+          [
+            -24.805465501236558,
+            2.037355929375847
+          ]
+        ],
+        "xticks": [
+          0.0,
+          2.0,
+          4.0,
+          6.0,
+          8.0,
+          10.0,
+          12.0,
+          14.0
+        ],
+        "yticks": [
+          -30.0,
+          -20.0,
+          -10.0,
+          0.0,
+          10.0
+        ],
+        "xlabel": "Time, $t$ [s]",
+        "ylabel": "Normal Force,\n$F_n$ [N]",
+        "position": [
+          0.1373948717677281,
+          0.3725844226579521,
+          0.8406539087200767,
+          0.5744744008714594
+        ]
+      }
+    ],
+    "controller_wrench:before:MAIN_WR_moment_plausibility": [
+      {
+        "lines": [
+          "033557e33a3c5baa487e874b9be1450a0803db7fdfd2d482b1129d1246ef2abe",
+          "07f32186c95b4f31c96d87e9bdbf18d98039a612d5cda8082b247133a942b57d",
+          "27d5e47aa29ec15ed59beb0d7de9087a246907579176a95cce5256c168568b47"
+        ],
+        "bands": [],
+        "limits": [
+          [
+            0.0,
+            21.0
+          ],
+          [
+            -0.22192427888468286,
+            3.2327736592419334
+          ]
+        ],
+        "xticks": [
+          0.0,
+          2.5,
+          5.0,
+          7.5,
+          10.0,
+          12.5,
+          15.0,
+          17.5,
+          20.0,
+          22.5
+        ],
+        "yticks": [
+          -1.0,
+          0.0,
+          1.0,
+          2.0,
+          3.0,
+          4.0
+        ],
+        "xlabel": "Time, $t$ [s]",
+        "ylabel": "Moment About $t_1$,\n$M_{t_1}$ [N m]",
+        "position": [
+          0.1338379611986224,
+          0.3765059912854031,
+          0.8442108192891824,
+          0.5705528322440085
+        ]
+      }
+    ],
+    "controller_wrench:after:MAIN_WR_contact_wrench": [
+      {
+        "lines": [
+          "6bd2caae13b4f9b3a470663ac8aea1f5765329dedc17a7e7e7004a6bf102877f",
+          "7e1250e86e9641ac825a8479bf29739691754b4acbdd4a581118082b596571f6"
+        ],
+        "bands": [],
+        "limits": [
+          [
+            -0.25,
+            5.25
+          ],
+          [
+            -94.330414381645,
+            6.126095727086563
+          ]
+        ],
+        "xticks": [
+          -1.0,
+          0.0,
+          1.0,
+          2.0,
+          3.0,
+          4.0,
+          5.0,
+          6.0
+        ],
+        "yticks": [
+          -120.0,
+          -90.0,
+          -60.0,
+          -30.0,
+          0.0,
+          30.0
+        ],
+        "xlabel": "",
+        "ylabel": "Normal Force,\n$F_n$ [N]",
+        "position": [
+          0.1373948717677281,
+          0.6235514601139602,
+          0.8406539087200767,
+          0.2896964031339031
+        ]
+      },
+      {
+        "lines": [
+          "9c9b133522ad5504b4850e358cb4bbd05d6bdd12692a5fd8584dc34245469cae",
+          "c1cb83b30dcc20b0d01395c8fc32ae9b1dc48913b101f5a06358e8b2272b9ee6"
+        ],
+        "bands": [],
+        "limits": [
+          [
+            -0.25,
+            5.25
+          ],
+          [
+            -0.16767415255098017,
+            3.472148990318004
+          ]
+        ],
+        "xticks": [
+          -1.0,
+          0.0,
+          1.0,
+          2.0,
+          3.0,
+          4.0,
+          5.0,
+          6.0
+        ],
+        "yticks": [
+          -1.0,
+          0.0,
+          1.0,
+          2.0,
+          3.0,
+          4.0
+        ],
+        "xlabel": "Time, $t$ [s]",
+        "ylabel": "Moment About $t_1$,\n$M_{t_1}$ [N m]",
+        "position": [
+          0.1373948717677281,
+          0.23463853276353275,
+          0.8406539087200767,
+          0.2896964031339032
+        ]
+      }
+    ],
+    "controller_wrench:after:MAIN_WR_force_plausibility": [
+      {
+        "lines": [
+          "44b12fd9ed178e51a18daebcc72e79eaf47e6e3aec69a043c89fdcf348eec226",
+          "8176a58115f1aad5d8817c5bb11508ef9212e3c2e49414b7aba2fc5e63e54edc",
+          "0ee21468d58e7d85231a58cf9ff25984c3c61bcd9c002ef03d93e78574d24977"
+        ],
+        "bands": [],
+        "limits": [
+          [
+            0.0,
+            13.497
+          ],
+          [
+            -24.805465501236558,
+            2.037355929375847
+          ]
+        ],
+        "xticks": [
+          0.0,
+          2.0,
+          4.0,
+          6.0,
+          8.0,
+          10.0,
+          12.0,
+          14.0
+        ],
+        "yticks": [
+          -30.0,
+          -20.0,
+          -10.0,
+          0.0,
+          10.0
+        ],
+        "xlabel": "Time, $t$ [s]",
+        "ylabel": "Normal Force,\n$F_n$ [N]",
+        "position": [
+          0.1373948717677281,
+          0.3725844226579521,
+          0.8406539087200767,
+          0.5744744008714594
+        ]
+      }
+    ],
+    "controller_wrench:after:MAIN_WR_moment_plausibility": [
+      {
+        "lines": [
+          "033557e33a3c5baa487e874b9be1450a0803db7fdfd2d482b1129d1246ef2abe",
+          "07f32186c95b4f31c96d87e9bdbf18d98039a612d5cda8082b247133a942b57d",
+          "27d5e47aa29ec15ed59beb0d7de9087a246907579176a95cce5256c168568b47"
+        ],
+        "bands": [],
+        "limits": [
+          [
+            0.0,
+            21.0
+          ],
+          [
+            -0.22192427888468286,
+            3.2327736592419334
+          ]
+        ],
+        "xticks": [
+          0.0,
+          2.5,
+          5.0,
+          7.5,
+          10.0,
+          12.5,
+          15.0,
+          17.5,
+          20.0,
+          22.5
+        ],
+        "yticks": [
+          -1.0,
+          0.0,
+          1.0,
+          2.0,
+          3.0,
+          4.0
+        ],
+        "xlabel": "Time, $t$ [s]",
+        "ylabel": "Moment About $t_1$,\n$M_{t_1}$ [N m]",
+        "position": [
+          0.1338379611986224,
+          0.3765059912854031,
+          0.8442108192891824,
+          0.5705528322440085
+        ]
+      }
+    ],
+    "wrench:before:MAIN_D_wrench": [
+      {
+        "lines": [
+          "81062374d5edf85ec1a18b786db6bc838ed9b7bcc0ebaeac855e9bc2a5aa4ec6",
+          "3762b0c8cfaa473f68df71c3779a36f92c6838703aa671cb76ab1d4cc90f7f02",
+          "0d062da4b98ee1ef9f7f8eb868a2c7994fb6e01c071bf192fd9798c10b7f2b6d",
+          "6243e1fceae2da8615cf7a65cae2c9c59119fbb9e4b5c13b87e57bb99662f9ab"
+        ],
+        "bands": [],
+        "limits": [
+          [
+            -0.25005,
+            5.251049999999999
+          ],
+          [
+            -2.8030317897,
+            12.1464710887
+          ]
+        ],
+        "xticks": [
+          -1.0,
+          0.0,
+          1.0,
+          2.0,
+          3.0,
+          4.0,
+          5.0,
+          6.0
+        ],
+        "yticks": [
+          -5.0,
+          -2.5,
+          0.0,
+          2.5,
+          5.0,
+          7.5,
+          10.0,
+          12.5
+        ],
+        "xlabel": "",
+        "ylabel": "Angular Error About $t_1$,\n$\\theta_{\\mathrm{err},t_1}$ [$^\\circ$]",
+        "position": [
+          0.16598729640886273,
+          0.7193678778417476,
+          0.8102002035911373,
+          0.258355912480833
+        ]
+      },
+      {
+        "lines": [
+          "abcda3169b589a9260ce4e06d338a2b48dcaaa206eb3005e6403b989bf0f2de1",
+          "93f72b9135677e75be1626ad0181725bfde40c15d589feed233fb64944ab1acb",
+          "88d8ec9cc286ff6cf84835539f4515005cc19f5b744da9d3328289be0f619854"
+        ],
+        "bands": [],
+        "limits": [
+          [
+            -0.25005,
+            5.251049999999999
+          ],
+          [
+            -117.11536959104086,
+            27.850011993234943
+          ]
+        ],
+        "xticks": [
+          -1.0,
+          0.0,
+          1.0,
+          2.0,
+          3.0,
+          4.0,
+          5.0,
+          6.0
+        ],
+        "yticks": [
+          -125.0,
+          -100.0,
+          -75.0,
+          -50.0,
+          -25.0,
+          0.0,
+          25.0,
+          50.0
+        ],
+        "xlabel": "",
+        "ylabel": "Model-Estimated Normal\nForce, $F_{n,\\mathrm{est}}$ [N]",
+        "position": [
+          0.16598729640886273,
+          0.43151661365840566,
+          0.8102002035911373,
+          0.258355912480833
+        ]
+      },
+      {
+        "lines": [
+          "89096d10b8fdc35a7e9db19950629653d6f96da5adfc40c417c4dd4b4e27da54",
+          "1ef2efe9e3501d300a441648755eb3080ef105cefe91469ab2c8c0386c6f412e",
+          "bdf25643d798601b9fe6b74156675420ca2bf899372e449f0a654b1aeb52c6ee",
+          "6243e1fceae2da8615cf7a65cae2c9c59119fbb9e4b5c13b87e57bb99662f9ab"
+        ],
+        "bands": [],
+        "limits": [
+          [
+            -0.25005,
+            5.251049999999999
+          ],
+          [
+            -6.1451928733668595,
+            6.6704540671994375
+          ]
+        ],
+        "xticks": [
+          -1.0,
+          0.0,
+          1.0,
+          2.0,
+          3.0,
+          4.0,
+          5.0,
+          6.0
+        ],
+        "yticks": [
+          -7.5,
+          -5.0,
+          -2.5,
+          0.0,
+          2.5,
+          5.0,
+          7.5
+        ],
+        "xlabel": "Time, $t$ [s]",
+        "ylabel": "Model-Estimated TCP\nMoment About $t_1$,\n$M_{t_1,\\mathrm{est}}$ [N m]",
+        "position": [
+          0.16598729640886273,
+          0.1436653494750637,
+          0.8102002035911373,
+          0.2583559124808329
+        ]
+      }
+    ],
+    "wrench:after:MAIN_D_wrench": [
+      {
+        "lines": [
+          "81062374d5edf85ec1a18b786db6bc838ed9b7bcc0ebaeac855e9bc2a5aa4ec6",
+          "3762b0c8cfaa473f68df71c3779a36f92c6838703aa671cb76ab1d4cc90f7f02",
+          "0d062da4b98ee1ef9f7f8eb868a2c7994fb6e01c071bf192fd9798c10b7f2b6d",
+          "6243e1fceae2da8615cf7a65cae2c9c59119fbb9e4b5c13b87e57bb99662f9ab"
+        ],
+        "bands": [],
+        "limits": [
+          [
+            -0.25005,
+            5.251049999999999
+          ],
+          [
+            -2.8030317897,
+            12.1464710887
+          ]
+        ],
+        "xticks": [
+          -1.0,
+          0.0,
+          1.0,
+          2.0,
+          3.0,
+          4.0,
+          5.0,
+          6.0
+        ],
+        "yticks": [
+          -5.0,
+          -2.5,
+          0.0,
+          2.5,
+          5.0,
+          7.5,
+          10.0,
+          12.5
+        ],
+        "xlabel": "",
+        "ylabel": "Angular Error About $t_1$,\n$\\theta_{\\mathrm{err},t_1}$ [$^\\circ$]",
+        "position": [
+          0.16598729640886273,
+          0.7193678778417476,
+          0.8102002035911373,
+          0.258355912480833
+        ]
+      },
+      {
+        "lines": [
+          "abcda3169b589a9260ce4e06d338a2b48dcaaa206eb3005e6403b989bf0f2de1",
+          "93f72b9135677e75be1626ad0181725bfde40c15d589feed233fb64944ab1acb",
+          "88d8ec9cc286ff6cf84835539f4515005cc19f5b744da9d3328289be0f619854"
+        ],
+        "bands": [],
+        "limits": [
+          [
+            -0.25005,
+            5.251049999999999
+          ],
+          [
+            -117.11536959104086,
+            27.850011993234943
+          ]
+        ],
+        "xticks": [
+          -1.0,
+          0.0,
+          1.0,
+          2.0,
+          3.0,
+          4.0,
+          5.0,
+          6.0
+        ],
+        "yticks": [
+          -125.0,
+          -100.0,
+          -75.0,
+          -50.0,
+          -25.0,
+          0.0,
+          25.0,
+          50.0
+        ],
+        "xlabel": "",
+        "ylabel": "Model-Estimated Normal\nForce, $F_{n,\\mathrm{est}}$ [N]",
+        "position": [
+          0.16598729640886273,
+          0.43151661365840566,
+          0.8102002035911373,
+          0.258355912480833
+        ]
+      },
+      {
+        "lines": [
+          "89096d10b8fdc35a7e9db19950629653d6f96da5adfc40c417c4dd4b4e27da54",
+          "1ef2efe9e3501d300a441648755eb3080ef105cefe91469ab2c8c0386c6f412e",
+          "bdf25643d798601b9fe6b74156675420ca2bf899372e449f0a654b1aeb52c6ee",
+          "6243e1fceae2da8615cf7a65cae2c9c59119fbb9e4b5c13b87e57bb99662f9ab"
+        ],
+        "bands": [],
+        "limits": [
+          [
+            -0.25005,
+            5.251049999999999
+          ],
+          [
+            -6.1451928733668595,
+            6.6704540671994375
+          ]
+        ],
+        "xticks": [
+          -1.0,
+          0.0,
+          1.0,
+          2.0,
+          3.0,
+          4.0,
+          5.0,
+          6.0
+        ],
+        "yticks": [
+          -7.5,
+          -5.0,
+          -2.5,
+          0.0,
+          2.5,
+          5.0,
+          7.5
+        ],
+        "xlabel": "Time, $t$ [s]",
+        "ylabel": "Model-Estimated TCP\nMoment About $t_1$,\n$M_{t_1,\\mathrm{est}}$ [N m]",
+        "position": [
+          0.16598729640886273,
+          0.1436653494750637,
+          0.8102002035911373,
+          0.2583559124808329
+        ]
+      }
+    ],
+    "nullspace:before:nullspace_cumulative_main": [
+      {
+        "lines": [
+          "06d74ee151b234979a12c67be8052a199a9862ecfa7ae8671d5e811ec04ef3a9",
+          "f9d640d39efb65bded4331195cedff5ff82f0b5fd38d7c61a15c4daee2fa88a7",
+          "1bde40745c79470462843c6d00eac51881f513157c51ff638d9182dde7c9b7bc",
+          "d677e73dd4dd2dead154bbf39dc9ccaf1098ad597695018233746199cf3a6be3"
+        ],
+        "bands": [
+          "d795ac9940a25fef66332c74cea21d11a72a78b41e841d4c5776a4f5ee4ed992",
+          "13e970ab7dfbb8e93eab738f2a4a168c3ed2526d96635b70c445f87af40af463",
+          "49ba0468a5c686114f4b2baeec58e3e769ea8539fd521524b35a88cd7d9922c1",
+          "ea44da5e35b56937542dc4f3bc2a794d87655998bd2d6f49c3176f80a3e9b5d7"
+        ],
+        "limits": [
+          [
+            0.0,
+            4.0
+          ],
+          [
+            0.0,
+            8.93917504274317
+          ]
+        ],
+        "xticks": [
+          0,
+          1,
+          2,
+          3,
+          4
+        ],
+        "yticks": [
+          0.0,
+          2.0,
+          4.0,
+          6.0,
+          8.0,
+          10.0
+        ],
+        "xlabel": "Time, $t$ [s]",
+        "ylabel": "Cumulative Joint Motion, $E_N$ [$^\\circ$]",
+        "position": [
+          0.12,
+          0.28,
+          0.85,
+          0.65
+        ]
+      }
+    ],
+    "nullspace:before:nullspace_conditioning_main": [
+      {
+        "lines": [
+          "63eb8b71e59ae9bfe37b5f8450eae92d0ac79595ca699552c6cbccaa79834908",
+          "4425852692d26f9aa2caa93dacf1b5cda2a570e6a2e3a791902cadd0d845f9f5",
+          "2fe15373b5f721452471d5da3b8f19a599c26b45c7d788bd350585eea16894ae",
+          "3ea8355c06ae36c0dd7313d198ba4b9844a75bf1010c38f305661dc465c463f4"
+        ],
+        "bands": [
+          "b6382c81ef4e0382e4e6d502bb35d5967245c0e1365c67dc4611ae495d016327",
+          "74fc1157a6a747988b507a3aa563c84fe2a6b842ec45707c1f13398ce8909992",
+          "9f484d674847888868d6e4f7dae433e998846399a3cff5434ad8c3d2cf767e07",
+          "8ba96e2647ad897bbd78faa78f9eb6cbe3ffbf891c1f6c383df58f8fee59f1d6"
+        ],
+        "limits": [
+          [
+            0.0,
+            4.0
+          ],
+          [
+            0.21376748630447084,
+            0.217
+          ]
+        ],
+        "xticks": [
+          0,
+          1,
+          2,
+          3,
+          4
+        ],
+        "yticks": [
+          0.214,
+          0.215,
+          0.216,
+          0.217
+        ],
+        "xlabel": "Time, $t$ [s]",
+        "ylabel": "Minimum Singular Value, $\\sigma_{\\min}$",
+        "position": [
+          0.12,
+          0.28,
+          0.85,
+          0.65
+        ]
+      }
+    ],
+    "nullspace:before:joint_motion_mean_main": [
+      {
+        "lines": [
+          "e0187bcc73fd14599b71daedfbed85156097b7d01ba259263b22580ec3beb739",
+          "cc8cf965f86063bdab78b9f74f7b2de5d7c2f4bb2f5f79eb3243babd36375a98",
+          "4a3bd34dbeeebf3abf91f9d62314010bab5c597dc4b9135385e23a339a9af023",
+          "aeba8012729bbb594ce4e23a87d2813d8df08f78c9f82c3248c7f9ce6a7fbe76",
+          "6243e1fceae2da8615cf7a65cae2c9c59119fbb9e4b5c13b87e57bb99662f9ab"
+        ],
+        "bands": [
+          "09b00eee6cf90d88e960b820a2ca96271cc2b44ad8167d1c87fa9bcb2a856b46",
+          "0f7a2d2f2f3f9319184ab80fa74280bea50cb81ab2f17fd55e8235cf647fdef4",
+          "daf5b0f5301a102ae7bb83851bc99fa0eaf5c1136907a1b98d5b0751b745f307",
+          "c64ebec4a6b01308308bbd62cf4d04d18116255ae8b6668e3b85d5accbf172df"
+        ],
+        "limits": [
+          [
+            0.0,
+            4.0
+          ],
+          [
+            -0.2,
+            6.6
+          ]
+        ],
+        "xticks": [
+          0,
+          1,
+          2,
+          3,
+          4
+        ],
+        "yticks": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6
+        ],
+        "xlabel": "Time, $t$ [s]",
+        "ylabel": "Joint 1 Motion, $\\Delta q_1$ [$^\\circ$]",
+        "position": [
+          0.12,
+          0.3,
+          0.35,
+          0.5999999999999999
+        ]
+      },
+      {
+        "lines": [
+          "4a3bd34dbeeebf3abf91f9d62314010bab5c597dc4b9135385e23a339a9af023",
+          "aeba8012729bbb594ce4e23a87d2813d8df08f78c9f82c3248c7f9ce6a7fbe76",
+          "6243e1fceae2da8615cf7a65cae2c9c59119fbb9e4b5c13b87e57bb99662f9ab"
+        ],
+        "bands": [
+          "daf5b0f5301a102ae7bb83851bc99fa0eaf5c1136907a1b98d5b0751b745f307",
+          "c64ebec4a6b01308308bbd62cf4d04d18116255ae8b6668e3b85d5accbf172df"
+        ],
+        "limits": [
+          [
+            0.0,
+            4.0
+          ],
+          [
+            -0.034378301783109966,
+            0.09780806790514086
+          ]
+        ],
+        "xticks": [
+          0,
+          1,
+          2,
+          3,
+          4
+        ],
+        "yticks": [
+          -0.02,
+          0.0,
+          0.02,
+          0.04,
+          0.06,
+          0.08
+        ],
+        "xlabel": "Time, $t$ [s]",
+        "ylabel": "Joint 1 Motion, $\\Delta q_1$ [$^\\circ$]",
+        "position": [
+          0.62,
+          0.3,
+          0.35,
+          0.5999999999999999
+        ]
+      }
+    ],
+    "nullspace:after:nullspace_cumulative_main": [
+      {
+        "lines": [
+          "06d74ee151b234979a12c67be8052a199a9862ecfa7ae8671d5e811ec04ef3a9",
+          "f9d640d39efb65bded4331195cedff5ff82f0b5fd38d7c61a15c4daee2fa88a7",
+          "1bde40745c79470462843c6d00eac51881f513157c51ff638d9182dde7c9b7bc",
+          "d677e73dd4dd2dead154bbf39dc9ccaf1098ad597695018233746199cf3a6be3"
+        ],
+        "bands": [
+          "d795ac9940a25fef66332c74cea21d11a72a78b41e841d4c5776a4f5ee4ed992",
+          "13e970ab7dfbb8e93eab738f2a4a168c3ed2526d96635b70c445f87af40af463",
+          "49ba0468a5c686114f4b2baeec58e3e769ea8539fd521524b35a88cd7d9922c1",
+          "ea44da5e35b56937542dc4f3bc2a794d87655998bd2d6f49c3176f80a3e9b5d7"
+        ],
+        "limits": [
+          [
+            0.0,
+            4.0
+          ],
+          [
+            0.0,
+            8.93917504274317
+          ]
+        ],
+        "xticks": [
+          0,
+          1,
+          2,
+          3,
+          4
+        ],
+        "yticks": [
+          0.0,
+          2.0,
+          4.0,
+          6.0,
+          8.0,
+          10.0
+        ],
+        "xlabel": "Time, $t$ [s]",
+        "ylabel": "Cumulative Joint Motion, $E_N$ [$^\\circ$]",
+        "position": [
+          0.12,
+          0.28,
+          0.85,
+          0.65
+        ]
+      }
+    ],
+    "nullspace:after:nullspace_conditioning_main": [
+      {
+        "lines": [
+          "63eb8b71e59ae9bfe37b5f8450eae92d0ac79595ca699552c6cbccaa79834908",
+          "4425852692d26f9aa2caa93dacf1b5cda2a570e6a2e3a791902cadd0d845f9f5",
+          "2fe15373b5f721452471d5da3b8f19a599c26b45c7d788bd350585eea16894ae",
+          "3ea8355c06ae36c0dd7313d198ba4b9844a75bf1010c38f305661dc465c463f4"
+        ],
+        "bands": [
+          "b6382c81ef4e0382e4e6d502bb35d5967245c0e1365c67dc4611ae495d016327",
+          "74fc1157a6a747988b507a3aa563c84fe2a6b842ec45707c1f13398ce8909992",
+          "9f484d674847888868d6e4f7dae433e998846399a3cff5434ad8c3d2cf767e07",
+          "8ba96e2647ad897bbd78faa78f9eb6cbe3ffbf891c1f6c383df58f8fee59f1d6"
+        ],
+        "limits": [
+          [
+            0.0,
+            4.0
+          ],
+          [
+            0.21376748630447084,
+            0.217
+          ]
+        ],
+        "xticks": [
+          0,
+          1,
+          2,
+          3,
+          4
+        ],
+        "yticks": [
+          0.214,
+          0.215,
+          0.216,
+          0.217
+        ],
+        "xlabel": "Time, $t$ [s]",
+        "ylabel": "Minimum Singular Value, $\\sigma_{\\min}$",
+        "position": [
+          0.12,
+          0.28,
+          0.85,
+          0.65
+        ]
+      }
+    ],
+    "nullspace:after:joint_motion_mean_main": [
+      {
+        "lines": [
+          "e0187bcc73fd14599b71daedfbed85156097b7d01ba259263b22580ec3beb739",
+          "cc8cf965f86063bdab78b9f74f7b2de5d7c2f4bb2f5f79eb3243babd36375a98",
+          "4a3bd34dbeeebf3abf91f9d62314010bab5c597dc4b9135385e23a339a9af023",
+          "aeba8012729bbb594ce4e23a87d2813d8df08f78c9f82c3248c7f9ce6a7fbe76",
+          "6243e1fceae2da8615cf7a65cae2c9c59119fbb9e4b5c13b87e57bb99662f9ab"
+        ],
+        "bands": [
+          "09b00eee6cf90d88e960b820a2ca96271cc2b44ad8167d1c87fa9bcb2a856b46",
+          "0f7a2d2f2f3f9319184ab80fa74280bea50cb81ab2f17fd55e8235cf647fdef4",
+          "daf5b0f5301a102ae7bb83851bc99fa0eaf5c1136907a1b98d5b0751b745f307",
+          "c64ebec4a6b01308308bbd62cf4d04d18116255ae8b6668e3b85d5accbf172df"
+        ],
+        "limits": [
+          [
+            0.0,
+            4.0
+          ],
+          [
+            -0.2,
+            6.6
+          ]
+        ],
+        "xticks": [
+          0,
+          1,
+          2,
+          3,
+          4
+        ],
+        "yticks": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6
+        ],
+        "xlabel": "Time, $t$ [s]",
+        "ylabel": "Joint 1 Motion, $\\Delta q_1$ [$^\\circ$]",
+        "position": [
+          0.12,
+          0.3,
+          0.35,
+          0.5999999999999999
+        ]
+      },
+      {
+        "lines": [
+          "4a3bd34dbeeebf3abf91f9d62314010bab5c597dc4b9135385e23a339a9af023",
+          "aeba8012729bbb594ce4e23a87d2813d8df08f78c9f82c3248c7f9ce6a7fbe76",
+          "6243e1fceae2da8615cf7a65cae2c9c59119fbb9e4b5c13b87e57bb99662f9ab"
+        ],
+        "bands": [
+          "daf5b0f5301a102ae7bb83851bc99fa0eaf5c1136907a1b98d5b0751b745f307",
+          "c64ebec4a6b01308308bbd62cf4d04d18116255ae8b6668e3b85d5accbf172df"
+        ],
+        "limits": [
+          [
+            0.0,
+            4.0
+          ],
+          [
+            -0.034378301783109966,
+            0.09780806790514086
+          ]
+        ],
+        "xticks": [
+          0,
+          1,
+          2,
+          3,
+          4
+        ],
+        "yticks": [
+          -0.02,
+          0.0,
+          0.02,
+          0.04,
+          0.06,
+          0.08
+        ],
+        "xlabel": "Time, $t$ [s]",
+        "ylabel": "Joint 1 Motion, $\\Delta q_1$ [$^\\circ$]",
+        "position": [
+          0.62,
+          0.3,
+          0.35,
+          0.5999999999999999
+        ]
+      }
+    ]
+  },
+  "thesis_figure_hashes": {
+    "joint_motion_mean_main.pdf": "f9d1c27381a470ee26c56cf776d25e868110771e90e08a0b40147945f1b52ffe",
+    "MAIN_D_wrench.pdf": "660566e3f0828884c3535c99d3ca626c30779cd5488bab3b64a4872298bb7d14",
+    "MAIN_WR_contact_wrench.pdf": "ba3b686fab436647332c10e5aeb11f675a1c8dccd6ec7b2ba7480e7b60d3efdc",
+    "MAIN_WR_force_plausibility.pdf": "91b7dede8c97a708cd051201682adcc18c5ece2fc90982f0e6e5c3d174b87ddd",
+    "MAIN_WR_moment_plausibility.pdf": "278da7703ddea5fb0ab058d5d837b7ce61351274bf9f785aa9187838a6678435",
+    "nullspace_conditioning_main.pdf": "17e1b067843b027bee74f492f0089d6bf3c657682556010330d3e22d9da89cf8",
+    "nullspace_cumulative_main.pdf": "f975dc32bf60a070b205c31de365d8a071365e00ba1a3c6a8a01b13bf686ec54",
+    "results_case_a_bars.pdf": "e1647046adc920c26f65db35fe120063635690ffbbb23113f0c99e27c5e2145f",
+    "results_case_a_bars.tex": "08c760a96b62bec25ad1cefb19562910c14d48a89210d2e7792591fc4d4f30d9",
+    "results_case_b_stiffness.pdf": "9dcf2c6039021fa6237720bd9760bf351daa2a4d2b2a2ae24c1ce9b87e7882cb",
+    "results_case_b_stiffness.tex": "cae9b07f094c28635c915fa3cfccdcc7f3cfa7bdcfe901ef8c343844fd4c8899",
+    "results_case_c_stiffness.pdf": "2da602fde2d2623d3f72c28e160d076a18086e95ee87b2f024d49064c6b03912",
+    "results_case_c_stiffness.tex": "ebaf42c6bdc815cbaae08e0589d8d3eaac9d345da9d3eb33ee523fa1e3b12a86",
+    "results_case_d_panels.pdf": "c908faf84fc8bd86aa2afd687cc0c9a673ec655e5922f4003b799586c1d6843c",
+    "results_case_d_panels.tex": "4704f43fa8c155e14306ce43c71d6b34a2806b7f3d9e3b4c3c704dec8ab78a44"
+  },
+  "contact_cache_sha256": "3e048e7f1ea63d552e0ed3ea9a619f589fdd3d83d8c0ddee25dcac77e40740dd",
+  "reference_fig_5_7_native_source_sha256": "4704f43fa8c155e14306ce43c71d6b34a2806b7f3d9e3b4c3c704dec8ab78a44"
+}

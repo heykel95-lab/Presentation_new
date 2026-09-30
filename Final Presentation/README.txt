@@ -1,3 +1,9 @@
+2026-09-30: All shared Results plots now use thesis Figure 5.7's grid: light solid horizontal lines and darker dotted vertical lines at the existing ticks. Updated nine embedded figures and both presentation PDFs; source assets and generators match. Data, ranges, labels and other slide content are unchanged. See ../experiments/media_update/results_grid_20260930.json.
+
+2026-09-30: Corrected y-axis typography for thesis Figures 5.8--5.11 and the corresponding presentation figures. Labels use LaTeX/lmodern throughout and the thesis plots render at final print size. Contact-panel labels carry the full quantity names and retain their proportions. All plotted values are unchanged.
+
+2026-09-30: Main null-space plots match the axes and typography of thesis Figures 5.4 and 5.6. Joint-motion panels are equal in size and aligned. The baseline chart has a CoC-at-TCP legend. Updated embedded figures and both PDFs; all data, other slide content and notes are preserved.
+
 2026-09-29: Figure 4.2 on Angular quantities (B3 / physical slide 29) has n_s pointing upwards and t_2 rightwards in its separate frame inset. The t_1 circle-dot and positive rotation convention are retained. The embedded image, both presentation PDFs and editable sources use the updated thesis figure.
 
 2026-09-23: Figure 4.2 on Angular quantities (B3 / physical slide 29) now has shorter normal arrows and a compact layout. It uses the exact thesis rendering with unchanged angles, colours and label sizes. Both presentation PDFs and figure sources match. See ../experiments/media_update/figure_4_2_compact_20260923.json.

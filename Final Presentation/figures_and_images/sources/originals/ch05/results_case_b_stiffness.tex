@@ -1,23 +1,26 @@
-% Case-B rotational-stiffness comparison. The legend gives the achieved
-% achieved angular-offset range across the three stiffness settings.
+% Generated from the archived contact-error endpoint summary.
+% Each point is a mean with sample standard deviation over three repetitions.
 \begin{tikzpicture}
 \begin{axis}[
     width=12.5cm, height=7.0cm,
     xmin=2, xmax=53, ymin=0, ymax=10,
-    xtick={5,15,50},
-    ytick={0,2,4,6,8,10},
-    grid=major,
+    xtick={5,15,50}, ytick={0,2,4,6,8,10},
+    xlabel={Rotational Stiffness About \(t_1\), \(K_{R,t_1}\) [N\,m/rad]},
+    ylabel={Angular Error About \(t_1\), \(\theta_{\mathrm{err},t_1}\) [\(^\circ\)]},
+    ymajorgrids=true, xmajorgrids=true,
     grid style={gray!25, very thin},
+    x grid style={gray!65, thin, densely dotted},
     tick label style={font=\footnotesize},
     label style={font=\footnotesize},
-    xlabel={Rotational Stiffness About \(t_1\), \(K_{R,t_1}\) [N\,m/rad]},
-    ylabel={Contact Response About \(t_1\), \(\gamma_{t_1}\) [\(^\circ\)]},
     legend style={font=\scriptsize, draw=none, fill=none,
                   cells={anchor=west}, at={(0.5,-0.24)}, anchor=north},
     every axis plot/.append style={thick, mark size=2.3pt},
   ]
-\addplot[black, mark=o] coordinates {
-  (5,7.57) (15,7.29) (50,2.73)};
-\addlegendentry{Achieved Angular Offset, \(\theta_{\mathrm{ach},t_1}=(9.31\text{--}9.32)^\circ\)}
+\addplot[black, mark=o, mark options={fill=white},
+         error bars/.cd, y dir=both, y explicit] coordinates {
+  (5,1.750000000) +- (0,0.000000000)
+  (15,2.036666667) +- (0,0.023094011)
+  (50,6.583333333) +- (0,0.030550505)};
+\addlegendentry{Measured Angular Offset, \(\theta_{\mathrm{meas},t_1}=(9.31\text{--}9.32)^\circ\)}
 \end{axis}
 \end{tikzpicture}

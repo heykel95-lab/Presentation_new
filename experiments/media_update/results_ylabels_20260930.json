@@ -1,0 +1,150 @@
+{
+  "date": "2026-09-30",
+  "task": "Exact y-axis label typography in Figures 5.8--5.11",
+  "reference_figures": [
+    "5.4",
+    "5.6"
+  ],
+  "label_renderer": "LaTeX with T1 font encoding and lmodern",
+  "changed_pptx_parts": [
+    "ppt/media/nullspace_cumulative_main.png",
+    "ppt/media/image50.png",
+    "ppt/media/nullspace_conditioning_main.png",
+    "ppt/media/joint_motion_mean_main.png"
+  ],
+  "changed_slides": [
+    {
+      "page": 18,
+      "name": "contact_wrench_three_panels",
+      "media": "ppt/media/image50.png",
+      "box": [
+        30.0,
+        115.0,
+        930.0,
+        425.0
+      ]
+    },
+    {
+      "page": 23,
+      "name": "nullspace_cumulative_main",
+      "media": "ppt/media/nullspace_cumulative_main.png",
+      "box": [
+        100.0,
+        62.0,
+        860.0,
+        416.6666929133858
+      ]
+    },
+    {
+      "page": 24,
+      "name": "nullspace_conditioning_main",
+      "media": "ppt/media/nullspace_conditioning_main.png",
+      "box": [
+        100.0,
+        62.0,
+        860.0,
+        416.6666929133858
+      ]
+    },
+    {
+      "page": 25,
+      "name": "joint_motion_mean_main",
+      "media": "ppt/media/joint_motion_mean_main.png",
+      "box": [
+        110.0,
+        52.0,
+        850.0,
+        422.0
+      ]
+    }
+  ],
+  "data_curves_uncertainty_ranges_and_thesis_quantity_names_unchanged": true,
+  "other_27_slides_pixel_identical": true,
+  "notes_equations_videos_and_picture_positions_unchanged": true,
+  "supplementary_matches_full_pdf": true,
+  "presentation_contact_axes_use_full_thesis_quantity_names": true,
+  "presentation_contact_label_glyphs_are_not_stretched": true,
+  "changed_thesis_pages": [
+    92,
+    94,
+    95,
+    96
+  ],
+  "verified_y_label_faces_and_sizes": {
+    "90": {
+      "fonts": [
+        "LMMathItalic10-Regular",
+        "LMMathItalic7-Regular",
+        "LMMathSymbols7-Regular",
+        "LMRoman10-Regular",
+        "LMRoman5-Regular",
+        "LMRoman7-Regular"
+      ],
+      "sizes_pt": [
+        4.98,
+        6.97,
+        9.96
+      ]
+    },
+    "92": {
+      "fonts": [
+        "LMMathItalic10-Regular",
+        "LMMathItalic7-Regular",
+        "LMMathSymbols7-Regular",
+        "LMRoman10-Regular",
+        "LMRoman5-Regular",
+        "LMRoman7-Regular"
+      ],
+      "sizes_pt": [
+        4.98,
+        6.97,
+        9.96
+      ]
+    },
+    "94": {
+      "fonts": [
+        "LMMathItalic10-Regular",
+        "LMMathItalic7-Regular",
+        "LMMathSymbols7-Regular",
+        "LMRoman10-Regular"
+      ],
+      "sizes_pt": [
+        6.97,
+        9.96
+      ]
+    },
+    "95": {
+      "fonts": [
+        "LMMathItalic10-Regular",
+        "LMRoman10-Regular",
+        "LMRoman7-Regular"
+      ],
+      "sizes_pt": [
+        6.97,
+        9.96
+      ]
+    },
+    "96": {
+      "fonts": [
+        "LMMathItalic10-Regular",
+        "LMMathSymbols7-Regular",
+        "LMRoman10-Regular",
+        "LMRoman7-Regular"
+      ],
+      "sizes_pt": [
+        6.97,
+        9.96
+      ]
+    }
+  },
+  "final_thesis_width_mm": 160,
+  "final_thesis_pages": 118,
+  "final_pass_has_no_undefined_references_or_overfull_boxes": true,
+  "asset_sha256": {
+    "MAIN_D_wrench": "7c63264f94d4245516f2df2816891f5ea4676ccb42477f852394e531bdea0509",
+    "nullspace_cumulative_main": "7bfadc8cf38825e4d48f60a7a193509fbc8a8db38e0a6b97d75f365a5078eebc",
+    "nullspace_conditioning_main": "15af3df0980e43177da3a0aeada6e8910e7898a58d05f8e4873f6fb66c197c6c",
+    "joint_motion_mean_main": "d5c65ce6259fd9820386552bb19be0e5c5ae88fbb9750b5f08b11fb7f900bf21"
+  },
+  "all_text_within_plot_canvases": true
+}

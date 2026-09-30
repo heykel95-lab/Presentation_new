@@ -19,19 +19,21 @@
     nodes near coords,
     nodes near coords style={font=\scriptsize, yshift=5pt, /pgf/number format/fixed,
                              /pgf/number format/precision=2},
-    ymajorgrids=true, xmajorgrids=false,
+    ymajorgrids=true, xmajorgrids=true,
     grid style={gray!25, very thin},
+    x grid style={gray!65, thin, densely dotted},
     tick label style={font=\footnotesize},
     label style={font=\footnotesize},
     legend style={font=\scriptsize, draw=none, fill=none,
                   cells={anchor=west}, at={(0.5,-0.24)}, anchor=north},
     every axis plot/.append style={thick, mark size=2.3pt},
   ]
-\addplot[draw=black, fill=barblue, error bars/.cd, y dir=both, y explicit]
+\addplot[draw=black, fill=barblue, area legend, error bars/.cd, y dir=both, y explicit]
 coordinates {
   (none,1.653333333) +- (0,0.011547005)
   (p10t1,1.750000000) +- (0,0.000000000)
   (m10t1,1.413333333) +- (0,0.056862407)};
+\addlegendentry{CoC at TCP, \(r_{c,t_2}=0\)}
 \end{axis}
 \end{tikzpicture}
 \end{document}

@@ -1,68 +1,69 @@
 \documentclass[tikz,border=0pt]{standalone}
-\usepackage{graphicx,amsmath}
+\usepackage[T1]{fontenc}
+\usepackage{graphicx,amsmath,lmodern}
 \definecolor{navy}{HTML}{17365D}
 % Timing: earliest entry into a +/-0.1 degree band about the final normal
 % error that is retained through contact end. Exact archived samples give
 % 2.489 s at +40 mm and 3.601 s at TCP, rounded here to 2.5 s and 3.6 s.
+% The canvas matches the existing 900 x 310 pt slide image.
+% Scale plot geometry to this canvas; render labels at their native font size.
 \begin{document}
 \begin{tikzpicture}[x=1bp,y=1bp]
-\path[use as bounding box] (0,0) rectangle (900,230);
-\begin{scope}[shift={(0,0)}]
-\node[anchor=south west,inner sep=0] at (64,42) {\includegraphics[width=224bp,height=172bp]{contact_error_plot.pdf}};
-\node[anchor=north west,inner sep=1bp,font=\fontsize{12}{14}\selectfont] at (67,212) {(a)};
-\draw[line width=.6bp] (61,42.000000)--(64,42.000000);\node[anchor=east,inner sep=2bp,font=\fontsize{12}{14}\selectfont] at (60,42.000000) {$0$};
-\draw[line width=.6bp] (61,73.272727)--(64,73.272727);\node[anchor=east,inner sep=2bp,font=\fontsize{12}{14}\selectfont] at (60,73.272727) {$2$};
-\draw[line width=.6bp] (61,104.545455)--(64,104.545455);\node[anchor=east,inner sep=2bp,font=\fontsize{12}{14}\selectfont] at (60,104.545455) {$4$};
-\draw[line width=.6bp] (61,135.818182)--(64,135.818182);\node[anchor=east,inner sep=2bp,font=\fontsize{12}{14}\selectfont] at (60,135.818182) {$6$};
-\draw[line width=.6bp] (61,167.090909)--(64,167.090909);\node[anchor=east,inner sep=2bp,font=\fontsize{12}{14}\selectfont] at (60,167.090909) {$8$};
-\draw[line width=.6bp] (61,198.363636)--(64,198.363636);\node[anchor=east,inner sep=2bp,font=\fontsize{12}{14}\selectfont] at (60,198.363636) {$10$};
-\draw[line width=.6bp] (74.181806,42)--(74.181806,39);\node[anchor=north,inner sep=2bp,font=\fontsize{12}{14}\selectfont] at (74.181806,38) {0};
-\draw[line width=.6bp] (114.900937,42)--(114.900937,39);\node[anchor=north,inner sep=2bp,font=\fontsize{12}{14}\selectfont] at (114.900937,38) {1};
-\draw[line width=.6bp] (155.620069,42)--(155.620069,39);\node[anchor=north,inner sep=2bp,font=\fontsize{12}{14}\selectfont] at (155.620069,38) {2};
-\draw[line width=.6bp] (196.339200,42)--(196.339200,39);\node[anchor=north,inner sep=2bp,font=\fontsize{12}{14}\selectfont] at (196.339200,38) {3};
-\draw[line width=.6bp] (237.058331,42)--(237.058331,39);\node[anchor=north,inner sep=2bp,font=\fontsize{12}{14}\selectfont] at (237.058331,38) {4};
-\draw[line width=.6bp] (277.777463,42)--(277.777463,39);\node[anchor=north,inner sep=2bp,font=\fontsize{12}{14}\selectfont] at (277.777463,38) {5};
-\node[font=\fontsize{13}{15}\selectfont] at (176,11) {Time, $t$ [s]};
-\node[rotate=90,align=center,font=\fontsize{13}{15}\selectfont] at (17,128) {Angular error\\$\theta_{\mathrm{err},t_1}$ [$^\circ$]};
-\draw[navy,densely dashed,line width=.7bp] (176.000000,42)--(176.000000,193);\node[navy,font=\fontsize{11}{13}\selectfont] at (176.000000,204) {$\approx 2.5\,\mathrm{s}$};
-\draw[navy,densely dashed,line width=.7bp] (220.800000,42)--(220.800000,193);\node[navy,font=\fontsize{11}{13}\selectfont] at (220.800000,204) {$\approx 3.6\,\mathrm{s}$};
+\path[use as bounding box] (0,0.000000) rectangle (900,310.000000);
+\begin{scope}[shift={(0,0.000000)}]
+\node[anchor=south west,inner sep=0] at (64,56.608696) {\includegraphics[width=224bp,height=231.826087bp]{contact_error_plot.pdf}};
+\node[anchor=north west,inner sep=1bp,font=\fontsize{12}{14}\selectfont] at (67,285.739130) {(a)};
+\draw[line width=.6bp] (61,56.608696)--(64,56.608696);\node[anchor=east,inner sep=2bp,font=\fontsize{12}{14}\selectfont] at (60,56.608696) {$0$};
+\draw[line width=.6bp] (61,98.758893)--(64,98.758893);\node[anchor=east,inner sep=2bp,font=\fontsize{12}{14}\selectfont] at (60,98.758893) {$2$};
+\draw[line width=.6bp] (61,140.909092)--(64,140.909092);\node[anchor=east,inner sep=2bp,font=\fontsize{12}{14}\selectfont] at (60,140.909092) {$4$};
+\draw[line width=.6bp] (61,183.059289)--(64,183.059289);\node[anchor=east,inner sep=2bp,font=\fontsize{12}{14}\selectfont] at (60,183.059289) {$6$};
+\draw[line width=.6bp] (61,225.209486)--(64,225.209486);\node[anchor=east,inner sep=2bp,font=\fontsize{12}{14}\selectfont] at (60,225.209486) {$8$};
+\draw[line width=.6bp] (61,267.359683)--(64,267.359683);\node[anchor=east,inner sep=2bp,font=\fontsize{12}{14}\selectfont] at (60,267.359683) {$10$};
+\draw[line width=.6bp] (74.181806,56.608696)--(74.181806,52.565217);\node[anchor=north,inner sep=2bp,font=\fontsize{12}{14}\selectfont] at (74.181806,51.217391) {0};
+\draw[line width=.6bp] (114.900937,56.608696)--(114.900937,52.565217);\node[anchor=north,inner sep=2bp,font=\fontsize{12}{14}\selectfont] at (114.900937,51.217391) {1};
+\draw[line width=.6bp] (155.620069,56.608696)--(155.620069,52.565217);\node[anchor=north,inner sep=2bp,font=\fontsize{12}{14}\selectfont] at (155.620069,51.217391) {2};
+\draw[line width=.6bp] (196.339200,56.608696)--(196.339200,52.565217);\node[anchor=north,inner sep=2bp,font=\fontsize{12}{14}\selectfont] at (196.339200,51.217391) {3};
+\draw[line width=.6bp] (237.058331,56.608696)--(237.058331,52.565217);\node[anchor=north,inner sep=2bp,font=\fontsize{12}{14}\selectfont] at (237.058331,51.217391) {4};
+\draw[line width=.6bp] (277.777463,56.608696)--(277.777463,52.565217);\node[anchor=north,inner sep=2bp,font=\fontsize{12}{14}\selectfont] at (277.777463,51.217391) {5};
+\node[font=\fontsize{13}{15}\selectfont] at (176,14.826087) {Time, $t$ [s]};
+\node[rotate=90,align=center,font=\fontsize{13}{15}\selectfont] at (17,172.521739) {Angular Error About $t_1$,\\$\theta_{\mathrm{err},t_1}$ [$^\circ$]};
+\draw[navy,densely dashed,line width=.7bp] (176.000000,56.608696)--(176.000000,260.130435);\node[navy,font=\fontsize{11}{13}\selectfont] at (176.000000,274.956522) {$\approx 2.5\,\mathrm{s}$};
+\draw[navy,densely dashed,line width=.7bp] (220.800000,56.608696)--(220.800000,260.130435);\node[navy,font=\fontsize{11}{13}\selectfont] at (220.800000,274.956522) {$\approx 3.6\,\mathrm{s}$};
 \end{scope}
-\begin{scope}[shift={(300,0)}]
-\node[anchor=south west,inner sep=0] at (64,42) {\includegraphics[width=224bp,height=172bp]{contact_force_plot.pdf}};
-\fill[white] (64.46,180.275) rectangle (74.98,212.314);
-\node[anchor=north west,inner sep=1bp,font=\fontsize{12}{14}\selectfont] at (67,212) {(b)};
-\draw[line width=.6bp] (61,62.307298)--(64,62.307298);\node[anchor=east,inner sep=2bp,font=\fontsize{12}{14}\selectfont] at (60,62.307298) {$-100$};
-\draw[line width=.6bp] (61,91.969541)--(64,91.969541);\node[anchor=east,inner sep=2bp,font=\fontsize{12}{14}\selectfont] at (60,91.969541) {$-75$};
-\draw[line width=.6bp] (61,121.631784)--(64,121.631784);\node[anchor=east,inner sep=2bp,font=\fontsize{12}{14}\selectfont] at (60,121.631784) {$-50$};
-\draw[line width=.6bp] (61,151.294027)--(64,151.294027);\node[anchor=east,inner sep=2bp,font=\fontsize{12}{14}\selectfont] at (60,151.294027) {$-25$};
-\draw[line width=.6bp] (61,180.956271)--(64,180.956271);\node[anchor=east,inner sep=2bp,font=\fontsize{12}{14}\selectfont] at (60,180.956271) {$0$};
-\draw[line width=.6bp] (61,210.618514)--(64,210.618514);\node[anchor=east,inner sep=2bp,font=\fontsize{12}{14}\selectfont] at (60,210.618514) {$25$};
-\draw[line width=.6bp] (74.181806,42)--(74.181806,39);\node[anchor=north,inner sep=2bp,font=\fontsize{12}{14}\selectfont] at (74.181806,38) {0};
-\draw[line width=.6bp] (114.900937,42)--(114.900937,39);\node[anchor=north,inner sep=2bp,font=\fontsize{12}{14}\selectfont] at (114.900937,38) {1};
-\draw[line width=.6bp] (155.620069,42)--(155.620069,39);\node[anchor=north,inner sep=2bp,font=\fontsize{12}{14}\selectfont] at (155.620069,38) {2};
-\draw[line width=.6bp] (196.339200,42)--(196.339200,39);\node[anchor=north,inner sep=2bp,font=\fontsize{12}{14}\selectfont] at (196.339200,38) {3};
-\draw[line width=.6bp] (237.058331,42)--(237.058331,39);\node[anchor=north,inner sep=2bp,font=\fontsize{12}{14}\selectfont] at (237.058331,38) {4};
-\draw[line width=.6bp] (277.777463,42)--(277.777463,39);\node[anchor=north,inner sep=2bp,font=\fontsize{12}{14}\selectfont] at (277.777463,38) {5};
-\node[font=\fontsize{13}{15}\selectfont] at (176,11) {Time, $t$ [s]};
-\node[rotate=90,align=center,font=\fontsize{13}{15}\selectfont] at (17,128) {Normal force\\$F_{n,\mathrm{est}}$ [N]};
+\begin{scope}[shift={(300,0.000000)}]
+\node[anchor=south west,inner sep=0] at (64,56.608696) {\includegraphics[width=224bp,height=231.826087bp]{contact_force_plot.pdf}};
+\node[anchor=north west,inner sep=1bp,font=\fontsize{12}{14}\selectfont] at (67,285.739130) {(b)};
+\draw[line width=.6bp] (61,83.979402)--(64,83.979402);\node[anchor=east,inner sep=2bp,font=\fontsize{12}{14}\selectfont] at (60,83.979402) {$-100$};
+\draw[line width=.6bp] (61,123.958947)--(64,123.958947);\node[anchor=east,inner sep=2bp,font=\fontsize{12}{14}\selectfont] at (60,123.958947) {$-75$};
+\draw[line width=.6bp] (61,163.938491)--(64,163.938491);\node[anchor=east,inner sep=2bp,font=\fontsize{12}{14}\selectfont] at (60,163.938491) {$-50$};
+\draw[line width=.6bp] (61,203.918036)--(64,203.918036);\node[anchor=east,inner sep=2bp,font=\fontsize{12}{14}\selectfont] at (60,203.918036) {$-25$};
+\draw[line width=.6bp] (61,243.897583)--(64,243.897583);\node[anchor=east,inner sep=2bp,font=\fontsize{12}{14}\selectfont] at (60,243.897583) {$0$};
+\draw[line width=.6bp] (61,283.877128)--(64,283.877128);\node[anchor=east,inner sep=2bp,font=\fontsize{12}{14}\selectfont] at (60,283.877128) {$25$};
+\draw[line width=.6bp] (74.181806,56.608696)--(74.181806,52.565217);\node[anchor=north,inner sep=2bp,font=\fontsize{12}{14}\selectfont] at (74.181806,51.217391) {0};
+\draw[line width=.6bp] (114.900937,56.608696)--(114.900937,52.565217);\node[anchor=north,inner sep=2bp,font=\fontsize{12}{14}\selectfont] at (114.900937,51.217391) {1};
+\draw[line width=.6bp] (155.620069,56.608696)--(155.620069,52.565217);\node[anchor=north,inner sep=2bp,font=\fontsize{12}{14}\selectfont] at (155.620069,51.217391) {2};
+\draw[line width=.6bp] (196.339200,56.608696)--(196.339200,52.565217);\node[anchor=north,inner sep=2bp,font=\fontsize{12}{14}\selectfont] at (196.339200,51.217391) {3};
+\draw[line width=.6bp] (237.058331,56.608696)--(237.058331,52.565217);\node[anchor=north,inner sep=2bp,font=\fontsize{12}{14}\selectfont] at (237.058331,51.217391) {4};
+\draw[line width=.6bp] (277.777463,56.608696)--(277.777463,52.565217);\node[anchor=north,inner sep=2bp,font=\fontsize{12}{14}\selectfont] at (277.777463,51.217391) {5};
+\node[font=\fontsize{13}{15}\selectfont] at (176,14.826087) {Time, $t$ [s]};
+\node[rotate=90,align=center,font=\fontsize{13}{15}\selectfont] at (17,172.521739) {Model-Estimated Normal Force,\\$F_{n,\mathrm{est}}$ [N]};
 \end{scope}
-\begin{scope}[shift={(600,0)}]
-\node[anchor=south west,inner sep=0] at (64,42) {\includegraphics[width=224bp,height=172bp]{contact_moment_plot.pdf}};
-\fill[white] (64.46,180.275) rectangle (74.98,212.314);
-\node[anchor=north west,inner sep=1bp,font=\fontsize{12}{14}\selectfont] at (67,212) {(c)};
-\draw[line width=.6bp] (61,57.369718)--(64,57.369718);\node[anchor=east,inner sep=2bp,font=\fontsize{12}{14}\selectfont] at (60,57.369718) {$-5$};
-\draw[line width=.6bp] (61,90.922533)--(64,90.922533);\node[anchor=east,inner sep=2bp,font=\fontsize{12}{14}\selectfont] at (60,90.922533) {$-2.5$};
-\draw[line width=.6bp] (61,124.475180)--(64,124.475180);\node[anchor=east,inner sep=2bp,font=\fontsize{12}{14}\selectfont] at (60,124.475180) {$0$};
-\draw[line width=.6bp] (61,158.027996)--(64,158.027996);\node[anchor=east,inner sep=2bp,font=\fontsize{12}{14}\selectfont] at (60,158.027996) {$2.5$};
-\draw[line width=.6bp] (61,191.580643)--(64,191.580643);\node[anchor=east,inner sep=2bp,font=\fontsize{12}{14}\selectfont] at (60,191.580643) {$5$};
-\draw[line width=.6bp] (74.181806,42)--(74.181806,39);\node[anchor=north,inner sep=2bp,font=\fontsize{12}{14}\selectfont] at (74.181806,38) {0};
-\draw[line width=.6bp] (114.900937,42)--(114.900937,39);\node[anchor=north,inner sep=2bp,font=\fontsize{12}{14}\selectfont] at (114.900937,38) {1};
-\draw[line width=.6bp] (155.620069,42)--(155.620069,39);\node[anchor=north,inner sep=2bp,font=\fontsize{12}{14}\selectfont] at (155.620069,38) {2};
-\draw[line width=.6bp] (196.339200,42)--(196.339200,39);\node[anchor=north,inner sep=2bp,font=\fontsize{12}{14}\selectfont] at (196.339200,38) {3};
-\draw[line width=.6bp] (237.058331,42)--(237.058331,39);\node[anchor=north,inner sep=2bp,font=\fontsize{12}{14}\selectfont] at (237.058331,38) {4};
-\draw[line width=.6bp] (277.777463,42)--(277.777463,39);\node[anchor=north,inner sep=2bp,font=\fontsize{12}{14}\selectfont] at (277.777463,38) {5};
-\node[font=\fontsize{13}{15}\selectfont] at (176,11) {Time, $t$ [s]};
-\node[rotate=90,align=center,font=\fontsize{13}{15}\selectfont] at (17,128) {TCP moment\\$M_{t_1,\mathrm{est}}$ [N\,m]};
+\begin{scope}[shift={(600,0.000000)}]
+\node[anchor=south west,inner sep=0] at (64,56.608696) {\includegraphics[width=224bp,height=231.826087bp]{contact_moment_plot.pdf}};
+\node[anchor=north west,inner sep=1bp,font=\fontsize{12}{14}\selectfont] at (67,285.739130) {(c)};
+\draw[line width=.6bp] (61,77.324403)--(64,77.324403);\node[anchor=east,inner sep=2bp,font=\fontsize{12}{14}\selectfont] at (60,77.324403) {$-5$};
+\draw[line width=.6bp] (61,122.547762)--(64,122.547762);\node[anchor=east,inner sep=2bp,font=\fontsize{12}{14}\selectfont] at (60,122.547762) {$-2.5$};
+\draw[line width=.6bp] (61,167.770895)--(64,167.770895);\node[anchor=east,inner sep=2bp,font=\fontsize{12}{14}\selectfont] at (60,167.770895) {$0$};
+\draw[line width=.6bp] (61,212.994255)--(64,212.994255);\node[anchor=east,inner sep=2bp,font=\fontsize{12}{14}\selectfont] at (60,212.994255) {$2.5$};
+\draw[line width=.6bp] (61,258.217388)--(64,258.217388);\node[anchor=east,inner sep=2bp,font=\fontsize{12}{14}\selectfont] at (60,258.217388) {$5$};
+\draw[line width=.6bp] (74.181806,56.608696)--(74.181806,52.565217);\node[anchor=north,inner sep=2bp,font=\fontsize{12}{14}\selectfont] at (74.181806,51.217391) {0};
+\draw[line width=.6bp] (114.900937,56.608696)--(114.900937,52.565217);\node[anchor=north,inner sep=2bp,font=\fontsize{12}{14}\selectfont] at (114.900937,51.217391) {1};
+\draw[line width=.6bp] (155.620069,56.608696)--(155.620069,52.565217);\node[anchor=north,inner sep=2bp,font=\fontsize{12}{14}\selectfont] at (155.620069,51.217391) {2};
+\draw[line width=.6bp] (196.339200,56.608696)--(196.339200,52.565217);\node[anchor=north,inner sep=2bp,font=\fontsize{12}{14}\selectfont] at (196.339200,51.217391) {3};
+\draw[line width=.6bp] (237.058331,56.608696)--(237.058331,52.565217);\node[anchor=north,inner sep=2bp,font=\fontsize{12}{14}\selectfont] at (237.058331,51.217391) {4};
+\draw[line width=.6bp] (277.777463,56.608696)--(277.777463,52.565217);\node[anchor=north,inner sep=2bp,font=\fontsize{12}{14}\selectfont] at (277.777463,51.217391) {5};
+\node[font=\fontsize{13}{15}\selectfont] at (176,14.826087) {Time, $t$ [s]};
+\node[rotate=90,align=center,font=\fontsize{13}{15}\selectfont] at (17,172.521739) {Model-Estimated TCP Moment\\About $t_1$, $M_{t_1,\mathrm{est}}$ [N\,m]};
 \end{scope}
 \end{tikzpicture}
 \end{document}

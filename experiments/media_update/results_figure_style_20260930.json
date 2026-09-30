@@ -1,0 +1,126 @@
+{
+  "date": "2026-09-30",
+  "changed_figures": [
+    "5.4",
+    "5.9",
+    "5.10",
+    "5.11"
+  ],
+  "changed_slides": [
+    {
+      "page": 23,
+      "name": "nullspace_cumulative_main",
+      "media": "ppt/media/nullspace_cumulative_main.png",
+      "old_box": [
+        100.0,
+        62.0,
+        860.0,
+        416.6666929133858
+      ],
+      "new_box": [
+        100.0,
+        62.00001670258169,
+        860.0,
+        416.6666762108041
+      ]
+    },
+    {
+      "page": 24,
+      "name": "nullspace_conditioning_main",
+      "media": "ppt/media/nullspace_conditioning_main.png",
+      "old_box": [
+        100.0,
+        62.0,
+        860.0,
+        416.6666929133858
+      ],
+      "new_box": [
+        100.0,
+        62.00001670258169,
+        860.0,
+        416.6666762108041
+      ]
+    },
+    {
+      "page": 25,
+      "name": "joint_motion_mean_main",
+      "media": "ppt/media/joint_motion_mean_main.png",
+      "old_box": [
+        110.0,
+        52.0,
+        850.0,
+        422.0
+      ],
+      "new_box": [
+        110.0,
+        52.0,
+        850.0,
+        422.0
+      ]
+    },
+    {
+      "page": 30,
+      "name": "baseline_response",
+      "media": "ppt/media/image45.png",
+      "old_box": [
+        216.83826771653543,
+        101.06582677165355,
+        743.161653543307,
+        448.9341732283465
+      ],
+      "new_box": [
+        216.83826771653543,
+        87.41738755169052,
+        743.161653543307,
+        462.5826124483094
+      ]
+    }
+  ],
+  "changed_pptx_parts": [
+    "ppt/media/image45.png",
+    "ppt/media/nullspace_cumulative_main.png",
+    "ppt/slides/slide17.xml",
+    "ppt/media/nullspace_conditioning_main.png",
+    "ppt/media/joint_motion_mean_main.png"
+  ],
+  "unchanged_notes_equations_videos_sections_and_slide_order": true,
+  "all_other_slides_pixel_identical": true,
+  "slides_unchanged_outside_figures": true,
+  "supplementary_matches_full_pdf": true,
+  "plotted_samples_uncertainty_and_ranges_unchanged": true,
+  "joint_panel_width_height_and_alignment_equal": true,
+  "method": "Replace only figure media and proportional image transforms in the existing PPTX; refresh those vector figures in the PDFs.",
+  "artifact_tool_blocker": "Bundled @oai/artifact-tool package unavailable in this environment.",
+  "thesis_pages_changed": [
+    88,
+    94,
+    95,
+    96
+  ],
+  "thesis_page_count": 118,
+  "style_reference": [
+    "Figure 5.4",
+    "Figure 5.6"
+  ],
+  "all_nullspace_text_inside_canvas": true,
+  "joint_panel_axes_normalised_bounds": [
+    [
+      0.12,
+      0.3,
+      0.35,
+      0.6
+    ],
+    [
+      0.62,
+      0.3,
+      0.35,
+      0.6
+    ]
+  ],
+  "asset_sha256": {
+    "joint_motion_mean_main.pdf": "87d906b86c08fbb6c9b49d4009b352389326a8d08a14f5f5efda20594a9d0aa9",
+    "nullspace_cumulative_main.pdf": "783ae5730f7a3bcbf82c213e160cc43251d5731dc711c8376a30e4a21d4fc6e7",
+    "nullspace_conditioning_main.pdf": "9575ca0e6392e5503a1732624f7e5dd253276f56d8969033c4c2900206dcf4dd",
+    "results_case_a_bars.pdf": "f6de6904b80e363f0df008427a8653ea518abe3598519bca612157c07fca815f"
+  }
+}

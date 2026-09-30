@@ -1,5 +1,54 @@
 # Thesis and presentation workspace
 
+## Results grid follows Figure 5.7 (2026-09-30)
+
+All shared Results plots use the grid of thesis Figure 5.7: light solid
+horizontal lines (`gray!25`, `very thin`) and darker densely dotted vertical
+lines (`gray!65`, `thin`). Draw them behind the data at the existing major
+ticks, preserving limits, values and labels. This applies to every panel of
+the contact-wrench and joint-motion figures as well as single-axis plots.
+`figures_and_images/sources/results_grid.py` supplies the Matplotlib style;
+the native endpoint sources use the equivalent pgfplots settings. Keep this
+helper identical to its copies in the thesis figure directory and portable
+null-space bundle. Synchronise source assets, embedded PowerPoint images and
+both presentation PDFs. See experiments/media_update/results_grid_20260930.json.
+
+
+## Complete y-axis label match (2026-09-30)
+
+Thesis Figures 5.8--5.11 and their shared presentation figures use LaTeX
+with lmodern for the entire axis label, including names, symbols, subscripts
+and units. Generate thesis plots at 160 mm width with 10 pt labels, so both
+the printed size and optical font faces match Figures 5.4 and 5.6. Preserve
+the quantity names and equal joint-motion panels.
+
+The three-panel contact figure uses the full thesis quantity names and Latin
+Modern labels on its existing 900 x 310 pt slide canvas. Scale its plot
+geometry to that canvas without stretching the label glyphs. Keep the
+original recorded data, timing guides, slide headings, legend and picture box.
+Both presentation PDFs and the embedded images must reflect the new rendering.
+See experiments/media_update/results_ylabels_20260930.json.
+
+## Results figure styling (2026-09-30)
+
+Use thesis Figures 5.4 and 5.6 as the visual reference for the shared main
+null-space plots: thin rectangular axis frames, inward ticks, Latin Modern
+text and mathematics rendered by LaTeX with lmodern at the final 160 mm
+thesis width. Match the actual 10-point optical font faces in both parts of
+each axis label; a Latin Modern text font alone does not match its mathematics. Axis labels and ticks print at about
+10 pt, with 8 pt legends in the thesis. Keep the four-condition legend below
+each figure. Joint motion over time (physical slide 25 / thesis Figure 5.11)
+has equal panel widths and heights, aligned titles and axis labels, and the
+full 0--4 s interval in both panels. The right panel retains its enlarged
+vertical scale. Measured curves, bands, colours, markers and limits are
+unchanged. Use the same regenerated PDF/PNG/SVG assets in both documents.
+
+Baseline angular error (B4 / physical slide 30 / thesis Figure 5.4) now has
+a blue legend swatch labelled CoC at TCP, r_c,t2 = 0. Preserve its existing
+axis style. Update the embedded PowerPoint images, full PDF and supplementary
+PDF together. Notes, native equations, videos and slide order are unchanged.
+See experiments/media_update/results_figure_style_20260930.json.
+
 ## Figure 4.2 frame orientation (2026-09-29)
 
 In thesis Figure 4.2 and Angular quantities (B3 / physical slide 29),

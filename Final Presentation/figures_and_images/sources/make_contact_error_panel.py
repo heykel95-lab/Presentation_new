@@ -3,7 +3,7 @@
 
 The three CSVs contain actual recorded contact time and calibrated normal-error
 samples. They were extracted from the r01 campaign logs without interpolation.
-The neighbouring force and moment panel PDFs retain their original data.
+The neighbouring force and moment panels use make_contact_wrench_panels.py.
 """
 import argparse
 import csv
@@ -12,6 +12,7 @@ import numpy as np
 import matplotlib
 matplotlib.use('Agg')
 import matplotlib.pyplot as plt
+from results_grid import apply_results_grid
 
 def main():
     here=Path(__file__).resolve().parent
@@ -20,7 +21,7 @@ def main():
     p.add_argument('--out',type=Path,default=here/'contact_error_plot.pdf')
     args=p.parse_args()
     plt.rcParams.update({'font.family':'serif','font.serif':['Latin Modern Roman','CMU Serif','cmr10'],'mathtext.fontset':'cm','axes.unicode_minus':False,'pdf.fonttype':42})
-    fig=plt.figure(figsize=(224/72,172/72))
+    fig=plt.figure(figsize=(224/72,231.826087/72))
     ax=fig.add_axes([0,0,1,1])
     for suffix,colour in zip(['m040','p000','p040'],['#000000','#c00000','#0057b8']):
         with (args.data_dir/f'contact_error_{suffix}_r01.csv').open(newline='') as f:
@@ -34,7 +35,7 @@ def main():
     ax.set_yticks([0,2,4,6,8,10])
     ax.set_xticks([0,1,2,3,4,5])
     ax.tick_params(left=False,bottom=False,labelleft=False,labelbottom=False)
-    ax.grid(axis='y',alpha=.3,linewidth=.6)
+    apply_results_grid(ax, scale=1)
     for spine in ax.spines.values():
         spine.set_linewidth(.6)
         spine.set_color('#1a1a1a')
