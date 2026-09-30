@@ -1,6 +1,7 @@
 % Schematic pure t_1 rotation, shown using actual normal vectors.
 % The comparison reference is the inward calibrated normal -n_s.
-% The coordinate view is rotated in plane: -n_s is right, t_2 is up.
+% The main comparison keeps its inward reference -n_s pointing right.
+% The separate frame inset is rotated: n_s is up and t_2 is right.
 % Positive rotation about outward t_1 is anticlockwise.
 % Tool directions are R_EE(t) n_Tool,EE, not nominal end-effector axes.
 % The common origin compares orientations only, not contact positions.
@@ -34,14 +35,14 @@
   \node[lbl,blue!70!black,anchor=north] at (2.00,-0.18)
     {$\theta_{\mathrm{err},t_1}$};
 
-  % Right-handed surface frame in the same rotated view as the normal arrows.
+  % Separate right-handed surface frame, rotated 90 degrees clockwise.
   % t_1 x t_2 = n_s, so positive rotation runs from +t_2 to +n_s.
   \begin{scope}[shift={(1.0,2.05)}]
-    \draw[axis] (-0.18,0) -- (-1.0,0) node[lbl,left] {$n_s$};
-    \draw[axis] (0,0.18) -- (0,1.1) node[lbl,above] {$t_2$};
-    \draw[angle,black] (105:0.72)
-      arc[start angle=105,end angle=165,radius=0.72];
-    \node[lbl,font=\normalsize] at (-0.73,0.78) {$+$};
+    \draw[axis] (0,0.18) -- (0,1.0) node[lbl,above] {$n_s$};
+    \draw[axis] (0.18,0) -- (1.1,0) node[lbl,right] {$t_2$};
+    \draw[angle,black] (15:0.72)
+      arc[start angle=15,end angle=75,radius=0.72];
+    \node[lbl,font=\normalsize] at (0.78,0.73) {$+$};
     \draw[black] (0,0) circle (0.11);
     \fill[black] (0,0) circle (0.035);
     \node[lbl,anchor=north west] at (0.15,-0.15) {$t_1$};

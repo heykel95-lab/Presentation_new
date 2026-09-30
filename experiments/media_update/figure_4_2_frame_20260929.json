@@ -1,0 +1,29 @@
+{
+  "date": "2026-09-29",
+  "figure": "4.2",
+  "physical_slide": 29,
+  "backup": "B3",
+  "thesis_pdf_page": 77,
+  "thesis_printed_page": 52,
+  "crop": [
+    150.0,
+    203.0,
+    442.0,
+    327.5
+  ],
+  "change": "Rotate separate frame inset: n_s up, t_2 right; t_1 out of page.",
+  "changed_pptx_parts": [
+    "ppt/media/image38.png"
+  ],
+  "notes_equations_videos_order_unchanged": true,
+  "other_30_slides_pixel_identical": true,
+  "slide_unchanged_outside_figure": true,
+  "supplementary_matches_full_pdf": true,
+  "thesis_text_unchanged": true,
+  "changed_thesis_pages": [
+    77
+  ],
+  "image_sha256": "4c30aea12ecb5c80d508db97836b9e7aa04009b01e62980067ca5fdc20773f41",
+  "artifact_tool_blocker": "Bundled @oai/artifact-tool package unavailable in this environment.",
+  "method": "Existing package media replacement and exact vector crop from the rebuilt thesis."
+}

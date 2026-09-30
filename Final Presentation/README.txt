@@ -1,3 +1,5 @@
+2026-09-29: Figure 4.2 on Angular quantities (B3 / physical slide 29) has n_s pointing upwards and t_2 rightwards in its separate frame inset. The t_1 circle-dot and positive rotation convention are retained. The embedded image, both presentation PDFs and editable sources use the updated thesis figure.
+
 2026-09-23: Figure 4.2 on Angular quantities (B3 / physical slide 29) now has shorter normal arrows and a compact layout. It uses the exact thesis rendering with unchanged angles, colours and label sizes. Both presentation PDFs and figure sources match. See ../experiments/media_update/figure_4_2_compact_20260923.json.
 
 Active defense presentation

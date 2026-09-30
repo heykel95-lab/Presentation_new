@@ -1,5 +1,15 @@
 # Thesis and presentation workspace
 
+## Figure 4.2 frame orientation (2026-09-29)
+
+In thesis Figure 4.2 and Angular quantities (B3 / physical slide 29),
+the separate frame inset has n_s upwards and t_2 rightwards. Keep t_1
+out of the page and the positive arc from t_2 towards n_s. The main
+normal-arrow comparison retains its orientation, angles and labels.
+Use the exact updated thesis crop in the embedded PowerPoint figure
+and both presentation PDFs. Preserve the image box and text scale.
+This replaces the earlier leftward-n_s/upward-t_2 inset instructions.
+
 ## Compact Figure 4.2 (2026-09-23)
 
 The three normal arrows in thesis Figure 4.2 and Angular quantities (B3 / physical
@@ -87,7 +97,7 @@ There are 26 main slides and eight hidden backups at physical slides 27–34. Th
 
 ## B6 and B9 restored to committed thesis figure designs (2026-09-22)
 
-The user selected the last committed thesis figures as the restoration reference and explicitly requested the same restoration in the presentation and thesis. On Angular quantities (B6 / physical slide 32), use the exact committed `figures/ch04/surface_reference_geometry.pdf` from thesis commit `be7aa4d`. It has the blue angular-error arc inside the red measured-offset arc, at radius 2.8, with its label at (2.70, -0.18). The matching editable source is from `33b7dc5`. The later source-only move to radius 6.3 had not been applied to the committed figure PDF and must not be reapplied. Keep the frame inset with n_s leftwards, t_2 upwards and t_1 out of the page. Preserve the figure width and centre, using proportional scaling.
+The user selected the last committed thesis figures as the restoration reference and explicitly requested the same restoration in the presentation and thesis. On Angular quantities (B6 / physical slide 32), use the exact committed `figures/ch04/surface_reference_geometry.pdf` from thesis commit `be7aa4d`. It has the blue angular-error arc inside the red measured-offset arc, at radius 2.8, with its label at (2.70, -0.18). The matching editable source is from `33b7dc5`. The later source-only move to radius 6.3 had not been applied to the committed figure PDF and must not be reapplied. Keep the frame inset with n_s upwards, t_2 rightwards and t_1 out of the page, following the 2026-09-29 update. Preserve the figure width and centre, using proportional scaling.
 
 On Sources of angular offset (now B5 / physical slide 31), use the 2026-09-23 legend below the geometry: Configured surface and Physical surface, then Desired orientation and Tool face. Retain the original black dashed desired-direction datum, perpendicular tool tip, two difference arcs and their labels. The 2026-09-23 legend ruling replaces the earlier three-entry restoration. Match both restored sources and PDF/PNG/SVG assets in the thesis and presentation, and rebuild the two documents. The source/compiled-figure mismatch is resolved in favour of the author-selected committed appearance. Other slide contents, 35-slide order, nine hidden backups, speaking material and thesis prose remain unchanged. See `experiments/media_update/committed_backup_figures_20260922.json`. This supersedes the earlier angular source-only match, rotated inset, and four-entry legend instructions below.
 
@@ -133,7 +143,7 @@ Baseline angular error is now hidden backup B11 at physical slide 34, immediatel
 
 ## Angular quantities matches thesis and moves to backup (2026-09-21)
 
-Angular quantities, formerly footer 10 and then footer 11 / physical slide 12 after the Surface frame insertion, is now hidden backup B10 at physical slide 34. Its diagram uses the exact current thesis LaTeX in `MyOwn-thesis/figures/ch04/surface_reference_geometry.tex`, copied to `figures_and_images/sources/originals/ch04/surface_reference_geometry.tex`. Match the thesis's 12 pt document base and Latin Modern fonts. The frame inset has n_s leftwards, t_2 upwards and t_1 out of the page, with the positive-rotation arc and main angle geometry from the thesis source. This supersedes the older rotated-inset instructions. The existing full thesis PDF and standalone figure PDF contain older renderings, so the current LaTeX source is authoritative for this match. Preserve the image width and centre at (480 pt, 275 pt), scaling proportionally. Keep the removed definition blocks and bottom statements absent. Archive the previous presentation assets and synchronize the local LaTeX, PDF, PNG, SVG and embedded image. The thesis files, speaking script and speaker notes remain unchanged. The presentation now contains 24 main slides and ten hidden backups, with Conclusion at physical slide 24 and B1–B10 at physical slides 25–34. The full PDF has 34 pages and the supplementary PDF has ten pages. This supersedes earlier main/backup counts and Angular quantities placement.
+Angular quantities, formerly footer 10 and then footer 11 / physical slide 12 after the Surface frame insertion, is now hidden backup B10 at physical slide 34. Its diagram uses the exact current thesis LaTeX in `MyOwn-thesis/figures/ch04/surface_reference_geometry.tex`, copied to `figures_and_images/sources/originals/ch04/surface_reference_geometry.tex`. Match the thesis's 12 pt document base and Latin Modern fonts. The frame inset has n_s upwards, t_2 rightwards and t_1 out of the page, following the 2026-09-29 update, with the positive-rotation arc and main angle geometry from the thesis source. This supersedes the older rotated-inset instructions. The existing full thesis PDF and standalone figure PDF contain older renderings, so the current LaTeX source is authoritative for this match. Preserve the image width and centre at (480 pt, 275 pt), scaling proportionally. Keep the removed definition blocks and bottom statements absent. Archive the previous presentation assets and synchronize the local LaTeX, PDF, PNG, SVG and embedded image. The thesis files, speaking script and speaker notes remain unchanged. The presentation now contains 24 main slides and ten hidden backups, with Conclusion at physical slide 24 and B1–B10 at physical slides 25–34. The full PDF has 34 pages and the supplementary PDF has ten pages. This supersedes earlier main/backup counts and Angular quantities placement.
 
 ## Robot photograph moved to Motivation (2026-09-21)
 
