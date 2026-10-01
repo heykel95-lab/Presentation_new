@@ -1,0 +1,2476 @@
+[
+  {
+    "physical": 1,
+    "path": "ppt/slides/slide1.xml",
+    "title": "Master Thesis Presentation",
+    "hidden": false,
+    "shapes": [
+      {
+        "name": "Slide title",
+        "text": [
+          "Master Thesis Presentation"
+        ]
+      },
+      {
+        "name": "TextBox 4",
+        "text": [
+          "Design and Implementation of a Real-Time Impedance Controller for a 7-DOF Collaborative Robot"
+        ]
+      },
+      {
+        "name": "TextBox 5",
+        "text": [
+          "Master Thesis · Heykel Khadhraoui"
+        ]
+      },
+      {
+        "name": "University name",
+        "text": [
+          "Hochschule München"
+        ]
+      },
+      {
+        "name": "University English name",
+        "text": [
+          "University of Applied Sciences"
+        ]
+      },
+      {
+        "name": "Thesis title",
+        "text": [
+          "Design and Implementation of a Real-Time",
+          "Impedance Controller for a 7-DOF",
+          "Collaborative Robot"
+        ]
+      },
+      {
+        "name": "Presenter",
+        "text": [
+          "Heykel Khadhraoui"
+        ]
+      },
+      {
+        "name": "Degree programme",
+        "text": [
+          "Computational Engineering (M.Sc.)"
+        ]
+      },
+      {
+        "name": "Supervisors",
+        "text": [
+          "Supervisors: Prof. Norbert Nitzsche · Prof. Ruth Otto"
+        ]
+      },
+      {
+        "name": "Year",
+        "text": [
+          "Date: 30.09.2026"
+        ]
+      }
+    ],
+    "notes_path": "ppt/notesSlides/notesSlide1.xml",
+    "notes": [
+      "Hello everyone. Today, I will be presenting what I have been working on over the past few months.",
+      "I developed a surface grinding controller for a seven-degree-of-freedom Franka robot. The control method I used is Cartesian impedance control.",
+      "[Sources]\nMyOwn/chapters/02_theoretical_background.tex\n03_software_implementation.tex\n04_experimental_setup_and_evaluation.tex\n05_results_and_discussion.tex\n07_conclusion.tex. Current MyOwn main: 0fea99b. Figure provenance: Final Presentation/figures_and_images/manifest.json.\n[Media update]\nTitle photo: figures_and_images/title_robot.jpg, copied unchanged from the user attachment 20260916_150937.jpg. Full image displayed on the right."
+    ],
+    "pictures": [
+      {
+        "id": "3",
+        "name": "Picture 3",
+        "descr": "image-2-1.png"
+      },
+      {
+        "id": "6",
+        "name": "HM logo beside Hochschule München",
+        "descr": "image.png"
+      }
+    ]
+  },
+  {
+    "physical": 2,
+    "path": "ppt/slides/slide2.xml",
+    "title": "Motivation",
+    "hidden": false,
+    "shapes": [
+      {
+        "name": "Slide title",
+        "text": [
+          "Motivation"
+        ]
+      },
+      {
+        "name": "TextBox 4",
+        "text": [
+          "Design and Implementation of a Real-Time Impedance Controller for a 7-DOF Collaborative Robot"
+        ]
+      },
+      {
+        "name": "TextBox 5",
+        "text": [
+          "Master Thesis · Heykel Khadhraoui"
+        ]
+      },
+      {
+        "name": "TextBox 6",
+        "text": [
+          "1"
+        ]
+      },
+      {
+        "name": "TextBox 8",
+        "text": [
+          "Problem"
+        ]
+      },
+      {
+        "name": "TextBox 9",
+        "text": [
+          "Grinding requires an aligned tool face."
+        ]
+      },
+      {
+        "name": "TextBox 10",
+        "text": [
+          "Calibration leaves uncertainty in the physical surface orientation."
+        ]
+      },
+      {
+        "name": "TextBox 13",
+        "text": [
+          "Idea"
+        ]
+      },
+      {
+        "name": "TextBox 14",
+        "text": [
+          "Cartesian impedance makes position and rotation compliant."
+        ]
+      },
+      {
+        "name": "Passive contact alignment",
+        "text": [
+          "Pressing a tilted tool creates a contact moment."
+        ]
+      },
+      {
+        "name": "Compliance permits contact rotation",
+        "text": [
+          "Rotational compliance allows the tool to turn towards alignment."
+        ]
+      },
+      {
+        "name": "Joint friction orientation mismatch",
+        "text": [
+          "Joint friction can prevent the desired tool alignment with the configured surface."
+        ]
+      }
+    ],
+    "notes_path": "ppt/notesSlides/notesSlide2.xml",
+    "notes": [
+      "Let’s dive into the motivation for this work. The main problem in surface grinding is that we cannot perfectly represent the real surface in our code and ensure that the configured and real surfaces are perfectly aligned.",
+      "Second, joint friction prevents us from achieving perfect alignment between the grinding tool and the configured plane. Because of these two problems, the tool first makes contact with the surface at an edge as it approaches.",
+      "The idea is to use impedance control, which, unlike conventional rigid control, allows the tool to respond to external forces and moments by making rotation compliant, for example. In this way, we can passively use the contact moment to bring the tool flat against the surface.",
+      "[Sources]\nMyOwn/chapters/04_experimental_setup_and_evaluation.tex: calibrated surface and tool normal, angular error definition and endpoint precision.\nMyOwn/chapters/05_results_and_discussion.tex: recalculated Cases A–D and representative wrench traces.\nMyOwn/code/python/figures/contact_angular_error/: reproducible calculation, 69 endpoint records, three full time histories, source hashes and numerical audit.\nMyOwn/chapters/07_conclusion.tex: revised findings and calibration/mount limitations.\nFinal Presentation/figures_and_images/manifest.json: figure provenance.\nUser-provided robot setup photograph, saved as Final Presentation/figures_and_images/robot_setup.jpeg. Original photo retained without pixel edits. Laboratory robot and gripper shown as setup context.\n[/Sources]\n[Media update]\nMotivation image replaced by thesis Figure 1.1, Sources of angular offset at surface entry. Exact vector extraction from MyOwn-thesis/Thesis.pdf, physical page 27 / printed page 1. Source: figures/ch01/surface_entry_concept.tex. The earlier robot photograph is no longer shown on this slide."
+    ],
+    "pictures": [
+      {
+        "id": "4",
+        "name": "Picture 3",
+        "descr": "image-2-1.png"
+      },
+      {
+        "id": "8",
+        "name": "Motivation robot photograph",
+        "descr": "User-supplied robot photograph, 20260916_150937.jpg. Moved from the title slide to Motivation. Full image, unchanged aspect ratio."
+      }
+    ]
+  },
+  {
+    "physical": 3,
+    "path": "ppt/slides/slide3.xml",
+    "title": "Contact demonstration",
+    "hidden": false,
+    "shapes": [
+      {
+        "name": "Slide title",
+        "text": [
+          "Contact demonstration"
+        ]
+      },
+      {
+        "name": "TextBox 4",
+        "text": [
+          "Design and Implementation of a Real-Time Impedance Controller for a 7-DOF Collaborative Robot"
+        ]
+      },
+      {
+        "name": "TextBox 5",
+        "text": [
+          "Master Thesis · Heykel Khadhraoui"
+        ]
+      },
+      {
+        "name": "TextBox 6",
+        "text": [
+          "2"
+        ]
+      }
+    ],
+    "notes_path": "ppt/notesSlides/notesSlide3.xml",
+    "notes": [
+      "The video shows pickup, approach, contact, and the hold before grinding.",
+      "During the hold, I change the surface orientation. Normal pressing continues as contact moments rotate the tool.",
+      "The desired orientation stays fixed. This is a qualitative demonstration of compliant contact.",
+      "[Sources]",
+      "MyOwn/chapters/02_theoretical_background.tex",
+      "03_software_implementation.tex",
+      "04_experimental_setup_and_evaluation.tex",
+      "05_results_and_discussion.tex",
+      "07_conclusion.tex. Current MyOwn main: 0fea99b. Figure provenance: Final Presentation/figures_and_images/manifest.json."
+    ],
+    "pictures": [
+      {
+        "id": "4",
+        "name": "Picture 3",
+        "descr": "image-2-1.png"
+      },
+      {
+        "id": "3",
+        "name": "Contact demonstration video"
+      }
+    ]
+  },
+  {
+    "physical": 4,
+    "path": "ppt/slides/slide4.xml",
+    "title": "Overview",
+    "hidden": false,
+    "shapes": [
+      {
+        "name": "Slide title",
+        "text": [
+          "Overview"
+        ]
+      },
+      {
+        "name": "TextBox 4",
+        "text": [
+          "Design and Implementation of a Real-Time Impedance Controller for a 7-DOF Collaborative Robot"
+        ]
+      },
+      {
+        "name": "TextBox 5",
+        "text": [
+          "Master Thesis · Heykel Khadhraoui"
+        ]
+      },
+      {
+        "name": "TextBox 6",
+        "text": [
+          "3"
+        ]
+      },
+      {
+        "name": "Overview number 1",
+        "text": [
+          "1."
+        ]
+      },
+      {
+        "name": "Overview item 1",
+        "text": [
+          "Introduction"
+        ]
+      },
+      {
+        "name": "Overview number 2",
+        "text": [
+          "2."
+        ]
+      },
+      {
+        "name": "Overview item 2",
+        "text": [
+          "Cartesian controller"
+        ]
+      },
+      {
+        "name": "Overview number 3",
+        "text": [
+          "3."
+        ]
+      },
+      {
+        "name": "Overview item 3",
+        "text": [
+          "Contact experiments"
+        ]
+      },
+      {
+        "name": "Overview number 4",
+        "text": [
+          "4."
+        ]
+      },
+      {
+        "name": "Overview item 4",
+        "text": [
+          "Contact results"
+        ]
+      },
+      {
+        "name": "Overview number 5",
+        "text": [
+          "5."
+        ]
+      },
+      {
+        "name": "Overview item 5",
+        "text": [
+          "Null-space control and experiments"
+        ]
+      },
+      {
+        "name": "Overview number 6",
+        "text": [
+          "6."
+        ]
+      },
+      {
+        "name": "Overview item 6",
+        "text": [
+          "Conclusion and future work"
+        ]
+      }
+    ],
+    "notes_path": "ppt/notesSlides/notesSlide4.xml",
+    "notes": [
+      "I introduce the motivation and Cartesian controller, then the contact experiments and results.",
+      "The separate null-space controller, experiment and results follow together. I finish with the conclusion and future work."
+    ],
+    "pictures": [
+      {
+        "id": "4",
+        "name": "Picture 3",
+        "descr": "image-2-1.png"
+      }
+    ]
+  },
+  {
+    "physical": 5,
+    "path": "ppt/slides/slide5.xml",
+    "title": "Cartesian pose",
+    "hidden": false,
+    "shapes": [
+      {
+        "name": "Slide title",
+        "text": [
+          "Cartesian pose"
+        ]
+      },
+      {
+        "name": "TextBox 4",
+        "text": [
+          "Design and Implementation of a Real-Time Impedance Controller for a 7-DOF Collaborative Robot"
+        ]
+      },
+      {
+        "name": "TextBox 5",
+        "text": [
+          "Master Thesis · Heykel Khadhraoui"
+        ]
+      },
+      {
+        "name": "TextBox 6",
+        "text": [
+          "4"
+        ]
+      },
+      {
+        "name": "Position heading",
+        "text": [
+          "Position: 3 translations"
+        ]
+      },
+      {
+        "name": "Orientation heading",
+        "text": [
+          "Orientation: 3 rotations"
+        ]
+      },
+      {
+        "name": "Pose takeaway",
+        "text": [
+          "The EE position depends on the configuration of all 7 joint angles:"
+        ]
+      }
+    ],
+    "notes_path": "ppt/notesSlides/notesSlide5.xml",
+    "notes": [
+      "To begin, let’s first introduce Cartesian pose. Cartesian pose describes the position and orientation of the gripper, also called the end effector.",
+      "It has three positional degrees of freedom and three rotational degrees of freedom. The pose is determined through forward kinematics from the positions of all seven joints.",
+      "[Sources]",
+      "MyOwn/chapters/02_theoretical_background.tex: base-frame representation of end-effector pose and forward kinematics.",
+      "Original illustrations: figures_and_images/sources/cartesian_pose_position.tex and cartesian_pose_orientation.tex.",
+      "Shared schematic gripper: figures_and_images/sources/pose_gripper.tikz",
+      "identical geometry in both pose figures.",
+      "Presentation illustration palette (2026-09-16), footers 4 and 5 only: cartesian_pose_orientation, cartesian_pose_position. Robot and gripper bodies use theme blue #17365D with blue depth shading. Existing geometry, axis/reference colours and scientific definitions are retained. Editable sources: figures_and_images/sources.",
+      "[/Sources]",
+      "[Equation typography]\nAll standalone equations and mathematical symbol keys use Cambria Math, 22 pt, regular weight and black. Normal mathematical subscript and superscript scaling is retained. Equation content and native Office Math structures are unchanged."
+    ],
+    "pictures": [
+      {
+        "id": "4",
+        "name": "Picture 3",
+        "descr": "image-2-1.png"
+      },
+      {
+        "id": "9",
+        "name": "End effector position figure"
+      },
+      {
+        "id": "13",
+        "name": "End effector orientation figure"
+      }
+    ]
+  },
+  {
+    "physical": 6,
+    "path": "ppt/slides/slide35.xml",
+    "title": "Surface frame",
+    "hidden": false,
+    "shapes": [
+      {
+        "name": "Slide title",
+        "text": [
+          "Surface frame"
+        ]
+      },
+      {
+        "name": "TextBox 4",
+        "text": [
+          "Design and Implementation of a Real-Time Impedance Controller for a 7-DOF Collaborative Robot"
+        ]
+      },
+      {
+        "name": "TextBox 5",
+        "text": [
+          "Master Thesis · Heykel Khadhraoui"
+        ]
+      },
+      {
+        "name": "TextBox 6",
+        "text": [
+          "5"
+        ]
+      },
+      {
+        "name": "Surface-relative compliance heading",
+        "text": [
+          "Surface-relative compliance"
+        ]
+      },
+      {
+        "name": "Surface normal definition",
+        "text": [
+          "outward surface normal"
+        ]
+      },
+      {
+        "name": "Surface tangent definition",
+        "text": [
+          "perpendicular surface tangents"
+        ]
+      }
+    ],
+    "notes_path": "ppt/notesSlides/notesSlide35.xml",
+    "notes": [
+      ""
+    ],
+    "pictures": [
+      {
+        "id": "4",
+        "name": "Picture 3",
+        "descr": "image-2-1.png"
+      },
+      {
+        "id": "51",
+        "name": "Surface frame",
+        "descr": "surface directions: vector figure or typeset equation from the supplied thesis sources"
+      }
+    ]
+  },
+  {
+    "physical": 7,
+    "path": "ppt/slides/slide6.xml",
+    "title": "Cartesian impedance controller",
+    "hidden": false,
+    "shapes": [
+      {
+        "name": "Slide title",
+        "text": [
+          "Cartesian impedance controller"
+        ]
+      },
+      {
+        "name": "TextBox 4",
+        "text": [
+          "Design and Implementation of a Real-Time Impedance Controller for a 7-DOF Collaborative Robot"
+        ]
+      },
+      {
+        "name": "TextBox 5",
+        "text": [
+          "Master Thesis · Heykel Khadhraoui"
+        ]
+      },
+      {
+        "name": "TextBox 6",
+        "text": [
+          "6"
+        ]
+      },
+      {
+        "name": "Controller scope",
+        "text": [
+          "Cartesian wrench"
+        ]
+      },
+      {
+        "name": "Position heading",
+        "text": [
+          "Positional error"
+        ]
+      },
+      {
+        "name": "Rotation heading",
+        "text": [
+          "Rotational error"
+        ]
+      },
+      {
+        "name": "Decoupling statement",
+        "text": [
+          "In the surface frame, K and D are diagonal and decouple translation and rotation."
+        ]
+      }
+    ],
+    "notes_path": "ppt/notesSlides/notesSlide6.xml",
+    "notes": [
+      "To understand the control method used here, impedance control uses a spring–damper model that produces a force to correct position and a moment to correct rotation. Together, the force and moment form what is called a wrench.",
+      "As we can see in the matrix form, force and moment are decoupled and do not affect each other when K and D are diagonal. K and D are the impedance parameters for stiffness and damping.",
+      "[Sources]",
+      "MyOwn/chapters/02_theoretical_background.tex: position error, axis-angle rotational error, and Cartesian impedance laws.",
+      "figures_and_images/sources/position_error_sketch.tex and rotation_error_sketch.tex: schematic measured-to-desired corrections.",
+      "Presentation illustration palette (2026-09-16), footers 4 and 5 only: position_error_sketch. Robot and gripper bodies use theme blue #17365D with blue depth shading. Existing geometry, axis/reference colours and scientific definitions are retained. Editable sources: figures_and_images/sources.",
+      "Rotational-error illustration palette (2026-09-16): solid theme-blue measured tool face and dashed lighter-blue desired outline. The measured-to-desired angle, axis, labels and geometry are unchanged. Source: figures_and_images/sources/rotation_error_sketch.tex.",
+      "Rotational-error figure (2026-09-16): the visible sentence Axis u out of page is removed. The u symbol, circle-dot axis marker, blue tool faces and angle geometry remain. Source: figures_and_images/sources/rotation_error_sketch.tex.",
+      "[/Sources]",
+      "[Equation typography]\nAll standalone equations and mathematical symbol keys use Cambria Math, 22 pt, regular weight and black. Normal mathematical subscript and superscript scaling is retained. Equation content and native Office Math structures are unchanged."
+    ],
+    "pictures": [
+      {
+        "id": "4",
+        "name": "Picture 3",
+        "descr": "image-2-1.png"
+      },
+      {
+        "id": "101",
+        "name": "Figure - position_error_sketch",
+        "descr": "Editable LaTeX source: figures_and_images/sources/position_error_sketch.tex. Measured-to-desired position error vector, with unchanged tool orientation."
+      },
+      {
+        "id": "102",
+        "name": "Figure - rotation_error_sketch",
+        "descr": "Editable LaTeX source: figures_and_images/sources/rotation_error_sketch.tex. The same tool face at measured and desired orientations about one fixed origin. Solid navy measured face, dashed blue desired outline, correction angle phi and unit axis u out of the page."
+      }
+    ]
+  },
+  {
+    "physical": 8,
+    "path": "ppt/slides/slide7.xml",
+    "title": "Real-time control",
+    "hidden": false,
+    "shapes": [
+      {
+        "name": "Slide title",
+        "text": [
+          "Real-time control"
+        ]
+      },
+      {
+        "name": "TextBox 4",
+        "text": [
+          "Design and Implementation of a Real-Time Impedance Controller for a 7-DOF Collaborative Robot"
+        ]
+      },
+      {
+        "name": "TextBox 5",
+        "text": [
+          "Master Thesis · Heykel Khadhraoui"
+        ]
+      },
+      {
+        "name": "TextBox 6",
+        "text": [
+          "7"
+        ]
+      },
+      {
+        "name": "Control implementation",
+        "text": [
+          "Real-time control with a 1 ms cycle"
+        ]
+      },
+      {
+        "name": "Joint-torque command heading",
+        "text": [
+          "Joint-torque mapping"
+        ]
+      },
+      {
+        "name": "Jacobian velocity mapping",
+        "text": [
+          "Jacobian"
+        ]
+      },
+      {
+        "name": "Feedback diagram - Desired reference block",
+        "text": [
+          "Desired reference"
+        ]
+      },
+      {
+        "name": "Feedback diagram - Impedance controller block",
+        "text": [
+          "Impedance controller"
+        ]
+      },
+      {
+        "name": "Feedback diagram - Jacobian transpose operation",
+        "text": [
+          "𝐽T(𝑞)"
+        ]
+      },
+      {
+        "name": "Feedback diagram - Robot block",
+        "text": [
+          "Robot"
+        ]
+      },
+      {
+        "name": "Feedback diagram - Reference minus measured state left plus",
+        "text": [
+          "+"
+        ]
+      },
+      {
+        "name": "Feedback diagram - Reference minus measured state lower minus",
+        "text": [
+          "−"
+        ]
+      },
+      {
+        "name": "Feedback diagram - Additive torque sum left plus",
+        "text": [
+          "+"
+        ]
+      },
+      {
+        "name": "Feedback diagram - Additive torque sum upper plus",
+        "text": [
+          "+"
+        ]
+      },
+      {
+        "name": "Feedback diagram - Desired signal label",
+        "text": [
+          "Reference state"
+        ]
+      },
+      {
+        "name": "Feedback diagram - Pose and velocity error signal",
+        "text": [
+          "Pose and",
+          "velocity errors"
+        ]
+      },
+      {
+        "name": "Feedback diagram - State definition",
+        "text": [
+          "State: pose and velocity"
+        ]
+      },
+      {
+        "name": "Feedback diagram - Impedance parameter description",
+        "text": [
+          "Stiffness and damping"
+        ]
+      },
+      {
+        "name": "Feedback diagram - Impedance parameter symbols",
+        "text": [
+          "𝐾, 𝐷"
+        ]
+      },
+      {
+        "name": "Feedback diagram - Wrench signal",
+        "text": [
+          "𝐹"
+        ]
+      },
+      {
+        "name": "Feedback diagram - Cartesian torque signal",
+        "text": [
+          "𝜏"
+        ]
+      },
+      {
+        "name": "Feedback diagram - Commanded torque signal",
+        "text": [
+          "𝜏cmd"
+        ]
+      },
+      {
+        "name": "Feedback diagram - Additional torque sources",
+        "text": [
+          "Model + null-space"
+        ]
+      },
+      {
+        "name": "Feedback diagram - Additional torque signal",
+        "text": [
+          "Torques"
+        ]
+      },
+      {
+        "name": "Feedback diagram - Measured Cartesian feedback label",
+        "text": [
+          "Measured state"
+        ]
+      },
+      {
+        "name": "Feedback diagram - Measured robot state label",
+        "text": [
+          "Measured robot state"
+        ]
+      },
+      {
+        "name": "Feedback diagram - Joint configuration signal",
+        "text": [
+          "𝑞"
+        ]
+      }
+    ],
+    "notes_path": "ppt/notesSlides/notesSlide7.xml",
+    "notes": [
+      "The wrench is then mapped to joint torques through the transpose of the Jacobian. These torques command all seven joints to move and correct the pose error.",
+      "The controller operates in real time, with an update every millisecond.",
+      "[Sources]",
+      "MyOwn/chapters/02_theoretical_background.tex",
+      "03_software_implementation.tex",
+      "04_experimental_setup_and_evaluation.tex",
+      "05_results_and_discussion.tex",
+      "07_conclusion.tex. Current MyOwn main: 0fea99b. Figure provenance: Final Presentation/figures_and_images/manifest.json.",
+      "MyOwn/chapters/02_theoretical_background.tex: eq:differential_kinematics. J(q) maps seven joint velocities to six EE linear/angular velocity components. Its coefficients depend on the joint angles.",
+      "Modern Robotics, Lynch and Park, Chapter 5.3: https://modernrobotics.northwestern.edu/nu-gm-book-resource/5-3-singularities/",
+      "figures_and_images/sources/jacobian_velocity_mapping.tex: [p_dot_EE; omega_EE] = J(q) q_dot. Native editable velocity equation replaces the verbal mapping on footer 6.",
+      "[/Sources]",
+      "[Equation typography]\nAll standalone equations and mathematical symbol keys use Cambria Math, 22 pt, regular weight and black. Normal mathematical subscript and superscript scaling is retained. Equation content and native Office Math structures are unchanged."
+    ],
+    "pictures": [
+      {
+        "id": "4",
+        "name": "Picture 3",
+        "descr": "image-2-1.png"
+      }
+    ]
+  },
+  {
+    "physical": 9,
+    "path": "ppt/slides/slide9.xml",
+    "title": "Centre of compliance (CoC)",
+    "hidden": false,
+    "shapes": [
+      {
+        "name": "Slide title",
+        "text": [
+          "Centre of compliance (CoC)"
+        ]
+      },
+      {
+        "name": "TextBox 4",
+        "text": [
+          "Design and Implementation of a Real-Time Impedance Controller for a 7-DOF Collaborative Robot"
+        ]
+      },
+      {
+        "name": "TextBox 5",
+        "text": [
+          "Master Thesis · Heykel Khadhraoui"
+        ]
+      },
+      {
+        "name": "TextBox 6",
+        "text": [
+          "8"
+        ]
+      },
+      {
+        "name": "Virtual centre definition",
+        "text": [
+          "Effect of CoC displacement"
+        ]
+      },
+      {
+        "name": "CoC position meaning",
+        "text": [
+          "Added moment can support or oppose rotation."
+        ]
+      }
+    ],
+    "notes_path": "ppt/notesSlides/notesSlide9.xml",
+    "notes": [
+      "We can illustrate this behaviour here. If the centre of compliance is on this side, the right-hand rule gives a supporting moment.",
+      "If it is on the other side, we obtain an opposing moment.",
+      "[Sources]",
+      "MyOwn/chapters/02_theoretical_background.tex",
+      "03_software_implementation.tex",
+      "04_experimental_setup_and_evaluation.tex",
+      "05_results_and_discussion.tex",
+      "07_conclusion.tex. Current MyOwn main: 0fea99b. Figure provenance: Final Presentation/figures_and_images/manifest.json.",
+      "MyOwn/chapters/02_theoretical_background.tex: eq:offset_adjoint, eq:coupled_tcp_stiffness, eq:coupled_tcp_damping, eq:commanded_moment_decomposition. Displacement convention: r_c = p_c - p_TCP.",
+      "[/Sources]"
+    ],
+    "pictures": [
+      {
+        "id": "4",
+        "name": "Picture 3",
+        "descr": "image-2-1.png"
+      },
+      {
+        "id": "9",
+        "name": "Figure - CoC_moment"
+      }
+    ]
+  },
+  {
+    "physical": 10,
+    "path": "ppt/slides/slide8.xml",
+    "title": "Translation–rotation coupling",
+    "hidden": false,
+    "shapes": [
+      {
+        "name": "Slide title",
+        "text": [
+          "Translation–rotation coupling"
+        ]
+      },
+      {
+        "name": "TextBox 4",
+        "text": [
+          "Design and Implementation of a Real-Time Impedance Controller for a 7-DOF Collaborative Robot"
+        ]
+      },
+      {
+        "name": "TextBox 5",
+        "text": [
+          "Master Thesis · Heykel Khadhraoui"
+        ]
+      },
+      {
+        "name": "TextBox 6",
+        "text": [
+          "9"
+        ]
+      },
+      {
+        "name": "Coupling result",
+        "text": [
+          "Non-zero off-diagonal blocks in K and D couple translation and rotation."
+        ]
+      },
+      {
+        "name": "Compliance shift heading",
+        "text": [
+          "Shifting the impedance reference point"
+        ]
+      },
+      {
+        "name": "Point-shift definition",
+        "text": [
+          "Point-shift adjoint"
+        ]
+      },
+      {
+        "name": "CoC position definition",
+        "text": [
+          "Virtual centre of compliance (CoC): new reference"
+        ]
+      },
+      {
+        "name": "TCP to CoC displacement meaning",
+        "text": [
+          "Displacement from TCP to CoC"
+        ]
+      },
+      {
+        "name": "TCP reference definition",
+        "text": [
+          "Tool centre point (TCP): controlled reference point on the EE"
+        ]
+      },
+      {
+        "name": "Reference point couples force and moment",
+        "text": [
+          "Choosing an impedance reference point away from the TCP couples force and moment."
+        ]
+      },
+      {
+        "name": "Virtual point force interpretation",
+        "text": [
+          "The commanded force acts as if applied at the virtual point pc."
+        ]
+      }
+    ],
+    "notes_path": "ppt/notesSlides/notesSlide8.xml",
+    "notes": [
+      "An interesting idea presented in this work is to couple force and moment so that a pressing force also produces a rotational moment. This moment can either support or oppose passive alignment.",
+      "The idea is to choose a different reference point for the pressing force, moving it from the tool centre point to a point called the centre of compliance. This creates a lever arm that can produce an additional moment, which can either support or oppose alignment.",
+      "We transform the impedance parameters to this reference point so that the matrices now contain off-diagonal terms. This produces coupling between translation and rotation.",
+      "[Sources]",
+      "MyOwn/chapters/02_theoretical_background.tex: eq:offset_adjoint, eq:pole_block_gains, eq:coupled_tcp_stiffness and eq:coupled_tcp_damping. A = Ad(r_c), with r_c = p_c - p_TCP.",
+      "figures_and_images/sources/controller_wrench_blocks.tex: force followed by moment, position followed by rotational error, and actual linear/angular velocity differences.",
+      "figures_and_images/sources/coupling_wrench_blocks.tex: the complete shifted wrench law. The underbraced matrices are A^T K_c A and A^T D_c A, expressed at the TCP in base-frame orientation.",
+      "[/Sources]",
+      "[Equation typography]\nAll standalone equations and mathematical symbol keys use Cambria Math, 22 pt, regular weight and black. Normal mathematical subscript and superscript scaling is retained. Equation content and native Office Math structures are unchanged."
+    ],
+    "pictures": [
+      {
+        "id": "4",
+        "name": "Picture 3",
+        "descr": "image-2-1.png"
+      }
+    ]
+  },
+  {
+    "physical": 11,
+    "path": "ppt/slides/slide11.xml",
+    "title": "Contact experiment",
+    "hidden": false,
+    "shapes": [
+      {
+        "name": "Slide title",
+        "text": [
+          "Contact experiment"
+        ]
+      },
+      {
+        "name": "TextBox 4",
+        "text": [
+          "Design and Implementation of a Real-Time Impedance Controller for a 7-DOF Collaborative Robot"
+        ]
+      },
+      {
+        "name": "TextBox 5",
+        "text": [
+          "Master Thesis · Heykel Khadhraoui"
+        ]
+      },
+      {
+        "name": "TextBox 6",
+        "text": [
+          "10"
+        ]
+      },
+      {
+        "name": "Contact phases",
+        "text": [
+          "Tool orientation    →    Surface approach    →    Contact establishment    →    Surface grinding"
+        ]
+      },
+      {
+        "name": "Contact settings heading",
+        "text": [
+          "Compliant contact settings"
+        ]
+      },
+      {
+        "name": "Normal label",
+        "text": [
+          "Normal translation"
+        ]
+      },
+      {
+        "name": "Rotation label",
+        "text": [
+          "Rotations about the surface tangents"
+        ]
+      },
+      {
+        "name": "Tangential translation label",
+        "text": [
+          "Tangential translation"
+        ]
+      },
+      {
+        "name": "Normal rotation label",
+        "text": [
+          "Rotation about the surface normal"
+        ]
+      }
+    ],
+    "notes_path": "ppt/notesSlides/notesSlide11.xml",
+    "notes": [
+      "Our contact experiment proceeds as follows. First, we orient the tool towards the configured surface and slowly approach it along its normal.",
+      "Once contact occurs, the tool aligns passively until it is completely flat. Grinding then begins along the tangential direction t₂.",
+      "To achieve this behaviour, we choose the impedance parameters as follows. For translation, we choose a compliant normal stiffness to allow pressing against the surface, while the tangential directions remain stiff to prevent unwanted movement during alignment.",
+      "For rotation, the normal direction is stiff, while the tangential directions are compliant to allow the tool to rotate.",
+      "[Sources]",
+      "MyOwn/chapters/02_theoretical_background.tex",
+      "03_software_implementation.tex",
+      "04_experimental_setup_and_evaluation.tex",
+      "05_results_and_discussion.tex. Figure provenance: Final Presentation/figures_and_images/manifest.json. Equations unchanged",
+      "equality-sign alignment synchronized.",
+      "[Equation typography]\nAll standalone equations and mathematical symbol keys use Cambria Math, 22 pt, regular weight and black. Normal mathematical subscript and superscript scaling is retained. Equation content and native Office Math structures are unchanged."
+    ],
+    "pictures": [
+      {
+        "id": "4",
+        "name": "Picture 3",
+        "descr": "image-2-1.png"
+      },
+      {
+        "id": "42",
+        "name": "Surface frame",
+        "descr": "surface directions: vector figure or typeset equation from the supplied thesis sources"
+      }
+    ]
+  },
+  {
+    "physical": 12,
+    "path": "ppt/slides/slide38.xml",
+    "title": "Plausibility experiment",
+    "hidden": false,
+    "shapes": [
+      {
+        "name": "Slide title",
+        "text": [
+          "Plausibility experiment"
+        ]
+      },
+      {
+        "name": "TextBox 4",
+        "text": [
+          "Design and Implementation of a Real-Time Impedance Controller for a 7-DOF Collaborative Robot"
+        ]
+      },
+      {
+        "name": "TextBox 5",
+        "text": [
+          "Master Thesis · Heykel Khadhraoui"
+        ]
+      },
+      {
+        "name": "TextBox 6",
+        "text": [
+          "11"
+        ]
+      }
+    ],
+    "notes_path": "ppt/notesSlides/notesSlide38.xml",
+    "notes": [
+      ""
+    ],
+    "pictures": [
+      {
+        "id": "4",
+        "name": "Picture 3",
+        "descr": "image-2-1.png"
+      },
+      {
+        "id": "22",
+        "name": "Plausibility experiment video",
+        "descr": "Plausibility Experiment.mp4. Upright presentation copy with full duration and original audio. Click to play."
+      }
+    ]
+  },
+  {
+    "physical": 13,
+    "path": "ppt/slides/slide14.xml",
+    "title": "Normal-force plausibility assessment",
+    "hidden": false,
+    "shapes": [
+      {
+        "name": "Slide title",
+        "text": [
+          "Normal-force plausibility assessment"
+        ]
+      },
+      {
+        "name": "TextBox 4",
+        "text": [
+          "Design and Implementation of a Real-Time Impedance Controller for a 7-DOF Collaborative Robot"
+        ]
+      },
+      {
+        "name": "TextBox 5",
+        "text": [
+          "Master Thesis · Heykel Khadhraoui"
+        ]
+      },
+      {
+        "name": "TextBox 6",
+        "text": [
+          "12"
+        ]
+      },
+      {
+        "name": "TextBox 18",
+        "text": [
+          "Commanded mean−19.64 N"
+        ]
+      },
+      {
+        "name": "TextBox 19",
+        "text": [
+          "Model-estimated mean−22.29 N"
+        ]
+      },
+      {
+        "name": "Validation input heading",
+        "text": [
+          "Manual push: about 20 mm"
+        ]
+      },
+      {
+        "name": "Quasi-static prediction",
+        "text": [
+          "Quasi-static prediction−19.65 N"
+        ]
+      }
+    ],
+    "notes_path": "ppt/notesSlides/notesSlide14.xml",
+    "notes": [
+      "Let’s first see whether our controller does what it is supposed to do. In this experiment, pushing the end effector about 20 mm along the surface normal, with Kₚ,ₙ equal to 1000, should produce a force of about −19 N in the quasi-static model.",
+      "We can see in the plot that the mean commanded force is close to the quasi-static prediction because our motion is very slow and almost static. For the model estimate, which serves as our measurement here, the difference also remains small, at about 13 percent.",
+      "[Sources]",
+      "MyOwn/chapters/02_theoretical_background.tex",
+      "03_software_implementation.tex",
+      "04_experimental_setup_and_evaluation.tex",
+      "05_results_and_discussion.tex",
+      "07_conclusion.tex. Current MyOwn main: 0fea99b. Figure provenance: Final Presentation/figures_and_images/manifest.json.",
+      "Validation input verified against MyOwn/chapters/04_experimental_setup_and_evaluation.tex, Quasi-Static Plausibility Assessment, and chapters/05_results_and_discussion.tex, subsection results_plausibility. Both perturbations were manual and the captured Cartesian reference remained fixed. The normal position-error change is -19.65 mm, corresponding to a push of about 20 mm (2 cm). The rotational value 6.565 degrees is the measured tangent-one orientation-error change relative to the loaded baseline. It is not a commanded rotation angle. The normal push remains applied during the moment assessment. CoC is at TCP for both checks.",
+      "[Equation typography]\nAll standalone equations and mathematical symbol keys use Cambria Math, 22 pt, regular weight and black. Normal mathematical subscript and superscript scaling is retained. Equation content and native Office Math structures are unchanged."
+    ],
+    "pictures": [
+      {
+        "id": "4",
+        "name": "Picture 3",
+        "descr": "image-2-1.png"
+      },
+      {
+        "id": "9",
+        "name": "Figure — force_plausibility",
+        "descr": "force plausibility: vector figure or typeset equation from the supplied thesis sources"
+      }
+    ]
+  },
+  {
+    "physical": 14,
+    "path": "ppt/slides/slide15.xml",
+    "title": "Moment plausibility assessment",
+    "hidden": false,
+    "shapes": [
+      {
+        "name": "Slide title",
+        "text": [
+          "Moment plausibility assessment"
+        ]
+      },
+      {
+        "name": "TextBox 4",
+        "text": [
+          "Design and Implementation of a Real-Time Impedance Controller for a 7-DOF Collaborative Robot"
+        ]
+      },
+      {
+        "name": "TextBox 5",
+        "text": [
+          "Master Thesis · Heykel Khadhraoui"
+        ]
+      },
+      {
+        "name": "TextBox 6",
+        "text": [
+          "13"
+        ]
+      },
+      {
+        "name": "TextBox 18",
+        "text": [
+          "Commanded mean1.72 N.m"
+        ]
+      },
+      {
+        "name": "TextBox 19",
+        "text": [
+          "Model-estimated mean1.85 N.m"
+        ]
+      },
+      {
+        "name": "Validation input heading",
+        "text": [
+          "Manual rotation: about 6.5°"
+        ]
+      },
+      {
+        "name": "Quasi-static prediction",
+        "text": [
+          "Quasi-static prediction1.72 N.m"
+        ]
+      }
+    ],
+    "notes_path": "ppt/notesSlides/notesSlide15.xml",
+    "notes": [
+      "We do the same for the moment. A rotation of about 6 degrees, with a rotational stiffness of 15, would produce a moment of about 1.72 N m.",
+      "The result is similar here: the commanded moment matches the quasi-static prediction, while the model-estimated measurement differs by about 8 percent. This proves that our control method is correct and produces the correct commanded forces and moments for the given error.",
+      "[Sources]",
+      "MyOwn/chapters/02_theoretical_background.tex",
+      "03_software_implementation.tex",
+      "04_experimental_setup_and_evaluation.tex",
+      "05_results_and_discussion.tex",
+      "07_conclusion.tex. Current MyOwn main: 0fea99b. Figure provenance: Final Presentation/figures_and_images/manifest.json.",
+      "Validation input verified against MyOwn/chapters/04_experimental_setup_and_evaluation.tex, Quasi-Static Plausibility Assessment, and chapters/05_results_and_discussion.tex, subsection results_plausibility. Both perturbations were manual and the captured Cartesian reference remained fixed. The normal position-error change is -19.65 mm, corresponding to a push of about 20 mm (2 cm). The rotational value 6.565 degrees is the measured tangent-one orientation-error change relative to the loaded baseline. It is not a commanded rotation angle. The normal push remains applied during the moment assessment. CoC is at TCP for both checks.",
+      "[Equation typography]\nAll standalone equations and mathematical symbol keys use Cambria Math, 22 pt, regular weight and black. Normal mathematical subscript and superscript scaling is retained. Equation content and native Office Math structures are unchanged."
+    ],
+    "pictures": [
+      {
+        "id": "4",
+        "name": "Picture 3",
+        "descr": "image-2-1.png"
+      },
+      {
+        "id": "9",
+        "name": "Figure — moment_plausibility",
+        "descr": "moment plausibility: vector figure or typeset equation from the supplied thesis sources"
+      }
+    ]
+  },
+  {
+    "physical": 15,
+    "path": "ppt/slides/slide16.xml",
+    "title": "Commanded and estimated wrench",
+    "hidden": false,
+    "shapes": [
+      {
+        "name": "Slide title",
+        "text": [
+          "Commanded and estimated wrench"
+        ]
+      },
+      {
+        "name": "TextBox 4",
+        "text": [
+          "Design and Implementation of a Real-Time Impedance Controller for a 7-DOF Collaborative Robot"
+        ]
+      },
+      {
+        "name": "TextBox 5",
+        "text": [
+          "Master Thesis · Heykel Khadhraoui"
+        ]
+      },
+      {
+        "name": "TextBox 6",
+        "text": [
+          "14"
+        ]
+      }
+    ],
+    "notes_path": "ppt/notesSlides/notesSlide16.xml",
+    "notes": [
+      "Next, we compare the commanded force and moment with the measurements during contact. At first, as the tool approaches the surface, the model cannot measure anything because of friction, and motion begins only after a certain force is reached.",
+      "The force then starts to ramp down until contact occurs at around 0.4 seconds, where we can see this jump. The tool then starts aligning, with force and moment changing linearly.",
+      "Once the tool is flat, the force and moment become stationary, and the measurement is exactly equal to the command. For the moment, we also observe a larger gap between the estimated and commanded values during alignment.",
+      "This proves that alignment occurs through an external contact moment and is achieved passively.",
+      "[Sources]",
+      "MyOwn/chapters/02_theoretical_background.tex",
+      "03_software_implementation.tex",
+      "04_experimental_setup_and_evaluation.tex",
+      "05_results_and_discussion.tex",
+      "07_conclusion.tex. Current MyOwn main: 0fea99b. Figure provenance: Final Presentation/figures_and_images/manifest.json."
+    ],
+    "pictures": [
+      {
+        "id": "4",
+        "name": "Picture 3",
+        "descr": "image-2-1.png"
+      },
+      {
+        "id": "8",
+        "name": "Figure — wrench_comparison",
+        "descr": "wrench comparison: vector figure or typeset equation from the supplied thesis sources"
+      }
+    ]
+  },
+  {
+    "physical": 16,
+    "path": "ppt/slides/slide18.xml",
+    "title": "Effect of rotational stiffness",
+    "hidden": false,
+    "shapes": [
+      {
+        "name": "Slide title",
+        "text": [
+          "Effect of rotational stiffness"
+        ]
+      },
+      {
+        "name": "TextBox 4",
+        "text": [
+          "Design and Implementation of a Real-Time Impedance Controller for a 7-DOF Collaborative Robot"
+        ]
+      },
+      {
+        "name": "TextBox 5",
+        "text": [
+          "Master Thesis · Heykel Khadhraoui"
+        ]
+      },
+      {
+        "name": "TextBox 6",
+        "text": [
+          "15"
+        ]
+      },
+      {
+        "name": "Rotational stiffness meaning",
+        "text": [
+          "Resistance to rotation about t1"
+        ]
+      }
+    ],
+    "notes_path": "ppt/notesSlides/notesSlide18.xml",
+    "notes": [
+      "This plot shows that higher rotational stiffness produces a larger angular error when Kᵣ,ₜ₁ is varied between 5, 15 and 50. A tenfold increase in rotational stiffness therefore produces an error about three times as large.",
+      "[Sources]",
+      "MyOwn/chapters/04_experimental_setup_and_evaluation.tex: calibrated surface and tool normal, angular error definition and endpoint precision.",
+      "MyOwn/chapters/05_results_and_discussion.tex: recalculated Cases A–D and representative wrench traces.",
+      "MyOwn/code/python/figures/contact_angular_error/: reproducible calculation, 69 endpoint records, three full time histories, source hashes and numerical audit.",
+      "MyOwn/chapters/07_conclusion.tex: revised findings and calibration/mount limitations.",
+      "Final Presentation/figures_and_images/manifest.json: figure provenance.",
+      "[/Sources]"
+    ],
+    "pictures": [
+      {
+        "id": "4",
+        "name": "Picture 3",
+        "descr": "image-2-1.png"
+      },
+      {
+        "id": "14",
+        "name": "Figure — rotation_stiffness",
+        "descr": "rotation_stiffness: angular error relative to the calibrated surface normal, calculated from recorded controller data"
+      }
+    ]
+  },
+  {
+    "physical": 17,
+    "path": "ppt/slides/slide19.xml",
+    "title": "Effect of CoC position",
+    "hidden": false,
+    "shapes": [
+      {
+        "name": "Slide title",
+        "text": [
+          "Effect of CoC position"
+        ]
+      },
+      {
+        "name": "TextBox 4",
+        "text": [
+          "Design and Implementation of a Real-Time Impedance Controller for a 7-DOF Collaborative Robot"
+        ]
+      },
+      {
+        "name": "TextBox 5",
+        "text": [
+          "Master Thesis · Heykel Khadhraoui"
+        ]
+      },
+      {
+        "name": "TextBox 6",
+        "text": [
+          "16"
+        ]
+      },
+      {
+        "name": "Tangential CoC definition",
+        "text": [
+          "CoC displacement along t2"
+        ]
+      }
+    ],
+    "notes_path": "ppt/notesSlides/notesSlide19.xml",
+    "notes": [
+      "Next, this plot shows how the centre of compliance affects the final error. We moved the centre of compliance from −80 to +80 mm for two starting rotations, +10 and −10 degrees.",
+      "Looking at the blue curve for the −10-degree rotation, a negative centre-of-compliance displacement supports alignment, and the tool ends up approximately flat, with an error of about 2 degrees. The error becomes smaller as the displacement approaches zero, after which it becomes progressively worse.",
+      "For the black curve, with a +10-degree starting rotation, the tool remains flat until the displacement reaches about −20 mm, after which the error becomes larger. The lever arm mainly affects the contact moment from about 20 mm onwards, while the behaviour is almost the same for lever arms of −10, 0 and +10 mm.",
+      "[Sources]",
+      "MyOwn/chapters/04_experimental_setup_and_evaluation.tex: calibrated surface and tool normal, angular error definition and endpoint precision.",
+      "MyOwn/chapters/05_results_and_discussion.tex: recalculated Cases A–D and representative wrench traces.",
+      "MyOwn/code/python/figures/contact_angular_error/: reproducible calculation, 69 endpoint records, three full time histories, source hashes and numerical audit.",
+      "MyOwn/chapters/07_conclusion.tex: revised findings and calibration/mount limitations.",
+      "Final Presentation/figures_and_images/manifest.json: figure provenance.",
+      "[/Sources]",
+      "[Equation typography]\nAll standalone equations and mathematical symbol keys use Cambria Math, 22 pt, regular weight and black. Normal mathematical subscript and superscript scaling is retained. Equation content and native Office Math structures are unchanged."
+    ],
+    "pictures": [
+      {
+        "id": "4",
+        "name": "Picture 3",
+        "descr": "image-2-1.png"
+      },
+      {
+        "id": "9",
+        "name": "Figure - CoC_position",
+        "descr": "CoC_position: measured calibrated-surface angular error from -100 to +100 mm, including +/-90 mm. Thirteen positions, two entry directions, three-repeat means and sample standard deviations. All original points retained. Sources and raw data: Thesis_Final_Control/experiments/coc_extension."
+      }
+    ]
+  },
+  {
+    "physical": 18,
+    "path": "ppt/slides/slide20.xml",
+    "title": "Angular error and interaction wrench",
+    "hidden": false,
+    "shapes": [
+      {
+        "name": "Slide title",
+        "text": [
+          "Angular error and interaction wrench"
+        ]
+      },
+      {
+        "name": "TextBox 4",
+        "text": [
+          "Design and Implementation of a Real-Time Impedance Controller for a 7-DOF Collaborative Robot"
+        ]
+      },
+      {
+        "name": "TextBox 5",
+        "text": [
+          "Master Thesis · Heykel Khadhraoui"
+        ]
+      },
+      {
+        "name": "TextBox 6",
+        "text": [
+          "17"
+        ]
+      },
+      {
+        "name": "Angular response heading",
+        "text": [
+          "Angular error"
+        ]
+      },
+      {
+        "name": "Interaction moment heading",
+        "text": [
+          "TCP moment"
+        ]
+      },
+      {
+        "name": "Normal force heading",
+        "text": [
+          "Normal force"
+        ]
+      }
+    ],
+    "notes_path": "ppt/notesSlides/notesSlide20.xml",
+    "notes": [
+      "Next, we vary the centre of compliance between −40, 0 and +40 mm and examine how the angular error, measured force and measured moment change over time. With an opposing centre of compliance, there is no correction at all, while a supporting centre of compliance makes the response approximately one second faster, so the tool becomes flat sooner.",
+      "The blue force curve for the supporting configuration is lower during the transient response. This tells us that less pressing force is needed with a supporting centre of compliance, while the forces are equal in the stationary response.",
+      "For the opposing centre of compliance, the force is higher because the end effector remains closer to the surface when no alignment occurs. The measured contact force is therefore higher than in the other cases because the end effector is not at the same position.",
+      "For the supporting moment, we also notice a response that is about one second faster. The contact moment drops when the tool is almost flat, and the small movement back brings the tool into a completely flat orientation.",
+      "Again, less contact moment is needed because of the lever arm and the additional moment it produces. For the opposing configuration, the moment continues to develop until it reaches a stationary value.",
+      "This tells us that the moment develops until the tool reaches a certain orientation, without becoming completely flat.",
+      "[Sources]",
+      "MyOwn/chapters/04_experimental_setup_and_evaluation.tex: calibrated surface and tool normal, angular error definition and endpoint precision.",
+      "MyOwn/chapters/05_results_and_discussion.tex: recalculated Cases A–D and representative wrench traces.",
+      "MyOwn/code/python/figures/contact_angular_error/: reproducible calculation, 69 endpoint records, three full time histories, source hashes and numerical audit.",
+      "MyOwn/chapters/07_conclusion.tex: revised findings and calibration/mount limitations.",
+      "Final Presentation/figures_and_images/manifest.json: figure provenance.",
+      "[/Sources]"
+    ],
+    "pictures": [
+      {
+        "id": "4",
+        "name": "Picture 3",
+        "descr": "image-2-1.png"
+      },
+      {
+        "id": "12",
+        "name": "Figure - contact_wrench_three_panels",
+        "descr": "contact_wrench_three_panels: angular error relative to the calibrated surface normal, calculated from recorded controller data"
+      },
+      {
+        "id": "15",
+        "name": "Figure - contact_legend"
+      }
+    ]
+  },
+  {
+    "physical": 19,
+    "path": "ppt/slides/slide10.xml",
+    "title": "Null-space controller",
+    "hidden": false,
+    "shapes": [
+      {
+        "name": "Slide title",
+        "text": [
+          "Null-space controller"
+        ]
+      },
+      {
+        "name": "TextBox 4",
+        "text": [
+          "Design and Implementation of a Real-Time Impedance Controller for a 7-DOF Collaborative Robot"
+        ]
+      },
+      {
+        "name": "TextBox 5",
+        "text": [
+          "Master Thesis · Heykel Khadhraoui"
+        ]
+      },
+      {
+        "name": "TextBox 6",
+        "text": [
+          "18"
+        ]
+      },
+      {
+        "name": "Rank qualification",
+        "text": [
+          "One null-space direction at full Jacobian rank.",
+          "Several joints move together."
+        ]
+      },
+      {
+        "name": "Kinematic preservation",
+        "text": [
+          "Null-space motion preserves the instantaneous motion of the EE."
+        ]
+      },
+      {
+        "name": "Damping heading",
+        "text": [
+          "Damping torque"
+        ]
+      },
+      {
+        "name": "Conditioning heading",
+        "text": [
+          "Conditioning torque"
+        ]
+      },
+      {
+        "name": "Damping role",
+        "text": [
+          "Opposes and damps null-space velocity."
+        ]
+      },
+      {
+        "name": "Conditioning role",
+        "text": [
+          "Adjusts the joint configuration to improve Jacobian conditioning.",
+          "At a singularity, the EE loses a motion direction.",
+          "Near it, some EE motions require very large joint velocities."
+        ]
+      },
+      {
+        "name": "Redundancy heading",
+        "text": [
+          "Redundant direction:"
+        ]
+      },
+      {
+        "name": "Cartesian task heading",
+        "text": [
+          "Primary Cartesian task:"
+        ]
+      },
+      {
+        "name": "Damping colon",
+        "text": [
+          ":"
+        ]
+      },
+      {
+        "name": "Conditioning colon",
+        "text": [
+          ":"
+        ]
+      }
+    ],
+    "notes_path": "ppt/notesSlides/notesSlide10.xml",
+    "notes": [
+      "Another study in this work analysed null-space behaviour, and a null-space controller was developed. Our Cartesian pose has six degrees of freedom, while the robot has seven, so one degree of freedom is redundant and allows motion without changing the pose.",
+      "We want to eliminate this behaviour, so we introduced two torques. One torque damps this motion, and the other corrects it towards a better configuration, farther from a singularity, by increasing the minimum singular value of the Jacobian.",
+      "A singularity is an unfavourable configuration in which the Jacobian loses rank. The robot then cannot move in a particular direction, or would need very high joint velocities to achieve that motion.",
+      "[Sources]",
+      "MyOwn/chapters/02_theoretical_background.tex",
+      "03_software_implementation.tex",
+      "04_experimental_setup_and_evaluation.tex. Figure provenance: Final Presentation/figures_and_images/manifest.json.",
+      "MyOwn/chapters/02_theoretical_background.tex: eq:differential_kinematics. J(q) maps seven joint velocities to six EE linear/angular velocity components. Its coefficients depend on the joint angles.",
+      "Modern Robotics, Lynch and Park, Chapter 5.3: https://modernrobotics.northwestern.edu/nu-gm-book-resource/5-3-singularities/",
+      "Northwestern Mobile Manipulation Capstone, singularities discussion: https://hades.mech.northwestern.edu/index.php/Mobile_Manipulation_Capstone_2023. Near-singular Jacobian mappings can require excessive joint speeds for some desired EE motions. This does not mean the Jacobian-transpose torque mapping itself becomes undefined.",
+      "[/Sources]",
+      "[Equation typography]\nAll standalone equations and mathematical symbol keys use Cambria Math, 22 pt, regular weight and black. Normal mathematical subscript and superscript scaling is retained. Equation content and native Office Math structures are unchanged."
+    ],
+    "pictures": [
+      {
+        "id": "4",
+        "name": "Picture 3",
+        "descr": "image-2-1.png"
+      }
+    ]
+  },
+  {
+    "physical": 20,
+    "path": "ppt/slides/slide36.xml",
+    "title": "Disturbance demonstration",
+    "hidden": false,
+    "shapes": [
+      {
+        "name": "Slide title",
+        "text": [
+          "Disturbance demonstration"
+        ]
+      },
+      {
+        "name": "TextBox 4",
+        "text": [
+          "Design and Implementation of a Real-Time Impedance Controller for a 7-DOF Collaborative Robot"
+        ]
+      },
+      {
+        "name": "TextBox 5",
+        "text": [
+          "Master Thesis · Heykel Khadhraoui"
+        ]
+      },
+      {
+        "name": "TextBox 6",
+        "text": [
+          "19"
+        ]
+      },
+      {
+        "name": "Nullspace2 label",
+        "text": [
+          "Demonstration · Part 1"
+        ]
+      }
+    ],
+    "notes_path": "ppt/notesSlides/notesSlide36.xml",
+    "notes": [
+      ""
+    ],
+    "pictures": [
+      {
+        "id": "4",
+        "name": "Picture 3",
+        "descr": "image-2-1.png"
+      },
+      {
+        "id": "22",
+        "name": "Nullspace2 part 1 video",
+        "descr": "Nullspace2.mp4, original interval 00:00–00:23. Upright video with audio. Click to play."
+      }
+    ]
+  },
+  {
+    "physical": 21,
+    "path": "ppt/slides/slide37.xml",
+    "title": "Disturbance demonstration",
+    "hidden": false,
+    "shapes": [
+      {
+        "name": "Slide title",
+        "text": [
+          "Disturbance demonstration"
+        ]
+      },
+      {
+        "name": "TextBox 4",
+        "text": [
+          "Design and Implementation of a Real-Time Impedance Controller for a 7-DOF Collaborative Robot"
+        ]
+      },
+      {
+        "name": "TextBox 5",
+        "text": [
+          "Master Thesis · Heykel Khadhraoui"
+        ]
+      },
+      {
+        "name": "TextBox 6",
+        "text": [
+          "20"
+        ]
+      },
+      {
+        "name": "Nullspace2 label",
+        "text": [
+          "Demonstration · Part 2"
+        ]
+      }
+    ],
+    "notes_path": "ppt/notesSlides/notesSlide37.xml",
+    "notes": [
+      ""
+    ],
+    "pictures": [
+      {
+        "id": "4",
+        "name": "Picture 3",
+        "descr": "image-2-1.png"
+      },
+      {
+        "id": "22",
+        "name": "Nullspace2 part 2 video",
+        "descr": "Nullspace2.mp4, original interval 00:23–end. Upright video with audio. Click to play."
+      }
+    ]
+  },
+  {
+    "physical": 22,
+    "path": "ppt/slides/slide13.xml",
+    "title": "Null-space experiment",
+    "hidden": false,
+    "shapes": [
+      {
+        "name": "Slide title",
+        "text": [
+          "Null-space experiment"
+        ]
+      },
+      {
+        "name": "TextBox 4",
+        "text": [
+          "Design and Implementation of a Real-Time Impedance Controller for a 7-DOF Collaborative Robot"
+        ]
+      },
+      {
+        "name": "TextBox 5",
+        "text": [
+          "Master Thesis · Heykel Khadhraoui"
+        ]
+      },
+      {
+        "name": "TextBox 6",
+        "text": [
+          "21"
+        ]
+      },
+      {
+        "name": "Disturbance heading",
+        "text": [
+          "Commanded joint disturbance"
+        ]
+      },
+      {
+        "name": "Task heading",
+        "text": [
+          "Cartesian pose hold"
+        ]
+      },
+      {
+        "name": "Disturbance description",
+        "text": [
+          "Joint-torque equivalent of a virtual",
+          "20 N point force on link 3."
+        ]
+      },
+      {
+        "name": "Task description",
+        "text": [
+          "Hold the captured position and orientation."
+        ]
+      },
+      {
+        "name": "Settings heading",
+        "text": [
+          "Four conditions with three trials each"
+        ]
+      },
+      {
+        "name": "Setting no torque",
+        "text": [
+          "No null-space torque"
+        ]
+      },
+      {
+        "name": "Setting damping",
+        "text": [
+          "Damping: dnull = 2 N m s/rad"
+        ]
+      },
+      {
+        "name": "Setting conditioning",
+        "text": [
+          "Conditioning: kσ = 2 N m"
+        ]
+      },
+      {
+        "name": "Setting combined",
+        "text": [
+          "Combined: conditioning + dampingkσ = 2 N m and dnull = 2 N m s/rad"
+        ]
+      }
+    ],
+    "notes_path": "ppt/notesSlides/notesSlide13.xml",
+    "notes": [
+      "To study this case, we added a commanded torque disturbance corresponding to a disturbance force of 20 N on link three. Through the Jacobian mapping, this disturbance acted mainly on joint one.",
+      "[Sources]\nMyOwn/chapters/02_theoretical_background.tex\n03_software_implementation.tex\n04_experimental_setup_and_evaluation.tex\n05_results_and_discussion.tex\n07_conclusion.tex. Current MyOwn main: 0fea99b. Figure provenance: Final Presentation/figures_and_images/manifest.json.\nAll null-space result metrics use the recorded samples from original t = 5.000 s to 9.000 s inclusive. The displayed time is t_d = t - 5 s, spanning 0 to 4 s after disturbance onset. Cumulative joint motion, minimum singular value and joint-1 angle change use this same interval. The time integrals use actual recorded timestamps. Three trials per setting. Shading and error bars show one sample standard deviation.\n[Combined experiment]\nMode 3: tau_null = tau_sigma + tau_damping. k_sigma = 1.5 or 2 N m, d_null = 2 N m s/rad. Three trials per combined setting on 2026-09-16. Exact archived controller revision 0210e7f2 and saved parameters, with only mode 2 changed to mode 3. Original 5–9 s interval, displayed as 0–4 s. Later acquisition session: session effects were not independently controlled.\nexperiments/h_mode_combined/README.md\nexperiments/h_mode_combined_1p5/README.md\nfigures_and_images/sources/combined_nullspace_provenance.json\nfigures_and_images/sources/make_combined_nullspace.py",
+      "[Narrative]\nMain comparison: no torque, damping 2, conditioning 2, combined 2+2. Parameter comparison: conditioning 1.5 and 2, each with and without damping 2. Original 18 measured trials retained. Main plots use the same processing as six-setting backups. Combined trials were acquired in a later session, so session effects are not independently controlled.\nfigures_and_images/sources/make_nullspace_narrative.py",
+      "[Equation typography]\nAll standalone equations and mathematical symbol keys use Cambria Math, 22 pt, regular weight and black. Normal mathematical subscript and superscript scaling is retained. Equation content and native Office Math structures are unchanged."
+    ],
+    "pictures": [
+      {
+        "id": "4",
+        "name": "Picture 3",
+        "descr": "image-2-1.png"
+      }
+    ]
+  },
+  {
+    "physical": 23,
+    "path": "ppt/slides/slide31.xml",
+    "title": "Cumulative joint motion",
+    "hidden": false,
+    "shapes": [
+      {
+        "name": "Slide title",
+        "text": [
+          "Cumulative joint motion"
+        ]
+      },
+      {
+        "name": "TextBox 4",
+        "text": [
+          "Design and Implementation of a Real-Time Impedance Controller for a 7-DOF Collaborative Robot"
+        ]
+      },
+      {
+        "name": "TextBox 5",
+        "text": [
+          "Master Thesis · Heykel Khadhraoui"
+        ]
+      },
+      {
+        "name": "TextBox 6",
+        "text": [
+          "22"
+        ]
+      },
+      {
+        "name": "Null-space finding 1",
+        "text": [
+          "Damping alone reduced cumulative motion by 25.1% compared with no torque."
+        ]
+      },
+      {
+        "name": "Null-space finding 2",
+        "text": [
+          "At 2 N m, adding damping to conditioning reduced cumulative motion by 50.7%."
+        ]
+      }
+    ],
+    "notes_path": "ppt/notesSlides/notesSlide31.xml",
+    "notes": [
+      "This plot shows four cases while the disturbance is active: no corrective null-space torque, damping torque alone, conditioning torque alone, and the combined damping and conditioning torques. Cumulative joint motion accumulates the magnitude of projected motion using all seven joint velocities. It includes motion in both directions. Without null-space torque, this cumulative motion increases.",
+      "With damping, this motion is reduced. Conditioning reduces it further, and the combined torques reduce it even more.",
+      "[Sources]\nMyOwn/figures/ch05/MAIN_NS_nullspace_automatic.pdf, panels (a)--(c)\nMyOwn/chapters/05_results_and_discussion.tex, Null-Space Pose-Hold Results\nMyOwn/code/python/figures/make_nullspace_figure.py\nThesis_Final_Control/experiments/derived/MAIN_NS_automatic_summary.csv. Three trials per setting\none sample standard deviation. Figure provenance: Final Presentation/figures_and_images/manifest.json.\nAll null-space result metrics use the recorded samples from original t = 5.000 s to 9.000 s inclusive. The displayed time is t_d = t - 5 s, spanning 0 to 4 s after disturbance onset. Cumulative joint motion, minimum singular value and joint-1 angle change use this same interval. The time integrals use actual recorded timestamps. Three trials per setting. Shading and error bars show one sample standard deviation.\n[Combined experiment]\nMode 3: tau_null = tau_sigma + tau_damping. k_sigma = 1.5 or 2 N m, d_null = 2 N m s/rad. Three trials per combined setting on 2026-09-16. Exact archived controller revision 0210e7f2 and saved parameters, with only mode 2 changed to mode 3. Original 5–9 s interval, displayed as 0–4 s. Later acquisition session: session effects were not independently controlled.\nexperiments/h_mode_combined/README.md\nexperiments/h_mode_combined_1p5/README.md\nfigures_and_images/sources/combined_nullspace_provenance.json\nfigures_and_images/sources/make_combined_nullspace.py",
+      "[Narrative]\nMain comparison: no torque, damping 2, conditioning 2, combined 2+2. Parameter comparison: conditioning 1.5 and 2, each with and without damping 2. Original 18 measured trials retained. Main plots use the same processing as six-setting backups. Combined trials were acquired in a later session, so session effects are not independently controlled.\nfigures_and_images/sources/make_nullspace_narrative.py"
+    ],
+    "pictures": [
+      {
+        "id": "4",
+        "name": "Picture 3",
+        "descr": "image-2-1.png"
+      },
+      {
+        "id": "11",
+        "name": "Figure - nullspace_cumulative_main"
+      }
+    ]
+  },
+  {
+    "physical": 24,
+    "path": "ppt/slides/slide32.xml",
+    "title": "Jacobian conditioning",
+    "hidden": false,
+    "shapes": [
+      {
+        "name": "Slide title",
+        "text": [
+          "Jacobian conditioning"
+        ]
+      },
+      {
+        "name": "TextBox 4",
+        "text": [
+          "Design and Implementation of a Real-Time Impedance Controller for a 7-DOF Collaborative Robot"
+        ]
+      },
+      {
+        "name": "TextBox 5",
+        "text": [
+          "Master Thesis · Heykel Khadhraoui"
+        ]
+      },
+      {
+        "name": "TextBox 6",
+        "text": [
+          "23"
+        ]
+      },
+      {
+        "name": "Null-space finding 1",
+        "text": [
+          "The indicator decreased with no torque and damping alone."
+        ]
+      },
+      {
+        "name": "Null-space finding 2",
+        "text": [
+          "Conditioning and combined control kept the indicator nearly constant."
+        ]
+      }
+    ],
+    "notes_path": "ppt/notesSlides/notesSlide32.xml",
+    "notes": [
+      "Next, looking at the minimum singular values, we see that without conditioning there is no correction of the singular value. The combined setting performs slightly better than conditioning alone.",
+      "[Sources]\nMyOwn/figures/ch05/MAIN_NS_nullspace_automatic.pdf, panels (a)--(c)\nMyOwn/chapters/05_results_and_discussion.tex, Null-Space Pose-Hold Results\nMyOwn/code/python/figures/make_nullspace_figure.py\nThesis_Final_Control/experiments/derived/MAIN_NS_automatic_summary.csv. Three trials per setting\none sample standard deviation. Figure provenance: Final Presentation/figures_and_images/manifest.json.\nAll null-space result metrics use the recorded samples from original t = 5.000 s to 9.000 s inclusive. The displayed time is t_d = t - 5 s, spanning 0 to 4 s after disturbance onset. Cumulative joint motion, minimum singular value and joint-1 angle change use this same interval. The time integrals use actual recorded timestamps. Three trials per setting. Shading and error bars show one sample standard deviation.\nThe main conditioning plot shows absolute sigma_min(t), with four mean traces and one sample standard deviation across three trials per setting. All traces use original t = 5 to 9 s, displayed as t_d = t - 5 s from 0 to 4 s. No null-space torque and damping show a decrease in this indicator. Both conditioning settings retain it near its disturbance-entry value. The same Jacobian convention is used for every setting. This local comparison does not establish global singularity avoidance or a meaningful advantage of one conditioning setting over the other.\nSupplementary endpoint statistics: Delta sigma_min = sigma_min(9 s) - sigma_min(5 s). Source: MAIN_NS_automatic_summary.csv, MAIN_NS8_ksigma_1p5_20N_200mm and MAIN_NS8_ksigma_2p0_20N_200mm. Means: 6.666666666858372e-8 and 2.5999999995566608e-8. Sample standard deviations: 7.821338333994296e-8 and 2.4439312592275773e-7. These values describe endpoint changes, not absolute singular values. The larger sample standard deviation at the stronger setting describes variability across the three endpoint changes. It does not by itself measure the amount of back-and-forth motion within each trial. Cumulative projected motion provides that complementary information.\n[Combined experiment]\nMode 3: tau_null = tau_sigma + tau_damping. k_sigma = 1.5 or 2 N m, d_null = 2 N m s/rad. Three trials per combined setting on 2026-09-16. Exact archived controller revision 0210e7f2 and saved parameters, with only mode 2 changed to mode 3. Original 5–9 s interval, displayed as 0–4 s. Later acquisition session: session effects were not independently controlled.\nexperiments/h_mode_combined/README.md\nexperiments/h_mode_combined_1p5/README.md\nfigures_and_images/sources/combined_nullspace_provenance.json\nfigures_and_images/sources/make_combined_nullspace.py",
+      "[Narrative]\nMain comparison: no torque, damping 2, conditioning 2, combined 2+2. Parameter comparison: conditioning 1.5 and 2, each with and without damping 2. Original 18 measured trials retained. Main plots use the same processing as six-setting backups. Combined trials were acquired in a later session, so session effects are not independently controlled.\nfigures_and_images/sources/make_nullspace_narrative.py"
+    ],
+    "pictures": [
+      {
+        "id": "4",
+        "name": "Picture 3",
+        "descr": "image-2-1.png"
+      },
+      {
+        "id": "8",
+        "name": "Figure - nullspace_conditioning_main"
+      }
+    ]
+  },
+  {
+    "physical": 25,
+    "path": "ppt/slides/slide33.xml",
+    "title": "Joint motion over time",
+    "hidden": false,
+    "shapes": [
+      {
+        "name": "Slide title",
+        "text": [
+          "Joint motion over time"
+        ]
+      },
+      {
+        "name": "TextBox 4",
+        "text": [
+          "Design and Implementation of a Real-Time Impedance Controller for a 7-DOF Collaborative Robot"
+        ]
+      },
+      {
+        "name": "TextBox 5",
+        "text": [
+          "Master Thesis · Heykel Khadhraoui"
+        ]
+      },
+      {
+        "name": "TextBox 6",
+        "text": [
+          "24"
+        ]
+      },
+      {
+        "name": "Null-space finding 1",
+        "text": [
+          "Conditioning at 2 N m shows repeated joint-motion reversals."
+        ]
+      },
+      {
+        "name": "Null-space finding 2",
+        "text": [
+          "Adding damping reduces total motion, while reversals remain."
+        ]
+      }
+    ],
+    "notes_path": "ppt/notesSlides/notesSlide33.xml",
+    "notes": [
+      "Next, we look at the motion of the joint on which the disturbance acted. Again, damping reduces the motion, while conditioning alone produces slightly more motion than the combined setting.",
+      "We can see that conditioning torque alone causes back-and-forth motion as it corrects the null-space disturbance. Adding damping makes this back-and-forth behaviour smoother.",
+      "[Sources]\nfigures_and_images/sources/make_joint_motion_views.py, joint_motion_views_analysis.json, joint_motion_mean_curves.csv and the unchanged joint_motion_samples.csv.gz / joint_motion_provenance.json.\nOriginal MAIN_NS7/MAIN_NS8 measured joint-state diagnostic samples, all twelve trial identities verified against the thesis logs. Recorded interval 5-9 s, displayed as 0-4 s. Single-trial selection: r01 for all settings. Mean: exact common recorded timestamps within each setting, 80/81/80/80 points, sample SD with ddof=1. No interpolation, smoothing, integration or absolute values.\nThe original all-repetitions slide and shared thesis figure remain unchanged. These two added presentation slides provide complementary single-trial and mean views.\n[/Sources]\n[Combined experiment]\nMode 3: tau_null = tau_sigma + tau_damping. k_sigma = 1.5 or 2 N m, d_null = 2 N m s/rad. Three trials per combined setting on 2026-09-16. Exact archived controller revision 0210e7f2 and saved parameters, with only mode 2 changed to mode 3. Original 5–9 s interval, displayed as 0–4 s. Later acquisition session: session effects were not independently controlled.\nexperiments/h_mode_combined/README.md\nexperiments/h_mode_combined_1p5/README.md\nfigures_and_images/sources/combined_nullspace_provenance.json\nfigures_and_images/sources/make_combined_nullspace.py",
+      "[Narrative]\nMain comparison: no torque, damping 2, conditioning 2, combined 2+2. Parameter comparison: conditioning 1.5 and 2, each with and without damping 2. Original 18 measured trials retained. Main plots use the same processing as six-setting backups. Combined trials were acquired in a later session, so session effects are not independently controlled.\nfigures_and_images/sources/make_nullspace_narrative.py"
+    ],
+    "pictures": [
+      {
+        "id": "4",
+        "name": "Picture 3",
+        "descr": "image-2-1.png"
+      },
+      {
+        "id": "11",
+        "name": "Figure - joint_motion_mean_main",
+        "descr": "Arithmetic mean of three onset-relative measured joint-1 trajectories per setting. Shading is one sample standard deviation. Exact recorded times common to each setting, no interpolation or smoothing. Same axes and intervals as the all-repetitions figure."
+      }
+    ]
+  },
+  {
+    "physical": 26,
+    "path": "ppt/slides/slide24.xml",
+    "title": "Conclusion",
+    "hidden": false,
+    "shapes": [
+      {
+        "name": "Slide title",
+        "text": [
+          "Conclusion"
+        ]
+      },
+      {
+        "name": "TextBox 4",
+        "text": [
+          "Design and Implementation of a Real-Time Impedance Controller for a 7-DOF Collaborative Robot"
+        ]
+      },
+      {
+        "name": "TextBox 5",
+        "text": [
+          "Master Thesis · Heykel Khadhraoui"
+        ]
+      },
+      {
+        "name": "TextBox 6",
+        "text": [
+          "25"
+        ]
+      },
+      {
+        "name": "Conclusion alignment",
+        "text": [
+          "Compliant rotation allowed contact moments to reduce angular error"
+        ]
+      },
+      {
+        "name": "Conclusion stiffness",
+        "text": [
+          "Higher rotational stiffness left a larger angular error"
+        ]
+      },
+      {
+        "name": "Conclusion CoC",
+        "text": [
+          "The CoC could support or oppose the contact moment"
+        ]
+      },
+      {
+        "name": "Future work heading",
+        "text": [
+          "Future work"
+        ]
+      },
+      {
+        "name": "Future CoC",
+        "text": [
+          "Use a more rigid tool mount for better measurements"
+        ]
+      },
+      {
+        "name": "Future return",
+        "text": [
+          "Adapt the CoC to support the contact moment,then return it to the TCP after alignment"
+        ]
+      },
+      {
+        "name": "Conclusion null-space",
+        "text": [
+          "Null-space control reduced redundant motion under disturbance"
+        ]
+      }
+    ],
+    "notes_path": "ppt/notesSlides/notesSlide24.xml",
+    "notes": [
+      "To conclude, the contact moment brought the tool flat against the surface when rotational stiffness was compliant. Higher rotational stiffness left a larger angular error, and the centre of compliance could either support or oppose the contact moment.",
+      "Finally, the null-space controller opposed the external disturbance affecting the redundant joint motion. Future work could use a more rigid tool mount for better measurements and adaptive centre-of-compliance selection to support the contact moment.",
+      "Thank you for your attention.",
+      "[Sources]\nMyOwn/chapters/04_experimental_setup_and_evaluation.tex: calibrated surface and tool normal, angular error definition and endpoint precision.\nMyOwn/chapters/05_results_and_discussion.tex: recalculated Cases A–D and representative wrench traces.\nMyOwn/code/python/figures/contact_angular_error/: reproducible calculation, 69 endpoint records, three full time histories, source hashes and numerical audit.\nMyOwn/chapters/07_conclusion.tex: revised findings and calibration/mount limitations.\nFinal Presentation/figures_and_images/manifest.json: figure provenance.\n[/Sources]\n[Combined experiment]\nMode 3: tau_null = tau_sigma + tau_damping. k_sigma = 1.5 or 2 N m, d_null = 2 N m s/rad. Three trials per combined setting on 2026-09-16. Exact archived controller revision 0210e7f2 and saved parameters, with only mode 2 changed to mode 3. Original 5–9 s interval, displayed as 0–4 s. Later acquisition session: session effects were not independently controlled.\nexperiments/h_mode_combined/README.md\nexperiments/h_mode_combined_1p5/README.md\nfigures_and_images/sources/combined_nullspace_provenance.json\nfigures_and_images/sources/make_combined_nullspace.py",
+      "[Narrative]\nMain comparison: no torque, damping 2, conditioning 2, combined 2+2. Parameter comparison: conditioning 1.5 and 2, each with and without damping 2. Original 18 measured trials retained. Main plots use the same processing as six-setting backups. Combined trials were acquired in a later session, so session effects are not independently controlled.\nfigures_and_images/sources/make_nullspace_narrative.py"
+    ],
+    "pictures": [
+      {
+        "id": "4",
+        "name": "Picture 3",
+        "descr": "image-2-1.png"
+      }
+    ]
+  },
+  {
+    "physical": 27,
+    "path": "ppt/slides/slide39.xml",
+    "title": "Opposing moment",
+    "hidden": true,
+    "shapes": [
+      {
+        "name": "Slide title",
+        "text": [
+          "Opposing moment"
+        ]
+      },
+      {
+        "name": "TextBox 4",
+        "text": [
+          "Design and Implementation of a Real-Time Impedance Controller for a 7-DOF Collaborative Robot"
+        ]
+      },
+      {
+        "name": "TextBox 5",
+        "text": [
+          "Master Thesis · Heykel Khadhraoui"
+        ]
+      },
+      {
+        "name": "TextBox 6",
+        "text": [
+          "B1"
+        ]
+      }
+    ],
+    "notes_path": "ppt/notesSlides/notesSlide39.xml",
+    "notes": [
+      ""
+    ],
+    "pictures": [
+      {
+        "id": "4",
+        "name": "Picture 3",
+        "descr": "image-2-1.png"
+      },
+      {
+        "id": "22",
+        "name": "Opposing moment video",
+        "descr": "Opposing Moment.mp4. Upright presentation copy with full duration and original audio. Click to play."
+      }
+    ]
+  },
+  {
+    "physical": 28,
+    "path": "ppt/slides/slide25.xml",
+    "title": "Null-space torques and projector",
+    "hidden": true,
+    "shapes": [
+      {
+        "name": "Slide title",
+        "text": [
+          "Null-space torques and projector"
+        ]
+      },
+      {
+        "name": "TextBox 4",
+        "text": [
+          "Design and Implementation of a Real-Time Impedance Controller for a 7-DOF Collaborative Robot"
+        ]
+      },
+      {
+        "name": "TextBox 5",
+        "text": [
+          "Master Thesis · Heykel Khadhraoui"
+        ]
+      },
+      {
+        "name": "TextBox 6",
+        "text": [
+          "B2"
+        ]
+      },
+      {
+        "name": "Null-space projector heading",
+        "text": [
+          "Null-space projector"
+        ]
+      },
+      {
+        "name": "Projector role",
+        "text": [
+          "Projects secondary joint torques into the kinematic null space."
+        ]
+      },
+      {
+        "name": "Jacobian definition",
+        "text": [
+          "J: joint → EE velocities"
+        ]
+      },
+      {
+        "name": "Pseudoinverse definition",
+        "text": [
+          "J+: pseudoinverse"
+        ]
+      },
+      {
+        "name": "Identity definition",
+        "text": [
+          "I7: 7 × 7 identity matrix"
+        ]
+      },
+      {
+        "name": "Damping torque heading",
+        "text": [
+          "Damping torque"
+        ]
+      },
+      {
+        "name": "Conditioning torque heading",
+        "text": [
+          "Conditioning torque"
+        ]
+      },
+      {
+        "name": "Damping role",
+        "text": [
+          "Opposes redundant joint velocity.",
+          "Zero at zero joint velocity."
+        ]
+      },
+      {
+        "name": "Conditioning role",
+        "text": [
+          "Seeks better local conditioning.",
+          "Can act at zero joint velocity."
+        ]
+      },
+      {
+        "name": "Damping coefficient",
+        "text": [
+          "dnull: damping coefficient [N m s/rad]"
+        ]
+      },
+      {
+        "name": "Measured joint velocity",
+        "text": [
+          "q̇: measured joint velocity"
+        ]
+      },
+      {
+        "name": "Conditioning magnitude",
+        "text": [
+          "kσ: torque magnitude [N m]"
+        ]
+      },
+      {
+        "name": "Null-space direction",
+        "text": [
+          "v7: unit null-space direction"
+        ]
+      },
+      {
+        "name": "Direction selector",
+        "text": [
+          "sσ: direction choice, zero in deadband"
+        ]
+      }
+    ],
+    "notes_path": "ppt/notesSlides/notesSlide25.xml",
+    "notes": [
+      "The kinematic projector selects null-space torque directions. It uses the Jacobian \\mboxpseudoinverse J^+.",
+      "Damping and conditioning add to give the total null-space torque.",
+      "Damping opposes projected joint velocity and is zero at rest. d_null is the damping coefficient.",
+      "Conditioning probes both directions along the unit null-space vector v_7. It chooses the direction with the larger minimum singular value.",
+      "The selector s_σ is +1 or -1, and zero within the deadband. k_σ sets the torque magnitude, which can be nonzero at rest.",
+      "[Sources]",
+      "MyOwn/chapters/02_theoretical_background.tex: eq:nullspace_torque_projector, eq:nullspace_damping_torque, eq:nullspace_sigma_torque, eq:nullspace_direction_selection, and eq:nullspace_torque.",
+      "MyOwn/chapters/03_software_implementation.tex: Null-Space Conditioning Implementation.",
+      "Thesis_Final_Control/surface_grinding_controller/src/control/robot_support.cpp: symmetrised kinematic projector, projected damping, and two-sided singular-value probe selection.",
+      "Equation artwork: Final Presentation/figures_and_images/sources/null_controller_projector.tex, null_controller_damping.tex, and null_controller_conditioning.tex.",
+      "MyOwn/chapters/02_theoretical_background.tex: eq:differential_kinematics. J(q) maps seven joint velocities to six EE linear/angular velocity components. Its coefficients depend on the joint angles.",
+      "Modern Robotics, Lynch and Park, Chapter 5.3: https://modernrobotics.northwestern.edu/nu-gm-book-resource/5-3-singularities/",
+      "[/Sources]",
+      "[Equation typography]\nAll standalone equations and mathematical symbol keys use Cambria Math, 22 pt, regular weight and black. Normal mathematical subscript and superscript scaling is retained. Equation content and native Office Math structures are unchanged."
+    ],
+    "pictures": [
+      {
+        "id": "4",
+        "name": "Picture 3",
+        "descr": "image-2-1.png"
+      }
+    ]
+  },
+  {
+    "physical": 29,
+    "path": "ppt/slides/slide12.xml",
+    "title": "Angular quantities",
+    "hidden": true,
+    "shapes": [
+      {
+        "name": "Slide title",
+        "text": [
+          "Angular quantities"
+        ]
+      },
+      {
+        "name": "TextBox 4",
+        "text": [
+          "Design and Implementation of a Real-Time Impedance Controller for a 7-DOF Collaborative Robot"
+        ]
+      },
+      {
+        "name": "TextBox 5",
+        "text": [
+          "Master Thesis · Heykel Khadhraoui"
+        ]
+      },
+      {
+        "name": "TextBox 6",
+        "text": [
+          "B3"
+        ]
+      }
+    ],
+    "notes_path": "ppt/notesSlides/notesSlide12.xml",
+    "notes": [
+      "To understand our experiments, we first need to introduce some metrics. The measured angular offset is the angle between the configured surface and the tool before contact.",
+      "The angular error is the angle between the tool and the configured surface.",
+      "[Sources]",
+      "MyOwn/chapters/04_experimental_setup_and_evaluation.tex: calibrated surface and tool normal, angular error definition and endpoint precision.",
+      "MyOwn/chapters/05_results_and_discussion.tex: recalculated Cases A–D and representative wrench traces.",
+      "MyOwn/code/python/figures/contact_angular_error/: reproducible calculation, 69 endpoint records, three full time histories, source hashes and numerical audit.",
+      "MyOwn/chapters/07_conclusion.tex: revised findings and calibration/mount limitations.",
+      "Final Presentation/figures_and_images/manifest.json: figure provenance. Descriptive arrow labels retained, normal-vector symbols omitted, and angular-error label shown without the end-time argument.",
+      "[/Sources]",
+      "[Equation typography]\nAll standalone equations and mathematical symbol keys use Cambria Math, 22 pt, regular weight and black. Normal mathematical subscript and superscript scaling is retained. Equation content and native Office Math structures are unchanged."
+    ],
+    "pictures": [
+      {
+        "id": "4",
+        "name": "Picture 3",
+        "descr": "image-2-1.png"
+      },
+      {
+        "id": "8",
+        "name": "Figure - angular_quantities",
+        "descr": "Direct extract of thesis Figure 4.2: shorter normal arrows with unchanged angles, colours and label sizes."
+      }
+    ]
+  },
+  {
+    "physical": 30,
+    "path": "ppt/slides/slide17.xml",
+    "title": "Baseline angular error",
+    "hidden": true,
+    "shapes": [
+      {
+        "name": "Slide title",
+        "text": [
+          "Baseline angular error"
+        ]
+      },
+      {
+        "name": "TextBox 4",
+        "text": [
+          "Design and Implementation of a Real-Time Impedance Controller for a 7-DOF Collaborative Robot"
+        ]
+      },
+      {
+        "name": "TextBox 5",
+        "text": [
+          "Master Thesis · Heykel Khadhraoui"
+        ]
+      },
+      {
+        "name": "TextBox 6",
+        "text": [
+          "B4"
+        ]
+      }
+    ],
+    "notes_path": "ppt/notesSlides/notesSlide17.xml",
+    "notes": [
+      "Next, this plot shows the final angular error for three different starting orientations: 0, +10 and −10 degrees. We can deduce that alignment is not perfectly symmetrical because of friction, and that the remaining errors are due to errors in measuring the pose and configuring the surface.",
+      "[Sources]",
+      "MyOwn/chapters/04_experimental_setup_and_evaluation.tex: calibrated surface and tool normal, angular error definition and endpoint precision.",
+      "MyOwn/chapters/05_results_and_discussion.tex: recalculated Cases A–D and representative wrench traces.",
+      "MyOwn/code/python/figures/contact_angular_error/: reproducible calculation, 69 endpoint records, three full time histories, source hashes and numerical audit.",
+      "MyOwn/chapters/07_conclusion.tex: revised findings and calibration/mount limitations.",
+      "Final Presentation/figures_and_images/manifest.json: figure provenance.",
+      "[/Sources]"
+    ],
+    "pictures": [
+      {
+        "id": "4",
+        "name": "Picture 3",
+        "descr": "image-2-1.png"
+      },
+      {
+        "id": "13",
+        "name": "Figure - baseline_response",
+        "descr": "baseline_response: angular error relative to the calibrated surface normal, calculated from recorded controller data"
+      }
+    ]
+  },
+  {
+    "physical": 31,
+    "path": "ppt/slides/slide40.xml",
+    "title": "Sources of angular offset",
+    "hidden": true,
+    "shapes": [
+      {
+        "name": "Slide title",
+        "text": [
+          "Sources of angular offset"
+        ]
+      },
+      {
+        "name": "TextBox 4",
+        "text": [
+          "Design and Implementation of a Real-Time Impedance Controller for a 7-DOF Collaborative Robot"
+        ]
+      },
+      {
+        "name": "TextBox 5",
+        "text": [
+          "Master Thesis · Heykel Khadhraoui"
+        ]
+      },
+      {
+        "name": "TextBox 6",
+        "text": [
+          "B5"
+        ]
+      }
+    ],
+    "notes_path": "ppt/notesSlides/notesSlide40.xml",
+    "notes": [
+      ""
+    ],
+    "pictures": [
+      {
+        "id": "4",
+        "name": "Picture 3",
+        "descr": "image-2-1.png"
+      },
+      {
+        "id": "22",
+        "name": "Surface entry concept",
+        "descr": "Direct extract of thesis Figure 1.1 on PDF page 28. Original thesis geometry, labels and colours retained."
+      }
+    ]
+  }
+]

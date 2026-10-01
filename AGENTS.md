@@ -1,5 +1,97 @@
 # Thesis and presentation workspace
 
+## Simple redundancy explanation (2026-10-01)
+
+On Null-space controller (footer 18 / physical slide 19), explain that
+the robot's extra degree of freedom allows its posture to change while
+keeping the (EE) pose unchanged. Do not restore the full-Jacobian-rank
+qualification or the several-joints phrasing in this bullet. Preserve
+the minimum-singular-value explanation, all equations, notes and speech.
+See experiments/slide18_simple_redundancy_20261001/verification.json.
+
+## Conditioning and minimum singular value (2026-10-01)
+
+On Null-space controller (footer 18 / physical slide 19), the second
+conditioning bullet reads: Seeks a larger minimum singular value sigma_min
+of J, moving away from singularities. Display sigma_min with a native
+Greek sigma and subscript min, matching the metric in the conditioning
+plot. Retain the first posture-adjustment bullet and all native equations.
+Speaking files and notes remain unchanged. See
+experiments/slide18_singular_value_20261001/verification.json.
+
+## Parenthesized end-effector labels (2026-10-01)
+
+Write standalone EE in slide prose and diagram labels as (EE), including
+hidden backups. Keep mathematical EE subscripts unchanged. The two pose
+diagram sources and their PDF/PNG/SVG assets match the embedded figures.
+On Cartesian pose, the takeaway textbox is 630 pt wide and the unchanged
+native equation starts at x=715 pt, so the bottom row stays on one line.
+Preserve the revised speech and notes. See
+experiments/ee_parentheses_20261001/verification.json.
+
+## Null-space condition label (2026-10-01)
+
+On Null-space controller (footer 18 / physical slide 19), retain the
+editable label Null-space condition: before J(q) qdot_null = 0. The
+label is regular black Cambria Math, 22 pt, matching the adjacent
+dimension label. Its box starts at (530, 218) pt, with width 205 pt;
+the unchanged native equation starts at (741, 218) pt. The label is
+separate from the equation asset. Preserve all equation contents and
+the revised speaking material. See
+experiments/slide18_nullspace_condition_label_20261001/verification.json.
+
+## Minimal speech alignment after slide edits (2026-10-01)
+
+The user explicitly requested reorganizing the current speech with minimal
+wording changes. Only physical sections 19-22 / footers 18-21 changed:
+the null-space controller explanation is grouped by the current bullets,
+the videos identify no null-space control followed by damping and then
+conditioning only, and the experiment introduces the pose hold before
+the disturbance and lists conditioning before damping. All four conditions
+include the disturbance. The other 27 sections and every equation remain
+unchanged. The LaTeX source, both seven-page speaking PDFs, plain-text
+copy and PowerPoint spoken notes agree. Preserve the revised speech
+during unrelated slide edits. See
+experiments/speech_alignment_20261001/verification.json.
+
+## Disturbance video and baseline labels (2026-10-01)
+
+The user identified the first disturbance clip as the sequence without
+null-space control followed by damping, and the second as conditioning
+only. The captions are Without null-space control → Damping only on
+footer 19 / physical slide 20 and Conditioning only on footer 20 /
+physical slide 21. This replaces the earlier generic Part 1 / Part 2
+caption requirement. Do not infer numerical controller gains. Preserve
+the exact clips, 23 s split, audio, posters, dimensions and playback.
+
+On Null-space experiment (footer 21 / physical slide 22), the baseline
+condition is Disturbance without null-space control torque, as one
+two-line bullet. All four conditions include the commanded disturbance.
+Keep the lower settings row at y = 435 pt to allow room for that label.
+At the user request, conditioning is top-right at (510, 365) pt and
+damping is bottom-left at (60, 435) pt; the baseline and combined
+conditions retain their positions. See
+experiments/slide21_swap_settings_20261001/verification.json.
+Equations, parameter values, speaking files and notes remain unchanged.
+See experiments/disturbance_labels_20261001/verification.json.
+
+## Centred contact plots on footer 17 (2026-10-01)
+
+Angular error and interaction wrench (footer 17 / physical slide 18) now uses
+three equal landscape plot areas, 224 x 168 pt (4:3). Keep the native Latin
+Modern label sizes, recorded data, limits, colours, grids and timing guides.
+The 900 x 310 pt figure box is at (30, 135) pt. The three headings start at
+107 pt vertically. Keep only the existing middle three-row legend, with
+black -40 mm, red TCP, and blue +40 mm labels. Its centre is x = 506 pt,
+its top is y = 398 pt, and its natural size is 126.382 x 60.159 pt.
+The left and right legend copies were removed at the user request.
+Use the unchanged contact_legend_per_plot assets. This supersedes the
+three-legend layout; do not restore the duplicates. See
+experiments/slide17_single_legend_20261001/verification.json.
+This replaces the earlier near-square contact-panel proportions
+and fixed placement for this slide only. Preserve the reorganized speaking
+text and notes. See experiments/slide17_proportions_20261001/verification.json.
+
 ## Results grid follows Figure 5.7 (2026-09-30)
 
 All shared Results plots use the grid of thesis Figure 5.7: light solid

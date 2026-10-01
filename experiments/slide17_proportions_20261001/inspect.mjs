@@ -1,0 +1,10 @@
+import fs from 'node:fs/promises';
+import { FileBlob, PresentationFile } from '@oai/artifact-tool';
+const source = 'C:/Users/USER/Desktop/Presentation_new/Final Presentation/Thesis_Defense_gg0_v3.pptx';
+const presentation = await PresentationFile.importPptx(await FileBlob.load(source));
+console.log('Imported slides:', presentation.slides.items.length);
+const slide = presentation.slides.items[17];
+await fs.writeFile('artifact-slide18-layout.json', JSON.stringify(await slide.export({format:'layout'}),null,2));
+console.log(JSON.stringify(await presentation.inspect({kind:'image',search:'contact',maxChars:6000}),null,2));
+console.log('Images:', JSON.stringify(slide.images.items.map(i=>({id:i.id,frame:i.frame,alt:i.alt})),null,2));
+console.log('Shapes:', JSON.stringify(slide.shapes.items.map(i=>({id:i.id,position:i.position,text:String(i.text)})),null,2));

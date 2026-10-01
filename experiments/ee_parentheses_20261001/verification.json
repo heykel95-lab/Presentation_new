@@ -1,0 +1,45 @@
+{
+  "physical_slides": [
+    5,
+    10,
+    19,
+    28
+  ],
+  "text_replacements": 5,
+  "diagram_label_replacements": 2,
+  "native_mathematics_preserved": true,
+  "speaking_file_hashes": {
+    "Thesis_Defense_Speaking_Script.pdf": "28cb17683217dc2d145ba783c2cd2efe0d923e04baf215c668d2345b8baf2063",
+    "Thesis_Defense_Speaking_Script_updated.pdf": "28cb17683217dc2d145ba783c2cd2efe0d923e04baf215c668d2345b8baf2063",
+    "Speaking\\Thesis_Defense_Speaking_Script.tex": "d00efa09b626a830588edc2f650a26b1fb22882dd1c055cb4d96f2ddfc70789e",
+    "Speaker_notes_and_timing.txt": "f4369be1e22805614e165ac1261a3db88e4f82440c45cabe3dc43d208f804c32"
+  },
+  "presentation_changed_pages": [
+    5,
+    10,
+    19,
+    28
+  ],
+  "presentation_other_pages_pixel_identical": true,
+  "presentation_page_count": 31,
+  "supplementary_changed_pages": [
+    2
+  ],
+  "supplementary_other_pages_pixel_identical": true,
+  "supplementary_page_count": 5,
+  "changed_package_parts": [
+    "ppt/slides/slide25.xml",
+    "ppt/media/image5.png",
+    "ppt/media/image6.png",
+    "ppt/slides/slide5.xml",
+    "ppt/slides/slide8.xml",
+    "ppt/slides/slide10.xml"
+  ],
+  "all_other_package_parts_byte_identical": true,
+  "native_render_visually_checked": true,
+  "speaking_files_unchanged": true,
+  "all_visible_prose_EE_parenthesized": true,
+  "native_equation_contents_unchanged": true,
+  "backup_hidden_flag_preserved": true,
+  "installed": true
+}

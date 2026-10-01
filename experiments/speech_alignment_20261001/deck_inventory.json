@@ -1,0 +1,219 @@
+[
+  {
+    "physical": 1,
+    "footer": 0,
+    "title": "Master Thesis Presentation",
+    "notes_path": "ppt/notesSlides/notesSlide1.xml",
+    "hidden": false
+  },
+  {
+    "physical": 2,
+    "footer": 1,
+    "title": "Motivation",
+    "notes_path": "ppt/notesSlides/notesSlide2.xml",
+    "hidden": false
+  },
+  {
+    "physical": 3,
+    "footer": 2,
+    "title": "Contact demonstration",
+    "notes_path": "ppt/notesSlides/notesSlide3.xml",
+    "hidden": false
+  },
+  {
+    "physical": 4,
+    "footer": 3,
+    "title": "Overview",
+    "notes_path": "ppt/notesSlides/notesSlide4.xml",
+    "hidden": false
+  },
+  {
+    "physical": 5,
+    "footer": 4,
+    "title": "Cartesian pose",
+    "notes_path": "ppt/notesSlides/notesSlide5.xml",
+    "hidden": false
+  },
+  {
+    "physical": 6,
+    "footer": 5,
+    "title": "Surface frame",
+    "notes_path": "ppt/notesSlides/notesSlide35.xml",
+    "hidden": false
+  },
+  {
+    "physical": 7,
+    "footer": 6,
+    "title": "Cartesian impedance controller",
+    "notes_path": "ppt/notesSlides/notesSlide6.xml",
+    "hidden": false
+  },
+  {
+    "physical": 8,
+    "footer": 7,
+    "title": "Real-time control",
+    "notes_path": "ppt/notesSlides/notesSlide7.xml",
+    "hidden": false
+  },
+  {
+    "physical": 9,
+    "footer": 8,
+    "title": "Centre of compliance (CoC)",
+    "notes_path": "ppt/notesSlides/notesSlide9.xml",
+    "hidden": false
+  },
+  {
+    "physical": 10,
+    "footer": 9,
+    "title": "Translation\u2013rotation coupling",
+    "notes_path": "ppt/notesSlides/notesSlide8.xml",
+    "hidden": false
+  },
+  {
+    "physical": 11,
+    "footer": 10,
+    "title": "Contact experiment",
+    "notes_path": "ppt/notesSlides/notesSlide11.xml",
+    "hidden": false
+  },
+  {
+    "physical": 12,
+    "footer": 11,
+    "title": "Plausibility experiment",
+    "notes_path": "ppt/notesSlides/notesSlide38.xml",
+    "hidden": false
+  },
+  {
+    "physical": 13,
+    "footer": 12,
+    "title": "Normal-force plausibility assessment",
+    "notes_path": "ppt/notesSlides/notesSlide14.xml",
+    "hidden": false
+  },
+  {
+    "physical": 14,
+    "footer": 13,
+    "title": "Moment plausibility assessment",
+    "notes_path": "ppt/notesSlides/notesSlide15.xml",
+    "hidden": false
+  },
+  {
+    "physical": 15,
+    "footer": 14,
+    "title": "Commanded and estimated wrench",
+    "notes_path": "ppt/notesSlides/notesSlide16.xml",
+    "hidden": false
+  },
+  {
+    "physical": 16,
+    "footer": 15,
+    "title": "Effect of rotational stiffness",
+    "notes_path": "ppt/notesSlides/notesSlide18.xml",
+    "hidden": false
+  },
+  {
+    "physical": 17,
+    "footer": 16,
+    "title": "Effect of CoC position",
+    "notes_path": "ppt/notesSlides/notesSlide19.xml",
+    "hidden": false
+  },
+  {
+    "physical": 18,
+    "footer": 17,
+    "title": "Angular error and interaction wrench",
+    "notes_path": "ppt/notesSlides/notesSlide20.xml",
+    "hidden": false
+  },
+  {
+    "physical": 19,
+    "footer": 18,
+    "title": "Null-space controller",
+    "notes_path": "ppt/notesSlides/notesSlide10.xml",
+    "hidden": false
+  },
+  {
+    "physical": 20,
+    "footer": 19,
+    "title": "Disturbance demonstration",
+    "notes_path": "ppt/notesSlides/notesSlide36.xml",
+    "hidden": false
+  },
+  {
+    "physical": 21,
+    "footer": 20,
+    "title": "Disturbance demonstration",
+    "notes_path": "ppt/notesSlides/notesSlide37.xml",
+    "hidden": false
+  },
+  {
+    "physical": 22,
+    "footer": 21,
+    "title": "Null-space experiment",
+    "notes_path": "ppt/notesSlides/notesSlide13.xml",
+    "hidden": false
+  },
+  {
+    "physical": 23,
+    "footer": 22,
+    "title": "Cumulative joint motion",
+    "notes_path": "ppt/notesSlides/notesSlide31.xml",
+    "hidden": false
+  },
+  {
+    "physical": 24,
+    "footer": 23,
+    "title": "Jacobian conditioning",
+    "notes_path": "ppt/notesSlides/notesSlide32.xml",
+    "hidden": false
+  },
+  {
+    "physical": 25,
+    "footer": 24,
+    "title": "Joint motion over time",
+    "notes_path": "ppt/notesSlides/notesSlide33.xml",
+    "hidden": false
+  },
+  {
+    "physical": 26,
+    "footer": 25,
+    "title": "Conclusion",
+    "notes_path": "ppt/notesSlides/notesSlide24.xml",
+    "hidden": false
+  },
+  {
+    "physical": 27,
+    "footer": "B1",
+    "title": "Opposing moment",
+    "notes_path": "ppt/notesSlides/notesSlide39.xml",
+    "hidden": true
+  },
+  {
+    "physical": 28,
+    "footer": "B2",
+    "title": "Null-space torques and projector",
+    "notes_path": "ppt/notesSlides/notesSlide25.xml",
+    "hidden": true
+  },
+  {
+    "physical": 29,
+    "footer": "B3",
+    "title": "Angular quantities",
+    "notes_path": "ppt/notesSlides/notesSlide12.xml",
+    "hidden": true
+  },
+  {
+    "physical": 30,
+    "footer": "B4",
+    "title": "Baseline angular error",
+    "notes_path": "ppt/notesSlides/notesSlide17.xml",
+    "hidden": true
+  },
+  {
+    "physical": 31,
+    "footer": "B5",
+    "title": "Sources of angular offset",
+    "notes_path": "ppt/notesSlides/notesSlide40.xml",
+    "hidden": true
+  }
+]

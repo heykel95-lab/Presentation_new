@@ -1,0 +1,20 @@
+{
+  "date": "2026-10-01",
+  "footer": 21,
+  "physical_slide": 22,
+  "title": "Null-space experiment",
+  "combined_heading": "Cartesian pose hold with commanded disturbance",
+  "layout": "One heading, captured-pose statement, then native disturbance equation and virtual-force definition. Four-condition block unchanged.",
+  "changed_package_parts": [
+    "ppt/slides/slide13.xml"
+  ],
+  "all_notes_equations_media_other_slides_preserved": true,
+  "full_pdf_pages": 31,
+  "supplementary_pdf_pages": 5,
+  "other_30_pages_pixel_identical": true,
+  "changed_pdf_pages": [
+    22
+  ],
+  "visual_review": "Passed. One combined bullet, no text wrapping or overlap. Equation and 20 N definition retained.",
+  "installed": true
+}

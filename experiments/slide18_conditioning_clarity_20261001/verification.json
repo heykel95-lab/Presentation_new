@@ -1,0 +1,26 @@
+{
+  "date": "2026-10-01",
+  "footer": 18,
+  "physical_slide": 19,
+  "title": "Null-space controller",
+  "conditioning_bullets": [
+    "Adjusts joint posture in the null space.",
+    "Seeks postures away from singularities, where the EE loses a motion direction."
+  ],
+  "rationale": "Explain joint-posture adjustment and directly connect its purpose to singularities. It is not reference joint-position tracking.",
+  "only_edited_shape": "Conditioning role",
+  "equations_other_slide_content_and_notes_preserved": true,
+  "changed_package_parts": [
+    "ppt/slides/slide10.xml"
+  ],
+  "all_other_package_parts_byte_identical": true,
+  "visually_changed_physical_pages": [
+    19
+  ],
+  "other_30_pages_pixel_identical": true,
+  "native_powerpoint_and_pdf_layouts_visually_checked": true,
+  "pdf_pages": 31,
+  "supplementary_pages": 5,
+  "supplementary_pdf_unchanged_and_current": true,
+  "active_deliverables_updated": true
+}

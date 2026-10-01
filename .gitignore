@@ -29,3 +29,20 @@ __pycache__/
 
 # Local rollback copies; final assets and verification records stay tracked
 /experiments/**/archive/
+
+# Local dependencies and generated outputs from presentation edit workspaces
+node_modules/
+/experiments/*_20261001/*.pdf
+/experiments/*_20261001/*.png
+/experiments/*_20261001/*.jpg
+/experiments/*_20261001/*.svg
+/experiments/*_20261001/*.pptx
+/experiments/*_20261001/*.xml
+/experiments/*_20261001/*.xml.rels
+/experiments/*_20261001/*.bin
+/experiments/*_20261001/duplicate*_cleanup*.json
+/experiments/*_20261001/*-build.txt
+/experiments/*_20261001/latex-build.txt
+
+# Compiled figures beside their editable sources; final exports live one level up
+/Final Presentation/figures_and_images/sources/*.pdf

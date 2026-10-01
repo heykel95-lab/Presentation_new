@@ -1,0 +1,34 @@
+{
+  "date": "2026-10-01",
+  "footer": 18,
+  "physical_slide": 19,
+  "plain_label": "Null space dimension",
+  "arithmetic": "7 - 6 = 1",
+  "latex": "\\displaystyle \\text{Null space dimension}=7-6=1",
+  "only_edited_shape": "Equation - null_controller_dimension",
+  "full_rank_qualification_preserved": true,
+  "native_equation_retained": true,
+  "equation_font": "Cambria Math 22 pt regular; label upright",
+  "other_equations_text_notes_and_media_preserved": true,
+  "visually_changed_physical_pages": [
+    19
+  ],
+  "other_30_pages_pixel_identical": true,
+  "full_pdf_pages": 31,
+  "pdf_increment_bytes": 192894,
+  "original_pdf_archived_losslessly": true,
+  "equation_asset_crop_pt": [
+    76.92,
+    216.71000000000004,
+    403.85913600000003,
+    248.79044800000003
+  ],
+  "changed_package_parts": [
+    "ppt/slides/slide10.xml"
+  ],
+  "all_other_package_parts_byte_identical": true,
+  "native_equation_and_sources_synchronized": true,
+  "native_and_pdf_renders_visually_checked": true,
+  "supplementary_pdf_unchanged_and_current": true,
+  "active_deliverables_updated": true
+}

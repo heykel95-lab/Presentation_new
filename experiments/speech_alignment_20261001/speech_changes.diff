@@ -1,0 +1,43 @@
+--- previous speech
++++ aligned speech
+@@ -164,25 +164,25 @@
+ 
+ \section*{Null-space controller}
+ \begin{itemize}
+-\item Another study in this work analysed null-space behaviour. Our Cartesian pose has six degrees of freedom, while the robot has seven joints, leaving one redundant direction when the Jacobian has full rank.
+-\item Several joints can move together in this direction without changing the instantaneous Cartesian motion. We introduced a damping torque to oppose this motion and a conditioning torque to seek a configuration with a larger minimum singular value of the Jacobian.
+-\item At a singularity, the Jacobian loses rank and the end effector loses an instantaneous motion direction. Near a singularity, some motions require very high joint velocities.
+-\end{itemize}
+-
+-\section*{Disturbance demonstration - Part 1}
+-\begin{itemize}
+-\item This first part shows manual disturbances applied to the robot arm. It gives a qualitative view of how the joints respond.
+-\end{itemize}
+-
+-\section*{Disturbance demonstration - Part 2}
+-\begin{itemize}
+-\item This is the continuation of the same demonstration. The following experiment gives the quantitative comparison between the null-space settings.
++\item Another study in this work analysed null-space behaviour. Our Cartesian pose has six degrees of freedom, while the robot has seven joints, leaving one redundant direction when the Jacobian has full rank. Several joints can move together in this direction without changing the instantaneous Cartesian motion.
++\item We introduced a damping torque to oppose this motion.
++\item The conditioning torque seeks a configuration with a larger minimum singular value of the Jacobian. At a singularity, the Jacobian loses rank and the end effector loses an instantaneous motion direction. Near a singularity, some motions require very high joint velocities.
++\end{itemize}
++
++\section*{Disturbance - Without null-space control to damping}
++\begin{itemize}
++\item This first video shows the response to a torque disturbance, first without null-space control and then with damping. It gives a qualitative view of how the joints respond.
++\end{itemize}
++
++\section*{Disturbance - Conditioning only}
++\begin{itemize}
++\item This is the continuation of the same demonstration, now with conditioning only. The following experiment gives the quantitative comparison between the null-space settings.
+ \end{itemize}
+ 
+ \section*{Null-space experiment}
+ \begin{itemize}
+-\item To study this case, we added a commanded torque disturbance equivalent to a virtual force of 20 newtons on link three. Through the Jacobian mapping, this disturbance acted mainly on joint one, while the captured Cartesian pose remained the reference.
+-\item We compare four conditions with three trials each: no null-space torque, damping alone, conditioning alone, and both torques together. The enabled settings are 2 newton metres for conditioning and 2 newton metre seconds per radian for damping.
++\item To study this case, we held the captured Cartesian pose as the reference and added a commanded torque disturbance equivalent to a virtual force of 20 newtons on link three. Through the Jacobian mapping, this disturbance acted mainly on joint one.
++\item With the disturbance applied, we compare four conditions with three trials each: no null-space control torque, conditioning alone, damping alone, and both torques together. The enabled settings are 2 newton metres for conditioning and 2 newton metre seconds per radian for damping.
+ \item The following plots show the same four-second interval after disturbance onset. The curves are three-trial means, and the shading shows one sample standard deviation.
+ \end{itemize}
+ 

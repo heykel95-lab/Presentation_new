@@ -1,0 +1,30 @@
+{
+  "date": "2026-10-01",
+  "physical_slide": 19,
+  "footer": 18,
+  "conditioning_bullet": "Seeks a larger minimum singular value \u03c3_min of J, moving away from singularities.",
+  "first_conditioning_bullet_preserved": true,
+  "native_equation_contents_preserved": true,
+  "all_other_shapes_and_notes_preserved": true,
+  "full_pdf_pages": 31,
+  "other_30_pages_pixel_identical": true,
+  "changed_physical_pages": [
+    19
+  ],
+  "pdf_increment_bytes": 196665,
+  "supplementary_pdf_sha256": "8f0b42f43b3829177a2dbda49be01cd61ff0d5aace4076965db58b012b4c2ef8",
+  "speaking_file_hashes": {
+    "Thesis_Defense_Speaking_Script.pdf": "28cb17683217dc2d145ba783c2cd2efe0d923e04baf215c668d2345b8baf2063",
+    "Thesis_Defense_Speaking_Script_updated.pdf": "28cb17683217dc2d145ba783c2cd2efe0d923e04baf215c668d2345b8baf2063",
+    "Speaking\\Thesis_Defense_Speaking_Script.tex": "d00efa09b626a830588edc2f650a26b1fb22882dd1c055cb4d96f2ddfc70789e",
+    "Speaker_notes_and_timing.txt": "f4369be1e22805614e165ac1261a3db88e4f82440c45cabe3dc43d208f804c32"
+  },
+  "changed_package_parts": [
+    "ppt/slides/slide10.xml"
+  ],
+  "all_other_package_parts_byte_identical": true,
+  "native_render_visually_checked": true,
+  "speaking_files_unchanged": true,
+  "supplementary_pdf_unchanged": true,
+  "installed": true
+}

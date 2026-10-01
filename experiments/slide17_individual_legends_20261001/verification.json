@@ -1,0 +1,54 @@
+{
+  "date": "2026-10-01",
+  "footer": 17,
+  "physical_slide": 18,
+  "legend_layout": "Three identical three-row colour keys, one centred beneath each plot.",
+  "legend_positions_pt": [
+    {
+      "plot": "angular error",
+      "x": 142.809,
+      "y": 398,
+      "width": 126.382,
+      "height": 60.159
+    },
+    {
+      "plot": "normal force",
+      "x": 442.80899999999997,
+      "y": 398,
+      "width": 126.382,
+      "height": 60.159
+    },
+    {
+      "plot": "TCP moment",
+      "x": 742.809,
+      "y": 398,
+      "width": 126.382,
+      "height": 60.159
+    }
+  ],
+  "plot_sizes_positions_data_labels_and_timing_unchanged": true,
+  "original_shared_legend_asset_preserved": true,
+  "notes_equations_media_and_other_slides_unchanged": true,
+  "visually_changed_physical_pages": [
+    18
+  ],
+  "other_30_pages_pixel_identical": true,
+  "full_pdf_pages": 31,
+  "pdf_increment_bytes": 252889,
+  "plot_and_legend_pdf_vectors_preserved": true,
+  "native_powerpoint_render_reviewed": true,
+  "supplementary_pdf_sha256": "ce2065935cc328df783cd0f09f400a915aa177ee5f9c8321ffcf9e2d527995e9",
+  "supplementary_pdf_pages": 5,
+  "changed_existing_package_parts": [
+    "ppt/slides/_rels/slide20.xml.rels",
+    "ppt/slides/slide20.xml"
+  ],
+  "added_package_parts": [
+    "ppt/media/contact_legend_per_plot.png"
+  ],
+  "all_other_package_parts_byte_identical": true,
+  "legend_source_assets_synchronized": true,
+  "native_and_pdf_renders_visually_checked": true,
+  "supplementary_pdf_unchanged_and_current": true,
+  "active_deliverables_updated": true
+}

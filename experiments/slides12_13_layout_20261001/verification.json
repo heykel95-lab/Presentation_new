@@ -1,0 +1,49 @@
+{
+  "date": "2026-10-01",
+  "footers": [
+    12,
+    13
+  ],
+  "physical_slides": [
+    13,
+    14
+  ],
+  "equation_origin_pt": [
+    60,
+    360
+  ],
+  "heading_origin_pt": [
+    60,
+    61
+  ],
+  "heading_style": "Arial 22 pt regular, navy 17365D, left aligned",
+  "plot_origin_pt": [
+    155,
+    89
+  ],
+  "plot_size_pt": [
+    650,
+    269.6105511811024
+  ],
+  "original_equation_xml_and_visible_text_preserved": true,
+  "planned_changed_package_parts": [
+    "ppt/slides/slide14.xml",
+    "ppt/slides/slide15.xml"
+  ],
+  "changed_package_parts": [
+    "ppt/slides/slide14.xml",
+    "ppt/slides/slide15.xml"
+  ],
+  "all_other_package_parts_byte_identical": true,
+  "all_notes_equations_videos_and_source_assets_preserved": true,
+  "visually_changed_physical_pages": [
+    13,
+    14
+  ],
+  "other_29_pages_pixel_identical": true,
+  "pdf_uses_original_vector_plot_assets": true,
+  "native_powerpoint_and_pdf_layouts_visually_checked": true,
+  "pdf_pages": 31,
+  "supplementary_pages": 5,
+  "active_deliverables_updated": true
+}

@@ -12,6 +12,9 @@ latexmk automatically runs all required compilation passes.
 The script includes all slide sections, including Contact demonstration and Disturbance demonstration in deck order. Their narration is included automatically when the speaking PDF rebuilds. PowerPoint notes must be kept synchronized when narration changes; the LaTeX watcher compiles the PDF and does not rewrite the slide contents.
 Requires MiKTeX (pdflatex and latexmk) and Perl, already available here.
 
-Current structure: 17 main slides plus 6 backups, with 23 speaking sections in exact deck order.
-Update the text and PowerPoint notes after every slide edit, then rebuild this PDF.
-The Overview lists subsequent slide titles through Conclusion, excluding videos; see root AGENTS.md.
+Current structure (2026-10-01): 26 main slides plus five hidden backups, with 31 speaking sections in exact deck order. The two disturbance-video sections identify the current captions: without null-space control to damping, and conditioning only. Backup sections follow Conclusion.
+The user authorized reorganization of the spoken text on 2026-10-01. The LaTeX source, printable PDF, plain-text copy and PowerPoint spoken notes are synchronized. Preserve this wording during unrelated slide edits unless the user requests another speech update.
+The Overview lists the six main chapter names, excluding Backup; see root AGENTS.md.
+Verification and the previous speech are retained in ../../experiments/speech_reorganization_20261001/.
+
+Latest minimal speech alignment (2026-10-01): only the null-space controller, two disturbance videos and null-space experiment sections were adjusted after the slide changes. The other 27 sections are unchanged. The PDF remains seven pages. Sources and verification: ../../experiments/speech_alignment_20261001/.

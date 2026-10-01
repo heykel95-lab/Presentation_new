@@ -1,0 +1,89 @@
+{
+  "date": "2026-10-01",
+  "changed_physical_sections": [
+    19,
+    20,
+    21,
+    22
+  ],
+  "changed_footers": [
+    18,
+    19,
+    20,
+    21
+  ],
+  "other_27_sections_unchanged": true,
+  "main_sections": 26,
+  "backup_sections": 5,
+  "notes_parts": [
+    "ppt/notesSlides/notesSlide10.xml",
+    "ppt/notesSlides/notesSlide36.xml",
+    "ppt/notesSlides/notesSlide37.xml",
+    "ppt/notesSlides/notesSlide13.xml"
+  ],
+  "existing_source_notes_preserved": true,
+  "unchanged_slide_pdf_hashes": {
+    "Thesis_Defense_gg0_v3.pdf": "185a981c9d02256f9ab62a1ab4abfab885236d5cda97b64c229546d0f81e8c53",
+    "Supplementary_slides.pdf": "ce2065935cc328df783cd0f09f400a915aa177ee5f9c8321ffcf9e2d527995e9"
+  },
+  "speech_pdf_pages": 7,
+  "latex_no_overfull_boxes": true,
+  "all_speech_pages_rendered": true,
+  "speech_page_text_bounds": [
+    [
+      62.361999999999995,
+      60.61454159999994,
+      533.3495391999998,
+      741.8682335999999
+    ],
+    [
+      62.361999999999995,
+      60.61454159999994,
+      535.0010840704001,
+      715.3292336
+    ],
+    [
+      62.361999999999995,
+      60.61454159999994,
+      535.0067747455998,
+      753.5862336
+    ],
+    [
+      62.361999999999995,
+      60.61454159999994,
+      535.0071037696,
+      751.9902336
+    ],
+    [
+      62.361999999999995,
+      62.36279999999999,
+      535.008337152,
+      780.4432336
+    ],
+    [
+      62.361999999999995,
+      60.61454159999994,
+      533.112676544,
+      767.0612278
+    ],
+    [
+      62.361999999999995,
+      62.36279999999999,
+      535.0094288,
+      687.8302335999999
+    ]
+  ],
+  "changed_package_parts": [
+    "ppt/notesSlides/notesSlide13.xml",
+    "ppt/notesSlides/notesSlide10.xml",
+    "ppt/notesSlides/notesSlide36.xml",
+    "ppt/notesSlides/notesSlide37.xml"
+  ],
+  "all_other_package_parts_byte_identical": true,
+  "all_seven_speech_pages_visually_checked": true,
+  "spoken_notes_match_speech": true,
+  "both_speaking_pdfs_identical": true,
+  "all_speech_equations_preserved": true,
+  "slide_pdfs_unchanged": true,
+  "installed": true
+}

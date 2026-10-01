@@ -1,0 +1,45 @@
+{
+  "date": "2026-10-01",
+  "physical_slide": 18,
+  "footer": 17,
+  "title": "Angular error and interaction wrench",
+  "panel_size_before_pt": [
+    224,
+    231.826087
+  ],
+  "panel_size_after_pt": [
+    224,
+    168
+  ],
+  "panel_aspect_ratio": "4:3",
+  "picture_box_after_pt": [
+    30,
+    135,
+    900,
+    310
+  ],
+  "legend_center_pt": 480,
+  "changed_package_parts": [
+    "ppt/media/image50.png",
+    "ppt/slides/slide20.xml"
+  ],
+  "speaker_notes_equations_videos_other_slides_unchanged": true,
+  "data_panel_pdfs_labels_fonts_grid_limits_timing_unchanged": true,
+  "artifact_import_error": "Unsupported a14:m payload. Expected m:oMathPara or m:oMath.",
+  "preservation_method": "Retained original package. Replaced only the compiled figure image and five existing shape coordinates, as required to preserve native Office equations, video playback, and all other slides.",
+  "full_pdf_pages": 31,
+  "supplementary_pdf_pages": 5,
+  "visually_changed_pdf_pages": [
+    18
+  ],
+  "other_30_pdf_pages_pixel_identical": true,
+  "supplementary_pages_pixel_identical_to_full_pdf": true,
+  "visual_review": "Passed. Equal landscape panels, native label proportions, aligned headings and centred legend.",
+  "installed": true,
+  "speaking_files_unchanged_sha256": {
+    "Final Presentation\\Speaking\\Thesis_Defense_Speaking_Script.tex": "97e94d67e6300962db2ce88dbe49d49c06a1d6275f8ec5905610841b18bea6a4",
+    "Final Presentation\\Thesis_Defense_Speaking_Script.pdf": "615858d82b6e24a4bb6736dcbe929db1bf49d0a8f1b7841adc3e186ff1c19c6b",
+    "Final Presentation\\Thesis_Defense_Speaking_Script_updated.pdf": "615858d82b6e24a4bb6736dcbe929db1bf49d0a8f1b7841adc3e186ff1c19c6b",
+    "Final Presentation\\Speaker_notes_and_timing.txt": "ff633705dada9661da4c2f9c1bb30ae7e1ff6085fc287a1d337818b480e323e6"
+  }
+}

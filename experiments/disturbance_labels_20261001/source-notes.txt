@@ -1,0 +1,1 @@
+Edit three existing labels according to the user description. Keep inherited Arial fonts and sizes, all original videos, playback, notes and equations. Artifact-tool import previously failed on native a14:m Office Math; narrow package edits preserve that content. Preview deck omits video binaries only for static rendering.

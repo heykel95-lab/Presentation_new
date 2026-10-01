@@ -1,0 +1,30 @@
+{
+  "19": [
+    "Null-space controller",
+    [
+      "Another study in this work analysed null-space behaviour. Our Cartesian pose has six degrees of freedom, while the robot has seven joints, leaving one redundant direction when the Jacobian has full rank. Several joints can move together in this direction without changing the instantaneous Cartesian motion.",
+      "We introduced a damping torque to oppose this motion.",
+      "The conditioning torque seeks a configuration with a larger minimum singular value of the Jacobian. At a singularity, the Jacobian loses rank and the end effector loses an instantaneous motion direction. Near a singularity, some motions require very high joint velocities."
+    ]
+  ],
+  "20": [
+    "Disturbance - Without null-space control to damping",
+    [
+      "This first video shows the response to a torque disturbance, first without null-space control and then with damping. It gives a qualitative view of how the joints respond."
+    ]
+  ],
+  "21": [
+    "Disturbance - Conditioning only",
+    [
+      "This is the continuation of the same demonstration, now with conditioning only. The following experiment gives the quantitative comparison between the null-space settings."
+    ]
+  ],
+  "22": [
+    "Null-space experiment",
+    [
+      "To study this case, we held the captured Cartesian pose as the reference and added a commanded torque disturbance equivalent to a virtual force of 20 newtons on link three. Through the Jacobian mapping, this disturbance acted mainly on joint one.",
+      "With the disturbance applied, we compare four conditions with three trials each: no null-space control torque, conditioning alone, damping alone, and both torques together. The enabled settings are 2 newton metres for conditioning and 2 newton metre seconds per radian for damping.",
+      "The following plots show the same four-second interval after disturbance onset. The curves are three-trial means, and the shading shows one sample standard deviation."
+    ]
+  ]
+}

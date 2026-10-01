@@ -1,0 +1,37 @@
+{
+  "date": "2026-10-01",
+  "physical_slide": 19,
+  "footer": 18,
+  "added_label": "Null-space condition:",
+  "label_position_pt": [
+    530,
+    218,
+    205,
+    30
+  ],
+  "label_font": "Cambria Math 22 pt, regular, black; matches the dimension label",
+  "native_equation_retained_unchanged": true,
+  "equation_left_pt": 741,
+  "all_other_shapes_and_notes_preserved": true,
+  "full_pdf_pages": 31,
+  "other_30_pages_pixel_identical": true,
+  "changed_physical_pages": [
+    19
+  ],
+  "pdf_increment_bytes": 195190,
+  "supplementary_pdf_sha256": "ce2065935cc328df783cd0f09f400a915aa177ee5f9c8321ffcf9e2d527995e9",
+  "speaking_file_hashes": {
+    "Thesis_Defense_Speaking_Script.pdf": "28cb17683217dc2d145ba783c2cd2efe0d923e04baf215c668d2345b8baf2063",
+    "Thesis_Defense_Speaking_Script_updated.pdf": "28cb17683217dc2d145ba783c2cd2efe0d923e04baf215c668d2345b8baf2063",
+    "Speaking\\Thesis_Defense_Speaking_Script.tex": "d00efa09b626a830588edc2f650a26b1fb22882dd1c055cb4d96f2ddfc70789e",
+    "Speaker_notes_and_timing.txt": "f4369be1e22805614e165ac1261a3db88e4f82440c45cabe3dc43d208f804c32"
+  },
+  "changed_package_parts": [
+    "ppt/slides/slide10.xml"
+  ],
+  "all_other_package_parts_byte_identical": true,
+  "native_render_visually_checked": true,
+  "speaking_files_unchanged": true,
+  "supplementary_pdf_unchanged": true,
+  "installed": true
+}

@@ -1,0 +1,5 @@
+Source: active Final Presentation/Thesis_Defense_gg0_v3.pptx, footer 18 / physical slide 19, ppt/slides/slide10.xml.
+Combined only the two upper explanations into one bullet and removed the Primary Cartesian task label at the user's request.
+The existing deck supplies all text, equation content, typography and layout. No external claims or assets added.
+Artifact-tool import was already attempted in this session and failed on this deck's native Office Math (Unsupported a14:m payload. Expected m:oMathPara or m:oMath.). Use a narrow ZIP/XML replacement and native PowerPoint PDF export to preserve those equations, five embedded recordings, notes and every unrelated package part.
+Original target XML and all package SHA256 hashes are archived for reversibility without duplicating the 302 MB deck on a nearly full disk. Original presentation PDFs are also archived.

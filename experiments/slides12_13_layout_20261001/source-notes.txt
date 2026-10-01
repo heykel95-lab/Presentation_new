@@ -1,0 +1,6 @@
+User requested left-aligned equations and matching Manual push / Manual rotation labels above the plots on footer slides 12 and 13.
+Source: active Final Presentation/Thesis_Defense_gg0_v3.pptx. Physical slides 13 and 14, ppt/slides/slide14.xml and slide15.xml.
+Preserve all equation XML, chart data and source assets, numerical captions, notes, videos, other slides and speaking material.
+The labels already used Arial but were 18 pt black. Match the existing Arial 22 pt regular navy section headings and move above the charts.
+Artifact-tool import already failed on this deck's native Office Math. Use the established narrow ZIP/XML edit workflow, preserving the existing deck structure and all unmodified package bytes.
+Disk space is critically limited. Removed only exact duplicate PDF outputs created in this session, verifying a retained byte-identical copy first. Original PDFs are archived by hard link and final PDFs must be installed by replacement. Preview rendering uses the full relationship graph of the two target slides in a small deck, omitting unrelated slide relationships and their large video payloads. Archive original central-directory bytes for safe, reversible ZIP append replacement of two slide entries after visual review.

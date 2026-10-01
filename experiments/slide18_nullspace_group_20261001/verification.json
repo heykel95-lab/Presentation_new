@@ -1,0 +1,33 @@
+{
+  "date": "2026-10-01",
+  "footer": 18,
+  "physical_slide": 19,
+  "title": "Null-space controller",
+  "combined_heading": "Redundancy and null-space motion:",
+  "single_bullet": "At full Jacobian rank, one null-space direction allows several joints to move together without changing the instantaneous motion of the EE.",
+  "removed_label": "Primary Cartesian task:",
+  "changed_package_parts": [
+    "ppt/slides/slide10.xml"
+  ],
+  "all_native_equations_preserved": true,
+  "damping_and_conditioning_sections_unchanged": true,
+  "notes_media_and_all_other_slides_preserved": true,
+  "visually_changed_physical_pages": [
+    19
+  ],
+  "change_bounds_at_1000px": {
+    "19": [
+      21,
+      99,
+      877,
+      545
+    ]
+  },
+  "other_30_pages_pixel_identical": true,
+  "equations_and_lower_torque_sections_pixel_identical": true,
+  "native_pdf_export_footer_logo_rasterization_only": "The unchanged HM logo re-rasterized within x=21..63, y=523..545 at 1000px; its PowerPoint package source is unchanged.",
+  "pdf_pages": 31,
+  "supplementary_pages": 5,
+  "native_render_visually_checked": true,
+  "active_deliverables_updated": true
+}

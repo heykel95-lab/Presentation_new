@@ -1,0 +1,14 @@
+\documentclass[tikz,border=2bp]{standalone}
+\usepackage{graphicx,amsmath}
+% Same text, colours, swatches and 15 pt legend typography as the original.
+% Repeat this compact key beneath each plot; the data panels are unchanged.
+\begin{document}
+\begin{tikzpicture}[x=1bp,y=1bp]
+\draw[black,line width=1.3bp] (0,40)--(18,40);
+\node[anchor=west,font=\fontsize{15}{17}\selectfont] at (22,40) {$r_{c,t_2}=-40\,\mathrm{mm}$};
+\draw[red,line width=1.3bp] (0,22)--(18,22);
+\node[anchor=west,font=\fontsize{15}{17}\selectfont] at (22,22) {TCP: $r_{c,t_2}=0$};
+\draw[blue,line width=1.3bp] (0,4)--(18,4);
+\node[anchor=west,font=\fontsize{15}{17}\selectfont] at (22,4) {$r_{c,t_2}=+40\,\mathrm{mm}$};
+\end{tikzpicture}
+\end{document}

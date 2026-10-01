@@ -1,0 +1,1009 @@
+Master Thesis Presentation
+
+
+                   Hochschule München
+                   University of Applied Sciences
+
+
+
+
+ Design and Implementation of a Real-Time
+ Impedance Controller for a 7-DOF
+ Collaborative Robot
+
+ Heykel Khadhraoui
+ Computational Engineering (M.Sc.)
+
+
+ Supervisors: Prof. Norbert Nitzsche · Prof. Ruth Otto
+
+ Date: 30.09.2026
+
+
+
+
+   Design and Implementation of a Real-Time Impedance Controller for a 7-DOF Collaborative Robot
+   Master Thesis · Heykel Khadhraoui
+Motivation
+
+
+•   Problem
+    • Grinding requires an aligned tool face.
+
+    • Calibration leaves uncertainty in the physical
+      surface orientation.
+    • Joint friction can prevent the desired tool
+      alignment with the configured surface.
+
+
+•   Idea
+    • Cartesian impedance makes position and
+      rotation compliant.
+    • Pressing a tilted tool creates a contact moment.
+
+    • Rotational compliance allows the tool to turn
+      towards alignment.
+
+    Design and Implementation of a Real-Time Impedance Controller for a 7-DOF Collaborative Robot   1
+    Master Thesis · Heykel Khadhraoui
+Contact demonstration
+
+
+
+
+   Design and Implementation of a Real-Time Impedance Controller for a 7-DOF Collaborative Robot   2
+   Master Thesis · Heykel Khadhraoui
+Overview
+
+
+
+         1. Introduction
+
+         2. Cartesian controller
+
+         3. Contact experiments
+
+         4. Contact results
+
+         5. Null-space control and experiments
+
+         6. Conclusion and future work
+
+
+
+  Design and Implementation of a Real-Time Impedance Controller for a 7-DOF Collaborative Robot   3
+  Master Thesis · Heykel Khadhraoui
+Cartesian pose
+
+
+
+
+                  •     Position: 3 translations                                                   •   Orientation: 3 rotations
+
+
+
+
+                                                                                                               p égal à p ouvrir parenthèse q fermer parenthèse
+
+
+
+
+  •    The EE position depends on the configuration of all 7 joint angles: 𝑝 = 𝑝(𝑞)
+   Design and Implementation of a Real-Time Impedance Controller for a 7-DOF Collaborative Robot                                                                  4
+   Master Thesis · Heykel Khadhraoui
+                                                          Contact experiment
+   Tool frame
+Surface orientation                                       →    Surface approach                                      →         Contact establishment                                                                                                                                        →    Surface grinding
+
+                                                              Tool orientation                                   →   Surface approach                                                                                                                                              →   Contact establishment                                                                                                                 →       Su
+•   Surface-relative compliance                                                                                                •     Compliant contact settings
+
+                                                          •   Surface-relative compliance
+                                                                                      • Normal translation • Compliant contact settings
+                                                                                                                                                                     maj K indice , p ,n fin indice égal à 350 N sur m
+
+
+
+
+                                                                                                 𝐾𝑝,𝑛 = 350 N/m
+                                                                                                                                                                                                                                                                                       •   Normal translation
+                                                                                                                               •     Tangential translation
+                                                                                                                                                                                                                                                                                                               maj K indice , p ,n fin indice égal à 350 N sur m
+
+
+
+
+                                                                                                                                                                                  𝐾𝑝,𝑛 = 350 N/m
+                                                                                                                                                          maj K indice , p ,t indice 1 , fin indice égal à maj K indice , p ,t indice 2 , fin indice égal à 2000 N sur m
+
+
+
+
+                                                                                                                                                                         = 2000 N/m
+                                                                                                                                                         𝐾𝑝,𝑡1 = 𝐾𝑝,𝑡• 2 Tangential translation
+                                                                                                                               •     Rotation about the surface normal
+                                                                                                                                                                                                                                                                                                    maj K indice , p ,t indice 1 , fin indice égal à maj K indice , p ,t indice 2 , fin indice égal à 2000 N sur m
+
+
+
+
+                                                                                                                                                                    maj K indice , maj R ,n fin indice égal à 50 N m sur rad
+                                                                                                                                                                                                                                                                                                   𝐾𝑝,𝑡1 = 𝐾𝑝,𝑡2 = 2000
+                                                                                                                                                                                m/rad about the surface norma
+                                                                                                                                                                   𝐾𝑅,𝑛 = 50 •N Rotation
+                                                                                                                               •     Rotations about the surface tangents                                                                                                                                     maj K indice , maj R ,n fin indice égal à 50 N m sur rad
+
+
+
+
+                                                                                                                                                                                  𝐾𝑅,𝑛 = 50 N m/rad
+                                                                                                                                                         maj K indice , maj R ,t indice 1 , fin indice égal à maj K indice , maj R ,t indice 2 , fin indice égal à 5 N m sur rad
+
+
+
+
+                     𝑛𝑠 outward surface normal
+                                             n indice s
+
+
+
+                                                                                                                                                                         = 5 N m/rad
+                                                                                                                                                         𝐾𝑅,𝑡1 = 𝐾𝑅,𝑡• 2 Rotations about the surface tang
+                    𝑡1 , 𝑡2 perpendicular surface tangents
+                    t indice 1, t indice 2                                                                                                                                                                                                                                                         maj K indice , maj R ,t indice 1 , fin indice égal à maj K indice , maj R ,t indice 2 , fin indice égal à 5 N m sur rad
+
+
+
+
+                                                                                                                                                                                                                                                                                                   𝐾𝑅,𝑡1 = 𝐾𝑅,𝑡2 = 5 N m
+                                             𝑛𝑠 outward surface normal
+                                                                                                    n indice s
+
+
+
+
+       Design and Implementation of a Real-Time Impedance Controller for a 7-DOF Collaborative Robot                                                                                                                                                                                                                                                                                                                             9
+       Master Thesis · Heykel Khadhraoui
+                                            𝑡1 , 𝑡2 perpendicular surface tangents
+                                                                           t indice 1, t indice 2
+
+
+
+
+                                                              Design and Implementation of a Real-Time Impedance Controller for a 7-DOF Collaborative Robot
+                                                              Master Thesis · Heykel Khadhraoui
+    Design and Implementation of a Real-Time Impedance Controller for a 7-DOF Collaborative Robot                                                                                                                                                                                                                                                                                                                            5
+    Master Thesis · Heykel Khadhraoui
+Cartesian impedance controller
+
+
+
+ •        Positional error                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                             •   Rotational error
+          e indice p égal à p indice d moins p indice EE
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           e indice maj R égal à phi u
+
+
+
+
+          𝑒𝑝 = 𝑝𝑑 − 𝑝EE                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    𝑒𝑅 = 𝜙𝑢
+
+
+                             f égal à maj K indice p , e indice p plus maj D indice p , ouvrir parenthèse p point suscrit indice d moins p point suscrit indice EE fermer parenthèse
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                  m égal à maj K indice maj R , e indice maj R plus maj D indice maj R , ouvrir parenthèse oméga indice d moins oméga indice EE fermer parenthèse
+
+
+
+
+                              𝑓 = 𝐾𝑝 𝑒𝑝 + 𝐷𝑝 (𝑝ሶ𝑑 − 𝑝ሶEE )                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        𝑚 = 𝐾𝑅 𝑒𝑅 + 𝐷𝑅 (𝜔𝑑 − 𝜔EE )
+ •        Cartesian wrench
+          maj F égal à crochet gauche 2 par 1 matrice, f , ligne suivante, m fin matrice crochet droit égal à accolade inférieure , crochet gauche 2 par 2 matrice, maj K indice p fin colonne , 0 , ligne suivante, 0 , maj K indice maj R , fin matrice crochet droit , fin accolade inférieure , limite inférieure ouvrir parenthèse maj K indice c , fermer parenthèse , crochet gauche 2 par 1 matrice, e indice p , ligne suivante, e indice maj R , fin matrice crochet droit plus accolade inférieure , crochet gauche 2 par 2 matrice, maj D indice p fin colonne , 0 , ligne suivante, 0 , maj D indice maj R , fin matrice crochet droit , fin accolade inférieure , limite inférieure ouvrir parenthèse maj D indice c , fermer parenthèse , crochet gauche 2 par 1 matrice, p point suscrit indice d moins p point suscrit indice EE , ligne suivante, oméga indice d moins oméga indice EE , fin matrice crochet droit
+
+
+
+
+             𝑓   𝐾𝑝                                                                                                                                                                                                                                                                                                                                                               0 𝑒𝑝   𝐷𝑝                                                                                                                                                                                                                                                                                                                                                      0 𝑝ሶ𝑑 − 𝑝ሶEE
+          𝐹=   =                                                                                                                                                                                                                                                                                                                                                                     𝑒 +
+             𝑚   0                                                                                                                                                                                                                                                                                                                                                                𝐾𝑅 𝑅   0                                                                                                                                                                                                                                                                                                                                                       𝐷𝑅 𝜔𝑑 − 𝜔EE
+                                                                                                                                                                                                                                                                                                                                      𝐾𝑐                                                                                                                                                                                                                                                                                                                                                             𝐷𝑐
+
+     •                      In the surface frame, K and D are diagonal and decouple translation and rotation.
+
+
+
+         Design and Implementation of a Real-Time Impedance Controller for a 7-DOF Collaborative Robot                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                              6
+         Master Thesis · Heykel Khadhraoui
+                                                                                                                                                                                                                                                                                                                                                                                                                                 •   Joint-torque commands from Cartesian wrench
+                                                                                                  Real-time control
+mmands from Cartesian wrench                                                                                   𝑓
+                                                                                                          𝐹=     ,    𝜏=
+      • Joint­torque mapping                                            • Jacobian                             𝑚
+     • Joint-torque commands from Cartesian wrench                                                                                                                                                                                                                                                                                                                                                                                                                           crochet gauche 2 par 1 matrice, p point suscrit indice EE , ligne suivante, oméga indice EE , fin matrice crochet droit égal à maj J ouvrir parenthèse q fermer parenthèse q point suscrit
+
+
+
+
+                            𝑓                                                          𝑝ሶEE
+                   𝐹=           ,        𝜏 = 𝐽⊤ (𝑞)𝐹                • Jacobian                  = 𝐽(𝑞)𝑞ሶ
+                           𝑚                                                           𝜔EE
+                                                           𝑓              ⊤ (𝑞)𝐹
+                                                   𝐹   =       ,    𝜏 = 𝐽
+het gauche 2 par 1 matrice, p point suscrit indice EE , ligne suivante, oméga indice EE , fin matrice crochet droit égal à maj J ouvrir parenthèse q fermer parenthèse q point suscrit
+
+
+
+
+ 𝑝ሶEE                                                      𝑚
+𝜔EE
+       = 𝐽(𝑞)𝑞ሶ                                                         Pose error                     Wrench
+                                            Stiffness and damping                     Model + null­space
+      Desired reference
+                                                                                                                                                                                                        crochet gauche 2 par 1 matrice, p point suscrit indice EE , ligne suivante, oméga indice EE , fin matrice crochet droit égal à maj J ouvrir parenthèse q fermer parenthèse q point suscrit
+
+
+
+
+                             𝑝ሶEE                                                         Torques
+     • Jacobian                       = 𝐽(𝑞)Commanded
+                                              𝑞ሶ ᵅ, ᵃ
+                         h   𝜔EE                                               Robot                           Measured p
+         Reference state     Pose and
+                           velocity errors
+                                             joint torques             ᵃCommanded ᵰ                  ᵰcmd
+         Pose error  +                       Wrench
+                                           Impedance     controller            ᵄ T(ᵆ)        +
+                                                                                               +
+                                                                                                         Robot
+                                                                                                            Robot
+                       −                                                                                                                                                                                                                                                                                                                                                                             pose                              joint torques
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          Real-time control wit
+                                                                                                                                                                                                                                                                                                                                                                                                                     Measured pose                                   ᵆ
+                                                                                                                                                                                                                                                                                                                                                                                                            Measured state            Design and Implementation of a Real-Time Impedance Controller for a 7-DOF Collaborative Robot
+                                                                                                                                                                                                                                                                                                                                                                                                                                      Master Thesis · Heykel Khadhraoui
+                                                                                                                                                                                         Real-time control with a 1 ms cycle
+                                                                                                                                                                                                                                                                                                                                                                                                      State: pose and velocity                                                                        Measured robot state
+e Impedance Controller for a 7-DOF Collaborative Robot
+                                                                                                                                                                                                                                                                                                                                                                                                      Real-time control with a 1 ms cycle                                                                                                                                                          7
+
+
+
+
+                                                                                                                                                                 Design and Implementation of a Real-Time Impedance Controller for a 7-DOF Collaborative Robot                                                                                                                                                                                                                                                                                                                                                                                                                            7
+                                                                                                                                                                 Master Thesis · Heykel Khadhraoui
+Centre of compliance (CoC)
+
+
+ •    Effect of CoC displacement
+ •    Added moment can support or oppose rotation.
+
+
+
+
+     Design and Implementation of a Real-Time Impedance Controller for a 7-DOF Collaborative Robot   8
+     Master Thesis · Heykel Khadhraoui
+Translation–rotation coupling
+
+
+ •           Shifting the impedance reference point
+             Tool centre point (TCP): controlled reference point on the EE
+                                                                                                                                Virtual centre of compliance (CoC): new reference
+     p indice c
+
+
+
+
+     𝑝𝑐
+ •           Choosing an impedance reference point away from the TCP couples force and moment.
+ •           The commanded force acts as if applied at the virtual point pc.
+        r indice c égal à p indice c moins p indice TCP
+
+
+
+
+        𝑟𝑐 = 𝑝𝑐 − 𝑝TCP                                                                                                                                                                                                                                                                                                                                                                                                                                                             Displacement from TCP to CoC
+             maj A. égal à Ad ouvrir parenthèse r indice c fermer parenthèse
+
+
+
+
+             𝐴 = Ad(𝑟𝑐 )                                                                                                                                                                                                                                                                                                                                                                                                                                                           Point-shift adjoint
+             maj F indice TCP égal à crochet gauche 2 par 1 matrice, f , ligne suivante, m fin matrice crochet droit égal à accolade inférieure , maj A. à la puissance taquet bas , crochet gauche 2 par 2 matrice, maj K indice p fin colonne , 0 , ligne suivante, 0 , maj K indice maj R , fin matrice crochet droit maj A. fin accolade inférieure , limite inférieure ouvrir parenthèse maj K indice TCP , fermer parenthèse , crochet gauche 2 par 1 matrice, e indice p , ligne suivante, e indice maj R , fin matrice crochet droit plus accolade inférieure , maj A. à la puissance taquet bas , crochet gauche 2 par 2 matrice, maj D indice p fin colonne , 0 , ligne suivante, 0 , maj D indice maj R , fin matrice crochet droit maj A. fin accolade inférieure , limite inférieure ouvrir parenthèse maj D indice TCP , fermer parenthèse , crochet gauche 2 par 1 matrice, p point suscrit indice d moins p point suscrit indice EE , ligne suivante, oméga indice d moins oméga indice EE , fin matrice crochet droit
+
+
+
+
+                    𝑓     𝐾𝑝                                                                                                                                                                                                                                                                                                                                                                                                                                                                                       0    𝑒𝑝    𝐷𝑝                                                                                                                                                                                                                                                                                                                                                                                                                                                         0    𝑝ሶ − 𝑝ሶEE
+             𝐹TCP =   =𝐴⊤                                                                                                                                                                                                                                                                                                                                                                                                                                                                                             𝐴 𝑒 +𝐴⊤                                                                                                                                                                                                                                                                                                                                                                                                                                                               𝐴 𝑑
+                    𝑚     0                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        𝐾𝑅    𝑅    0                                                                                                                                                                                                                                                                                                                                                                                                                                                          𝐷𝑅  𝜔𝑑 − 𝜔EE
+                                                                                                                                                                                                                                                                                                                                                                                                                                   𝐾TCP                                                                                                                                                                                                                                                                                                                                                                                                                                                                  𝐷TCP
+
+ •           Non-zero off-diagonal blocks in K and D couple translation and rotation.
+     Design and Implementation of a Real-Time Impedance Controller for a 7-DOF Collaborative Robot                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                       9
+     Master Thesis · Heykel Khadhraoui
+               Contact experiment                                                Contact experiment
+
+
+ →             Tool orientation
+             Surface approach →                                                 Surface
+                                                                                Contact
+                                                                                  Tool orientation
+                                                                                        establishment
+                                                                                        approach   →                                              Surface
+                                                                                                                                                  →
+                                                                                                                                                  Contact approach
+                                                                                                                                                          establishment
+                                                                                                                                                       Surface grinding→                                                                                                                               →
+                                                                                                                                                                                                                                                                                                       Contact
+                                                                                                                                                                                                                                                                                                           Surface grinding
+                                                                                                                                                                                                                                                                                                               establishment    →
+
+
+ co • Surface-relative compliance                                                                                                                 •     Compliant contact settings
+                                                                                                                                                  •     Normal translation
+                                                                                                                                                                                         maj K indice , p ,n fin indice égal à 350 N sur m
+
+
+
+
+                                                                                                                                                                                        𝐾𝑝,𝑛 = 350 N/m
+                                                                                                                                                  •     Tangential translation
+                                                                                                                                                                              maj K indice , p ,t indice 1 , fin indice égal à maj K indice , p ,t indice 2 , fin indice égal à 2000 N sur m
+
+
+
+
+                                                                                                                                                                              𝐾𝑝,𝑡1 = 𝐾𝑝,𝑡2 = 2000 N/m
+                                                                                                                                                  •     Rotation about the surface normal
+                                                                                                                                                                                        maj K indice , maj R ,n fin indice égal à 50 N m sur rad
+
+
+
+
+                                                                                                                                                                                       𝐾𝑅,𝑛 = 50 N m/rad
+                                                                                                                                                  •     Rotations about the surface tangents
+                                                                                                                                                                             maj K indice , maj R ,t indice 1 , fin indice égal à maj K indice , maj R ,t indice 2 , fin indice égal à 5 N m sur rad
+
+
+
+
+ard s                                𝑛𝑠 outward surface normal
+                                                             n indice s
+
+
+
+                                                                                                                                                                             𝐾𝑅,𝑡1 = 𝐾𝑅,𝑡2 = 5 N m/rad
+endic                               𝑡1 , 𝑡2 perpendicular surface tangents
+                                    t indice 1, t indice 2
+
+
+
+
+                        a 7-DOFand
+mpedance Controller for Design     Implementation
+                                Collaborative Robotof a Real-Time Impedance Controller for Design
+                                                                                           a 7-DOFand
+                                                                                                   Collaborative
+                                                                                                      Implementation
+                                                                                                                 Robotof a Real-Time Impedance Controller for a 7-DOF Collaborative Robot                                                                                                              9                        9
+                                                                                                                                                                                                                                                                                                                               10
+                        Master Thesis · Heykel Khadhraoui                                  Master Thesis · Heykel Khadhraoui
+Plausibility experiment
+
+
+
+
+   Design and Implementation of a Real-Time Impedance Controller for a 7-DOF Collaborative Robot   11
+   Master Thesis · Heykel Khadhraoui
+Normal-force plausibility assessment
+
+
+                                                   0
+
+
+
+
+                                 Normal Force,
+                                    Fn [N]
+                                                 ¡10
+
+
+
+                                                 ¡20
+
+
+                                                       0                                                                                                                                                    2                                                                                                                                                                               4                                                                                                                            6              8       10             12
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          Time, t [s]
+
+
+                                                                                                     Commanded                                                                                                                                                                                                                                                                                                                                                                                                        Model-estimated                Quasi-static prediction
+
+                                                                                                                                                                                                                                                                                                                        Manual push: about 20 mm
+                                                           2 équation matrice d’équation maj F indice , n ,qs fin indice égal à maj K indice , p ,n fin indice n indice s à la puissance taquet bas , ouvrir parenthèse e indice p moins e indice , p ,0 fin indice fermer parenthèse fin équation , égal à ouvrir parenthèse 1000 N sur m , fermer parenthèse point ouvrir parenthèse moins 19.65 point 10 à la puissance , moins 3 fin exposant m , fermer parenthèse égal à moins 19.65 N fin matrice d’équation
+
+
+
+
+                                                           𝐹𝑛,qs = 𝐾𝑝,𝑛 𝑛𝑠⊤ (𝑒𝑝 − 𝑒𝑝,0 )
+                                                                                                                                                         = 1000 N/m · −19.65 · 10−3 m = −19.65 N
+
+                                 Quasi-static prediction                                                                                                                                                                                                                                                                                                                                      Commanded mean                                                                                                                                Model-estimated mean
+                                       −19.65 N                                                                                                                                                                                                                                                                                                                                                  −19.64 N                                                                                                                                         −22.29 N
+   Design and Implementation of a Real-Time Impedance Controller for a 7-DOF Collaborative Robot                                                                                                                                                                                                                                                                                                                                                                                                                                                                               12
+   Master Thesis · Heykel Khadhraoui
+Moment plausibility assessment
+
+
+                                                         3
+
+
+
+
+                                     Moment About t1 ,
+                                        Mt1 [N m]
+                                                         2
+
+
+                                                         1
+
+
+                                                         0
+                                                             0.0                                                                                                    2.5                                                                                                                                            5.0                                                                                                                                           7.5                                                                10.0       12.5    15.0      17.5         20.0
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   Time, t [s]
+
+
+
+                                                                                                         Commanded                                                                                                                                                                                                                                                                                                                                                                                                             Model-estimated                Quasi-static prediction
+
+                                                                                                                                                                                                                                                                                                                                    Manual rotation: about 6.5°
+                                                                   2 équation matrice d’équation maj M indice , t indice 1,qs fin indice égal à maj K indice , maj R ,t indice 1 , fin indice t indice 1 à la puissance taquet bas , ouvrir parenthèse e indice maj R moins e indice , maj R ,0 fin indice fermer parenthèse fin équation , égal à ouvrir parenthèse 15 N.m sur rad , fermer parenthèse point ouvrir parenthèse 6.57 point pi sur 180 rad , fermer parenthèse presque égal à 1.72 N.m fin matrice d’équation
+
+
+
+
+                                                                   𝑀𝑡1,qs = 𝐾𝑅,𝑡1 𝑡1⊤ (𝑒𝑅 − 𝑒𝑅,0 )
+                                                                                                                                                                                                                   𝜋
+                                                                                                                                                                                            = 15 N.m/rad · 6.57 ·     rad ≈ 1.72 N.m
+                                                                                                                                                                                                                  180
+                                 Quasi-static prediction                                                                                                                                                                                                                                                                                                                                                 Commanded mean                                                                                                                               Model-estimated mean
+                                       1.72 N.m                                                                                                                                                                                                                                                                                                                                                             1.72 N.m                                                                                                                                        1.85 N.m
+   Design and Implementation of a Real-Time Impedance Controller for a 7-DOF Collaborative Robot                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        13
+   Master Thesis · Heykel Khadhraoui
+Commanded and estimated wrench
+
+
+
+                                                                   (a)
+                                                               0
+
+
+
+
+                                         Normal Force,
+                                                             ¡30
+
+
+
+
+                                            Fn [N]
+                                                             ¡60
+
+                                                             ¡90
+
+                                                                   (b)
+                                         Moment About t1 ,
+
+
+
+
+                                                               3
+                                            Mt1 [N m]
+
+
+
+
+                                                               2
+
+                                                               1
+
+                                                               0
+                                                                         0                 1         2                 3            4   5
+                                                                                                         Time, t [s]
+
+
+                                                                                                  Commanded       Model-estimated
+
+
+
+
+  Design and Implementation of a Real-Time Impedance Controller for a 7-DOF Collaborative Robot                                             14
+  Master Thesis · Heykel Khadhraoui
+Effect of rotational stiffness
+                                                                                          Resistance to rotation about t1
+                                                                                 10
+
+
+
+
+                                                   Angular error, θerr,t1 [◦ ]
+                                                                                 8
+
+                                                                                 6
+
+                                                                                 4
+
+                                                                                 2
+
+                                                                                 0
+                                                                                      5            15                                50
+                                                                                                     Rotational stiffness about t1
+                                                                                                           KR,t1 [N m/rad]
+
+                                                                                                        Measured angular offset
+                                                                                                        θmeas,t1 = (9.31–9.32)◦
+
+
+
+   Design and Implementation of a Real-Time Impedance Controller for a 7-DOF Collaborative Robot                                          15
+   Master Thesis · Heykel Khadhraoui
+Effect of CoC position
+
+
+                                                                                                                            CoC displacement along t2
+                                                                                   r indice , c ,t indice 2 , fin indice
+
+
+
+
+                                                                                   𝑟𝑐,𝑡2
+
+                      Angular Error About t1 , θerr,t1 [◦ ]    30
+
+                                                               20
+
+                                                               10
+
+                                                                0
+
+                                                              −10
+
+                                                              −20
+
+                                                              −30
+
+                                                                    −100 −90 −80                                           −40    −20 −10   0   10   20      40                 80   90 100
+                                                                                                                           Tangential CoC Position, rc,t2 [mm]
+                                                                                   Positive entry tilt (+9.33◦ )                                     Negative entry tilt (−9.38◦ )
+
+
+
+
+   Design and Implementation of a Real-Time Impedance Controller for a 7-DOF Collaborative Robot                                                                                              16
+   Master Thesis · Heykel Khadhraoui
+                                                                                                                                                                                                                                            -50
+
+
+
+
+                                                                                                                                         °t1
+                                                                                                                                        Res
+
+
+
+
+                                                                                                                                                                                                                              Model-Esti
+                                                                                                                                                                                                                                 Force,
+                                                                                                                                                       2.5
+         Angular error and interaction wrench
+                                                                                                                                                                                                                                            -75
+
+
+
+
+                                                                                                                                        Contact
+                                                                                                                                                       0.0
+                                                                                                                                                                                                                                           -100
+                                        •     Angular error                                                                                                      •   Normal force                                                                        •       TCP moment
+
+                                  (a)                                                                                                              25 (b)                                                                                         (c)
+                                                               ≈ 2.5 s       ≈ 3.6 s
+                           10
+                                                                                                                                                                                                                                            5
+
+
+
+
+                                                                                                        Model-Estimated Normal Force,
+
+
+
+
+                                                                                                                                                                                               Model-Estimated TCP Moment
+                                                                                                                                                       0
+Angular Error About t1 ,
+
+
+
+
+                                                                                                                                                                                                  About t1 , Mt1 ,est [N m]
+                             8
+                                                                                                                                                                                                                                     2.5
+                                                                                                                                            −25
+
+
+
+
+                                                                                                                  Fn,est [N]
+       θerr,t1 [◦ ]
+
+
+
+
+                             6
+                                                                                                                                            −50                                                                                             0
+
+                             4
+                                                                                                                                            −75                                                                               −2.5
+
+                             2
+                                                                                                                                        −100
+                                                                                                                                                                                                                                     −5
+                             0
+                                   0           1           2             3         4           5                                                             0       1    2      3     4   5                                                      0               1             2              3             4              5
+
+                                                         Time, t [s]                                                                                                     Time, t [s]                                                                                          Time, t [s]
+                                                                                                                                stimated TC
+                                                                                                                                nt About t1 ,
+                                                                                                                                     [N m]
+
+
+
+
+                                                                                                                                                       2.5
+                                                                                                                                                                                                                                                      CoC Position, rc;t2 = ¡40mm CoC at TCP, rc;t2 =0 CoC Position, rc;t2 =40mm
+                           Design and Implementation of a Real-Time Impedance Controller for a 7-DOF Collaborative Robot                                                                                                                                                                                                        17
+                                                                                                                                                       0.0
+                                                                                                                                 est
+
+
+
+
+                           Master Thesis · Heykel Khadhraoui
+                                                                                                                                                  1;
+Null-space controller
+
+
+
+    Redundant direction:                                                                                               Primary Cartesian task:
+    •     One null-space direction at full                                                                             •   Null-space motion preserves the
+          Jacobian rank.                                                                                                   instantaneous motion of the EE.
+    •     Several joints move together.
+                          dim ouvrir parenthèse ker maj J fermer parenthèse égal à 7 moins 6 égal à 1                                 maj J ouvrir parenthèse q fermer parenthèse q point suscrit indice null égal à 0
+
+
+
+
+                          dim(ker 𝐽) = 7 − 6 = 1                                                                                      𝐽(𝑞) 𝑞ሶ null = 0
+    Damping torque 𝜏𝑑 :                                                                                                Conditioning torque 𝜏𝜎 :
+                                                                                                        tau indice d                                                                                                     tau indice sigma
+
+
+
+
+    •     Opposes and damps null-space                                                                                 •   Adjusts the joint configuration to
+          velocity.                                                                                                        improve Jacobian conditioning.
+                                                                                                                       •   At a singularity, the EE loses a motion
+                                                                                                                           direction.
+                                                                                                                       •   Near it, some EE motions require very
+                                                                                                                           large joint velocities.
+
+   Design and Implementation of a Real-Time Impedance Controller for a 7-DOF Collaborative Robot                                                                                                                                            18
+   Master Thesis · Heykel Khadhraoui
+Disturbance demonstration
+
+
+
+
+                                                                                               Demonstration ∙ Part 1
+   Design and Implementation of a Real-Time Impedance Controller for a 7-DOF Collaborative Robot                        19
+   Master Thesis · Heykel Khadhraoui
+Disturbance demonstration
+
+
+
+
+                                                                                               Demonstration ∙ Part 2
+   Design and Implementation of a Real-Time Impedance Controller for a 7-DOF Collaborative Robot                        20
+   Master Thesis · Heykel Khadhraoui
+Null-space experiment
+
+
+•   Commanded joint disturbance                                                                                                                    •   Cartesian pose hold
+
+                                    tau indice dist égal à maj J ouvrir parenthèse q fermer parenthèse à la puissance taquet bas , f indice dist
+
+
+
+
+                                    𝜏dist = 𝐽(𝑞)⊤ 𝑓dist                                                                                                Hold the captured position and orientation.
+
+
+    Joint-torque equivalent of a virtual
+    20 N point force on link 3.
+
+
+•   Four conditions with three trials each
+
+    •    No null­space torque                                                                                                                          •   Damping: dnull = 2 N m s/rad
+
+    •    Conditioning: kσ = 2 N m                                                                                                                      •   Combined: conditioning + damping
+                                                                                                                                                           kσ = 2 N m and dnull = 2 N m s/rad
+
+        Design and Implementation of a Real-Time Impedance Controller for a 7-DOF Collaborative Robot                                                                                                21
+        Master Thesis · Heykel Khadhraoui
+Cumulative joint motion
+
+                                                                (a)
+
+
+
+                         Cumulative Joint Motion, EN [◦ ]
+                                                            8
+
+
+                                                            6
+
+
+                                                            4
+
+
+                                                            2
+
+
+                                                            0
+                                                                0                    1                   2                           3      4
+                                                                                                      Time, t [s]
+                                                                       No null-space torque                  Damping, dnull = 2 N m s/rad
+                                                                       Conditioning, kσ = 2 N m              Combined, kσ = 2, dnull = 2
+                                                                              Three-trial mean and one sample standard deviation.
+
+   •    Damping alone reduced cumulative motion by 25.1% compared with no torque.
+
+   •    At 2 N m, adding damping to conditioning reduced cumulative motion by 50.7%.
+    Design and Implementation of a Real-Time Impedance Controller for a 7-DOF Collaborative Robot                                               22
+    Master Thesis · Heykel Khadhraoui
+Jacobian conditioning
+
+                                                        ×10−1                                                                              (b)
+                                                 2.17
+
+
+                  Minimum Singular Value, σmin
+                                                 2.16
+
+
+
+                                                 2.15
+
+
+
+                                                 2.14
+                                                        0                           1                   2                           3        4
+                                                                                                     Time, t [s]
+                                                                      No null-space torque                  Damping, dnull = 2 N m s/rad
+                                                                      Conditioning, kσ = 2 N m              Combined, kσ = 2, dnull = 2
+                                                                             Three-trial mean and one sample standard deviation.
+
+  •    The indicator decreased with no torque and damping alone.
+  •    Conditioning and combined control kept the indicator nearly constant.
+   Design and Implementation of a Real-Time Impedance Controller for a 7-DOF Collaborative Robot                                                 23
+   Master Thesis · Heykel Khadhraoui
+Joint motion over time
+
+                                                              (a) Four settings                                                                   (b) Conditioning and combined
+                                           6
+                                                                                                                                      0.08
+                Joint 1 Motion, ∆q1 [◦ ]
+
+
+
+
+                                                                                                           Joint 1 Motion, ∆q1 [◦ ]
+                                           5
+                                                                                                                                      0.06
+                                           4
+                                                                                                                                      0.04
+                                           3
+                                                                                                                                      0.02
+                                           2
+                                                                                                                                         0
+                                           1
+                                                                                                                                      -0.02
+                                           0
+                                               0          1           2                            3   4                                      0        1      2          3        4
+                                                                   Time, t [s]                                                                             Time, t [s]
+                                                                       No null-space torque                                       Damping, dnull = 2 N m s/rad
+                                                                       Conditioning, kσ = 2 N m                                   Combined, kσ = 2, dnull = 2
+                                                                              Three-trial mean and one sample standard deviation.
+
+  •    Conditioning at 2 N m shows repeated joint-motion reversals.
+  •    Adding damping reduces total motion, while reversals remain.
+   Design and Implementation of a Real-Time Impedance Controller for a 7-DOF Collaborative Robot                                                                                      24
+   Master Thesis · Heykel Khadhraoui
+Conclusion
+
+
+    •    Compliant rotation allowed contact moments to reduce angular error
+
+    •    Higher rotational stiffness left a larger angular error
+
+    •    The CoC could support or oppose the contact moment
+
+    •    Null-space control reduced redundant motion under disturbance
+
+•   Future work
+    •    Use a more rigid tool mount for better measurements
+    •    Adapt the CoC to support the contact moment,
+         then return it to the TCP after alignment
+
+
+    Design and Implementation of a Real-Time Impedance Controller for a 7-DOF Collaborative Robot   25
+    Master Thesis · Heykel Khadhraoui
+Opposing moment
+
+
+
+
+  Design and Implementation of a Real-Time Impedance Controller for a 7-DOF Collaborative Robot   B1
+  Master Thesis · Heykel Khadhraoui
+Null-space torques and projector
+
+
+ •    Null-space projector
+      maj N indice tau égal à maj I. indice 7 moins maj J à la puissance taquet bas , maj J à la puissance , plus taquet bas fin exposant,   tau indice null égal à tau indice d plus tau indice sigma
+
+
+
+
+      𝑁𝜏 = 𝐼7 − 𝐽⊤ 𝐽+⊤ ,                                                                                                                                                                                 𝜏null = 𝜏𝑑 + 𝜏𝜎
+      Projects secondary joint torques into the kinematic null space.
+      J: joint → EE velocities                                                                                                                                                                                  J+: pseudoinverse                                                                                                                                     I7: 7 × 7 identity matrix
+
+
+ •    Damping torque                                                                                                                                                                                                                •   Conditioning torque
+      tau indice d égal à moins d indice null , maj N indice tau , q point suscrit
+                                                                                                                                                                                                                                        tau indice sigma égal à k indice sigma , maj N indice tau , ouvrir parenthèse s indice sigma , v indice 7 fermer parenthèse
+
+
+
+
+      𝜏𝑑 = −𝑑null 𝑁𝜏 𝑞ሶ                                                                                                                                                                                                                 𝜏𝜎 = 𝑘𝜎 𝑁𝜏 (𝑠𝜎 𝑣7 )
+      Opposes redundant joint velocity.                                                                                                                                                                                                 Seeks better local conditioning.
+      Zero at zero joint velocity.                                                                                                                                                                                                      Can act at zero joint velocity.
+      dnull: damping coefficient [N m s/rad]                                                                                                                                                                                            kσ: torque magnitude [N m]
+                                                                                                                                                                                                                                        v7: unit null-space direction
+      q̇: measured joint velocity
+                                                                                                                                                                                                                                        sσ: direction choice, zero in deadband
+
+     Design and Implementation of a Real-Time Impedance Controller for a 7-DOF Collaborative Robot                                                                                                                                                                                                                                                                                                B2
+     Master Thesis · Heykel Khadhraoui
+                               Figure 4.2 shows
+                               Figure 4.2       the entry
+                                          shows the entry offset
+                                                          offset and
+                                                                 and angular
+                                                                     angular error for aa schematic
+                                                                             error for              rotation about
+                                                                                          schematic rotation about tt11 .. The
+                                                                                                                           The
+Angular quantities
+              solid green and
+              solid green     dashed blue
+                          and dashed       arrows show
+                                      blue arrows show the
+                                                       the calibrated
+                                                           calibrated tool normals at
+                                                                      tool normals     contact entry
+                                                                                    at contact entry and
+                                                                                                     and
+              contact end.
+              contact       They are
+                       end. They are calculated
+                                     calculated from
+                                                from measured
+                                                     measured end-effector  orientation. Both
+                                                               end-effector orientation.       angle arcs
+                                                                                         Both angle  arcs
+                               run from
+                               run      the red
+                                   from the     inward calibrated
+                                            red inward            surface normal
+                                                       calibrated surface        −nss to
+                                                                                      to the
+                                                                          normal −n          respective tool
+                                                                                         the respective      normal. The
+                                                                                                        tool normal. The
+                               common origin
+                               common        compares orientations.
+                                      origin compares               The view
+                                                      orientations. The view places
+                                                                             places tt11 out
+                                                                                         out of the page,
+                                                                                             of the       with positive
+                                                                                                    page, with positive
+                               rotation anticlockwise
+                               rotation               by the
+                                        anticlockwise by     right-hand rule.
+                                                         the right-hand rule.
+                                                                             ns
+                                                                                       +                   Tool normal at entry
+
+                                                                                             t2
+                                                                                  t1
+                                                                                                    θmeas,t1
+                                                                                                               Tool normal at end
+
+                                                                                                               Calibrated surface normal
+                                                                                       θerr,t1
+
+                                                                     Figure 4.2: Measured angular offset and angular error.
+
+
+
+                               4.5.1               Measured Pose-Based Angular Offset
+
+                                                                       start , the measured end-effector orientation gives
+                               At the start of Contact Establishment, tstart
+    Design and Implementation of a Real-Time Impedance Controller for a 7-DOF Collaborative Robot                                          B3
+                               the calibrated tool-normal direction
+    Master Thesis · Heykel Khadhraoui
+Baseline angular error
+
+
+
+
+                                                 Angular Error About t1 , θerr,t1 [◦ ]
+                                                                                          2                            1.75
+                                                                                               1.65
+                                                                                                                                               1.41
+                                                                                         1.5
+
+
+                                                                                          1
+
+
+                                                                                         0.5
+
+
+                                                                                          0
+                                                                                               0.69                   9.31                     −9.41
+                                                                                                      Measured Angular Offset, θmeas,t1 [◦ ]
+                                                                                                                CoC at TCP, rc,t2 = 0
+
+
+
+   Design and Implementation of a Real-Time Impedance Controller for a 7-DOF Collaborative Robot                                                       B4
+   Master Thesis · Heykel Khadhraoui
+ween the tool face and the physical surface at contact entry. That mismatch can bri
+    Sources of angular offset
+he tool onto the surface along an edge or at a corner. A rigid position controller oppos
+he corresponding corrective rotation and can therefore generate high contact loads.
+
+                                                                                                       Desired–achieved difference
+
+
+                                                                                                       Configured–physical difference
+
+
+
+
+                                                                          Configured surface               Physical surface
+                                                                          Desired orientation              Tool face
+                                            Figure 1.1: Sources of angular offset at surface entry.
+                                                                                                 y.
+
+
+                                                                   fference betw
+Figure 1.1 separates the two contributions to that mismatch: the difference between
+                                                                                  nt
+       Design and Implementation of a Real-Time Impedance Controller for a 7-DOF Collaborative Robot                                    B5
+       Master Thesis · Heykel Khadhraoui
+
