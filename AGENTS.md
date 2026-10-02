@@ -1,5 +1,203 @@
 # Thesis and presentation workspace
 
+## Contact phase heading and directional labels (2026-10-02)
+
+On Contact experiment (physical slide 10 / footer 9, called slide 8 by the
+user), introduce the unchanged phase sequence with Experiment phases: as
+an editable navy 22 pt bullet, matching the contact-settings heading.
+Keep the four existing phase names and arrows in navy 20 pt beneath it.
+The heading box is (60, 68, 840, 30) pt and phase box (80, 109, 840, 30) pt.
+
+The four 18 pt navy setting headings read Normal translation (compliant),
+Tangential translation (stiff), Rotation about the surface normal (stiff),
+and Rotations about the surface tangents (compliant). These directional
+labels follow the thesis Contact Establishment design. Preserve all four
+native equations, values, positions, the surface figure, notes and speaking
+material. The 30-slide structure and all other slides remain unchanged;
+the full PDF is synchronized and supplementary PDF is unchanged. See
+experiments/contact_phase_labels_20261002/verification.json.
+
+## General CoC introduction and shifted-force cases (2026-10-02)
+
+A new Centre of compliance (CoC) introduction is physical slide 7 / footer 6,
+before the existing two-case slide, now physical 8 / footer 7. It defines
+the TCP and virtual CoC, shows force f as if applied at p_CoC, the offset
+r_c from p_TCP, and the resulting additional moment about TCP. The new native
+equation is Delta m = r_c cross f, 22 pt regular Cambria Math. This is the
+additional coupling contribution, not the complete rotational-impedance
+moment. The physical contact location is not moved by this virtual depiction.
+
+Both Supporting moment and Opposing moment now show f_n at the virtual CoC.
+The curved arrows show the resulting moment about TCP, not a second applied
+moment. Preserve the supporting counterclockwise and opposing clockwise
+directions for the illustrated downward force and left/right displacements.
+Use p_CoC (upright CoC subscript) in both cases and throughout the following
+Translation-rotation coupling slide, now physical 9 / footer 8: the native
+position symbol, displacement equation and inline force-interpretation text.
+Keep r_c unchanged. Retain the original tool tilt, surface, normal arrows,
+displacement signs and Supporting/Opposing labels.
+
+The active diagrams are presentation-specific coc_force_shift_general and
+coc_force_shift_cases, with matching editable TikZ and PDF/PNG/SVG assets.
+The historical shared CoC_moment source/assets and thesis files remain intact.
+The general and case diagrams deliberately portray virtual-force equivalence;
+do not infer unchanged commanded force across different controller settings.
+
+There are now 25 main slides and five hidden backups, 30 total. Conclusion
+is physical 25 / footer 24; backups B1-B5 are physical 26-30. Chapter starts
+are physical 2, 4, 10, 12, 18 and 25. Native sections, main footers and the
+31-entry equation catalog follow this order. All retained notes, speaking
+files, videos and other slide bodies remain unchanged. The new notes contain
+source information only. The full PDF has 30 pages; the five-page supplementary
+PDF is unchanged. This supersedes the earlier force-at-TCP and p_c depiction
+on the active CoC slides. See experiments/coc_introduction_20261002/verification.json.
+
+## Compact Cartesian velocity and motor-torque mapping (2026-10-02)
+
+On Real-time control (physical slide 6 / footer 5, referred to by the user
+as slide 7), the two bullet headings are Commanded joint torques (motors):
+and Jacobian:, including their colons. Keep only tau = J^T(q)F in the
+left native equation. Both headings match the existing 22 pt navy style;
+the Jacobian heading's stale 20 pt black native override is corrected.
+The repeated F = [f; m] definition is removed.
+Its caption is Cartesian contribution, since the unchanged diagram adds
+model and null-space torques before the motor command tau_cmd.
+
+The right native equation uses x-dot_EE = J(q)q-dot. Its caption identifies
+Linear and angular velocity (geometric). Here x-dot_EE is shorthand for
+the geometric Cartesian velocity [p-dot_EE; omega_EE]; do not reinterpret
+it as derivatives of the roll-pitch-yaw coordinates on the pose slide.
+The notation convention is recorded in the equation source, catalog and
+alternative description. Both equations remain editable 22 pt regular
+Cambria Math with synchronized LaTeX and PDF/PNG/SVG assets.
+
+All native feedback-diagram shapes, arrows, labels, signs, the model and
+null-space summation, and the 1 ms cycle statement remain unchanged.
+Keep all other slides, 28 other equations, notes, speaking files, videos
+and the supplementary PDF unchanged. The deck/full PDF retain 29
+slides/pages, five hidden backups and 30 native equations. See
+experiments/realtime_velocity_20261002/verification.json.
+
+## Full Cartesian pose and end-effector position (2026-10-02)
+
+On Cartesian pose and surface frame (physical slide 4 / footer 3), write
+Cartesian pose of the end-effector (EE) once above the position/orientation
+area. Show the native two-row coordinate vector x_EE = [p_EE; eta_EE],
+expanded as [(x,y,z)^T; (phi,theta,psi)^T], centred above the split into
+Position: 3 translations and Orientation: 3 rotations. Eta_EE denotes the
+roll-pitch-yaw coordinates illustrated by the existing orientation diagram.
+Retain the native branch lines and the two original diagrams, scaled
+proportionally to this new layout.
+
+Use p_EE in the position diagram and in both sides of p_EE = p_EE(q).
+Mathematical EE subscripts remain upright without parentheses; standalone
+diagram labels remain (EE). The position diagram's editable TikZ and its
+PDF/PNG/SVG assets match the embedded image. Preserve its other geometry.
+Both revised/new equations use native editable 22 pt regular Cambria Math,
+with matching LaTeX, catalog and PDF/PNG/SVG assets. There are now 30 native
+equations; the other 28 are unchanged.
+
+Retain the surface-frame figure and definitions, the distinction between
+surface-relative gain directions and base-frame calculations, and the
+preview of force, moment, stiffness and damping before the controller.
+All notes and speaking files remain unchanged. The deck/full PDF still
+contain 29 slides/pages, including five hidden backups. The supplementary
+PDF and the other 28 slides are unchanged. This supersedes the former
+plain p = p(q) notation and fixed sizes/positions on this slide. See
+experiments/pose_vector_20261002/verification.json.
+
+## Force and moment before controller errors (2026-10-02)
+
+On Cartesian impedance controller (physical slide 5 / footer 4 after the
+pose/surface merge), introduce Force and Moment in the top row, followed by
+Positional error and Rotational error with their original diagrams in the
+middle row. Cartesian wrench and the decoupling statement remain below.
+Use the original editable bullet-heading style. Preserve all five native
+equations exactly, at their original dimensions and 22 pt Cambria Math,
+and preserve the original diagram assets and proportions. This changes
+placement and adds the matching error headings; it does not change the
+mathematics, speaker notes or speaking files. The slide is the controller
+slide the user referred to by its former number 6. Slide count, numbering,
+chapter labels, all other slides and the supplementary PDF are unchanged.
+The full PDF matches the reordered slide. See
+experiments/controller_force_first_20261002/verification.json.
+
+## Combined Cartesian pose and surface frame (2026-10-02)
+
+The user combined physical slides 4 and 5 into Cartesian pose and surface
+frame at physical slide 4 / footer 3. Keep the three original diagrams in
+three columns: position, orientation and surface frame. The position figure
+is 240 pt wide, the orientation figure 220 pt and the surface figure 266 pt;
+all retain their original aspect ratios, asset bytes and editable sources.
+Preserve the native p = p(q), n_s and t_1, t_2 equations at 22 pt Cambria Math.
+The merged layout supersedes the separate Surface frame slide requirement
+and the former Cartesian pose takeaway/equation box positions.
+
+The merged slide introduces force f, moment m, stiffness K and damping D,
+leading directly to Cartesian impedance controller at physical 5 / footer 4.
+Distinguish the frames: surface axes define force/moment components and the
+directions for impedance gains; pose and the evaluated controller equations
+use the robot base frame. This follows the thesis's theoretical-background
+chapter. Do not claim that the implemented controller wrench is evaluated
+only in surface coordinates.
+
+There are 24 main slides and five hidden backups, 29 slides total. Conclusion
+is physical 24 / footer 23, and B1-B5 are physical 25-29. Chapter starts are
+physical 2, 4, 9, 11, 17 and 24; preserve their existing chapter-label styles.
+All other original slides retain their contents, with later main footers and
+the native-equation catalog renumbered. There remain 29 native equations and
+five embedded videos. Speaking files and all retained speaker notes are
+unchanged. The original two slides and notes are archived in
+experiments/pose_surface_merge_20261002/archive/original_pose_and_surface.pptx
+and its matching PDF. The full PDF has 29 pages; the five-page supplementary
+PDF is unchanged. See experiments/pose_surface_merge_20261002/verification.json.
+
+## Visible chapter labels on existing slides (2026-10-02)
+
+The user wants to see the current Overview chapter while advancing through
+the existing slides. Keep the top-right chapter label on each main content
+slide. Do not insert chapter divider slides. Use the exact six chapter names
+and numbers from Overview. On the first content slide of each chapter, the
+label is Arial 14 pt bold navy (#17365D); subsequent slides use Arial 12 pt
+regular grey (#696969). The editable textbox is at (660, 21) pt with size
+261.6 x 24 pt, aligned right and vertically centred above the title rule.
+
+Chapter starts are physical slides 2 (Introduction), 4 (Cartesian controller),
+10 (Contact experiments), 12 (Contact results), 18 (Null-space control and
+experiments), and 25 (Conclusion and future work). Keep the title slide,
+Overview and five hidden backups without this label. The 30-slide structure,
+all original slide content and numbering, 29 native equations, five videos,
+speaker notes and speaking files remain unchanged. The full PDF includes the
+labels; Supplementary_slides.pdf is unchanged. See
+experiments/chapter_labels_20261002/verification.json.
+
+## Title photograph and Motivation contact video (2026-10-02)
+
+The robot photograph is back on the title slide, on the right at (592, 103) pt
+with width 329.6 pt and its original uncropped aspect ratio. Keep the title
+text, university logos and date unchanged. On Motivation, retain Problem and
+Idea on the left and the original Contact.mp4 demonstration on the right in
+a 400 pt square at (521.6, 75) pt. Preserve its original poster, complete
+51.003-second recording, audio, 80% playback volume and click-to-play setting.
+This supersedes the earlier requirement to show the photo on Motivation.
+
+The separate Contact demonstration slide was removed at the user's request.
+Its original slide, notes and media are archived in
+experiments/motivation_video_20261002/archive/removed_contact_demonstration.pptx
+and its matching PDF. Do not restore that separate slide automatically.
+
+There are now 25 main slides and five hidden backups, 30 slides total.
+Overview is physical slide 3 / footer 2, Conclusion is physical 25 / footer 24,
+and B1-B5 occupy physical slides 26-30. All slides formerly at physical 4-31
+shift down by one; main footer numbers shift down by one. Backup B labels
+and the six Overview chapters are unchanged. In particular, Null-space
+controller is physical 18 / footer 17, the two disturbance videos are physical
+19-20 / footers 18-19, and Null-space experiment is physical 21 / footer 20.
+Keep every retained slide's body, all 29 native equations, all five original
+video streams, the retained notes and the speaking files unchanged. The
+30-page full PDF matches the edited deck; the five-page supplementary PDF
+remains unchanged. See experiments/motivation_video_20261002/verification.json.
+
 ## Simple redundancy explanation (2026-10-01)
 
 On Null-space controller (footer 18 / physical slide 19), explain that

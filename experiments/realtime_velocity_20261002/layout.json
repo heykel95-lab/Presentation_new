@@ -1,0 +1,42 @@
+{
+  "headings": {
+    "Joint-torque command heading": "Commanded joint torques (motors):",
+    "Jacobian velocity mapping": "Jacobian:"
+  },
+  "equations": {
+    "Equation - cartesian_torque_mapping": [
+      209,
+      119,
+      175,
+      34
+    ],
+    "Equation - jacobian_velocity_mapping": [
+      667,
+      119,
+      200,
+      34
+    ]
+  },
+  "captions": [
+    {
+      "name": "Torque contribution definition",
+      "text": "Cartesian contribution",
+      "box": [
+        52,
+        165,
+        418,
+        24
+      ]
+    },
+    {
+      "name": "Cartesian velocity definition",
+      "text": "Linear and angular velocity (geometric)",
+      "box": [
+        532,
+        165,
+        385,
+        24
+      ]
+    }
+  ]
+}

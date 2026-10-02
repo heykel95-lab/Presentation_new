@@ -1,0 +1,26 @@
+{
+  "heading": {
+    "name": "Experiment phases heading",
+    "text": "Experiment phases:",
+    "box": [
+      60,
+      68,
+      840,
+      30
+    ]
+  },
+  "phases": {
+    "box": [
+      80,
+      109,
+      840,
+      30
+    ]
+  },
+  "labels": {
+    "Normal label": "Normal translation (compliant)",
+    "Tangential translation label": "Tangential translation (stiff)",
+    "Normal rotation label": "Rotation about the surface normal (stiff)",
+    "Rotation label": "Rotations about the surface tangents (compliant)"
+  }
+}

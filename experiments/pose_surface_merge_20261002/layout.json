@@ -1,0 +1,37 @@
+{
+  "title": "Cartesian pose and surface frame",
+  "pictures": {
+    "End effector position figure": [
+      62,
+      119,
+      240,
+      200.1497918611762
+    ],
+    "End effector orientation figure": [
+      366,
+      113,
+      220,
+      200.84432686186062
+    ],
+    "Surface frame": [
+      654,
+      113,
+      266,
+      208.8763254593176
+    ]
+  },
+  "equations": {
+    "Equation - pose_joint_configuration": [
+      516,
+      365
+    ],
+    "Equation - symbol_ns": [
+      649,
+      335
+    ],
+    "Equation - symbol_tangents": [
+      631,
+      367
+    ]
+  }
+}

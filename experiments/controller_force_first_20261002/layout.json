@@ -1,0 +1,76 @@
+{
+  "headings": {
+    "Position heading": {
+      "text": "Force",
+      "xy": [
+        60,
+        78
+      ]
+    },
+    "Rotation heading": {
+      "text": "Moment",
+      "xy": [
+        510,
+        78
+      ]
+    }
+  },
+  "newHeadings": [
+    {
+      "from": "Position heading",
+      "name": "Positional error heading",
+      "text": "Positional error",
+      "xy": [
+        60,
+        170
+      ]
+    },
+    {
+      "from": "Rotation heading",
+      "name": "Rotational error heading",
+      "text": "Rotational error",
+      "xy": [
+        510,
+        170
+      ]
+    }
+  ],
+  "positions": {
+    "Equation - equation_force": [
+      80,
+      117
+    ],
+    "Equation - equation_moment": [
+      530,
+      117
+    ],
+    "Equation - position_error_definition": [
+      79.899,
+      229
+    ],
+    "Equation - controller_orientation_error": [
+      529.78,
+      227
+    ],
+    "Figure - position_error_sketch": [
+      247,
+      196
+    ],
+    "Figure - rotation_error_sketch": [
+      697,
+      196
+    ],
+    "Controller scope": [
+      60,
+      328
+    ],
+    "Equation - controller_wrench_blocks": [
+      80,
+      365
+    ],
+    "Decoupling statement": [
+      68,
+      459
+    ]
+  }
+}

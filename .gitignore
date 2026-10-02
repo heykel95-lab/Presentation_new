@@ -44,5 +44,19 @@ node_modules/
 /experiments/*_20261001/*-build.txt
 /experiments/*_20261001/latex-build.txt
 
+# October 2 slide-edit previews and duplicate build assets
+/experiments/*_20261002/**/*.pdf
+/experiments/*_20261002/**/*.png
+/experiments/*_20261002/**/*.jpg
+/experiments/*_20261002/**/*.svg
+/experiments/*_20261002/**/*.pptx
+/experiments/*_20261002/**/*.xml
+/experiments/*_20261002/**/*.rels
+/experiments/*_20261002/**/*.bin
+/experiments/*_20261002/**/*.ndjson
+/experiments/*_20261002/*-build.txt
+/experiments/*_20261002/latex-build.txt
+/experiments/*_20261002/before_page*_content.txt
+
 # Compiled figures beside their editable sources; final exports live one level up
 /Final Presentation/figures_and_images/sources/*.pdf

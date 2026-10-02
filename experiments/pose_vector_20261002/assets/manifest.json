@@ -1,0 +1,939 @@
+[
+  {
+    "asset": "HM_logo.png",
+    "source": "gg0(1).pptx / slide 2 / footer logo",
+    "changes": "None"
+  },
+  {
+    "asset": "motivation_rig",
+    "source": "MyOwn/figures/ch04/setup_schematic.tex, panel (a)",
+    "changes": "Side elevation with both custom finger tips meeting the tilted tool upper edge exactly. The tool pose, leading-edge surface contact, rig geometry, colours, labels and image dimensions are preserved. Presentation leading-edge label remains black. Matching editable LaTeX and PDF/PNG/SVG updated."
+  },
+  {
+    "asset": "surface_directions",
+    "source": "MyOwn/figures/ch02/surface_tool_frame.tikz, shared with panel (a) of lever_direction_selection.tex",
+    "changes": "Tool-face centre at the frame origin, with the shaft coaxial with n_s. Its 120 mm length is centred along t2, with equal positive and negative half-lengths, and its 40 mm width follows t1. The axes are drawn behind the opaque tool, with arrows and labels visible. Identical TikZ core in thesis and presentation."
+  },
+  {
+    "asset": "CoC_moment",
+    "source": "MyOwn/figures/ch02/compliance_lever_moment.tex",
+    "changes": "Original tangential CoC illustration; white fills and black labels; panels read (a) Supporting moment and (b) Opposing moment, synchronized with the thesis figure on 2026-09-16. Enlarged on slide. PNG regenerated from the matching PDF using pdftocairo -png -singlefile -r 300 so both surface-normal arrow shafts remain visible; source geometry preserved and PDF/PNG/SVG regenerated for the panel-label update. No numerical examples or experimental data introduced."
+  },
+  {
+    "asset": "angular_quantities",
+    "source": "Direct crop of MyOwn/Thesis.pdf, Figure 4.2, physical page 77.",
+    "changes": "2026-09-23: three normal arrows shortened from 7.5 to 5.4 drawing units; arcs, labels and inset brought closer. Angles, colours and label sizes preserved. Exact compiled thesis crop; slide image reduced proportionally at unchanged text scale.",
+    "thesis_source_sha256": "76b53ffe71a90dd6dce8351c755a493df1dfe3cfd1308c898bfc0a84eb1f123a",
+    "backup_slide": "B3",
+    "physical_slide": 29,
+    "placement_update": "2026-09-23: B3, physical slide 29; image reduced to 407.24 by 173.63 pt at its existing centre and label scale.",
+    "extraction_report": "experiments/media_update/figure_4_2_compact_20260923.json"
+  },
+  {
+    "asset": "baseline_response",
+    "source": "MyOwn/figures/ch04/surface_reference_geometry.tex; MyOwn/figures/ch05; MyOwn/code/python/figures/contact_angular_error/",
+    "changes": "2026-09-15: replaced contact-response gamma with calibrated-surface angular error theta_err,t1, calculated from the logged full normal-error vector with entry-offset sign convention. Endpoint plots use all 69 original reports (0.01-degree precision), three-trial means and sample SD. Three complete recorded time histories supply representative curves. Timing uses a common 0.1-degree angular error band: 2.5 and 3.6 s. Force and moment measurements, units, axes, colours and model-estimate qualification retained. Synchronized editable LaTeX, PDF, PNG and SVG."
+  },
+  {
+    "asset": "rotation_stiffness",
+    "source": "MyOwn/figures/ch04/surface_reference_geometry.tex; MyOwn/figures/ch05; MyOwn/code/python/figures/contact_angular_error/",
+    "changes": "2026-09-15: replaced contact-response gamma with calibrated-surface angular error theta_err,t1, calculated from the logged full normal-error vector with entry-offset sign convention. Endpoint plots use all 69 original reports (0.01-degree precision), three-trial means and sample SD. Three complete recorded time histories supply representative curves. Timing uses a common 0.1-degree angular error band: 2.5 and 3.6 s. Force and moment measurements, units, axes, colours and model-estimate qualification retained. Synchronized editable LaTeX, PDF, PNG and SVG.",
+    "presentation_layout": "Effect of rotational stiffness retains the original rotation_stiffness image at unchanged aspect ratio, enlarged and centred."
+  },
+  {
+    "asset": "translation_stiffness",
+    "source": "MyOwn/figures/ch04/surface_reference_geometry.tex; MyOwn/figures/ch05; MyOwn/code/python/figures/contact_angular_error/",
+    "changes": "2026-09-15: replaced contact-response gamma with calibrated-surface angular error theta_err,t1, calculated from the logged full normal-error vector with entry-offset sign convention. Endpoint plots use all 69 original reports (0.01-degree precision), three-trial means and sample SD. Three complete recorded time histories supply representative curves. Timing uses a common 0.1-degree angular error band: 2.5 and 3.6 s. Force and moment measurements, units, axes, colours and model-estimate qualification retained. Synchronized editable LaTeX, PDF, PNG and SVG.",
+    "presentation_status": "Removed from the active presentation on 2026-09-15 at the user request. Plot, directional heading, takeaway and Conclusion finding removed. Source assets retained."
+  },
+  {
+    "asset": "CoC_position",
+    "source": "Thesis_Final_Control/analysis/make_coc_position_figure.py; Thesis_Final_Control/experiments/derived/coc_position; MyOwn-thesis/figures/ch05/results_case_d_panels.tex",
+    "changes": "2026-09-21: added measured +/-90 and +/-100 mm, three repeats per condition. Thirteen positions for both entry directions, 78 reports, identical means and sample SD to the thesis. Original points unchanged. Independent raw-log reconstruction and saved-settings checks passed. Later-session provenance retained. Positive-entry minimum 0.83 degrees at +100 mm (52.6% below TCP); negative-entry minimum remains 0.94 degrees at +10 mm (33.7% below TCP). Extended vertical axis and proportional 700 pt slide width retain all points and error bars. Horizontal 8 pt x ticks and dotted grids at every position. LaTeX/PDF/PNG/SVG, embedded picture and vector slide PDF synchronized. Notes and speaking material unchanged."
+  },
+  {
+    "asset": "contact_response_time",
+    "source": "MyOwn/figures/ch04/surface_reference_geometry.tex; MyOwn/figures/ch05; MyOwn/code/python/figures/contact_angular_error/",
+    "changes": "2026-09-15: replaced contact-response gamma with calibrated-surface angular error theta_err,t1, calculated from the logged full normal-error vector with entry-offset sign convention. Endpoint plots use all 69 original reports (0.01-degree precision), three-trial means and sample SD. Three complete recorded time histories supply representative curves. Timing uses a common 0.1-degree angular error band: 2.5 and 3.6 s. Force and moment measurements, units, axes, colours and model-estimate qualification retained. Synchronized editable LaTeX, PDF, PNG and SVG."
+  },
+  {
+    "asset": "contact_moment_time",
+    "source": "MyOwn/figures/ch05/MAIN_D_wrench.pdf",
+    "changes": "Vector moment-panel extraction, original data unchanged; obsolete (c) panel marker removed. LaTeX wrapper and original cropped PDF retained under sources. Review correction: larger typography in reproducible LaTeX wrappers. Original vector plot regions from MAIN_D_wrench.pdf retained with exact paths, limits and tick positions; labels and legend reflowed. Source contact_*_plot.pdf crops preserve the recorded data unchanged."
+  },
+  {
+    "asset": "contact_legend",
+    "source": "figures/ch05/MAIN_D_wrench.pdf",
+    "changes": "Vector panel extraction from original figure PDF. No screenshots and no data changes. Review correction: larger typography in reproducible LaTeX wrappers. Original vector plot regions from MAIN_D_wrench.pdf retained with exact paths, limits and tick positions; labels and legend reflowed. Source contact_*_plot.pdf crops preserve the recorded data unchanged."
+  },
+  {
+    "asset": "nullspace_damping",
+    "source": "Current MyOwn/code/python/figures/make_nullspace_figure.py and the 12 archived MAIN_NS7/MAIN_NS8 log files. Individual vector panels are exported reproducibly with --panel-dir.",
+    "changes": "Panel (a): Cumulative Joint Motion, E_N [degrees]. All four settings use the recorded 5-9 s interval, displayed as 0-4 s. Endpoint means remain 7.598, 5.689, 0.288 and 1.687 degrees. Curves show three-trial means and one sample standard deviation. The two-line axis label matches the thesis. PDF, PNG, SVG and LaTeX wrapper are synchronized."
+  },
+  {
+    "asset": "wrench_comparison",
+    "source": "figures/ch05/MAIN_WR_contact_wrench.pdf",
+    "changes": "Original figure rendered directly; no screenshots or data changes."
+  },
+  {
+    "asset": "force_plausibility",
+    "source": "figures/ch05/MAIN_WR_force_plausibility.pdf",
+    "changes": "Original figure rendered directly; no screenshots or data changes."
+  },
+  {
+    "asset": "moment_plausibility",
+    "source": "figures/ch05/MAIN_WR_moment_plausibility.pdf",
+    "changes": "Original figure rendered directly; no screenshots or data changes."
+  },
+  {
+    "asset": "equation_force",
+    "source": "Thesis(20260907-171413).pdf / Chapters 2, 4 and 5",
+    "changes": "Typeset equation or symbol label; thesis notation retained.",
+    "presentation_representation": "Native editable PowerPoint Office Math, converted directly from the existing LaTeX source on 2026-09-15. Cambria Math. Formula source also retained in shape alternative text and native_equations.json. Legacy image variants retained as source assets.",
+    "equation_style": {
+      "font": "Cambria Math",
+      "size_pt": 22.0,
+      "weight": "regular",
+      "color": "#000000",
+      "rendering": "Original native PowerPoint vectors scaled to the uniform base size. Bold zeros replaced with regular Cambria Math zeros."
+    }
+  },
+  {
+    "asset": "equation_moment",
+    "source": "Thesis(20260907-171413).pdf / Chapters 2, 4 and 5",
+    "changes": "Typeset equation or symbol label; thesis notation retained.",
+    "presentation_representation": "Native editable PowerPoint Office Math, converted directly from the existing LaTeX source on 2026-09-15. Cambria Math. Formula source also retained in shape alternative text and native_equations.json. Legacy image variants retained as source assets.",
+    "equation_style": {
+      "font": "Cambria Math",
+      "size_pt": 22.0,
+      "weight": "regular",
+      "color": "#000000",
+      "rendering": "Original native PowerPoint vectors scaled to the uniform base size. Bold zeros replaced with regular Cambria Math zeros."
+    }
+  },
+  {
+    "asset": "equation_CoC",
+    "source": "Thesis(20260907-171413).pdf / Chapters 2, 4 and 5",
+    "changes": "Typeset equation or symbol label; thesis notation retained.",
+    "presentation_representation": "Native editable PowerPoint Office Math, converted directly from the existing LaTeX source on 2026-09-15. Cambria Math. Formula source also retained in shape alternative text and native_equations.json. Legacy image variants retained as source assets."
+  },
+  {
+    "asset": "equation_force_qs",
+    "source": "MyOwn/chapters/04_experimental_setup_and_evaluation.tex and chapters/05_results_and_discussion.tex, quasi-static plausibility assessment, commit 07507c72ebb00f5694887add193edbb20026e7c5",
+    "changes": "Native editable equation and matching LaTeX/PDF/PNG/SVG use 20 pt regular black Cambria Math for the centred validation-slide layout (2026-09-18).",
+    "presentation_representation": "Native editable PowerPoint Office Math, converted directly from the existing LaTeX source on 2026-09-15. Cambria Math. Formula source also retained in shape alternative text and native_equations.json. Legacy image variants retained as source assets.",
+    "equation_style": {
+      "font": "Cambria Math",
+      "size_pt": 22.0,
+      "weight": "regular",
+      "color": "#000000",
+      "rendering": "Original native PowerPoint vectors scaled to the uniform base size. Bold zeros replaced with regular Cambria Math zeros."
+    }
+  },
+  {
+    "asset": "equation_moment_qs",
+    "source": "MyOwn/chapters/04_experimental_setup_and_evaluation.tex and chapters/05_results_and_discussion.tex, quasi-static plausibility assessment, commit 07507c72ebb00f5694887add193edbb20026e7c5",
+    "changes": "Native editable equation and matching LaTeX/PDF/PNG/SVG use 20 pt regular black Cambria Math for the centred validation-slide layout (2026-09-18). Moment units use N.m and N.m/rad.",
+    "presentation_representation": "Native editable PowerPoint Office Math, converted directly from the existing LaTeX source on 2026-09-15. Cambria Math. Formula source also retained in shape alternative text and native_equations.json. Legacy image variants retained as source assets.",
+    "equation_style": {
+      "font": "Cambria Math",
+      "size_pt": 22.0,
+      "weight": "regular",
+      "color": "#000000",
+      "rendering": "Original native PowerPoint vectors scaled to the uniform base size. Bold zeros replaced with regular Cambria Math zeros."
+    }
+  },
+  {
+    "asset": "symbol_f_m",
+    "source": "Thesis(20260907-171413).pdf / Chapters 2, 4 and 5",
+    "changes": "Typeset equation or symbol label; thesis notation retained."
+  },
+  {
+    "asset": "symbol_errors",
+    "source": "Thesis(20260907-171413).pdf / Chapters 2, 4 and 5",
+    "changes": "Typeset equation or symbol label; thesis notation retained."
+  },
+  {
+    "asset": "symbol_K",
+    "source": "Thesis(20260907-171413).pdf / Chapters 2, 4 and 5",
+    "changes": "Typeset equation or symbol label; thesis notation retained.",
+    "presentation_representation": "Native editable PowerPoint Office Math, converted directly from the existing LaTeX source on 2026-09-15. Cambria Math. Formula source also retained in shape alternative text and native_equations.json. Legacy image variants retained as source assets.",
+    "equation_style": {
+      "font": "Cambria Math",
+      "size_pt": 22.0,
+      "weight": "regular",
+      "color": "#000000",
+      "rendering": "Original native PowerPoint vectors scaled to the uniform base size. Bold zeros replaced with regular Cambria Math zeros."
+    }
+  },
+  {
+    "asset": "symbol_D",
+    "source": "Thesis(20260907-171413).pdf / Chapters 2, 4 and 5",
+    "changes": "Typeset equation or symbol label; thesis notation retained.",
+    "presentation_representation": "Native editable PowerPoint Office Math, converted directly from the existing LaTeX source on 2026-09-15. Cambria Math. Formula source also retained in shape alternative text and native_equations.json. Legacy image variants retained as source assets.",
+    "equation_style": {
+      "font": "Cambria Math",
+      "size_pt": 22.0,
+      "weight": "regular",
+      "color": "#000000",
+      "rendering": "Original native PowerPoint vectors scaled to the uniform base size. Bold zeros replaced with regular Cambria Math zeros."
+    }
+  },
+  {
+    "asset": "symbol_velocity",
+    "source": "Thesis(20260907-171413).pdf / Chapters 2, 4 and 5",
+    "changes": "Typeset equation or symbol label; thesis notation retained.",
+    "presentation_representation": "Native editable PowerPoint Office Math, converted directly from the existing LaTeX source on 2026-09-15. Cambria Math. Formula source also retained in shape alternative text and native_equations.json. Legacy image variants retained as source assets.",
+    "equation_style": {
+      "font": "Cambria Math",
+      "size_pt": 22.0,
+      "weight": "regular",
+      "color": "#000000",
+      "rendering": "Original native PowerPoint vectors scaled to the uniform base size. Bold zeros replaced with regular Cambria Math zeros."
+    }
+  },
+  {
+    "asset": "symbol_indices",
+    "source": "Thesis(20260907-171413).pdf / Chapters 2, 4 and 5",
+    "changes": "Typeset equation or symbol label; thesis notation retained.",
+    "presentation_representation": "Native editable PowerPoint Office Math, converted directly from the existing LaTeX source on 2026-09-15. Cambria Math. Formula source also retained in shape alternative text and native_equations.json. Legacy image variants retained as source assets.",
+    "equation_style": {
+      "font": "Cambria Math",
+      "size_pt": 22.0,
+      "weight": "regular",
+      "color": "#000000",
+      "rendering": "Original native PowerPoint vectors scaled to the uniform base size. Bold zeros replaced with regular Cambria Math zeros."
+    }
+  },
+  {
+    "asset": "symbol_ns",
+    "source": "Thesis(20260907-171413).pdf / Chapters 2, 4 and 5",
+    "changes": "Typeset equation or symbol label; thesis notation retained.",
+    "presentation_representation": "Native editable PowerPoint Office Math, converted directly from the existing LaTeX source on 2026-09-15. Cambria Math. Formula source also retained in shape alternative text and native_equations.json. Legacy image variants retained as source assets.",
+    "equation_style": {
+      "font": "Cambria Math",
+      "size_pt": 22.0,
+      "weight": "regular",
+      "color": "#000000",
+      "rendering": "Original native PowerPoint vectors scaled to the uniform base size. Bold zeros replaced with regular Cambria Math zeros."
+    }
+  },
+  {
+    "asset": "symbol_tangents",
+    "source": "Thesis(20260907-171413).pdf / Chapters 2, 4 and 5",
+    "changes": "Typeset equation or symbol label; thesis notation retained.",
+    "presentation_representation": "Native editable PowerPoint Office Math, converted directly from the existing LaTeX source on 2026-09-15. Cambria Math. Formula source also retained in shape alternative text and native_equations.json. Legacy image variants retained as source assets.",
+    "equation_style": {
+      "font": "Cambria Math",
+      "size_pt": 22.0,
+      "weight": "regular",
+      "color": "#000000",
+      "rendering": "Original native PowerPoint vectors scaled to the uniform base size. Bold zeros replaced with regular Cambria Math zeros."
+    }
+  },
+  {
+    "asset": "symbol_pc",
+    "source": "Thesis(20260907-171413).pdf / Chapters 2, 4 and 5",
+    "changes": "Typeset equation or symbol label; thesis notation retained.",
+    "presentation_representation": "Native editable PowerPoint Office Math, converted directly from the existing LaTeX source on 2026-09-15. Cambria Math. Formula source also retained in shape alternative text and native_equations.json. Legacy image variants retained as source assets.",
+    "equation_style": {
+      "font": "Cambria Math",
+      "size_pt": 22.0,
+      "weight": "regular",
+      "color": "#000000",
+      "rendering": "Original native PowerPoint vectors scaled to the uniform base size. Bold zeros replaced with regular Cambria Math zeros."
+    }
+  },
+  {
+    "asset": "symbol_rc",
+    "source": "Thesis(20260907-171413).pdf / Chapters 2, 4 and 5",
+    "changes": "Typeset equation or symbol label; thesis notation retained."
+  },
+  {
+    "asset": "symbol_fn",
+    "source": "Thesis(20260907-171413).pdf / Chapters 2, 4 and 5",
+    "changes": "Typeset equation or symbol label; thesis notation retained."
+  },
+  {
+    "asset": "symbol_mR",
+    "source": "Thesis(20260907-171413).pdf / Chapters 2, 4 and 5",
+    "changes": "Typeset equation or symbol label; thesis notation retained.",
+    "presentation_representation": "Native editable PowerPoint Office Math, converted directly from the existing LaTeX source on 2026-09-15. Cambria Math. Formula source also retained in shape alternative text and native_equations.json. Legacy image variants retained as source assets."
+  },
+  {
+    "asset": "symbol_thetaoffset",
+    "source": "Thesis(20260907-171413).pdf / Chapters 2, 4 and 5",
+    "changes": "Typeset equation or symbol label; thesis notation retained."
+  },
+  {
+    "asset": "symbol_thetaach",
+    "source": "Thesis(20260907-171413).pdf / Chapters 2, 4 and 5",
+    "changes": "Typeset equation or symbol label; thesis notation retained."
+  },
+  {
+    "asset": "symbol_gamma",
+    "source": "Thesis(20260907-171413).pdf / Chapters 2, 4 and 5",
+    "changes": "Typeset equation or symbol label; thesis notation retained."
+  },
+  {
+    "asset": "symbol_KR",
+    "source": "Thesis(20260907-171413).pdf / Chapters 2, 4 and 5",
+    "changes": "Typeset equation or symbol label; thesis notation retained."
+  },
+  {
+    "asset": "symbol_Kp",
+    "source": "Thesis(20260907-171413).pdf / Chapters 2, 4 and 5",
+    "changes": "Typeset equation or symbol label; thesis notation retained."
+  },
+  {
+    "asset": "symbol_rct2",
+    "source": "Thesis(20260907-171413).pdf / Chapters 2, 4 and 5",
+    "changes": "Typeset equation or symbol label; thesis notation retained.",
+    "presentation_representation": "Native editable PowerPoint Office Math, converted directly from the existing LaTeX source on 2026-09-15. Cambria Math. Formula source also retained in shape alternative text and native_equations.json. Legacy image variants retained as source assets.",
+    "equation_style": {
+      "font": "Cambria Math",
+      "size_pt": 22.0,
+      "weight": "regular",
+      "color": "#000000",
+      "rendering": "Original native PowerPoint vectors scaled to the uniform base size. Bold zeros replaced with regular Cambria Math zeros."
+    }
+  },
+  {
+    "asset": "symbol_Mest",
+    "source": "Thesis(20260907-171413).pdf / Chapters 2, 4 and 5",
+    "changes": "Typeset equation or symbol label; thesis notation retained."
+  },
+  {
+    "asset": "symbol_FN",
+    "source": "Thesis(20260907-171413).pdf / Chapters 2, 4 and 5",
+    "changes": "Typeset equation or symbol label; thesis notation retained."
+  },
+  {
+    "asset": "symbol_M",
+    "source": "Thesis(20260907-171413).pdf / Chapters 2, 4 and 5",
+    "changes": "Typeset equation or symbol label; thesis notation retained."
+  },
+  {
+    "asset": "symbol_EN",
+    "source": "Thesis(20260907-171413).pdf / Chapters 2, 4 and 5",
+    "changes": "Typeset equation or symbol label; thesis notation retained."
+  },
+  {
+    "asset": "symbol_dnull",
+    "source": "Thesis(20260907-171413).pdf / Chapters 2, 4 and 5",
+    "changes": "Typeset equation or symbol label; thesis notation retained."
+  },
+  {
+    "asset": "symbol_t",
+    "source": "Thesis(20260907-171413).pdf / Chapters 2, 4 and 5",
+    "changes": "Typeset equation or symbol label; thesis notation retained."
+  },
+  {
+    "asset": "symbol_force_baseline",
+    "source": "Thesis(20260907-171413).pdf / Chapters 2, 4 and 5",
+    "changes": "Typeset equation or symbol label; thesis notation retained."
+  },
+  {
+    "asset": "symbol_moment_baseline",
+    "source": "Thesis(20260907-171413).pdf / Chapters 2, 4 and 5",
+    "changes": "Typeset equation or symbol label; thesis notation retained."
+  },
+  {
+    "asset": "symbol_Kpn",
+    "source": "Thesis(20260907-171413).pdf / Chapters 2, 4 and 5",
+    "changes": "Typeset equation or symbol label; thesis notation retained."
+  },
+  {
+    "asset": "symbol_est",
+    "source": "Thesis(20260907-171413).pdf / Chapters 2, 4 and 5",
+    "changes": "Typeset equation or symbol label; thesis notation retained."
+  },
+  {
+    "asset": "symbol_qs",
+    "source": "Thesis(20260907-171413).pdf / Chapters 2, 4 and 5",
+    "changes": "Typeset equation or symbol label; thesis notation retained."
+  },
+  {
+    "asset": "nullspace_dimension",
+    "source": "MyOwn/chapters/04_experimental_setup_and_evaluation.tex: structural null direction and full-rank one-dimensional null space; rank-nullity for the geometric Jacobian",
+    "changes": "New explanatory equation asset for the Null-space control introduction; no experimental data changed."
+  },
+  {
+    "asset": "nullspace_velocity",
+    "source": "MyOwn/chapters/04_experimental_setup_and_evaluation.tex: structural null direction and full-rank one-dimensional null space; rank-nullity for the geometric Jacobian",
+    "changes": "New explanatory equation asset for the Null-space control introduction; no experimental data changed."
+  },
+  {
+    "asset": "cartesian_torque_mapping",
+    "source": "MyOwn/chapters/02_theoretical_background.tex: eq:joint_torque_mapping and eq:nullspace_complete_torque_command; chapters/03_software_implementation.tex",
+    "changes": "Equation rendered for the Cartesian impedance torque slide. On 2026-09-21 the user removed the cart subscript from tau on Real-time control, leaving tau = J^T(q) F. Native equation, LaTeX, catalog and PDF/PNG/SVG assets match. Thesis notation and speaking material are unchanged.",
+    "presentation_representation": "Native editable PowerPoint Office Math, converted directly from the existing LaTeX source on 2026-09-15. Cambria Math. Formula source also retained in shape alternative text and native_equations.json. Legacy image variants retained as source assets.",
+    "equation_style": {
+      "font": "Cambria Math",
+      "size_pt": 22.0,
+      "weight": "regular",
+      "color": "#000000",
+      "rendering": "Original native PowerPoint vectors scaled to the uniform base size. Bold zeros replaced with regular Cambria Math zeros."
+    }
+  },
+  {
+    "asset": "complete_torque_command",
+    "source": "MyOwn/chapters/02_theoretical_background.tex: eq:joint_torque_mapping and eq:nullspace_complete_torque_command; chapters/03_software_implementation.tex",
+    "changes": "Equation rendered for the added Cartesian impedance torque slide; formulation preserved from the thesis."
+  },
+  {
+    "asset": "nullspace_torque_components",
+    "source": "MyOwn/chapters/02_theoretical_background.tex, eq:nullspace_torque, eq:nullspace_damping_torque and eq:nullspace_sigma_torque",
+    "changes": "Typeset sum of damping and conditioning torque for the Null-space control introduction; distinguish motion damping from active configuration conditioning."
+  },
+  {
+    "asset": "ee_position",
+    "source": "MyOwn/chapters/02_theoretical_background.tex, Rigid-Body Pose and Pose Error, eq:end_effector_pose; chapters/03_software_implementation.tex, robot-state feedback",
+    "changes": "Typeset position, rotation-matrix orientation and measured homogeneous pose for the End-effector pose introduction. Thesis base-frame and TCP conventions retained."
+  },
+  {
+    "asset": "ee_orientation",
+    "source": "MyOwn/chapters/02_theoretical_background.tex, Rigid-Body Pose and Pose Error, eq:end_effector_pose; chapters/03_software_implementation.tex, robot-state feedback",
+    "changes": "Typeset position, rotation-matrix orientation and measured homogeneous pose for the End-effector pose introduction. Thesis base-frame and TCP conventions retained."
+  },
+  {
+    "asset": "ee_pose",
+    "source": "MyOwn/chapters/02_theoretical_background.tex, Rigid-Body Pose and Pose Error, eq:end_effector_pose; chapters/03_software_implementation.tex, robot-state feedback",
+    "changes": "Typeset position, rotation-matrix orientation and measured homogeneous pose for the End-effector pose introduction. Thesis base-frame and TCP conventions retained."
+  },
+  {
+    "asset": "pose_measured_symbols",
+    "source": "MyOwn/chapters/02_theoretical_background.tex, Coordinate Frames and Pose Error",
+    "changes": "LaTeX rendering of measured/desired pose notation or error definition for the combined Cartesian impedance wrench slide. Position error is desired minus measured; orientation error is the measured-to-desired rotational correction."
+  },
+  {
+    "asset": "pose_desired_symbols",
+    "source": "MyOwn/chapters/02_theoretical_background.tex, Coordinate Frames and Pose Error",
+    "changes": "LaTeX rendering of measured/desired pose notation or error definition for the combined Cartesian impedance wrench slide. Position error is desired minus measured; orientation error is the measured-to-desired rotational correction."
+  },
+  {
+    "asset": "position_error_definition",
+    "source": "MyOwn/chapters/02_theoretical_background.tex, Coordinate Frames and Pose Error",
+    "changes": "LaTeX rendering of measured/desired pose notation or error definition for the combined Cartesian impedance wrench slide. Position error is desired minus measured; orientation error is the measured-to-desired rotational correction.",
+    "presentation_representation": "Native editable PowerPoint Office Math, converted directly from the existing LaTeX source on 2026-09-15. Cambria Math. Formula source also retained in shape alternative text and native_equations.json. Legacy image variants retained as source assets.",
+    "equation_style": {
+      "font": "Cambria Math",
+      "size_pt": 22.0,
+      "weight": "regular",
+      "color": "#000000",
+      "rendering": "Original native PowerPoint vectors scaled to the uniform base size. Bold zeros replaced with regular Cambria Math zeros."
+    }
+  },
+  {
+    "asset": "orientation_error_symbol",
+    "source": "MyOwn/chapters/02_theoretical_background.tex, Coordinate Frames and Pose Error",
+    "changes": "LaTeX rendering of measured/desired pose notation or error definition for the combined Cartesian impedance wrench slide. Position error is desired minus measured; orientation error is the measured-to-desired rotational correction."
+  },
+  {
+    "asset": "tool_pose_frame",
+    "source": "MyOwn/figures/ch02/reference_frames.tex; chapters/02_theoretical_background.tex",
+    "changes": "Adapted measured and desired frame sketch with position-error arrow. Other frames and homogeneous transformation omitted from main slide; schematic, no numerical example. Removed from the active wrench slide at the user's request; retained only as an unused source asset."
+  },
+  {
+    "asset": "contact_full_response",
+    "source": "MyOwn/figures/ch04/surface_reference_geometry.tex; MyOwn/figures/ch05; MyOwn/code/python/figures/contact_angular_error/",
+    "changes": "2026-09-15: replaced contact-response gamma with calibrated-surface angular error theta_err,t1, calculated from the logged full normal-error vector with entry-offset sign convention. Endpoint plots use all 69 original reports (0.01-degree precision), three-trial means and sample SD. Three complete recorded time histories supply representative curves. Timing uses a common 0.1-degree angular error band: 2.5 and 3.6 s. Force and moment measurements, units, axes, colours and model-estimate qualification retained. Synchronized editable LaTeX, PDF, PNG and SVG."
+  },
+  {
+    "asset": "position_reference_pair",
+    "source": "MyOwn/chapters/02_theoretical_background.tex, Coordinate Frames and Pose Error",
+    "changes": "LaTeX rendering of desired/measured position or orientation symbols for the paired-column wrench layout. No numerical data changed."
+  },
+  {
+    "asset": "orientation_reference_pair",
+    "source": "MyOwn/chapters/02_theoretical_background.tex, Coordinate Frames and Pose Error",
+    "changes": "LaTeX rendering of desired/measured position or orientation symbols for the paired-column wrench layout. No numerical data changed."
+  },
+  {
+    "asset": "controller_orientation_error",
+    "source": "MyOwn/chapters/02_theoretical_background.tex; MyOwn/chapters/04_experimental_setup_and_evaluation.tex",
+    "changes": "Simplified to e_R = phi u. The rotation-matrix identity was removed at the user's request. The native editable equation, LaTeX source and PDF/PNG/SVG reference assets match.",
+    "presentation_representation": "Native editable PowerPoint Office Math, converted directly from the existing LaTeX source on 2026-09-15. Cambria Math. Formula source also retained in shape alternative text and native_equations.json. Legacy image variants retained as source assets.",
+    "equation_style": {
+      "font": "Cambria Math",
+      "size_pt": 22.0,
+      "weight": "regular",
+      "color": "#000000",
+      "rendering": "Original native PowerPoint vectors scaled to the uniform base size. Bold zeros replaced with regular Cambria Math zeros."
+    }
+  },
+  {
+    "asset": "coupling_point_shift",
+    "source": "MyOwn/chapters/02_theoretical_background.tex: eq:offset_adjoint, eq:coupled_tcp_stiffness, eq:coupled_tcp_damping, and eq:commanded_moment_decomposition.",
+    "changes": "Simplified to A = Ad(r_c), omitting the error mapping. Synchronized standalone LaTeX source and PDF/PNG/SVG outputs. The slide focuses on transforming stiffness and damping and the resulting force-moment coupling.",
+    "presentation_representation": "Native editable PowerPoint Office Math, converted directly from the existing LaTeX source on 2026-09-15. Cambria Math. Formula source also retained in shape alternative text and native_equations.json. Legacy image variants retained as source assets.",
+    "equation_style": {
+      "font": "Cambria Math",
+      "size_pt": 22.0,
+      "weight": "regular",
+      "color": "#000000",
+      "rendering": "Original native PowerPoint vectors scaled to the uniform base size. Bold zeros replaced with regular Cambria Math zeros."
+    }
+  },
+  {
+    "asset": "coupling_displacement",
+    "source": "MyOwn/chapters/02_theoretical_background.tex; MyOwn/chapters/04_experimental_setup_and_evaluation.tex",
+    "changes": "Thesis equation typeset for the presentation; notation, signs and numerical settings retained. PDF/PNG/SVG generated from the matching standalone LaTeX source."
+  },
+  {
+    "asset": "coupling_stiffness_transform",
+    "source": "MyOwn/chapters/02_theoretical_background.tex; MyOwn/chapters/04_experimental_setup_and_evaluation.tex",
+    "changes": "Thesis equation typeset for the presentation; notation, signs and numerical settings retained. PDF/PNG/SVG generated from the matching standalone LaTeX source.",
+    "presentation_representation": "Native editable PowerPoint Office Math, converted directly from the existing LaTeX source on 2026-09-15. Cambria Math. Formula source also retained in shape alternative text and native_equations.json. Legacy image variants retained as source assets.",
+    "presentation_status": "Combined into the native coupling_wrench_blocks equation on footer 7, 2026-09-15. Source assets retained."
+  },
+  {
+    "asset": "coupling_damping_transform",
+    "source": "MyOwn/chapters/02_theoretical_background.tex; MyOwn/chapters/04_experimental_setup_and_evaluation.tex",
+    "changes": "Thesis equation typeset for the presentation; notation, signs and numerical settings retained. PDF/PNG/SVG generated from the matching standalone LaTeX source.",
+    "presentation_representation": "Native editable PowerPoint Office Math, converted directly from the existing LaTeX source on 2026-09-15. Cambria Math. Formula source also retained in shape alternative text and native_equations.json. Legacy image variants retained as source assets.",
+    "presentation_status": "Combined into the native coupling_wrench_blocks equation on footer 7, 2026-09-15. Source assets retained."
+  },
+  {
+    "asset": "coupling_stiffness_blocks",
+    "source": "MyOwn/chapters/02_theoretical_background.tex; MyOwn/chapters/04_experimental_setup_and_evaluation.tex",
+    "changes": "Thesis equation typeset for the presentation; notation, signs and numerical settings retained. PDF/PNG/SVG generated from the matching standalone LaTeX source."
+  },
+  {
+    "asset": "coupling_damping_blocks",
+    "source": "MyOwn/chapters/02_theoretical_background.tex; MyOwn/chapters/04_experimental_setup_and_evaluation.tex",
+    "changes": "Thesis equation typeset for the presentation; notation, signs and numerical settings retained. PDF/PNG/SVG generated from the matching standalone LaTeX source."
+  },
+  {
+    "asset": "null_controller_dimension",
+    "source": "MyOwn/chapters/02_theoretical_background.tex; MyOwn/chapters/04_experimental_setup_and_evaluation.tex",
+    "changes": "Thesis equation typeset for the presentation; notation, signs and numerical settings retained. PDF/PNG/SVG generated from the matching standalone LaTeX source.",
+    "presentation_representation": "Native editable PowerPoint Office Math, converted directly from the existing LaTeX source on 2026-09-15. Cambria Math. Formula source also retained in shape alternative text and native_equations.json. Legacy image variants retained as source assets.",
+    "equation_style": {
+      "font": "Cambria Math",
+      "size_pt": 22.0,
+      "weight": "regular",
+      "color": "#000000",
+      "rendering": "Original native PowerPoint vectors scaled to the uniform base size. Bold zeros replaced with regular Cambria Math zeros."
+    }
+  },
+  {
+    "asset": "null_controller_velocity",
+    "source": "MyOwn/chapters/02_theoretical_background.tex; MyOwn/chapters/04_experimental_setup_and_evaluation.tex",
+    "changes": "Thesis equation typeset for the presentation; notation, signs and numerical settings retained. PDF/PNG/SVG generated from the matching standalone LaTeX source.",
+    "presentation_representation": "Native editable PowerPoint Office Math, converted directly from the existing LaTeX source on 2026-09-15. Cambria Math. Formula source also retained in shape alternative text and native_equations.json. Legacy image variants retained as source assets.",
+    "equation_style": {
+      "font": "Cambria Math",
+      "size_pt": 22.0,
+      "weight": "regular",
+      "color": "#000000",
+      "rendering": "Original native PowerPoint vectors scaled to the uniform base size. Bold zeros replaced with regular Cambria Math zeros."
+    }
+  },
+  {
+    "asset": "null_controller_damping",
+    "source": "MyOwn/chapters/02_theoretical_background.tex: null-space projectors and projected damping and conditioning. Verified against Thesis_Final_Control/surface_grinding_controller/src/control/robot_support.cpp.",
+    "changes": "Existing synchronized LaTeX/PDF/PNG/SVG equation artwork reused unchanged on the hidden Null-space torques and projector backup. Torque coefficients, direction selector, pseudoinverse, and kinematic projector are defined beside the equations or in the notes.",
+    "presentation_representation": "Native editable PowerPoint Office Math, converted directly from the existing LaTeX source on 2026-09-15. Cambria Math. Formula source also retained in shape alternative text and native_equations.json. Legacy image variants retained as source assets.",
+    "equation_style": {
+      "font": "Cambria Math",
+      "size_pt": 22.0,
+      "weight": "regular",
+      "color": "#000000",
+      "rendering": "Original native PowerPoint vectors scaled to the uniform base size. Bold zeros replaced with regular Cambria Math zeros."
+    }
+  },
+  {
+    "asset": "null_controller_conditioning",
+    "source": "MyOwn/chapters/02_theoretical_background.tex: null-space projectors and projected damping and conditioning. Verified against Thesis_Final_Control/surface_grinding_controller/src/control/robot_support.cpp.",
+    "changes": "Existing synchronized LaTeX/PDF/PNG/SVG equation artwork reused unchanged on the hidden Null-space torques and projector backup. Torque coefficients, direction selector, pseudoinverse, and kinematic projector are defined beside the equations or in the notes.",
+    "presentation_representation": "Native editable PowerPoint Office Math, converted directly from the existing LaTeX source on 2026-09-15. Cambria Math. Formula source also retained in shape alternative text and native_equations.json. Legacy image variants retained as source assets.",
+    "equation_style": {
+      "font": "Cambria Math",
+      "size_pt": 22.0,
+      "weight": "regular",
+      "color": "#000000",
+      "rendering": "Original native PowerPoint vectors scaled to the uniform base size. Bold zeros replaced with regular Cambria Math zeros."
+    }
+  },
+  {
+    "asset": "null_controller_projector",
+    "source": "MyOwn/chapters/02_theoretical_background.tex: null-space projectors and projected damping and conditioning. Verified against Thesis_Final_Control/surface_grinding_controller/src/control/robot_support.cpp.",
+    "changes": "Existing synchronized LaTeX/PDF/PNG/SVG equation artwork reused unchanged on the hidden Null-space torques and projector backup. Torque coefficients, direction selector, pseudoinverse, and kinematic projector are defined beside the equations or in the notes.",
+    "presentation_representation": "Native editable PowerPoint Office Math, converted directly from the existing LaTeX source on 2026-09-15. Cambria Math. Formula source also retained in shape alternative text and native_equations.json. Legacy image variants retained as source assets.",
+    "equation_style": {
+      "font": "Cambria Math",
+      "size_pt": 22.0,
+      "weight": "regular",
+      "color": "#000000",
+      "rendering": "Original native PowerPoint vectors scaled to the uniform base size. Bold zeros replaced with regular Cambria Math zeros."
+    }
+  },
+  {
+    "asset": "null_experiment_disturbance",
+    "source": "MyOwn/chapters/02_theoretical_background.tex; MyOwn/chapters/04_experimental_setup_and_evaluation.tex",
+    "changes": "Disturbance Jacobian written as J without the point index, matching the thesis. Native editable equation and LaTeX/PDF/PNG/SVG source variants synchronized on 2026-09-15. The selected link-point Jacobian retains its translational meaning.",
+    "presentation_representation": "Native editable PowerPoint Office Math, converted directly from the existing LaTeX source on 2026-09-15. Cambria Math. Formula source also retained in shape alternative text and native_equations.json. Legacy image variants retained as source assets.",
+    "equation_style": {
+      "font": "Cambria Math",
+      "size_pt": 22.0,
+      "weight": "regular",
+      "color": "#000000",
+      "rendering": "Original native PowerPoint vectors scaled to the uniform base size. Bold zeros replaced with regular Cambria Math zeros."
+    }
+  },
+  {
+    "asset": "null_experiment_retention",
+    "source": "MyOwn/chapters/02_theoretical_background.tex; MyOwn/chapters/04_experimental_setup_and_evaluation.tex",
+    "changes": "Thesis equation typeset for the presentation; notation, signs and numerical settings retained. PDF/PNG/SVG generated from the matching standalone LaTeX source."
+  },
+  {
+    "asset": "contact_normal_gain",
+    "source": "MyOwn/chapters/02_theoretical_background.tex; MyOwn/chapters/04_experimental_setup_and_evaluation.tex",
+    "changes": "Thesis equation typeset for the presentation; notation, signs and numerical settings retained. PDF/PNG/SVG generated from the matching standalone LaTeX source.",
+    "presentation_representation": "Native editable PowerPoint Office Math, converted directly from the existing LaTeX source on 2026-09-15. Cambria Math. Formula source also retained in shape alternative text and native_equations.json. Legacy image variants retained as source assets.",
+    "equation_style": {
+      "font": "Cambria Math",
+      "size_pt": 22.0,
+      "weight": "regular",
+      "color": "#000000",
+      "rendering": "Original native PowerPoint vectors scaled to the uniform base size. Bold zeros replaced with regular Cambria Math zeros."
+    }
+  },
+  {
+    "asset": "contact_rotation_gains",
+    "source": "MyOwn/chapters/02_theoretical_background.tex; MyOwn/chapters/04_experimental_setup_and_evaluation.tex",
+    "changes": "Thesis equation typeset for the presentation; notation, signs and numerical settings retained. PDF/PNG/SVG generated from the matching standalone LaTeX source.",
+    "presentation_representation": "Native editable PowerPoint Office Math, converted directly from the existing LaTeX source on 2026-09-15. Cambria Math. Formula source also retained in shape alternative text and native_equations.json. Legacy image variants retained as source assets.",
+    "equation_style": {
+      "font": "Cambria Math",
+      "size_pt": 22.0,
+      "weight": "regular",
+      "color": "#000000",
+      "rendering": "Original native PowerPoint vectors scaled to the uniform base size. Bold zeros replaced with regular Cambria Math zeros."
+    }
+  },
+  {
+    "asset": "contact_tangent_gains",
+    "source": "MyOwn/chapters/02_theoretical_background.tex; MyOwn/chapters/04_experimental_setup_and_evaluation.tex",
+    "changes": "Thesis equation typeset for the presentation; notation, signs and numerical settings retained. PDF/PNG/SVG generated from the matching standalone LaTeX source.",
+    "presentation_representation": "Native editable PowerPoint Office Math, converted directly from the existing LaTeX source on 2026-09-15. Cambria Math. Formula source also retained in shape alternative text and native_equations.json. Legacy image variants retained as source assets.",
+    "equation_style": {
+      "font": "Cambria Math",
+      "size_pt": 22.0,
+      "weight": "regular",
+      "color": "#000000",
+      "rendering": "Original native PowerPoint vectors scaled to the uniform base size. Bold zeros replaced with regular Cambria Math zeros."
+    }
+  },
+  {
+    "asset": "contact_damping_factor",
+    "source": "MyOwn/chapters/02_theoretical_background.tex; MyOwn/chapters/04_experimental_setup_and_evaluation.tex",
+    "changes": "Thesis equation typeset for the presentation; notation, signs and numerical settings retained. PDF/PNG/SVG generated from the matching standalone LaTeX source."
+  },
+  {
+    "asset": "nullspace_conditioning",
+    "source": "Current MyOwn/code/python/figures/make_nullspace_figure.py and the 12 archived MAIN_NS7/MAIN_NS8 log files. Individual vector panels are exported reproducibly with --panel-dir.",
+    "changes": "Panel (b) shows only absolute minimum-singular-value trajectories for no null-space torque, projected damping and conditioning at 1.5 and 2.0 N m. The former maximum-position-error subplot is removed. The four original three-trial mean traces and sample-standard-deviation bands are unchanged and occupy the full panel width. Metrics use recorded 5â€“9 s, displayed as 0â€“4 s. Raw data and diagnostic calculations remain unchanged. Synchronized LaTeX/PDF/PNG/SVG variants. Time-axis label shortened to Time, t [s]. The 0-4 s display, numerical summary, plotted geometry, dimensions, uncertainty, and series styles are unchanged."
+  },
+  {
+    "asset": "symbol_thetameas",
+    "source": "MyOwn/chapters/04_experimental_setup_and_evaluation.tex at main commit 0fea99b",
+    "changes": "Measured angular-offset symbol replacing theta_ach in the presentation definition. PDF/PNG/SVG rendered from the matching LaTeX source.",
+    "presentation_representation": "Native editable PowerPoint Office Math, converted directly from the existing LaTeX source on 2026-09-15. Cambria Math. Formula source also retained in shape alternative text and native_equations.json. Legacy image variants retained as source assets.",
+    "equation_style": {
+      "font": "Cambria Math",
+      "size_pt": 22.0,
+      "weight": "regular",
+      "color": "#000000",
+      "rendering": "Original native PowerPoint vectors scaled to the uniform base size. Bold zeros replaced with regular Cambria Math zeros."
+    }
+  },
+  {
+    "asset": "cartesian_pose_position",
+    "source": "MyOwn/chapters/02_theoretical_background.tex, coordinate frames and rigid-body pose; new schematic for the user-requested Cartesian-pose introduction.",
+    "changes": "2026-10-02: The end-effector position arrow is labelled p_EE. Original diagram geometry and parenthesized (EE) label retained.",
+    "presentation_palette": "2026-09-16: robot, gripper and physical tool bodies use theme blue #17365D with lighter blue depth shading. Geometry, axes, reference-direction colours and data are preserved. The requested recolouring applies to the presentation."
+  },
+  {
+    "asset": "cartesian_pose_orientation",
+    "source": "MyOwn/chapters/02_theoretical_background.tex, coordinate frames and rigid-body pose; new schematic for the user-requested Cartesian-pose introduction.",
+    "changes": "Illustrative geometry without numerical measurements. Shows reference-frame position coordinates or positive rotations for roll, pitch and yaw; not an experimental result. Editable LaTeX source and matching PDF/PNG/SVG retained. Both pose illustrations use the identical parallel-jaw gripper macro from sources/pose_gripper.tikz, placed at the EE frame origin; a schematic symbol, not an exact tool model. Revised shared gripper to a transparent orthographic side profile with horizontal fingers; all fill and perspective faces removed. Orientation axes run from EE through the outline. User refinement: rotate the gripper -90 degrees so both fingers point downward; show a transparent 3D left-side view with depth edges and no filled faces. Use identical shared geometry and scale in both figures. Latest user refinement: opaque solid gripper with shaded faces and a small positive z rotation (+15 degrees for illustration only), retaining downward fingers and identical geometry/scale. Rotation arcs use smooth paths and clear tangent-aligned arrowheads following the positive right-hand rule. Latest refinement: one continuous opaque gripper body with filled depth faces and no internal edge strokes; further positive yaw so its front faces right. The position illustration adds a schematic chain with seven circular joint markers and connecting links from the base origin to the gripper wrist. Rotation rings redrawn: the roll, pitch and yaw curls are plotted as fine polylines rather than smoothed curves, so each arrow tip is exactly tangent to its ring, and the ring radii are enlarged relative to the tip length. Each ring is split where it crosses its own axis, the far half being drawn before the axes and the near half after them over a white casing, so the axis passes through the ring. Ring positions and labels are spaced clear of the axis tips and of the gripper. Rotation senses and the roll-pitch-yaw convention are unchanged. Pitch and roll arrow tips corrected on 2026-09-10 using endpoint tangent markings and straight-sided triangular heads. Arc ends moved to flatter portions of the same rings to avoid hooked tips. Positive rotation senses, yaw curve, labels, axes, gripper and drawing scale are preserved. Follow-up pitch correction: end the curve at the exact centre of the triangular head base and extend the head forwards along the endpoint tangent. This removes the off-centre junction. Roll and yaw are unchanged. 2026-10-01: standalone diagram label EE is now (EE), preserving geometry and typography.",
+    "presentation_palette": "2026-09-16: robot, gripper and physical tool bodies use theme blue #17365D with lighter blue depth shading. Geometry, axes, reference-direction colours and data are preserved. The requested recolouring applies to the presentation."
+  },
+  {
+    "asset": "controller_wrench_blocks",
+    "source": "MyOwn/chapters/02_theoretical_background.tex: Cartesian impedance wrench and eq:pole_block_gains.",
+    "changes": "Combines force and moment into the decoupled wrench law. Underbraces identify 6x6 stiffness K_c and damping D_c; all off-diagonal blocks are 3x3 zero matrices. Uses the original angular velocity difference, not the derivative of the axis-angle error. Editable LaTeX with synchronized PDF/PNG/SVG.",
+    "presentation_representation": "Native editable PowerPoint Office Math, converted directly from the existing LaTeX source on 2026-09-15. Cambria Math. Formula source also retained in shape alternative text and native_equations.json. Legacy image variants retained as source assets.",
+    "equation_style": {
+      "font": "Cambria Math",
+      "size_pt": 22.0,
+      "weight": "regular",
+      "color": "#000000",
+      "rendering": "Original native PowerPoint vectors scaled to the uniform base size. Bold zeros replaced with regular Cambria Math zeros."
+    }
+  },
+  {
+    "asset": "pose_joint_configuration",
+    "source": "MyOwn/chapters/02_theoretical_background.tex: forward kinematics maps seven joint coordinates to end-effector pose.",
+    "changes": "2026-10-02: The end-effector position is explicitly p_EE = p_EE(q). Native 22 pt Cambria Math equation and PDF/PNG/SVG assets agree.",
+    "presentation_representation": "Native editable PowerPoint Office Math, converted directly from the existing LaTeX source on 2026-09-15. Cambria Math. Formula source also retained in shape alternative text and native_equations.json. Legacy image variants retained as source assets.",
+    "equation_style": {
+      "font": "Cambria Math",
+      "size_pt": 22.0,
+      "weight": "regular",
+      "color": "#000000",
+      "rendering": "Original native PowerPoint vectors scaled to the uniform base size. Bold zeros replaced with regular Cambria Math zeros."
+    }
+  },
+  {
+    "asset": "symbol_tau_d",
+    "source": "MyOwn/chapters/02_theoretical_background.tex: null-space damping and singular-value conditioning torque notation.",
+    "changes": "Torque symbol only, appended to the matching main-slide heading. Same LaTeX serif equation style, with navy heading color. Full torque formulas remain omitted from the introduction.",
+    "presentation_representation": "Native editable PowerPoint Office Math, converted directly from the existing LaTeX source on 2026-09-15. Cambria Math. Formula source also retained in shape alternative text and native_equations.json. Legacy image variants retained as source assets.",
+    "equation_style": {
+      "font": "Cambria Math",
+      "size_pt": 22.0,
+      "weight": "regular",
+      "color": "#000000",
+      "rendering": "Original native PowerPoint vectors scaled to the uniform base size. Bold zeros replaced with regular Cambria Math zeros."
+    }
+  },
+  {
+    "asset": "symbol_tau_sigma",
+    "source": "MyOwn/chapters/02_theoretical_background.tex: null-space damping and singular-value conditioning torque notation.",
+    "changes": "Torque symbol only, appended to the matching main-slide heading. Same LaTeX serif equation style, with navy heading color. Full torque formulas remain omitted from the introduction.",
+    "presentation_representation": "Native editable PowerPoint Office Math, converted directly from the existing LaTeX source on 2026-09-15. Cambria Math. Formula source also retained in shape alternative text and native_equations.json. Legacy image variants retained as source assets.",
+    "equation_style": {
+      "font": "Cambria Math",
+      "size_pt": 22.0,
+      "weight": "regular",
+      "color": "#000000",
+      "rendering": "Original native PowerPoint vectors scaled to the uniform base size. Bold zeros replaced with regular Cambria Math zeros."
+    }
+  },
+  {
+    "asset": "contact_wrench_three_panels",
+    "source": "MyOwn/figures/ch04/surface_reference_geometry.tex; MyOwn/figures/ch05; MyOwn/code/python/figures/contact_angular_error/",
+    "changes": "2026-09-15: replaced contact-response gamma with calibrated-surface angular error theta_err,t1, calculated from the logged full normal-error vector with entry-offset sign convention. Endpoint plots use all 69 original reports (0.01-degree precision), three-trial means and sample SD. Three complete recorded time histories supply representative curves. Timing uses a common 0.1-degree angular error band: 2.5 and 3.6 s. Force and moment measurements, units, axes, colours and model-estimate qualification retained. Synchronized editable LaTeX, PDF, PNG and SVG.",
+    "layout_update": "2026-10-01: footer 17 / physical slide 18 uses equal 224 x 168 pt (4:3) plot areas, native Latin Modern labels, aligned headings and a centred legend. Figure box: (30,135,900,310) pt. Original data-panel PDFs, values, scales, colours, timing guides, source grids and speaking material retained.",
+    "layout_verification": "experiments/slide17_proportions_20261001/verification.json"
+  },
+  {
+    "asset": "contact_normal_rotation",
+    "source": "MyOwn/chapters/04_experimental_setup_and_evaluation.tex, common Cartesian stiffness table, Contact-establishment row",
+    "changes": "Added K_R,n = 50 N m/rad to Contact experiment, footer 10. LaTeX source with matching PDF/PNG/SVG. Equation scale and equals-sign position match existing contact settings.",
+    "presentation_representation": "Native editable PowerPoint Office Math, converted directly from the existing LaTeX source on 2026-09-15. Cambria Math. Formula source also retained in shape alternative text and native_equations.json. Legacy image variants retained as source assets.",
+    "equation_style": {
+      "font": "Cambria Math",
+      "size_pt": 22.0,
+      "weight": "regular",
+      "color": "#000000",
+      "rendering": "Original native PowerPoint vectors scaled to the uniform base size. Bold zeros replaced with regular Cambria Math zeros."
+    }
+  },
+  {
+    "asset": "coc_displacement_definition",
+    "source": "MyOwn/chapters/02_theoretical_background.tex, TCP-to-CoC displacement definition and eq:offset_adjoint.",
+    "changes": "Standalone serif equation r_c = p_c - p_TCP. Defines the displacement on Translationâ€“rotation coupling before its use in A and the K/D transformations. Synchronized editable LaTeX and PDF/PNG/SVG outputs.",
+    "presentation_representation": "Native editable PowerPoint Office Math, converted directly from the existing LaTeX source on 2026-09-15. Cambria Math. Formula source also retained in shape alternative text and native_equations.json. Legacy image variants retained as source assets.",
+    "equation_style": {
+      "font": "Cambria Math",
+      "size_pt": 22.0,
+      "weight": "regular",
+      "color": "#000000",
+      "rendering": "Original native PowerPoint vectors scaled to the uniform base size. Bold zeros replaced with regular Cambria Math zeros."
+    }
+  },
+  {
+    "asset": "symbol_thetaerr",
+    "source": "MyOwn/chapters/04_experimental_setup_and_evaluation.tex",
+    "changes": "LaTeX serif theta_err,t1 symbol for the calibrated-surface angular error. Replaces gamma on Angular quantities.",
+    "presentation_representation": "Native editable PowerPoint Office Math, converted directly from the existing LaTeX source on 2026-09-15. Cambria Math. Formula source also retained in shape alternative text and native_equations.json. Legacy image variants retained as source assets.",
+    "equation_style": {
+      "font": "Cambria Math",
+      "size_pt": 22.0,
+      "weight": "regular",
+      "color": "#000000",
+      "rendering": "Original native PowerPoint vectors scaled to the uniform base size. Bold zeros replaced with regular Cambria Math zeros."
+    }
+  },
+  {
+    "asset": "robot_setup.jpeg",
+    "source": "User-provided photograph, matching C:/Users/USER/Downloads/Robto_Image.jpeg",
+    "changes": "Original 1536 by 2048 JPEG copied unchanged to the figure folder. Replaces the contact-rig sketch on Motivation, numbered slide 1 (physical slide 2). Full portrait photo displayed without cropping or distortion.",
+    "sha256": "c0a6975d06382b6e6dbe7b42d3b2bd325a0b12011208712e32b10b73bded25ab"
+  },
+  {
+    "asset": "position_error_sketch",
+    "source": "sources/position_error_sketch.tex",
+    "changes": "New schematic for Cartesian impedance controller. Measured state in navy and desired state in green. Position error from measured EE position to desired position. Reuses the established gripper geometry without changing orientation. Illustrative geometry only, with no experimental numbers. Editable LaTeX and PDF/PNG/SVG retained.",
+    "presentation_palette": "2026-09-16: robot, gripper and physical tool bodies use theme blue #17365D with lighter blue depth shading. Geometry, axes, reference-direction colours and data are preserved. The requested recolouring applies to the presentation."
+  },
+  {
+    "asset": "rotation_error_sketch",
+    "source": "sources/rotation_error_sketch.tex",
+    "changes": "Measured and desired orientations of the same tool face about one fixed origin. Solid navy measured face and dashed blue desired outline. The phi arc runs from measured to desired orientation about unit axis u, indicated by the circle-dot marker. Illustrative axis-angle geometry only. Paired slide headings read Positional error and Rotational error. Editable LaTeX and PDF/PNG/SVG synchronized.",
+    "presentation_palette": "2026-09-16: solid theme-blue (#17365D) measured tool face, with a lighter-blue (#4472C4) dashed desired outline and matching direction/label. Angle and axis remain black. Geometry, labels and scientific meaning are unchanged.",
+    "presentation_label_update": "2026-09-16: removed the visible Axis u out of page caption. Retained the u symbol, circle-dot marker, blue tool faces and all geometry."
+  },
+  {
+    "asset": "coupling_error_transform",
+    "source": "MyOwn/chapters/02_theoretical_background.tex, compliance-centre point-shift model",
+    "changes": "Native editable Office Math and matching standalone LaTeX/PDF/PNG/SVG equation.",
+    "presentation_status": "Removed from footer 7 with its heading on 2026-09-16 at the user request. Source assets retained. The full shifted wrench equation remains on the slide."
+  },
+  {
+    "asset": "coupling_wrench_transform",
+    "source": "MyOwn/chapters/02_theoretical_background.tex, compliance-centre point-shift model",
+    "changes": "Native editable Office Math and matching standalone LaTeX/PDF/PNG/SVG equation.",
+    "presentation_status": "Removed from footer 7 with its heading on 2026-09-16 at the user request. Source assets retained. The full shifted wrench equation remains on the slide."
+  },
+  {
+    "asset": "joint_motion_time",
+    "source": "Original MAIN_NS7/MAIN_NS8 joint-state diagnostic files, q1_deg and phase_time_s. All 12 trial identities verified against thesis main-log hashes. Portable sources/make_joint_motion.py and joint_motion_*.",
+    "changes": "Joint 1 Motion, Delta q1 [degrees]. Individual measured angle changes from disturbance onset, all four settings over 0-4 s and conditioning close-up over 0-1 s. Original 20 Hz timestamps, with no smoothing, averaging, interpolation or integration. Identical figure in the thesis and presentation."
+  },
+  {
+    "asset": "coupling_wrench_blocks",
+    "source": "sources/controller_wrench_blocks.tex and MyOwn/chapters/02_theoretical_background.tex, eq:pole_block_gains, eq:coupled_tcp_stiffness, eq:coupled_tcp_damping",
+    "changes": "Full force/moment matrix equation, with A^T and A around both block-diagonal stiffness and damping matrices. Underbraces identify the TCP matrices. Preserves the actual linear/angular velocity differences and the small-rotation model. Replaces two compact transformation equations on footer 7.",
+    "presentation_representation": "Native editable PowerPoint Office Math. LaTeX source and matching PDF/PNG/SVG retained.",
+    "equation_style": {
+      "font": "Cambria Math",
+      "size_pt": 22.0,
+      "weight": "regular",
+      "color": "#000000",
+      "rendering": "Original native PowerPoint vectors scaled to the uniform base size. Bold zeros replaced with regular Cambria Math zeros."
+    }
+  },
+  {
+    "asset": "joint_motion_single",
+    "source": "sources/make_joint_motion_views.py and unchanged joint_motion_samples.csv.gz. Source identities in joint_motion_provenance.json. Derived values and alignment audit in joint_motion_views_analysis.json / joint_motion_mean_curves.csv.",
+    "changes": "One measured joint-1 trajectory per setting, repetition r01 for all four settings. Original measured timestamps. Full 0-4 s and first-second conditioning views. Same axes as the all-repetitions figure."
+  },
+  {
+    "asset": "joint_motion_mean",
+    "source": "sources/make_joint_motion_views.py and unchanged joint_motion_samples.csv.gz. Source identities in joint_motion_provenance.json. Derived values and alignment audit in joint_motion_views_analysis.json / joint_motion_mean_curves.csv.",
+    "changes": "Arithmetic mean of three onset-relative measured joint-1 trajectories per setting. Shading is one sample standard deviation. Exact recorded times common to each setting, no interpolation or smoothing. Same axes and intervals as the all-repetitions figure."
+  },
+  {
+    "asset": "jacobian_velocity_mapping",
+    "source": "MyOwn/chapters/02_theoretical_background.tex, eq:differential_kinematics",
+    "changes": "Native editable equation [p_dot_EE; omega_EE] = J(q) q_dot replaces the verbal joint-to-EE velocity mapping on Real-time control, footer 6. Linear velocity precedes angular velocity. Matching LaTeX, PDF, PNG and SVG sources retained.",
+    "equation_style": {
+      "font": "Cambria Math",
+      "size_pt": 22.0,
+      "weight": "regular",
+      "color": "#000000",
+      "rendering": "Original native PowerPoint vectors scaled to the uniform base size. Bold zeros replaced with regular Cambria Math zeros."
+    }
+  },
+  {
+    "asset": "nullspace_damping_combined",
+    "source": "sources/make_combined_nullspace.py; sources/combined_nullspace_provenance.json",
+    "changes": "Includes three measured mode-3 trials at each of k_sigma=1.5 and 2 N m, both with d_null=2 N m s/rad. Original four conditions verified. Exact 5â€“9 s interval, three-trial mean/sample SD, same reference direction, no smoothing/interpolation. Presentation-only extension. PDF/PNG/SVG synchronized.",
+    "presentation_status": "2026-09-22: all-settings backup removed at the user request. Original slide and notes preserved in experiments/nullspace_narrative/archive/removed_B3_B4_all_settings_20260922.pptx. Figure assets, data and generator retained."
+  },
+  {
+    "asset": "joint_motion_time_combined",
+    "source": "sources/make_combined_nullspace.py; sources/combined_nullspace_provenance.json",
+    "changes": "Includes three measured mode-3 trials at each of k_sigma=1.5 and 2 N m, both with d_null=2 N m s/rad. Original four conditions verified. Exact 5â€“9 s interval, three-trial mean/sample SD, same reference direction, no smoothing/interpolation. Presentation-only extension. PDF/PNG/SVG synchronized.",
+    "presentation_status": "2026-09-22: B5 Joint motion: all individual trials removed at the user request. Original slide and notes preserved in experiments/nullspace_narrative/archive/removed_B5_individual_trials_20260922.pptx. Figure assets, data and generator retained."
+  },
+  {
+    "asset": "joint_motion_single_combined",
+    "source": "sources/make_combined_nullspace.py; sources/combined_nullspace_provenance.json",
+    "changes": "Includes three measured mode-3 trials at each of k_sigma=1.5 and 2 N m, both with d_null=2 N m s/rad. Original four conditions verified. Exact 5â€“9 s interval, three-trial mean/sample SD, same reference direction, no smoothing/interpolation. Presentation-only extension. PDF/PNG/SVG synchronized.",
+    "presentation_status": "2026-09-22: redundant backup slide removed from active deck. Original slide and notes retained in experiments/nullspace_narrative/archive/removed_nullspace_backups_20260922.pptx. Figure assets, source data and generator retained."
+  },
+  {
+    "asset": "joint_motion_mean_combined",
+    "source": "sources/make_combined_nullspace.py; sources/combined_nullspace_provenance.json",
+    "changes": "Includes three measured mode-3 trials at each of k_sigma=1.5 and 2 N m, both with d_null=2 N m s/rad. Original four conditions verified. Exact 5â€“9 s interval, three-trial mean/sample SD, same reference direction, no smoothing/interpolation. Presentation-only extension. PDF/PNG/SVG synchronized.",
+    "presentation_status": "2026-09-22: redundant backup slide removed from active deck. Original slide and notes retained in experiments/nullspace_narrative/archive/removed_nullspace_backups_20260922.pptx. Figure assets, source data and generator retained."
+  },
+  {
+    "asset": "nullspace_conditioning_combined",
+    "source": "sources/make_combined_nullspace.py; sources/combined_nullspace_provenance.json",
+    "changes": "Includes three measured mode-3 trials at each of k_sigma=1.5 and 2 N m, both with d_null=2 N m s/rad. Original four conditions verified. Exact 5â€“9 s interval, three-trial mean/sample SD, same reference direction, no smoothing/interpolation. Presentation-only extension. PDF/PNG/SVG synchronized.",
+    "presentation_status": "2026-09-22: all-settings backup removed at the user request. Original slide and notes preserved in experiments/nullspace_narrative/archive/removed_B3_B4_all_settings_20260922.pptx. Figure assets, data and generator retained."
+  },
+  {
+    "asset": "nullspace_cumulative_main",
+    "source": "sources/make_nullspace_narrative.py; sources/combined_nullspace_provenance.json",
+    "changes": "Main narrative subset: no torque, damping 2, conditioning 2, combined 2+2. Same recorded samples, means, sample SD and 5â€“9 s interval. The full six-setting figure is retained in hidden backup."
+  },
+  {
+    "asset": "nullspace_conditioning_main",
+    "source": "sources/make_nullspace_narrative.py; sources/combined_nullspace_provenance.json",
+    "changes": "Main narrative subset: no torque, damping 2, conditioning 2, combined 2+2. Same recorded samples, means, sample SD and 5â€“9 s interval. The full six-setting figure is retained in hidden backup.",
+    "presentation_update_2026_09_18": "Footer 21: remove (SI) from combined-control legend. Preserve data and curve styles."
+  },
+  {
+    "asset": "joint_motion_mean_main",
+    "source": "sources/make_nullspace_narrative.py; sources/combined_nullspace_provenance.json",
+    "changes": "Main narrative subset: no torque, damping 2, conditioning 2, combined 2+2. Same recorded samples, means, sample SD and 5â€“9 s interval. The full six-setting figure is retained in hidden backup.",
+    "presentation_update_2026_09_18": "Footer 22: identical Joint 1 Motion y-axis labels, full 0-4 s conditioning-and-combined panel, matching sparse-marker line styles from footer 21, and no (SI) suffix. Preserve original common samples and one sample SD."
+  },
+  {
+    "asset": "title_robot",
+    "source": "User attachment 20260916_150937.jpg",
+    "changes": "Moved from Motivation back to the title slide on 2026-10-02 at the user request. Full photograph on the right at (592, 103) pt, width 329.6 pt, unchanged aspect ratio and original image bytes. Motivation now contains the original embedded Contact demonstration video."
+  },
+  {
+    "asset": "thesis_figure_1_1",
+    "source": "Direct vector and raster crops from MyOwn/Thesis.pdf, Figure 1.1, physical PDF page 27.",
+    "changes": "2026-09-23: shared legend moved below the geometry in two rows; black dashed Desired orientation entry added. Original geometry, canvas size and slide placement retained.",
+    "source_tex_sha256": "2a91d046143fddddac4017a90ed7835643c70a2e0cf4efd57f36b958fc384655",
+    "backup_slide": "B5",
+    "physical_slide": 31,
+    "placement_update": "2026-09-22: renumbered after removal of the B3/B4 all-settings result slides. Figure assets unchanged.",
+    "extraction_report": "experiments/media_update/figure_1_1_legend_20260923.json"
+  },
+  {
+    "asset": "contact_wrench_three_panels_balanced",
+    "source": "sources/contact_wrench_three_panels_balanced.tex",
+    "changes": "2026-09-18: presentation layout variant for footer 17. Near-square data areas with separately reflowed, undistorted tick and axis labels. Compact centred legend. Original vector data panels, values, units, colours, limits, timing markers and thesis figure retained."
+  },
+  {
+    "asset": "contact_legend_balanced",
+    "source": "sources/contact_legend_balanced.tex",
+    "changes": "2026-09-18: presentation layout variant for footer 17. Near-square data areas with separately reflowed, undistorted tick and axis labels. Compact centred legend. Original vector data panels, values, units, colours, limits, timing markers and thesis figure retained."
+  },
+  {
+    "asset": "controller_feedback_diagram",
+    "source": "MyOwn-thesis/figures/ch03/controller_block_diagram.tex, Figure 3.2. Presentation source: sources/make_controller_feedback_diagram.py.",
+    "reference_source_sha256": "a515d3081fd88e55300f358e32373a2e49670231489505cc6867ad9e21aaab4f",
+    "changes": "Presentation-only simplification with black operation blocks, crossed signed junctions, labelled signal arrows, explicit K/D inputs, measured q input and additive model/null-space torque input. 2026-09-22: signal labels simplified to Reference state, Pose and velocity errors, and Measured state, with State: pose and velocity defined once. Both native equations and the 1 ms statement are preserved. Thesis and speaking material unchanged.",
+    "presentation_representation": "Native editable PowerPoint shapes and connectors, with matching PDF/PNG/SVG and DrawingML generated from one scene."
+  },
+  {
+    "asset": "contact_legend_per_plot",
+    "source": "sources/contact_legend_per_plot.tex",
+    "changes": "2026-10-01: At the user request, retain only the existing middle three-row legend on footer 17 / physical slide 18. Remove its left and right duplicates. The retained key, plots, data, typography and all asset bytes are unchanged.",
+    "positions_pt": [
+      {
+        "plot": "normal force",
+        "x": 442.80899999999997,
+        "y": 398,
+        "width": 126.382,
+        "height": 60.159
+      }
+    ],
+    "verification": "experiments/slide17_single_legend_20261001/verification.json"
+  },
+  {
+    "asset": "cartesian_pose_vector",
+    "source": "sources/cartesian_pose_vector.tex",
+    "changes": "2026-10-02: Native two-row Cartesian pose coordinate vector: position p_EE and roll-pitch-yaw orientation eta_EE, expanded to (x,y,z)^T and (phi,theta,psi)^T. The orientation coordinates describe the existing roll-pitch-yaw illustration.",
+    "equation_style": {
+      "font": "Cambria Math",
+      "size_pt": 22,
+      "weight": "regular",
+      "color": "#000000"
+    }
+  }
+]

@@ -1,0 +1,35 @@
+{
+  "date": "2026-10-02",
+  "title": "Cartesian impedance controller",
+  "physical_slide": 5,
+  "footer": 4,
+  "reading_order": [
+    "Force and Moment",
+    "Positional error and Rotational error",
+    "Cartesian wrench"
+  ],
+  "slide_count": 29,
+  "main_slides": 24,
+  "hidden_backups": 5,
+  "changed_package_parts": [
+    "ppt/slides/slide6.xml"
+  ],
+  "all_29_native_equations_preserved": true,
+  "all_original_shape_dimensions_preserved": true,
+  "all_five_embedded_videos_unchanged": true,
+  "all_notes_unchanged": true,
+  "speaking_files_unchanged": true,
+  "equation_catalog_unchanged": true,
+  "supplementary_pdf_unchanged": true,
+  "pdf_pages": 29,
+  "changed_pdf_pages": [
+    5
+  ],
+  "other_28_pdf_pages_pixel_identical": true,
+  "native_powerpoint_rendered": true,
+  "pptx_sha256": "75007e95e84eb9e9ff61a3feb52e78359ed6ac05c7581198b36abf48ee21652b",
+  "pdf_sha256": "31c4e3d5d40f36f3d20efa61efb9c846f86745724e1f63b5f0f5c1ab0dc9c7e8",
+  "installed": true,
+  "native_powerpoint_visual_review_passed": true,
+  "final_pdf_visual_review_passed": true
+}

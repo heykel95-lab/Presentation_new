@@ -1,0 +1,37 @@
+{
+  "date": "2026-10-02",
+  "title": "Cartesian pose and surface frame",
+  "physical_slide": 4,
+  "footer": 3,
+  "slide_count": 29,
+  "main_slides": 24,
+  "hidden_backups": 5,
+  "native_equations": 30,
+  "p_EE_in_diagram_and_kinematic_equation": true,
+  "end_effector_written_in_full": true,
+  "two_row_full_pose_vector_with_six_coordinates": true,
+  "position_orientation_split": true,
+  "other_28_native_equations_preserved": true,
+  "all_five_embedded_videos_unchanged": true,
+  "all_notes_unchanged": true,
+  "speaking_files_unchanged": true,
+  "supplementary_pdf_unchanged": true,
+  "only_position_diagram_label_changed": true,
+  "equation_catalog_updated": true,
+  "pdf_pages": 29,
+  "changed_pdf_pages": [
+    4
+  ],
+  "other_28_pdf_pages_pixel_identical": true,
+  "changed_package_parts": [
+    "ppt/slides/slide5.xml",
+    "ppt/media/image5.png"
+  ],
+  "native_powerpoint_rendered": true,
+  "pptx_sha256": "d020d80d7cc96b3c6dd4c630afd80190effa506e34e3cbb11f4a4486feae9ca1",
+  "pdf_sha256": "cd752c6d8ce43f15b8900dccd2792a44a4667305d7c2b3eb758e4d00e25a0415",
+  "installed": true,
+  "native_powerpoint_visual_review_passed": true,
+  "final_pdf_visual_review_passed": true,
+  "equation_and_diagram_assets_synchronized": true
+}

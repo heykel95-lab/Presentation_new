@@ -1,0 +1,125 @@
+{
+  "text": {
+    "Position heading": {
+      "xy": [
+        42,
+        181
+      ]
+    },
+    "Orientation heading": {
+      "xy": [
+        336,
+        181
+      ]
+    },
+    "Pose takeaway": {
+      "text": "Position depends on all 7 joint angles:",
+      "box": [
+        42,
+        396,
+        386,
+        28
+      ]
+    },
+    "Pose reference frame": {
+      "text": "Pose and controller equations use the robot base frame.",
+      "box": [
+        42,
+        428,
+        880,
+        26
+      ]
+    },
+    "Surface-axis components": {
+      "xy": [
+        52,
+        455
+      ]
+    },
+    "Next impedance quantities": {
+      "xy": [
+        52,
+        477
+      ]
+    }
+  },
+  "remove": [
+    "Controller calculation frame"
+  ],
+  "pictures": {
+    "End effector position figure": [
+      82,
+      218,
+      200,
+      166.79149321764683
+    ],
+    "End effector orientation figure": [
+      376,
+      213,
+      200,
+      182.58575169260058
+    ]
+  },
+  "equations": {
+    "Equation - pose_joint_configuration": [
+      438,
+      396,
+      178,
+      29
+    ],
+    "Equation - cartesian_pose_vector": [
+      209,
+      101,
+      250,
+      65
+    ]
+  },
+  "branches": [
+    {
+      "name": "Pose branch stem",
+      "from": [
+        331,
+        168
+      ],
+      "to": [
+        331,
+        173
+      ]
+    },
+    {
+      "name": "Pose branch crossbar",
+      "from": [
+        182,
+        173
+      ],
+      "to": [
+        476,
+        173
+      ]
+    },
+    {
+      "name": "Pose branch position",
+      "from": [
+        182,
+        173
+      ],
+      "to": [
+        182,
+        181
+      ],
+      "arrow": true
+    },
+    {
+      "name": "Pose branch orientation",
+      "from": [
+        476,
+        173
+      ],
+      "to": [
+        476,
+        181
+      ],
+      "arrow": true
+    }
+  ]
+}

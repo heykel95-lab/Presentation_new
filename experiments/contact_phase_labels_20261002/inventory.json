@@ -1,0 +1,540 @@
+[
+  {
+    "physical": 1,
+    "part": "ppt/slides/slide1.xml",
+    "text": [
+      "Master Thesis Presentation",
+      "Design and Implementation of a Real-Time Impedance Controller for a 7-DOF Collaborative Robot",
+      "Master Thesis \u00b7 Heykel Khadhraoui",
+      "Hochschule M\u00fcnchen",
+      "University of Applied Sciences",
+      "Design and Implementation of a Real-Time",
+      "Impedance Controller for a 7-DOF",
+      "Collaborative Robot",
+      "Heykel Khadhraoui",
+      "Computational Engineering (M.Sc.)",
+      "Supervisors: Prof. Norbert Nitzsche \u00b7 Prof. Ruth Otto",
+      "Date: 30.09.",
+      "2026"
+    ]
+  },
+  {
+    "physical": 2,
+    "part": "ppt/slides/slide2.xml",
+    "text": [
+      "Motivation",
+      "Design and Implementation of a Real-Time Impedance Controller for a 7-DOF Collaborative Robot",
+      "Master Thesis \u00b7 Heykel Khadhraoui",
+      "1",
+      "Problem",
+      "Grinding requires an aligned tool face.",
+      "Calibration leaves uncertainty in the physical surface orientation.",
+      "Idea",
+      "Cartesian impedance makes position and rotation compliant.",
+      "Pressing a tilted tool creates a contact moment.",
+      "Rotational compliance allows the tool to turn towards alignment.",
+      "Joint friction can prevent the desired tool alignment with the configured surface.",
+      "1. Introduction"
+    ]
+  },
+  {
+    "physical": 3,
+    "part": "ppt/slides/slide4.xml",
+    "text": [
+      "Overview",
+      "Design and Implementation of a Real-Time Impedance Controller for a 7-DOF Collaborative Robot",
+      "Master Thesis \u00b7 Heykel Khadhraoui",
+      "2",
+      "1.",
+      "Introduction",
+      "2.",
+      "Cartesian controller",
+      "3.",
+      "Contact experiments",
+      "4.",
+      "Contact results",
+      "5.",
+      "Null-space control and experiments",
+      "6.",
+      "Conclusion and future work"
+    ]
+  },
+  {
+    "physical": 4,
+    "part": "ppt/slides/slide5.xml",
+    "text": [
+      "Cartesian pose and surface frame",
+      "Design and Implementation of a Real-Time Impedance Controller for a 7-DOF Collaborative Robot",
+      "Master Thesis \u00b7 Heykel Khadhraoui",
+      "3",
+      "2. Cartesian controller",
+      "Position: 3 translations",
+      "Orientation: 3 rotations",
+      "Surface frame",
+      "Pose and controller equations use the robot base frame.",
+      "Position depends on all 7 joint angles:",
+      "outward surface normal",
+      "perpendicular tangents",
+      "Surface axes define force and moment components and the directions for impedance gains.",
+      "Next: force f, moment m, stiffness K and damping D in the impedance law.",
+      "Cartesian pose of the end-effector (EE)"
+    ]
+  },
+  {
+    "physical": 5,
+    "part": "ppt/slides/slide6.xml",
+    "text": [
+      "Cartesian impedance controller",
+      "Design and Implementation of a Real-Time Impedance Controller for a 7-DOF Collaborative Robot",
+      "Master Thesis \u00b7 Heykel Khadhraoui",
+      "4",
+      "Cartesian wrench",
+      "Force",
+      "Moment",
+      "In the surface frame, K and D are diagonal and decouple translation and rotation.",
+      "2. Cartesian controller",
+      "Positional error",
+      "Rotational error"
+    ]
+  },
+  {
+    "physical": 6,
+    "part": "ppt/slides/slide7.xml",
+    "text": [
+      "Real-time control",
+      "Design and Implementation of a Real-Time Impedance Controller for a 7-DOF Collaborative Robot",
+      "Master Thesis \u00b7 Heykel Khadhraoui",
+      "5",
+      "Real-time control with a 1 ms cycle",
+      "Commanded joint torques (motors):",
+      "Jacobian:",
+      "Desired reference",
+      "Impedance controller",
+      "\ud835\udc3d",
+      "T",
+      "(\ud835\udc5e)",
+      "Robot",
+      "+",
+      "\u2212",
+      "+",
+      "+",
+      "Reference state",
+      "Pose and",
+      "velocity errors",
+      "State: pose and velocity",
+      "Stiffness and damping",
+      "\ud835\udc3e",
+      ", ",
+      "\ud835\udc37",
+      "\ud835\udc39",
+      "\ud835\udf0f",
+      "\ud835\udf0f",
+      "cmd",
+      "Model + null-space",
+      "Torques",
+      "Measured state",
+      "Measured robot state",
+      "\ud835\udc5e",
+      "2. Cartesian controller",
+      "Cartesian contribution",
+      "Linear and angular velocity (geometric)"
+    ]
+  },
+  {
+    "physical": 7,
+    "part": "ppt/slides/slide41.xml",
+    "text": [
+      "Centre of compliance (CoC)",
+      "Design and Implementation of a Real-Time Impedance Controller for a 7-DOF Collaborative Robot",
+      "Master Thesis \u00b7 Heykel Khadhraoui",
+      "6",
+      "2. Cartesian controller",
+      "Tool centre point (TCP)",
+      "Controlled reference point",
+      "on the (EE).",
+      "Centre of compliance (CoC)",
+      "Virtual reference point",
+      "for Cartesian impedance.",
+      "The force acts as if applied at the virtual CoC.",
+      "Additional moment about the TCP:"
+    ]
+  },
+  {
+    "physical": 8,
+    "part": "ppt/slides/slide9.xml",
+    "text": [
+      "Centre of compliance (CoC)",
+      "Design and Implementation of a Real-Time Impedance Controller for a 7-DOF Collaborative Robot",
+      "Master Thesis \u00b7 Heykel Khadhraoui",
+      "7",
+      "Effect of CoC displacement",
+      "Added moment can support or oppose rotation.",
+      "2. Cartesian controller",
+      "Curved arrows show the moment about the TCP from the force at the virtual CoC."
+    ]
+  },
+  {
+    "physical": 9,
+    "part": "ppt/slides/slide8.xml",
+    "text": [
+      "Translation\u2013rotation coupling",
+      "Design and Implementation of a Real-Time Impedance Controller for a 7-DOF Collaborative Robot",
+      "Master Thesis \u00b7 Heykel Khadhraoui",
+      "8",
+      "Non-zero off-diagonal blocks in ",
+      "K",
+      " and ",
+      "D",
+      " couple translation and rotation.",
+      "Shifting the impedance reference point",
+      "Point-shift adjoint",
+      "Virtual centre of compliance (CoC): new reference",
+      "Displacement from TCP to CoC",
+      "Tool centre point (TCP): controlled reference point on the (EE)",
+      "Choosing an impedance reference point away from the TCP couples force and moment.",
+      "The commanded force acts as if applied at the virtual point ",
+      "p",
+      "CoC",
+      ".",
+      "2. Cartesian controller"
+    ]
+  },
+  {
+    "physical": 10,
+    "part": "ppt/slides/slide11.xml",
+    "text": [
+      "Contact experiment",
+      "Design and Implementation of a Real-Time Impedance Controller for a 7-DOF Collaborative Robot",
+      "Master Thesis \u00b7 Heykel Khadhraoui",
+      "9",
+      "Tool orientation    \u2192    Surface approach    \u2192    Contact establishment    \u2192    Surface grinding",
+      "Compliant contact settings",
+      "Normal translation",
+      "Rotations about the surface tangents",
+      "Tangential translation",
+      "Rotation about the surface normal",
+      "3. Contact experiments"
+    ]
+  },
+  {
+    "physical": 11,
+    "part": "ppt/slides/slide38.xml",
+    "text": [
+      "Plausibility experiment",
+      "Design and Implementation of a Real-Time Impedance Controller for a 7-DOF Collaborative Robot",
+      "Master Thesis \u00b7 Heykel Khadhraoui",
+      "10",
+      "3. Contact experiments"
+    ]
+  },
+  {
+    "physical": 12,
+    "part": "ppt/slides/slide14.xml",
+    "text": [
+      "Normal-force plausibility assessment",
+      "Design and Implementation of a Real-Time Impedance Controller for a 7-DOF Collaborative Robot",
+      "Master Thesis \u00b7 Heykel Khadhraoui",
+      "11",
+      "Commanded mean",
+      "\u221219.64\u00a0N",
+      "Model-estimated mean",
+      "\u221222.29\u00a0N",
+      "Manual push: about 20 mm",
+      "Quasi-static prediction",
+      "\u221219.65\u00a0N",
+      "4. Contact results"
+    ]
+  },
+  {
+    "physical": 13,
+    "part": "ppt/slides/slide15.xml",
+    "text": [
+      "Moment plausibility assessment",
+      "Design and Implementation of a Real-Time Impedance Controller for a 7-DOF Collaborative Robot",
+      "Master Thesis \u00b7 Heykel Khadhraoui",
+      "12",
+      "Commanded mean",
+      "1.72\u00a0N.m",
+      "Model-estimated mean",
+      "1.85\u00a0N.m",
+      "Manual rotation: about 6.5\u00b0",
+      "Quasi-static prediction",
+      "1.72\u00a0N.m",
+      "4. Contact results"
+    ]
+  },
+  {
+    "physical": 14,
+    "part": "ppt/slides/slide16.xml",
+    "text": [
+      "Commanded and estimated wrench",
+      "Design and Implementation of a Real-Time Impedance Controller for a 7-DOF Collaborative Robot",
+      "Master Thesis \u00b7 Heykel Khadhraoui",
+      "13",
+      "4. Contact results"
+    ]
+  },
+  {
+    "physical": 15,
+    "part": "ppt/slides/slide18.xml",
+    "text": [
+      "Effect of rotational stiffness",
+      "Design and Implementation of a Real-Time Impedance Controller for a 7-DOF Collaborative Robot",
+      "Master Thesis \u00b7 Heykel Khadhraoui",
+      "14",
+      "Resistance to rotation about ",
+      "t",
+      "1",
+      "4. Contact results"
+    ]
+  },
+  {
+    "physical": 16,
+    "part": "ppt/slides/slide19.xml",
+    "text": [
+      "Effect of CoC position",
+      "Design and Implementation of a Real-Time Impedance Controller for a 7-DOF Collaborative Robot",
+      "Master Thesis \u00b7 Heykel Khadhraoui",
+      "15",
+      "CoC displacement along ",
+      "t",
+      "2",
+      "4. Contact results"
+    ]
+  },
+  {
+    "physical": 17,
+    "part": "ppt/slides/slide20.xml",
+    "text": [
+      "Angular error and interaction wrench",
+      "Design and Implementation of a Real-Time Impedance Controller for a 7-DOF Collaborative Robot",
+      "Master Thesis \u00b7 Heykel Khadhraoui",
+      "16",
+      "Angular error",
+      "TCP moment",
+      "Normal force",
+      "4. Contact results"
+    ]
+  },
+  {
+    "physical": 18,
+    "part": "ppt/slides/slide10.xml",
+    "text": [
+      "Null-space controller",
+      "Design and Implementation of a Real-Time Impedance Controller for a 7-DOF Collaborative Robot",
+      "Master Thesis \u00b7 Heykel Khadhraoui",
+      "17",
+      "Null-space condition:",
+      "The robot\u2019s extra degree of freedom allows its posture to change while keeping the (EE) pose unchanged.",
+      "Damping torque",
+      "Conditioning torque",
+      "Opposes and damps null-space velocity.",
+      "Adjusts joint posture in the null space.",
+      "Seeks a larger minimum singular value ",
+      "\u03c3",
+      "min",
+      " of ",
+      "J",
+      ", moving away from singularities.",
+      "Redundancy and null-space motion:",
+      ":",
+      ":",
+      "5. Null-space control and experiments"
+    ]
+  },
+  {
+    "physical": 19,
+    "part": "ppt/slides/slide36.xml",
+    "text": [
+      "Disturbance demonstration",
+      "Design and Implementation of a Real-Time Impedance Controller for a 7-DOF Collaborative Robot",
+      "Master Thesis \u00b7 Heykel Khadhraoui",
+      "18",
+      "Without null-space control \u2192 Damping only",
+      "5. Null-space control and experiments"
+    ]
+  },
+  {
+    "physical": 20,
+    "part": "ppt/slides/slide37.xml",
+    "text": [
+      "Disturbance demonstration",
+      "Design and Implementation of a Real-Time Impedance Controller for a 7-DOF Collaborative Robot",
+      "Master Thesis \u00b7 Heykel Khadhraoui",
+      "19",
+      "Conditioning only",
+      "5. Null-space control and experiments"
+    ]
+  },
+  {
+    "physical": 21,
+    "part": "ppt/slides/slide13.xml",
+    "text": [
+      "Null-space experiment",
+      "Design and Implementation of a Real-Time Impedance Controller for a 7-DOF Collaborative Robot",
+      "Master Thesis \u00b7 Heykel Khadhraoui",
+      "20",
+      "Cartesian pose hold with commanded disturbance",
+      "Joint-torque equivalent of a virtual",
+      "20 N point force on link 3.",
+      "Hold the captured position and orientation.",
+      "Four conditions with three trials each",
+      "Disturbance without",
+      "null-space control torque",
+      "Damping: ",
+      "d",
+      "null",
+      " = 2 N m s/rad",
+      "Conditioning: ",
+      "k",
+      "\u03c3",
+      " = 2 N m",
+      "Combined: conditioning + damping",
+      "k",
+      "\u03c3",
+      " = 2 N m and ",
+      "d",
+      "null",
+      " = 2 N m s/rad",
+      "5. Null-space control and experiments"
+    ]
+  },
+  {
+    "physical": 22,
+    "part": "ppt/slides/slide31.xml",
+    "text": [
+      "Cumulative joint motion",
+      "Design and Implementation of a Real-Time Impedance Controller for a 7-DOF Collaborative Robot",
+      "Master Thesis \u00b7 Heykel Khadhraoui",
+      "21",
+      "Damping alone reduced cumulative motion by 25.1% compared with no torque.",
+      "At 2 N m, adding damping to conditioning reduced cumulative motion by 50.7%.",
+      "5. Null-space control and experiments"
+    ]
+  },
+  {
+    "physical": 23,
+    "part": "ppt/slides/slide32.xml",
+    "text": [
+      "Jacobian conditioning",
+      "Design and Implementation of a Real-Time Impedance Controller for a 7-DOF Collaborative Robot",
+      "Master Thesis \u00b7 Heykel Khadhraoui",
+      "22",
+      "The indicator decreased with no torque and damping alone.",
+      "Conditioning and combined control kept the indicator nearly constant.",
+      "5. Null-space control and experiments"
+    ]
+  },
+  {
+    "physical": 24,
+    "part": "ppt/slides/slide33.xml",
+    "text": [
+      "Joint motion over time",
+      "Design and Implementation of a Real-Time Impedance Controller for a 7-DOF Collaborative Robot",
+      "Master Thesis \u00b7 Heykel Khadhraoui",
+      "23",
+      "Conditioning at 2 N m shows repeated joint-motion reversals.",
+      "Adding damping reduces total motion, while reversals remain.",
+      "5. Null-space control and experiments"
+    ]
+  },
+  {
+    "physical": 25,
+    "part": "ppt/slides/slide24.xml",
+    "text": [
+      "Conclusion",
+      "Design and Implementation of a Real-Time Impedance Controller for a 7-DOF Collaborative Robot",
+      "Master Thesis \u00b7 Heykel Khadhraoui",
+      "24",
+      "Compliant rotation allowed contact moments to reduce angular error",
+      "Higher rotational stiffness left a larger angular error",
+      "The CoC could support or oppose the contact moment",
+      "Future work",
+      "Use a more rigid tool mount for better measurements",
+      "Adapt the CoC to support the contact moment,",
+      "then return it to the TCP after alignment",
+      "Null-space control reduced redundant motion under disturbance",
+      "6. Conclusion and future work"
+    ]
+  },
+  {
+    "physical": 26,
+    "part": "ppt/slides/slide39.xml",
+    "text": [
+      "Opposing moment",
+      "Design and Implementation of a Real-Time Impedance Controller for a 7-DOF Collaborative Robot",
+      "Master Thesis \u00b7 Heykel Khadhraoui",
+      "B1"
+    ]
+  },
+  {
+    "physical": 27,
+    "part": "ppt/slides/slide25.xml",
+    "text": [
+      "Null-space torques and projector",
+      "Design and Implementation of a Real-Time Impedance Controller for a 7-DOF Collaborative Robot",
+      "Master Thesis \u00b7 Heykel Khadhraoui",
+      "B2",
+      "Null-space projector",
+      "Projects secondary joint torques into the kinematic null space.",
+      "J",
+      ": joint \u2192 (EE) velocities",
+      "J",
+      "+",
+      ": pseudoinverse",
+      "I",
+      "7",
+      ": 7 \u00d7 7 identity matrix",
+      "Damping torque",
+      "Conditioning torque",
+      "Opposes redundant joint velocity.",
+      "Zero at zero joint velocity.",
+      "Seeks better local conditioning.",
+      "Can act at zero joint velocity.",
+      "d",
+      "null",
+      ": damping coefficient [N m s/rad]",
+      "q\u0307",
+      ": measured joint velocity",
+      "k",
+      "\u03c3",
+      ": torque magnitude [N m]",
+      "v",
+      "7",
+      ": unit null-space direction",
+      "s",
+      "\u03c3",
+      ": direction choice, zero in deadband"
+    ]
+  },
+  {
+    "physical": 28,
+    "part": "ppt/slides/slide12.xml",
+    "text": [
+      "Angular quantities",
+      "Design and Implementation of a Real-Time Impedance Controller for a 7-DOF Collaborative Robot",
+      "Master Thesis \u00b7 Heykel Khadhraoui",
+      "B3"
+    ]
+  },
+  {
+    "physical": 29,
+    "part": "ppt/slides/slide17.xml",
+    "text": [
+      "Baseline angular error",
+      "Design and Implementation of a Real-Time Impedance Controller for a 7-DOF Collaborative Robot",
+      "Master Thesis \u00b7 Heykel Khadhraoui",
+      "B4"
+    ]
+  },
+  {
+    "physical": 30,
+    "part": "ppt/slides/slide40.xml",
+    "text": [
+      "Sources of angular offset",
+      "Design and Implementation of a Real-Time Impedance Controller for a 7-DOF Collaborative Robot",
+      "Master Thesis \u00b7 Heykel Khadhraoui",
+      "B5"
+    ]
+  }
+]

@@ -1,0 +1,1 @@
+Edit Cartesian impedance controller, now physical slide 5 / footer 4 after the prior merge. User referred to its earlier number 6; the requested force/moment/error content uniquely identifies it. Reorder existing equations and diagrams. Preserve notes, equations, all other slides and numbering.

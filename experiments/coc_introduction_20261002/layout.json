@@ -1,0 +1,33 @@
+{
+  "insert_before": 7,
+  "intro_figure": [
+    426,
+    98,
+    470
+  ],
+  "case_figure": [
+    130,
+    198,
+    700
+  ],
+  "intro_equation": [
+    520,
+    447,
+    260,
+    32
+  ],
+  "coupling_equations": {
+    "Equation - symbol_pc": [
+      76.356535433,
+      152.16,
+      45,
+      24
+    ],
+    "Equation - coc_displacement_definition": [
+      77.776614173,
+      266.93,
+      190,
+      28
+    ]
+  }
+}

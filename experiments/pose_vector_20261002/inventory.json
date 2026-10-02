@@ -1,0 +1,232 @@
+[
+  {
+    "name": "Slide title",
+    "text": "Cartesian pose and surface frame",
+    "rect": [
+      37.44,
+      18.72,
+      604.8,
+      28.47535433070866
+    ]
+  },
+  {
+    "name": "Picture 3",
+    "text": "",
+    "rect": [
+      20.16,
+      502.56,
+      39.6,
+      20.392834645669293
+    ]
+  },
+  {
+    "name": "TextBox 4",
+    "text": "Design and Implementation of a Real-Time Impedance Controller for a 7-DOF Collaborative Robot",
+    "rect": [
+      66.24,
+      501.12,
+      338.4,
+      11.52
+    ]
+  },
+  {
+    "name": "TextBox 5",
+    "text": "Master Thesis \u00b7 Heykel Khadhraoui",
+    "rect": [
+      66.24,
+      511.2,
+      230.4,
+      10.8
+    ]
+  },
+  {
+    "name": "TextBox 6",
+    "text": "3",
+    "rect": [
+      907.5,
+      505.44,
+      14.2,
+      9.693779527559055
+    ]
+  },
+  {
+    "name": "Continuous title rule",
+    "text": "",
+    "rect": [
+      37.44,
+      48.0959842519685,
+      884.16,
+      1.0
+    ]
+  },
+  {
+    "name": "Equation - pose_joint_configuration",
+    "text": "",
+    "rect": [
+      516.0,
+      365.0,
+      95.34669291338582,
+      28.495511811023622
+    ]
+  },
+  {
+    "name": "End effector position figure",
+    "text": "",
+    "rect": [
+      62.0,
+      119.0,
+      240.0,
+      200.14976377952755
+    ]
+  },
+  {
+    "name": "End effector orientation figure",
+    "text": "",
+    "rect": [
+      366.0,
+      113.0,
+      220.0,
+      200.84433070866143
+    ]
+  },
+  {
+    "name": "Current overview chapter",
+    "text": "2. Cartesian controller",
+    "rect": [
+      660.0,
+      21.0,
+      261.6,
+      24.0
+    ]
+  },
+  {
+    "name": "Surface frame",
+    "text": "",
+    "rect": [
+      654.0,
+      113.0,
+      266.0,
+      208.8762992125984
+    ]
+  },
+  {
+    "name": "Equation - symbol_ns",
+    "text": "",
+    "rect": [
+      649.0,
+      335.0,
+      27.051417322834645,
+      19.546850393700787
+    ]
+  },
+  {
+    "name": "Equation - symbol_tangents",
+    "text": "",
+    "rect": [
+      631.0,
+      367.0,
+      52.99299212598425,
+      24.485275590551183
+    ]
+  },
+  {
+    "name": "Position heading",
+    "text": "Position: 3 translations",
+    "rect": [
+      42.0,
+      78.0,
+      280.0,
+      30.0
+    ]
+  },
+  {
+    "name": "Orientation heading",
+    "text": "Orientation: 3 rotations",
+    "rect": [
+      336.0,
+      78.0,
+      280.0,
+      30.0
+    ]
+  },
+  {
+    "name": "Surface-relative compliance heading",
+    "text": "Surface frame",
+    "rect": [
+      644.0,
+      78.0,
+      280.0,
+      30.0
+    ]
+  },
+  {
+    "name": "Pose reference frame",
+    "text": "Pose is expressed in the robot base frame.",
+    "rect": [
+      42.0,
+      333.0,
+      570.0,
+      26.0
+    ]
+  },
+  {
+    "name": "Pose takeaway",
+    "text": "The (EE) position depends on all 7 joint angles:",
+    "rect": [
+      42.0,
+      365.0,
+      470.0,
+      28.0
+    ]
+  },
+  {
+    "name": "Surface normal definition",
+    "text": "outward surface normal",
+    "rect": [
+      695.0,
+      333.0,
+      229.0,
+      27.0
+    ]
+  },
+  {
+    "name": "Surface tangent definition",
+    "text": "perpendicular tangents",
+    "rect": [
+      695.0,
+      365.0,
+      229.0,
+      27.0
+    ]
+  },
+  {
+    "name": "Surface-axis components",
+    "text": "Surface axes define force and moment components and the directions for impedance gains.",
+    "rect": [
+      52.0,
+      409.0,
+      872.0,
+      28.0
+    ]
+  },
+  {
+    "name": "Next impedance quantities",
+    "text": "Next: force f, moment m, stiffness K and damping D in the impedance law.",
+    "rect": [
+      52.0,
+      445.0,
+      872.0,
+      30.0
+    ]
+  },
+  {
+    "name": "Controller calculation frame",
+    "text": "The controller equations are evaluated in the robot base frame.",
+    "rect": [
+      52.0,
+      475.0,
+      872.0,
+      22.0
+    ]
+  }
+]

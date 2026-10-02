@@ -1,0 +1,4663 @@
+[
+  {
+    "physical": 1,
+    "sid": "256",
+    "rid": "rId2",
+    "path": "ppt/slides/slide1.xml",
+    "hidden": false,
+    "shapes": [
+      {
+        "name": "Slide title",
+        "text": "Master Thesis Presentation",
+        "math": "",
+        "box": [
+          37.44,
+          18.72,
+          604.8,
+          28.47535433070866
+        ]
+      },
+      {
+        "name": "Picture 3",
+        "text": "",
+        "math": "",
+        "box": [
+          20.16,
+          502.56,
+          39.6,
+          20.392834645669293
+        ]
+      },
+      {
+        "name": "TextBox 4",
+        "text": "Design and Implementation of a Real-Time Impedance Controller for a 7-DOF Collaborative Robot",
+        "math": "",
+        "box": [
+          66.24,
+          501.12,
+          338.4,
+          11.52
+        ]
+      },
+      {
+        "name": "TextBox 5",
+        "text": "Master Thesis · Heykel Khadhraoui",
+        "math": "",
+        "box": [
+          66.24,
+          511.2,
+          230.4,
+          10.8
+        ]
+      },
+      {
+        "name": "HM logo beside Hochschule München",
+        "text": "",
+        "math": "",
+        "box": [
+          54.72,
+          82.8,
+          61.2,
+          31.516141732283465
+        ]
+      },
+      {
+        "name": "University name",
+        "text": "Hochschule München",
+        "math": "",
+        "box": [
+          129.6,
+          84.24,
+          403.2,
+          20.286220472440945
+        ]
+      },
+      {
+        "name": "University English name",
+        "text": "University of Applied Sciences",
+        "math": "",
+        "box": [
+          129.6,
+          110.16,
+          403.2,
+          18.72
+        ]
+      },
+      {
+        "name": "Thesis title",
+        "text": "Design and Implementation of a Real-Time Impedance Controller for a 7-DOF Collaborative Robot",
+        "math": "",
+        "box": [
+          57.6,
+          158.4,
+          520.0,
+          104.4
+        ]
+      },
+      {
+        "name": "Presenter",
+        "text": "Heykel Khadhraoui",
+        "math": "",
+        "box": [
+          57.6,
+          297.36,
+          520.0,
+          27.36
+        ]
+      },
+      {
+        "name": "Degree programme",
+        "text": "Computational Engineering (M.Sc.)",
+        "math": "",
+        "box": [
+          57.6,
+          333.36,
+          520.0,
+          24.48
+        ]
+      },
+      {
+        "name": "Supervisors",
+        "text": "Supervisors: Prof. Norbert Nitzsche · Prof. Ruth Otto",
+        "math": "",
+        "box": [
+          57.6,
+          390.96,
+          520.0,
+          25.2
+        ]
+      },
+      {
+        "name": "Year",
+        "text": "Date: 30.09. 2026",
+        "math": "",
+        "box": [
+          57.6,
+          432.72,
+          144.0,
+          14.757795275590551
+        ]
+      },
+      {
+        "name": "Continuous title rule",
+        "text": "",
+        "math": "",
+        "box": [
+          37.44,
+          48.0959842519685,
+          884.16,
+          1.0
+        ]
+      },
+      {
+        "name": "Title robot photograph",
+        "text": "",
+        "math": "",
+        "box": [
+          592.0,
+          103.0,
+          329.6,
+          335.36629921259845
+        ]
+      }
+    ]
+  },
+  {
+    "physical": 2,
+    "sid": "257",
+    "rid": "rId3",
+    "path": "ppt/slides/slide2.xml",
+    "hidden": false,
+    "shapes": [
+      {
+        "name": "Slide title",
+        "text": "Motivation",
+        "math": "",
+        "box": [
+          37.44,
+          18.72,
+          604.8,
+          28.47535433070866
+        ]
+      },
+      {
+        "name": "Picture 3",
+        "text": "",
+        "math": "",
+        "box": [
+          20.16,
+          502.56,
+          39.6,
+          20.392834645669293
+        ]
+      },
+      {
+        "name": "TextBox 4",
+        "text": "Design and Implementation of a Real-Time Impedance Controller for a 7-DOF Collaborative Robot",
+        "math": "",
+        "box": [
+          66.24,
+          501.12,
+          338.4,
+          11.52
+        ]
+      },
+      {
+        "name": "TextBox 5",
+        "text": "Master Thesis · Heykel Khadhraoui",
+        "math": "",
+        "box": [
+          66.24,
+          511.2,
+          230.4,
+          10.8
+        ]
+      },
+      {
+        "name": "TextBox 6",
+        "text": "1",
+        "math": "",
+        "box": [
+          907.5,
+          505.44,
+          14.2,
+          9.693779527559055
+        ]
+      },
+      {
+        "name": "Contact demonstration video",
+        "text": "",
+        "math": "",
+        "box": [
+          521.6,
+          75.0,
+          400.0,
+          400.0
+        ]
+      },
+      {
+        "name": "TextBox 8",
+        "text": "Problem",
+        "math": "",
+        "box": [
+          52.0,
+          80.0,
+          400.0,
+          28.0
+        ]
+      },
+      {
+        "name": "TextBox 9",
+        "text": "Grinding requires an aligned tool face.",
+        "math": "",
+        "box": [
+          72.0,
+          116.0,
+          402.0,
+          40.0
+        ]
+      },
+      {
+        "name": "TextBox 10",
+        "text": "Calibration leaves uncertainty in the physical surface orientation.",
+        "math": "",
+        "box": [
+          72.0,
+          156.0,
+          402.0,
+          44.601338582677165
+        ]
+      },
+      {
+        "name": "TextBox 13",
+        "text": "Idea",
+        "math": "",
+        "box": [
+          52.0,
+          289.0,
+          400.0,
+          28.0
+        ]
+      },
+      {
+        "name": "TextBox 14",
+        "text": "Cartesian impedance makes position and rotation compliant.",
+        "math": "",
+        "box": [
+          72.0,
+          325.0,
+          402.0,
+          44.0
+        ]
+      },
+      {
+        "name": "Continuous title rule",
+        "text": "",
+        "math": "",
+        "box": [
+          37.44,
+          48.0959842519685,
+          884.16,
+          1.0
+        ]
+      },
+      {
+        "name": "Passive contact alignment",
+        "text": "Pressing a tilted tool creates a contact moment.",
+        "math": "",
+        "box": [
+          72.0,
+          373.0,
+          402.0,
+          48.0
+        ]
+      },
+      {
+        "name": "Compliance permits contact rotation",
+        "text": "Rotational compliance allows the tool to turn towards alignment.",
+        "math": "",
+        "box": [
+          72.0,
+          421.0,
+          402.0,
+          48.0
+        ]
+      },
+      {
+        "name": "Joint friction orientation mismatch",
+        "text": "Joint friction can prevent the desired tool alignment with the configured surface.",
+        "math": "",
+        "box": [
+          72.0,
+          204.0,
+          402.0,
+          60.0
+        ]
+      },
+      {
+        "name": "Current overview chapter",
+        "text": "1. Introduction",
+        "math": "",
+        "box": [
+          660.0,
+          21.0,
+          261.6,
+          24.0
+        ]
+      }
+    ]
+  },
+  {
+    "physical": 3,
+    "sid": "258",
+    "rid": "rId5",
+    "path": "ppt/slides/slide4.xml",
+    "hidden": false,
+    "shapes": [
+      {
+        "name": "Slide title",
+        "text": "Overview",
+        "math": "",
+        "box": [
+          37.44,
+          18.72,
+          604.8,
+          28.47535433070866
+        ]
+      },
+      {
+        "name": "Picture 3",
+        "text": "",
+        "math": "",
+        "box": [
+          20.16,
+          502.56,
+          39.6,
+          20.392834645669293
+        ]
+      },
+      {
+        "name": "TextBox 4",
+        "text": "Design and Implementation of a Real-Time Impedance Controller for a 7-DOF Collaborative Robot",
+        "math": "",
+        "box": [
+          66.24,
+          501.12,
+          338.4,
+          11.52
+        ]
+      },
+      {
+        "name": "TextBox 5",
+        "text": "Master Thesis · Heykel Khadhraoui",
+        "math": "",
+        "box": [
+          66.24,
+          511.2,
+          230.4,
+          10.8
+        ]
+      },
+      {
+        "name": "TextBox 6",
+        "text": "2",
+        "math": "",
+        "box": [
+          907.5,
+          505.44,
+          14.2,
+          9.693779527559055
+        ]
+      },
+      {
+        "name": "Continuous title rule",
+        "text": "",
+        "math": "",
+        "box": [
+          37.44,
+          48.0959842519685,
+          884.16,
+          1.0
+        ]
+      },
+      {
+        "name": "Overview number 1",
+        "text": "1.",
+        "math": "",
+        "box": [
+          72.4,
+          100.0,
+          44.0,
+          30.0
+        ]
+      },
+      {
+        "name": "Overview item 1",
+        "text": "Introduction",
+        "math": "",
+        "box": [
+          126.4,
+          100.0,
+          730.4,
+          30.0
+        ]
+      },
+      {
+        "name": "Overview number 2",
+        "text": "2.",
+        "math": "",
+        "box": [
+          72.4,
+          158.0,
+          44.0,
+          30.0
+        ]
+      },
+      {
+        "name": "Overview item 2",
+        "text": "Cartesian controller",
+        "math": "",
+        "box": [
+          126.4,
+          158.0,
+          730.4,
+          30.0
+        ]
+      },
+      {
+        "name": "Overview number 3",
+        "text": "3.",
+        "math": "",
+        "box": [
+          72.4,
+          216.0,
+          44.0,
+          30.0
+        ]
+      },
+      {
+        "name": "Overview item 3",
+        "text": "Contact experiments",
+        "math": "",
+        "box": [
+          126.4,
+          216.0,
+          730.4,
+          30.0
+        ]
+      },
+      {
+        "name": "Overview number 4",
+        "text": "4.",
+        "math": "",
+        "box": [
+          72.4,
+          274.0,
+          44.0,
+          30.0
+        ]
+      },
+      {
+        "name": "Overview item 4",
+        "text": "Contact results",
+        "math": "",
+        "box": [
+          126.4,
+          274.0,
+          730.4,
+          30.0
+        ]
+      },
+      {
+        "name": "Overview number 5",
+        "text": "5.",
+        "math": "",
+        "box": [
+          72.4,
+          332.0,
+          44.0,
+          30.0
+        ]
+      },
+      {
+        "name": "Overview item 5",
+        "text": "Null-space control and experiments",
+        "math": "",
+        "box": [
+          126.4,
+          332.0,
+          730.4,
+          30.0
+        ]
+      },
+      {
+        "name": "Overview number 6",
+        "text": "6.",
+        "math": "",
+        "box": [
+          72.4,
+          390.0,
+          44.0,
+          30.0
+        ]
+      },
+      {
+        "name": "Overview item 6",
+        "text": "Conclusion and future work",
+        "math": "",
+        "box": [
+          126.4,
+          390.0,
+          730.4,
+          30.0
+        ]
+      }
+    ]
+  },
+  {
+    "physical": 4,
+    "sid": "288",
+    "rid": "rId6",
+    "path": "ppt/slides/slide5.xml",
+    "hidden": false,
+    "shapes": [
+      {
+        "name": "Slide title",
+        "text": "Cartesian pose and surface frame",
+        "math": "",
+        "box": [
+          37.44,
+          18.72,
+          604.8,
+          28.47535433070866
+        ]
+      },
+      {
+        "name": "Picture 3",
+        "text": "",
+        "math": "",
+        "box": [
+          20.16,
+          502.56,
+          39.6,
+          20.392834645669293
+        ]
+      },
+      {
+        "name": "TextBox 4",
+        "text": "Design and Implementation of a Real-Time Impedance Controller for a 7-DOF Collaborative Robot",
+        "math": "",
+        "box": [
+          66.24,
+          501.12,
+          338.4,
+          11.52
+        ]
+      },
+      {
+        "name": "TextBox 5",
+        "text": "Master Thesis · Heykel Khadhraoui",
+        "math": "",
+        "box": [
+          66.24,
+          511.2,
+          230.4,
+          10.8
+        ]
+      },
+      {
+        "name": "TextBox 6",
+        "text": "3",
+        "math": "",
+        "box": [
+          907.5,
+          505.44,
+          14.2,
+          9.693779527559055
+        ]
+      },
+      {
+        "name": "Continuous title rule",
+        "text": "",
+        "math": "",
+        "box": [
+          37.44,
+          48.0959842519685,
+          884.16,
+          1.0
+        ]
+      },
+      {
+        "name": "Equation - pose_joint_configuration",
+        "text": "",
+        "math": "p EE = p EE ( q )",
+        "box": [
+          438.0,
+          396.0,
+          178.0,
+          29.0
+        ]
+      },
+      {
+        "name": "End effector position figure",
+        "text": "",
+        "math": "",
+        "box": [
+          82.0,
+          218.0,
+          200.0,
+          166.79149606299214
+        ]
+      },
+      {
+        "name": "End effector orientation figure",
+        "text": "",
+        "math": "",
+        "box": [
+          376.0,
+          213.0,
+          200.0,
+          182.58574803149605
+        ]
+      },
+      {
+        "name": "Current overview chapter",
+        "text": "2. Cartesian controller",
+        "math": "",
+        "box": [
+          660.0,
+          21.0,
+          261.6,
+          24.0
+        ]
+      },
+      {
+        "name": "Surface frame",
+        "text": "",
+        "math": "",
+        "box": [
+          654.0,
+          113.0,
+          266.0,
+          208.8762992125984
+        ]
+      },
+      {
+        "name": "Equation - symbol_ns",
+        "text": "",
+        "math": "n s",
+        "box": [
+          649.0,
+          335.0,
+          27.051417322834645,
+          19.546850393700787
+        ]
+      },
+      {
+        "name": "Equation - symbol_tangents",
+        "text": "",
+        "math": "t 1 ,   t 2",
+        "box": [
+          631.0,
+          367.0,
+          52.99299212598425,
+          24.485275590551183
+        ]
+      },
+      {
+        "name": "Position heading",
+        "text": "Position: 3 translations",
+        "math": "",
+        "box": [
+          42.0,
+          181.0,
+          280.0,
+          30.0
+        ]
+      },
+      {
+        "name": "Orientation heading",
+        "text": "Orientation: 3 rotations",
+        "math": "",
+        "box": [
+          336.0,
+          181.0,
+          280.0,
+          30.0
+        ]
+      },
+      {
+        "name": "Surface-relative compliance heading",
+        "text": "Surface frame",
+        "math": "",
+        "box": [
+          644.0,
+          78.0,
+          280.0,
+          30.0
+        ]
+      },
+      {
+        "name": "Pose reference frame",
+        "text": "Pose and controller equations use the robot base frame.",
+        "math": "",
+        "box": [
+          42.0,
+          428.0,
+          880.0,
+          26.0
+        ]
+      },
+      {
+        "name": "Pose takeaway",
+        "text": "Position depends on all 7 joint angles:",
+        "math": "",
+        "box": [
+          42.0,
+          396.0,
+          386.0,
+          28.0
+        ]
+      },
+      {
+        "name": "Surface normal definition",
+        "text": "outward surface normal",
+        "math": "",
+        "box": [
+          695.0,
+          333.0,
+          229.0,
+          27.0
+        ]
+      },
+      {
+        "name": "Surface tangent definition",
+        "text": "perpendicular tangents",
+        "math": "",
+        "box": [
+          695.0,
+          365.0,
+          229.0,
+          27.0
+        ]
+      },
+      {
+        "name": "Surface-axis components",
+        "text": "Surface axes define force and moment components and the directions for impedance gains.",
+        "math": "",
+        "box": [
+          52.0,
+          455.0,
+          872.0,
+          28.0
+        ]
+      },
+      {
+        "name": "Next impedance quantities",
+        "text": "Next: force f, moment m, stiffness K and damping D in the impedance law.",
+        "math": "",
+        "box": [
+          52.0,
+          477.0,
+          872.0,
+          30.0
+        ]
+      },
+      {
+        "name": "Equation - cartesian_pose_vector",
+        "text": "",
+        "math": "x EE = p EE η EE = (x,y,z) ⊤ (φ,θ,ψ) ⊤",
+        "box": [
+          209.0,
+          101.0,
+          250.0,
+          65.0
+        ]
+      },
+      {
+        "name": "Full Cartesian pose heading",
+        "text": "Cartesian pose of the end-effector (EE)",
+        "math": "",
+        "box": [
+          42.0,
+          65.0,
+          578.0,
+          30.0
+        ]
+      }
+    ]
+  },
+  {
+    "physical": 5,
+    "sid": "259",
+    "rid": "rId7",
+    "path": "ppt/slides/slide6.xml",
+    "hidden": false,
+    "shapes": [
+      {
+        "name": "Slide title",
+        "text": "Cartesian impedance controller",
+        "math": "",
+        "box": [
+          37.44,
+          18.72,
+          604.8,
+          28.47535433070866
+        ]
+      },
+      {
+        "name": "Picture 3",
+        "text": "",
+        "math": "",
+        "box": [
+          20.16,
+          502.56,
+          39.6,
+          20.392834645669293
+        ]
+      },
+      {
+        "name": "TextBox 4",
+        "text": "Design and Implementation of a Real-Time Impedance Controller for a 7-DOF Collaborative Robot",
+        "math": "",
+        "box": [
+          66.24,
+          501.12,
+          338.4,
+          11.52
+        ]
+      },
+      {
+        "name": "TextBox 5",
+        "text": "Master Thesis · Heykel Khadhraoui",
+        "math": "",
+        "box": [
+          66.24,
+          511.2,
+          230.4,
+          10.8
+        ]
+      },
+      {
+        "name": "TextBox 6",
+        "text": "4",
+        "math": "",
+        "box": [
+          907.5,
+          505.44,
+          14.2,
+          9.693779527559055
+        ]
+      },
+      {
+        "name": "Continuous title rule",
+        "text": "",
+        "math": "",
+        "box": [
+          37.44,
+          48.0959842519685,
+          884.16,
+          1.0
+        ]
+      },
+      {
+        "name": "Controller scope",
+        "text": "Cartesian wrench",
+        "math": "",
+        "box": [
+          60.0,
+          328.0,
+          840.0,
+          32.0
+        ]
+      },
+      {
+        "name": "Position heading",
+        "text": "Force",
+        "math": "",
+        "box": [
+          60.0,
+          78.0,
+          390.0,
+          30.0
+        ]
+      },
+      {
+        "name": "Rotation heading",
+        "text": "Moment",
+        "math": "",
+        "box": [
+          510.0,
+          78.0,
+          390.0,
+          30.0
+        ]
+      },
+      {
+        "name": "Equation - position_error_definition",
+        "text": "",
+        "math": "e p = p d − p EE",
+        "box": [
+          79.89897637795275,
+          229.0,
+          137.14173228346456,
+          28.593228346456694
+        ]
+      },
+      {
+        "name": "Equation - controller_orientation_error",
+        "text": "",
+        "math": "e R = ϕ u",
+        "box": [
+          529.78,
+          227.0,
+          128.9967716535433,
+          32.83566929133858
+        ]
+      },
+      {
+        "name": "Equation - controller_wrench_blocks",
+        "text": "",
+        "math": "F = f m = K p 0 0 K R K c e p e R + D p 0 0 D R D c p d − p EE ω d − ω EE",
+        "box": [
+          80.0,
+          365.0,
+          499.6720472440945,
+          81.41732283464567
+        ]
+      },
+      {
+        "name": "Decoupling statement",
+        "text": "In the surface frame, K and D are diagonal and decouple translation and rotation.",
+        "math": "",
+        "box": [
+          68.0,
+          459.0,
+          832.0,
+          30.0
+        ]
+      },
+      {
+        "name": "Equation - equation_force",
+        "text": "",
+        "math": "f = K p e p + D p ( p d − p EE )",
+        "box": [
+          80.0,
+          117.0,
+          251.71622047244094,
+          29.2651968503937
+        ]
+      },
+      {
+        "name": "Equation - equation_moment",
+        "text": "",
+        "math": "m = K R e R + D R ( ω d − ω EE )",
+        "box": [
+          530.0,
+          117.0,
+          272.352125984252,
+          28.55692913385827
+        ]
+      },
+      {
+        "name": "Figure - position_error_sketch",
+        "text": "",
+        "math": "",
+        "box": [
+          247.0,
+          196.0,
+          218.0,
+          119.9
+        ]
+      },
+      {
+        "name": "Figure - rotation_error_sketch",
+        "text": "",
+        "math": "",
+        "box": [
+          697.0,
+          196.0,
+          218.0,
+          119.9
+        ]
+      },
+      {
+        "name": "Current overview chapter",
+        "text": "2. Cartesian controller",
+        "math": "",
+        "box": [
+          660.0,
+          21.0,
+          261.6,
+          24.0
+        ]
+      },
+      {
+        "name": "Positional error heading",
+        "text": "Positional error",
+        "math": "",
+        "box": [
+          60.0,
+          170.0,
+          390.0,
+          30.0
+        ]
+      },
+      {
+        "name": "Rotational error heading",
+        "text": "Rotational error",
+        "math": "",
+        "box": [
+          510.0,
+          170.0,
+          390.0,
+          30.0
+        ]
+      }
+    ]
+  },
+  {
+    "physical": 6,
+    "sid": "277",
+    "rid": "rId8",
+    "path": "ppt/slides/slide7.xml",
+    "hidden": false,
+    "shapes": [
+      {
+        "name": "Slide title",
+        "text": "Real-time control",
+        "math": "",
+        "box": [
+          37.44,
+          18.72,
+          604.8,
+          28.47535433070866
+        ]
+      },
+      {
+        "name": "Picture 3",
+        "text": "",
+        "math": "",
+        "box": [
+          20.16,
+          502.56,
+          39.6,
+          20.392834645669293
+        ]
+      },
+      {
+        "name": "TextBox 4",
+        "text": "Design and Implementation of a Real-Time Impedance Controller for a 7-DOF Collaborative Robot",
+        "math": "",
+        "box": [
+          66.24,
+          501.12,
+          338.4,
+          11.52
+        ]
+      },
+      {
+        "name": "TextBox 5",
+        "text": "Master Thesis · Heykel Khadhraoui",
+        "math": "",
+        "box": [
+          66.24,
+          511.2,
+          230.4,
+          10.8
+        ]
+      },
+      {
+        "name": "TextBox 6",
+        "text": "5",
+        "math": "",
+        "box": [
+          907.5,
+          505.44,
+          14.2,
+          9.693779527559055
+        ]
+      },
+      {
+        "name": "Continuous title rule",
+        "text": "",
+        "math": "",
+        "box": [
+          37.44,
+          48.0959842519685,
+          884.16,
+          1.0
+        ]
+      },
+      {
+        "name": "Equation - cartesian_torque_mapping",
+        "text": "",
+        "math": "τ = J ⊤ ( q ) F",
+        "box": [
+          209.0,
+          119.0,
+          175.0,
+          34.0
+        ]
+      },
+      {
+        "name": "Control implementation",
+        "text": "Real-time control with a 1 ms cycle",
+        "math": "",
+        "box": [
+          60.0,
+          446.0,
+          840.0,
+          36.0
+        ]
+      },
+      {
+        "name": "Joint-torque command heading",
+        "text": "Commanded joint torques (motors):",
+        "math": "",
+        "box": [
+          52.0,
+          77.0,
+          418.0,
+          30.0
+        ]
+      },
+      {
+        "name": "Jacobian velocity mapping",
+        "text": "Jacobian:",
+        "math": "",
+        "box": [
+          532.0,
+          77.0,
+          385.0,
+          30.0
+        ]
+      },
+      {
+        "name": "Equation - jacobian_velocity_mapping",
+        "text": "",
+        "math": "x EE = J ( q ) q",
+        "box": [
+          667.0,
+          119.0,
+          200.0,
+          34.0
+        ]
+      },
+      {
+        "name": "Feedback diagram - Desired reference block",
+        "text": "Desired reference",
+        "math": "",
+        "box": [
+          44.0,
+          214.0,
+          150.0,
+          44.0
+        ]
+      },
+      {
+        "name": "Feedback diagram - Impedance controller block",
+        "text": "Impedance controller",
+        "math": "",
+        "box": [
+          292.0,
+          294.0,
+          188.0,
+          54.0
+        ]
+      },
+      {
+        "name": "Feedback diagram - Jacobian transpose block",
+        "text": "",
+        "math": "",
+        "box": [
+          565.0,
+          294.0,
+          92.0,
+          54.0
+        ]
+      },
+      {
+        "name": "Feedback diagram - Jacobian transpose operation",
+        "text": "𝐽 T (𝑞)",
+        "math": "",
+        "box": [
+          569.0,
+          298.0,
+          84.0,
+          46.0
+        ]
+      },
+      {
+        "name": "Feedback diagram - Robot block",
+        "text": "Robot",
+        "math": "",
+        "box": [
+          815.0,
+          294.0,
+          102.0,
+          54.0
+        ]
+      },
+      {
+        "name": "Feedback diagram - Reference minus measured state",
+        "text": "",
+        "math": "",
+        "box": [
+          162.0,
+          303.0,
+          36.0,
+          36.0
+        ]
+      },
+      {
+        "name": "Feedback diagram - Reference minus measured state left plus",
+        "text": "+",
+        "math": "",
+        "box": [
+          164.0,
+          315.0,
+          11.0,
+          12.0
+        ]
+      },
+      {
+        "name": "Feedback diagram - Reference minus measured state lower minus",
+        "text": "−",
+        "math": "",
+        "box": [
+          174.0,
+          326.0,
+          12.0,
+          11.0
+        ]
+      },
+      {
+        "name": "Feedback diagram - Additive torque sum",
+        "text": "",
+        "math": "",
+        "box": [
+          698.0,
+          303.0,
+          36.0,
+          36.0
+        ]
+      },
+      {
+        "name": "Feedback diagram - Additive torque sum left plus",
+        "text": "+",
+        "math": "",
+        "box": [
+          700.0,
+          315.0,
+          11.0,
+          12.0
+        ]
+      },
+      {
+        "name": "Feedback diagram - Additive torque sum upper plus",
+        "text": "+",
+        "math": "",
+        "box": [
+          710.0,
+          305.0,
+          12.0,
+          11.0
+        ]
+      },
+      {
+        "name": "Feedback diagram - Desired signal label",
+        "text": "Reference state",
+        "math": "",
+        "box": [
+          72.0,
+          272.0,
+          122.0,
+          23.0
+        ]
+      },
+      {
+        "name": "Feedback diagram - Pose and velocity error signal",
+        "text": "Pose and velocity errors",
+        "math": "",
+        "box": [
+          198.0,
+          273.0,
+          94.0,
+          38.0
+        ]
+      },
+      {
+        "name": "Feedback diagram - State definition",
+        "text": "State: pose and velocity",
+        "math": "",
+        "box": [
+          233.0,
+          425.0,
+          324.0,
+          20.0
+        ]
+      },
+      {
+        "name": "Feedback diagram - Impedance parameter description",
+        "text": "Stiffness and damping",
+        "math": "",
+        "box": [
+          292.0,
+          219.0,
+          188.0,
+          20.0
+        ]
+      },
+      {
+        "name": "Feedback diagram - Impedance parameter symbols",
+        "text": "𝐾 ,  𝐷",
+        "math": "",
+        "box": [
+          348.0,
+          241.0,
+          76.0,
+          30.0
+        ]
+      },
+      {
+        "name": "Feedback diagram - Wrench signal",
+        "text": "𝐹",
+        "math": "",
+        "box": [
+          505.0,
+          280.0,
+          36.0,
+          33.0
+        ]
+      },
+      {
+        "name": "Feedback diagram - Cartesian torque signal",
+        "text": "𝜏",
+        "math": "",
+        "box": [
+          660.0,
+          280.0,
+          35.0,
+          33.0
+        ]
+      },
+      {
+        "name": "Feedback diagram - Commanded torque signal",
+        "text": "𝜏 cmd",
+        "math": "",
+        "box": [
+          742.0,
+          280.0,
+          64.0,
+          33.0
+        ]
+      },
+      {
+        "name": "Feedback diagram - Additional torque sources",
+        "text": "Model + null-space",
+        "math": "",
+        "box": [
+          622.0,
+          214.0,
+          188.0,
+          21.0
+        ]
+      },
+      {
+        "name": "Feedback diagram - Additional torque signal",
+        "text": "Torques",
+        "math": "",
+        "box": [
+          677.0,
+          239.0,
+          78.0,
+          20.0
+        ]
+      },
+      {
+        "name": "Feedback diagram - Measured Cartesian feedback label",
+        "text": "Measured state",
+        "math": "",
+        "box": [
+          233.0,
+          386.0,
+          324.0,
+          24.0
+        ]
+      },
+      {
+        "name": "Feedback diagram - Measured robot state label",
+        "text": "Measured robot state",
+        "math": "",
+        "box": [
+          625.0,
+          425.0,
+          227.0,
+          20.0
+        ]
+      },
+      {
+        "name": "Feedback diagram - Measured state branch",
+        "text": "",
+        "math": "",
+        "box": [
+          609.0,
+          418.0,
+          4.0,
+          4.0
+        ]
+      },
+      {
+        "name": "Feedback diagram - Joint configuration signal",
+        "text": "𝑞",
+        "math": "",
+        "box": [
+          620.0,
+          367.0,
+          33.0,
+          32.0
+        ]
+      },
+      {
+        "name": "Current overview chapter",
+        "text": "2. Cartesian controller",
+        "math": "",
+        "box": [
+          660.0,
+          21.0,
+          261.6,
+          24.0
+        ]
+      },
+      {
+        "name": "Torque contribution definition",
+        "text": "Cartesian contribution",
+        "math": "",
+        "box": [
+          52.0,
+          165.0,
+          418.0,
+          24.0
+        ]
+      },
+      {
+        "name": "Cartesian velocity definition",
+        "text": "Linear and angular velocity (geometric)",
+        "math": "",
+        "box": [
+          532.0,
+          165.0,
+          385.0,
+          24.0
+        ]
+      }
+    ]
+  },
+  {
+    "physical": 7,
+    "sid": "261",
+    "rid": "rId10",
+    "path": "ppt/slides/slide9.xml",
+    "hidden": false,
+    "shapes": [
+      {
+        "name": "Slide title",
+        "text": "Centre of compliance (CoC)",
+        "math": "",
+        "box": [
+          37.44,
+          18.72,
+          604.8,
+          28.47535433070866
+        ]
+      },
+      {
+        "name": "Picture 3",
+        "text": "",
+        "math": "",
+        "box": [
+          20.16,
+          502.56,
+          39.6,
+          20.392834645669293
+        ]
+      },
+      {
+        "name": "TextBox 4",
+        "text": "Design and Implementation of a Real-Time Impedance Controller for a 7-DOF Collaborative Robot",
+        "math": "",
+        "box": [
+          66.24,
+          501.12,
+          338.4,
+          11.52
+        ]
+      },
+      {
+        "name": "TextBox 5",
+        "text": "Master Thesis · Heykel Khadhraoui",
+        "math": "",
+        "box": [
+          66.24,
+          511.2,
+          230.4,
+          10.8
+        ]
+      },
+      {
+        "name": "TextBox 6",
+        "text": "6",
+        "math": "",
+        "box": [
+          907.5,
+          505.44,
+          14.2,
+          9.693779527559055
+        ]
+      },
+      {
+        "name": "Continuous title rule",
+        "text": "",
+        "math": "",
+        "box": [
+          37.44,
+          48.0959842519685,
+          884.16,
+          1.0
+        ]
+      },
+      {
+        "name": "Virtual centre definition",
+        "text": "Effect of CoC displacement",
+        "math": "",
+        "box": [
+          60.0,
+          82.0,
+          840.0,
+          31.0
+        ]
+      },
+      {
+        "name": "CoC position meaning",
+        "text": "Added moment can support or oppose rotation.",
+        "math": "",
+        "box": [
+          60.0,
+          124.0,
+          840.0,
+          28.0
+        ]
+      },
+      {
+        "name": "Figure - CoC_moment",
+        "text": "",
+        "math": "",
+        "box": [
+          130.0,
+          198.0,
+          700.0,
+          235.2123622047244
+        ]
+      },
+      {
+        "name": "Current overview chapter",
+        "text": "2. Cartesian controller",
+        "math": "",
+        "box": [
+          660.0,
+          21.0,
+          261.6,
+          24.0
+        ]
+      }
+    ]
+  },
+  {
+    "physical": 8,
+    "sid": "283",
+    "rid": "rId9",
+    "path": "ppt/slides/slide8.xml",
+    "hidden": false,
+    "shapes": [
+      {
+        "name": "Slide title",
+        "text": "Translation–rotation coupling",
+        "math": "",
+        "box": [
+          37.44,
+          18.72,
+          604.8,
+          28.47535433070866
+        ]
+      },
+      {
+        "name": "Picture 3",
+        "text": "",
+        "math": "",
+        "box": [
+          20.16,
+          502.56,
+          39.6,
+          20.392834645669293
+        ]
+      },
+      {
+        "name": "TextBox 4",
+        "text": "Design and Implementation of a Real-Time Impedance Controller for a 7-DOF Collaborative Robot",
+        "math": "",
+        "box": [
+          66.24,
+          501.12,
+          338.4,
+          11.52
+        ]
+      },
+      {
+        "name": "TextBox 5",
+        "text": "Master Thesis · Heykel Khadhraoui",
+        "math": "",
+        "box": [
+          66.24,
+          511.2,
+          230.4,
+          10.8
+        ]
+      },
+      {
+        "name": "TextBox 6",
+        "text": "7",
+        "math": "",
+        "box": [
+          907.5,
+          505.44,
+          14.2,
+          9.693779527559055
+        ]
+      },
+      {
+        "name": "Continuous title rule",
+        "text": "",
+        "math": "",
+        "box": [
+          37.44,
+          48.0959842519685,
+          884.16,
+          1.0
+        ]
+      },
+      {
+        "name": "Equation - coupling_point_shift",
+        "text": "",
+        "math": "A = Ad ( r c )",
+        "box": [
+          79.92645669291339,
+          305.92,
+          113.38897637795276,
+          29.410944881889765
+        ]
+      },
+      {
+        "name": "Equation - coupling_wrench_blocks",
+        "text": "",
+        "math": "F TCP = f m = A ⊤ K p 0 0 K R A K TCP e p e R + A ⊤ D p 0 0 D R A D TCP p d − p EE ω d − ω EE",
+        "box": [
+          80.0,
+          358.0,
+          840.0,
+          84.0
+        ]
+      },
+      {
+        "name": "Coupling result",
+        "text": "Non-zero off-diagonal blocks in  K  and  D  couple translation and rotation.",
+        "math": "",
+        "box": [
+          60.0,
+          456.0,
+          840.0,
+          28.0
+        ]
+      },
+      {
+        "name": "Compliance shift heading",
+        "text": "Shifting the impedance reference point",
+        "math": "",
+        "box": [
+          60.0,
+          80.0,
+          840.0,
+          30.0
+        ]
+      },
+      {
+        "name": "Point-shift definition",
+        "text": "Point-shift adjoint",
+        "math": "",
+        "box": [
+          285.0,
+          310.0,
+          600.0,
+          28.0
+        ]
+      },
+      {
+        "name": "Equation - symbol_pc",
+        "text": "",
+        "math": "p c",
+        "box": [
+          76.35653543307086,
+          152.16,
+          24.503070866141734,
+          20.65259842519685
+        ]
+      },
+      {
+        "name": "CoC position definition",
+        "text": "Virtual centre of compliance (CoC): new reference",
+        "math": "",
+        "box": [
+          132.0,
+          147.0,
+          720.0,
+          28.0
+        ]
+      },
+      {
+        "name": "Equation - coc_displacement_definition",
+        "text": "",
+        "math": "r c = p c − p TCP",
+        "box": [
+          77.77661417322835,
+          266.93,
+          144.04062992125984,
+          24.359763779527558
+        ]
+      },
+      {
+        "name": "TCP to CoC displacement meaning",
+        "text": "Displacement from TCP to CoC",
+        "math": "",
+        "box": [
+          285.0,
+          268.0,
+          600.0,
+          28.0
+        ]
+      },
+      {
+        "name": "TCP reference definition",
+        "text": "Tool centre point (TCP): controlled reference point on the (EE)",
+        "math": "",
+        "box": [
+          80.0,
+          113.0,
+          810.0,
+          28.0
+        ]
+      },
+      {
+        "name": "Reference point couples force and moment",
+        "text": "Choosing an impedance reference point away from the TCP couples force and moment.",
+        "math": "",
+        "box": [
+          60.0,
+          185.0,
+          840.0,
+          32.0
+        ]
+      },
+      {
+        "name": "Virtual point force interpretation",
+        "text": "The commanded force acts as if applied at the virtual point  p c .",
+        "math": "",
+        "box": [
+          60.0,
+          219.0,
+          840.0,
+          32.0
+        ]
+      },
+      {
+        "name": "Current overview chapter",
+        "text": "2. Cartesian controller",
+        "math": "",
+        "box": [
+          660.0,
+          21.0,
+          261.6,
+          24.0
+        ]
+      }
+    ]
+  },
+  {
+    "physical": 9,
+    "sid": "262",
+    "rid": "rId12",
+    "path": "ppt/slides/slide11.xml",
+    "hidden": false,
+    "shapes": [
+      {
+        "name": "Slide title",
+        "text": "Contact experiment",
+        "math": "",
+        "box": [
+          37.44,
+          18.72,
+          604.8,
+          28.47535433070866
+        ]
+      },
+      {
+        "name": "Picture 3",
+        "text": "",
+        "math": "",
+        "box": [
+          20.16,
+          502.56,
+          39.6,
+          20.392834645669293
+        ]
+      },
+      {
+        "name": "TextBox 4",
+        "text": "Design and Implementation of a Real-Time Impedance Controller for a 7-DOF Collaborative Robot",
+        "math": "",
+        "box": [
+          66.24,
+          501.12,
+          338.4,
+          11.52
+        ]
+      },
+      {
+        "name": "TextBox 5",
+        "text": "Master Thesis · Heykel Khadhraoui",
+        "math": "",
+        "box": [
+          66.24,
+          511.2,
+          230.4,
+          10.8
+        ]
+      },
+      {
+        "name": "TextBox 6",
+        "text": "8",
+        "math": "",
+        "box": [
+          907.5,
+          505.44,
+          14.2,
+          9.693779527559055
+        ]
+      },
+      {
+        "name": "Continuous title rule",
+        "text": "",
+        "math": "",
+        "box": [
+          37.44,
+          48.0959842519685,
+          884.16,
+          1.0
+        ]
+      },
+      {
+        "name": "Contact phases",
+        "text": "Tool orientation    →    Surface approach    →    Contact establishment    →    Surface grinding",
+        "math": "",
+        "box": [
+          60.0,
+          78.0,
+          840.0,
+          42.0
+        ]
+      },
+      {
+        "name": "Contact settings heading",
+        "text": "Compliant contact settings",
+        "math": "",
+        "box": [
+          480.0,
+          143.0,
+          440.0,
+          30.0
+        ]
+      },
+      {
+        "name": "Normal label",
+        "text": "Normal translation",
+        "math": "",
+        "box": [
+          480.0,
+          190.0,
+          440.0,
+          25.0
+        ]
+      },
+      {
+        "name": "Equation - contact_normal_gain",
+        "text": "",
+        "math": "K p , n = 350   N/m",
+        "box": [
+          574.916062992126,
+          218.75937007874015,
+          156.3903937007874,
+          30.431259842519687
+        ]
+      },
+      {
+        "name": "Rotation label",
+        "text": "Rotations about the surface tangents",
+        "math": "",
+        "box": [
+          480.0,
+          399.0,
+          440.0,
+          25.0
+        ]
+      },
+      {
+        "name": "Equation - contact_rotation_gains",
+        "text": "",
+        "math": "K R , t 1 = K R , t 2 = 5   N m/rad",
+        "box": [
+          569.5692125984252,
+          429.75,
+          252.56330708661417,
+          30.44527559055118
+        ]
+      },
+      {
+        "name": "Equation - contact_tangent_gains",
+        "text": "",
+        "math": "K p , t 1 = K p , t 2 = 2000   N/m",
+        "box": [
+          570.1359055118111,
+          288.7303937007874,
+          253.10629921259843,
+          30.473307086614174
+        ]
+      },
+      {
+        "name": "Tangential translation label",
+        "text": "Tangential translation",
+        "math": "",
+        "box": [
+          480.0,
+          259.0,
+          440.0,
+          25.0
+        ]
+      },
+      {
+        "name": "Normal rotation label",
+        "text": "Rotation about the surface normal",
+        "math": "",
+        "box": [
+          480.0,
+          328.0,
+          440.0,
+          25.0
+        ]
+      },
+      {
+        "name": "Equation - contact_normal_rotation",
+        "text": "",
+        "math": "K R , n = 50   N m/rad",
+        "box": [
+          574.4181102362205,
+          360.7335433070866,
+          184.0799212598425,
+          30.459291338582677
+        ]
+      },
+      {
+        "name": "Surface frame",
+        "text": "",
+        "math": "",
+        "box": [
+          60.0,
+          165.1535433070866,
+          360.0,
+          282.68976377952754
+        ]
+      },
+      {
+        "name": "Current overview chapter",
+        "text": "3. Contact experiments",
+        "math": "",
+        "box": [
+          660.0,
+          21.0,
+          261.6,
+          24.0
+        ]
+      }
+    ]
+  },
+  {
+    "physical": 10,
+    "sid": "300",
+    "rid": "rIdContactVideo1",
+    "path": "ppt/slides/slide38.xml",
+    "hidden": false,
+    "shapes": [
+      {
+        "name": "Slide title",
+        "text": "Plausibility experiment",
+        "math": "",
+        "box": [
+          37.44,
+          18.72,
+          604.8,
+          28.47535433070866
+        ]
+      },
+      {
+        "name": "Picture 3",
+        "text": "",
+        "math": "",
+        "box": [
+          20.16,
+          502.56,
+          39.6,
+          20.392834645669293
+        ]
+      },
+      {
+        "name": "TextBox 4",
+        "text": "Design and Implementation of a Real-Time Impedance Controller for a 7-DOF Collaborative Robot",
+        "math": "",
+        "box": [
+          66.24,
+          501.12,
+          338.4,
+          11.52
+        ]
+      },
+      {
+        "name": "TextBox 5",
+        "text": "Master Thesis · Heykel Khadhraoui",
+        "math": "",
+        "box": [
+          66.24,
+          511.2,
+          230.4,
+          10.8
+        ]
+      },
+      {
+        "name": "TextBox 6",
+        "text": "9",
+        "math": "",
+        "box": [
+          900.0,
+          505.44,
+          21.6,
+          9.693779527559055
+        ]
+      },
+      {
+        "name": "Continuous title rule",
+        "text": "",
+        "math": "",
+        "box": [
+          37.44,
+          48.0959842519685,
+          884.16,
+          1.0
+        ]
+      },
+      {
+        "name": "Plausibility experiment video",
+        "text": "",
+        "math": "",
+        "box": [
+          270.0,
+          65.0,
+          420.0,
+          420.0
+        ]
+      },
+      {
+        "name": "Current overview chapter",
+        "text": "3. Contact experiments",
+        "math": "",
+        "box": [
+          660.0,
+          21.0,
+          261.6,
+          24.0
+        ]
+      }
+    ]
+  },
+  {
+    "physical": 11,
+    "sid": "272",
+    "rid": "rId15",
+    "path": "ppt/slides/slide14.xml",
+    "hidden": false,
+    "shapes": [
+      {
+        "name": "Slide title",
+        "text": "Normal-force plausibility assessment",
+        "math": "",
+        "box": [
+          37.44,
+          18.72,
+          604.8,
+          28.47535433070866
+        ]
+      },
+      {
+        "name": "Picture 3",
+        "text": "",
+        "math": "",
+        "box": [
+          20.16,
+          502.56,
+          39.6,
+          20.392834645669293
+        ]
+      },
+      {
+        "name": "TextBox 4",
+        "text": "Design and Implementation of a Real-Time Impedance Controller for a 7-DOF Collaborative Robot",
+        "math": "",
+        "box": [
+          66.24,
+          501.12,
+          338.4,
+          11.52
+        ]
+      },
+      {
+        "name": "TextBox 5",
+        "text": "Master Thesis · Heykel Khadhraoui",
+        "math": "",
+        "box": [
+          66.24,
+          511.2,
+          230.4,
+          10.8
+        ]
+      },
+      {
+        "name": "TextBox 6",
+        "text": "10",
+        "math": "",
+        "box": [
+          907.5,
+          505.44,
+          14.2,
+          9.693779527559055
+        ]
+      },
+      {
+        "name": "Equation - equation_force_qs",
+        "text": "",
+        "math": "F n , qs & = K p , n   n s ⊤ ( e p − e p , 0 ) & = 1000   N/m · − 19.65 · 10 − 3   m = − 19.65   N",
+        "box": [
+          60.0,
+          360.0,
+          452.20503937007874,
+          62.049133858267716
+        ]
+      },
+      {
+        "name": "Figure — force_plausibility",
+        "text": "",
+        "math": "",
+        "box": [
+          155.0,
+          89.0,
+          650.0,
+          269.6105511811024
+        ]
+      },
+      {
+        "name": "TextBox 18",
+        "text": "Commanded mean −19.64 N",
+        "math": "",
+        "box": [
+          371.6666929133858,
+          444.0,
+          216.66669291338582,
+          46.0
+        ]
+      },
+      {
+        "name": "TextBox 19",
+        "text": "Model-estimated mean −22.29 N",
+        "math": "",
+        "box": [
+          588.3333070866141,
+          444.0,
+          216.66669291338582,
+          46.0
+        ]
+      },
+      {
+        "name": "Continuous title rule",
+        "text": "",
+        "math": "",
+        "box": [
+          37.44,
+          48.0959842519685,
+          884.16,
+          1.0
+        ]
+      },
+      {
+        "name": "Validation input heading",
+        "text": "Manual push: about 20 mm",
+        "math": "",
+        "box": [
+          60.0,
+          61.0,
+          840.0,
+          30.0
+        ]
+      },
+      {
+        "name": "Quasi-static prediction",
+        "text": "Quasi-static prediction −19.65 N",
+        "math": "",
+        "box": [
+          155.0,
+          444.0,
+          216.66669291338582,
+          46.0
+        ]
+      },
+      {
+        "name": "Current overview chapter",
+        "text": "4. Contact results",
+        "math": "",
+        "box": [
+          660.0,
+          21.0,
+          261.6,
+          24.0
+        ]
+      }
+    ]
+  },
+  {
+    "physical": 12,
+    "sid": "273",
+    "rid": "rId16",
+    "path": "ppt/slides/slide15.xml",
+    "hidden": false,
+    "shapes": [
+      {
+        "name": "Slide title",
+        "text": "Moment plausibility assessment",
+        "math": "",
+        "box": [
+          37.44,
+          18.72,
+          604.8,
+          28.47535433070866
+        ]
+      },
+      {
+        "name": "Picture 3",
+        "text": "",
+        "math": "",
+        "box": [
+          20.16,
+          502.56,
+          39.6,
+          20.392834645669293
+        ]
+      },
+      {
+        "name": "TextBox 4",
+        "text": "Design and Implementation of a Real-Time Impedance Controller for a 7-DOF Collaborative Robot",
+        "math": "",
+        "box": [
+          66.24,
+          501.12,
+          338.4,
+          11.52
+        ]
+      },
+      {
+        "name": "TextBox 5",
+        "text": "Master Thesis · Heykel Khadhraoui",
+        "math": "",
+        "box": [
+          66.24,
+          511.2,
+          230.4,
+          10.8
+        ]
+      },
+      {
+        "name": "TextBox 6",
+        "text": "11",
+        "math": "",
+        "box": [
+          907.5,
+          505.44,
+          14.2,
+          9.693779527559055
+        ]
+      },
+      {
+        "name": "Equation - equation_moment_qs",
+        "text": "",
+        "math": "M t 1 , qs & = K R , t 1   t 1 ⊤ ( e R − e R , 0 ) & = 15   N.m/rad · 6.57 · π 180   rad ≈ 1.72   N.m",
+        "box": [
+          60.0,
+          360.0,
+          481.68590551181103,
+          75.45708661417324
+        ]
+      },
+      {
+        "name": "Figure — moment_plausibility",
+        "text": "",
+        "math": "",
+        "box": [
+          155.0,
+          89.0,
+          650.0,
+          269.6105511811024
+        ]
+      },
+      {
+        "name": "TextBox 18",
+        "text": "Commanded mean 1.72 N.m",
+        "math": "",
+        "box": [
+          371.6666929133858,
+          444.0,
+          216.66669291338582,
+          46.0
+        ]
+      },
+      {
+        "name": "TextBox 19",
+        "text": "Model-estimated mean 1.85 N.m",
+        "math": "",
+        "box": [
+          588.3333070866141,
+          444.0,
+          216.66669291338582,
+          46.0
+        ]
+      },
+      {
+        "name": "Continuous title rule",
+        "text": "",
+        "math": "",
+        "box": [
+          37.44,
+          48.0959842519685,
+          884.16,
+          1.0
+        ]
+      },
+      {
+        "name": "Validation input heading",
+        "text": "Manual rotation: about 6.5°",
+        "math": "",
+        "box": [
+          60.0,
+          61.0,
+          840.0,
+          30.0
+        ]
+      },
+      {
+        "name": "Quasi-static prediction",
+        "text": "Quasi-static prediction 1.72 N.m",
+        "math": "",
+        "box": [
+          155.0,
+          444.0,
+          216.66669291338582,
+          46.0
+        ]
+      },
+      {
+        "name": "Current overview chapter",
+        "text": "4. Contact results",
+        "math": "",
+        "box": [
+          660.0,
+          21.0,
+          261.6,
+          24.0
+        ]
+      }
+    ]
+  },
+  {
+    "physical": 13,
+    "sid": "271",
+    "rid": "rId17",
+    "path": "ppt/slides/slide16.xml",
+    "hidden": false,
+    "shapes": [
+      {
+        "name": "Slide title",
+        "text": "Commanded and estimated wrench",
+        "math": "",
+        "box": [
+          37.44,
+          18.72,
+          604.8,
+          28.47535433070866
+        ]
+      },
+      {
+        "name": "Picture 3",
+        "text": "",
+        "math": "",
+        "box": [
+          20.16,
+          502.56,
+          39.6,
+          20.392834645669293
+        ]
+      },
+      {
+        "name": "TextBox 4",
+        "text": "Design and Implementation of a Real-Time Impedance Controller for a 7-DOF Collaborative Robot",
+        "math": "",
+        "box": [
+          66.24,
+          501.12,
+          338.4,
+          11.52
+        ]
+      },
+      {
+        "name": "TextBox 5",
+        "text": "Master Thesis · Heykel Khadhraoui",
+        "math": "",
+        "box": [
+          66.24,
+          511.2,
+          230.4,
+          10.8
+        ]
+      },
+      {
+        "name": "TextBox 6",
+        "text": "12",
+        "math": "",
+        "box": [
+          907.5,
+          505.44,
+          14.2,
+          9.693779527559055
+        ]
+      },
+      {
+        "name": "Figure — wrench_comparison",
+        "text": "",
+        "math": "",
+        "box": [
+          187.5,
+          89.46393700787402,
+          585.0,
+          371.07220472440946
+        ]
+      },
+      {
+        "name": "Continuous title rule",
+        "text": "",
+        "math": "",
+        "box": [
+          37.44,
+          48.0959842519685,
+          884.16,
+          1.0
+        ]
+      },
+      {
+        "name": "Current overview chapter",
+        "text": "4. Contact results",
+        "math": "",
+        "box": [
+          660.0,
+          21.0,
+          261.6,
+          24.0
+        ]
+      }
+    ]
+  },
+  {
+    "physical": 14,
+    "sid": "265",
+    "rid": "rId19",
+    "path": "ppt/slides/slide18.xml",
+    "hidden": false,
+    "shapes": [
+      {
+        "name": "Slide title",
+        "text": "Effect of rotational stiffness",
+        "math": "",
+        "box": [
+          37.44,
+          18.72,
+          604.8,
+          28.47535433070866
+        ]
+      },
+      {
+        "name": "Picture 3",
+        "text": "",
+        "math": "",
+        "box": [
+          20.16,
+          502.56,
+          39.6,
+          20.392834645669293
+        ]
+      },
+      {
+        "name": "TextBox 4",
+        "text": "Design and Implementation of a Real-Time Impedance Controller for a 7-DOF Collaborative Robot",
+        "math": "",
+        "box": [
+          66.24,
+          501.12,
+          338.4,
+          11.52
+        ]
+      },
+      {
+        "name": "TextBox 5",
+        "text": "Master Thesis · Heykel Khadhraoui",
+        "math": "",
+        "box": [
+          66.24,
+          511.2,
+          230.4,
+          10.8
+        ]
+      },
+      {
+        "name": "TextBox 6",
+        "text": "13",
+        "math": "",
+        "box": [
+          907.5,
+          505.44,
+          14.2,
+          9.693779527559055
+        ]
+      },
+      {
+        "name": "Continuous title rule",
+        "text": "",
+        "math": "",
+        "box": [
+          37.44,
+          48.0959842519685,
+          884.16,
+          1.0
+        ]
+      },
+      {
+        "name": "Rotational stiffness meaning",
+        "text": "Resistance to rotation about  t 1",
+        "math": "",
+        "box": [
+          220.0,
+          57.0,
+          520.0,
+          27.0
+        ]
+      },
+      {
+        "name": "Figure — rotation_stiffness",
+        "text": "",
+        "math": "",
+        "box": [
+          230.0,
+          84.0,
+          500.0,
+          360.32385826771656
+        ]
+      },
+      {
+        "name": "Current overview chapter",
+        "text": "4. Contact results",
+        "math": "",
+        "box": [
+          660.0,
+          21.0,
+          261.6,
+          24.0
+        ]
+      }
+    ]
+  },
+  {
+    "physical": 15,
+    "sid": "266",
+    "rid": "rId20",
+    "path": "ppt/slides/slide19.xml",
+    "hidden": false,
+    "shapes": [
+      {
+        "name": "Slide title",
+        "text": "Effect of CoC position",
+        "math": "",
+        "box": [
+          37.44,
+          18.72,
+          604.8,
+          28.47535433070866
+        ]
+      },
+      {
+        "name": "Picture 3",
+        "text": "",
+        "math": "",
+        "box": [
+          20.16,
+          502.56,
+          39.6,
+          20.392834645669293
+        ]
+      },
+      {
+        "name": "TextBox 4",
+        "text": "Design and Implementation of a Real-Time Impedance Controller for a 7-DOF Collaborative Robot",
+        "math": "",
+        "box": [
+          66.24,
+          501.12,
+          338.4,
+          11.52
+        ]
+      },
+      {
+        "name": "TextBox 5",
+        "text": "Master Thesis · Heykel Khadhraoui",
+        "math": "",
+        "box": [
+          66.24,
+          511.2,
+          230.4,
+          10.8
+        ]
+      },
+      {
+        "name": "TextBox 6",
+        "text": "14",
+        "math": "",
+        "box": [
+          907.5,
+          505.44,
+          14.2,
+          9.693779527559055
+        ]
+      },
+      {
+        "name": "Continuous title rule",
+        "text": "",
+        "math": "",
+        "box": [
+          37.44,
+          48.0959842519685,
+          884.16,
+          1.0
+        ]
+      },
+      {
+        "name": "Equation - symbol_rct2",
+        "text": "",
+        "math": "r c , t 2",
+        "box": [
+          330.0,
+          87.76141732283465,
+          38.886771653543306,
+          22.596377952755905
+        ]
+      },
+      {
+        "name": "Tangential CoC definition",
+        "text": "CoC displacement along  t 2",
+        "math": "",
+        "box": [
+          394.0,
+          81.0,
+          490.0,
+          30.0
+        ]
+      },
+      {
+        "name": "Figure - CoC_position",
+        "text": "",
+        "math": "",
+        "box": [
+          130.0,
+          115.0,
+          700.0,
+          329.5522047244094
+        ]
+      },
+      {
+        "name": "Current overview chapter",
+        "text": "4. Contact results",
+        "math": "",
+        "box": [
+          660.0,
+          21.0,
+          261.6,
+          24.0
+        ]
+      }
+    ]
+  },
+  {
+    "physical": 16,
+    "sid": "267",
+    "rid": "rId21",
+    "path": "ppt/slides/slide20.xml",
+    "hidden": false,
+    "shapes": [
+      {
+        "name": "Slide title",
+        "text": "Angular error and interaction wrench",
+        "math": "",
+        "box": [
+          37.44,
+          18.72,
+          604.8,
+          28.47535433070866
+        ]
+      },
+      {
+        "name": "Picture 3",
+        "text": "",
+        "math": "",
+        "box": [
+          20.16,
+          502.56,
+          39.6,
+          20.392834645669293
+        ]
+      },
+      {
+        "name": "TextBox 4",
+        "text": "Design and Implementation of a Real-Time Impedance Controller for a 7-DOF Collaborative Robot",
+        "math": "",
+        "box": [
+          66.24,
+          501.12,
+          338.4,
+          11.52
+        ]
+      },
+      {
+        "name": "TextBox 5",
+        "text": "Master Thesis · Heykel Khadhraoui",
+        "math": "",
+        "box": [
+          66.24,
+          511.2,
+          230.4,
+          10.8
+        ]
+      },
+      {
+        "name": "TextBox 6",
+        "text": "15",
+        "math": "",
+        "box": [
+          907.5,
+          505.44,
+          14.2,
+          9.693779527559055
+        ]
+      },
+      {
+        "name": "Continuous title rule",
+        "text": "",
+        "math": "",
+        "box": [
+          37.44,
+          48.0959842519685,
+          884.16,
+          1.0
+        ]
+      },
+      {
+        "name": "Angular response heading",
+        "text": "Angular error",
+        "math": "",
+        "box": [
+          32.93748031496063,
+          107.0,
+          320.0,
+          28.0
+        ]
+      },
+      {
+        "name": "Interaction moment heading",
+        "text": "TCP moment",
+        "math": "",
+        "box": [
+          632.9374803149607,
+          107.0,
+          320.0,
+          28.0
+        ]
+      },
+      {
+        "name": "Figure - contact_wrench_three_panels",
+        "text": "",
+        "math": "",
+        "box": [
+          30.0,
+          135.0,
+          900.0,
+          310.0
+        ]
+      },
+      {
+        "name": "Legend - normal force",
+        "text": "",
+        "math": "",
+        "box": [
+          442.8089763779528,
+          398.0,
+          126.381968503937,
+          60.158976377952754
+        ]
+      },
+      {
+        "name": "Normal force heading",
+        "text": "Normal force",
+        "math": "",
+        "box": [
+          332.9374803149606,
+          107.0,
+          320.0,
+          28.0
+        ]
+      },
+      {
+        "name": "Current overview chapter",
+        "text": "4. Contact results",
+        "math": "",
+        "box": [
+          660.0,
+          21.0,
+          261.6,
+          24.0
+        ]
+      }
+    ]
+  },
+  {
+    "physical": 17,
+    "sid": "284",
+    "rid": "rId11",
+    "path": "ppt/slides/slide10.xml",
+    "hidden": false,
+    "shapes": [
+      {
+        "name": "Slide title",
+        "text": "Null-space controller",
+        "math": "",
+        "box": [
+          37.44,
+          18.72,
+          604.8,
+          28.47535433070866
+        ]
+      },
+      {
+        "name": "Picture 3",
+        "text": "",
+        "math": "",
+        "box": [
+          20.16,
+          502.56,
+          39.6,
+          20.392834645669293
+        ]
+      },
+      {
+        "name": "TextBox 4",
+        "text": "Design and Implementation of a Real-Time Impedance Controller for a 7-DOF Collaborative Robot",
+        "math": "",
+        "box": [
+          66.24,
+          501.12,
+          338.4,
+          11.52
+        ]
+      },
+      {
+        "name": "TextBox 5",
+        "text": "Master Thesis · Heykel Khadhraoui",
+        "math": "",
+        "box": [
+          66.24,
+          511.2,
+          230.4,
+          10.8
+        ]
+      },
+      {
+        "name": "TextBox 6",
+        "text": "16",
+        "math": "",
+        "box": [
+          907.5,
+          505.44,
+          14.2,
+          9.693779527559055
+        ]
+      },
+      {
+        "name": "Continuous title rule",
+        "text": "",
+        "math": "",
+        "box": [
+          37.44,
+          48.0959842519685,
+          884.16,
+          1.0
+        ]
+      },
+      {
+        "name": "Equation - null_controller_dimension",
+        "text": "",
+        "math": "Null space dimension = 7 − 6 = 1",
+        "box": [
+          80.0,
+          218.0,
+          440.0,
+          29.411496062992125
+        ]
+      },
+      {
+        "name": "Null-space condition label",
+        "text": "Null-space condition:",
+        "math": "",
+        "box": [
+          530.0,
+          218.0,
+          205.0,
+          30.0
+        ]
+      },
+      {
+        "name": "Equation - null_controller_velocity",
+        "text": "",
+        "math": "J ( q )   q null = 0",
+        "box": [
+          741.0,
+          218.0,
+          140.70354330708662,
+          29.411496062992125
+        ]
+      },
+      {
+        "name": "Rank qualification",
+        "text": "The robot’s extra degree of freedom allows its posture to change while keeping the (EE) pose unchanged.",
+        "math": "",
+        "box": [
+          80.0,
+          124.0,
+          820.0,
+          88.0
+        ]
+      },
+      {
+        "name": "Damping heading",
+        "text": "Damping torque",
+        "math": "",
+        "box": [
+          80.0,
+          260.0,
+          370.0,
+          30.0
+        ]
+      },
+      {
+        "name": "Conditioning heading",
+        "text": "Conditioning torque",
+        "math": "",
+        "box": [
+          530.0,
+          260.0,
+          370.0,
+          30.0
+        ]
+      },
+      {
+        "name": "Damping role",
+        "text": "Opposes and damps null-space velocity.",
+        "math": "",
+        "box": [
+          80.0,
+          300.0,
+          370.0,
+          165.0
+        ]
+      },
+      {
+        "name": "Conditioning role",
+        "text": "Adjusts joint posture in the null space. Seeks a larger minimum singular value  σ min  of  J , moving away from singularities.",
+        "math": "",
+        "box": [
+          530.0,
+          300.0,
+          370.0,
+          180.0
+        ]
+      },
+      {
+        "name": "Equation - symbol_tau_d",
+        "text": "",
+        "math": "τ d",
+        "box": [
+          250.87503937007875,
+          268.43401574803147,
+          24.3851968503937,
+          19.684488188976378
+        ]
+      },
+      {
+        "name": "Equation - symbol_tau_sigma",
+        "text": "",
+        "math": "τ σ",
+        "box": [
+          735.1250393700788,
+          268.43401574803147,
+          25.611811023622046,
+          19.724094488188978
+        ]
+      },
+      {
+        "name": "Redundancy heading",
+        "text": "Redundancy and null-space motion:",
+        "math": "",
+        "box": [
+          80.0,
+          90.0,
+          820.0,
+          30.0
+        ]
+      },
+      {
+        "name": "Damping colon",
+        "text": ":",
+        "math": "",
+        "box": [
+          280.55007874015746,
+          260.0,
+          12.0,
+          30.0
+        ]
+      },
+      {
+        "name": "Conditioning colon",
+        "text": ":",
+        "math": "",
+        "box": [
+          765.0500787401575,
+          260.0,
+          12.0,
+          30.0
+        ]
+      },
+      {
+        "name": "Current overview chapter",
+        "text": "5. Null-space control and experiments",
+        "math": "",
+        "box": [
+          660.0,
+          21.0,
+          261.6,
+          24.0
+        ]
+      }
+    ]
+  },
+  {
+    "physical": 18,
+    "sid": "298",
+    "rid": "rIdNullspace2Part1",
+    "path": "ppt/slides/slide36.xml",
+    "hidden": false,
+    "shapes": [
+      {
+        "name": "Slide title",
+        "text": "Disturbance demonstration",
+        "math": "",
+        "box": [
+          37.44,
+          18.72,
+          604.8,
+          28.47535433070866
+        ]
+      },
+      {
+        "name": "Picture 3",
+        "text": "",
+        "math": "",
+        "box": [
+          20.16,
+          502.56,
+          39.6,
+          20.392834645669293
+        ]
+      },
+      {
+        "name": "TextBox 4",
+        "text": "Design and Implementation of a Real-Time Impedance Controller for a 7-DOF Collaborative Robot",
+        "math": "",
+        "box": [
+          66.24,
+          501.12,
+          338.4,
+          11.52
+        ]
+      },
+      {
+        "name": "TextBox 5",
+        "text": "Master Thesis · Heykel Khadhraoui",
+        "math": "",
+        "box": [
+          66.24,
+          511.2,
+          230.4,
+          10.8
+        ]
+      },
+      {
+        "name": "TextBox 6",
+        "text": "17",
+        "math": "",
+        "box": [
+          911.6285826771654,
+          505.44,
+          9.971417322834645,
+          9.693779527559055
+        ]
+      },
+      {
+        "name": "Continuous title rule",
+        "text": "",
+        "math": "",
+        "box": [
+          37.44,
+          48.0959842519685,
+          884.16,
+          1.0
+        ]
+      },
+      {
+        "name": "Nullspace2 part 1 video",
+        "text": "",
+        "math": "",
+        "box": [
+          282.5,
+          63.0,
+          395.0,
+          395.0
+        ]
+      },
+      {
+        "name": "Nullspace2 label",
+        "text": "Without null-space control → Damping only",
+        "math": "",
+        "box": [
+          240.0,
+          471.0,
+          480.0,
+          28.0
+        ]
+      },
+      {
+        "name": "Current overview chapter",
+        "text": "5. Null-space control and experiments",
+        "math": "",
+        "box": [
+          660.0,
+          21.0,
+          261.6,
+          24.0
+        ]
+      }
+    ]
+  },
+  {
+    "physical": 19,
+    "sid": "299",
+    "rid": "rIdNullspace2Part2",
+    "path": "ppt/slides/slide37.xml",
+    "hidden": false,
+    "shapes": [
+      {
+        "name": "Slide title",
+        "text": "Disturbance demonstration",
+        "math": "",
+        "box": [
+          37.44,
+          18.72,
+          604.8,
+          28.47535433070866
+        ]
+      },
+      {
+        "name": "Picture 3",
+        "text": "",
+        "math": "",
+        "box": [
+          20.16,
+          502.56,
+          39.6,
+          20.392834645669293
+        ]
+      },
+      {
+        "name": "TextBox 4",
+        "text": "Design and Implementation of a Real-Time Impedance Controller for a 7-DOF Collaborative Robot",
+        "math": "",
+        "box": [
+          66.24,
+          501.12,
+          338.4,
+          11.52
+        ]
+      },
+      {
+        "name": "TextBox 5",
+        "text": "Master Thesis · Heykel Khadhraoui",
+        "math": "",
+        "box": [
+          66.24,
+          511.2,
+          230.4,
+          10.8
+        ]
+      },
+      {
+        "name": "TextBox 6",
+        "text": "18",
+        "math": "",
+        "box": [
+          911.6285826771654,
+          505.44,
+          9.971417322834645,
+          9.693779527559055
+        ]
+      },
+      {
+        "name": "Continuous title rule",
+        "text": "",
+        "math": "",
+        "box": [
+          37.44,
+          48.0959842519685,
+          884.16,
+          1.0
+        ]
+      },
+      {
+        "name": "Nullspace2 part 2 video",
+        "text": "",
+        "math": "",
+        "box": [
+          282.5,
+          63.0,
+          395.0,
+          395.0
+        ]
+      },
+      {
+        "name": "Nullspace2 label",
+        "text": "Conditioning only",
+        "math": "",
+        "box": [
+          240.0,
+          471.0,
+          480.0,
+          28.0
+        ]
+      },
+      {
+        "name": "Current overview chapter",
+        "text": "5. Null-space control and experiments",
+        "math": "",
+        "box": [
+          660.0,
+          21.0,
+          261.6,
+          24.0
+        ]
+      }
+    ]
+  },
+  {
+    "physical": 20,
+    "sid": "285",
+    "rid": "rId14",
+    "path": "ppt/slides/slide13.xml",
+    "hidden": false,
+    "shapes": [
+      {
+        "name": "Slide title",
+        "text": "Null-space experiment",
+        "math": "",
+        "box": [
+          37.44,
+          18.72,
+          604.8,
+          28.47535433070866
+        ]
+      },
+      {
+        "name": "Picture 3",
+        "text": "",
+        "math": "",
+        "box": [
+          20.16,
+          502.56,
+          39.6,
+          20.392834645669293
+        ]
+      },
+      {
+        "name": "TextBox 4",
+        "text": "Design and Implementation of a Real-Time Impedance Controller for a 7-DOF Collaborative Robot",
+        "math": "",
+        "box": [
+          66.24,
+          501.12,
+          338.4,
+          11.52
+        ]
+      },
+      {
+        "name": "TextBox 5",
+        "text": "Master Thesis · Heykel Khadhraoui",
+        "math": "",
+        "box": [
+          66.24,
+          511.2,
+          230.4,
+          10.8
+        ]
+      },
+      {
+        "name": "TextBox 6",
+        "text": "19",
+        "math": "",
+        "box": [
+          907.5,
+          505.44,
+          14.2,
+          9.693779527559055
+        ]
+      },
+      {
+        "name": "Continuous title rule",
+        "text": "",
+        "math": "",
+        "box": [
+          37.44,
+          48.0959842519685,
+          884.16,
+          1.0
+        ]
+      },
+      {
+        "name": "Disturbance heading",
+        "text": "Cartesian pose hold with commanded disturbance",
+        "math": "",
+        "box": [
+          40.0,
+          86.0,
+          860.0,
+          33.0
+        ]
+      },
+      {
+        "name": "Equation - null_experiment_disturbance",
+        "text": "",
+        "math": "τ dist = J ( q ) ⊤ f dist",
+        "box": [
+          168.54,
+          203.0,
+          181.23566929133858,
+          33.62527559055118
+        ]
+      },
+      {
+        "name": "Disturbance description",
+        "text": "Joint-torque equivalent of a virtual 20 N point force on link 3.",
+        "math": "",
+        "box": [
+          510.0,
+          202.0,
+          390.0,
+          63.0
+        ]
+      },
+      {
+        "name": "Task description",
+        "text": "Hold the captured position and orientation.",
+        "math": "",
+        "box": [
+          60.0,
+          136.0,
+          840.0,
+          34.0
+        ]
+      },
+      {
+        "name": "Settings heading",
+        "text": "Four conditions with three trials each",
+        "math": "",
+        "box": [
+          40.0,
+          316.0,
+          860.0,
+          33.0
+        ]
+      },
+      {
+        "name": "Setting no torque",
+        "text": "Disturbance without null-space control torque",
+        "math": "",
+        "box": [
+          60.0,
+          365.0,
+          390.0,
+          58.0
+        ]
+      },
+      {
+        "name": "Setting damping",
+        "text": "Damping:  d null  = 2 N m s/rad",
+        "math": "",
+        "box": [
+          60.0,
+          435.0,
+          390.0,
+          34.0
+        ]
+      },
+      {
+        "name": "Setting conditioning",
+        "text": "Conditioning:  k σ  = 2 N m",
+        "math": "",
+        "box": [
+          510.0,
+          365.0,
+          390.0,
+          34.0
+        ]
+      },
+      {
+        "name": "Setting combined",
+        "text": "Combined: conditioning + damping k σ  = 2 N m and  d null  = 2 N m s/rad",
+        "math": "",
+        "box": [
+          510.0,
+          435.0,
+          390.0,
+          60.0
+        ]
+      },
+      {
+        "name": "Current overview chapter",
+        "text": "5. Null-space control and experiments",
+        "math": "",
+        "box": [
+          660.0,
+          21.0,
+          261.6,
+          24.0
+        ]
+      }
+    ]
+  },
+  {
+    "physical": 21,
+    "sid": "294",
+    "rid": "rIdNarrative1",
+    "path": "ppt/slides/slide31.xml",
+    "hidden": false,
+    "shapes": [
+      {
+        "name": "Slide title",
+        "text": "Cumulative joint motion",
+        "math": "",
+        "box": [
+          37.44,
+          18.72,
+          604.8,
+          28.47535433070866
+        ]
+      },
+      {
+        "name": "Picture 3",
+        "text": "",
+        "math": "",
+        "box": [
+          20.16,
+          502.56,
+          39.6,
+          20.392834645669293
+        ]
+      },
+      {
+        "name": "TextBox 4",
+        "text": "Design and Implementation of a Real-Time Impedance Controller for a 7-DOF Collaborative Robot",
+        "math": "",
+        "box": [
+          66.24,
+          501.12,
+          338.4,
+          11.52
+        ]
+      },
+      {
+        "name": "TextBox 5",
+        "text": "Master Thesis · Heykel Khadhraoui",
+        "math": "",
+        "box": [
+          66.24,
+          511.2,
+          230.4,
+          10.8
+        ]
+      },
+      {
+        "name": "TextBox 6",
+        "text": "20",
+        "math": "",
+        "box": [
+          907.5,
+          505.44,
+          14.2,
+          9.693779527559055
+        ]
+      },
+      {
+        "name": "Continuous title rule",
+        "text": "",
+        "math": "",
+        "box": [
+          37.44,
+          48.0959842519685,
+          884.16,
+          1.0
+        ]
+      },
+      {
+        "name": "Figure - nullspace_cumulative_main",
+        "text": "",
+        "math": "",
+        "box": [
+          100.0,
+          62.0,
+          760.0,
+          354.6666929133858
+        ]
+      },
+      {
+        "name": "Null-space finding 1",
+        "text": "Damping alone reduced cumulative motion by 25.1% compared with no torque.",
+        "math": "",
+        "box": [
+          68.0,
+          425.0,
+          825.0,
+          32.0
+        ]
+      },
+      {
+        "name": "Null-space finding 2",
+        "text": "At 2 N m, adding damping to conditioning reduced cumulative motion by 50.7%.",
+        "math": "",
+        "box": [
+          68.0,
+          465.0,
+          825.0,
+          32.0
+        ]
+      },
+      {
+        "name": "Current overview chapter",
+        "text": "5. Null-space control and experiments",
+        "math": "",
+        "box": [
+          660.0,
+          21.0,
+          261.6,
+          24.0
+        ]
+      }
+    ]
+  },
+  {
+    "physical": 22,
+    "sid": "295",
+    "rid": "rIdNarrative2",
+    "path": "ppt/slides/slide32.xml",
+    "hidden": false,
+    "shapes": [
+      {
+        "name": "Slide title",
+        "text": "Jacobian conditioning",
+        "math": "",
+        "box": [
+          37.44,
+          18.72,
+          604.8,
+          28.47535433070866
+        ]
+      },
+      {
+        "name": "Picture 3",
+        "text": "",
+        "math": "",
+        "box": [
+          20.16,
+          502.56,
+          39.6,
+          20.392834645669293
+        ]
+      },
+      {
+        "name": "TextBox 4",
+        "text": "Design and Implementation of a Real-Time Impedance Controller for a 7-DOF Collaborative Robot",
+        "math": "",
+        "box": [
+          66.24,
+          501.12,
+          338.4,
+          11.52
+        ]
+      },
+      {
+        "name": "TextBox 5",
+        "text": "Master Thesis · Heykel Khadhraoui",
+        "math": "",
+        "box": [
+          66.24,
+          511.2,
+          230.4,
+          10.8
+        ]
+      },
+      {
+        "name": "TextBox 6",
+        "text": "21",
+        "math": "",
+        "box": [
+          900.0,
+          505.44,
+          21.7,
+          9.693779527559055
+        ]
+      },
+      {
+        "name": "Continuous title rule",
+        "text": "",
+        "math": "",
+        "box": [
+          37.44,
+          48.0959842519685,
+          884.16,
+          1.0
+        ]
+      },
+      {
+        "name": "Figure - nullspace_conditioning_main",
+        "text": "",
+        "math": "",
+        "box": [
+          100.0,
+          62.0,
+          760.0,
+          354.6666929133858
+        ]
+      },
+      {
+        "name": "Null-space finding 1",
+        "text": "The indicator decreased with no torque and damping alone.",
+        "math": "",
+        "box": [
+          68.0,
+          425.0,
+          825.0,
+          32.0
+        ]
+      },
+      {
+        "name": "Null-space finding 2",
+        "text": "Conditioning and combined control kept the indicator nearly constant.",
+        "math": "",
+        "box": [
+          68.0,
+          465.0,
+          825.0,
+          32.0
+        ]
+      },
+      {
+        "name": "Current overview chapter",
+        "text": "5. Null-space control and experiments",
+        "math": "",
+        "box": [
+          660.0,
+          21.0,
+          261.6,
+          24.0
+        ]
+      }
+    ]
+  },
+  {
+    "physical": 23,
+    "sid": "296",
+    "rid": "rIdNarrative3",
+    "path": "ppt/slides/slide33.xml",
+    "hidden": false,
+    "shapes": [
+      {
+        "name": "Slide title",
+        "text": "Joint motion over time",
+        "math": "",
+        "box": [
+          37.44,
+          18.72,
+          604.8,
+          28.47535433070866
+        ]
+      },
+      {
+        "name": "Picture 3",
+        "text": "",
+        "math": "",
+        "box": [
+          20.16,
+          502.56,
+          39.6,
+          20.392834645669293
+        ]
+      },
+      {
+        "name": "TextBox 4",
+        "text": "Design and Implementation of a Real-Time Impedance Controller for a 7-DOF Collaborative Robot",
+        "math": "",
+        "box": [
+          66.24,
+          501.12,
+          338.4,
+          11.52
+        ]
+      },
+      {
+        "name": "TextBox 5",
+        "text": "Master Thesis · Heykel Khadhraoui",
+        "math": "",
+        "box": [
+          66.24,
+          511.2,
+          230.4,
+          10.8
+        ]
+      },
+      {
+        "name": "TextBox 6",
+        "text": "22",
+        "math": "",
+        "box": [
+          900.0,
+          505.44,
+          21.7,
+          9.693779527559055
+        ]
+      },
+      {
+        "name": "Continuous title rule",
+        "text": "",
+        "math": "",
+        "box": [
+          37.44,
+          48.0959842519685,
+          884.16,
+          1.0
+        ]
+      },
+      {
+        "name": "Figure - joint_motion_mean_main",
+        "text": "",
+        "math": "",
+        "box": [
+          110.0,
+          52.0,
+          740.0,
+          370.0
+        ]
+      },
+      {
+        "name": "Null-space finding 1",
+        "text": "Conditioning at 2 N m shows repeated joint-motion reversals.",
+        "math": "",
+        "box": [
+          68.0,
+          425.0,
+          825.0,
+          32.0
+        ]
+      },
+      {
+        "name": "Null-space finding 2",
+        "text": "Adding damping reduces total motion, while reversals remain.",
+        "math": "",
+        "box": [
+          68.0,
+          465.0,
+          825.0,
+          32.0
+        ]
+      },
+      {
+        "name": "Current overview chapter",
+        "text": "5. Null-space control and experiments",
+        "math": "",
+        "box": [
+          660.0,
+          21.0,
+          261.6,
+          24.0
+        ]
+      }
+    ]
+  },
+  {
+    "physical": 24,
+    "sid": "270",
+    "rid": "rId25",
+    "path": "ppt/slides/slide24.xml",
+    "hidden": false,
+    "shapes": [
+      {
+        "name": "Slide title",
+        "text": "Conclusion",
+        "math": "",
+        "box": [
+          37.44,
+          18.72,
+          604.8,
+          28.47535433070866
+        ]
+      },
+      {
+        "name": "Picture 3",
+        "text": "",
+        "math": "",
+        "box": [
+          20.16,
+          502.56,
+          39.6,
+          20.392834645669293
+        ]
+      },
+      {
+        "name": "TextBox 4",
+        "text": "Design and Implementation of a Real-Time Impedance Controller for a 7-DOF Collaborative Robot",
+        "math": "",
+        "box": [
+          66.24,
+          501.12,
+          338.4,
+          11.52
+        ]
+      },
+      {
+        "name": "TextBox 5",
+        "text": "Master Thesis · Heykel Khadhraoui",
+        "math": "",
+        "box": [
+          66.24,
+          511.2,
+          230.4,
+          10.8
+        ]
+      },
+      {
+        "name": "TextBox 6",
+        "text": "23",
+        "math": "",
+        "box": [
+          900.0,
+          505.44,
+          21.7,
+          9.693779527559055
+        ]
+      },
+      {
+        "name": "Continuous title rule",
+        "text": "",
+        "math": "",
+        "box": [
+          37.44,
+          48.0959842519685,
+          884.16,
+          1.0
+        ]
+      },
+      {
+        "name": "Conclusion alignment",
+        "text": "Compliant rotation allowed contact moments to reduce angular error",
+        "math": "",
+        "box": [
+          72.0,
+          83.0,
+          835.0,
+          34.0
+        ]
+      },
+      {
+        "name": "Conclusion stiffness",
+        "text": "Higher rotational stiffness left a larger angular error",
+        "math": "",
+        "box": [
+          72.0,
+          133.0,
+          835.0,
+          34.0
+        ]
+      },
+      {
+        "name": "Conclusion CoC",
+        "text": "The CoC could support or oppose the contact moment",
+        "math": "",
+        "box": [
+          72.0,
+          183.0,
+          835.0,
+          34.0
+        ]
+      },
+      {
+        "name": "Future work heading",
+        "text": "Future work",
+        "math": "",
+        "box": [
+          52.0,
+          297.0,
+          855.0,
+          34.0
+        ]
+      },
+      {
+        "name": "Future CoC",
+        "text": "Use a more rigid tool mount for better measurements",
+        "math": "",
+        "box": [
+          72.0,
+          338.0,
+          835.0,
+          34.0
+        ]
+      },
+      {
+        "name": "Future return",
+        "text": "Adapt the CoC to support the contact moment, then return it to the TCP after alignment",
+        "math": "",
+        "box": [
+          72.0,
+          378.0,
+          835.0,
+          66.0
+        ]
+      },
+      {
+        "name": "Conclusion null-space",
+        "text": "Null-space control reduced redundant motion under disturbance",
+        "math": "",
+        "box": [
+          72.0,
+          233.0,
+          835.0,
+          34.0
+        ]
+      },
+      {
+        "name": "Current overview chapter",
+        "text": "6. Conclusion and future work",
+        "math": "",
+        "box": [
+          660.0,
+          21.0,
+          261.6,
+          24.0
+        ]
+      }
+    ]
+  },
+  {
+    "physical": 25,
+    "sid": "301",
+    "rid": "rIdContactVideo2",
+    "path": "ppt/slides/slide39.xml",
+    "hidden": true,
+    "shapes": [
+      {
+        "name": "Slide title",
+        "text": "Opposing moment",
+        "math": "",
+        "box": [
+          37.44,
+          18.72,
+          604.8,
+          28.47535433070866
+        ]
+      },
+      {
+        "name": "Picture 3",
+        "text": "",
+        "math": "",
+        "box": [
+          20.16,
+          502.56,
+          39.6,
+          20.392834645669293
+        ]
+      },
+      {
+        "name": "TextBox 4",
+        "text": "Design and Implementation of a Real-Time Impedance Controller for a 7-DOF Collaborative Robot",
+        "math": "",
+        "box": [
+          66.24,
+          501.12,
+          338.4,
+          11.52
+        ]
+      },
+      {
+        "name": "TextBox 5",
+        "text": "Master Thesis · Heykel Khadhraoui",
+        "math": "",
+        "box": [
+          66.24,
+          511.2,
+          230.4,
+          10.8
+        ]
+      },
+      {
+        "name": "TextBox 6",
+        "text": "B1",
+        "math": "",
+        "box": [
+          900.0,
+          505.44,
+          21.6,
+          9.693779527559055
+        ]
+      },
+      {
+        "name": "Continuous title rule",
+        "text": "",
+        "math": "",
+        "box": [
+          37.44,
+          48.0959842519685,
+          884.16,
+          1.0
+        ]
+      },
+      {
+        "name": "Opposing moment video",
+        "text": "",
+        "math": "",
+        "box": [
+          270.0,
+          65.0,
+          420.0,
+          420.0
+        ]
+      }
+    ]
+  },
+  {
+    "physical": 26,
+    "sid": "289",
+    "rid": "rId26",
+    "path": "ppt/slides/slide25.xml",
+    "hidden": true,
+    "shapes": [
+      {
+        "name": "Slide title",
+        "text": "Null-space torques and projector",
+        "math": "",
+        "box": [
+          37.44,
+          18.72,
+          604.8,
+          28.47535433070866
+        ]
+      },
+      {
+        "name": "Picture 3",
+        "text": "",
+        "math": "",
+        "box": [
+          20.16,
+          502.56,
+          39.6,
+          20.392834645669293
+        ]
+      },
+      {
+        "name": "TextBox 4",
+        "text": "Design and Implementation of a Real-Time Impedance Controller for a 7-DOF Collaborative Robot",
+        "math": "",
+        "box": [
+          66.24,
+          501.12,
+          338.4,
+          11.52
+        ]
+      },
+      {
+        "name": "TextBox 5",
+        "text": "Master Thesis · Heykel Khadhraoui",
+        "math": "",
+        "box": [
+          66.24,
+          511.2,
+          230.4,
+          10.8
+        ]
+      },
+      {
+        "name": "TextBox 6",
+        "text": "B2",
+        "math": "",
+        "box": [
+          911.6285039370078,
+          505.44,
+          9.971417322834645,
+          9.693779527559055
+        ]
+      },
+      {
+        "name": "Continuous title rule",
+        "text": "",
+        "math": "",
+        "box": [
+          37.44,
+          48.0959842519685,
+          884.16,
+          1.0
+        ]
+      },
+      {
+        "name": "Null-space projector heading",
+        "text": "Null-space projector",
+        "math": "",
+        "box": [
+          60.0,
+          84.0,
+          840.0,
+          30.0
+        ]
+      },
+      {
+        "name": "Equation - null_controller_projector",
+        "text": "",
+        "math": "N τ = I 7 − J ⊤ J + ⊤ ,    τ null = τ d + τ σ",
+        "box": [
+          80.0,
+          126.38338582677166,
+          356.4579527559055,
+          31.5144094488189
+        ]
+      },
+      {
+        "name": "Projector role",
+        "text": "Projects secondary joint torques into the kinematic null space.",
+        "math": "",
+        "box": [
+          80.0,
+          170.0,
+          820.0,
+          30.0
+        ]
+      },
+      {
+        "name": "Jacobian definition",
+        "text": "J : joint → (EE) velocities",
+        "math": "",
+        "box": [
+          80.0,
+          207.0,
+          225.0,
+          25.0
+        ]
+      },
+      {
+        "name": "Pseudoinverse definition",
+        "text": "J + : pseudoinverse",
+        "math": "",
+        "box": [
+          350.0,
+          207.0,
+          230.0,
+          25.0
+        ]
+      },
+      {
+        "name": "Identity definition",
+        "text": "I 7 : 7 × 7 identity matrix",
+        "math": "",
+        "box": [
+          630.0,
+          207.0,
+          270.0,
+          25.0
+        ]
+      },
+      {
+        "name": "Damping torque heading",
+        "text": "Damping torque",
+        "math": "",
+        "box": [
+          60.0,
+          257.0,
+          390.0,
+          30.0
+        ]
+      },
+      {
+        "name": "Conditioning torque heading",
+        "text": "Conditioning torque",
+        "math": "",
+        "box": [
+          510.0,
+          257.0,
+          390.0,
+          30.0
+        ]
+      },
+      {
+        "name": "Equation - null_controller_damping",
+        "text": "",
+        "math": "τ d = − d null N τ q",
+        "box": [
+          80.0,
+          300.32661417322834,
+          162.5615748031496,
+          27.012440944881888
+        ]
+      },
+      {
+        "name": "Equation - null_controller_conditioning",
+        "text": "",
+        "math": "τ σ = k σ N τ ( s σ v 7 )",
+        "box": [
+          530.0,
+          300.36488188976375,
+          177.18118110236222,
+          29.36952755905512
+        ]
+      },
+      {
+        "name": "Damping role",
+        "text": "Opposes redundant joint velocity. Zero at zero joint velocity.",
+        "math": "",
+        "box": [
+          80.0,
+          345.0,
+          370.0,
+          48.0
+        ]
+      },
+      {
+        "name": "Conditioning role",
+        "text": "Seeks better local conditioning. Can act at zero joint velocity.",
+        "math": "",
+        "box": [
+          530.0,
+          345.0,
+          370.0,
+          48.0
+        ]
+      },
+      {
+        "name": "Damping coefficient",
+        "text": "d null : damping coefficient [N m s/rad]",
+        "math": "",
+        "box": [
+          80.0,
+          411.0,
+          390.0,
+          25.0
+        ]
+      },
+      {
+        "name": "Measured joint velocity",
+        "text": "q̇ : measured joint velocity",
+        "math": "",
+        "box": [
+          80.0,
+          441.0,
+          390.0,
+          25.0
+        ]
+      },
+      {
+        "name": "Conditioning magnitude",
+        "text": "k σ : torque magnitude [N m]",
+        "math": "",
+        "box": [
+          530.0,
+          405.0,
+          390.0,
+          25.0
+        ]
+      },
+      {
+        "name": "Null-space direction",
+        "text": "v 7 : unit null-space direction",
+        "math": "",
+        "box": [
+          530.0,
+          430.0,
+          390.0,
+          25.0
+        ]
+      },
+      {
+        "name": "Direction selector",
+        "text": "s σ : direction choice, zero in deadband",
+        "math": "",
+        "box": [
+          530.0,
+          455.0,
+          390.0,
+          25.0
+        ]
+      }
+    ]
+  },
+  {
+    "physical": 27,
+    "sid": "263",
+    "rid": "rId13",
+    "path": "ppt/slides/slide12.xml",
+    "hidden": true,
+    "shapes": [
+      {
+        "name": "Slide title",
+        "text": "Angular quantities",
+        "math": "",
+        "box": [
+          37.44,
+          18.72,
+          604.8,
+          28.47535433070866
+        ]
+      },
+      {
+        "name": "Picture 3",
+        "text": "",
+        "math": "",
+        "box": [
+          20.16,
+          502.56,
+          39.6,
+          20.392834645669293
+        ]
+      },
+      {
+        "name": "TextBox 4",
+        "text": "Design and Implementation of a Real-Time Impedance Controller for a 7-DOF Collaborative Robot",
+        "math": "",
+        "box": [
+          66.24,
+          501.12,
+          338.4,
+          11.52
+        ]
+      },
+      {
+        "name": "TextBox 5",
+        "text": "Master Thesis · Heykel Khadhraoui",
+        "math": "",
+        "box": [
+          66.24,
+          511.2,
+          230.4,
+          10.8
+        ]
+      },
+      {
+        "name": "TextBox 6",
+        "text": "B3",
+        "math": "",
+        "box": [
+          907.5,
+          505.44,
+          14.2,
+          9.693779527559055
+        ]
+      },
+      {
+        "name": "Continuous title rule",
+        "text": "",
+        "math": "",
+        "box": [
+          37.44,
+          48.0959842519685,
+          884.16,
+          1.0
+        ]
+      },
+      {
+        "name": "Figure - angular_quantities",
+        "text": "",
+        "math": "",
+        "box": [
+          276.38047244094486,
+          188.1828346456693,
+          407.23905511811023,
+          173.6344094488189
+        ]
+      }
+    ]
+  },
+  {
+    "physical": 28,
+    "sid": "264",
+    "rid": "rId18",
+    "path": "ppt/slides/slide17.xml",
+    "hidden": true,
+    "shapes": [
+      {
+        "name": "Slide title",
+        "text": "Baseline angular error",
+        "math": "",
+        "box": [
+          37.44,
+          18.72,
+          604.8,
+          28.47535433070866
+        ]
+      },
+      {
+        "name": "Picture 3",
+        "text": "",
+        "math": "",
+        "box": [
+          20.16,
+          502.56,
+          39.6,
+          20.392834645669293
+        ]
+      },
+      {
+        "name": "TextBox 4",
+        "text": "Design and Implementation of a Real-Time Impedance Controller for a 7-DOF Collaborative Robot",
+        "math": "",
+        "box": [
+          66.24,
+          501.12,
+          338.4,
+          11.52
+        ]
+      },
+      {
+        "name": "TextBox 5",
+        "text": "Master Thesis · Heykel Khadhraoui",
+        "math": "",
+        "box": [
+          66.24,
+          511.2,
+          230.4,
+          10.8
+        ]
+      },
+      {
+        "name": "TextBox 6",
+        "text": "B4",
+        "math": "",
+        "box": [
+          907.5,
+          505.44,
+          14.2,
+          9.693779527559055
+        ]
+      },
+      {
+        "name": "Continuous title rule",
+        "text": "",
+        "math": "",
+        "box": [
+          37.44,
+          48.0959842519685,
+          884.16,
+          1.0
+        ]
+      },
+      {
+        "name": "Figure - baseline_response",
+        "text": "",
+        "math": "",
+        "box": [
+          216.83826771653543,
+          87.41740157480315,
+          526.3233858267716,
+          375.1651968503937
+        ]
+      }
+    ]
+  },
+  {
+    "physical": 29,
+    "sid": "302",
+    "rid": "rIdSurfaceEntryBackup",
+    "path": "ppt/slides/slide40.xml",
+    "hidden": true,
+    "shapes": [
+      {
+        "name": "Slide title",
+        "text": "Sources of angular offset",
+        "math": "",
+        "box": [
+          37.44,
+          18.72,
+          604.8,
+          28.47535433070866
+        ]
+      },
+      {
+        "name": "Picture 3",
+        "text": "",
+        "math": "",
+        "box": [
+          20.16,
+          502.56,
+          39.6,
+          20.392834645669293
+        ]
+      },
+      {
+        "name": "TextBox 4",
+        "text": "Design and Implementation of a Real-Time Impedance Controller for a 7-DOF Collaborative Robot",
+        "math": "",
+        "box": [
+          66.24,
+          501.12,
+          338.4,
+          11.52
+        ]
+      },
+      {
+        "name": "TextBox 5",
+        "text": "Master Thesis · Heykel Khadhraoui",
+        "math": "",
+        "box": [
+          66.24,
+          511.2,
+          230.4,
+          10.8
+        ]
+      },
+      {
+        "name": "TextBox 6",
+        "text": "B5",
+        "math": "",
+        "box": [
+          900.0,
+          505.44,
+          21.6,
+          9.693779527559055
+        ]
+      },
+      {
+        "name": "Continuous title rule",
+        "text": "",
+        "math": "",
+        "box": [
+          37.44,
+          48.0959842519685,
+          884.16,
+          1.0
+        ]
+      },
+      {
+        "name": "Surface entry concept",
+        "text": "",
+        "math": "",
+        "box": [
+          70.0,
+          140.72771653543307,
+          820.0,
+          268.5444881889764
+        ]
+      }
+    ]
+  }
+]

@@ -1,0 +1,6445 @@
+[
+  {
+    "physical": 1,
+    "path": "ppt/slides/slide1.xml",
+    "sid": "256",
+    "rid": "rId2",
+    "hidden": false,
+    "shapes": [
+      {
+        "id": "1",
+        "name": "",
+        "text": "",
+        "geometry": []
+      },
+      {
+        "id": "2",
+        "name": "Slide title",
+        "text": "Master Thesis Presentation",
+        "geometry": [
+          {
+            "x": "475488",
+            "y": "237744"
+          },
+          {
+            "cx": "7680960",
+            "cy": "361637"
+          }
+        ]
+      },
+      {
+        "id": "3",
+        "name": "Picture 3",
+        "text": "",
+        "geometry": [
+          {
+            "x": "256032",
+            "y": "6382512"
+          },
+          {
+            "cx": "502920",
+            "cy": "258989"
+          }
+        ]
+      },
+      {
+        "id": "4",
+        "name": "TextBox 4",
+        "text": "Design and Implementation of a Real-Time Impedance Controller for a 7-DOF Collaborative Robot",
+        "geometry": [
+          {
+            "x": "841248",
+            "y": "6364224"
+          },
+          {
+            "cx": "4297680",
+            "cy": "146304"
+          }
+        ]
+      },
+      {
+        "id": "5",
+        "name": "TextBox 5",
+        "text": "Master Thesis \u00b7 Heykel Khadhraoui",
+        "geometry": [
+          {
+            "x": "841248",
+            "y": "6492240"
+          },
+          {
+            "cx": "2926080",
+            "cy": "137160"
+          }
+        ]
+      },
+      {
+        "id": "6",
+        "name": "HM logo beside Hochschule M\u00fcnchen",
+        "text": "",
+        "geometry": [
+          {
+            "x": "694944",
+            "y": "1051560"
+          },
+          {
+            "cx": "777240",
+            "cy": "400255"
+          }
+        ]
+      },
+      {
+        "id": "7",
+        "name": "University name",
+        "text": "Hochschule M\u00fcnchen",
+        "geometry": [
+          {
+            "x": "1645920",
+            "y": "1069848"
+          },
+          {
+            "cx": "5120640",
+            "cy": "257635"
+          }
+        ]
+      },
+      {
+        "id": "8",
+        "name": "University English name",
+        "text": "University of Applied Sciences",
+        "geometry": [
+          {
+            "x": "1645920",
+            "y": "1399032"
+          },
+          {
+            "cx": "5120640",
+            "cy": "237744"
+          }
+        ]
+      },
+      {
+        "id": "9",
+        "name": "Thesis title",
+        "text": "Design and Implementation of a Real-Time | Impedance Controller for a 7-DOF | Collaborative Robot",
+        "geometry": [
+          {
+            "x": "731520",
+            "y": "2011680"
+          },
+          {
+            "cx": "6604000",
+            "cy": "1325880"
+          }
+        ]
+      },
+      {
+        "id": "10",
+        "name": "Presenter",
+        "text": "Heykel Khadhraoui",
+        "geometry": [
+          {
+            "x": "731520",
+            "y": "3776472"
+          },
+          {
+            "cx": "6604000",
+            "cy": "347472"
+          }
+        ]
+      },
+      {
+        "id": "11",
+        "name": "Degree programme",
+        "text": "Computational Engineering (M.Sc.)",
+        "geometry": [
+          {
+            "x": "731520",
+            "y": "4233672"
+          },
+          {
+            "cx": "6604000",
+            "cy": "310896"
+          }
+        ]
+      },
+      {
+        "id": "12",
+        "name": "Supervisors",
+        "text": "Supervisors: Prof. Norbert Nitzsche \u00b7 Prof. Ruth Otto",
+        "geometry": [
+          {
+            "x": "731520",
+            "y": "4965192"
+          },
+          {
+            "cx": "6604000",
+            "cy": "320040"
+          }
+        ]
+      },
+      {
+        "id": "13",
+        "name": "Year",
+        "text": "Date: 30.09. | 2026",
+        "geometry": [
+          {
+            "x": "731520",
+            "y": "5495544"
+          },
+          {
+            "cx": "1828800",
+            "cy": "187424"
+          }
+        ]
+      },
+      {
+        "id": "14",
+        "name": "Continuous title rule",
+        "text": "",
+        "geometry": [
+          {
+            "x": "475488",
+            "y": "610819"
+          },
+          {
+            "cx": "11228832",
+            "cy": "12700"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "physical": 2,
+    "path": "ppt/slides/slide2.xml",
+    "sid": "257",
+    "rid": "rId3",
+    "hidden": false,
+    "shapes": [
+      {
+        "id": "1",
+        "name": "",
+        "text": "",
+        "geometry": []
+      },
+      {
+        "id": "2",
+        "name": "Slide title",
+        "text": "Motivation",
+        "geometry": [
+          {
+            "x": "475488",
+            "y": "237744"
+          },
+          {
+            "cx": "7680960",
+            "cy": "361637"
+          }
+        ]
+      },
+      {
+        "id": "4",
+        "name": "Picture 3",
+        "text": "",
+        "geometry": [
+          {
+            "x": "256032",
+            "y": "6382512"
+          },
+          {
+            "cx": "502920",
+            "cy": "258989"
+          }
+        ]
+      },
+      {
+        "id": "5",
+        "name": "TextBox 4",
+        "text": "Design and Implementation of a Real-Time Impedance Controller for a 7-DOF Collaborative Robot",
+        "geometry": [
+          {
+            "x": "841248",
+            "y": "6364224"
+          },
+          {
+            "cx": "4297680",
+            "cy": "146304"
+          }
+        ]
+      },
+      {
+        "id": "6",
+        "name": "TextBox 5",
+        "text": "Master Thesis \u00b7 Heykel Khadhraoui",
+        "geometry": [
+          {
+            "x": "841248",
+            "y": "6492240"
+          },
+          {
+            "cx": "2926080",
+            "cy": "137160"
+          }
+        ]
+      },
+      {
+        "id": "7",
+        "name": "TextBox 6",
+        "text": "1",
+        "geometry": [
+          {
+            "x": "11525250",
+            "y": "6419088"
+          },
+          {
+            "cx": "180340",
+            "cy": "123111"
+          }
+        ]
+      },
+      {
+        "id": "8",
+        "name": "Motivation robot photograph",
+        "text": "",
+        "geometry": [
+          {
+            "x": "6624320",
+            "y": "908063"
+          },
+          {
+            "cx": "5080000",
+            "cy": "5168873"
+          }
+        ]
+      },
+      {
+        "id": "9",
+        "name": "TextBox 8",
+        "text": "Problem",
+        "geometry": [
+          {
+            "x": "660400",
+            "y": "1016000"
+          },
+          {
+            "cx": "5080000",
+            "cy": "355600"
+          }
+        ]
+      },
+      {
+        "id": "10",
+        "name": "TextBox 9",
+        "text": "Grinding requires an aligned tool face.",
+        "geometry": [
+          {
+            "x": "914400",
+            "y": "1473200"
+          },
+          {
+            "cx": "5105400",
+            "cy": "508000"
+          }
+        ]
+      },
+      {
+        "id": "11",
+        "name": "TextBox 10",
+        "text": "Calibration leaves uncertainty in the physical surface orientation.",
+        "geometry": [
+          {
+            "x": "914400",
+            "y": "1981200"
+          },
+          {
+            "cx": "5105400",
+            "cy": "566437"
+          }
+        ]
+      },
+      {
+        "id": "14",
+        "name": "TextBox 13",
+        "text": "Idea",
+        "geometry": [
+          {
+            "x": "660400",
+            "y": "3670300"
+          },
+          {
+            "cx": "5080000",
+            "cy": "355600"
+          }
+        ]
+      },
+      {
+        "id": "15",
+        "name": "TextBox 14",
+        "text": "Cartesian impedance makes position and rotation compliant.",
+        "geometry": [
+          {
+            "x": "914400",
+            "y": "4127500"
+          },
+          {
+            "cx": "5105400",
+            "cy": "558800"
+          }
+        ]
+      },
+      {
+        "id": "16",
+        "name": "Continuous title rule",
+        "text": "",
+        "geometry": [
+          {
+            "x": "475488",
+            "y": "610819"
+          },
+          {
+            "cx": "11228832",
+            "cy": "12700"
+          }
+        ]
+      },
+      {
+        "id": "17",
+        "name": "Passive contact alignment",
+        "text": "Pressing a tilted tool creates a contact moment.",
+        "geometry": [
+          {
+            "x": "914400",
+            "y": "4737100"
+          },
+          {
+            "cx": "5105400",
+            "cy": "609600"
+          }
+        ]
+      },
+      {
+        "id": "18",
+        "name": "Compliance permits contact rotation",
+        "text": "Rotational compliance allows the tool to turn towards alignment.",
+        "geometry": [
+          {
+            "x": "914400",
+            "y": "5346700"
+          },
+          {
+            "cx": "5105400",
+            "cy": "609600"
+          }
+        ]
+      },
+      {
+        "id": "19",
+        "name": "Joint friction orientation mismatch",
+        "text": "Joint friction can prevent the desired tool alignment with the configured surface.",
+        "geometry": [
+          {
+            "x": "914400",
+            "y": "2590800"
+          },
+          {
+            "cx": "5105400",
+            "cy": "762000"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "physical": 3,
+    "path": "ppt/slides/slide3.xml",
+    "sid": "274",
+    "rid": "rId4",
+    "hidden": false,
+    "shapes": [
+      {
+        "id": "1",
+        "name": "",
+        "text": "",
+        "geometry": []
+      },
+      {
+        "id": "2",
+        "name": "Slide title",
+        "text": "Contact demonstration",
+        "geometry": [
+          {
+            "x": "475488",
+            "y": "237744"
+          },
+          {
+            "cx": "7680960",
+            "cy": "361637"
+          }
+        ]
+      },
+      {
+        "id": "4",
+        "name": "Picture 3",
+        "text": "",
+        "geometry": [
+          {
+            "x": "256032",
+            "y": "6382512"
+          },
+          {
+            "cx": "502920",
+            "cy": "258989"
+          }
+        ]
+      },
+      {
+        "id": "5",
+        "name": "TextBox 4",
+        "text": "Design and Implementation of a Real-Time Impedance Controller for a 7-DOF Collaborative Robot",
+        "geometry": [
+          {
+            "x": "841248",
+            "y": "6364224"
+          },
+          {
+            "cx": "4297680",
+            "cy": "146304"
+          }
+        ]
+      },
+      {
+        "id": "6",
+        "name": "TextBox 5",
+        "text": "Master Thesis \u00b7 Heykel Khadhraoui",
+        "geometry": [
+          {
+            "x": "841248",
+            "y": "6492240"
+          },
+          {
+            "cx": "2926080",
+            "cy": "137160"
+          }
+        ]
+      },
+      {
+        "id": "7",
+        "name": "TextBox 6",
+        "text": "2",
+        "geometry": [
+          {
+            "x": "11525250",
+            "y": "6419088"
+          },
+          {
+            "cx": "180340",
+            "cy": "123111"
+          }
+        ]
+      },
+      {
+        "id": "24",
+        "name": "Continuous title rule",
+        "text": "",
+        "geometry": [
+          {
+            "x": "475488",
+            "y": "610819"
+          },
+          {
+            "cx": "11228832",
+            "cy": "12700"
+          }
+        ]
+      },
+      {
+        "id": "3",
+        "name": "Contact demonstration video",
+        "text": "",
+        "geometry": [
+          {
+            "x": "3587750",
+            "y": "800100"
+          },
+          {
+            "cx": "5016500",
+            "cy": "5016500"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "physical": 4,
+    "path": "ppt/slides/slide4.xml",
+    "sid": "258",
+    "rid": "rId5",
+    "hidden": false,
+    "shapes": [
+      {
+        "id": "1",
+        "name": "",
+        "text": "",
+        "geometry": []
+      },
+      {
+        "id": "2",
+        "name": "Slide title",
+        "text": "Overview",
+        "geometry": [
+          {
+            "x": "475488",
+            "y": "237744"
+          },
+          {
+            "cx": "7680960",
+            "cy": "361637"
+          }
+        ]
+      },
+      {
+        "id": "4",
+        "name": "Picture 3",
+        "text": "",
+        "geometry": [
+          {
+            "x": "256032",
+            "y": "6382512"
+          },
+          {
+            "cx": "502920",
+            "cy": "258989"
+          }
+        ]
+      },
+      {
+        "id": "5",
+        "name": "TextBox 4",
+        "text": "Design and Implementation of a Real-Time Impedance Controller for a 7-DOF Collaborative Robot",
+        "geometry": [
+          {
+            "x": "841248",
+            "y": "6364224"
+          },
+          {
+            "cx": "4297680",
+            "cy": "146304"
+          }
+        ]
+      },
+      {
+        "id": "6",
+        "name": "TextBox 5",
+        "text": "Master Thesis \u00b7 Heykel Khadhraoui",
+        "geometry": [
+          {
+            "x": "841248",
+            "y": "6492240"
+          },
+          {
+            "cx": "2926080",
+            "cy": "137160"
+          }
+        ]
+      },
+      {
+        "id": "7",
+        "name": "TextBox 6",
+        "text": "3",
+        "geometry": [
+          {
+            "x": "11525250",
+            "y": "6419088"
+          },
+          {
+            "cx": "180340",
+            "cy": "123111"
+          }
+        ]
+      },
+      {
+        "id": "12",
+        "name": "Continuous title rule",
+        "text": "",
+        "geometry": [
+          {
+            "x": "475488",
+            "y": "610819"
+          },
+          {
+            "cx": "11228832",
+            "cy": "12700"
+          }
+        ]
+      },
+      {
+        "id": "101",
+        "name": "Overview number 1",
+        "text": "1.",
+        "geometry": [
+          {
+            "x": "919480",
+            "y": "1270000"
+          },
+          {
+            "cx": "558800",
+            "cy": "381000"
+          }
+        ]
+      },
+      {
+        "id": "100",
+        "name": "Overview item 1",
+        "text": "Introduction",
+        "geometry": [
+          {
+            "x": "1605280",
+            "y": "1270000"
+          },
+          {
+            "cx": "9276080",
+            "cy": "381000"
+          }
+        ]
+      },
+      {
+        "id": "103",
+        "name": "Overview number 2",
+        "text": "2.",
+        "geometry": [
+          {
+            "x": "919480",
+            "y": "2006600"
+          },
+          {
+            "cx": "558800",
+            "cy": "381000"
+          }
+        ]
+      },
+      {
+        "id": "102",
+        "name": "Overview item 2",
+        "text": "Cartesian controller",
+        "geometry": [
+          {
+            "x": "1605280",
+            "y": "2006600"
+          },
+          {
+            "cx": "9276080",
+            "cy": "381000"
+          }
+        ]
+      },
+      {
+        "id": "105",
+        "name": "Overview number 3",
+        "text": "3.",
+        "geometry": [
+          {
+            "x": "919480",
+            "y": "2743200"
+          },
+          {
+            "cx": "558800",
+            "cy": "381000"
+          }
+        ]
+      },
+      {
+        "id": "104",
+        "name": "Overview item 3",
+        "text": "Contact experiments",
+        "geometry": [
+          {
+            "x": "1605280",
+            "y": "2743200"
+          },
+          {
+            "cx": "9276080",
+            "cy": "381000"
+          }
+        ]
+      },
+      {
+        "id": "107",
+        "name": "Overview number 4",
+        "text": "4.",
+        "geometry": [
+          {
+            "x": "919480",
+            "y": "3479800"
+          },
+          {
+            "cx": "558800",
+            "cy": "381000"
+          }
+        ]
+      },
+      {
+        "id": "106",
+        "name": "Overview item 4",
+        "text": "Contact results",
+        "geometry": [
+          {
+            "x": "1605280",
+            "y": "3479800"
+          },
+          {
+            "cx": "9276080",
+            "cy": "381000"
+          }
+        ]
+      },
+      {
+        "id": "109",
+        "name": "Overview number 5",
+        "text": "5.",
+        "geometry": [
+          {
+            "x": "919480",
+            "y": "4216400"
+          },
+          {
+            "cx": "558800",
+            "cy": "381000"
+          }
+        ]
+      },
+      {
+        "id": "108",
+        "name": "Overview item 5",
+        "text": "Null-space control and experiments",
+        "geometry": [
+          {
+            "x": "1605280",
+            "y": "4216400"
+          },
+          {
+            "cx": "9276080",
+            "cy": "381000"
+          }
+        ]
+      },
+      {
+        "id": "111",
+        "name": "Overview number 6",
+        "text": "6.",
+        "geometry": [
+          {
+            "x": "919480",
+            "y": "4953000"
+          },
+          {
+            "cx": "558800",
+            "cy": "381000"
+          }
+        ]
+      },
+      {
+        "id": "110",
+        "name": "Overview item 6",
+        "text": "Conclusion and future work",
+        "geometry": [
+          {
+            "x": "1605280",
+            "y": "4953000"
+          },
+          {
+            "cx": "9276080",
+            "cy": "381000"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "physical": 5,
+    "path": "ppt/slides/slide5.xml",
+    "sid": "288",
+    "rid": "rId6",
+    "hidden": false,
+    "shapes": [
+      {
+        "id": "1",
+        "name": "",
+        "text": "",
+        "geometry": []
+      },
+      {
+        "id": "2",
+        "name": "Slide title",
+        "text": "Cartesian pose",
+        "geometry": [
+          {
+            "x": "475488",
+            "y": "237744"
+          },
+          {
+            "cx": "7680960",
+            "cy": "361637"
+          }
+        ]
+      },
+      {
+        "id": "4",
+        "name": "Picture 3",
+        "text": "",
+        "geometry": [
+          {
+            "x": "256032",
+            "y": "6382512"
+          },
+          {
+            "cx": "502920",
+            "cy": "258989"
+          }
+        ]
+      },
+      {
+        "id": "5",
+        "name": "TextBox 4",
+        "text": "Design and Implementation of a Real-Time Impedance Controller for a 7-DOF Collaborative Robot",
+        "geometry": [
+          {
+            "x": "841248",
+            "y": "6364224"
+          },
+          {
+            "cx": "4297680",
+            "cy": "146304"
+          }
+        ]
+      },
+      {
+        "id": "6",
+        "name": "TextBox 5",
+        "text": "Master Thesis \u00b7 Heykel Khadhraoui",
+        "geometry": [
+          {
+            "x": "841248",
+            "y": "6492240"
+          },
+          {
+            "cx": "2926080",
+            "cy": "137160"
+          }
+        ]
+      },
+      {
+        "id": "7",
+        "name": "TextBox 6",
+        "text": "4",
+        "geometry": [
+          {
+            "x": "11525250",
+            "y": "6419088"
+          },
+          {
+            "cx": "180340",
+            "cy": "123111"
+          }
+        ]
+      },
+      {
+        "id": "33",
+        "name": "Continuous title rule",
+        "text": "",
+        "geometry": [
+          {
+            "x": "475488",
+            "y": "610819"
+          },
+          {
+            "cx": "11228832",
+            "cy": "12700"
+          }
+        ]
+      },
+      {
+        "id": "11",
+        "name": "Position heading",
+        "text": "Position: 3 translations",
+        "geometry": [
+          {
+            "x": "508000",
+            "y": "1828800"
+          },
+          {
+            "cx": "5207000",
+            "cy": "406400"
+          }
+        ]
+      },
+      {
+        "id": "12",
+        "name": "Orientation heading",
+        "text": "Orientation: 3 rotations",
+        "geometry": [
+          {
+            "x": "6223000",
+            "y": "1828800"
+          },
+          {
+            "cx": "5207000",
+            "cy": "406400"
+          }
+        ]
+      },
+      {
+        "id": "15",
+        "name": "Pose takeaway",
+        "text": "The (EE) position depends on the configuration of all 7 joint angles:",
+        "geometry": [
+          {
+            "x": "863600",
+            "y": "5969000"
+          },
+          {
+            "cx": "8001000",
+            "cy": "381000"
+          }
+        ]
+      },
+      {
+        "id": "3",
+        "name": "Equation - pose_joint_configuration",
+        "text": "",
+        "geometry": [
+          {
+            "x": "9080500",
+            "y": "5955256"
+          },
+          {
+            "cx": "1210903",
+            "cy": "361893"
+          }
+        ]
+      },
+      {
+        "id": "9",
+        "name": "End effector position figure",
+        "text": "",
+        "geometry": [
+          {
+            "x": "1329318",
+            "y": "2389273"
+          },
+          {
+            "cx": "3818365",
+            "cy": "3184354"
+          }
+        ]
+      },
+      {
+        "id": "13",
+        "name": "End effector orientation figure",
+        "text": "",
+        "geometry": [
+          {
+            "x": "7110257",
+            "y": "2298700"
+          },
+          {
+            "cx": "3686487",
+            "cy": "3365500"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "physical": 6,
+    "path": "ppt/slides/slide35.xml",
+    "sid": "297",
+    "rid": "rIdSurfaceFrameIntroduction",
+    "hidden": false,
+    "shapes": [
+      {
+        "id": "1",
+        "name": "",
+        "text": "",
+        "geometry": []
+      },
+      {
+        "id": "2",
+        "name": "Slide title",
+        "text": "Surface frame",
+        "geometry": [
+          {
+            "x": "475488",
+            "y": "237744"
+          },
+          {
+            "cx": "7680960",
+            "cy": "361637"
+          }
+        ]
+      },
+      {
+        "id": "4",
+        "name": "Picture 3",
+        "text": "",
+        "geometry": [
+          {
+            "x": "256032",
+            "y": "6382512"
+          },
+          {
+            "cx": "502920",
+            "cy": "258989"
+          }
+        ]
+      },
+      {
+        "id": "5",
+        "name": "TextBox 4",
+        "text": "Design and Implementation of a Real-Time Impedance Controller for a 7-DOF Collaborative Robot",
+        "geometry": [
+          {
+            "x": "841248",
+            "y": "6364224"
+          },
+          {
+            "cx": "4297680",
+            "cy": "146304"
+          }
+        ]
+      },
+      {
+        "id": "6",
+        "name": "TextBox 5",
+        "text": "Master Thesis \u00b7 Heykel Khadhraoui",
+        "geometry": [
+          {
+            "x": "841248",
+            "y": "6492240"
+          },
+          {
+            "cx": "2926080",
+            "cy": "137160"
+          }
+        ]
+      },
+      {
+        "id": "7",
+        "name": "TextBox 6",
+        "text": "5",
+        "geometry": [
+          {
+            "x": "11525250",
+            "y": "6419088"
+          },
+          {
+            "cx": "180340",
+            "cy": "123111"
+          }
+        ]
+      },
+      {
+        "id": "24",
+        "name": "Continuous title rule",
+        "text": "",
+        "geometry": [
+          {
+            "x": "475488",
+            "y": "610819"
+          },
+          {
+            "cx": "11228832",
+            "cy": "12700"
+          }
+        ]
+      },
+      {
+        "id": "50",
+        "name": "Surface-relative compliance heading",
+        "text": "Surface-relative compliance",
+        "geometry": [
+          {
+            "x": "660400",
+            "y": "990600"
+          },
+          {
+            "cx": "5334000",
+            "cy": "381000"
+          }
+        ]
+      },
+      {
+        "id": "51",
+        "name": "Surface frame",
+        "text": "",
+        "geometry": [
+          {
+            "x": "3810000",
+            "y": "1570420"
+          },
+          {
+            "cx": "4572000",
+            "cy": "3590160"
+          }
+        ]
+      },
+      {
+        "id": "52",
+        "name": "Equation - symbol_ns",
+        "text": "",
+        "geometry": [
+          {
+            "x": "4152900",
+            "y": "5377408"
+          },
+          {
+            "cx": "343553",
+            "cy": "248245"
+          }
+        ]
+      },
+      {
+        "id": "53",
+        "name": "Surface normal definition",
+        "text": "outward surface normal",
+        "geometry": [
+          {
+            "x": "4762500",
+            "y": "5372100"
+          },
+          {
+            "cx": "3492500",
+            "cy": "304800"
+          }
+        ]
+      },
+      {
+        "id": "54",
+        "name": "Equation - symbol_tangents",
+        "text": "",
+        "geometry": [
+          {
+            "x": "4013200",
+            "y": "5679715"
+          },
+          {
+            "cx": "673011",
+            "cy": "310963"
+          }
+        ]
+      },
+      {
+        "id": "55",
+        "name": "Surface tangent definition",
+        "text": "perpendicular surface tangents",
+        "geometry": [
+          {
+            "x": "4762500",
+            "y": "5727700"
+          },
+          {
+            "cx": "3683000",
+            "cy": "304800"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "physical": 7,
+    "path": "ppt/slides/slide6.xml",
+    "sid": "259",
+    "rid": "rId7",
+    "hidden": false,
+    "shapes": [
+      {
+        "id": "1",
+        "name": "",
+        "text": "",
+        "geometry": []
+      },
+      {
+        "id": "2",
+        "name": "Slide title",
+        "text": "Cartesian impedance controller",
+        "geometry": [
+          {
+            "x": "475488",
+            "y": "237744"
+          },
+          {
+            "cx": "7680960",
+            "cy": "361637"
+          }
+        ]
+      },
+      {
+        "id": "4",
+        "name": "Picture 3",
+        "text": "",
+        "geometry": [
+          {
+            "x": "256032",
+            "y": "6382512"
+          },
+          {
+            "cx": "502920",
+            "cy": "258989"
+          }
+        ]
+      },
+      {
+        "id": "5",
+        "name": "TextBox 4",
+        "text": "Design and Implementation of a Real-Time Impedance Controller for a 7-DOF Collaborative Robot",
+        "geometry": [
+          {
+            "x": "841248",
+            "y": "6364224"
+          },
+          {
+            "cx": "4297680",
+            "cy": "146304"
+          }
+        ]
+      },
+      {
+        "id": "6",
+        "name": "TextBox 5",
+        "text": "Master Thesis \u00b7 Heykel Khadhraoui",
+        "geometry": [
+          {
+            "x": "841248",
+            "y": "6492240"
+          },
+          {
+            "cx": "2926080",
+            "cy": "137160"
+          }
+        ]
+      },
+      {
+        "id": "7",
+        "name": "TextBox 6",
+        "text": "6",
+        "geometry": [
+          {
+            "x": "11525250",
+            "y": "6419088"
+          },
+          {
+            "cx": "180340",
+            "cy": "123111"
+          }
+        ]
+      },
+      {
+        "id": "33",
+        "name": "Continuous title rule",
+        "text": "",
+        "geometry": [
+          {
+            "x": "475488",
+            "y": "610819"
+          },
+          {
+            "cx": "11228832",
+            "cy": "12700"
+          }
+        ]
+      },
+      {
+        "id": "3",
+        "name": "Controller scope",
+        "text": "Cartesian wrench",
+        "geometry": [
+          {
+            "x": "762000",
+            "y": "3581400"
+          },
+          {
+            "cx": "10668000",
+            "cy": "406400"
+          }
+        ]
+      },
+      {
+        "id": "8",
+        "name": "Position heading",
+        "text": "Positional error",
+        "geometry": [
+          {
+            "x": "762000",
+            "y": "1143000"
+          },
+          {
+            "cx": "4953000",
+            "cy": "381000"
+          }
+        ]
+      },
+      {
+        "id": "9",
+        "name": "Rotation heading",
+        "text": "Rotational error",
+        "geometry": [
+          {
+            "x": "6477000",
+            "y": "1143000"
+          },
+          {
+            "cx": "4953000",
+            "cy": "381000"
+          }
+        ]
+      },
+      {
+        "id": "21",
+        "name": "Equation - position_error_definition",
+        "text": "",
+        "geometry": [
+          {
+            "x": "1014723",
+            "y": "1865921"
+          },
+          {
+            "cx": "1741700",
+            "cy": "363134"
+          }
+        ]
+      },
+      {
+        "id": "23",
+        "name": "Equation - controller_orientation_error",
+        "text": "",
+        "geometry": [
+          {
+            "x": "6728204",
+            "y": "1838496"
+          },
+          {
+            "cx": "1638259",
+            "cy": "417013"
+          }
+        ]
+      },
+      {
+        "id": "10",
+        "name": "Equation - controller_wrench_blocks",
+        "text": "",
+        "geometry": [
+          {
+            "x": "1015999",
+            "y": "4058690"
+          },
+          {
+            "cx": "6345835",
+            "cy": "1034000"
+          }
+        ]
+      },
+      {
+        "id": "11",
+        "name": "Decoupling statement",
+        "text": "In the surface frame, K and D are diagonal and decouple translation and rotation.",
+        "geometry": [
+          {
+            "x": "863600",
+            "y": "5232400"
+          },
+          {
+            "cx": "10566400",
+            "cy": "381000"
+          }
+        ]
+      },
+      {
+        "id": "12",
+        "name": "Equation - equation_force",
+        "text": "",
+        "geometry": [
+          {
+            "x": "1127189",
+            "y": "3122338"
+          },
+          {
+            "cx": "3196796",
+            "cy": "371668"
+          }
+        ]
+      },
+      {
+        "id": "13",
+        "name": "Equation - equation_moment",
+        "text": "",
+        "geometry": [
+          {
+            "x": "6772431",
+            "y": "3126526"
+          },
+          {
+            "cx": "3458872",
+            "cy": "362673"
+          }
+        ]
+      },
+      {
+        "id": "101",
+        "name": "Figure - position_error_sketch",
+        "text": "",
+        "geometry": [
+          {
+            "x": "3136900",
+            "y": "1524000"
+          },
+          {
+            "cx": "2768600",
+            "cy": "1522730"
+          }
+        ]
+      },
+      {
+        "id": "102",
+        "name": "Figure - rotation_error_sketch",
+        "text": "",
+        "geometry": [
+          {
+            "x": "8851900",
+            "y": "1524000"
+          },
+          {
+            "cx": "2768600",
+            "cy": "1522730"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "physical": 8,
+    "path": "ppt/slides/slide7.xml",
+    "sid": "277",
+    "rid": "rId8",
+    "hidden": false,
+    "shapes": [
+      {
+        "id": "1",
+        "name": "",
+        "text": "",
+        "geometry": []
+      },
+      {
+        "id": "2",
+        "name": "Slide title",
+        "text": "Real-time control",
+        "geometry": [
+          {
+            "x": "475488",
+            "y": "237744"
+          },
+          {
+            "cx": "7680960",
+            "cy": "361637"
+          }
+        ]
+      },
+      {
+        "id": "4",
+        "name": "Picture 3",
+        "text": "",
+        "geometry": [
+          {
+            "x": "256032",
+            "y": "6382512"
+          },
+          {
+            "cx": "502920",
+            "cy": "258989"
+          }
+        ]
+      },
+      {
+        "id": "5",
+        "name": "TextBox 4",
+        "text": "Design and Implementation of a Real-Time Impedance Controller for a 7-DOF Collaborative Robot",
+        "geometry": [
+          {
+            "x": "841248",
+            "y": "6364224"
+          },
+          {
+            "cx": "4297680",
+            "cy": "146304"
+          }
+        ]
+      },
+      {
+        "id": "6",
+        "name": "TextBox 5",
+        "text": "Master Thesis \u00b7 Heykel Khadhraoui",
+        "geometry": [
+          {
+            "x": "841248",
+            "y": "6492240"
+          },
+          {
+            "cx": "2926080",
+            "cy": "137160"
+          }
+        ]
+      },
+      {
+        "id": "7",
+        "name": "TextBox 6",
+        "text": "7",
+        "geometry": [
+          {
+            "x": "11525250",
+            "y": "6419088"
+          },
+          {
+            "cx": "180340",
+            "cy": "123111"
+          }
+        ]
+      },
+      {
+        "id": "33",
+        "name": "Continuous title rule",
+        "text": "",
+        "geometry": [
+          {
+            "x": "475488",
+            "y": "610819"
+          },
+          {
+            "cx": "11228832",
+            "cy": "12700"
+          }
+        ]
+      },
+      {
+        "id": "40",
+        "name": "Equation - cartesian_torque_mapping",
+        "text": "",
+        "geometry": [
+          {
+            "x": "1905000",
+            "y": "1384300"
+          },
+          {
+            "cx": "3704656",
+            "cy": "810919"
+          }
+        ]
+      },
+      {
+        "id": "41",
+        "name": "Control implementation",
+        "text": "Real-time control with a 1 ms cycle",
+        "geometry": [
+          {
+            "x": "762000",
+            "y": "5664200"
+          },
+          {
+            "cx": "10668000",
+            "cy": "457200"
+          }
+        ]
+      },
+      {
+        "id": "42",
+        "name": "Joint-torque command heading",
+        "text": "Joint-torque mapping",
+        "geometry": [
+          {
+            "x": "660400",
+            "y": "977900"
+          },
+          {
+            "cx": "5308600",
+            "cy": "381000"
+          }
+        ]
+      },
+      {
+        "id": "43",
+        "name": "Jacobian velocity mapping",
+        "text": "Jacobian",
+        "geometry": [
+          {
+            "x": "6756400",
+            "y": "977900"
+          },
+          {
+            "cx": "4889500",
+            "cy": "381000"
+          }
+        ]
+      },
+      {
+        "id": "44",
+        "name": "Equation - jacobian_velocity_mapping",
+        "text": "",
+        "geometry": [
+          {
+            "x": "8331200",
+            "y": "1460500"
+          },
+          {
+            "cx": "3175000",
+            "cy": "721783"
+          }
+        ]
+      },
+      {
+        "id": "1000",
+        "name": "Feedback diagram - Desired reference block",
+        "text": "Desired reference",
+        "geometry": [
+          {
+            "x": "558800",
+            "y": "2717800"
+          },
+          {
+            "cx": "1905000",
+            "cy": "558800"
+          }
+        ]
+      },
+      {
+        "id": "1001",
+        "name": "Feedback diagram - Impedance controller block",
+        "text": "Impedance controller",
+        "geometry": [
+          {
+            "x": "3708400",
+            "y": "3733800"
+          },
+          {
+            "cx": "2387600",
+            "cy": "685800"
+          }
+        ]
+      },
+      {
+        "id": "1002",
+        "name": "Feedback diagram - Jacobian transpose block",
+        "text": "",
+        "geometry": [
+          {
+            "x": "7175500",
+            "y": "3733800"
+          },
+          {
+            "cx": "1168400",
+            "cy": "685800"
+          }
+        ]
+      },
+      {
+        "id": "1003",
+        "name": "Feedback diagram - Jacobian transpose operation",
+        "text": "\ud835\udc3d | T | (\ud835\udc5e)",
+        "geometry": [
+          {
+            "x": "7226300",
+            "y": "3784600"
+          },
+          {
+            "cx": "1066800",
+            "cy": "584200"
+          }
+        ]
+      },
+      {
+        "id": "1004",
+        "name": "Feedback diagram - Robot block",
+        "text": "Robot",
+        "geometry": [
+          {
+            "x": "10350500",
+            "y": "3733800"
+          },
+          {
+            "cx": "1295400",
+            "cy": "685800"
+          }
+        ]
+      },
+      {
+        "id": "1005",
+        "name": "Feedback diagram - Reference minus measured state",
+        "text": "",
+        "geometry": [
+          {
+            "x": "2057400",
+            "y": "3848100"
+          },
+          {
+            "cx": "457200",
+            "cy": "457200"
+          }
+        ]
+      },
+      {
+        "id": "1006",
+        "name": "Feedback diagram - Reference minus measured state cross rising",
+        "text": "",
+        "geometry": [
+          {
+            "x": "2124355",
+            "y": "3915055"
+          },
+          {
+            "cx": "323289",
+            "cy": "323289"
+          }
+        ]
+      },
+      {
+        "id": "1007",
+        "name": "Feedback diagram - Reference minus measured state cross falling",
+        "text": "",
+        "geometry": [
+          {
+            "x": "2124355",
+            "y": "3915055"
+          },
+          {
+            "cx": "323289",
+            "cy": "323289"
+          }
+        ]
+      },
+      {
+        "id": "1008",
+        "name": "Feedback diagram - Reference minus measured state left plus",
+        "text": "+",
+        "geometry": [
+          {
+            "x": "2082800",
+            "y": "4000500"
+          },
+          {
+            "cx": "139700",
+            "cy": "152400"
+          }
+        ]
+      },
+      {
+        "id": "1009",
+        "name": "Feedback diagram - Reference minus measured state lower minus",
+        "text": "\u2212",
+        "geometry": [
+          {
+            "x": "2209800",
+            "y": "4140200"
+          },
+          {
+            "cx": "152400",
+            "cy": "139700"
+          }
+        ]
+      },
+      {
+        "id": "1010",
+        "name": "Feedback diagram - Additive torque sum",
+        "text": "",
+        "geometry": [
+          {
+            "x": "8864600",
+            "y": "3848100"
+          },
+          {
+            "cx": "457200",
+            "cy": "457200"
+          }
+        ]
+      },
+      {
+        "id": "1011",
+        "name": "Feedback diagram - Additive torque sum cross rising",
+        "text": "",
+        "geometry": [
+          {
+            "x": "8931555",
+            "y": "3915055"
+          },
+          {
+            "cx": "323289",
+            "cy": "323289"
+          }
+        ]
+      },
+      {
+        "id": "1012",
+        "name": "Feedback diagram - Additive torque sum cross falling",
+        "text": "",
+        "geometry": [
+          {
+            "x": "8931555",
+            "y": "3915055"
+          },
+          {
+            "cx": "323289",
+            "cy": "323289"
+          }
+        ]
+      },
+      {
+        "id": "1013",
+        "name": "Feedback diagram - Additive torque sum left plus",
+        "text": "+",
+        "geometry": [
+          {
+            "x": "8890000",
+            "y": "4000500"
+          },
+          {
+            "cx": "139700",
+            "cy": "152400"
+          }
+        ]
+      },
+      {
+        "id": "1014",
+        "name": "Feedback diagram - Additive torque sum upper plus",
+        "text": "+",
+        "geometry": [
+          {
+            "x": "9017000",
+            "y": "3873500"
+          },
+          {
+            "cx": "152400",
+            "cy": "139700"
+          }
+        ]
+      },
+      {
+        "id": "1015",
+        "name": "Feedback diagram - Desired reference down",
+        "text": "",
+        "geometry": [
+          {
+            "x": "711200",
+            "y": "3276600"
+          },
+          {
+            "cx": "0",
+            "cy": "800100"
+          }
+        ]
+      },
+      {
+        "id": "1016",
+        "name": "Feedback diagram - Desired reference to plus",
+        "text": "",
+        "geometry": [
+          {
+            "x": "711200",
+            "y": "4076700"
+          },
+          {
+            "cx": "1346200",
+            "cy": "0"
+          }
+        ]
+      },
+      {
+        "id": "1017",
+        "name": "Feedback diagram - Desired signal label",
+        "text": "Reference state",
+        "geometry": [
+          {
+            "x": "914400",
+            "y": "3454400"
+          },
+          {
+            "cx": "1549400",
+            "cy": "292100"
+          }
+        ]
+      },
+      {
+        "id": "1018",
+        "name": "Feedback diagram - Errors to impedance",
+        "text": "",
+        "geometry": [
+          {
+            "x": "2514600",
+            "y": "4076700"
+          },
+          {
+            "cx": "1193800",
+            "cy": "0"
+          }
+        ]
+      },
+      {
+        "id": "1019",
+        "name": "Feedback diagram - Pose and velocity error signal",
+        "text": "Pose and | velocity errors",
+        "geometry": [
+          {
+            "x": "2514600",
+            "y": "3467100"
+          },
+          {
+            "cx": "1193800",
+            "cy": "482600"
+          }
+        ]
+      },
+      {
+        "id": "1020",
+        "name": "Feedback diagram - State definition",
+        "text": "State: pose and velocity",
+        "geometry": [
+          {
+            "x": "2959100",
+            "y": "5397500"
+          },
+          {
+            "cx": "4114800",
+            "cy": "254000"
+          }
+        ]
+      },
+      {
+        "id": "1021",
+        "name": "Feedback diagram - Impedance parameter description",
+        "text": "Stiffness and damping",
+        "geometry": [
+          {
+            "x": "3708400",
+            "y": "2781300"
+          },
+          {
+            "cx": "2387600",
+            "cy": "254000"
+          }
+        ]
+      },
+      {
+        "id": "1022",
+        "name": "Feedback diagram - Impedance parameter symbols",
+        "text": "\ud835\udc3e | ,  | \ud835\udc37",
+        "geometry": [
+          {
+            "x": "4419600",
+            "y": "3060700"
+          },
+          {
+            "cx": "965200",
+            "cy": "381000"
+          }
+        ]
+      },
+      {
+        "id": "1023",
+        "name": "Feedback diagram - Parameters to impedance",
+        "text": "",
+        "geometry": [
+          {
+            "x": "4902200",
+            "y": "3467100"
+          },
+          {
+            "cx": "0",
+            "cy": "266700"
+          }
+        ]
+      },
+      {
+        "id": "1024",
+        "name": "Feedback diagram - Wrench to Jacobian transpose",
+        "text": "",
+        "geometry": [
+          {
+            "x": "6096000",
+            "y": "4076700"
+          },
+          {
+            "cx": "1079500",
+            "cy": "0"
+          }
+        ]
+      },
+      {
+        "id": "1025",
+        "name": "Feedback diagram - Wrench signal",
+        "text": "\ud835\udc39",
+        "geometry": [
+          {
+            "x": "6413500",
+            "y": "3556000"
+          },
+          {
+            "cx": "457200",
+            "cy": "419100"
+          }
+        ]
+      },
+      {
+        "id": "1026",
+        "name": "Feedback diagram - Cartesian torque to sum",
+        "text": "",
+        "geometry": [
+          {
+            "x": "8343900",
+            "y": "4076700"
+          },
+          {
+            "cx": "520700",
+            "cy": "0"
+          }
+        ]
+      },
+      {
+        "id": "1027",
+        "name": "Feedback diagram - Cartesian torque signal",
+        "text": "\ud835\udf0f",
+        "geometry": [
+          {
+            "x": "8382000",
+            "y": "3556000"
+          },
+          {
+            "cx": "444500",
+            "cy": "419100"
+          }
+        ]
+      },
+      {
+        "id": "1028",
+        "name": "Feedback diagram - Commanded torque to robot",
+        "text": "",
+        "geometry": [
+          {
+            "x": "9321800",
+            "y": "4076700"
+          },
+          {
+            "cx": "1028700",
+            "cy": "0"
+          }
+        ]
+      },
+      {
+        "id": "1029",
+        "name": "Feedback diagram - Commanded torque signal",
+        "text": "\ud835\udf0f | cmd",
+        "geometry": [
+          {
+            "x": "9423400",
+            "y": "3556000"
+          },
+          {
+            "cx": "812800",
+            "cy": "419100"
+          }
+        ]
+      },
+      {
+        "id": "1030",
+        "name": "Feedback diagram - Additional torque sources",
+        "text": "Model + null-space",
+        "geometry": [
+          {
+            "x": "7899400",
+            "y": "2717800"
+          },
+          {
+            "cx": "2387600",
+            "cy": "266700"
+          }
+        ]
+      },
+      {
+        "id": "1031",
+        "name": "Feedback diagram - Additional torque signal",
+        "text": "Torques",
+        "geometry": [
+          {
+            "x": "8597900",
+            "y": "3035300"
+          },
+          {
+            "cx": "990600",
+            "cy": "254000"
+          }
+        ]
+      },
+      {
+        "id": "1032",
+        "name": "Feedback diagram - Other torques to plus",
+        "text": "",
+        "geometry": [
+          {
+            "x": "9093200",
+            "y": "3378200"
+          },
+          {
+            "cx": "0",
+            "cy": "469900"
+          }
+        ]
+      },
+      {
+        "id": "1033",
+        "name": "Feedback diagram - Robot state down",
+        "text": "",
+        "geometry": [
+          {
+            "x": "10998200",
+            "y": "4419600"
+          },
+          {
+            "cx": "0",
+            "cy": "914400"
+          }
+        ]
+      },
+      {
+        "id": "1034",
+        "name": "Feedback diagram - Measured state return",
+        "text": "",
+        "geometry": [
+          {
+            "x": "2286000",
+            "y": "5334000"
+          },
+          {
+            "cx": "8712200",
+            "cy": "0"
+          }
+        ]
+      },
+      {
+        "id": "1035",
+        "name": "Feedback diagram - Measured feedback to minus",
+        "text": "",
+        "geometry": [
+          {
+            "x": "2286000",
+            "y": "4305300"
+          },
+          {
+            "cx": "0",
+            "cy": "1028700"
+          }
+        ]
+      },
+      {
+        "id": "1036",
+        "name": "Feedback diagram - Measured Cartesian feedback label",
+        "text": "Measured state",
+        "geometry": [
+          {
+            "x": "2959100",
+            "y": "4902200"
+          },
+          {
+            "cx": "4114800",
+            "cy": "304800"
+          }
+        ]
+      },
+      {
+        "id": "1037",
+        "name": "Feedback diagram - Measured robot state label",
+        "text": "Measured robot state",
+        "geometry": [
+          {
+            "x": "7937500",
+            "y": "5397500"
+          },
+          {
+            "cx": "2882900",
+            "cy": "254000"
+          }
+        ]
+      },
+      {
+        "id": "1038",
+        "name": "Feedback diagram - Measured state branch",
+        "text": "",
+        "geometry": [
+          {
+            "x": "7734300",
+            "y": "5308600"
+          },
+          {
+            "cx": "50800",
+            "cy": "50800"
+          }
+        ]
+      },
+      {
+        "id": "1039",
+        "name": "Feedback diagram - Measured q to Jacobian",
+        "text": "",
+        "geometry": [
+          {
+            "x": "7759700",
+            "y": "4419600"
+          },
+          {
+            "cx": "0",
+            "cy": "914400"
+          }
+        ]
+      },
+      {
+        "id": "1040",
+        "name": "Feedback diagram - Joint configuration signal",
+        "text": "\ud835\udc5e",
+        "geometry": [
+          {
+            "x": "7874000",
+            "y": "4660900"
+          },
+          {
+            "cx": "419100",
+            "cy": "406400"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "physical": 9,
+    "path": "ppt/slides/slide9.xml",
+    "sid": "261",
+    "rid": "rId10",
+    "hidden": false,
+    "shapes": [
+      {
+        "id": "1",
+        "name": "",
+        "text": "",
+        "geometry": []
+      },
+      {
+        "id": "2",
+        "name": "Slide title",
+        "text": "Centre of compliance (CoC)",
+        "geometry": [
+          {
+            "x": "475488",
+            "y": "237744"
+          },
+          {
+            "cx": "7680960",
+            "cy": "361637"
+          }
+        ]
+      },
+      {
+        "id": "4",
+        "name": "Picture 3",
+        "text": "",
+        "geometry": [
+          {
+            "x": "256032",
+            "y": "6382512"
+          },
+          {
+            "cx": "502920",
+            "cy": "258989"
+          }
+        ]
+      },
+      {
+        "id": "5",
+        "name": "TextBox 4",
+        "text": "Design and Implementation of a Real-Time Impedance Controller for a 7-DOF Collaborative Robot",
+        "geometry": [
+          {
+            "x": "841248",
+            "y": "6364224"
+          },
+          {
+            "cx": "4297680",
+            "cy": "146304"
+          }
+        ]
+      },
+      {
+        "id": "6",
+        "name": "TextBox 5",
+        "text": "Master Thesis \u00b7 Heykel Khadhraoui",
+        "geometry": [
+          {
+            "x": "841248",
+            "y": "6492240"
+          },
+          {
+            "cx": "2926080",
+            "cy": "137160"
+          }
+        ]
+      },
+      {
+        "id": "7",
+        "name": "TextBox 6",
+        "text": "8",
+        "geometry": [
+          {
+            "x": "11525250",
+            "y": "6419088"
+          },
+          {
+            "cx": "180340",
+            "cy": "123111"
+          }
+        ]
+      },
+      {
+        "id": "27",
+        "name": "Continuous title rule",
+        "text": "",
+        "geometry": [
+          {
+            "x": "475488",
+            "y": "610819"
+          },
+          {
+            "cx": "11228832",
+            "cy": "12700"
+          }
+        ]
+      },
+      {
+        "id": "3",
+        "name": "Virtual centre definition",
+        "text": "Effect of CoC displacement",
+        "geometry": [
+          {
+            "x": "762000",
+            "y": "1041400"
+          },
+          {
+            "cx": "10668000",
+            "cy": "393700"
+          }
+        ]
+      },
+      {
+        "id": "11",
+        "name": "CoC position meaning",
+        "text": "Added moment can support or oppose rotation.",
+        "geometry": [
+          {
+            "x": "762000",
+            "y": "1574800"
+          },
+          {
+            "cx": "10668000",
+            "cy": "355600"
+          }
+        ]
+      },
+      {
+        "id": "9",
+        "name": "Figure - CoC_moment",
+        "text": "",
+        "geometry": [
+          {
+            "x": "1651000",
+            "y": "2514600"
+          },
+          {
+            "cx": "8890000",
+            "cy": "2987197"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "physical": 10,
+    "path": "ppt/slides/slide8.xml",
+    "sid": "283",
+    "rid": "rId9",
+    "hidden": false,
+    "shapes": [
+      {
+        "id": "1",
+        "name": "",
+        "text": "",
+        "geometry": []
+      },
+      {
+        "id": "2",
+        "name": "Slide title",
+        "text": "Translation\u2013rotation coupling",
+        "geometry": [
+          {
+            "x": "475488",
+            "y": "237744"
+          },
+          {
+            "cx": "7680960",
+            "cy": "361637"
+          }
+        ]
+      },
+      {
+        "id": "4",
+        "name": "Picture 3",
+        "text": "",
+        "geometry": [
+          {
+            "x": "256032",
+            "y": "6382512"
+          },
+          {
+            "cx": "502920",
+            "cy": "258989"
+          }
+        ]
+      },
+      {
+        "id": "5",
+        "name": "TextBox 4",
+        "text": "Design and Implementation of a Real-Time Impedance Controller for a 7-DOF Collaborative Robot",
+        "geometry": [
+          {
+            "x": "841248",
+            "y": "6364224"
+          },
+          {
+            "cx": "4297680",
+            "cy": "146304"
+          }
+        ]
+      },
+      {
+        "id": "6",
+        "name": "TextBox 5",
+        "text": "Master Thesis \u00b7 Heykel Khadhraoui",
+        "geometry": [
+          {
+            "x": "841248",
+            "y": "6492240"
+          },
+          {
+            "cx": "2926080",
+            "cy": "137160"
+          }
+        ]
+      },
+      {
+        "id": "7",
+        "name": "TextBox 6",
+        "text": "9",
+        "geometry": [
+          {
+            "x": "11525250",
+            "y": "6419088"
+          },
+          {
+            "cx": "180340",
+            "cy": "123111"
+          }
+        ]
+      },
+      {
+        "id": "33",
+        "name": "Continuous title rule",
+        "text": "",
+        "geometry": [
+          {
+            "x": "475488",
+            "y": "610819"
+          },
+          {
+            "cx": "11228832",
+            "cy": "12700"
+          }
+        ]
+      },
+      {
+        "id": "3",
+        "name": "Equation - coupling_point_shift",
+        "text": "",
+        "geometry": [
+          {
+            "x": "1015066",
+            "y": "3885184"
+          },
+          {
+            "cx": "1440040",
+            "cy": "373519"
+          }
+        ]
+      },
+      {
+        "id": "22",
+        "name": "Equation - coupling_wrench_blocks",
+        "text": "",
+        "geometry": [
+          {
+            "x": "1016000",
+            "y": "4546600"
+          },
+          {
+            "cx": "10668000",
+            "cy": "1066800"
+          }
+        ]
+      },
+      {
+        "id": "26",
+        "name": "Coupling result",
+        "text": "Non-zero off-diagonal blocks in  | K |  and  | D |  couple translation and rotation.",
+        "geometry": [
+          {
+            "x": "762000",
+            "y": "5791200"
+          },
+          {
+            "cx": "10668000",
+            "cy": "355600"
+          }
+        ]
+      },
+      {
+        "id": "34",
+        "name": "Compliance shift heading",
+        "text": "Shifting the impedance reference point",
+        "geometry": [
+          {
+            "x": "762000",
+            "y": "1016000"
+          },
+          {
+            "cx": "10668000",
+            "cy": "381000"
+          }
+        ]
+      },
+      {
+        "id": "35",
+        "name": "Point-shift definition",
+        "text": "Point-shift adjoint",
+        "geometry": [
+          {
+            "x": "3619500",
+            "y": "3937000"
+          },
+          {
+            "cx": "7620000",
+            "cy": "355600"
+          }
+        ]
+      },
+      {
+        "id": "36",
+        "name": "Equation - symbol_pc",
+        "text": "",
+        "geometry": [
+          {
+            "x": "969728",
+            "y": "1932432"
+          },
+          {
+            "cx": "311189",
+            "cy": "262288"
+          }
+        ]
+      },
+      {
+        "id": "37",
+        "name": "CoC position definition",
+        "text": "Virtual centre of compliance (CoC): new reference",
+        "geometry": [
+          {
+            "x": "1676400",
+            "y": "1866900"
+          },
+          {
+            "cx": "9144000",
+            "cy": "355600"
+          }
+        ]
+      },
+      {
+        "id": "38",
+        "name": "Equation - coc_displacement_definition",
+        "text": "",
+        "geometry": [
+          {
+            "x": "987763",
+            "y": "3390011"
+          },
+          {
+            "cx": "1829316",
+            "cy": "309369"
+          }
+        ]
+      },
+      {
+        "id": "39",
+        "name": "TCP to CoC displacement meaning",
+        "text": "Displacement from TCP to CoC",
+        "geometry": [
+          {
+            "x": "3619500",
+            "y": "3403600"
+          },
+          {
+            "cx": "7620000",
+            "cy": "355600"
+          }
+        ]
+      },
+      {
+        "id": "40",
+        "name": "TCP reference definition",
+        "text": "Tool centre point (TCP): controlled reference point on the (EE)",
+        "geometry": [
+          {
+            "x": "1016000",
+            "y": "1435100"
+          },
+          {
+            "cx": "10287000",
+            "cy": "355600"
+          }
+        ]
+      },
+      {
+        "id": "41",
+        "name": "Reference point couples force and moment",
+        "text": "Choosing an impedance reference point away from the TCP couples force and moment.",
+        "geometry": [
+          {
+            "x": "762000",
+            "y": "2349500"
+          },
+          {
+            "cx": "10668000",
+            "cy": "406400"
+          }
+        ]
+      },
+      {
+        "id": "42",
+        "name": "Virtual point force interpretation",
+        "text": "The commanded force acts as if applied at the virtual point  | p | c | .",
+        "geometry": [
+          {
+            "x": "762000",
+            "y": "2781300"
+          },
+          {
+            "cx": "10668000",
+            "cy": "406400"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "physical": 11,
+    "path": "ppt/slides/slide11.xml",
+    "sid": "262",
+    "rid": "rId12",
+    "hidden": false,
+    "shapes": [
+      {
+        "id": "1",
+        "name": "",
+        "text": "",
+        "geometry": []
+      },
+      {
+        "id": "2",
+        "name": "Slide title",
+        "text": "Contact experiment",
+        "geometry": [
+          {
+            "x": "475488",
+            "y": "237744"
+          },
+          {
+            "cx": "7680960",
+            "cy": "361637"
+          }
+        ]
+      },
+      {
+        "id": "4",
+        "name": "Picture 3",
+        "text": "",
+        "geometry": [
+          {
+            "x": "256032",
+            "y": "6382512"
+          },
+          {
+            "cx": "502920",
+            "cy": "258989"
+          }
+        ]
+      },
+      {
+        "id": "5",
+        "name": "TextBox 4",
+        "text": "Design and Implementation of a Real-Time Impedance Controller for a 7-DOF Collaborative Robot",
+        "geometry": [
+          {
+            "x": "841248",
+            "y": "6364224"
+          },
+          {
+            "cx": "4297680",
+            "cy": "146304"
+          }
+        ]
+      },
+      {
+        "id": "6",
+        "name": "TextBox 5",
+        "text": "Master Thesis \u00b7 Heykel Khadhraoui",
+        "geometry": [
+          {
+            "x": "841248",
+            "y": "6492240"
+          },
+          {
+            "cx": "2926080",
+            "cy": "137160"
+          }
+        ]
+      },
+      {
+        "id": "7",
+        "name": "TextBox 6",
+        "text": "10",
+        "geometry": [
+          {
+            "x": "11525250",
+            "y": "6419088"
+          },
+          {
+            "cx": "180340",
+            "cy": "123111"
+          }
+        ]
+      },
+      {
+        "id": "24",
+        "name": "Continuous title rule",
+        "text": "",
+        "geometry": [
+          {
+            "x": "475488",
+            "y": "610819"
+          },
+          {
+            "cx": "11228832",
+            "cy": "12700"
+          }
+        ]
+      },
+      {
+        "id": "3",
+        "name": "Contact phases",
+        "text": "Tool orientation    \u2192    Surface approach    \u2192    Contact establishment    \u2192    Surface grinding",
+        "geometry": [
+          {
+            "x": "762000",
+            "y": "990600"
+          },
+          {
+            "cx": "10668000",
+            "cy": "533400"
+          }
+        ]
+      },
+      {
+        "id": "25",
+        "name": "Contact settings heading",
+        "text": "Compliant contact settings",
+        "geometry": [
+          {
+            "x": "6096000",
+            "y": "1816100"
+          },
+          {
+            "cx": "5588000",
+            "cy": "381000"
+          }
+        ]
+      },
+      {
+        "id": "27",
+        "name": "Normal label",
+        "text": "Normal translation",
+        "geometry": [
+          {
+            "x": "6096000",
+            "y": "2413000"
+          },
+          {
+            "cx": "5588000",
+            "cy": "317500"
+          }
+        ]
+      },
+      {
+        "id": "28",
+        "name": "Equation - contact_normal_gain",
+        "text": "",
+        "geometry": [
+          {
+            "x": "7301434",
+            "y": "2778244"
+          },
+          {
+            "cx": "1986158",
+            "cy": "386477"
+          }
+        ]
+      },
+      {
+        "id": "29",
+        "name": "Rotation label",
+        "text": "Rotations about the surface tangents",
+        "geometry": [
+          {
+            "x": "6096000",
+            "y": "5067300"
+          },
+          {
+            "cx": "5588000",
+            "cy": "317500"
+          }
+        ]
+      },
+      {
+        "id": "30",
+        "name": "Equation - contact_rotation_gains",
+        "text": "",
+        "geometry": [
+          {
+            "x": "7233529",
+            "y": "5457825"
+          },
+          {
+            "cx": "3207554",
+            "cy": "386655"
+          }
+        ]
+      },
+      {
+        "id": "31",
+        "name": "Equation - contact_tangent_gains",
+        "text": "",
+        "geometry": [
+          {
+            "x": "7240726",
+            "y": "3666876"
+          },
+          {
+            "cx": "3214450",
+            "cy": "387011"
+          }
+        ]
+      },
+      {
+        "id": "8",
+        "name": "Tangential translation label",
+        "text": "Tangential translation",
+        "geometry": [
+          {
+            "x": "6096000",
+            "y": "3289300"
+          },
+          {
+            "cx": "5588000",
+            "cy": "317500"
+          }
+        ]
+      },
+      {
+        "id": "40",
+        "name": "Normal rotation label",
+        "text": "Rotation about the surface normal",
+        "geometry": [
+          {
+            "x": "6096000",
+            "y": "4165600"
+          },
+          {
+            "cx": "5588000",
+            "cy": "317500"
+          }
+        ]
+      },
+      {
+        "id": "41",
+        "name": "Equation - contact_normal_rotation",
+        "text": "",
+        "geometry": [
+          {
+            "x": "7295110",
+            "y": "4581316"
+          },
+          {
+            "cx": "2337815",
+            "cy": "386833"
+          }
+        ]
+      },
+      {
+        "id": "42",
+        "name": "Surface frame",
+        "text": "",
+        "geometry": [
+          {
+            "x": "762000",
+            "y": "2097450"
+          },
+          {
+            "cx": "4572000",
+            "cy": "3590160"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "physical": 12,
+    "path": "ppt/slides/slide38.xml",
+    "sid": "300",
+    "rid": "rIdContactVideo1",
+    "hidden": false,
+    "shapes": [
+      {
+        "id": "1",
+        "name": "",
+        "text": "",
+        "geometry": []
+      },
+      {
+        "id": "2",
+        "name": "Slide title",
+        "text": "Plausibility experiment",
+        "geometry": [
+          {
+            "x": "475488",
+            "y": "237744"
+          },
+          {
+            "cx": "7680960",
+            "cy": "361637"
+          }
+        ]
+      },
+      {
+        "id": "4",
+        "name": "Picture 3",
+        "text": "",
+        "geometry": [
+          {
+            "x": "256032",
+            "y": "6382512"
+          },
+          {
+            "cx": "502920",
+            "cy": "258989"
+          }
+        ]
+      },
+      {
+        "id": "5",
+        "name": "TextBox 4",
+        "text": "Design and Implementation of a Real-Time Impedance Controller for a 7-DOF Collaborative Robot",
+        "geometry": [
+          {
+            "x": "841248",
+            "y": "6364224"
+          },
+          {
+            "cx": "4297680",
+            "cy": "146304"
+          }
+        ]
+      },
+      {
+        "id": "6",
+        "name": "TextBox 5",
+        "text": "Master Thesis \u00b7 Heykel Khadhraoui",
+        "geometry": [
+          {
+            "x": "841248",
+            "y": "6492240"
+          },
+          {
+            "cx": "2926080",
+            "cy": "137160"
+          }
+        ]
+      },
+      {
+        "id": "7",
+        "name": "TextBox 6",
+        "text": "11",
+        "geometry": [
+          {
+            "x": "11430000",
+            "y": "6419088"
+          },
+          {
+            "cx": "274320",
+            "cy": "123111"
+          }
+        ]
+      },
+      {
+        "id": "21",
+        "name": "Continuous title rule",
+        "text": "",
+        "geometry": [
+          {
+            "x": "475488",
+            "y": "610819"
+          },
+          {
+            "cx": "11228832",
+            "cy": "12700"
+          }
+        ]
+      },
+      {
+        "id": "22",
+        "name": "Plausibility experiment video",
+        "text": "",
+        "geometry": [
+          {
+            "x": "3429000",
+            "y": "825500"
+          },
+          {
+            "cx": "5334000",
+            "cy": "5334000"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "physical": 13,
+    "path": "ppt/slides/slide14.xml",
+    "sid": "272",
+    "rid": "rId15",
+    "hidden": false,
+    "shapes": [
+      {
+        "id": "1",
+        "name": "",
+        "text": "",
+        "geometry": []
+      },
+      {
+        "id": "2",
+        "name": "Slide title",
+        "text": "Normal-force plausibility assessment",
+        "geometry": [
+          {
+            "x": "475488",
+            "y": "237744"
+          },
+          {
+            "cx": "7680960",
+            "cy": "361637"
+          }
+        ]
+      },
+      {
+        "id": "4",
+        "name": "Picture 3",
+        "text": "",
+        "geometry": [
+          {
+            "x": "256032",
+            "y": "6382512"
+          },
+          {
+            "cx": "502920",
+            "cy": "258989"
+          }
+        ]
+      },
+      {
+        "id": "5",
+        "name": "TextBox 4",
+        "text": "Design and Implementation of a Real-Time Impedance Controller for a 7-DOF Collaborative Robot",
+        "geometry": [
+          {
+            "x": "841248",
+            "y": "6364224"
+          },
+          {
+            "cx": "4297680",
+            "cy": "146304"
+          }
+        ]
+      },
+      {
+        "id": "6",
+        "name": "TextBox 5",
+        "text": "Master Thesis \u00b7 Heykel Khadhraoui",
+        "geometry": [
+          {
+            "x": "841248",
+            "y": "6492240"
+          },
+          {
+            "cx": "2926080",
+            "cy": "137160"
+          }
+        ]
+      },
+      {
+        "id": "7",
+        "name": "TextBox 6",
+        "text": "12",
+        "geometry": [
+          {
+            "x": "11525250",
+            "y": "6419088"
+          },
+          {
+            "cx": "180340",
+            "cy": "123111"
+          }
+        ]
+      },
+      {
+        "id": "8",
+        "name": "Equation - equation_force_qs",
+        "text": "",
+        "geometry": [
+          {
+            "x": "762000",
+            "y": "4572000"
+          },
+          {
+            "cx": "5743004",
+            "cy": "788024"
+          }
+        ]
+      },
+      {
+        "id": "9",
+        "name": "Figure \u2014 force_plausibility",
+        "text": "",
+        "geometry": [
+          {
+            "x": "1968500",
+            "y": "1130300"
+          },
+          {
+            "cx": "8255000",
+            "cy": "3424054"
+          }
+        ]
+      },
+      {
+        "id": "19",
+        "name": "TextBox 18",
+        "text": "Commanded mean | \u221219.64\u00a0N",
+        "geometry": [
+          {
+            "x": "4720167",
+            "y": "5638800"
+          },
+          {
+            "cx": "2751667",
+            "cy": "584200"
+          }
+        ]
+      },
+      {
+        "id": "20",
+        "name": "TextBox 19",
+        "text": "Model-estimated mean | \u221222.29\u00a0N",
+        "geometry": [
+          {
+            "x": "7471833",
+            "y": "5638800"
+          },
+          {
+            "cx": "2751667",
+            "cy": "584200"
+          }
+        ]
+      },
+      {
+        "id": "21",
+        "name": "Continuous title rule",
+        "text": "",
+        "geometry": [
+          {
+            "x": "475488",
+            "y": "610819"
+          },
+          {
+            "cx": "11228832",
+            "cy": "12700"
+          }
+        ]
+      },
+      {
+        "id": "30",
+        "name": "Validation input heading",
+        "text": "Manual push: about 20 mm",
+        "geometry": [
+          {
+            "x": "762000",
+            "y": "774700"
+          },
+          {
+            "cx": "10668000",
+            "cy": "381000"
+          }
+        ]
+      },
+      {
+        "id": "31",
+        "name": "Quasi-static prediction",
+        "text": "Quasi-static prediction | \u221219.65\u00a0N",
+        "geometry": [
+          {
+            "x": "1968500",
+            "y": "5638800"
+          },
+          {
+            "cx": "2751667",
+            "cy": "584200"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "physical": 14,
+    "path": "ppt/slides/slide15.xml",
+    "sid": "273",
+    "rid": "rId16",
+    "hidden": false,
+    "shapes": [
+      {
+        "id": "1",
+        "name": "",
+        "text": "",
+        "geometry": []
+      },
+      {
+        "id": "2",
+        "name": "Slide title",
+        "text": "Moment plausibility assessment",
+        "geometry": [
+          {
+            "x": "475488",
+            "y": "237744"
+          },
+          {
+            "cx": "7680960",
+            "cy": "361637"
+          }
+        ]
+      },
+      {
+        "id": "4",
+        "name": "Picture 3",
+        "text": "",
+        "geometry": [
+          {
+            "x": "256032",
+            "y": "6382512"
+          },
+          {
+            "cx": "502920",
+            "cy": "258989"
+          }
+        ]
+      },
+      {
+        "id": "5",
+        "name": "TextBox 4",
+        "text": "Design and Implementation of a Real-Time Impedance Controller for a 7-DOF Collaborative Robot",
+        "geometry": [
+          {
+            "x": "841248",
+            "y": "6364224"
+          },
+          {
+            "cx": "4297680",
+            "cy": "146304"
+          }
+        ]
+      },
+      {
+        "id": "6",
+        "name": "TextBox 5",
+        "text": "Master Thesis \u00b7 Heykel Khadhraoui",
+        "geometry": [
+          {
+            "x": "841248",
+            "y": "6492240"
+          },
+          {
+            "cx": "2926080",
+            "cy": "137160"
+          }
+        ]
+      },
+      {
+        "id": "7",
+        "name": "TextBox 6",
+        "text": "13",
+        "geometry": [
+          {
+            "x": "11525250",
+            "y": "6419088"
+          },
+          {
+            "cx": "180340",
+            "cy": "123111"
+          }
+        ]
+      },
+      {
+        "id": "8",
+        "name": "Equation - equation_moment_qs",
+        "text": "",
+        "geometry": [
+          {
+            "x": "762000",
+            "y": "4572000"
+          },
+          {
+            "cx": "6117411",
+            "cy": "958305"
+          }
+        ]
+      },
+      {
+        "id": "9",
+        "name": "Figure \u2014 moment_plausibility",
+        "text": "",
+        "geometry": [
+          {
+            "x": "1968500",
+            "y": "1130300"
+          },
+          {
+            "cx": "8255000",
+            "cy": "3424054"
+          }
+        ]
+      },
+      {
+        "id": "19",
+        "name": "TextBox 18",
+        "text": "Commanded mean | 1.72\u00a0N.m",
+        "geometry": [
+          {
+            "x": "4720167",
+            "y": "5638800"
+          },
+          {
+            "cx": "2751667",
+            "cy": "584200"
+          }
+        ]
+      },
+      {
+        "id": "20",
+        "name": "TextBox 19",
+        "text": "Model-estimated mean | 1.85\u00a0N.m",
+        "geometry": [
+          {
+            "x": "7471833",
+            "y": "5638800"
+          },
+          {
+            "cx": "2751667",
+            "cy": "584200"
+          }
+        ]
+      },
+      {
+        "id": "21",
+        "name": "Continuous title rule",
+        "text": "",
+        "geometry": [
+          {
+            "x": "475488",
+            "y": "610819"
+          },
+          {
+            "cx": "11228832",
+            "cy": "12700"
+          }
+        ]
+      },
+      {
+        "id": "30",
+        "name": "Validation input heading",
+        "text": "Manual rotation: about 6.5\u00b0",
+        "geometry": [
+          {
+            "x": "762000",
+            "y": "774700"
+          },
+          {
+            "cx": "10668000",
+            "cy": "381000"
+          }
+        ]
+      },
+      {
+        "id": "31",
+        "name": "Quasi-static prediction",
+        "text": "Quasi-static prediction | 1.72\u00a0N.m",
+        "geometry": [
+          {
+            "x": "1968500",
+            "y": "5638800"
+          },
+          {
+            "cx": "2751667",
+            "cy": "584200"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "physical": 15,
+    "path": "ppt/slides/slide16.xml",
+    "sid": "271",
+    "rid": "rId17",
+    "hidden": false,
+    "shapes": [
+      {
+        "id": "1",
+        "name": "",
+        "text": "",
+        "geometry": []
+      },
+      {
+        "id": "2",
+        "name": "Slide title",
+        "text": "Commanded and estimated wrench",
+        "geometry": [
+          {
+            "x": "475488",
+            "y": "237744"
+          },
+          {
+            "cx": "7680960",
+            "cy": "361637"
+          }
+        ]
+      },
+      {
+        "id": "4",
+        "name": "Picture 3",
+        "text": "",
+        "geometry": [
+          {
+            "x": "256032",
+            "y": "6382512"
+          },
+          {
+            "cx": "502920",
+            "cy": "258989"
+          }
+        ]
+      },
+      {
+        "id": "5",
+        "name": "TextBox 4",
+        "text": "Design and Implementation of a Real-Time Impedance Controller for a 7-DOF Collaborative Robot",
+        "geometry": [
+          {
+            "x": "841248",
+            "y": "6364224"
+          },
+          {
+            "cx": "4297680",
+            "cy": "146304"
+          }
+        ]
+      },
+      {
+        "id": "6",
+        "name": "TextBox 5",
+        "text": "Master Thesis \u00b7 Heykel Khadhraoui",
+        "geometry": [
+          {
+            "x": "841248",
+            "y": "6492240"
+          },
+          {
+            "cx": "2926080",
+            "cy": "137160"
+          }
+        ]
+      },
+      {
+        "id": "7",
+        "name": "TextBox 6",
+        "text": "14",
+        "geometry": [
+          {
+            "x": "11525250",
+            "y": "6419088"
+          },
+          {
+            "cx": "180340",
+            "cy": "123111"
+          }
+        ]
+      },
+      {
+        "id": "8",
+        "name": "Figure \u2014 wrench_comparison",
+        "text": "",
+        "geometry": [
+          {
+            "x": "2381250",
+            "y": "1136192"
+          },
+          {
+            "cx": "7429500",
+            "cy": "4712617"
+          }
+        ]
+      },
+      {
+        "id": "21",
+        "name": "Continuous title rule",
+        "text": "",
+        "geometry": [
+          {
+            "x": "475488",
+            "y": "610819"
+          },
+          {
+            "cx": "11228832",
+            "cy": "12700"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "physical": 16,
+    "path": "ppt/slides/slide18.xml",
+    "sid": "265",
+    "rid": "rId19",
+    "hidden": false,
+    "shapes": [
+      {
+        "id": "1",
+        "name": "",
+        "text": "",
+        "geometry": []
+      },
+      {
+        "id": "2",
+        "name": "Slide title",
+        "text": "Effect of rotational stiffness",
+        "geometry": [
+          {
+            "x": "475488",
+            "y": "237744"
+          },
+          {
+            "cx": "7680960",
+            "cy": "361637"
+          }
+        ]
+      },
+      {
+        "id": "4",
+        "name": "Picture 3",
+        "text": "",
+        "geometry": [
+          {
+            "x": "256032",
+            "y": "6382512"
+          },
+          {
+            "cx": "502920",
+            "cy": "258989"
+          }
+        ]
+      },
+      {
+        "id": "5",
+        "name": "TextBox 4",
+        "text": "Design and Implementation of a Real-Time Impedance Controller for a 7-DOF Collaborative Robot",
+        "geometry": [
+          {
+            "x": "841248",
+            "y": "6364224"
+          },
+          {
+            "cx": "4297680",
+            "cy": "146304"
+          }
+        ]
+      },
+      {
+        "id": "6",
+        "name": "TextBox 5",
+        "text": "Master Thesis \u00b7 Heykel Khadhraoui",
+        "geometry": [
+          {
+            "x": "841248",
+            "y": "6492240"
+          },
+          {
+            "cx": "2926080",
+            "cy": "137160"
+          }
+        ]
+      },
+      {
+        "id": "7",
+        "name": "TextBox 6",
+        "text": "15",
+        "geometry": [
+          {
+            "x": "11525250",
+            "y": "6419088"
+          },
+          {
+            "cx": "180340",
+            "cy": "123111"
+          }
+        ]
+      },
+      {
+        "id": "18",
+        "name": "Continuous title rule",
+        "text": "",
+        "geometry": [
+          {
+            "x": "475488",
+            "y": "610819"
+          },
+          {
+            "cx": "11228832",
+            "cy": "12700"
+          }
+        ]
+      },
+      {
+        "id": "8",
+        "name": "Rotational stiffness meaning",
+        "text": "Resistance to rotation about  | t | 1",
+        "geometry": [
+          {
+            "x": "2794000",
+            "y": "723900"
+          },
+          {
+            "cx": "6604000",
+            "cy": "342900"
+          }
+        ]
+      },
+      {
+        "id": "14",
+        "name": "Figure \u2014 rotation_stiffness",
+        "text": "",
+        "geometry": [
+          {
+            "x": "2921000",
+            "y": "1066800"
+          },
+          {
+            "cx": "6350000",
+            "cy": "4576113"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "physical": 17,
+    "path": "ppt/slides/slide19.xml",
+    "sid": "266",
+    "rid": "rId20",
+    "hidden": false,
+    "shapes": [
+      {
+        "id": "1",
+        "name": "",
+        "text": "",
+        "geometry": []
+      },
+      {
+        "id": "2",
+        "name": "Slide title",
+        "text": "Effect of CoC position",
+        "geometry": [
+          {
+            "x": "475488",
+            "y": "237744"
+          },
+          {
+            "cx": "7680960",
+            "cy": "361637"
+          }
+        ]
+      },
+      {
+        "id": "4",
+        "name": "Picture 3",
+        "text": "",
+        "geometry": [
+          {
+            "x": "256032",
+            "y": "6382512"
+          },
+          {
+            "cx": "502920",
+            "cy": "258989"
+          }
+        ]
+      },
+      {
+        "id": "5",
+        "name": "TextBox 4",
+        "text": "Design and Implementation of a Real-Time Impedance Controller for a 7-DOF Collaborative Robot",
+        "geometry": [
+          {
+            "x": "841248",
+            "y": "6364224"
+          },
+          {
+            "cx": "4297680",
+            "cy": "146304"
+          }
+        ]
+      },
+      {
+        "id": "6",
+        "name": "TextBox 5",
+        "text": "Master Thesis \u00b7 Heykel Khadhraoui",
+        "geometry": [
+          {
+            "x": "841248",
+            "y": "6492240"
+          },
+          {
+            "cx": "2926080",
+            "cy": "137160"
+          }
+        ]
+      },
+      {
+        "id": "7",
+        "name": "TextBox 6",
+        "text": "16",
+        "geometry": [
+          {
+            "x": "11525250",
+            "y": "6419088"
+          },
+          {
+            "cx": "180340",
+            "cy": "123111"
+          }
+        ]
+      },
+      {
+        "id": "15",
+        "name": "Continuous title rule",
+        "text": "",
+        "geometry": [
+          {
+            "x": "475488",
+            "y": "610819"
+          },
+          {
+            "cx": "11228832",
+            "cy": "12700"
+          }
+        ]
+      },
+      {
+        "id": "11",
+        "name": "Equation - symbol_rct2",
+        "text": "",
+        "geometry": [
+          {
+            "x": "4191000",
+            "y": "1114570"
+          },
+          {
+            "cx": "493862",
+            "cy": "286974"
+          }
+        ]
+      },
+      {
+        "id": "16",
+        "name": "Tangential CoC definition",
+        "text": "CoC displacement along  | t | 2",
+        "geometry": [
+          {
+            "x": "5003800",
+            "y": "1028700"
+          },
+          {
+            "cx": "6223000",
+            "cy": "381000"
+          }
+        ]
+      },
+      {
+        "id": "9",
+        "name": "Figure - CoC_position",
+        "text": "",
+        "geometry": [
+          {
+            "x": "1651000",
+            "y": "1460500"
+          },
+          {
+            "cx": "8890000",
+            "cy": "4185313"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "physical": 18,
+    "path": "ppt/slides/slide20.xml",
+    "sid": "267",
+    "rid": "rId21",
+    "hidden": false,
+    "shapes": [
+      {
+        "id": "1",
+        "name": "",
+        "text": "",
+        "geometry": []
+      },
+      {
+        "id": "2",
+        "name": "Slide title",
+        "text": "Angular error and interaction wrench",
+        "geometry": [
+          {
+            "x": "475488",
+            "y": "237744"
+          },
+          {
+            "cx": "7680960",
+            "cy": "361637"
+          }
+        ]
+      },
+      {
+        "id": "4",
+        "name": "Picture 3",
+        "text": "",
+        "geometry": [
+          {
+            "x": "256032",
+            "y": "6382512"
+          },
+          {
+            "cx": "502920",
+            "cy": "258989"
+          }
+        ]
+      },
+      {
+        "id": "5",
+        "name": "TextBox 4",
+        "text": "Design and Implementation of a Real-Time Impedance Controller for a 7-DOF Collaborative Robot",
+        "geometry": [
+          {
+            "x": "841248",
+            "y": "6364224"
+          },
+          {
+            "cx": "4297680",
+            "cy": "146304"
+          }
+        ]
+      },
+      {
+        "id": "6",
+        "name": "TextBox 5",
+        "text": "Master Thesis \u00b7 Heykel Khadhraoui",
+        "geometry": [
+          {
+            "x": "841248",
+            "y": "6492240"
+          },
+          {
+            "cx": "2926080",
+            "cy": "137160"
+          }
+        ]
+      },
+      {
+        "id": "7",
+        "name": "TextBox 6",
+        "text": "17",
+        "geometry": [
+          {
+            "x": "11525250",
+            "y": "6419088"
+          },
+          {
+            "cx": "180340",
+            "cy": "123111"
+          }
+        ]
+      },
+      {
+        "id": "19",
+        "name": "Continuous title rule",
+        "text": "",
+        "geometry": [
+          {
+            "x": "475488",
+            "y": "610819"
+          },
+          {
+            "cx": "11228832",
+            "cy": "12700"
+          }
+        ]
+      },
+      {
+        "id": "3",
+        "name": "Angular response heading",
+        "text": "Angular error",
+        "geometry": [
+          {
+            "x": "418306",
+            "y": "1358900"
+          },
+          {
+            "cx": "4064000",
+            "cy": "355600"
+          }
+        ]
+      },
+      {
+        "id": "8",
+        "name": "Interaction moment heading",
+        "text": "TCP moment",
+        "geometry": [
+          {
+            "x": "8038306",
+            "y": "1358900"
+          },
+          {
+            "cx": "4064000",
+            "cy": "355600"
+          }
+        ]
+      },
+      {
+        "id": "9",
+        "name": "Approximate steady-response time marker",
+        "text": "",
+        "geometry": [
+          {
+            "x": "3493135",
+            "y": "2197100"
+          },
+          {
+            "cx": "0",
+            "cy": "1168400"
+          }
+        ]
+      },
+      {
+        "id": "11",
+        "name": "Approximate steady-response time marker",
+        "text": "",
+        "geometry": [
+          {
+            "x": "4603369",
+            "y": "2197100"
+          },
+          {
+            "cx": "0",
+            "cy": "1168400"
+          }
+        ]
+      },
+      {
+        "id": "12",
+        "name": "Figure - contact_wrench_three_panels",
+        "text": "",
+        "geometry": [
+          {
+            "x": "381000",
+            "y": "1714500"
+          },
+          {
+            "cx": "11430000",
+            "cy": "3937000"
+          }
+        ]
+      },
+      {
+        "id": "28",
+        "name": "Legend - normal force",
+        "text": "",
+        "geometry": [
+          {
+            "x": "5623674",
+            "y": "5054600"
+          },
+          {
+            "cx": "1605051",
+            "cy": "764019"
+          }
+        ]
+      },
+      {
+        "id": "27",
+        "name": "Normal force heading",
+        "text": "Normal force",
+        "geometry": [
+          {
+            "x": "4228306",
+            "y": "1358900"
+          },
+          {
+            "cx": "4064000",
+            "cy": "355600"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "physical": 19,
+    "path": "ppt/slides/slide10.xml",
+    "sid": "284",
+    "rid": "rId11",
+    "hidden": false,
+    "shapes": [
+      {
+        "id": "1",
+        "name": "",
+        "text": "",
+        "geometry": []
+      },
+      {
+        "id": "2",
+        "name": "Slide title",
+        "text": "Null-space controller",
+        "geometry": [
+          {
+            "x": "475488",
+            "y": "237744"
+          },
+          {
+            "cx": "7680960",
+            "cy": "361637"
+          }
+        ]
+      },
+      {
+        "id": "4",
+        "name": "Picture 3",
+        "text": "",
+        "geometry": [
+          {
+            "x": "256032",
+            "y": "6382512"
+          },
+          {
+            "cx": "502920",
+            "cy": "258989"
+          }
+        ]
+      },
+      {
+        "id": "5",
+        "name": "TextBox 4",
+        "text": "Design and Implementation of a Real-Time Impedance Controller for a 7-DOF Collaborative Robot",
+        "geometry": [
+          {
+            "x": "841248",
+            "y": "6364224"
+          },
+          {
+            "cx": "4297680",
+            "cy": "146304"
+          }
+        ]
+      },
+      {
+        "id": "6",
+        "name": "TextBox 5",
+        "text": "Master Thesis \u00b7 Heykel Khadhraoui",
+        "geometry": [
+          {
+            "x": "841248",
+            "y": "6492240"
+          },
+          {
+            "cx": "2926080",
+            "cy": "137160"
+          }
+        ]
+      },
+      {
+        "id": "7",
+        "name": "TextBox 6",
+        "text": "18",
+        "geometry": [
+          {
+            "x": "11525250",
+            "y": "6419088"
+          },
+          {
+            "cx": "180340",
+            "cy": "123111"
+          }
+        ]
+      },
+      {
+        "id": "27",
+        "name": "Continuous title rule",
+        "text": "",
+        "geometry": [
+          {
+            "x": "475488",
+            "y": "610819"
+          },
+          {
+            "cx": "11228832",
+            "cy": "12700"
+          }
+        ]
+      },
+      {
+        "id": "3",
+        "name": "Equation - null_controller_dimension",
+        "text": "",
+        "geometry": [
+          {
+            "x": "1016000",
+            "y": "2768600"
+          },
+          {
+            "cx": "5588000",
+            "cy": "373526"
+          }
+        ]
+      },
+      {
+        "id": "103",
+        "name": "Null-space condition label",
+        "text": "Null-space condition:",
+        "geometry": [
+          {
+            "x": "6731000",
+            "y": "2768600"
+          },
+          {
+            "cx": "2603500",
+            "cy": "381000"
+          },
+          {
+            "x": "9410700",
+            "y": "2768600"
+          },
+          {
+            "cx": "1786935",
+            "cy": "373526"
+          }
+        ]
+      },
+      {
+        "id": "19",
+        "name": "Rank qualification",
+        "text": "The robot\u2019s extra degree of freedom allows its posture to change while keeping the (EE) pose unchanged.",
+        "geometry": [
+          {
+            "x": "1016000",
+            "y": "1574800"
+          },
+          {
+            "cx": "10414000",
+            "cy": "1117600"
+          }
+        ]
+      },
+      {
+        "id": "21",
+        "name": "Damping heading",
+        "text": "Damping torque",
+        "geometry": [
+          {
+            "x": "1016000",
+            "y": "3302000"
+          },
+          {
+            "cx": "4699000",
+            "cy": "381000"
+          }
+        ]
+      },
+      {
+        "id": "22",
+        "name": "Conditioning heading",
+        "text": "Conditioning torque",
+        "geometry": [
+          {
+            "x": "6731000",
+            "y": "3302000"
+          },
+          {
+            "cx": "4699000",
+            "cy": "381000"
+          }
+        ]
+      },
+      {
+        "id": "25",
+        "name": "Damping role",
+        "text": "Opposes and damps null-space velocity.",
+        "geometry": [
+          {
+            "x": "1016000",
+            "y": "3810000"
+          },
+          {
+            "cx": "4699000",
+            "cy": "2095500"
+          }
+        ]
+      },
+      {
+        "id": "26",
+        "name": "Conditioning role",
+        "text": "Adjusts joint posture in the null space. | Seeks a larger minimum singular value  | \u03c3 | min |  of  | J | , moving away from singularities.",
+        "geometry": [
+          {
+            "x": "6731000",
+            "y": "3810000"
+          },
+          {
+            "cx": "4699000",
+            "cy": "2286000"
+          }
+        ]
+      },
+      {
+        "id": "8",
+        "name": "Equation - symbol_tau_d",
+        "text": "",
+        "geometry": [
+          {
+            "x": "3186113",
+            "y": "3409112"
+          },
+          {
+            "cx": "309692",
+            "cy": "249993"
+          }
+        ]
+      },
+      {
+        "id": "9",
+        "name": "Equation - symbol_tau_sigma",
+        "text": "",
+        "geometry": [
+          {
+            "x": "9336088",
+            "y": "3409112"
+          },
+          {
+            "cx": "325270",
+            "cy": "250496"
+          }
+        ]
+      },
+      {
+        "id": "30",
+        "name": "Redundancy heading",
+        "text": "Redundancy and null-space motion:",
+        "geometry": [
+          {
+            "x": "1016000",
+            "y": "1143000"
+          },
+          {
+            "cx": "10414000",
+            "cy": "381000"
+          }
+        ]
+      },
+      {
+        "id": "101",
+        "name": "Damping colon",
+        "text": ":",
+        "geometry": [
+          {
+            "x": "3562986",
+            "y": "3302000"
+          },
+          {
+            "cx": "152400",
+            "cy": "381000"
+          }
+        ]
+      },
+      {
+        "id": "102",
+        "name": "Conditioning colon",
+        "text": ":",
+        "geometry": [
+          {
+            "x": "9716136",
+            "y": "3302000"
+          },
+          {
+            "cx": "152400",
+            "cy": "381000"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "physical": 20,
+    "path": "ppt/slides/slide36.xml",
+    "sid": "298",
+    "rid": "rIdNullspace2Part1",
+    "hidden": false,
+    "shapes": [
+      {
+        "id": "1",
+        "name": "",
+        "text": "",
+        "geometry": []
+      },
+      {
+        "id": "2",
+        "name": "Slide title",
+        "text": "Disturbance demonstration",
+        "geometry": [
+          {
+            "x": "475488",
+            "y": "237744"
+          },
+          {
+            "cx": "7680960",
+            "cy": "361637"
+          }
+        ]
+      },
+      {
+        "id": "4",
+        "name": "Picture 3",
+        "text": "",
+        "geometry": [
+          {
+            "x": "256032",
+            "y": "6382512"
+          },
+          {
+            "cx": "502920",
+            "cy": "258989"
+          }
+        ]
+      },
+      {
+        "id": "5",
+        "name": "TextBox 4",
+        "text": "Design and Implementation of a Real-Time Impedance Controller for a 7-DOF Collaborative Robot",
+        "geometry": [
+          {
+            "x": "841248",
+            "y": "6364224"
+          },
+          {
+            "cx": "4297680",
+            "cy": "146304"
+          }
+        ]
+      },
+      {
+        "id": "6",
+        "name": "TextBox 5",
+        "text": "Master Thesis \u00b7 Heykel Khadhraoui",
+        "geometry": [
+          {
+            "x": "841248",
+            "y": "6492240"
+          },
+          {
+            "cx": "2926080",
+            "cy": "137160"
+          }
+        ]
+      },
+      {
+        "id": "7",
+        "name": "TextBox 6",
+        "text": "19",
+        "geometry": [
+          {
+            "x": "11577683",
+            "y": "6419088"
+          },
+          {
+            "cx": "126637",
+            "cy": "123111"
+          }
+        ]
+      },
+      {
+        "id": "21",
+        "name": "Continuous title rule",
+        "text": "",
+        "geometry": [
+          {
+            "x": "475488",
+            "y": "610819"
+          },
+          {
+            "cx": "11228832",
+            "cy": "12700"
+          }
+        ]
+      },
+      {
+        "id": "22",
+        "name": "Nullspace2 part 1 video",
+        "text": "",
+        "geometry": [
+          {
+            "x": "3587750",
+            "y": "800100"
+          },
+          {
+            "cx": "5016500",
+            "cy": "5016500"
+          }
+        ]
+      },
+      {
+        "id": "23",
+        "name": "Nullspace2 label",
+        "text": "Without null-space control \u2192 Damping only",
+        "geometry": [
+          {
+            "x": "3048000",
+            "y": "5981700"
+          },
+          {
+            "cx": "6096000",
+            "cy": "355600"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "physical": 21,
+    "path": "ppt/slides/slide37.xml",
+    "sid": "299",
+    "rid": "rIdNullspace2Part2",
+    "hidden": false,
+    "shapes": [
+      {
+        "id": "1",
+        "name": "",
+        "text": "",
+        "geometry": []
+      },
+      {
+        "id": "2",
+        "name": "Slide title",
+        "text": "Disturbance demonstration",
+        "geometry": [
+          {
+            "x": "475488",
+            "y": "237744"
+          },
+          {
+            "cx": "7680960",
+            "cy": "361637"
+          }
+        ]
+      },
+      {
+        "id": "4",
+        "name": "Picture 3",
+        "text": "",
+        "geometry": [
+          {
+            "x": "256032",
+            "y": "6382512"
+          },
+          {
+            "cx": "502920",
+            "cy": "258989"
+          }
+        ]
+      },
+      {
+        "id": "5",
+        "name": "TextBox 4",
+        "text": "Design and Implementation of a Real-Time Impedance Controller for a 7-DOF Collaborative Robot",
+        "geometry": [
+          {
+            "x": "841248",
+            "y": "6364224"
+          },
+          {
+            "cx": "4297680",
+            "cy": "146304"
+          }
+        ]
+      },
+      {
+        "id": "6",
+        "name": "TextBox 5",
+        "text": "Master Thesis \u00b7 Heykel Khadhraoui",
+        "geometry": [
+          {
+            "x": "841248",
+            "y": "6492240"
+          },
+          {
+            "cx": "2926080",
+            "cy": "137160"
+          }
+        ]
+      },
+      {
+        "id": "7",
+        "name": "TextBox 6",
+        "text": "20",
+        "geometry": [
+          {
+            "x": "11577683",
+            "y": "6419088"
+          },
+          {
+            "cx": "126637",
+            "cy": "123111"
+          }
+        ]
+      },
+      {
+        "id": "21",
+        "name": "Continuous title rule",
+        "text": "",
+        "geometry": [
+          {
+            "x": "475488",
+            "y": "610819"
+          },
+          {
+            "cx": "11228832",
+            "cy": "12700"
+          }
+        ]
+      },
+      {
+        "id": "22",
+        "name": "Nullspace2 part 2 video",
+        "text": "",
+        "geometry": [
+          {
+            "x": "3587750",
+            "y": "800100"
+          },
+          {
+            "cx": "5016500",
+            "cy": "5016500"
+          }
+        ]
+      },
+      {
+        "id": "23",
+        "name": "Nullspace2 label",
+        "text": "Conditioning only",
+        "geometry": [
+          {
+            "x": "3048000",
+            "y": "5981700"
+          },
+          {
+            "cx": "6096000",
+            "cy": "355600"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "physical": 22,
+    "path": "ppt/slides/slide13.xml",
+    "sid": "285",
+    "rid": "rId14",
+    "hidden": false,
+    "shapes": [
+      {
+        "id": "1",
+        "name": "",
+        "text": "",
+        "geometry": []
+      },
+      {
+        "id": "2",
+        "name": "Slide title",
+        "text": "Null-space experiment",
+        "geometry": [
+          {
+            "x": "475488",
+            "y": "237744"
+          },
+          {
+            "cx": "7680960",
+            "cy": "361637"
+          }
+        ]
+      },
+      {
+        "id": "4",
+        "name": "Picture 3",
+        "text": "",
+        "geometry": [
+          {
+            "x": "256032",
+            "y": "6382512"
+          },
+          {
+            "cx": "502920",
+            "cy": "258989"
+          }
+        ]
+      },
+      {
+        "id": "5",
+        "name": "TextBox 4",
+        "text": "Design and Implementation of a Real-Time Impedance Controller for a 7-DOF Collaborative Robot",
+        "geometry": [
+          {
+            "x": "841248",
+            "y": "6364224"
+          },
+          {
+            "cx": "4297680",
+            "cy": "146304"
+          }
+        ]
+      },
+      {
+        "id": "6",
+        "name": "TextBox 5",
+        "text": "Master Thesis \u00b7 Heykel Khadhraoui",
+        "geometry": [
+          {
+            "x": "841248",
+            "y": "6492240"
+          },
+          {
+            "cx": "2926080",
+            "cy": "137160"
+          }
+        ]
+      },
+      {
+        "id": "7",
+        "name": "TextBox 6",
+        "text": "21",
+        "geometry": [
+          {
+            "x": "11525250",
+            "y": "6419088"
+          },
+          {
+            "cx": "180340",
+            "cy": "123111"
+          }
+        ]
+      },
+      {
+        "id": "24",
+        "name": "Continuous title rule",
+        "text": "",
+        "geometry": [
+          {
+            "x": "475488",
+            "y": "610819"
+          },
+          {
+            "cx": "11228832",
+            "cy": "12700"
+          }
+        ]
+      },
+      {
+        "id": "3",
+        "name": "Disturbance heading",
+        "text": "Cartesian pose hold with commanded disturbance",
+        "geometry": [
+          {
+            "x": "508000",
+            "y": "1092200"
+          },
+          {
+            "cx": "10922000",
+            "cy": "419100"
+          }
+        ]
+      },
+      {
+        "id": "26",
+        "name": "Equation - null_experiment_disturbance",
+        "text": "",
+        "geometry": [
+          {
+            "x": "2140458",
+            "y": "2578100"
+          },
+          {
+            "cx": "2301693",
+            "cy": "427041"
+          }
+        ]
+      },
+      {
+        "id": "28",
+        "name": "Disturbance description",
+        "text": "Joint-torque equivalent of a virtual | 20 N point force on link 3.",
+        "geometry": [
+          {
+            "x": "6477000",
+            "y": "2565400"
+          },
+          {
+            "cx": "4953000",
+            "cy": "800100"
+          }
+        ]
+      },
+      {
+        "id": "29",
+        "name": "Task description",
+        "text": "Hold the captured position and orientation.",
+        "geometry": [
+          {
+            "x": "762000",
+            "y": "1727200"
+          },
+          {
+            "cx": "10668000",
+            "cy": "431800"
+          }
+        ]
+      },
+      {
+        "id": "30",
+        "name": "Settings heading",
+        "text": "Four conditions with three trials each",
+        "geometry": [
+          {
+            "x": "508000",
+            "y": "4013200"
+          },
+          {
+            "cx": "10922000",
+            "cy": "419100"
+          }
+        ]
+      },
+      {
+        "id": "31",
+        "name": "Setting no torque",
+        "text": "Disturbance without | null-space control torque",
+        "geometry": [
+          {
+            "x": "762000",
+            "y": "4635500"
+          },
+          {
+            "cx": "4953000",
+            "cy": "736600"
+          }
+        ]
+      },
+      {
+        "id": "32",
+        "name": "Setting damping",
+        "text": "Damping:  | d | null |  = 2 N m s/rad",
+        "geometry": [
+          {
+            "x": "762000",
+            "y": "5524500"
+          },
+          {
+            "cx": "4953000",
+            "cy": "431800"
+          }
+        ]
+      },
+      {
+        "id": "33",
+        "name": "Setting conditioning",
+        "text": "Conditioning:  | k | \u03c3 |  = 2 N m",
+        "geometry": [
+          {
+            "x": "6477000",
+            "y": "4635500"
+          },
+          {
+            "cx": "4953000",
+            "cy": "431800"
+          }
+        ]
+      },
+      {
+        "id": "34",
+        "name": "Setting combined",
+        "text": "Combined: conditioning + damping | k | \u03c3 |  = 2 N m and  | d | null |  = 2 N m s/rad",
+        "geometry": [
+          {
+            "x": "6477000",
+            "y": "5524500"
+          },
+          {
+            "cx": "4953000",
+            "cy": "762000"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "physical": 23,
+    "path": "ppt/slides/slide31.xml",
+    "sid": "294",
+    "rid": "rIdNarrative1",
+    "hidden": false,
+    "shapes": [
+      {
+        "id": "1",
+        "name": "",
+        "text": "",
+        "geometry": []
+      },
+      {
+        "id": "2",
+        "name": "Slide title",
+        "text": "Cumulative joint motion",
+        "geometry": [
+          {
+            "x": "475488",
+            "y": "237744"
+          },
+          {
+            "cx": "7680960",
+            "cy": "361637"
+          }
+        ]
+      },
+      {
+        "id": "4",
+        "name": "Picture 3",
+        "text": "",
+        "geometry": [
+          {
+            "x": "256032",
+            "y": "6382512"
+          },
+          {
+            "cx": "502920",
+            "cy": "258989"
+          }
+        ]
+      },
+      {
+        "id": "5",
+        "name": "TextBox 4",
+        "text": "Design and Implementation of a Real-Time Impedance Controller for a 7-DOF Collaborative Robot",
+        "geometry": [
+          {
+            "x": "841248",
+            "y": "6364224"
+          },
+          {
+            "cx": "4297680",
+            "cy": "146304"
+          }
+        ]
+      },
+      {
+        "id": "6",
+        "name": "TextBox 5",
+        "text": "Master Thesis \u00b7 Heykel Khadhraoui",
+        "geometry": [
+          {
+            "x": "841248",
+            "y": "6492240"
+          },
+          {
+            "cx": "2926080",
+            "cy": "137160"
+          }
+        ]
+      },
+      {
+        "id": "7",
+        "name": "TextBox 6",
+        "text": "22",
+        "geometry": [
+          {
+            "x": "11525250",
+            "y": "6419088"
+          },
+          {
+            "cx": "180340",
+            "cy": "123111"
+          }
+        ]
+      },
+      {
+        "id": "20",
+        "name": "Continuous title rule",
+        "text": "",
+        "geometry": [
+          {
+            "x": "475488",
+            "y": "610819"
+          },
+          {
+            "cx": "11228832",
+            "cy": "12700"
+          }
+        ]
+      },
+      {
+        "id": "11",
+        "name": "Figure - nullspace_cumulative_main",
+        "text": "",
+        "geometry": [
+          {
+            "x": "1270000",
+            "y": "787400"
+          },
+          {
+            "cx": "9652000",
+            "cy": "4504267"
+          }
+        ]
+      },
+      {
+        "id": "13",
+        "name": "Null-space finding 1",
+        "text": "Damping alone reduced cumulative motion by 25.1% compared with no torque.",
+        "geometry": [
+          {
+            "x": "863600",
+            "y": "5397500"
+          },
+          {
+            "cx": "10477500",
+            "cy": "406400"
+          }
+        ]
+      },
+      {
+        "id": "14",
+        "name": "Null-space finding 2",
+        "text": "At 2 N m, adding damping to conditioning reduced cumulative motion by 50.7%.",
+        "geometry": [
+          {
+            "x": "863600",
+            "y": "5905500"
+          },
+          {
+            "cx": "10477500",
+            "cy": "406400"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "physical": 24,
+    "path": "ppt/slides/slide32.xml",
+    "sid": "295",
+    "rid": "rIdNarrative2",
+    "hidden": false,
+    "shapes": [
+      {
+        "id": "1",
+        "name": "",
+        "text": "",
+        "geometry": []
+      },
+      {
+        "id": "2",
+        "name": "Slide title",
+        "text": "Jacobian conditioning",
+        "geometry": [
+          {
+            "x": "475488",
+            "y": "237744"
+          },
+          {
+            "cx": "7680960",
+            "cy": "361637"
+          }
+        ]
+      },
+      {
+        "id": "4",
+        "name": "Picture 3",
+        "text": "",
+        "geometry": [
+          {
+            "x": "256032",
+            "y": "6382512"
+          },
+          {
+            "cx": "502920",
+            "cy": "258989"
+          }
+        ]
+      },
+      {
+        "id": "5",
+        "name": "TextBox 4",
+        "text": "Design and Implementation of a Real-Time Impedance Controller for a 7-DOF Collaborative Robot",
+        "geometry": [
+          {
+            "x": "841248",
+            "y": "6364224"
+          },
+          {
+            "cx": "4297680",
+            "cy": "146304"
+          }
+        ]
+      },
+      {
+        "id": "6",
+        "name": "TextBox 5",
+        "text": "Master Thesis \u00b7 Heykel Khadhraoui",
+        "geometry": [
+          {
+            "x": "841248",
+            "y": "6492240"
+          },
+          {
+            "cx": "2926080",
+            "cy": "137160"
+          }
+        ]
+      },
+      {
+        "id": "7",
+        "name": "TextBox 6",
+        "text": "23",
+        "geometry": [
+          {
+            "x": "11430000",
+            "y": "6419088"
+          },
+          {
+            "cx": "275590",
+            "cy": "123111"
+          }
+        ]
+      },
+      {
+        "id": "33",
+        "name": "Continuous title rule",
+        "text": "",
+        "geometry": [
+          {
+            "x": "475488",
+            "y": "610819"
+          },
+          {
+            "cx": "11228832",
+            "cy": "12700"
+          }
+        ]
+      },
+      {
+        "id": "8",
+        "name": "Figure - nullspace_conditioning_main",
+        "text": "",
+        "geometry": [
+          {
+            "x": "1270000",
+            "y": "787400"
+          },
+          {
+            "cx": "9652000",
+            "cy": "4504267"
+          }
+        ]
+      },
+      {
+        "id": "9",
+        "name": "Null-space finding 1",
+        "text": "The indicator decreased with no torque and damping alone.",
+        "geometry": [
+          {
+            "x": "863600",
+            "y": "5397500"
+          },
+          {
+            "cx": "10477500",
+            "cy": "406400"
+          }
+        ]
+      },
+      {
+        "id": "10",
+        "name": "Null-space finding 2",
+        "text": "Conditioning and combined control kept the indicator nearly constant.",
+        "geometry": [
+          {
+            "x": "863600",
+            "y": "5905500"
+          },
+          {
+            "cx": "10477500",
+            "cy": "406400"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "physical": 25,
+    "path": "ppt/slides/slide33.xml",
+    "sid": "296",
+    "rid": "rIdNarrative3",
+    "hidden": false,
+    "shapes": [
+      {
+        "id": "1",
+        "name": "",
+        "text": "",
+        "geometry": []
+      },
+      {
+        "id": "2",
+        "name": "Slide title",
+        "text": "Joint motion over time",
+        "geometry": [
+          {
+            "x": "475488",
+            "y": "237744"
+          },
+          {
+            "cx": "7680960",
+            "cy": "361637"
+          }
+        ]
+      },
+      {
+        "id": "4",
+        "name": "Picture 3",
+        "text": "",
+        "geometry": [
+          {
+            "x": "256032",
+            "y": "6382512"
+          },
+          {
+            "cx": "502920",
+            "cy": "258989"
+          }
+        ]
+      },
+      {
+        "id": "5",
+        "name": "TextBox 4",
+        "text": "Design and Implementation of a Real-Time Impedance Controller for a 7-DOF Collaborative Robot",
+        "geometry": [
+          {
+            "x": "841248",
+            "y": "6364224"
+          },
+          {
+            "cx": "4297680",
+            "cy": "146304"
+          }
+        ]
+      },
+      {
+        "id": "6",
+        "name": "TextBox 5",
+        "text": "Master Thesis \u00b7 Heykel Khadhraoui",
+        "geometry": [
+          {
+            "x": "841248",
+            "y": "6492240"
+          },
+          {
+            "cx": "2926080",
+            "cy": "137160"
+          }
+        ]
+      },
+      {
+        "id": "7",
+        "name": "TextBox 6",
+        "text": "24",
+        "geometry": [
+          {
+            "x": "11430000",
+            "y": "6419088"
+          },
+          {
+            "cx": "275590",
+            "cy": "123111"
+          }
+        ]
+      },
+      {
+        "id": "20",
+        "name": "Continuous title rule",
+        "text": "",
+        "geometry": [
+          {
+            "x": "475488",
+            "y": "610819"
+          },
+          {
+            "cx": "11228832",
+            "cy": "12700"
+          }
+        ]
+      },
+      {
+        "id": "11",
+        "name": "Figure - joint_motion_mean_main",
+        "text": "",
+        "geometry": [
+          {
+            "x": "1397000",
+            "y": "660400"
+          },
+          {
+            "cx": "9398000",
+            "cy": "4699000"
+          }
+        ]
+      },
+      {
+        "id": "13",
+        "name": "Null-space finding 1",
+        "text": "Conditioning at 2 N m shows repeated joint-motion reversals.",
+        "geometry": [
+          {
+            "x": "863600",
+            "y": "5397500"
+          },
+          {
+            "cx": "10477500",
+            "cy": "406400"
+          }
+        ]
+      },
+      {
+        "id": "14",
+        "name": "Null-space finding 2",
+        "text": "Adding damping reduces total motion, while reversals remain.",
+        "geometry": [
+          {
+            "x": "863600",
+            "y": "5905500"
+          },
+          {
+            "cx": "10477500",
+            "cy": "406400"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "physical": 26,
+    "path": "ppt/slides/slide24.xml",
+    "sid": "270",
+    "rid": "rId25",
+    "hidden": false,
+    "shapes": [
+      {
+        "id": "1",
+        "name": "",
+        "text": "",
+        "geometry": []
+      },
+      {
+        "id": "2",
+        "name": "Slide title",
+        "text": "Conclusion",
+        "geometry": [
+          {
+            "x": "475488",
+            "y": "237744"
+          },
+          {
+            "cx": "7680960",
+            "cy": "361637"
+          }
+        ]
+      },
+      {
+        "id": "4",
+        "name": "Picture 3",
+        "text": "",
+        "geometry": [
+          {
+            "x": "256032",
+            "y": "6382512"
+          },
+          {
+            "cx": "502920",
+            "cy": "258989"
+          }
+        ]
+      },
+      {
+        "id": "5",
+        "name": "TextBox 4",
+        "text": "Design and Implementation of a Real-Time Impedance Controller for a 7-DOF Collaborative Robot",
+        "geometry": [
+          {
+            "x": "841248",
+            "y": "6364224"
+          },
+          {
+            "cx": "4297680",
+            "cy": "146304"
+          }
+        ]
+      },
+      {
+        "id": "6",
+        "name": "TextBox 5",
+        "text": "Master Thesis \u00b7 Heykel Khadhraoui",
+        "geometry": [
+          {
+            "x": "841248",
+            "y": "6492240"
+          },
+          {
+            "cx": "2926080",
+            "cy": "137160"
+          }
+        ]
+      },
+      {
+        "id": "7",
+        "name": "TextBox 6",
+        "text": "25",
+        "geometry": [
+          {
+            "x": "11430000",
+            "y": "6419088"
+          },
+          {
+            "cx": "275590",
+            "cy": "123111"
+          }
+        ]
+      },
+      {
+        "id": "22",
+        "name": "Continuous title rule",
+        "text": "",
+        "geometry": [
+          {
+            "x": "475488",
+            "y": "610819"
+          },
+          {
+            "cx": "11228832",
+            "cy": "12700"
+          }
+        ]
+      },
+      {
+        "id": "8",
+        "name": "Conclusion alignment",
+        "text": "Compliant rotation allowed contact moments to reduce angular error",
+        "geometry": [
+          {
+            "x": "914400",
+            "y": "1054100"
+          },
+          {
+            "cx": "10604500",
+            "cy": "431800"
+          }
+        ]
+      },
+      {
+        "id": "10",
+        "name": "Conclusion stiffness",
+        "text": "Higher rotational stiffness left a larger angular error",
+        "geometry": [
+          {
+            "x": "914400",
+            "y": "1689100"
+          },
+          {
+            "cx": "10604500",
+            "cy": "431800"
+          }
+        ]
+      },
+      {
+        "id": "12",
+        "name": "Conclusion CoC",
+        "text": "The CoC could support or oppose the contact moment",
+        "geometry": [
+          {
+            "x": "914400",
+            "y": "2324100"
+          },
+          {
+            "cx": "10604500",
+            "cy": "431800"
+          }
+        ]
+      },
+      {
+        "id": "13",
+        "name": "Future work heading",
+        "text": "Future work",
+        "geometry": [
+          {
+            "x": "660400",
+            "y": "3771900"
+          },
+          {
+            "cx": "10858500",
+            "cy": "431800"
+          }
+        ]
+      },
+      {
+        "id": "15",
+        "name": "Future CoC",
+        "text": "Use a more rigid tool mount for better measurements",
+        "geometry": [
+          {
+            "x": "914400",
+            "y": "4292600"
+          },
+          {
+            "cx": "10604500",
+            "cy": "431800"
+          }
+        ]
+      },
+      {
+        "id": "18",
+        "name": "Future return",
+        "text": "Adapt the CoC to support the contact moment, | then return it to the TCP after alignment",
+        "geometry": [
+          {
+            "x": "914400",
+            "y": "4800600"
+          },
+          {
+            "cx": "10604500",
+            "cy": "838200"
+          }
+        ]
+      },
+      {
+        "id": "24",
+        "name": "Conclusion null-space",
+        "text": "Null-space control reduced redundant motion under disturbance",
+        "geometry": [
+          {
+            "x": "914400",
+            "y": "2959100"
+          },
+          {
+            "cx": "10604500",
+            "cy": "431800"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "physical": 27,
+    "path": "ppt/slides/slide39.xml",
+    "sid": "301",
+    "rid": "rIdContactVideo2",
+    "hidden": true,
+    "shapes": [
+      {
+        "id": "1",
+        "name": "",
+        "text": "",
+        "geometry": []
+      },
+      {
+        "id": "2",
+        "name": "Slide title",
+        "text": "Opposing moment",
+        "geometry": [
+          {
+            "x": "475488",
+            "y": "237744"
+          },
+          {
+            "cx": "7680960",
+            "cy": "361637"
+          }
+        ]
+      },
+      {
+        "id": "4",
+        "name": "Picture 3",
+        "text": "",
+        "geometry": [
+          {
+            "x": "256032",
+            "y": "6382512"
+          },
+          {
+            "cx": "502920",
+            "cy": "258989"
+          }
+        ]
+      },
+      {
+        "id": "5",
+        "name": "TextBox 4",
+        "text": "Design and Implementation of a Real-Time Impedance Controller for a 7-DOF Collaborative Robot",
+        "geometry": [
+          {
+            "x": "841248",
+            "y": "6364224"
+          },
+          {
+            "cx": "4297680",
+            "cy": "146304"
+          }
+        ]
+      },
+      {
+        "id": "6",
+        "name": "TextBox 5",
+        "text": "Master Thesis \u00b7 Heykel Khadhraoui",
+        "geometry": [
+          {
+            "x": "841248",
+            "y": "6492240"
+          },
+          {
+            "cx": "2926080",
+            "cy": "137160"
+          }
+        ]
+      },
+      {
+        "id": "7",
+        "name": "TextBox 6",
+        "text": "B1",
+        "geometry": [
+          {
+            "x": "11430000",
+            "y": "6419088"
+          },
+          {
+            "cx": "274320",
+            "cy": "123111"
+          }
+        ]
+      },
+      {
+        "id": "21",
+        "name": "Continuous title rule",
+        "text": "",
+        "geometry": [
+          {
+            "x": "475488",
+            "y": "610819"
+          },
+          {
+            "cx": "11228832",
+            "cy": "12700"
+          }
+        ]
+      },
+      {
+        "id": "22",
+        "name": "Opposing moment video",
+        "text": "",
+        "geometry": [
+          {
+            "x": "3429000",
+            "y": "825500"
+          },
+          {
+            "cx": "5334000",
+            "cy": "5334000"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "physical": 28,
+    "path": "ppt/slides/slide25.xml",
+    "sid": "289",
+    "rid": "rId26",
+    "hidden": true,
+    "shapes": [
+      {
+        "id": "1",
+        "name": "",
+        "text": "",
+        "geometry": []
+      },
+      {
+        "id": "2",
+        "name": "Slide title",
+        "text": "Null-space torques and projector",
+        "geometry": [
+          {
+            "x": "475488",
+            "y": "237744"
+          },
+          {
+            "cx": "7680960",
+            "cy": "361637"
+          }
+        ]
+      },
+      {
+        "id": "4",
+        "name": "Picture 3",
+        "text": "",
+        "geometry": [
+          {
+            "x": "256032",
+            "y": "6382512"
+          },
+          {
+            "cx": "502920",
+            "cy": "258989"
+          }
+        ]
+      },
+      {
+        "id": "5",
+        "name": "TextBox 4",
+        "text": "Design and Implementation of a Real-Time Impedance Controller for a 7-DOF Collaborative Robot",
+        "geometry": [
+          {
+            "x": "841248",
+            "y": "6364224"
+          },
+          {
+            "cx": "4297680",
+            "cy": "146304"
+          }
+        ]
+      },
+      {
+        "id": "6",
+        "name": "TextBox 5",
+        "text": "Master Thesis \u00b7 Heykel Khadhraoui",
+        "geometry": [
+          {
+            "x": "841248",
+            "y": "6492240"
+          },
+          {
+            "cx": "2926080",
+            "cy": "137160"
+          }
+        ]
+      },
+      {
+        "id": "7",
+        "name": "TextBox 6",
+        "text": "B2",
+        "geometry": [
+          {
+            "x": "11577682",
+            "y": "6419088"
+          },
+          {
+            "cx": "126637",
+            "cy": "123111"
+          }
+        ]
+      },
+      {
+        "id": "27",
+        "name": "Continuous title rule",
+        "text": "",
+        "geometry": [
+          {
+            "x": "475488",
+            "y": "610819"
+          },
+          {
+            "cx": "11228832",
+            "cy": "12700"
+          }
+        ]
+      },
+      {
+        "id": "100",
+        "name": "Null-space projector heading",
+        "text": "Null-space projector",
+        "geometry": [
+          {
+            "x": "762000",
+            "y": "1066800"
+          },
+          {
+            "cx": "10668000",
+            "cy": "381000"
+          }
+        ]
+      },
+      {
+        "id": "101",
+        "name": "Equation - null_controller_projector",
+        "text": "",
+        "geometry": [
+          {
+            "x": "1016000",
+            "y": "1605069"
+          },
+          {
+            "cx": "4527016",
+            "cy": "400233"
+          }
+        ]
+      },
+      {
+        "id": "102",
+        "name": "Projector role",
+        "text": "Projects secondary joint torques into the kinematic null space.",
+        "geometry": [
+          {
+            "x": "1016000",
+            "y": "2159000"
+          },
+          {
+            "cx": "10414000",
+            "cy": "381000"
+          }
+        ]
+      },
+      {
+        "id": "103",
+        "name": "Jacobian definition",
+        "text": "J | : joint \u2192 (EE) velocities",
+        "geometry": [
+          {
+            "x": "1016000",
+            "y": "2628900"
+          },
+          {
+            "cx": "2857500",
+            "cy": "317500"
+          }
+        ]
+      },
+      {
+        "id": "104",
+        "name": "Pseudoinverse definition",
+        "text": "J | + | : pseudoinverse",
+        "geometry": [
+          {
+            "x": "4445000",
+            "y": "2628900"
+          },
+          {
+            "cx": "2921000",
+            "cy": "317500"
+          }
+        ]
+      },
+      {
+        "id": "105",
+        "name": "Identity definition",
+        "text": "I | 7 | : 7 \u00d7 7 identity matrix",
+        "geometry": [
+          {
+            "x": "8001000",
+            "y": "2628900"
+          },
+          {
+            "cx": "3429000",
+            "cy": "317500"
+          }
+        ]
+      },
+      {
+        "id": "106",
+        "name": "Damping torque heading",
+        "text": "Damping torque",
+        "geometry": [
+          {
+            "x": "762000",
+            "y": "3263900"
+          },
+          {
+            "cx": "4953000",
+            "cy": "381000"
+          }
+        ]
+      },
+      {
+        "id": "107",
+        "name": "Conditioning torque heading",
+        "text": "Conditioning torque",
+        "geometry": [
+          {
+            "x": "6477000",
+            "y": "3263900"
+          },
+          {
+            "cx": "4953000",
+            "cy": "381000"
+          }
+        ]
+      },
+      {
+        "id": "108",
+        "name": "Equation - null_controller_damping",
+        "text": "",
+        "geometry": [
+          {
+            "x": "1016000",
+            "y": "3814148"
+          },
+          {
+            "cx": "2064532",
+            "cy": "343058"
+          }
+        ]
+      },
+      {
+        "id": "109",
+        "name": "Equation - null_controller_conditioning",
+        "text": "",
+        "geometry": [
+          {
+            "x": "6731000",
+            "y": "3814634"
+          },
+          {
+            "cx": "2250201",
+            "cy": "372993"
+          }
+        ]
+      },
+      {
+        "id": "110",
+        "name": "Damping role",
+        "text": "Opposes redundant joint velocity. | Zero at zero joint velocity.",
+        "geometry": [
+          {
+            "x": "1016000",
+            "y": "4381500"
+          },
+          {
+            "cx": "4699000",
+            "cy": "609600"
+          }
+        ]
+      },
+      {
+        "id": "111",
+        "name": "Conditioning role",
+        "text": "Seeks better local conditioning. | Can act at zero joint velocity.",
+        "geometry": [
+          {
+            "x": "6731000",
+            "y": "4381500"
+          },
+          {
+            "cx": "4699000",
+            "cy": "609600"
+          }
+        ]
+      },
+      {
+        "id": "112",
+        "name": "Damping coefficient",
+        "text": "d | null | : damping coefficient [N m s/rad]",
+        "geometry": [
+          {
+            "x": "1016000",
+            "y": "5219700"
+          },
+          {
+            "cx": "4953000",
+            "cy": "317500"
+          }
+        ]
+      },
+      {
+        "id": "113",
+        "name": "Measured joint velocity",
+        "text": "q\u0307 | : measured joint velocity",
+        "geometry": [
+          {
+            "x": "1016000",
+            "y": "5600700"
+          },
+          {
+            "cx": "4953000",
+            "cy": "317500"
+          }
+        ]
+      },
+      {
+        "id": "114",
+        "name": "Conditioning magnitude",
+        "text": "k | \u03c3 | : torque magnitude [N m]",
+        "geometry": [
+          {
+            "x": "6731000",
+            "y": "5143500"
+          },
+          {
+            "cx": "4953000",
+            "cy": "317500"
+          }
+        ]
+      },
+      {
+        "id": "115",
+        "name": "Null-space direction",
+        "text": "v | 7 | : unit null-space direction",
+        "geometry": [
+          {
+            "x": "6731000",
+            "y": "5461000"
+          },
+          {
+            "cx": "4953000",
+            "cy": "317500"
+          }
+        ]
+      },
+      {
+        "id": "116",
+        "name": "Direction selector",
+        "text": "s | \u03c3 | : direction choice, zero in deadband",
+        "geometry": [
+          {
+            "x": "6731000",
+            "y": "5778500"
+          },
+          {
+            "cx": "4953000",
+            "cy": "317500"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "physical": 29,
+    "path": "ppt/slides/slide12.xml",
+    "sid": "263",
+    "rid": "rId13",
+    "hidden": true,
+    "shapes": [
+      {
+        "id": "1",
+        "name": "",
+        "text": "",
+        "geometry": []
+      },
+      {
+        "id": "2",
+        "name": "Slide title",
+        "text": "Angular quantities",
+        "geometry": [
+          {
+            "x": "475488",
+            "y": "237744"
+          },
+          {
+            "cx": "7680960",
+            "cy": "361637"
+          }
+        ]
+      },
+      {
+        "id": "4",
+        "name": "Picture 3",
+        "text": "",
+        "geometry": [
+          {
+            "x": "256032",
+            "y": "6382512"
+          },
+          {
+            "cx": "502920",
+            "cy": "258989"
+          }
+        ]
+      },
+      {
+        "id": "5",
+        "name": "TextBox 4",
+        "text": "Design and Implementation of a Real-Time Impedance Controller for a 7-DOF Collaborative Robot",
+        "geometry": [
+          {
+            "x": "841248",
+            "y": "6364224"
+          },
+          {
+            "cx": "4297680",
+            "cy": "146304"
+          }
+        ]
+      },
+      {
+        "id": "6",
+        "name": "TextBox 5",
+        "text": "Master Thesis \u00b7 Heykel Khadhraoui",
+        "geometry": [
+          {
+            "x": "841248",
+            "y": "6492240"
+          },
+          {
+            "cx": "2926080",
+            "cy": "137160"
+          }
+        ]
+      },
+      {
+        "id": "7",
+        "name": "TextBox 6",
+        "text": "B3",
+        "geometry": [
+          {
+            "x": "11525250",
+            "y": "6419088"
+          },
+          {
+            "cx": "180340",
+            "cy": "123111"
+          }
+        ]
+      },
+      {
+        "id": "20",
+        "name": "Continuous title rule",
+        "text": "",
+        "geometry": [
+          {
+            "x": "475488",
+            "y": "610819"
+          },
+          {
+            "cx": "11228832",
+            "cy": "12700"
+          }
+        ]
+      },
+      {
+        "id": "8",
+        "name": "Figure - angular_quantities",
+        "text": "",
+        "geometry": [
+          {
+            "x": "3510032",
+            "y": "2389922"
+          },
+          {
+            "cx": "5171936",
+            "cy": "2205157"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "physical": 30,
+    "path": "ppt/slides/slide17.xml",
+    "sid": "264",
+    "rid": "rId18",
+    "hidden": true,
+    "shapes": [
+      {
+        "id": "1",
+        "name": "",
+        "text": "",
+        "geometry": []
+      },
+      {
+        "id": "2",
+        "name": "Slide title",
+        "text": "Baseline angular error",
+        "geometry": [
+          {
+            "x": "475488",
+            "y": "237744"
+          },
+          {
+            "cx": "7680960",
+            "cy": "361637"
+          }
+        ]
+      },
+      {
+        "id": "4",
+        "name": "Picture 3",
+        "text": "",
+        "geometry": [
+          {
+            "x": "256032",
+            "y": "6382512"
+          },
+          {
+            "cx": "502920",
+            "cy": "258989"
+          }
+        ]
+      },
+      {
+        "id": "5",
+        "name": "TextBox 4",
+        "text": "Design and Implementation of a Real-Time Impedance Controller for a 7-DOF Collaborative Robot",
+        "geometry": [
+          {
+            "x": "841248",
+            "y": "6364224"
+          },
+          {
+            "cx": "4297680",
+            "cy": "146304"
+          }
+        ]
+      },
+      {
+        "id": "6",
+        "name": "TextBox 5",
+        "text": "Master Thesis \u00b7 Heykel Khadhraoui",
+        "geometry": [
+          {
+            "x": "841248",
+            "y": "6492240"
+          },
+          {
+            "cx": "2926080",
+            "cy": "137160"
+          }
+        ]
+      },
+      {
+        "id": "7",
+        "name": "TextBox 6",
+        "text": "B4",
+        "geometry": [
+          {
+            "x": "11525250",
+            "y": "6419088"
+          },
+          {
+            "cx": "180340",
+            "cy": "123111"
+          }
+        ]
+      },
+      {
+        "id": "12",
+        "name": "Continuous title rule",
+        "text": "",
+        "geometry": [
+          {
+            "x": "475488",
+            "y": "610819"
+          },
+          {
+            "cx": "11228832",
+            "cy": "12700"
+          }
+        ]
+      },
+      {
+        "id": "13",
+        "name": "Figure - baseline_response",
+        "text": "",
+        "geometry": [
+          {
+            "x": "2753846",
+            "y": "1110201"
+          },
+          {
+            "cx": "6684307",
+            "cy": "4764598"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "physical": 31,
+    "path": "ppt/slides/slide40.xml",
+    "sid": "302",
+    "rid": "rIdSurfaceEntryBackup",
+    "hidden": true,
+    "shapes": [
+      {
+        "id": "1",
+        "name": "",
+        "text": "",
+        "geometry": []
+      },
+      {
+        "id": "2",
+        "name": "Slide title",
+        "text": "Sources of angular offset",
+        "geometry": [
+          {
+            "x": "475488",
+            "y": "237744"
+          },
+          {
+            "cx": "7680960",
+            "cy": "361637"
+          }
+        ]
+      },
+      {
+        "id": "4",
+        "name": "Picture 3",
+        "text": "",
+        "geometry": [
+          {
+            "x": "256032",
+            "y": "6382512"
+          },
+          {
+            "cx": "502920",
+            "cy": "258989"
+          }
+        ]
+      },
+      {
+        "id": "5",
+        "name": "TextBox 4",
+        "text": "Design and Implementation of a Real-Time Impedance Controller for a 7-DOF Collaborative Robot",
+        "geometry": [
+          {
+            "x": "841248",
+            "y": "6364224"
+          },
+          {
+            "cx": "4297680",
+            "cy": "146304"
+          }
+        ]
+      },
+      {
+        "id": "6",
+        "name": "TextBox 5",
+        "text": "Master Thesis \u00b7 Heykel Khadhraoui",
+        "geometry": [
+          {
+            "x": "841248",
+            "y": "6492240"
+          },
+          {
+            "cx": "2926080",
+            "cy": "137160"
+          }
+        ]
+      },
+      {
+        "id": "7",
+        "name": "TextBox 6",
+        "text": "B5",
+        "geometry": [
+          {
+            "x": "11430000",
+            "y": "6419088"
+          },
+          {
+            "cx": "274320",
+            "cy": "123111"
+          }
+        ]
+      },
+      {
+        "id": "21",
+        "name": "Continuous title rule",
+        "text": "",
+        "geometry": [
+          {
+            "x": "475488",
+            "y": "610819"
+          },
+          {
+            "cx": "11228832",
+            "cy": "12700"
+          }
+        ]
+      },
+      {
+        "id": "22",
+        "name": "Surface entry concept",
+        "text": "",
+        "geometry": [
+          {
+            "x": "889000",
+            "y": "1787242"
+          },
+          {
+            "cx": "10414000",
+            "cy": "3410515"
+          }
+        ]
+      }
+    ]
+  }
+]

@@ -1,0 +1,212 @@
+[
+  {
+    "physical": 1,
+    "path": "ppt/slides/slide1.xml",
+    "sid": "256",
+    "rid": "rId2",
+    "title": "Master Thesis Presentation"
+  },
+  {
+    "physical": 2,
+    "path": "ppt/slides/slide2.xml",
+    "sid": "257",
+    "rid": "rId3",
+    "title": "Motivation"
+  },
+  {
+    "physical": 3,
+    "path": "ppt/slides/slide4.xml",
+    "sid": "258",
+    "rid": "rId5",
+    "title": "Overview"
+  },
+  {
+    "physical": 4,
+    "path": "ppt/slides/slide5.xml",
+    "sid": "288",
+    "rid": "rId6",
+    "title": "Cartesian pose"
+  },
+  {
+    "physical": 5,
+    "path": "ppt/slides/slide35.xml",
+    "sid": "297",
+    "rid": "rIdSurfaceFrameIntroduction",
+    "title": "Surface frame"
+  },
+  {
+    "physical": 6,
+    "path": "ppt/slides/slide6.xml",
+    "sid": "259",
+    "rid": "rId7",
+    "title": "Cartesian impedance controller"
+  },
+  {
+    "physical": 7,
+    "path": "ppt/slides/slide7.xml",
+    "sid": "277",
+    "rid": "rId8",
+    "title": "Real-time control"
+  },
+  {
+    "physical": 8,
+    "path": "ppt/slides/slide9.xml",
+    "sid": "261",
+    "rid": "rId10",
+    "title": "Centre of compliance (CoC)"
+  },
+  {
+    "physical": 9,
+    "path": "ppt/slides/slide8.xml",
+    "sid": "283",
+    "rid": "rId9",
+    "title": "Translation\u2013rotation coupling"
+  },
+  {
+    "physical": 10,
+    "path": "ppt/slides/slide11.xml",
+    "sid": "262",
+    "rid": "rId12",
+    "title": "Contact experiment"
+  },
+  {
+    "physical": 11,
+    "path": "ppt/slides/slide38.xml",
+    "sid": "300",
+    "rid": "rIdContactVideo1",
+    "title": "Plausibility experiment"
+  },
+  {
+    "physical": 12,
+    "path": "ppt/slides/slide14.xml",
+    "sid": "272",
+    "rid": "rId15",
+    "title": "Normal-force plausibility assessment"
+  },
+  {
+    "physical": 13,
+    "path": "ppt/slides/slide15.xml",
+    "sid": "273",
+    "rid": "rId16",
+    "title": "Moment plausibility assessment"
+  },
+  {
+    "physical": 14,
+    "path": "ppt/slides/slide16.xml",
+    "sid": "271",
+    "rid": "rId17",
+    "title": "Commanded and estimated wrench"
+  },
+  {
+    "physical": 15,
+    "path": "ppt/slides/slide18.xml",
+    "sid": "265",
+    "rid": "rId19",
+    "title": "Effect of rotational stiffness"
+  },
+  {
+    "physical": 16,
+    "path": "ppt/slides/slide19.xml",
+    "sid": "266",
+    "rid": "rId20",
+    "title": "Effect of CoC position"
+  },
+  {
+    "physical": 17,
+    "path": "ppt/slides/slide20.xml",
+    "sid": "267",
+    "rid": "rId21",
+    "title": "Angular error and interaction wrench"
+  },
+  {
+    "physical": 18,
+    "path": "ppt/slides/slide10.xml",
+    "sid": "284",
+    "rid": "rId11",
+    "title": "Null-space controller"
+  },
+  {
+    "physical": 19,
+    "path": "ppt/slides/slide36.xml",
+    "sid": "298",
+    "rid": "rIdNullspace2Part1",
+    "title": "Disturbance demonstration"
+  },
+  {
+    "physical": 20,
+    "path": "ppt/slides/slide37.xml",
+    "sid": "299",
+    "rid": "rIdNullspace2Part2",
+    "title": "Disturbance demonstration"
+  },
+  {
+    "physical": 21,
+    "path": "ppt/slides/slide13.xml",
+    "sid": "285",
+    "rid": "rId14",
+    "title": "Null-space experiment"
+  },
+  {
+    "physical": 22,
+    "path": "ppt/slides/slide31.xml",
+    "sid": "294",
+    "rid": "rIdNarrative1",
+    "title": "Cumulative joint motion"
+  },
+  {
+    "physical": 23,
+    "path": "ppt/slides/slide32.xml",
+    "sid": "295",
+    "rid": "rIdNarrative2",
+    "title": "Jacobian conditioning"
+  },
+  {
+    "physical": 24,
+    "path": "ppt/slides/slide33.xml",
+    "sid": "296",
+    "rid": "rIdNarrative3",
+    "title": "Joint motion over time"
+  },
+  {
+    "physical": 25,
+    "path": "ppt/slides/slide24.xml",
+    "sid": "270",
+    "rid": "rId25",
+    "title": "Conclusion"
+  },
+  {
+    "physical": 26,
+    "path": "ppt/slides/slide39.xml",
+    "sid": "301",
+    "rid": "rIdContactVideo2",
+    "title": "Opposing moment"
+  },
+  {
+    "physical": 27,
+    "path": "ppt/slides/slide25.xml",
+    "sid": "289",
+    "rid": "rId26",
+    "title": "Null-space torques and projector"
+  },
+  {
+    "physical": 28,
+    "path": "ppt/slides/slide12.xml",
+    "sid": "263",
+    "rid": "rId13",
+    "title": "Angular quantities"
+  },
+  {
+    "physical": 29,
+    "path": "ppt/slides/slide17.xml",
+    "sid": "264",
+    "rid": "rId18",
+    "title": "Baseline angular error"
+  },
+  {
+    "physical": 30,
+    "path": "ppt/slides/slide40.xml",
+    "sid": "302",
+    "rid": "rIdSurfaceEntryBackup",
+    "title": "Sources of angular offset"
+  }
+]

@@ -1,0 +1,37 @@
+{
+  "date": "2026-10-02",
+  "title": "Real-time control",
+  "physical_slide": 6,
+  "footer": 5,
+  "slide_count": 29,
+  "main_slides": 24,
+  "hidden_backups": 5,
+  "native_equations": 30,
+  "compact_xdot_EE_velocity_notation": true,
+  "geometric_linear_angular_velocity_identified": true,
+  "repeated_wrench_definition_removed": true,
+  "motor_torque_heading_and_two_colons": true,
+  "cartesian_torque_contribution_identified": true,
+  "control_diagram_and_cycle_statement_unchanged": true,
+  "other_28_native_equations_preserved": true,
+  "all_five_embedded_videos_unchanged": true,
+  "all_notes_unchanged": true,
+  "speaking_files_unchanged": true,
+  "supplementary_pdf_unchanged": true,
+  "equation_catalog_updated": true,
+  "pdf_pages": 29,
+  "changed_pdf_pages": [
+    6
+  ],
+  "other_28_pdf_pages_pixel_identical": true,
+  "changed_package_parts": [
+    "ppt/slides/slide7.xml"
+  ],
+  "native_powerpoint_rendered": true,
+  "pptx_sha256": "00544ee0c7aa744f7a249d45bc5e83cb402c7b5aaba97234e094858b762642d7",
+  "pdf_sha256": "cd2c47398522a345cc717d22f442f04359e2f54f4847111866e9c2cfb16b9c10",
+  "installed": true,
+  "native_powerpoint_visual_review_passed": true,
+  "final_pdf_visual_review_passed": true,
+  "equation_sources_and_assets_synchronized": true
+}

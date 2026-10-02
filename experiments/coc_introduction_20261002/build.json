@@ -1,0 +1,41 @@
+{
+  "intro_path": "ppt/slides/slide41.xml",
+  "new_note": "ppt/notesSlides/notesSlide41.xml",
+  "new_sid": "303",
+  "added_parts": [
+    "ppt/slides/slide41.xml",
+    "ppt/slides/_rels/slide41.xml.rels",
+    "ppt/media/coc_force_shift_general.png",
+    "ppt/notesSlides/notesSlide41.xml",
+    "ppt/notesSlides/_rels/notesSlide41.xml.rels"
+  ],
+  "changed_parts": [
+    "ppt/media/image24.png",
+    "ppt/presentation.xml",
+    "ppt/_rels/presentation.xml.rels",
+    "[Content_Types].xml",
+    "ppt/slides/slide9.xml",
+    "ppt/slides/slide8.xml",
+    "ppt/slides/slide11.xml",
+    "ppt/slides/slide38.xml",
+    "ppt/slides/slide14.xml",
+    "ppt/slides/slide15.xml",
+    "ppt/slides/slide16.xml",
+    "ppt/slides/slide18.xml",
+    "ppt/slides/slide19.xml",
+    "ppt/slides/slide20.xml",
+    "ppt/slides/slide10.xml",
+    "ppt/slides/slide36.xml",
+    "ppt/slides/slide37.xml",
+    "ppt/slides/slide13.xml",
+    "ppt/slides/slide31.xml",
+    "ppt/slides/slide32.xml",
+    "ppt/slides/slide33.xml",
+    "ppt/slides/slide24.xml",
+    "docProps/app.xml"
+  ],
+  "slide_count": 30,
+  "main_slides": 25,
+  "hidden_backups": 5,
+  "native_equations": 31
+}

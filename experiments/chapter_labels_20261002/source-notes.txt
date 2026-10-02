@@ -1,0 +1,1 @@
+Chapter names and boundaries copied from the six Overview chapters and native PowerPoint sections. User clarified that the chapter should be visible while advancing between existing slides. Add chapter labels only, no divider slides. All source slides, notes and media are preserved.

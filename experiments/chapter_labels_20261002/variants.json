@@ -1,0 +1,74 @@
+[
+  {
+    "chapter": 1,
+    "name": "Introduction",
+    "first": true,
+    "slide": 1
+  },
+  {
+    "chapter": 1,
+    "name": "Introduction",
+    "first": false,
+    "slide": 2
+  },
+  {
+    "chapter": 2,
+    "name": "Cartesian controller",
+    "first": true,
+    "slide": 3
+  },
+  {
+    "chapter": 2,
+    "name": "Cartesian controller",
+    "first": false,
+    "slide": 4
+  },
+  {
+    "chapter": 3,
+    "name": "Contact experiments",
+    "first": true,
+    "slide": 5
+  },
+  {
+    "chapter": 3,
+    "name": "Contact experiments",
+    "first": false,
+    "slide": 6
+  },
+  {
+    "chapter": 4,
+    "name": "Contact results",
+    "first": true,
+    "slide": 7
+  },
+  {
+    "chapter": 4,
+    "name": "Contact results",
+    "first": false,
+    "slide": 8
+  },
+  {
+    "chapter": 5,
+    "name": "Null-space control and experiments",
+    "first": true,
+    "slide": 9
+  },
+  {
+    "chapter": 5,
+    "name": "Null-space control and experiments",
+    "first": false,
+    "slide": 10
+  },
+  {
+    "chapter": 6,
+    "name": "Conclusion and future work",
+    "first": true,
+    "slide": 11
+  },
+  {
+    "chapter": 6,
+    "name": "Conclusion and future work",
+    "first": false,
+    "slide": 12
+  }
+]

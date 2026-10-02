@@ -1,0 +1,1 @@
+User requested combining physical slides 4 and 5. Reuse all three exact figures and all three native equations/symbols. Technical wording checked against MyOwn/chapters/02_theoretical_background.tex, lines 407-416 and 535-670: impedance evaluated in base frame, diagonal gains chosen in surface coordinates. No thesis changes. Retained notes and speaking files remain unchanged.
