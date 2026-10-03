@@ -59,10 +59,6 @@ def build():
  story=[]
  for page,group in enumerate(GROUPS,1):
   if page>1:story.append(PageBreak())
-  if page==1:
-   story.append(Paragraph('Read the black text aloud. Each bold opening links to the previous slide. Grey directions are not spoken. Slide numbers match the numbers printed at the bottom of the slides.',styles['intro']))
-   story.append(Paragraph(f'Main talk: about {times["100"]:.1f}-{times["90"]:.1f} minutes at 90-100 words per minute, including all four main-slide videos and 30 seconds for pauses. Pages 8-9 are only for questions.',styles['intro']))
-   story.append(Spacer(1,6))
   if page==8:
    story.append(Paragraph('Use only the relevant backup when answering a question. These six scripts are outside the 15-minute main talk. Each can be read on its own.',styles['intro']))
    story.append(Spacer(1,6))

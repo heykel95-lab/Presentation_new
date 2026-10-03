@@ -16,7 +16,7 @@ Slide 1 | Motivation
 
 First, let me explain why tool alignment matters.
 
-Grinding needs an aligned tool face. But calibration errors and joint friction can leave it tilted. My idea is to let the tool give way in rotation. Contact then creates a turning moment that helps alignment. This video shows the idea.
+Grinding needs an aligned tool face. In practice, the real surface angle is not known exactly. So the surface used in the controller may not match the real surface. Joint friction can also affect the tool orientation. The controller allows the tool to rotate during contact, helping it align with the surface. This video shows the idea.
 
 [Play video: about 51 seconds.]
 
@@ -104,7 +104,7 @@ Slide 8 | Supporting and opposing CoC shifts
 
 This shift can help alignment, but it can also work against it.
 
-On the left, the added moment supports alignment. On the right, it opposes alignment. So we must choose the shift direction to suit the starting tilt.
+On the left, the added moment supports alignment. On the right, it opposes alignment. The shift direction must match the starting angular offset.
 
 
 
@@ -128,7 +128,7 @@ Slide 10 | Contact experiment
 
 With the controller defined, I can now show the contact experiment.
 
-The robot turns the tool, approaches, makes contact, and grinds. Normal motion and tilt about the tangents can give way, allowing pressing and alignment. Motion along the surface and rotation about the normal stay stiff, limiting sliding and twisting.
+I deliberately start the tool with an angular offset. This represents the mismatch between the surface used in the controller and the real surface. The robot then approaches, makes contact, and grinds. Normal motion and rotations about the tangents give way. The other directions stay stiff.
 
 
 
@@ -192,19 +192,19 @@ Slide 15 | Effect of rotational stiffness
 
 To understand this turning motion, I first changed the rotational stiffness.
 
-The plot shows the remaining tilt relative to the calibrated surface. Closer to zero means better alignment in this direction. Higher stiffness leaves more error because it resists the turning motion from contact.
+The plot shows the remaining angular error relative to the calibrated surface. Closer to zero means better alignment in this direction. Higher stiffness leaves more error because it resists rotation during contact.
 
 
 
 
 
-Slide 16 | CoC shift and entry tilt
+Slide 16 | CoC shift and entry offset
 
 
 
 I then changed the centre of compliance.
 
-For a positive starting tilt, a positive shift helps alignment. For the opposite tilt, the useful position is different. A larger shift is not always better. Its direction and size must suit the starting tilt.
+For a positive starting offset, a positive CoC shift helps alignment. For a negative offset, the useful position is different. A larger shift is not always better. Its direction and size must suit the starting offset.
 
 
 
@@ -216,7 +216,7 @@ Slide 17 | Turning response over time
 
 Here, we can see that effect over time.
 
-The supporting shift helps the tool turn faster. The opposing shift leaves much of the starting tilt. Normal forces are broadly similar, but moments differ. So the CoC mainly changes the turning response in these tests.
+The supporting shift helps alignment happen faster. The opposing shift leaves much of the initial angular error. Normal forces are broadly similar, but moments differ. So the CoC mainly changes the turning response.
 
 
 
@@ -226,9 +226,9 @@ Slide 18 | Null-space controller
 
 
 
-That completes the contact results. I will now turn to extra arm motion.
+Next, I will explain the null-space controller.
 
-Seven joints control six tool-pose coordinates. The extra freedom lets the arm change posture while holding the tool pose. Damping opposes this extra motion. Conditioning seeks a larger minimum singular value, called sigma min. This helps avoid postures where some tool movements become difficult.
+Seven joints control six tool-pose coordinates. The extra freedom lets the arm change posture while holding the tool pose. I added two torque terms: a damping torque and a conditioning torque. Damping opposes this extra motion. Conditioning seeks a larger minimum singular value, called sigma min. This helps avoid postures where some tool movements become difficult.
 
 
 
@@ -308,7 +308,7 @@ Slide 24 | Conclusion
 
 These results bring me to the main conclusions.
 
-Compliant rotation helps contact reduce tilt. Higher stiffness resists this, and the CoC can help or oppose alignment. Null-space control reduces unwanted arm motion; damping and conditioning have different roles.
+Allowing rotation helps contact reduce angular error. The CoC can help or oppose alignment, while higher stiffness resists rotation. Null-space control reduces unwanted arm motion. Damping and conditioning have different roles.
 
 Next, I would improve the tool mount and adjust the CoC during alignment, then return it to the TCP. Thank you for your attention. I am happy to take your questions.
 
@@ -350,7 +350,7 @@ Backup B3 | Angular quantities
 
 To make the angle measurement clear, let us look at this diagram.
 
-The red arc is the tilt at contact entry. The blue arc is the remaining tilt. Both use the calibrated surface as their reference. The plotted error is the component about the first surface tangent. Zero in this one component does not guarantee perfect physical alignment.
+The red arc is the angular offset at contact entry. The blue arc is the remaining angular error. Both use the calibrated surface as their reference. The plotted error is the component about the first surface tangent. Zero in this one component does not guarantee perfect physical alignment.
 
 
 
@@ -362,7 +362,7 @@ Backup B4 | Baseline angular error
 
 This is the baseline result with the CoC at the TCP.
 
-Contact reduces the two large starting tilts, but a small angular error remains. The three final errors are around one and a half degrees. Friction, calibration and the tool mount may contribute. This comparison does not separate those causes.
+Contact reduces the two large starting offsets, but a small angular error remains. The three final errors are around one and a half degrees. Friction, calibration and the tool mount may contribute. This comparison does not separate those causes.
 
 
 
@@ -372,9 +372,9 @@ Backup B5 | Sources of angular offset
 
 
 
-This diagram explains two possible sources of the starting tilt.
+This diagram explains two sources of angular mismatch.
 
-The real surface may differ from the surface used in the controller. Also, the actual tool orientation may differ from the desired orientation. The green line shows the tool face, and the dashed line shows the desired orientation. Both differences affect the angle at contact entry.
+The real surface may differ from the surface used in the controller. Also, the actual tool orientation may differ from the desired orientation. The green line shows the tool face, and the dashed line shows the desired orientation. Both differences affect the angle at contact entry. We use a deliberate angular offset to represent this mismatch in the contact tests.
 
 
 
@@ -387,3 +387,6 @@ Backup B6 | Cumulative joint motion
 This last comparison looks at total motion across all seven joints.
 
 It adds up motion over time, so changes of direction do not cancel. Damping alone gives about twenty-five percent less motion than no null-space torque. Adding damping to conditioning gives about fifty percent less than conditioning alone, at a conditioning setting of two newton metres.
+
+
+

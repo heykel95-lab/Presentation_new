@@ -72,6 +72,8 @@ node_modules/
 /experiments/*_20261003/**/*.bin
 /experiments/*_20261003/**/*.ndjson
 /experiments/**/*.pptx.delta.zip
+/experiments/**/*.pdf.delta.zip
+/experiments/**/*.pdf.zip
 /experiments/**/*.tmp
 
 # Rebuilt simple-speech PDF is published in Final Presentation
