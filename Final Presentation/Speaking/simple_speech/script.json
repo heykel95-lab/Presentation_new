@@ -1,0 +1,292 @@
+[
+  {
+    "physical": 1,
+    "label": "Title slide",
+    "title": "Opening",
+    "opening": "Hello everyone, and thank you for being here.",
+    "paragraphs": [
+      "Today I will present my work on controlling a seven-joint robot for grinding. The aim is to help the tool align with a surface and reduce unwanted arm motion."
+    ]
+  },
+  {
+    "physical": 2,
+    "label": "Slide 1",
+    "title": "Motivation",
+    "video_seconds": 51.003,
+    "opening": "First, let me explain why tool alignment matters.",
+    "paragraphs": [
+      "Grinding needs an aligned tool face. But calibration errors and joint friction can leave it tilted. My idea is to let the tool give way in rotation. Contact then creates a turning moment that helps alignment. This video shows the idea."
+    ],
+    "after_video": "The tool turns even though its desired orientation stays fixed."
+  },
+  {
+    "physical": 3,
+    "label": "Slide 2",
+    "title": "Overview",
+    "opening": "First, I will give you a short overview of my presentation.",
+    "paragraphs": [
+      "I will explain the controller, then show the contact tests and results. After that, I will discuss the extra joint motion and finish with the main findings."
+    ]
+  },
+  {
+    "physical": 4,
+    "label": "Slide 3",
+    "title": "Cartesian pose",
+    "opening": "I will start with how we describe the tool.",
+    "paragraphs": [
+      "Pose means position and orientation: where the tool is and how it is turned. We use three coordinates for each. Forward kinematics calculates the pose from all seven joint angles."
+    ]
+  },
+  {
+    "physical": 5,
+    "label": "Slide 4",
+    "title": "Surface frame",
+    "opening": "Now we can describe the surface around the tool.",
+    "paragraphs": [
+      "The normal points out of the surface. The two tangents lie along it. These directions define the force and moment components and where the tool should give way or stay stiff."
+    ]
+  },
+  {
+    "physical": 6,
+    "label": "Slide 5",
+    "title": "Cartesian impedance law",
+    "opening": "To control this behaviour, I use impedance control.",
+    "paragraphs": [
+      "It acts like a spring and a damper. The spring pulls towards the desired pose; damping slows motion. Position error creates force, and rotation error creates a turning moment. Together, force and moment are called a wrench. Here, translation and rotation are set separately."
+    ]
+  },
+  {
+    "physical": 7,
+    "label": "Slide 6",
+    "title": "Real-time control",
+    "opening": "To apply this law, we need torques at the robot joints.",
+    "paragraphs": [
+      "The Jacobian transpose converts the wrench into joint torques. We add Coriolis compensation and the posture-control torques, which I will explain later. Gravity compensation happens inside the robot. This loop runs every millisecond, using the latest measured state."
+    ]
+  },
+  {
+    "physical": 8,
+    "label": "Slide 7",
+    "title": "Centre of compliance: a virtual reference",
+    "opening": "Next, we can change how the force turns the tool.",
+    "paragraphs": [
+      "The tool centre point, or TCP, is our controlled point. The centre of compliance, or CoC, is a virtual reference for stiffness and damping. Shifting it adds a moment about the TCP. This does not move the physical contact point."
+    ]
+  },
+  {
+    "physical": 9,
+    "label": "Slide 8",
+    "title": "Supporting and opposing CoC shifts",
+    "opening": "This shift can help alignment, but it can also work against it.",
+    "paragraphs": [
+      "On the left, the added moment supports alignment. On the right, it opposes alignment. So we must choose the shift direction to suit the starting tilt."
+    ]
+  },
+  {
+    "physical": 10,
+    "label": "Slide 9",
+    "title": "Translation-rotation coupling",
+    "opening": "The equations here describe this connection.",
+    "paragraphs": [
+      "We use the shift from the TCP to the CoC to transform stiffness and damping. The new terms connect translation and rotation. A pressing force can therefore also create a turning effect."
+    ]
+  },
+  {
+    "physical": 11,
+    "label": "Slide 10",
+    "title": "Contact experiment",
+    "opening": "With the controller defined, I can now show the contact experiment.",
+    "paragraphs": [
+      "The robot turns the tool, approaches, makes contact, and grinds. Normal motion and tilt about the tangents can give way, allowing pressing and alignment. Motion along the surface and rotation about the normal stay stiff, limiting sliding and twisting."
+    ]
+  },
+  {
+    "physical": 12,
+    "label": "Slide 11",
+    "title": "Plausibility experiment",
+    "video_seconds": 13.967,
+    "opening": "Before looking at alignment, I checked the basic response.",
+    "paragraphs": [
+      "I pushed and turned the tool by hand, as shown here."
+    ],
+    "after_video": "The next two plots compare the commanded and estimated values with the spring calculation."
+  },
+  {
+    "physical": 13,
+    "label": "Slide 12",
+    "title": "Force plausibility",
+    "opening": "Let us look first at the force.",
+    "paragraphs": [
+      "A push of about twenty millimetres gives a predicted force of about minus twenty newtons. The commanded mean is almost the same. The model estimate is slightly stronger. All three values below the plot are means over the shaded, steady interval."
+    ]
+  },
+  {
+    "physical": 14,
+    "label": "Slide 13",
+    "title": "Moment plausibility",
+    "opening": "Next, I repeat the same check for rotation.",
+    "paragraphs": [
+      "About six and a half degrees gives predicted and commanded mean moments of about one point seven newton metres. The estimated mean is slightly higher. Again, these means cover the shaded interval. Both tests support the expected spring response."
+    ]
+  },
+  {
+    "physical": 15,
+    "label": "Slide 14",
+    "title": "Moment during contact alignment",
+    "opening": "This leads to what happens during actual contact.",
+    "paragraphs": [
+      "In this separate test, the force curves stay close, but the estimated moment is larger during alignment. This is consistent with contact helping to turn the tool. Once the motion settles, the values become close."
+    ]
+  },
+  {
+    "physical": 16,
+    "label": "Slide 15",
+    "title": "Effect of rotational stiffness",
+    "opening": "To understand this turning motion, I first changed the rotational stiffness.",
+    "paragraphs": [
+      "The plot shows the remaining tilt relative to the calibrated surface. Closer to zero means better alignment in this direction. Higher stiffness leaves more error because it resists the turning motion from contact."
+    ]
+  },
+  {
+    "physical": 17,
+    "label": "Slide 16",
+    "title": "CoC shift and entry tilt",
+    "opening": "I then changed the centre of compliance.",
+    "paragraphs": [
+      "For a positive starting tilt, a positive shift helps alignment. For the opposite tilt, the useful position is different. A larger shift is not always better. Its direction and size must suit the starting tilt."
+    ]
+  },
+  {
+    "physical": 18,
+    "label": "Slide 17",
+    "title": "Turning response over time",
+    "opening": "Here, we can see that effect over time.",
+    "paragraphs": [
+      "The supporting shift helps the tool turn faster. The opposing shift leaves much of the starting tilt. Normal forces are broadly similar, but moments differ. So the CoC mainly changes the turning response in these tests."
+    ]
+  },
+  {
+    "physical": 19,
+    "label": "Slide 18",
+    "title": "Null-space controller",
+    "opening": "That completes the contact results. I will now turn to extra arm motion.",
+    "paragraphs": [
+      "Seven joints control six tool-pose coordinates. The extra freedom lets the arm change posture while holding the tool pose. Damping opposes this extra motion. Conditioning seeks a larger minimum singular value, called sigma min. This helps avoid postures where some tool movements become difficult."
+    ]
+  },
+  {
+    "physical": 20,
+    "label": "Slide 19",
+    "title": "Control OFF, then damping ON",
+    "video_seconds": 23.021,
+    "opening": "Let me first show what damping does.",
+    "paragraphs": [
+      "This video starts with null-space control off. Then damping is switched on."
+    ],
+    "after_video": "Damping opposes the extra arm motion while the main controller holds the tool pose."
+  },
+  {
+    "physical": 21,
+    "label": "Slide 20",
+    "title": "Conditioning ON",
+    "video_seconds": 7.955,
+    "opening": "Now, let us compare this with conditioning.",
+    "paragraphs": [
+      "Here, conditioning is on."
+    ],
+    "after_video": "It aims to improve the arm posture while holding the tool pose. Its purpose differs from damping, which opposes motion."
+  },
+  {
+    "physical": 22,
+    "label": "Slide 21",
+    "title": "Null-space experiment",
+    "opening": "To compare these effects, I used the same disturbance in each test.",
+    "paragraphs": [
+      "Joint torques represent a virtual twenty-newton force on link three. I tested no null-space control, damping, conditioning, and both together, with three trials each. Joint one is shown because it receives the largest peak disturbance torque. The next plots show trial means over four seconds."
+    ]
+  },
+  {
+    "physical": 23,
+    "label": "Slide 22",
+    "title": "Joint motion over time",
+    "opening": "Let us start with how much joint one moves.",
+    "paragraphs": [
+      "Damping reduces the motion. Conditioning and combined control keep it much smaller. The right plot zooms in: the joint changes direction several times. Adding damping reduces total motion, but some reversals remain."
+    ]
+  },
+  {
+    "physical": 24,
+    "label": "Slide 23",
+    "title": "Jacobian conditioning",
+    "opening": "Less motion is useful, but we also need to check the arm posture.",
+    "paragraphs": [
+      "Sigma min falls with no null-space control and with damping alone. With conditioning, alone or combined with damping, it stays nearly constant. So damping mainly limits motion, while conditioning helps maintain this measure."
+    ]
+  },
+  {
+    "physical": 25,
+    "label": "Slide 24",
+    "title": "Conclusion",
+    "opening": "These results bring me to the main conclusions.",
+    "paragraphs": [
+      "Compliant rotation helps contact reduce tilt. Higher stiffness resists this, and the CoC can help or oppose alignment. Null-space control reduces unwanted arm motion; damping and conditioning have different roles.",
+      "Next, I would improve the tool mount and adjust the CoC during alignment, then return it to the TCP. Thank you for your attention. I am happy to take your questions."
+    ]
+  },
+  {
+    "physical": 26,
+    "label": "Backup B1",
+    "title": "Opposing moment",
+    "video_seconds": 10.367,
+    "opening": "This extra video shows why the direction of the CoC shift matters.",
+    "paragraphs": [
+      "Here, the added moment acts against alignment."
+    ],
+    "after_video": "This is the opposing case from the earlier diagrams. It shows that a shift can hinder the turning motion. The result plots give the numerical comparison."
+  },
+  {
+    "physical": 27,
+    "label": "Backup B2",
+    "title": "Null-space torques and projector",
+    "opening": "This slide gives more detail about the two null-space torques.",
+    "paragraphs": [
+      "The projector selects directions for the secondary torque while preserving the main tool-pose task. Damping opposes the projected joint velocity and is zero when the joints stop. Conditioning chooses the direction with a better sigma min and can act at rest. A small deadband avoids unnecessary changes."
+    ]
+  },
+  {
+    "physical": 28,
+    "label": "Backup B3",
+    "title": "Angular quantities",
+    "opening": "To make the angle measurement clear, let us look at this diagram.",
+    "paragraphs": [
+      "The red arc is the tilt at contact entry. The blue arc is the remaining tilt. Both use the calibrated surface as their reference. The plotted error is the component about the first surface tangent. Zero in this one component does not guarantee perfect physical alignment."
+    ]
+  },
+  {
+    "physical": 29,
+    "label": "Backup B4",
+    "title": "Baseline angular error",
+    "opening": "This is the baseline result with the CoC at the TCP.",
+    "paragraphs": [
+      "Contact reduces the two large starting tilts, but a small angular error remains. The three final errors are around one and a half degrees. Friction, calibration and the tool mount may contribute. This comparison does not separate those causes."
+    ]
+  },
+  {
+    "physical": 30,
+    "label": "Backup B5",
+    "title": "Sources of angular offset",
+    "opening": "This diagram explains two possible sources of the starting tilt.",
+    "paragraphs": [
+      "The real surface may differ from the surface used in the controller. Also, the actual tool orientation may differ from the desired orientation. The green line shows the tool face, and the dashed line shows the desired orientation. Both differences affect the angle at contact entry."
+    ]
+  },
+  {
+    "physical": 31,
+    "label": "Backup B6",
+    "title": "Cumulative joint motion",
+    "opening": "This last comparison looks at total motion across all seven joints.",
+    "paragraphs": [
+      "It adds up motion over time, so changes of direction do not cancel. Damping alone gives about twenty-five percent less motion than no null-space torque. Adding damping to conditioning gives about fifty percent less than conditioning alone, at a conditioning setting of two newton metres."
+    ]
+  }
+]

@@ -3,7 +3,7 @@
     "slide": 4,
     "shape": "Equation - cartesian_pose_vector",
     "source": "sources/cartesian_pose_vector.tex",
-    "latex": "\\displaystyle x_{\\mathrm{EE}}=\\begin{bmatrix}p_{\\mathrm{EE}}\\\\\\eta_{\\mathrm{EE}}\\end{bmatrix}=\\begin{bmatrix}(x,y,z)^{\\top}\\\\(\\phi,\\theta,\\psi)^{\\top}\\end{bmatrix}",
+    "latex": "\\displaystyle x_{\\mathrm{EE}}=\\begin{bmatrix}x&y&z&\\phi&\\theta&\\psi\\end{bmatrix}^{\\mathrm{T}}",
     "font": "Cambria Math",
     "font_size_pt": 22.0,
     "font_weight": "regular",
@@ -13,14 +13,14 @@
     "slide": 4,
     "shape": "Equation - pose_joint_configuration",
     "source": "sources/pose_joint_configuration.tex",
-    "latex": "\\displaystyle p_{\\mathrm{EE}}=p_{\\mathrm{EE}}(q)",
+    "latex": "\\displaystyle x_{\\mathrm{EE}}=x_{\\mathrm{EE}}(q)",
     "font": "Cambria Math",
     "font_size_pt": 22.0,
     "font_weight": "regular",
     "color": "#000000"
   },
   {
-    "slide": 4,
+    "slide": 5,
     "shape": "Equation - symbol_ns",
     "source": "sources/symbol_ns.tex",
     "latex": "\\displaystyle n_s",
@@ -30,7 +30,7 @@
     "color": "#000000"
   },
   {
-    "slide": 4,
+    "slide": 5,
     "shape": "Equation - symbol_tangents",
     "source": "sources/symbol_tangents.tex",
     "latex": "\\displaystyle t_1,\\;t_2",
@@ -40,7 +40,7 @@
     "color": "#000000"
   },
   {
-    "slide": 5,
+    "slide": 6,
     "shape": "Equation - position_error_definition",
     "source": "sources/position_error_definition.tex",
     "latex": "\\displaystyle e_p=p_d-p_{\\mathrm{EE}}",
@@ -50,7 +50,7 @@
     "color": "#000000"
   },
   {
-    "slide": 5,
+    "slide": 6,
     "shape": "Equation - controller_orientation_error",
     "source": "sources/controller_orientation_error.tex",
     "latex": "\\displaystyle e_R=\\phi u",
@@ -60,7 +60,7 @@
     "color": "#000000"
   },
   {
-    "slide": 5,
+    "slide": 6,
     "shape": "Equation - controller_wrench_blocks",
     "source": "sources/controller_wrench_blocks.tex",
     "latex": "\\displaystyle\nF=\\begin{bmatrix}f\\\\m\\end{bmatrix}\n=\\underbrace{\\begin{bmatrix}K_p&\\mathrm{0}\\\\\\mathrm{0}&K_R\\end{bmatrix}}_{K_c}\n\\begin{bmatrix}e_p\\\\e_R\\end{bmatrix}\n+\\underbrace{\\begin{bmatrix}D_p&\\mathrm{0}\\\\\\mathrm{0}&D_R\\end{bmatrix}}_{D_c}\n\\begin{bmatrix}\\dot p_d-\\dot p_{\\mathrm{EE}}\\\\\\omega_d-\\omega_{\\mathrm{EE}}\\end{bmatrix}",
@@ -70,7 +70,7 @@
     "color": "#000000"
   },
   {
-    "slide": 5,
+    "slide": 6,
     "shape": "Equation - equation_force",
     "source": "sources/equation_force.tex",
     "latex": "\\displaystyle f=K_p e_p+D_p(\\dot p_d-\\dot p_{\\mathrm{EE}})",
@@ -80,7 +80,7 @@
     "color": "#000000"
   },
   {
-    "slide": 5,
+    "slide": 6,
     "shape": "Equation - equation_moment",
     "source": "sources/equation_moment.tex",
     "latex": "\\displaystyle m=K_R e_R+D_R(\\omega_d-\\omega_{\\mathrm{EE}})",
@@ -90,7 +90,7 @@
     "color": "#000000"
   },
   {
-    "slide": 6,
+    "slide": 7,
     "shape": "Equation - cartesian_torque_mapping",
     "source": "sources/cartesian_torque_mapping.tex",
     "latex": "\\displaystyle \\tau=J^\\top(q)F",
@@ -100,7 +100,7 @@
     "color": "#000000"
   },
   {
-    "slide": 6,
+    "slide": 7,
     "shape": "Equation - jacobian_velocity_mapping",
     "source": "sources/jacobian_velocity_mapping.tex",
     "latex": "\\displaystyle \\dot{x}_{\\mathrm{EE}}=J(q)\\dot{q}",
@@ -111,17 +111,17 @@
     "notation": "x-dot_EE denotes geometric Cartesian velocity: linear velocity stacked with angular velocity; it is not a vector of Euler-angle derivatives."
   },
   {
-    "slide": 7,
+    "slide": 8,
     "shape": "Equation - coc_added_moment",
     "source": "sources/coc_added_moment.tex",
-    "latex": "\\displaystyle \\Delta m=r_c\\times f",
+    "latex": "\\displaystyle m_{\\mathrm{CoC}}=r_c\\times f",
     "font": "Cambria Math",
     "font_size_pt": 22.0,
     "font_weight": "regular",
     "color": "#000000"
   },
   {
-    "slide": 9,
+    "slide": 10,
     "shape": "Equation - coupling_point_shift",
     "source": "sources/coupling_point_shift.tex",
     "latex": "\\displaystyle A=\\mathrm{Ad}(r_c)",
@@ -131,17 +131,7 @@
     "color": "#000000"
   },
   {
-    "slide": 9,
-    "shape": "Equation - symbol_pc",
-    "source": "sources/symbol_pc.tex",
-    "latex": "\\displaystyle p_{\\mathrm{CoC}}",
-    "font": "Cambria Math",
-    "font_size_pt": 22.0,
-    "font_weight": "regular",
-    "color": "#000000"
-  },
-  {
-    "slide": 9,
+    "slide": 10,
     "shape": "Equation - coc_displacement_definition",
     "source": "sources/coc_displacement_definition.tex",
     "latex": "\\displaystyle r_c=p_{\\mathrm{CoC}}-p_{\\mathrm{TCP}}",
@@ -151,7 +141,7 @@
     "color": "#000000"
   },
   {
-    "slide": 9,
+    "slide": 10,
     "shape": "Equation - coupling_wrench_blocks",
     "source": "sources/coupling_wrench_blocks.tex",
     "latex": "\\displaystyle\nF_{\\mathrm{TCP}}=\\begin{bmatrix}f\\\\m\\end{bmatrix}\n=\\underbrace{A^\\top\\begin{bmatrix}K_p&\\mathrm{0}\\\\\\mathrm{0}&K_R\\end{bmatrix}A}_{K_{\\mathrm{TCP}}}\n\\begin{bmatrix}e_p\\\\e_R\\end{bmatrix}\n+\\underbrace{A^\\top\\begin{bmatrix}D_p&\\mathrm{0}\\\\\\mathrm{0}&D_R\\end{bmatrix}A}_{D_{\\mathrm{TCP}}}\n\\begin{bmatrix}\\dot p_d-\\dot p_{\\mathrm{EE}}\\\\\\omega_d-\\omega_{\\mathrm{EE}}\\end{bmatrix}",
@@ -161,7 +151,7 @@
     "color": "#000000"
   },
   {
-    "slide": 10,
+    "slide": 11,
     "shape": "Equation - contact_normal_gain",
     "source": "sources/contact_normal_gain.tex",
     "latex": "\\displaystyle K_{p,n}=350\\,\\mathrm{N/m}",
@@ -171,7 +161,7 @@
     "color": "#000000"
   },
   {
-    "slide": 10,
+    "slide": 11,
     "shape": "Equation - contact_rotation_gains",
     "source": "sources/contact_rotation_gains.tex",
     "latex": "\\displaystyle K_{R,t_1}=K_{R,t_2}=5\\,\\mathrm{N\\,m/rad}",
@@ -181,7 +171,7 @@
     "color": "#000000"
   },
   {
-    "slide": 10,
+    "slide": 11,
     "shape": "Equation - contact_tangent_gains",
     "source": "sources/contact_tangent_gains.tex",
     "latex": "\\displaystyle K_{p,t_1}=K_{p,t_2}=2000\\,\\mathrm{N/m}",
@@ -191,7 +181,7 @@
     "color": "#000000"
   },
   {
-    "slide": 10,
+    "slide": 11,
     "shape": "Equation - contact_normal_rotation",
     "source": "sources/contact_normal_rotation.tex",
     "latex": "\\displaystyle K_{R,n}=50\\,\\mathrm{N\\,m/rad}",
@@ -201,7 +191,7 @@
     "color": "#000000"
   },
   {
-    "slide": 12,
+    "slide": 13,
     "shape": "Equation - equation_force_qs",
     "source": "sources/equation_force_qs.tex",
     "latex": "\\displaystyle\n\\begin{aligned}\nF_{n,\\mathrm{qs}}&=K_{p,n}\\,n_s^\\top(e_p-e_{p,0})\\\\[2pt]\n&=\\left(1000\\,\\mathrm{N/m}\\right)\\cdot\\left(-19.65\\cdot10^{-3}\\,\\mathrm{m}\\right)\n=-19.65\\,\\mathrm{N}\n\\end{aligned}",
@@ -211,7 +201,7 @@
     "color": "#000000"
   },
   {
-    "slide": 13,
+    "slide": 14,
     "shape": "Equation - equation_moment_qs",
     "source": "sources/equation_moment_qs.tex",
     "latex": "\\displaystyle\n\\begin{aligned}\nM_{t_1,\\mathrm{qs}}&=K_{R,t_1}\\,t_1^\\top(e_R-e_{R,0})\\\\[2pt]\n&=\\left(15\\,\\mathrm{N.m/rad}\\right)\\cdot\n\\left(6.57\\cdot\\frac{\\pi}{180}\\,\\mathrm{rad}\\right)\n\\approx1.72\\,\\mathrm{N.m}\n\\end{aligned}",
@@ -221,7 +211,7 @@
     "color": "#000000"
   },
   {
-    "slide": 16,
+    "slide": 17,
     "shape": "Equation - symbol_rct2",
     "source": "sources/symbol_rct2.tex",
     "latex": "\\displaystyle r_{c,t_2}",
@@ -231,7 +221,7 @@
     "color": "#000000"
   },
   {
-    "slide": 18,
+    "slide": 19,
     "shape": "Equation - null_controller_dimension",
     "source": "sources/null_controller_dimension.tex",
     "latex": "\\displaystyle \\text{Null space dimension}=7-6=1",
@@ -241,7 +231,7 @@
     "color": "#000000"
   },
   {
-    "slide": 18,
+    "slide": 19,
     "shape": "Equation - null_controller_velocity",
     "source": "sources/null_controller_velocity.tex",
     "latex": "\\displaystyle J(q)\\,\\dot q_{\\mathrm{null}}=0",
@@ -251,7 +241,7 @@
     "color": "#000000"
   },
   {
-    "slide": 18,
+    "slide": 19,
     "shape": "Equation - symbol_tau_d",
     "source": "sources/symbol_tau_d.tex",
     "latex": "\\displaystyle \\tau_d",
@@ -261,7 +251,7 @@
     "color": "#000000"
   },
   {
-    "slide": 18,
+    "slide": 19,
     "shape": "Equation - symbol_tau_sigma",
     "source": "sources/symbol_tau_sigma.tex",
     "latex": "\\displaystyle \\tau_\\sigma",
@@ -271,7 +261,7 @@
     "color": "#000000"
   },
   {
-    "slide": 21,
+    "slide": 22,
     "shape": "Equation - null_experiment_disturbance",
     "source": "sources/null_experiment_disturbance.tex",
     "latex": "\\displaystyle \\tau_{\\mathrm{dist}}=J(q)^{\\top}f_{\\mathrm{dist}}",

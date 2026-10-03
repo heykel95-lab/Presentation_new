@@ -678,7 +678,7 @@
   {
     "asset": "pose_joint_configuration",
     "source": "MyOwn/chapters/02_theoretical_background.tex: forward kinematics maps seven joint coordinates to end-effector pose.",
-    "changes": "2026-10-02: The end-effector position is explicitly p_EE = p_EE(q). Native 22 pt Cambria Math equation and PDF/PNG/SVG assets agree.",
+    "changes": "2026-10-02: Full Cartesian pose depends on the seven joint angles: x_EE = x_EE(q). Native equation and matching assets use 22 pt regular Cambria Math.",
     "presentation_representation": "Native editable PowerPoint Office Math, converted directly from the existing LaTeX source on 2026-09-15. Cambria Math. Formula source also retained in shape alternative text and native_equations.json. Legacy image variants retained as source assets.",
     "equation_style": {
       "font": "Cambria Math",
@@ -907,7 +907,7 @@
     "asset": "controller_feedback_diagram",
     "source": "MyOwn-thesis/figures/ch03/controller_block_diagram.tex, Figure 3.2. Presentation source: sources/make_controller_feedback_diagram.py.",
     "reference_source_sha256": "a515d3081fd88e55300f358e32373a2e49670231489505cc6867ad9e21aaab4f",
-    "changes": "Presentation-only simplification with black operation blocks, crossed signed junctions, labelled signal arrows, explicit K/D inputs, measured q input and additive model/null-space torque input. 2026-09-22: signal labels simplified to Reference state, Pose and velocity errors, and Measured state, with State: pose and velocity defined once. Both native equations and the 1 ms statement are preserved. Thesis and speaking material unchanged.",
+    "changes": "Presentation-only simplification with black operation blocks, crossed signed junctions, labelled signal arrows, explicit K/D inputs, measured q input and additive model/null-space torque input. 2026-09-22: signal labels simplified to Reference state, Pose and velocity errors, and Measured state, with State: pose and velocity defined once. 2026-10-02: remove the Desired reference rectangle and vertical connector, retain the horizontal arrow, and label it Desired reference state. Both native equations and the 1 ms statement are preserved. Thesis and speaking material unchanged. 2026-10-02: Clarify the additive torque label as Coriolis compensation + null-space torques, split across the existing two rows. Widen the second label about the unchanged centre to fit; preserve fonts, connectors and all other geometry. 2026-10-02: Model compensation heading with Coriolis; gravity internal to robot. Gravity is supplied internally by FCI, while Coriolis is externally added. Null-space torques remain explicit. Move the native diagram down 38 pt to place the 1 ms cycle heading above it; retain diagram sizes and topology, shortening only the additive-input arrow for its extra label row.",
     "presentation_representation": "Native editable PowerPoint shapes and connectors, with matching PDF/PNG/SVG and DrawingML generated from one scene."
   },
   {
@@ -928,7 +928,7 @@
   {
     "asset": "cartesian_pose_vector",
     "source": "sources/cartesian_pose_vector.tex",
-    "changes": "2026-10-02: Native two-row Cartesian pose coordinate vector: position p_EE and roll-pitch-yaw orientation eta_EE, expanded to (x,y,z)^T and (phi,theta,psi)^T. The orientation coordinates describe the existing roll-pitch-yaw illustration.",
+    "changes": "2026-10-02: Native horizontal six-coordinate pose vector x_EE = [x y z phi theta psi]^T. Position/orientation intermediate vectors are omitted. Upright T denotes transpose. Angles retain the existing roll-pitch-yaw interpretation.",
     "equation_style": {
       "font": "Cambria Math",
       "size_pt": 22,
@@ -939,16 +939,16 @@
   {
     "asset": "coc_force_shift_general",
     "source": "sources/coc_force_shift_general.tex",
-    "changes": "2026-10-02: Presentation-specific CoC introduction and virtual-force/moment interpretation; p_CoC notation. Original shared figures retained for provenance."
+    "changes": "2026-10-02: Presentation-specific CoC introduction and virtual-force/moment interpretation; p_CoC notation. Original shared figures retained for provenance. 2026-10-02: The additional moment about TCP is labelled m_CoC = r_c cross f, with upright CoC subscript; it is the additional coupling contribution. CoC prose identifies the virtual reference point for Cartesian stiffness and damping. Geometry and mathematical meaning are unchanged."
   },
   {
     "asset": "coc_force_shift_cases",
     "source": "sources/coc_force_shift_cases.tex",
-    "changes": "2026-10-02: Presentation-specific CoC introduction and virtual-force/moment interpretation; p_CoC notation. Original shared figures retained for provenance."
+    "changes": "2026-10-02: Presentation-specific CoC introduction and virtual-force/moment interpretation; p_CoC notation. Original shared figures retained for provenance. 2026-10-02: Both curved-arrow moment labels are m_CoC (upright CoC subscript), matching the general introduction; supporting/opposing arrow directions and all geometry are unchanged."
   },
   {
     "asset": "coc_added_moment",
     "source": "sources/coc_added_moment.tex",
-    "changes": "2026-10-02: Presentation-specific CoC introduction and virtual-force/moment interpretation; p_CoC notation. Original shared figures retained for provenance."
+    "changes": "2026-10-02: Presentation-specific CoC introduction and virtual-force/moment interpretation; p_CoC notation. Original shared figures retained for provenance. 2026-10-02: The additional moment about TCP is labelled m_CoC = r_c cross f, with upright CoC subscript; it is the additional coupling contribution. CoC prose identifies the virtual reference point for Cartesian stiffness and damping. Geometry and mathematical meaning are unchanged."
   }
 ]

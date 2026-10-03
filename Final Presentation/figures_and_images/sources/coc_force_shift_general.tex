@@ -4,7 +4,7 @@
 \begin{document}
 % Presentation-specific extension of the existing CoC sketches.
 % The force is shown AS IF applied at a virtual impedance reference point.
-% Delta m is its resulting moment about TCP, not an independent added couple
+% m_CoC labels the CoC-induced additional moment about TCP, not an independent couple
 % acting simultaneously with a second TCP force. For this rightward offset
 % and downward force, r_c cross f is clockwise in the illustrated plane.
 \begin{tikzpicture}[
@@ -37,6 +37,6 @@
 \node[lbl,right,black] at ($(P)+(0.15,0.65)$) {$f$};
 \coordinate (M) at ($(T)+(-0.65,0.65)$);
 \draw[mom] ([shift=(150:0.70)]M) arc (150:30:0.70);
-\node[lbl] at ($(M)+(0,1.05)$) {$\Delta m$};
+\node[lbl] at ($(M)+(0,1.05)$) {$m_{\mathrm{CoC}}$};
 \end{tikzpicture}
 \end{document}

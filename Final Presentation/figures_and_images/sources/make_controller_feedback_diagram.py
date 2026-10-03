@@ -16,7 +16,7 @@ FINAL=ASSETS.parent
 P='http://schemas.openxmlformats.org/presentationml/2006/main'
 A='http://schemas.openxmlformats.org/drawingml/2006/main'
 NS={'p':P,'a':A}
-CLIP=fitz.Rect(30,205,930,448)
+CLIP=fitz.Rect(30,243,930,486)
 SCENE=[]
 
 def rect(name,b,text,size=17):
@@ -38,7 +38,6 @@ def junction(name,x,y,negative=False):
 
 # Main signal path at y=321. Parameter inputs occupy y=219--289.
 # Feedback has a separate horizontal run at y=420, with a q branch at x=611.
-rect('Desired reference block',[44,214,194,258],'Desired reference',17)
 rect('Impedance controller block',[292,294,480,348],'Impedance controller',17)
 SCENE.append(dict(kind='rect',name='Jacobian transpose block',box=[565,294,657,348],text='',size=22))
 mathtext('Jacobian transpose operation',[569,298,653,344],[('𝐽','math',1,0),('T','text',.7,-.35),('(𝑞)','math',1,0)])
@@ -46,9 +45,8 @@ rect('Robot block',[815,294,917,348],'Robot',19)
 junction('Reference minus measured state',180,321,True)
 junction('Additive torque sum',716,321,False)
 
-line('Desired reference down',56,258,56,321)
 line('Desired reference to plus',56,321,162,321,True)
-text('Desired signal label',[72,272,194,295],'Reference state',14.5)
+text('Desired signal label',[36,272,194,295],'Desired reference state',14.5)
 line('Errors to impedance',198,321,292,321,True)
 text('Pose and velocity error signal',[198,273,292,311],'Pose and\nvelocity errors',14.5)
 
@@ -63,9 +61,10 @@ mathtext('Cartesian torque signal',[660,280,695,313],[('𝜏','math',1,0)])
 line('Commanded torque to robot',734,321,815,321,True)
 mathtext('Commanded torque signal',[742,280,806,313],[('𝜏','math',1,0),('cmd','text',.7,.25)])
 
-text('Additional torque sources',[622,214,810,235],'Model + null-space',15.5)
-text('Additional torque signal',[677,239,755,259],'Torques',14.5)
-line('Other torques to plus',716,266,716,303,True)
+text('Additional torque sources',[622,214,810,235],'Model compensation:',15.5)
+text('Model compensation examples',[591,238,841,256],'Coriolis; gravity internal to robot',14.5)
+text('Additional torque signal',[622,259,810,279],'+ null-space torques',14.5)
+line('Other torques to plus',716,285,716,303,True)
 
 line('Robot state down',866,348,866,420)
 line('Measured state return',866,420,180,420)
@@ -76,6 +75,13 @@ text('Measured robot state label',[625,425,852,445],'Measured robot state',15)
 SCENE.append(dict(kind='dot',name='Measured state branch',box=[609,418,613,422]))
 line('Measured q to Jacobian',611,420,611,348,True)
 mathtext('Joint configuration signal',[620,367,653,399],[('𝑞','math',1,0)])
+
+# Make room for the slide's Real-time control with a 1 ms cycle: heading.
+for item in SCENE:
+    if 'box' in item:
+        item['box'][1]+=38;item['box'][3]+=38
+    if 'points' in item:
+        item['points'][1]+=38;item['points'][3]+=38
 
 def q(prefix,name):return '{'+NS[prefix]+'}'+name
 def sub(parent,prefix,local,**attrs):return E.SubElement(parent,q(prefix,local),**{k:str(v) for k,v in attrs.items()})

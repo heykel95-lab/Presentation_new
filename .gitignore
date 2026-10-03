@@ -60,3 +60,20 @@ node_modules/
 
 # Compiled figures beside their editable sources; final exports live one level up
 /Final Presentation/figures_and_images/sources/*.pdf
+
+# October 3 edit previews and local lossless rollback archives
+/experiments/*_20261003/**/*.pdf
+/experiments/*_20261003/**/*.png
+/experiments/*_20261003/**/*.jpg
+/experiments/*_20261003/**/*.svg
+/experiments/*_20261003/**/*.pptx
+/experiments/*_20261003/**/*.xml
+/experiments/*_20261003/**/*.rels
+/experiments/*_20261003/**/*.bin
+/experiments/*_20261003/**/*.ndjson
+/experiments/**/*.pptx.delta.zip
+/experiments/**/*.tmp
+
+# Rebuilt simple-speech PDF is published in Final Presentation
+/Final Presentation/Speaking/simple_speech/archive/
+/Final Presentation/Speaking/simple_speech/Simple_speech.pdf

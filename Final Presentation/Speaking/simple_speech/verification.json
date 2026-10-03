@@ -1,0 +1,31 @@
+{
+  "main_slides": 25,
+  "optional_backup_slides": 6,
+  "pages": 9,
+  "main_talk_pages": 7,
+  "optional_backup_pages": 2,
+  "main_spoken_word_count": 1134,
+  "backup_spoken_word_count": 326,
+  "all_main_videos_seconds": 95.946,
+  "pause_allowance_seconds": 30,
+  "estimated_total_minutes_including_full_videos_separately": {
+    "90": 14.7,
+    "100": 13.44,
+    "110": 12.41,
+    "120": 11.55
+  },
+  "openings_for_all_slides": true,
+  "full_spoken_paragraphs_no_bullet_prompts": true,
+  "before_and_after_video_speech": true,
+  "all_spoken_text_verified_on_expected_pages": true,
+  "pdf_sha256": "cc2e91be6d8085f1757fad184dc08efa819b1a4baa08706c1085c2cd43a2ad16",
+  "installed": true,
+  "removed_advance_cues": 24,
+  "all_other_pdf_text_unchanged": true,
+  "script_json_unchanged": true,
+  "backup_pages_unchanged": true,
+  "visually_reviewed_pages": 9,
+  "storage_cleanup": "storage_cleanup.json",
+  "installed_by_atomic_replacement": true,
+  "presentation_notes_and_slide_pdfs_unchanged": true
+}

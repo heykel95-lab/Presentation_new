@@ -1,5 +1,801 @@
 # Thesis and presentation workspace
 
+## Versioned simple-speech source and push storage cleanup (2026-10-03)
+
+The current editable simple-speech package is also versioned at
+Final Presentation/Speaking/simple_speech: build.py, script.json,
+Simple_speech.txt and verification.json. It matches the final speech PDF,
+including the new Overview opening and removal of slide-advance cues.
+Generated previews and local lossless delta archives remain ignored.
+
+For Git working space, five Speaking/build staged.pptx copies were archived
+losslessly into adjacent .pptx.delta.zip: pose-grippers, future-work-removal,
+pose-clarity, pose-gripper-side and terminology. Restore exact bytes with
+experiments/storage_dedup_20261002/archive_generated.py restore <delta-path>.
+Their base is Speaking/build/pose-arrow-rings/before.pptx; keep that base.
+Regenerable native_export.pdf previews were removed from older experiment
+folders after confirming their generator and updated-deck archive exist.
+Final PDFs, source archives and reviewed renders are preserved.
+
+## Remove slide-advance cues from the speech (2026-10-03)
+
+Remove all 24 [Advance to the next slide.] cues from Simple_speech.pdf.
+The editable text also omits its corresponding [Next slide.] cues, and
+the canonical builder is synchronized. Preserve all spoken sentences,
+openings/transitions, video cues, ending cue, nine-page grouping and timing.
+The PowerPoint including its notes, full slide PDF and supplementary PDF
+are unchanged. All nine speech pages were rendered and reviewed; all other
+PDF text is identical and backup pages have identical content streams.
+Latest build and verification: tmp/pdfs/speech_without_advance_20261003.
+The active PDF was installed by atomic replacement.
+
+For working space, precise_titles_20261003/updated.pptx was losslessly
+archived into its adjacent .pptx.delta.zip using the standard shared
+plot_heading_match_20261002/updated.pptx base. Restore exact bytes with
+experiments/storage_dedup_20261002/archive_generated.py restore <delta-path>.
+Keep that shared base. Regenerable native previews were removed from
+nullspace_arrows_20261003 and the 17 folders listed in
+tmp/pdfs/speech_without_advance_20261003/storage_cleanup.json; their
+sources, updated-deck archives and final renders remain.
+
+## Natural Overview opening in the simple speech (2026-10-03)
+
+The Overview opening in Simple_speech.pdf now reads: First, I will give
+you a short overview of my presentation. This replaces With that problem
+in mind, here is the plan for my talk. The matching note on physical
+slide 3 / footer 2 starts First, I will give ... in its original bold style.
+All other speech sentences and note prompts are unchanged. Sources remain
+absent. All visible slide bodies, equations, media and playback, the full
+slide PDF and supplementary PDF remain unchanged. Speech PDF pages 2-9
+have identical content streams; the changed first page and Overview note
+were rendered and visually checked. The main speech contains 1,134 words,
+about 13.44-14.70 minutes at 90-100 words/minute including videos and pauses.
+The editable speech script and text are synchronized. Build, originals and
+verification: experiments/overview_speech_opening_20261003. Active PPTX and
+speech PDF were installed by atomic path replacement.
+
+For working space, meaningful_titles_20261003/updated.pptx was losslessly
+archived into its adjacent .pptx.delta.zip using the standard shared
+plot_heading_match_20261002 base. Final Presentation/Speaking/build/
+pose-gripper-solid/staged.pptx was losslessly archived into its adjacent
+.pptx.delta.zip using Speaking/build/pose-arrow-rings/before.pptx. Restore
+with experiments/storage_dedup_20261002/archive_generated.py restore
+<delta-path>; keep both shared bases. The regenerable
+precise_titles_20261003/native_preview.pptx was removed; source and final
+renders remain.
+
+## More precise titles for methods and CoC results (2026-10-03)
+
+A second targeted title review updates physical slides 7, 11, 12, 13, 14,
+17, 18, 26, 28 and 29. The titles now read, respectively:
+Real-time impedance control loop; Contact phases and stiffness settings;
+Impedance response to manual displacement; Normal-force plausibility
+assessment; Moment plausibility assessment; Effect of CoC position on
+angular error; Contact response at different CoC positions; Opposing CoC
+moment during contact; Entry offset and remaining angular error; Angular
+error with CoC at the TCP. These supersede the earlier titles on those
+ten slides. The remaining 21 titles are unchanged.
+
+This identifies manual displacement as the input, stiffness as the displayed
+contact setting, and the actual angular/contact quantities in the results.
+Titles retain the original typography and geometry and fit on one line.
+Only title text and PowerPoint title metadata change. All slide bodies,
+equations, diagrams, plots, videos/playback, short sentence-start notes,
+speaking files, slide order and hidden backups remain unchanged. All final
+slides were rendered; the ten edited slides were visually reviewed, and
+the other 21 are pixel-identical to the previously reviewed slides. All body
+pixels are identical. The full and supplementary slide PDFs are synchronized.
+Exact title changes, reasons, original slides and verification are in
+experiments/precise_titles_20261003. Install active files atomically.
+
+For working space, notes_sentence_starts_20261003/updated.pptx was losslessly
+archived into its adjacent .pptx.delta.zip with the standard shared
+plot_heading_match_20261002 base. Final Presentation/Speaking/build/
+pose-linked-solid/staged.pptx was losslessly archived into its adjacent
+.pptx.delta.zip using Speaking/build/pose-arrow-rings/before.pptx. Both
+restore exactly with experiments/storage_dedup_20261002/archive_generated.py
+restore <delta-path>; retain both shared bases. The regenerable
+meaningful_titles_20261003/native_preview.pptx was removed; source and final
+renders remain.
+
+## Titles matched to actual slide content (2026-10-03)
+
+After reviewing all 31 slides, twenty titles were made more specific and
+appropriate to their content. This supersedes earlier title wording on
+the slides listed in experiments/meaningful_titles_20261003/title_changes.json.
+The exact physical slide list is 7, 9, 11, 12, 13, 14, 15, 16, 17, 18,
+19, 20, 21, 22, 23, 24, 25, 26, 28 and 29.
+
+The two former Disturbance demonstration slides are now Null-space damping
+demonstration and Null-space conditioning demonstration. The joint-history
+title explicitly names Joint 1, and the Jacobian title explicitly names
+the minimum singular value. The contact comparison titles name force,
+moment, rotational stiffness, CoC position and entry tilt as appropriate.
+Conclusion and future work now covers both closing columns. Existing clear
+titles, including the formal thesis title, remain unchanged.
+
+Only native title text and corresponding PowerPoint title metadata change.
+All title typography and geometry, bodies, diagrams, plots, 30 equations,
+five videos/playback, 25-main/six-backup order and hidden flags are preserved.
+All 31 short sentence-start notes and all speaking files, including
+Simple_speech.pdf, remain byte-identical. All slides were rendered and
+individually checked. Titles fit on one line with no overlap or overflow;
+pixels below the title area are identical. The 31-page full slide PDF and
+six-page supplementary PDF are synchronized. Build, originals, reasons
+and verification: experiments/meaningful_titles_20261003.
+All three active deliverables were installed by atomic replacement.
+
+For working space, notes_ellipsis_20261003/updated.pptx was losslessly
+archived into its adjacent .pptx.delta.zip with the standard shared
+plot_heading_match_20261002 base. Final Presentation/Speaking/build/
+pose-gripper-left-3d/staged.pptx was losslessly archived into its adjacent
+.pptx.delta.zip using Speaking/build/pose-arrow-rings/before.pptx. Restore
+with experiments/storage_dedup_20261002/archive_generated.py restore
+<delta-path>; retain both shared bases. The regenerable
+notes_sentence_starts_20261003/native_preview.pptx was removed; its source
+and final notes renders remain.
+
+## Every note sentence starts with a few words and ellipses (2026-10-03)
+
+All 31 slides now use brief sentence-start prompts in their speaker notes.
+Every one of the 146 spoken sentences from the full simple speech is
+represented by its exact first two to five words followed by literal "...".
+This includes all openings and transitions. Opening prompts remain bold;
+each sentence prompt occupies its own paragraph. Short grey italic video
+and slide-change cues preserve the delivery sequence. Sources remain absent.
+
+This supersedes the earlier rule to retain full opening sentences and the
+27-sentence-only ellipsis pass. The notes intentionally contain memory
+prompts, not complete explanations. Simple_speech.pdf remains unchanged as
+the complete read-aloud script. All visible slide contents, equations,
+plots/media, playback, order and all other PPTX parts are byte-identical;
+the full/supplementary PDFs and all other speaking files remain unchanged.
+All 31 notes pages were rendered, visually reviewed and checked for complete
+prompt text and no overflow. Exact sentence-to-prompt mapping, prior notes,
+build and verification: experiments/notes_sentence_starts_20261003.
+The active deck was installed by atomic replacement.
+
+For working space, notes_follow_speech_20261003/updated.pptx was losslessly
+archived into its adjacent .pptx.delta.zip using the standard shared
+plot_heading_match_20261002 base. Final Presentation/Speaking/build/
+before-achieved-offset.pptx was archived into its adjacent .pptx.delta.zip
+using Speaking/build/pose-arrow-rings/before.pptx. Restore exact bytes with
+storage_dedup_20261002/archive_generated.py restore <delta-path>; retain
+both shared bases. The regenerable notes_ellipsis_20261003/native_preview.pptx
+was removed; its source and final notes renders remain.
+
+## Shorter note cues with ellipses (2026-10-03)
+
+The user permits "..." for long sentences in speaker notes. Twenty-seven
+longer explanation sentences now use short memory cues with literal
+three-dot ellipses. Explanations are separated into one sentence or cue per
+paragraph for easy scanning. The full spoken openings, transitions between
+topics, video play cues and slide-advance cues are preserved. Other short
+sentences retain the simple speech wording. All 31 notes keep the same
+content order and key technical meaning, including signs, approximate
+numerical values and comparison baselines. Sources remain absent.
+
+This supersedes exact word-for-word matching to the full speech for the
+27 shortened sentences only. Simple_speech.pdf remains the complete
+read-aloud script and is unchanged. All visible slide contents, equations,
+plots/media, playback, order and all other PPTX parts are byte-identical;
+the full/supplementary PDFs and all other speaking files are unchanged.
+All 31 notes pages were rendered, visually checked and verified for complete
+text and no overflow. Build, before/after wording and previous notes:
+experiments/notes_ellipsis_20261003. Installed by atomic replacement.
+
+For working space, concise_academic_text_20261003/updated.pptx was losslessly
+archived into its adjacent .pptx.delta.zip using the standard shared
+plot_heading_match_20261002 base. Speaking/build/before-nullspace-torque-
+components.pptx was archived into its adjacent .pptx.delta.zip using
+Speaking/build/pose-arrow-rings/before.pptx. Restore with the existing
+storage_dedup_20261002/archive_generated.py restore <delta-path> command;
+keep both shared bases. The obsolete notes_follow_speech_20261003/
+native_preview.pptx was removed; its source and final renders remain.
+
+## Speaker notes follow the full simple speech (2026-10-03)
+
+All 31 notes now match Simple_speech.pdf word-for-word: the 25 main-slide
+scripts and six optional backup scripts. Each note has the spoken opening
+in bold, complete spoken paragraphs, and grey italic video/slide-advance
+cues. Both before-video and after-video speech are included. This supersedes
+the former main-sentence-plus-summary-bullets format. Source blocks remain
+absent, as requested. Existing notes font inheritance and geometry remain.
+
+Only the 31 notes-body text parts change. Every other PPTX part is
+byte-identical, including visible slides, all native equations, plot assets,
+videos/playback, masters, sections, order and six hidden-backup flags.
+Simple_speech.pdf, full/supplementary slide PDFs, original speaking files and
+the equation catalog are unchanged. All notes were checked in PowerPoint,
+rendered, visually reviewed and compared with the delivered speech PDF.
+Build, archived previous notes and verification:
+experiments/notes_follow_speech_20261003. Installed by atomic replacement.
+
+For working space, visual_structure_20261003/updated.pptx was losslessly
+archived to its adjacent .pptx.delta.zip using the standard shared
+plot_heading_match_20261002 base. Speaking/build/before-nullspace-intro.pptx
+was archived to its adjacent .pptx.delta.zip using Speaking/build/
+pose-arrow-rings/before.pptx. Both restore with the existing
+storage_dedup_20261002/archive_generated.py restore <delta-path> command;
+keep both shared bases. The obsolete simple_slide_notes_20261003/
+native_preview.pptx was removed; its final renders and source archive remain.
+
+## Full simple speech with transitions (2026-10-03)
+
+Simple_speech.pdf is now a complete read-aloud script, replacing the former
+four-page bullet script. Each of the 25 main slides has a bold spoken
+opening that links naturally to the previous slide, followed by complete
+simple paragraphs. All four main videos have explicit play cues and words
+to say before and after playback. Grey bracketed directions are not spoken.
+Slide labels follow the visible footers (Title, then slides 1-24).
+
+The main talk is pages 1-7, 1,135 spoken words. Full videos total 95.946
+seconds; with 30 seconds for pauses, estimated duration is 13.45 minutes
+at 100 words/minute and 14.71 minutes at 90 words/minute. Pages 8-9 contain
+complete optional scripts for B1-B6, outside the 15-minute main-talk budget.
+All nine pages were rendered with Poppler and visually checked. No slide's
+speech splits across pages. Previous PDF, editable script, build and checks:
+tmp/pdfs/simple_speech_read_aloud_20261003.
+
+Only the active Simple_speech.pdf deliverable changes. The presentation,
+all 31 speaker notes, full/supplementary slide PDFs, original speaking files
+and equation catalog remain byte-identical. Installed by atomic replacement.
+The regenerable concise_academic_text_20261003/native_preview.pptx was
+removed to provide working space; its source deck and final renders remain.
+
+## Concise academic slide wording (2026-10-03)
+
+The user requested shorter, faster-to-read academic slide text. 54 visible
+text boxes now use concise phrases with key information first and arrows
+where they clarify a relationship. The revised boxes contain 388 words
+instead of 481. This supersedes earlier exact body-sentence wording where
+the concise pass changes it, including the surface-axes and conditioning
+explanations. Native Greek/subscript notation, the minimum-singular-value
+definition, non-zero coupling qualification, means, experimental settings
+and all numerical findings are preserved. The formal thesis title and the
+Requirement statement remain unchanged. The only changed slide title is
+CoC shift: effect depends on entry tilt (physical 17 / footer 16).
+
+All shape positions, dimensions and existing typography remain unchanged.
+The deck retains 25 main slides, six hidden backups, 30 native equations,
+all plots/assets and five videos with original playback. All 31 speaking
+notes and all speaking files, including Simple_speech.pdf, are byte-identical.
+All slides were rendered and reviewed; the final full and supplementary
+PDFs are synchronized. Build, before/after copy, originals and verification:
+experiments/concise_academic_text_20261003. Install by atomic replacement.
+
+For working space, simple_slide_notes_20261003/updated.pptx was losslessly
+compacted into its adjacent .pptx.delta.zip with the usual plot_heading_match
+base. Final Presentation/Speaking/build/before-cartesian-torque-slide.pptx
+is now in its adjacent .pptx.delta.zip, using Speaking/build/pose-arrow-rings/
+before.pptx as the shared base. Both restore byte-for-byte with
+experiments/storage_dedup_20261002/archive_generated.py restore <delta-path>.
+Keep both shared bases. The obsolete visual_structure native_preview.pptx
+was removed; its final source and renders are retained and can regenerate it.
+
+## Visual structure and aesthetic refresh (2026-10-03)
+
+The user authorized a deck-wide improvement to aesthetics, structure and
+self-explanatory content. The current design evolves the existing university
+template: navy 26 pt slide titles, a small grey chapter line above the title,
+a fine grey rule with a teal accent, shorter footer text, consistent bold
+section headings and open aligned columns. Teal emphasizes interpretations
+and key observations. This supersedes earlier fixed geometry, heading/bullet
+styles and exact slide-title wording where the visual refresh changes them.
+
+The Overview keeps its six chapter names and now explains each chapter's
+purpose. Motivation is shorter and retains Requirement before Problem.
+The theory slides have clearer equation/diagram groupings. Video slides have
+short purpose and observation text alongside the recording. Result titles
+state the supported finding, and selected plots have explanatory captions.
+Conclusion separates the four findings from future work. All six backups
+use the same visual system and provide context for their diagrams/results.
+
+The deck still has 25 main slides and six hidden backups. All 30 native
+equations retain their mathematics and dimensions. All image/video assets,
+picture aspect ratios, five embedded videos, playback settings, masters,
+sections, slide order and all 31 speaking notes are preserved. The equation
+catalog and speaking PDFs, including Simple_speech.pdf, are unchanged.
+The full 31-page PDF and six-page supplementary PDF match the new slides.
+PowerPoint opened the complete deck and read all video metadata. All slides
+were rendered and reviewed; content text has no unintended overflow/overlap.
+Build, editable design specification, originals and verification are under
+experiments/visual_structure_20261003. Install files by atomic replacement.
+
+To provide export space, nullspace_results_reorder_20261003/updated.pptx was
+losslessly archived to its adjacent .pptx.delta.zip using the usual shared
+plot_heading_match_20261002 base. Historical before.pptx files under
+Final Presentation/Speaking/build/coupling-simple, pose-gripper-solid,
+review-fixes, pose-gripper-side and pose-grippers were also archived to
+adjacent .pptx.delta.zip files. All restore byte-for-byte using
+experiments/storage_dedup_20261002/archive_generated.py restore <delta-path>.
+The latter four use Final Presentation/Speaking/build/pose-arrow-rings/
+before.pptx as their shared base; keep this base and the usual shared base.
+
+## Simple speaking notes on every slide (2026-10-03)
+
+All 31 slides now have a bold main sentence followed by two to four native
+bullet points with the most important things to say. Main-slide notes follow
+the new Simple_speech.pdf; all six hidden backups also have concise speaking
+notes for questions. The user explicitly requested removal of source
+references: all source blocks, file paths and editing-history blocks have
+been removed from the active notes. This supersedes earlier instructions
+to keep the previous notes unchanged or include source blocks there.
+
+The original notes and their provenance are preserved in
+experiments/simple_slide_notes_20261003/archive/original_notes.zip. Editable
+new notes and the build/verification are in the same experiment directory.
+Existing notes-page placeholders have explicit bounds so each slide's
+sentence and bullets stay together. PowerPoint rendered 31 notes pages;
+every note was checked for complete text, correct order and no overflow.
+
+Only the 31 notes XML parts changed. All other PPTX parts, including visible
+slides, equations, media, masters, slide order and backup visibility, are
+byte-identical. The full PDF, supplementary PDF, Simple_speech.pdf and
+original speaking files are unchanged. The active PPTX was installed by
+atomic path replacement. See the experiment's verification.json.
+
+## Separate simple speech PDF (2026-10-03)
+
+Final Presentation/Simple_speech.pdf is a new standalone four-page speaking
+script for the current 25 main slides. It uses simple sentences, short
+spoken bullets and bold memory cues. The six backups are excluded. Its
+1,140 spoken words take about 13.5 minutes at 100 words/minute, including
+all four main-slide videos (95.947 seconds) and 30 seconds for pauses.
+At 90 words/minute the same budget is about 14.8 minutes. Actual delivery
+pace determines duration; the requested limit is 15 minutes.
+
+The existing presentation, slide notes and original speaking files remain
+unchanged. Editable source, PDF build and verification are under
+tmp/pdfs/simple_speech_20261003. The superseded generated
+experiments/nullspace_arrows_20261003/updated.pptx is preserved losslessly
+in its adjacent updated.pptx.delta.zip; restore using the existing
+storage_dedup_20261002/archive_generated.py command and shared base.
+
+## Joint-motion result order and joint 1 explanation (2026-10-03)
+
+Cumulative joint motion is now hidden backup B6, physical slide 31. Its
+plot, data, result phrases, typography and notes are unchanged; the main
+chapter label is removed and its footer is B6. It is also the sixth page
+of Supplementary_slides.pdf, whose original five pages are unchanged.
+
+Joint motion over time now follows Null-space experiment immediately,
+at physical slide 23 / footer 22. Jacobian conditioning follows at
+physical 24 / footer 23. Conclusion is physical 25 / footer 24. Existing
+backups B1-B5 occupy physical slides 26-30. The deck has 25 main slides
+and six hidden backups, 31 total. All main footers, native sections and
+the 30-entry equation catalog follow this order. These are the user's
+earlier-numbered slides 21 (Cumulative joint motion) and 23 (Joint motion
+over time), before the Surface frame slide was restored.
+
+Null-space experiment, physical slide 22 / footer 21 (formerly footer
+20), adds: Joint 1 motion is shown because it receives the largest peak
+disturbance torque. This is a native black 20 pt Arial sentence at
+(60, 274) pt in an 840 x 34 pt box, matching the task-description style.
+The thesis's experimental-method chapter reports this largest peak
+absolute disturbance-torque component for joint 1 in all twelve trials.
+Keep the distinction between the measured joint 1 motion and the virtual
+force applied on link 3. All existing slide elements retain their positions.
+
+All original native equations, plot data/assets, five videos, notes and
+speaking files remain unchanged. Both PDFs are synchronized. See
+experiments/nullspace_results_reorder_20261003/verification.json.
+
+The superseded quasistatic_mean_labels_20261003/updated.pptx is preserved
+losslessly in its adjacent updated.pptx.delta.zip. Restore with the
+storage_dedup_20261002/archive_generated.py command documented below.
+
+## Null-space arrows and OFF/ON video captions (2026-10-03)
+
+On Null-space controller, physical slide 19 / footer 18 (formerly footer
+17), use three native editable navy #17365D right arrows. The reading-flow
+arrow beside the null-space condition is at (435, 228) pt, 68 x 10 pt.
+The damping and conditioning explanation arrows are at (75, 309) and
+(525, 309) pt, each 19 x 10 pt, replacing those two round body bullets.
+Retain the original wording, text origins, fonts, box dimensions, all
+native equations, sigma_min formatting, notes and speaking material.
+
+The two Disturbance demonstration captions now read Null-space control
+OFF → Damping ON and Conditioning ON, on physical slides 20 and 21 /
+footers 19 and 20 (formerly footers 18 and 19). The arrow in the first
+caption identifies the recorded sequence. Preserve the exact video
+streams, posters, 23 s split, audio, sizes, playback and notes. Other
+slides and the supplementary PDF are unchanged. The full PDF is
+synchronized. See experiments/nullspace_arrows_20261003/verification.json.
+
+To recover export space, additional historical PPTX copies were losslessly
+compacted to adjacent .pptx.delta.zip files: motivation_video_20261002/
+archive/Thesis_Defense_gg0_v3.pptx, overview_theory_20261003/archive/
+original_slides.pptx, motivation_requirement_20261003/archive/original_slide.pptx
+under experiments; and both before_Thesis_Defense_gg0_v3.pptx and updated.pptx
+under tmp/remove_b5_20260922 and tmp/remove_b3_b4_20260922. They retain every
+original byte using shared compressed ZIP payloads and reconstruct with
+experiments/storage_dedup_20261002/archive_generated.py restore <delta-path>.
+Keep the shared plot_heading_match_20261002/updated.pptx base intact.
+
+## Quasi-static mean labels below plausibility plots (2026-10-03)
+
+On Normal-force plausibility assessment and Moment plausibility assessment,
+physical slides 13 and 14 / footers 12 and 13 (formerly footers 11 and 12),
+the lower comparison label is Quasi-static mean:. The analysis computes
+the mean quasi-static spring force/moment over the shaded stationary
+interval, matching the other two mean comparisons. Keep Quasi-static
+calculation: above each native equation. Preserve the displayed values,
+original label typography and box geometry, equations, plots, all other
+slide contents, notes, speaking files and supplementary PDF. The full PDF
+is synchronized. See
+experiments/quasistatic_mean_labels_20261003/verification.json.
+
+The earlier experiments/reference_arrow_20261002/archive/original.pptx
+was losslessly compacted to adjacent original.pptx.delta.zip. Restore its
+exact bytes with experiments/storage_dedup_20261002/archive_generated.py
+restore <delta-path>. Keep the shared plot_heading_match_20261002 base.
+The superseded surface_frame_split_20261003/updated.pptx is also preserved
+in its adjacent updated.pptx.delta.zip and restores with the same command.
+
+## Separate Cartesian pose and Surface frame again (2026-10-03)
+
+Cartesian pose is physical slide 4 / footer 3. Surface frame is again a
+separate slide immediately after it, physical slide 5 / footer 4. This
+supersedes the earlier combined-slide requirement. The pose slide retains
+the compact native x_EE vector, position/orientation branch, both original
+diagrams and Forward kinematics: x_EE = x_EE(q). The pose group is centred,
+both diagrams are 240 pt wide with their original aspect ratios, and the
+forward-kinematics row is at y = 447 pt. Native equations remain 22 pt
+Cambria Math and their contents and dimensions are unchanged.
+
+Surface frame contains the original surface illustration at 360 pt width,
+the native n_s and t_1, t_2 symbols, upward surface normal and perpendicular
+tangents definitions, and the requested sentence: Surface axes define force
+and moment components and the directions for impedance gains. The sentence
+is a native 20 pt body bullet. This explicit wording supersedes the older
+general ban on the word gains for this sentence. Keep the diagram source,
+asset bytes and aspect ratio unchanged. Original Surface frame notes have
+been restored from the archived slide and already match the speaking script.
+All retained notes and all speaking files are unchanged.
+
+There are now 26 main slides and five hidden backups, 31 total. Conclusion
+is physical 26 / footer 25; backups B1-B5 are physical 27-31. Chapter starts
+are physical 2, 4, 11, 13, 19 and 26. Native sections, main footers and the
+30-entry equation catalog follow this order. All five videos, remaining
+slide bodies, media and supplementary PDF are unchanged. The full PDF has
+31 pages and is synchronized. See
+experiments/surface_frame_split_20261003/verification.json.
+
+Generated updated.pptx copies in coupling_labels_removed_20261003,
+coc_introduction_20261002 and contact_heading_spacing_20261003 are stored
+losslessly in adjacent .pptx.delta.zip files. The CoC introduction archive
+also preserves its ZIP prefix. All reconstruct byte-for-byte with
+experiments/storage_dedup_20261002/archive_generated.py restore <delta-path>.
+Keep experiments/plot_heading_match_20261002/updated.pptx as the shared base.
+
+## Contact-settings heading spacing (2026-10-03)
+
+On Contact experiment, physical slide 10 / footer 9, Compliant contact
+settings: starts at y = 155 pt, 12 pt below its former position. Keep its
+x = 480 pt, 440 x 30 pt box, text and native navy heading style unchanged.
+All phases, setting labels, equations, diagram and other slide contents
+remain in their previous positions. Notes and speaking files are unchanged.
+The full PDF is synchronized. See
+experiments/contact_heading_spacing_20261003/verification.json.
+
+Generated updated.pptx copies in pose_forward_kinematics_20261003,
+motivation_video_20261002 and pose_surface_merge_20261002 are now stored
+losslessly as adjacent .pptx.delta.zip files via storage_dedup_20261002.
+Keep the shared plot_heading_match_20261002/updated.pptx base intact.
+
+## Coupling-slide label removals (2026-10-03)
+
+On Translation-rotation coupling, physical slide 9 / footer 8, remove
+Shifting the impedance reference point:, Point-shift adjoint, the standalone
+native p_CoC symbol, and Virtual centre of compliance (CoC): new reference.
+Keep p_CoC within the displacement equation. The displacement equation and
+caption now start at y = 120 and 121.07 pt, the adjoint equation at 185 pt,
+the wrench equation at 276 pt, and the coupling result at 412 pt. All retain
+their original horizontal positions, dimensions, contents and typography.
+The remaining three equations stay native and editable. The active equation
+catalog now has 30 entries; the deleted symbol's source/assets are preserved.
+Other slides, notes, speaking material, media and supplementary PDF are
+unchanged. The full PDF is synchronized. See
+experiments/coupling_labels_removed_20261003/verification.json.
+
+The older generated overview_theory_20261003/updated.pptx was losslessly
+compacted to its adjacent .pptx.delta.zip using storage_dedup_20261002.
+
+## Forward kinematics label and pose-slide cleanup (2026-10-03)
+
+On Cartesian pose and surface frame, physical slide 4 / footer 3, remove
+the two bottom sentences about the robot base frame and the surface axes.
+Replace Pose depends on all 7 joint angles: with Forward kinematics: in
+the original black 19 pt Arial style. Its box remains at (42, 396) pt and
+is 198 x 28 pt. The unchanged native x_EE = x_EE(q) equation starts at
+(250, 396) pt with its original dimensions and 22 pt Cambria Math styling.
+All other diagrams, native equations, slide contents, notes and speaking
+files are preserved. The full PDF is synchronized. See
+experiments/pose_forward_kinematics_20261003/verification.json.
+
+Generated updated.pptx copies in title_date_20261003, pose_vector_20261002
+and realtime_velocity_20261002 were also losslessly compacted to adjacent
+.pptx.delta.zip files using the existing storage_dedup_20261002 workflow.
+The shared plot_heading_match_20261002/updated.pptx base remains intact.
+
+## Theory in the Overview (2026-10-03)
+
+The first Overview chapter is Theory, replacing Introduction. Keep the
+corresponding native PowerPoint section and the Motivation chapter label
+1. Theory synchronized with this name. Preserve the six-item Overview,
+chapter membership, numbering, original text styles and geometry, all other
+slide contents, notes and speaking files. The full PDF is synchronized. See
+experiments/overview_theory_20261003/verification.json.
+
+Six more generated updated.pptx copies were losslessly compacted into adjacent
+.pptx.delta.zip files to free export space: motivation_requirement_20261003,
+joint_motion_phrases_20261002, nullspace_result_phrases_20261002,
+conditioning_sentence_20261002, coc_case_moment_labels_20261002, and
+model_compensation_cycle_20261002. Restore exact bytes with
+experiments/storage_dedup_20261002/archive_generated.py restore <delta-path>.
+Keep experiments/plot_heading_match_20261002/updated.pptx as the shared base.
+
+## Title date (2026-10-03)
+
+The title slide date is Date: 05.10.2026. Retain its original blue 12 pt
+Arial styling and text-box geometry. The full PDF is synchronized and all
+other slide content, notes and speaking files are unchanged. See
+experiments/title_date_20261003/verification.json.
+
+## Requirement before Problem on Motivation (2026-10-03)
+
+On Motivation, physical slide 2 / footer 1, put Requirement: above Problem:.
+The existing Grinding requires an aligned tool face. statement belongs beneath
+Requirement:, followed by the two existing Problem bullets and the Idea block.
+Use the matching native navy 22 pt Arial bullet heading and retain all original
+18 pt body wording and formatting. The left text column is spaced to fit all
+three sections. Preserve the contact video, poster, playback, notes, speech,
+other slides and supplementary PDF. The full PDF is synchronized. See
+experiments/motivation_requirement_20261003/verification.json.
+
+## Concise joint-motion result phrases (2026-10-02)
+
+On Joint motion over time (physical slide 24 / footer 23), use the short
+result phrases Conditioning (2 N m): repeated joint-motion reversals and
+Added damping: less total motion, remaining reversals. Omit final periods.
+Preserve the original 20 pt body font, bullet style, text-box geometry,
+both plots and their data, native equations, notes, speaking files, other
+slides and supplementary PDF. The full PDF is synchronized. This extends
+the concise result-phrase style of footers 21 and 22 to footer 23. See
+experiments/joint_motion_phrases_20261002/verification.json.
+
+## Concise null-space result phrases (2026-10-02)
+
+On Cumulative joint motion (physical slide 22 / footer 21), use two short
+result phrases: approximately 25% less cumulative motion with damping alone;
+approximately 50% less cumulative motion with damping added to conditioning.
+Display the approximation sign before each percentage. The original precise
+values are 25.1% and 50.7%; their comparisons remain damping versus no null-space
+torque and combined versus conditioning alone at 2 N m, respectively.
+
+On Jacobian conditioning (physical slide 23 / footer 22), use Decreasing
+sigma_min: no null-space torque / damping alone and Nearly constant sigma_min:
+conditioning / combined control. Use native Greek sigma with subscript min.
+All four phrases omit final periods and retain the existing 20 pt bullet style
+and text-box geometry. Keep every plot, value, legend, all equations, notes,
+speaking material, other slides and supplementary PDF unchanged. The full PDF
+is synchronized. See experiments/nullspace_result_phrases_20261002/verification.json.
+
+## One-sentence conditioning explanation (2026-10-02)
+
+On Null-space controller (physical slide 18 / footer 17), combine the two
+conditioning-role bullets into one: Adjusts the joint configuration through
+null-space motion to increase the minimum singular value sigma_min of J and
+move away from singularities. Retain the native Greek sigma, subscript min,
+italic J, original 20 pt body style and existing text-box dimensions.
+This supersedes the earlier two-bullet conditioning wording. Preserve the
+redundancy explanation, damping bullet, all equations, notes, speaking files,
+figures, videos, other slides and supplementary PDF. The full PDF is updated.
+See experiments/conditioning_sentence_20261002/verification.json.
+
+## Matching moment labels in the CoC cases (2026-10-02)
+
+On Centre of compliance (CoC), physical slide 8 / footer 7, both Supporting
+moment and Opposing moment use m_CoC with upright CoC subscript above their
+curved arrows, matching the general introduction on footer 6. This replaces
+the visible r_c cross f_n labels. The arrows still depict the additional
+moment about TCP produced by the force at the virtual CoC; their supporting
+counterclockwise and opposing clockwise directions are unchanged.
+
+Keep all diagram geometry, displacement and force labels, figure dimensions,
+slide layout, notes and speech unchanged. The presentation-specific editable
+coc_force_shift_cases TikZ and PDF/PNG/SVG assets match the embedded figure.
+An invisible vertical strut retains the original 328.663 x 110.13 pt canvas.
+The thesis and historical CoC_moment assets remain unchanged. All 31 native
+equations, other slides, videos and supplementary PDF are preserved; the
+full PDF is synchronized. See
+experiments/coc_case_moment_labels_20261002/verification.json.
+
+## Model-compensation examples and cycle heading (2026-10-02)
+
+On Real-time control (physical slide 6 / footer 5), introduce the block
+diagram with Real-time control with a 1 ms cycle: as a navy 22 pt Arial
+bullet at (52, 201) pt, size 865 x 30 pt. The block diagram is translated
+down by 38 pt, preserving every original element's dimensions and topology.
+
+The additive-input label reads Model compensation: at 15.5 pt, followed by
+Coriolis; gravity internal to robot at 14.5 pt and + null-space torques at
+14.5 pt. The example row is (591, 276, 250, 18) pt. The null-space row is
+(622, 297, 188, 20) pt; the input arrow runs from (716, 323) to (716, 341).
+This explicitly distinguishes externally added Coriolis compensation from
+the gravity compensation supplied internally by FCI, following the thesis
+and implemented controller. Do not depict external gravity added twice.
+
+The native diagram, editable source, DrawingML and PDF/PNG/SVG assets agree.
+The standalone crop is (30, 243, 900, 243) pt in slide coordinates. Preserve
+all 31 native equations, notes, speech, videos, other slides and supplementary
+PDF. The full PDF is synchronized. This supersedes the earlier Coriolis-only
+label and the cycle statement beneath the diagram. See
+experiments/model_compensation_cycle_20261002/verification.json.
+
+## Compact pose notation and Cartesian impedance law (2026-10-02)
+
+On Cartesian pose and surface frame (physical slide 4 / footer 3), show the
+single horizontal row x_EE = [x y z phi theta psi]^T, with upright EE and T,
+as a native editable 22 pt regular Cambria Math equation. Omit the former
+intermediate p_EE and eta_EE vectors. The angles remain roll-pitch-yaw
+coordinates. Retain the position/orientation branch and original diagrams.
+The position-only diagram retains p_EE, since it depicts position.
+
+The lower statement reads Pose depends on all 7 joint angles: and its native
+equation is x_EE = x_EE(q). The surface legend reads n_s: upward surface
+normal and t_1, t_2: perpendicular tangents. The colons are separate editable
+ordinary text; the native surface-axis symbols remain unchanged. Upward
+describes the surface normal shown in the existing surface-frame diagram.
+Remove the blue Next: force f, moment m, stiffness K and damping D sentence.
+The following slide, physical 5 / footer 4, is titled Cartesian impedance law.
+Its remaining body is unchanged. The chapter name stays Cartesian controller.
+
+Both changed equation sources, catalog entries and PDF/PNG/SVG assets agree
+with the deck and full PDF. Preserve all other equations, diagrams, notes,
+speaking files, videos and supplementary PDF. The 30-slide structure and
+31-native-equation count remain. This supersedes the two-row pose vector
+and p_EE = p_EE(q) requirements on this slide. See
+experiments/pose_simplified_20261002/verification.json.
+
+To free working space, seven earlier generated updated.pptx copies were
+losslessly compacted to adjacent .pptx.delta.zip files. They reconstruct
+byte-for-byte with experiments/storage_dedup_20261002/archive_generated.py
+restore <delta-path>. Keep experiments/plot_heading_match_20261002/updated.pptx
+intact as their shared binary base. This does not affect the separately
+archived removed slides or source assets. Install all future active PPTX/PDF
+files by atomic path replacement because archived copies may share hard links.
+
+## Matching headings above result plots (2026-10-02)
+
+On Effect of rotational stiffness and Effect of CoC position, physical
+slides 15 and 16 / footers 14 and 15, match the heading style on footer 16:
+navy #17365D, 22 pt regular Arial, a native round navy bullet at 80 percent,
+and a full-size normal-baseline colon. The headings read Resistance to
+rotation about t_1: and CoC displacement along t_2:. Keep the italic t and
+14 pt numerical subscripts. The colon is a separate ordinary Arial run.
+
+The rotational heading retains its centred (220, 57, 520, 27) pt box. The
+CoC heading uses (307, 81, 291, 30) pt, followed by the unchanged native
+r_c,t2 symbol at (610, 84) pt. This group is centred above the plot.
+Both original plot boxes, data, legends, assets, all 31 native equations,
+notes, speech, other slides and supplementary PDF are unchanged. The full
+PDF is synchronized. See experiments/plot_heading_match_20261002/verification.json.
+
+Storage note: active deliverables and archived generated copies may share
+hard links. Always install a new PPTX/PDF by atomic replacement of its path;
+never truncate or overwrite an existing active file in place. Preserve
+archived versions when freeing generated working-file storage.
+
+## Quasi-static calculations before the plausibility plots (2026-10-02)
+
+On Normal-force plausibility assessment and Moment plausibility assessment,
+physical slides 12 and 13 / footers 11 and 12, show the native force/moment
+equation before the plot. Introduce it with Quasi-static calculation: as an
+editable navy 22 pt Arial bullet, matching the manual-input heading.
+The new heading is at (40, 100) pt with size 300 x 30 pt. The unchanged
+equation starts at (350, 96) pt. The unchanged 650 x 269.611 pt plot starts
+at (155, 174) pt. Retain the original manual-input heading above this row
+and the three numerical comparison labels/values below the plot.
+
+Keep every native equation's content, typography and dimensions, each plot's
+data, dimensions, legend, colours and asset bytes, and the existing notes
+and speaking files. The 30-page full PDF is synchronized; the other 28
+slides/pages, all 31 native equations and supplementary PDF are unchanged.
+This supersedes the earlier plot-before-equation placement for these two
+slides. See experiments/quasistatic_before_plots_20261002/verification.json.
+
+## Explicit Coriolis compensation label (2026-10-02)
+
+On Real-time control (physical slide 6 / footer 5), the additive torque input
+reads Coriolis compensation on the first row and + null-space torques on the
+second. This replaces Model + null-space / Torques. Preserve the first row's
+Arial 15.5 pt and the second row's Arial 14.5 pt, both centred over the
+unchanged torque-summing arrow at x = 716 pt. The second textbox is widened
+to (622, 239, 188, 20) pt so the wording fits on one line.
+
+The model contribution here is the implemented Coriolis/centrifugal torque
+compensation; gravity and motor-friction compensation are internal to FCI.
+The native slide, standalone DrawingML, generator and PDF/PNG/SVG agree.
+The full PDF is synchronized. All other shapes, 31 native equations, notes,
+speaking files, videos, other slides and supplementary PDF are unchanged.
+See experiments/coriolis_label_20261002/verification.json.
+
+## CoC parameter reference and additional moment notation (2026-10-02)
+
+On Centre of compliance (CoC), physical slide 7 / footer 6, define the CoC
+as Virtual reference point for / Cartesian stiffness and damping. Preserve
+the navy bullet heading and two-line black 20 pt Arial definition.
+
+Use m_CoC = r_c cross f in the editable native equation and m_CoC on the
+diagram's curved arrow, with upright CoC subscripts. This notation names the
+CoC-induced additional moment about the TCP. Keep the heading Additional
+moment about the TCP: to make the reference point explicit. It is the
+coupling contribution, not the complete rotational-impedance moment.
+Preserve the diagram geometry, the force location at the virtual CoC, the
+physical contact location and all existing shape positions and styles.
+
+The equation source/catalog and both affected PDF/PNG/SVG asset sets agree
+with the deck and full PDF. This supersedes Delta m on this introduction
+slide only. The other 29 slides/pages, remaining 30 native equations,
+speaker notes, speaking files, videos, supplementary PDF and thesis remain
+unchanged. See experiments/coc_reference_moment_20261002/verification.json.
+
+## Consistent blue headings and CoC introduction layout (2026-10-02)
+
+On Centre of compliance (CoC), physical slide 7 / footer 6, use native navy
+22 pt Arial bullet headings Tool centre point (TCP):, Centre of compliance
+(CoC):, and Additional moment about the TCP:. The two definitions are 20 pt
+black Arial, indented below their headings. The virtual-force explanation is
+a 20 pt dark body bullet. Keep the original diagram proportions and content,
+now at (440, 88) pt, and the unchanged native added-moment equation at
+(540, 439) pt. The text and figure form aligned left/right columns.
+
+Throughout the deck, retain the audited colons on section and parameter
+headings that introduce content, including the controller, contact settings,
+result panels, experiment settings, Future work, and the torque backup.
+Use navy #17365D for subtitles. The validation summary labels are navy with
+colons while numerical values stay black. Native heading bullets are round,
+navy, 80 percent, with a 20 pt hanging indent. Existing embedded diagram
+labels, mathematical definitions, captions, full statements and slide titles
+retain their own roles and styles; do not indiscriminately append colons.
+
+The formatting pass affects physical slides 2, 4, 5, 7, 8, 9, 10, 12, 13,
+15, 16, 17, 18, 21, 25 and 27. All 31 native equations, all media and diagram
+assets, notes and speaking material are unchanged. The 30-page full PDF and
+five-page supplementary PDF are synchronized; only supplementary page B2
+changes. See experiments/heading_consistency_20261002/verification.json.
+
+## Coupling-slide text cleanup (2026-10-02)
+
+On Translation-rotation coupling (physical slide 9 / footer 8), remove the
+three repeated statements: Tool centre point (TCP): controlled reference point
+on the (EE), Choosing an impedance reference point away from the TCP couples
+force and moment, and The commanded force acts as if applied at the virtual
+point p_CoC. Retain the shifting-reference heading, virtual-CoC definition,
+displacement and adjoint definitions, all four native equations and the final
+off-diagonal-block statement. The retained rows are spaced more evenly while
+preserving their contents, fonts, sizes and horizontal alignments. Preserve
+speaker notes and speaking files. The earlier CoC introduction remains intact.
+The 30-slide deck and full PDF agree, and the other 29 slides/pages and the
+supplementary PDF are unchanged. See
+experiments/coupling_text_cleanup_20261002/verification.json.
+
+## Horizontal desired-reference input (2026-10-02)
+
+On Real-time control (physical slide 6 / footer 5), keep only the horizontal
+desired-reference input arrow into the first summing junction. The Desired
+reference rectangle and its vertical connector are removed. Its editable
+signal label now reads Desired reference state in regular black Arial 14.5 pt
+at (36, 272) pt, in a 158 x 23 pt box, above the unchanged horizontal arrow.
+Preserve every other diagram shape, both native equations, notes and speaking
+material. The 30-slide deck and full PDF agree, and the standalone diagram's
+source and PDF/PNG/SVG/DrawingML assets match. The other 29 slides/pages and
+supplementary PDF are unchanged. This supersedes the earlier desired-reference
+block and Reference state label requirement. See
+experiments/reference_arrow_20261002/verification.json.
+
 ## Contact phase heading and directional labels (2026-10-02)
 
 On Contact experiment (physical slide 10 / footer 9, called slide 8 by the
