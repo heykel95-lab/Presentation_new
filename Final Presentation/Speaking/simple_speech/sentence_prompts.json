@@ -186,8 +186,8 @@
   },
   {
     "slide": 8,
-    "sentence": "The tool centre point, or TCP, is our controlled point.",
-    "prompt": "The tool centre point, or TCP, is our controlled point."
+    "sentence": "The tool centre point, or TCP, is our controlled point on the end effector, or EE.",
+    "prompt": "The tool centre point, or TCP, is our controlled point on the end effector, or EE."
   },
   {
     "slide": 8,

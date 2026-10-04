@@ -70,7 +70,7 @@
     "title": "Centre of compliance: a virtual reference",
     "opening": "Next, we can change how the force affects the rotation of the tool.",
     "paragraphs": [
-      "The tool centre point, or TCP, is our controlled point. The centre of compliance, or CoC, is a virtual reference point used for stiffness and damping. If we shift the CoC away from the TCP, the applied force creates an additional moment around the TCP."
+      "The tool centre point, or TCP, is our controlled point on the end effector, or EE. The centre of compliance, or CoC, is a virtual reference point used for stiffness and damping. If we shift the CoC away from the TCP, the applied force creates an additional moment around the TCP."
     ]
   },
   {

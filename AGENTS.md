@@ -1,5 +1,49 @@
 # Thesis and presentation workspace
 
+## Slide 7 push storage preparation (2026-10-04)
+
+For Git LFS upload space, joint3_terminology_20261004/updated.pptx and
+slide7_expand_ee_20261004/archive/original.pptx are preserved as adjacent
+byte-exact deltas using plot_heading_match_20261002/updated.pptx. Keep that
+shared base. Restore with experiments/storage_dedup_20261002/archive_generated.py
+restore <delta-path>. One abandoned Git LFS temporary file was removed only
+after verifying it was an identical prefix of the complete active deck and
+that no Git LFS process was active. An unmatched temporary file was preserved.
+Active presentation outputs are unchanged. See tmp/push_ee_20261004/
+verification.json and storage_cleanup.json.
+
+## Expand EE on slide 7 (2026-10-04)
+
+On Centre of compliance: a virtual reference, footer 7 / physical 8,
+the existing TCP definition now reads:
+Controlled reference point
+on the end effector (EE).
+This expands the abbreviation before its parenthetical use. Keep the
+original two-paragraph layout, 20 pt Arial typography and text-box geometry.
+The matching full note and current simple speech now say:
+The tool centre point, or TCP, is our controlled point on the end effector, or EE.
+Every other sentence, slide element, native equation and media item is unchanged.
+
+The slide, full note and speech page 3 were rendered and visually checked.
+The other 30 slide PDF pages and nine speech PDF pages are pixel-identical.
+All 31 notes match 169 complete spoken sentences. Current speech: 1,668 main
+words, about 14.93 minutes at 130 words/minute including videos and pauses;
+at least 129.3 words/minute is needed for 15 minutes. The active PowerPoint,
+slide PDF, speech PDF and editable sources were installed atomically.
+Verification: experiments/slide7_expand_ee_20261004/verification.json.
+
+For working space, speech_damping_felt_difference_20261004/updated.pptx and
+joint3_terminology_20261004/archive/original.pptx are preserved as adjacent
+byte-exact deltas using plot_heading_match_20261002/updated.pptx. An incomplete
+alias archive was rebuilt from the verified complete delta before completion.
+Speaking/build/nullspace-headings/staged.pptx is preserved as a byte-exact delta
+using Speaking/build/nullspace-headings/before.pptx. Keep this additional base
+as well as both existing shared bases. Restore using
+experiments/storage_dedup_20261002/archive_generated.py restore <delta-path>.
+Six regenerable note/speech PNG previews listed in scratch_cleanup.json were
+removed after confirming their complete source PDFs and verification remained.
+See storage_cleanup.json and scratch_cleanup.json in this experiment.
+
 ## Joint 3 terminology on slide 21 (2026-10-04)
 
 On Null-space experiment: setup and conditions, footer 21 / physical 22,

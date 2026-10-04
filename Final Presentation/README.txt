@@ -350,3 +350,5 @@ The deck remains 25 main slides and nine hidden backups. The PDF, supplementary
 PDF, speaking script and notes match these media changes. Rebuild and checks:
 ../experiments/media_update/README.md. The earlier narrative validation records
 refer to the pre-media-update version.
+
+Latest update (2026-10-04): Expanded the first parenthetical EE on slide 7 to end effector (EE) in the existing TCP definition, and synchronized the matching full note and simple speech. Preserved layout, typography, equations and media. The revised slide, note and speech page 3 were visually checked; all other slide and speech PDF pages are pixel-identical. Main speech: 1,668 words, approximately 14.93 minutes at 130 words/minute including videos and pauses. Verification: experiments/slide7_expand_ee_20261004/verification.json.
