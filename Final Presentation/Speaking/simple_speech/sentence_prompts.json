@@ -36,8 +36,8 @@
   },
   {
     "slide": 2,
-    "sentence": "Joint friction can also affect the orientation of the tool.",
-    "prompt": "Joint friction can also affect the orientation of the tool."
+    "sentence": "Moreover, joint friction can also affect the orientation of the tool.",
+    "prompt": "Moreover, joint friction can also affect the orientation of the tool."
   },
   {
     "slide": 2,
@@ -171,8 +171,8 @@
   },
   {
     "slide": 7,
-    "sentence": "Gravity compensation is handled internally by the robot.",
-    "prompt": "Gravity compensation is handled internally by the robot."
+    "sentence": "However, gravity compensation is handled internally by the robot.",
+    "prompt": "However, gravity compensation is handled internally by the robot."
   },
   {
     "slide": 7,
@@ -286,8 +286,8 @@
   },
   {
     "slide": 12,
-    "sentence": "The estimated values are model-based measurements.",
-    "prompt": "The estimated values are model-based measurements."
+    "sentence": "It is important to note that the estimated values are model-based measurements.",
+    "prompt": "It is important to note that the estimated values are model-based measurements."
   },
   {
     "slide": 13,
@@ -496,8 +496,8 @@
   },
   {
     "slide": 20,
-    "sentence": "The difference is easier to feel than to see.",
-    "prompt": "The difference is easier to feel than to see."
+    "sentence": "The difference cannot be seen in the video, but it can be felt when pushing the arm.",
+    "prompt": "The difference cannot be seen in the video, but it can be felt when pushing the arm."
   },
   {
     "slide": 20,
@@ -551,8 +551,8 @@
   },
   {
     "slide": 22,
-    "sentence": "The disturbance is created using joint torques that represent a virtual force of twenty newtons acting on link three.",
-    "prompt": "The disturbance is created using joint torques that represent a virtual force of twenty newtons acting on link three."
+    "sentence": "The disturbance is created using joint torques that represent a virtual force of twenty newtons acting on joint three.",
+    "prompt": "The disturbance is created using joint torques that represent a virtual force of twenty newtons acting on joint three."
   },
   {
     "slide": 22,

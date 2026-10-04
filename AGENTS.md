@@ -1,5 +1,139 @@
 # Thesis and presentation workspace
 
+## Joint 3 terminology on slide 21 (2026-10-04)
+
+On Null-space experiment: setup and conditions, footer 21 / physical 22,
+replace link 3 with joint 3 in the existing Disturbance description box:
+Joint-torque equivalent of a virtual
+20 N point force on joint 3.
+The first spoken explanation and matching full note use acting on joint
+three instead of acting on link three. This follows the user's clarification
+that the referenced entity is a joint. Keep all other wording, two-paragraph
+layout, 20 pt Arial typography, geometry, equations, plot/video assets and
+slide order unchanged. No thesis or figure-source edit is required.
+
+The native slide, note, updated slide PDF and speech page 7 were rendered
+and visually checked. Only the existing description box changes in the
+slide PDF; the other 30 pages are pixel-identical. The other nine speech
+pages are pixel-identical. All 31 notes match 169 full spoken sentences.
+Speech timing and word count are unchanged: 1,662 main words, about 14.88
+minutes at 130 words/minute including videos and pauses. Active PPTX,
+slide PDF, speech PDF and editable sources were installed atomically.
+Verification: experiments/joint3_terminology_20261004/verification.json.
+
+For working space, speech_estimated_emphasis_20261004/updated.pptx and
+speech_damping_felt_difference_20261004/archive/original.pptx are preserved
+as adjacent byte-exact deltas using plot_heading_match_20261002/updated.pptx.
+Speaking/build/wrench-blocks/staged.pptx, nullspace-plots/staged.pptx and
+equation-alignment/staged.pptx are similarly preserved using
+Speaking/build/pose-arrow-rings/before.pptx. Keep both bases. Restore with
+experiments/storage_dedup_20261002/archive_generated.py restore <delta-path>.
+Six regenerable older preview PNGs listed in scratch_cleanup.json were
+removed after checking their archived full deck/PDF and verification.
+One incomplete new staged deck was regenerated from the intact original
+after an out-of-space interruption. No historical source content was lost.
+
+## Felt damping difference in slide 19 speech (2026-10-04)
+
+On Null-space damping demonstration, footer 19 / physical 20, replace
+The difference is easier to feel than to see. with:
+The difference cannot be seen in the video, but it can be felt when pushing
+the arm.
+The full note and matching after-video speech use this exact sentence.
+The following OFF/ON, same-push, harder-push and held-pose sentences remain
+unchanged, as do the before-video text, playback cue, all visible slides,
+equations, media and slide PDFs. The note and speech page 6 were rendered
+and visually checked; the other nine speech pages are pixel-identical.
+All 31 notes match 169 full sentences. Current speech: 1,662 main words,
+about 14.88 minutes at 130 words/minute including 95.946 seconds of videos
+and 30 seconds for pauses. At least 128.8 words/minute is needed for 15
+minutes. Outputs and editable sources were installed atomically. Verification:
+experiments/speech_damping_felt_difference_20261004/verification.json.
+
+For working space, speech_gravity_however_20261004/updated.pptx and
+speech_estimated_emphasis_20261004/archive/original.pptx are preserved as
+adjacent byte-exact deltas using plot_heading_match_20261002/updated.pptx.
+Speaking/build/conclusion-review/staged.pptx is similarly stored using
+Speaking/build/pose-arrow-rings/before.pptx. Keep both bases. Restore with
+experiments/storage_dedup_20261002/archive_generated.py restore <delta-path>.
+Regenerable native-preview and authored PPTX outputs in the five older
+plot/legend experiments listed in scratch_cleanup.json were removed only
+after verifying their complete deck archives, generators and verification.
+See storage_cleanup.json and scratch_cleanup.json here.
+
+## Emphasis before estimated values in slide 11 notes (2026-10-04)
+
+On Impedance response to manual displacement, footer 11 / physical 12,
+the after-video full note and matching speech now say:
+It is important to note that the estimated values are model-based measurements.
+Only the requested opening phrase was added; all other words, visible slides,
+equations, media and slide PDFs are unchanged. The note and speech page 4
+were rendered and visually checked. The other nine speech pages are
+pixel-identical. All 31 notes match 169 complete spoken sentences.
+Current speech: 1,654 main words, about 14.82 minutes at 130 words/minute
+including 95.946 seconds of videos and 30 seconds for pauses. About 128.2
+words/minute is needed for 15 minutes. Outputs and editable sources were
+installed atomically. Verification:
+experiments/speech_estimated_emphasis_20261004/verification.json.
+
+For working space, speech_motivation_moreover_20261004/updated.pptx and
+speech_gravity_however_20261004/archive/original.pptx are preserved as
+adjacent byte-exact deltas using plot_heading_match_20261002/updated.pptx.
+Speaking/build/simplify-nullspace/staged.pptx is similarly stored using
+Speaking/build/pose-arrow-rings/before.pptx. Keep both bases. Restore with
+experiments/storage_dedup_20261002/archive_generated.py restore <delta-path>.
+An interrupted alias archive was rebuilt and verified before removing its
+original. Regenerable slide preview PNGs in motivation_video,
+contact_heading_spacing and coupling_labels_removed were removed, together
+with motivation_passive_rotation/native_preview.pptx. Their source/output
+archives and verification remain. See storage_cleanup.json and
+scratch_cleanup.json here.
+
+## However transition before gravity compensation (2026-10-04)
+
+On Real-time impedance control loop, footer 6 / physical 7, the full note
+and matching speech now say:
+However, gravity compensation is handled internally by the robot.
+Only However, was added and the following gravity lowercased. Every other
+sentence, visible slide, equation, media asset and slide PDF is unchanged.
+The native note and speech page 3 were rendered and visually checked;
+the other nine speech pages are pixel-identical. All 31 notes still match
+169 complete spoken sentences. Current speech: 1,648 main words, about
+14.78 minutes at 130 words/minute including 95.946 seconds of videos and
+30 seconds for pauses. Outputs and editable sources were installed atomically.
+Verification: experiments/speech_gravity_however_20261004/verification.json.
+
+For working space, speech_contact_moment_slide14_20261004/updated.pptx and
+speech_motivation_moreover_20261004/archive/original.pptx are preserved as
+adjacent byte-exact deltas using plot_heading_match_20261002/updated.pptx.
+Speaking/build/motivation-question/staged.pptx is similarly stored using
+Speaking/build/pose-arrow-rings/before.pptx. Keep both bases. Restore with
+experiments/storage_dedup_20261002/archive_generated.py restore <delta-path>.
+The remaining regenerable heading_consistency_20261002/before PNG previews
+were removed; source XML archives, full deck/PDF deltas and verification
+remain. See storage_cleanup.json and scratch_cleanup.json here.
+
+## Moreover transition in Motivation notes and speech (2026-10-04)
+
+On Motivation, footer 1 / physical 2, the full note and speech now say:
+Moreover, joint friction can also affect the orientation of the tool.
+Only Moreover, was prepended and the following joint lowercased. All other
+sentences, visible slides, equations, media and slide PDFs are unchanged.
+The note and speech page 1 were rendered and visually checked; the other
+nine speech pages are pixel-identical. All 31 notes match 169 full sentences.
+Current speech: 1,647 main words, about 14.77 minutes at 130 words/minute,
+including 95.946 seconds of videos and 30 seconds for pauses. Active outputs
+and editable sources were installed atomically. Verification:
+experiments/speech_motivation_moreover_20261004/verification.json.
+
+For working space, Speaking/build/remote-figures/staged.pptx and
+Speaking/build/video-backups/staged.pptx are preserved as adjacent byte-exact
+deltas using Speaking/build/pose-arrow-rings/before.pptx. Keep that base.
+Restore with experiments/storage_dedup_20261002/archive_generated.py restore
+<delta-path>. One abandoned Git LFS temporary file was removed only after
+confirming it exactly matched a prefix of the preserved complete deck and
+LFS object, with no LFS process active. See storage_cleanup.json here.
+
 ## Push storage preparation (2026-10-04)
 
 For Git LFS working space, plausibility_mean_alignment_20261004/updated.pptx
