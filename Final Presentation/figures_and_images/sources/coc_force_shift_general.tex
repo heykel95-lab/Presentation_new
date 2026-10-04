@@ -3,10 +3,9 @@
 \usetikzlibrary{arrows.meta,calc}
 \begin{document}
 % Presentation-specific extension of the existing CoC sketches.
-% The force is shown AS IF applied at a virtual impedance reference point.
-% m_CoC labels the CoC-induced additional moment about TCP, not an independent couple
-% acting simultaneously with a second TCP force. For this rightward offset
-% and downward force, r_c cross f is clockwise in the illustrated plane.
+% The physical force remains at TCP. The CoC displacement contributes
+% the additional TCP moment m_TCP = r_c cross f. For this rightward offset
+% and downward force, that moment is clockwise in the illustrated plane.
 \begin{tikzpicture}[
  font=\small,
  surf/.style={draw=black,fill=white},
@@ -33,10 +32,10 @@
 \node[lbl,anchor=south east] at ($(T)+(-0.08,0.10)$) {$p_{\mathrm{TCP}}$};
 \node[cpt] at (P) {};
 \node[lbl,anchor=west] at ($(P)+(0.13,-0.04)$) {$p_{\mathrm{CoC}}$};
-\draw[frc] ($(P)+(0,1.10)$)--($(P)+(0,0.13)$);
-\node[lbl,right,black] at ($(P)+(0.15,0.65)$) {$f$};
-\coordinate (M) at ($(T)+(-0.65,0.65)$);
-\draw[mom] ([shift=(150:0.70)]M) arc (150:30:0.70);
-\node[lbl] at ($(M)+(0,1.05)$) {$m_{\mathrm{CoC}}$};
+\draw[frc] ($(T)+(0,1.10)$)--($(T)+(0,0.13)$);
+\node[lbl,right,black] at ($(T)+(0.15,0.65)$) {$f$};
+\coordinate (M) at ($(T)+(0,0.50)$);
+\draw[mom] ([shift=(150:0.95)]M) arc (150:30:0.95);
+\node[lbl] at ($(T)+(0,2.00)$) {$m_{\mathrm{TCP}}$};
 \end{tikzpicture}
 \end{document}

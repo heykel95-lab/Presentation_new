@@ -1,0 +1,29 @@
+% The existing gripper holds a schematic rectangular grinding tool.
+% The tool reference point is the centre of its working face at local z=0.
+% This geometry is illustrative, without experimental dimensions.
+\input{pose_gripper.tikz}
+\newcommand{\PoseTool}{%
+  \pgfmathsetmacro{\ToolYaw}{110}
+  \pgfmathsetmacro{\ToolXX}{cos(\ToolYaw)-0.55*sin(\ToolYaw)}
+  \pgfmathsetmacro{\ToolXY}{-0.42*sin(\ToolYaw)}
+  \pgfmathsetmacro{\ToolYX}{-sin(\ToolYaw)-0.55*cos(\ToolYaw)}
+  \pgfmathsetmacro{\ToolYY}{-0.42*cos(\ToolYaw)}
+  \begin{scope}[x={(\ToolXX cm,\ToolXY cm)},
+    y={(\ToolYX cm,\ToolYY cm)},z={(0cm,1cm)}]
+    % Stem clamped between the fingers.
+    \path[fill=black!42] (-0.14,-0.10,0.12)--(0.14,-0.10,0.12)
+      --(0.14,-0.10,0.83)--(-0.14,-0.10,0.83)--cycle;
+    \path[fill=black!58] (0.14,-0.10,0.12)--(0.14,0.10,0.12)
+      --(0.14,0.10,0.83)--(0.14,-0.10,0.83)--cycle;
+    % Tool body and flat working face.
+    \path[fill=black!17] (-0.45,-0.28,0.17)--(0.45,-0.28,0.17)
+      --(0.45,0.28,0.17)--(-0.45,0.28,0.17)--cycle;
+    \path[fill=black!45] (-0.45,-0.28,0)--(0.45,-0.28,0)
+      --(0.45,-0.28,0.17)--(-0.45,-0.28,0.17)--cycle;
+    \path[fill=black!62] (0.45,-0.28,0)--(0.45,0.28,0)
+      --(0.45,0.28,0.17)--(0.45,-0.28,0.17)--cycle;
+  \end{scope}
+  \begin{scope}[shift={(0,0,0.5)},scale=0.7]
+    \PoseGripper
+  \end{scope}
+}

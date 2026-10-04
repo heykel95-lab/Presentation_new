@@ -1,12 +1,13 @@
-\documentclass[tikz,border=4pt]{standalone}
+\documentclass[tikz,border={4pt 4pt 4.9104pt 4pt}]{standalone}
+% Retain the original canvas after moving the outer force label to TCP.
 \usepackage{amsmath,amssymb,bm,setspace}
 \usepackage{tikz,pgfplots}
 \pgfplotsset{compat=1.18}
 \usetikzlibrary{arrows.meta,calc,positioning,decorations.pathreplacing}
 \begin{document}
-% Presentation-specific variant: force acts as if applied at virtual p_CoC.
-% The curved arrows show its resulting moment about TCP. No physical contact
-% relocation or second independently applied moment is implied.
+% Presentation-specific variant: the physical force remains at TCP.
+% Curved arrows show the additional TCP moment due to the CoC displacement.
+% Reversing the displacement reverses this contribution; contact stays fixed.
 % Elevation sketch of the contribution the normal component of the commanded
 % force makes through a tangential compliance-centre displacement. The view is
 % taken in the surface tangent plane, with n_s up, so the two panels differ only
@@ -61,14 +62,14 @@
   \node[pt] at (T) {};
   \node[lbl, anchor=south east] at ($(T)+(-0.07,0.05)$) {TCP};
 
-  % ---- normal force shown as acting at the virtual CoC -------------------
-  \draw[frc] ($(P)+(0,1.05)$) -- ($(P)+(0,0.14)$);
-  \node[lbl, right, black] at ($(P)+(0.13,0.65)$) {$f_n$};
+  % ---- normal force applied at the physical TCP -------------------
+  \draw[frc] ($(T)+(0,1.05)$) -- ($(T)+(0,0.14)$);
+  \node[lbl, right, black] at ($(T)+(0.13,0.65)$) {$f_n$};
 
-  % ---- resulting moment ABOUT TCP; not a second independent moment -------
+  % ---- additional moment ABOUT TCP due to the CoC displacement -------
   \coordinate (M) at ($(T)+(0,0.30)$);
   \draw[mom] ([shift=(30:0.95)]M) arc (30:150:0.95);
-  \node[lbl] at ($(T)+(0,1.80)$) {$\vphantom{r_c\times f_n}m_{\mathrm{CoC}}$};
+  \node[lbl] at ($(T)+(0,1.80)$) {$\vphantom{r_c\times f_n}m_{\mathrm{TCP}}$};
 
   \node at (0,-0.92) {(a) Supporting moment};
 \end{scope}
@@ -95,12 +96,12 @@
   \node[pt] at (T2) {};
   \node[lbl, anchor=south east] at ($(T2)+(-0.07,0.05)$) {TCP};
 
-  \draw[frc] ($(P2)+(0,1.05)$) -- ($(P2)+(0,0.14)$);
-  \node[lbl, right, black] at ($(P2)+(0.13,0.65)$) {$f_n$};
+  \draw[frc] ($(T2)+(0,1.05)$) -- ($(T2)+(0,0.14)$);
+  \node[lbl, right, black] at ($(T2)+(0.13,0.65)$) {$f_n$};
 
   \coordinate (M2) at ($(T2)+(0,0.30)$);
   \draw[mom] ([shift=(150:0.95)]M2) arc (150:30:0.95);
-  \node[lbl] at ($(T2)+(0,1.80)$) {$\vphantom{r_c\times f_n}m_{\mathrm{CoC}}$};
+  \node[lbl] at ($(T2)+(0,1.80)$) {$\vphantom{r_c\times f_n}m_{\mathrm{TCP}}$};
 
   \node at (0,-0.92) {(b) Opposing moment};
 \end{scope}

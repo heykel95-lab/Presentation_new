@@ -4,7 +4,7 @@ Title slide | Opening
 
 Hello everyone, and thank you for being here.
 
-Today I will present my work on controlling a seven-joint robot for grinding. The aim is to help the tool align with a surface and reduce unwanted arm motion.
+Today, I will present my work on controlling a seven-joint robot for grinding. The main goal is to help the tool align with a surface and to reduce unwanted motion of the robot arm.
 
 
 
@@ -14,13 +14,13 @@ Slide 1 | Motivation
 
 
 
-First, let me explain why tool alignment matters.
+First, let me explain why tool alignment is important.
 
-Grinding needs an aligned tool face. In practice, the real surface angle is not known exactly. So the surface used in the controller may not match the real surface. Joint friction can also affect the tool orientation. The controller allows the tool to rotate during contact, helping it align with the surface. This video shows the idea.
+For grinding, the tool face needs to be properly aligned with the surface. However, in practice, the exact angle of the real surface is not always known. This means that the surface used by the controller may be slightly different from the actual surface. Joint friction can also affect the orientation of the tool. The controller therefore allows the tool to rotate passively during contact, which helps it align with the real surface. This video shows the basic idea.
 
 [Play video: about 51 seconds.]
 
-The tool turns even though its desired orientation stays fixed.
+As you can see, the tool rotates even though its desired orientation remains fixed.
 
 
 
@@ -30,9 +30,9 @@ Slide 2 | Overview
 
 
 
-First, I will give you a short overview of my presentation.
+First, I will give you a short overview of the presentation.
 
-I will explain the controller, then show the contact tests and results. After that, I will discuss the extra joint motion and finish with the main findings.
+I will start by explaining the controller. Then, I will show the contact experiments and their results. After that, I will discuss the extra joint motion and the null-space controller. Finally, I will summarize the main findings.
 
 
 
@@ -44,7 +44,7 @@ Slide 3 | Cartesian pose
 
 I will start with how we describe the tool.
 
-Pose means position and orientation: where the tool is and how it is turned. We use three coordinates for each. Forward kinematics calculates the pose from all seven joint angles.
+The pose of the tool consists of its position and orientation. In other words, it tells us where the tool is and how it is rotated. We use three coordinates for the position and three coordinates for the orientation. Using forward kinematics, we calculate the tool pose from all seven joint angles of the robot.
 
 
 
@@ -54,9 +54,9 @@ Slide 4 | Surface frame
 
 
 
-Now we can describe the surface around the tool.
+Now, we can describe the surface around the tool.
 
-The normal points out of the surface. The two tangents lie along it. These directions define the force and moment components and where the tool should give way or stay stiff.
+The normal direction points out of the surface, while the two tangent directions lie along the surface. These directions define the force and moment components. They also determine in which directions the tool should be compliant and in which directions it should remain stiff.
 
 
 
@@ -66,9 +66,9 @@ Slide 5 | Cartesian impedance law
 
 
 
-To control this behaviour, I use impedance control.
+To control this behaviour, I use Cartesian impedance control.
 
-It acts like a spring and a damper. The spring pulls towards the desired pose; damping slows motion. Position error creates force, and rotation error creates a turning moment. Together, force and moment are called a wrench. Here, translation and rotation are set separately.
+The basic idea is similar to a spring and a damper. The spring pulls the tool towards its desired pose, while the damping slows down the motion. A position error creates a force, and an orientation error creates a turning moment. Together, the force and moment are called a wrench. An important point here is that the translational and rotational behaviour can be adjusted separately.
 
 
 
@@ -78,9 +78,9 @@ Slide 6 | Real-time control
 
 
 
-To apply this law, we need torques at the robot joints.
+To apply this control law, we need to calculate the torques for the robot joints.
 
-The Jacobian transpose converts the wrench into joint torques. We add Coriolis compensation and the posture-control torques, which I will explain later. Gravity compensation happens inside the robot. This loop runs every millisecond, using the latest measured state.
+The Jacobian transpose converts the Cartesian wrench into joint torques. We then add Coriolis compensation and the posture-control torques, which I will explain later. Gravity compensation is handled internally by the robot. The complete control loop runs every millisecond using the latest measured robot state.
 
 
 
@@ -90,9 +90,9 @@ Slide 7 | Centre of compliance: a virtual reference
 
 
 
-Next, we can change how the force turns the tool.
+Next, we can change how the force affects the rotation of the tool.
 
-The tool centre point, or TCP, is our controlled point. The centre of compliance, or CoC, is a virtual reference for stiffness and damping. Shifting it adds a moment about the TCP. This does not move the physical contact point.
+The tool centre point, or TCP, is our controlled point. The centre of compliance, or CoC, is a virtual reference point used for stiffness and damping. If we shift the CoC away from the TCP, the applied force creates an additional moment around the TCP.
 
 
 
@@ -102,9 +102,9 @@ Slide 8 | Supporting and opposing CoC shifts
 
 
 
-This shift can help alignment, but it can also work against it.
+This CoC shift can help the alignment, but it can also work against it.
 
-On the left, the added moment supports alignment. On the right, it opposes alignment. The shift direction must match the starting angular offset.
+On the left, the additional moment supports the alignment. On the right, the additional moment opposes the alignment. This means that the direction of the CoC shift has to match the initial angular offset of the tool.
 
 
 
@@ -114,9 +114,9 @@ Slide 9 | Translation-rotation coupling
 
 
 
-The equations here describe this connection.
+The equations on this slide describe this connection.
 
-We use the shift from the TCP to the CoC to transform stiffness and damping. The new terms connect translation and rotation. A pressing force can therefore also create a turning effect.
+We use the shift between the TCP and the CoC to transform the stiffness and damping. This creates new terms that connect translation and rotation. As a result, a force that presses the tool against the surface can also create a turning effect.
 
 
 
@@ -128,7 +128,7 @@ Slide 10 | Contact experiment
 
 With the controller defined, I can now show the contact experiment.
 
-I deliberately start the tool with an angular offset. This represents the mismatch between the surface used in the controller and the real surface. The robot then approaches, makes contact, and grinds. Normal motion and rotations about the tangents give way. The other directions stay stiff.
+I deliberately start the tool with an angular offset. This represents the mismatch between the surface orientation used by the controller and the real surface orientation. The robot then approaches the surface, makes contact and performs the grinding motion. Motion in the normal direction and rotation about the two tangent axes are compliant. The other directions remain stiff.
 
 
 
@@ -138,13 +138,13 @@ Slide 11 | Plausibility experiment
 
 
 
-Before looking at alignment, I checked the basic response.
+Before looking at the alignment results, I first checked the basic response of the controller.
 
-I pushed and turned the tool by hand, as shown here.
+For this test, I pushed and rotated the tool by hand, as shown in the video.
 
 [Play video: about 14 seconds.]
 
-The next two plots compare the commanded and estimated values with the spring calculation.
+The next two plots compare the commanded and estimated values with the values predicted by the spring equation. The estimated values are model-based measurements.
 
 
 
@@ -154,9 +154,9 @@ Slide 12 | Force plausibility
 
 
 
-Let us look first at the force.
+Let us first look at the force.
 
-A push of about twenty millimetres gives a predicted force of about minus twenty newtons. The commanded mean is almost the same. The model estimate is slightly stronger. All three values below the plot are means over the shaded, steady interval.
+A displacement of about twenty millimetres gives a predicted force of approximately minus twenty newtons. The commanded mean is almost the same, while the model estimate is slightly larger. The two values shown below the plot are mean values calculated over the shaded steady-state interval.
 
 
 
@@ -166,9 +166,9 @@ Slide 13 | Moment plausibility
 
 
 
-Next, I repeat the same check for rotation.
+Next, I repeated the same check for rotation.
 
-About six and a half degrees gives predicted and commanded mean moments of about one point seven newton metres. The estimated mean is slightly higher. Again, these means cover the shaded interval. Both tests support the expected spring response.
+A rotation of approximately six and a half degrees gives predicted and commanded mean moments of about one point seven newton metres. The estimated mean is slightly higher. Again, these values are calculated over the shaded interval. Overall, both tests support the expected spring behaviour of the controller.
 
 
 
@@ -178,9 +178,9 @@ Slide 14 | Moment during contact alignment
 
 
 
-This leads to what happens during actual contact.
+Now, let us look at what happens during actual contact alignment.
 
-In this separate test, the force curves stay close, but the estimated moment is larger during alignment. This is consistent with contact helping to turn the tool. Once the motion settles, the values become close.
+In this separate test, the force curves remain close to each other. However, the model-estimated moment is larger during the alignment motion. It includes the contact moment from the surface, which helps turn the tool towards alignment. Once the motion settles, the values become close again.
 
 
 
@@ -190,9 +190,9 @@ Slide 15 | Effect of rotational stiffness
 
 
 
-To understand this turning motion, I first changed the rotational stiffness.
+To understand this turning behaviour better, I first changed the rotational stiffness.
 
-The plot shows the remaining angular error relative to the calibrated surface. Closer to zero means better alignment in this direction. Higher stiffness leaves more error because it resists rotation during contact.
+The plot shows the remaining angular error relative to the calibrated surface. A value closer to zero means better alignment in this direction. We can see that a higher rotational stiffness leaves a larger remaining error. This happens because the higher stiffness resists rotation during contact.
 
 
 
@@ -202,9 +202,9 @@ Slide 16 | CoC shift and entry offset
 
 
 
-I then changed the centre of compliance.
+Next, I changed the centre of compliance.
 
-For a positive starting offset, a positive CoC shift helps alignment. For a negative offset, the useful position is different. A larger shift is not always better. Its direction and size must suit the starting offset.
+For a positive starting offset, a positive CoC shift helps the alignment. For a negative starting offset, a different CoC position is more useful. This also shows that a larger shift is not always better. The direction and size of the CoC shift have to match the initial angular offset.
 
 
 
@@ -214,9 +214,9 @@ Slide 17 | Turning response over time
 
 
 
-Here, we can see that effect over time.
+Here, we can see the same effect over time.
 
-The supporting shift helps alignment happen faster. The opposing shift leaves much of the initial angular error. Normal forces are broadly similar, but moments differ. So the CoC mainly changes the turning response.
+The supporting CoC shift helps the alignment happen faster. The opposing CoC shift leaves much of the initial angular error. The normal forces are broadly similar between the different cases, but the moments are different. This means that the CoC mainly changes the rotational response of the tool.
 
 
 
@@ -228,7 +228,7 @@ Slide 18 | Null-space controller
 
 Next, I will explain the null-space controller.
 
-Seven joints control six tool-pose coordinates. The extra freedom lets the arm change posture while holding the tool pose. I added two torque terms: a damping torque and a conditioning torque. Damping opposes this extra motion. Conditioning seeks a larger minimum singular value, called sigma min. This helps avoid postures where some tool movements become difficult.
+The robot has seven joints, but only six coordinates are needed to describe the tool pose. This gives the robot one extra degree of freedom. Because of this extra freedom, the arm can change its posture while keeping the tool pose almost unchanged. I added two additional torque terms: a damping torque and a conditioning torque. Damping is based on joint velocity, while conditioning is based on joint position. The damping torque opposes this extra joint motion. The conditioning torque tries to achieve a larger minimum singular value of the Jacobian, which we call sigma min. A larger sigma min helps the robot avoid postures where certain tool movements become difficult.
 
 
 
@@ -238,13 +238,13 @@ Slide 19 | Control OFF, then damping ON
 
 
 
-Let me first show what damping does.
+Let me first show what the damping torque does.
 
-This video starts with null-space control off. Then damping is switched on.
+This video starts with the null-space controller switched off. Then, the damping torque is switched on.
 
 [Play video: about 23 seconds.]
 
-Damping opposes the extra arm motion while the main controller holds the tool pose.
+The difference is easier to feel than to see. With null-space control off, the arm moves more easily. With damping on, the same push moves the arm more slowly. I need to push harder to move it at the same speed. The main controller still holds the tool pose.
 
 
 
@@ -256,11 +256,11 @@ Slide 20 | Conditioning ON
 
 Now, let us compare this with conditioning.
 
-Here, conditioning is on.
+In this video, the conditioning controller is active.
 
 [Play video: about 8 seconds.]
 
-It aims to improve the arm posture while holding the tool pose. Its purpose differs from damping, which opposes motion.
+The purpose of conditioning is different from damping. Conditioning tries to improve the posture of the robot while keeping the tool pose. Damping, on the other hand, mainly opposes unnecessary motion.
 
 
 
@@ -270,9 +270,9 @@ Slide 21 | Null-space experiment
 
 
 
-To compare these effects, I used the same disturbance in each test.
+To compare these effects, I used the same disturbance in each experiment.
 
-Joint torques represent a virtual twenty-newton force on link three. I tested no null-space control, damping, conditioning, and both together, with three trials each. Joint one is shown because it receives the largest peak disturbance torque. The next plots show trial means over four seconds.
+The disturbance is created using joint torques that represent a virtual force of twenty newtons acting on link three. I tested four different cases: no null-space control, damping only, conditioning only, and damping together with conditioning. Each case was tested three times. Joint one is shown because it receives the largest peak disturbance torque. The following plots show the mean results from the three trials over four seconds.
 
 
 
@@ -282,9 +282,9 @@ Slide 22 | Joint motion over time
 
 
 
-Let us start with how much joint one moves.
+Let us first look at how much joint one moves.
 
-Damping reduces the motion. Conditioning and combined control keep it much smaller. The right plot zooms in: the joint changes direction several times. Adding damping reduces total motion, but some reversals remain.
+Damping reduces the motion. Conditioning and the combined controller keep the motion much smaller. The plot on the right shows a zoomed view. We can see that the joint changes direction several times. Adding damping reduces the total amount of motion, although some reversals still remain.
 
 
 
@@ -294,9 +294,9 @@ Slide 23 | Jacobian conditioning
 
 
 
-Less motion is useful, but we also need to check the arm posture.
+Reducing the joint motion is useful, but we also need to check the posture of the robot.
 
-Sigma min falls with no null-space control and with damping alone. With conditioning, alone or combined with damping, it stays nearly constant. So damping mainly limits motion, while conditioning helps maintain this measure.
+For this, we look at sigma min. Without null-space control, sigma min decreases. The same happens when only damping is used. With conditioning, either alone or combined with damping, sigma min stays almost constant. This shows that damping and conditioning have different roles. Damping mainly limits unnecessary motion, while conditioning helps maintain the Jacobian conditioning.
 
 
 
@@ -308,9 +308,9 @@ Slide 24 | Conclusion
 
 These results bring me to the main conclusions.
 
-Allowing rotation helps contact reduce angular error. The CoC can help or oppose alignment, while higher stiffness resists rotation. Null-space control reduces unwanted arm motion. Damping and conditioning have different roles.
+Allowing the tool to rotate during contact helps reduce the angular error. The centre of compliance can support the alignment, but it can also oppose it if the direction is not chosen correctly. A higher rotational stiffness resists rotation more strongly and therefore leaves a larger angular error. The null-space controller helps reduce unwanted motion of the robot arm. Damping and conditioning have different roles and can also be combined.
 
-Next, I would improve the tool mount and adjust the CoC during alignment, then return it to the TCP. Thank you for your attention. I am happy to take your questions.
+As future work, I would improve the mechanical tool mount. I would also adjust the centre of compliance during the alignment process and then return it to the TCP once the alignment is complete. Thank you for your attention. I am happy to take your questions.
 
 [End of main talk.]
 

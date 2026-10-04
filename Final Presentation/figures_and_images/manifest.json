@@ -79,12 +79,12 @@
   {
     "asset": "force_plausibility",
     "source": "figures/ch05/MAIN_WR_force_plausibility.pdf",
-    "changes": "Original figure rendered directly; no screenshots or data changes."
+    "changes": "2026-10-03: Shared thesis plot with only Commanded (black) and Model-estimated (red) curves. Quasi-static prediction curve and legend entry removed; original samples, axes, limits, ticks, shaded stationary interval and canvas retained. Numerical prediction and mean labels remain on the slide."
   },
   {
     "asset": "moment_plausibility",
     "source": "figures/ch05/MAIN_WR_moment_plausibility.pdf",
-    "changes": "Original figure rendered directly; no screenshots or data changes."
+    "changes": "2026-10-03: Shared thesis plot with only Commanded (black) and Model-estimated (red) curves. Quasi-static prediction curve and legend entry removed; original samples, axes, limits, ticks, shaded stationary interval and canvas retained. Numerical prediction and mean labels remain on the slide."
   },
   {
     "asset": "equation_force",
@@ -653,13 +653,13 @@
   {
     "asset": "cartesian_pose_position",
     "source": "MyOwn/chapters/02_theoretical_background.tex, coordinate frames and rigid-body pose; new schematic for the user-requested Cartesian-pose introduction.",
-    "changes": "2026-10-02: The end-effector position arrow is labelled p_EE. Original diagram geometry and parenthesized (EE) label retained.",
+    "changes": "2026-10-03: Both pose diagrams show the same generic grinding tool held by the existing gripper, using the shared pose_tool.tikz macro. The working-face reference point defines p in the position diagram and the rotation-axis origin in the orientation diagram. Labels read Tool. Existing reference axes, colors, positive rotation curls and arm chain are preserved. Geometry is schematic, not an experimental dimension or exact tool model.",
     "presentation_palette": "2026-09-16: robot, gripper and physical tool bodies use theme blue #17365D with lighter blue depth shading. Geometry, axes, reference-direction colours and data are preserved. The requested recolouring applies to the presentation."
   },
   {
     "asset": "cartesian_pose_orientation",
     "source": "MyOwn/chapters/02_theoretical_background.tex, coordinate frames and rigid-body pose; new schematic for the user-requested Cartesian-pose introduction.",
-    "changes": "Illustrative geometry without numerical measurements. Shows reference-frame position coordinates or positive rotations for roll, pitch and yaw; not an experimental result. Editable LaTeX source and matching PDF/PNG/SVG retained. Both pose illustrations use the identical parallel-jaw gripper macro from sources/pose_gripper.tikz, placed at the EE frame origin; a schematic symbol, not an exact tool model. Revised shared gripper to a transparent orthographic side profile with horizontal fingers; all fill and perspective faces removed. Orientation axes run from EE through the outline. User refinement: rotate the gripper -90 degrees so both fingers point downward; show a transparent 3D left-side view with depth edges and no filled faces. Use identical shared geometry and scale in both figures. Latest user refinement: opaque solid gripper with shaded faces and a small positive z rotation (+15 degrees for illustration only), retaining downward fingers and identical geometry/scale. Rotation arcs use smooth paths and clear tangent-aligned arrowheads following the positive right-hand rule. Latest refinement: one continuous opaque gripper body with filled depth faces and no internal edge strokes; further positive yaw so its front faces right. The position illustration adds a schematic chain with seven circular joint markers and connecting links from the base origin to the gripper wrist. Rotation rings redrawn: the roll, pitch and yaw curls are plotted as fine polylines rather than smoothed curves, so each arrow tip is exactly tangent to its ring, and the ring radii are enlarged relative to the tip length. Each ring is split where it crosses its own axis, the far half being drawn before the axes and the near half after them over a white casing, so the axis passes through the ring. Ring positions and labels are spaced clear of the axis tips and of the gripper. Rotation senses and the roll-pitch-yaw convention are unchanged. Pitch and roll arrow tips corrected on 2026-09-10 using endpoint tangent markings and straight-sided triangular heads. Arc ends moved to flatter portions of the same rings to avoid hooked tips. Positive rotation senses, yaw curve, labels, axes, gripper and drawing scale are preserved. Follow-up pitch correction: end the curve at the exact centre of the triangular head base and extend the head forwards along the endpoint tangent. This removes the off-centre junction. Roll and yaw are unchanged. 2026-10-01: standalone diagram label EE is now (EE), preserving geometry and typography.",
+    "changes": "2026-10-03: Both pose diagrams show the same generic grinding tool held by the existing gripper, using the shared pose_tool.tikz macro. The working-face reference point defines p in the position diagram and the rotation-axis origin in the orientation diagram. Labels read Tool. Existing reference axes, colors, positive rotation curls and arm chain are preserved. Geometry is schematic, not an experimental dimension or exact tool model.",
     "presentation_palette": "2026-09-16: robot, gripper and physical tool bodies use theme blue #17365D with lighter blue depth shading. Geometry, axes, reference-direction colours and data are preserved. The requested recolouring applies to the presentation."
   },
   {
@@ -677,8 +677,8 @@
   },
   {
     "asset": "pose_joint_configuration",
-    "source": "MyOwn/chapters/02_theoretical_background.tex: forward kinematics maps seven joint coordinates to end-effector pose.",
-    "changes": "2026-10-02: Full Cartesian pose depends on the seven joint angles: x_EE = x_EE(q). Native equation and matching assets use 22 pt regular Cambria Math.",
+    "source": "Existing presentation forward-kinematics equation, generalized to the tool pose at the user request.",
+    "changes": "2026-10-03: Forward kinematics for the tool pose: x = x(q). Native editable 22 pt Cambria Math; matching LaTeX and PDF/PNG/SVG assets.",
     "presentation_representation": "Native editable PowerPoint Office Math, converted directly from the existing LaTeX source on 2026-09-15. Cambria Math. Formula source also retained in shape alternative text and native_equations.json. Legacy image variants retained as source assets.",
     "equation_style": {
       "font": "Cambria Math",
@@ -822,7 +822,7 @@
   {
     "asset": "jacobian_velocity_mapping",
     "source": "MyOwn/chapters/02_theoretical_background.tex, eq:differential_kinematics",
-    "changes": "2026-10-02: Use compact x-dot_EE = J(q)q-dot for geometric linear/angular Cartesian velocity; native 22 pt regular Cambria Math.",
+    "changes": "2026-10-04: Removed only the EE subscript from x-dot on footer slide 6: x-dot = J(q)q-dot. Geometric linear/angular velocity interpretation and native editable 22 pt Cambria Math remain unchanged.",
     "equation_style": {
       "font": "Cambria Math",
       "size_pt": 22.0,
@@ -928,7 +928,7 @@
   {
     "asset": "cartesian_pose_vector",
     "source": "sources/cartesian_pose_vector.tex",
-    "changes": "2026-10-02: Native horizontal six-coordinate pose vector x_EE = [x y z phi theta psi]^T. Position/orientation intermediate vectors are omitted. Upright T denotes transpose. Angles retain the existing roll-pitch-yaw interpretation.",
+    "changes": "2026-10-03: Generic tool pose x = [x y z phi theta psi]^T. Native editable 22 pt Cambria Math; matching LaTeX and PDF/PNG/SVG assets. EE subscripts removed; pose components and roll-pitch-yaw interpretation unchanged.",
     "equation_style": {
       "font": "Cambria Math",
       "size_pt": 22,
@@ -939,16 +939,16 @@
   {
     "asset": "coc_force_shift_general",
     "source": "sources/coc_force_shift_general.tex",
-    "changes": "2026-10-02: Presentation-specific CoC introduction and virtual-force/moment interpretation; p_CoC notation. Original shared figures retained for provenance. 2026-10-02: The additional moment about TCP is labelled m_CoC = r_c cross f, with upright CoC subscript; it is the additional coupling contribution. CoC prose identifies the virtual reference point for Cartesian stiffness and damping. Geometry and mathematical meaning are unchanged."
+    "changes": "2026-10-03: Physical force f remains at TCP. The clockwise additional-moment arrow and m_TCP label are centred above TCP and the force, matching the slide-8 arrangement. Arc centre T + (0,0.50), radius 0.95; label T + (0,2.00). Both sit 0.20 cm higher than the slide-8 construction to clear the diagonal r_c label. CoC point, displacement, surface, tool, force arrow, colours, caption, native equation and canvas are unchanged."
   },
   {
     "asset": "coc_force_shift_cases",
     "source": "sources/coc_force_shift_cases.tex",
-    "changes": "2026-10-02: Presentation-specific CoC introduction and virtual-force/moment interpretation; p_CoC notation. Original shared figures retained for provenance. 2026-10-02: Both curved-arrow moment labels are m_CoC (upright CoC subscript), matching the general introduction; supporting/opposing arrow directions and all geometry are unchanged."
+    "changes": "2026-10-03: The red force arrows are anchored at the physical TCP in all three diagrams. p_CoC remains a virtual compliance reference connected by r_c. The curved arrows retain their original directions and are labelled m_TCP, the additional moment about TCP. The general diagram moment arc is moved slightly left to clear the relocated force. Existing surface, tool, axes, displacements, case captions, drawing scale and palette are preserved."
   },
   {
     "asset": "coc_added_moment",
     "source": "sources/coc_added_moment.tex",
-    "changes": "2026-10-02: Presentation-specific CoC introduction and virtual-force/moment interpretation; p_CoC notation. Original shared figures retained for provenance. 2026-10-02: The additional moment about TCP is labelled m_CoC = r_c cross f, with upright CoC subscript; it is the additional coupling contribution. CoC prose identifies the virtual reference point for Cartesian stiffness and damping. Geometry and mathematical meaning are unchanged."
+    "changes": "2026-10-03: Additional moment about the TCP is labelled m_TCP = r_c cross f. Only the moment subscript changes; native editable 22 pt Cambria Math and matching LaTeX/PDF/PNG/SVG assets remain synchronized. This is the CoC-induced coupling contribution."
   }
 ]

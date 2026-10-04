@@ -1,5 +1,1026 @@
 # Thesis and presentation workspace
 
+## Push storage preparation (2026-10-04)
+
+For Git LFS working space, plausibility_mean_alignment_20261004/updated.pptx
+and speech_contact_moment_slide14_20261004/archive/original.pptx are preserved
+as adjacent byte-exact deltas using plot_heading_match_20261002/updated.pptx.
+Speaking/build/restructure/staged.pptx is preserved as an adjacent byte-exact
+delta using Speaking/build/pose-arrow-rings/before.pptx. Keep both bases.
+Restore with experiments/storage_dedup_20261002/archive_generated.py restore
+<delta-path>. Only regenerable heading_consistency_20261002/before previews
+slide-01.png, slide-11.png and slide-19.png were removed; the original archives,
+updated deck/PDF deltas, source and verification remain. Active outputs are
+unchanged. See tmp/push_20261004/storage_cleanup.json and scratch_cleanup.json.
+
+## Clear contact-moment explanation in slide 14 speech (2026-10-04)
+
+For Force and moment during contact alignment, footer 14 / physical 15,
+replace the two explanation sentences in the speech and matching full note:
+However, the model-estimated moment is larger during the alignment motion.
+It includes the contact moment from the surface, which helps turn the tool
+towards alignment.
+
+This names the contact moment directly instead of saying consistent with.
+The local thesis method defines the model-estimated quantity as external
+wrench about TCP. Do not imply that the complete transient difference was
+experimentally isolated. The preceding force comparison and following
+settling sentence, all other speech and notes, visible slides, equations,
+media and slide PDFs are unchanged.
+
+All 31 notes match 169 full spoken sentences. The ten-page speech contains
+1,646 main words across eight pages and 340 backup words across two pages.
+Main duration is about 14.76 minutes at 130 words/minute, including 95.946
+seconds of videos and 30 seconds for pauses; at least 127.6 words/minute
+is needed for 15 minutes. Speech page 5 and the native PowerPoint note
+were rendered and checked. The other nine speech pages are pixel-identical.
+Active outputs and editable sources were installed atomically; the saved
+open presentation was reopened at the same slide position. Verification:
+experiments/speech_contact_moment_slide14_20261004/verification.json.
+
+For working space, motivation_passive_rotation_20261004/updated.pptx and
+plausibility_mean_alignment_20261004/archive/original.pptx are preserved
+as adjacent byte-exact deltas using plot_heading_match_20261002/updated.pptx.
+Speaking/build/coc-nullspace-layout/before-Thesis_Defense_gg0_v3.pptx is
+similarly stored using Speaking/build/pose-arrow-rings/before.pptx. Keep
+both bases. Restore with experiments/storage_dedup_20261002/
+archive_generated.py restore <delta-path>. Only regenerable native-slide-1
+and native-slide-2 PNG previews in motivation_video_20261002 were removed;
+verified source/output archives remain. See storage_cleanup.json and
+scratch_cleanup.json here.
+
+## Symmetric mean values under plausibility plots (2026-10-04)
+
+On Normal-force plausibility assessment and Moment plausibility assessment,
+footer slides 12/13 and physical slides 13/14, center the existing commanded
+and model-estimated mean boxes beneath the left and right halves of the
+actual plotting area. Their pair is now symmetric around the plot/legend
+center rather than the slide center. Derive the plotting-area bounds from
+the canonical plot PDF clipping rectangle and the inherited picture frame.
+
+Only four horizontal positions change. For force, TextBox 18/19 left edges
+are 275.626772/540.432756 pt. For moment, they are 273.946142/539.872520 pt.
+Keep y = 447 pt, width = 216.67 pt and height = 46 pt for all four boxes.
+The titles, values, fonts, colors, paragraph alignment, plots, legends,
+equations and slide structure are unchanged. Notes and speech still match
+the unchanged content and are preserved.
+
+Both slides were rendered in PowerPoint and the full PDF and visually
+checked. PDF text matrices move only the existing mean text; all other
+pixels on those pages and all other 29 pages are identical. All other PPTX
+parts, native equations, videos, notes, speech, plot assets and supplementary
+PDF are unchanged. Active PowerPoint/PDF were installed atomically and the
+saved open PowerPoint window was restored at its prior slide position.
+Verification: experiments/plausibility_mean_alignment_20261004/verification.json.
+Exact plotting bounds and box positions are in moves.json.
+
+For working space, speech_model_measurement_slide11_20261004/updated.pptx
+and motivation_passive_rotation_20261004/archive/original.pptx are preserved
+as adjacent byte-exact deltas using plot_heading_match_20261002/updated.pptx.
+Speaking/build/wrench-layout/before-Thesis_Defense_gg0_v3.pptx is similarly
+stored using Speaking/build/pose-arrow-rings/before.pptx. Keep both bases.
+Restore using experiments/storage_dedup_20261002/archive_generated.py
+restore <delta-path>. Only regenerable motivation.png previews in the two
+older motivation_problem_wording and motivation_single_problem experiments,
+and overview_theory_20261003/after_2.png, were removed. Verified source/output
+archives remain. See storage_cleanup.json and scratch_cleanup.json here.
+
+## Passive rotation in Motivation (2026-10-04)
+
+On Motivation, footer 1 / physical 2, the existing Idea sentence now reads:
+Rotational compliance allows the tool to turn passively towards alignment.
+The matching speech and full note now say:
+The controller therefore allows the tool to rotate passively during contact,
+which helps it align with the real surface.
+Only passively is added to each sentence. Preserve the existing after-video
+sentence explaining that the desired orientation remains fixed. The user
+wants to make clear that the alignment rotation is not commanded.
+
+All other wording, native text formatting, box geometry, slide order,
+equations and media remain unchanged. All 31 notes match 169 full spoken
+sentences. The ten-page speech has 1,645 main words and 340 backup words;
+including 95.946 seconds of videos and 30 seconds of pauses, it is about
+14.75 minutes at 130 words/minute. At least 127.5 words/minute is needed
+for 15 minutes. The Motivation slide, note and speech page 1 were rendered
+and visually checked. Full-PDF changes are confined to the existing Idea
+text box; the other 30 slide pages and nine speech pages are pixel-identical.
+The supplementary PDF is unchanged. Active outputs and editable sources
+were installed atomically; the saved PowerPoint window was restored.
+Verification: experiments/motivation_passive_rotation_20261004/verification.json.
+
+For working space, slide6_velocity_no_ee_20261004/updated.pptx and
+speech_model_measurement_slide11_20261004/archive/original.pptx are preserved
+in adjacent byte-exact delta archives using the plot_heading_match_20261002
+shared base. Speaking/build/angular-title/before-rename.pptx is similarly
+stored as a delta using Speaking/build/pose-arrow-rings/before.pptx. Keep
+both bases; restore using experiments/storage_dedup_20261002/
+archive_generated.py restore <delta-path>. Only regenerable native.png and
+after.png in title_date_20261003 and after.png in motivation_requirement_20261003
+were removed. Verified source/output archives remain. See storage_cleanup.json
+and scratch_cleanup.json in this experiment.
+
+## Explain estimated values on slide 11 (2026-10-04)
+
+On the plausibility experiment, footer 11 / physical 12, add after the
+sentence introducing the next two plots:
+The estimated values are model-based measurements.
+The full speaker note and simple speech use exactly the same sentence.
+Continue using simple, clear, easy-to-remember wording for speech changes.
+Keep every existing sentence and the video cue; visible slides are unchanged.
+
+All 31 notes match 169 full spoken sentences. Current speech: ten pages,
+1,644 main words and 340 optional backup words. Including 95.946 seconds
+of videos and 30 seconds of pauses, duration is about 14.75 minutes at
+130 words/minute; at least 127.4 words/minute is needed for 15 minutes.
+Speech page 4 and the native note were rendered and visually checked.
+The other nine speech pages are pixel-identical; all other PPTX parts,
+native equations, media, full slide PDF and supplementary PDF are unchanged.
+Outputs and editable sources were installed atomically; the saved open
+PowerPoint window was restored. Verification:
+experiments/speech_model_measurement_slide11_20261004/verification.json.
+
+For working space, speech_damping_video_explanation_20261004/updated.pptx
+and slide6_velocity_no_ee_20261004/archive/original.pptx are preserved in
+adjacent byte-exact delta archives using the plot_heading_match_20261002
+shared base. Speaking/build/realtime-layout/before-Thesis_Defense_gg0_v3.pptx
+is likewise stored as a delta using Speaking/build/pose-arrow-rings/before.pptx.
+Keep both bases. Restore with experiments/storage_dedup_20261002/
+archive_generated.py restore <delta-path>. Only regenerable native.png in
+motivation_requirement_20261003 and native_1.png in overview_theory_20261003
+were removed; verified source/output archives remain. See storage_cleanup.json
+and scratch_cleanup.json in this experiment.
+
+## Remove EE from the velocity equation on slide 6 (2026-10-04)
+
+On Real-time impedance control loop, footer 6 / physical 7, the Jacobian
+equation now reads x-dot = J(q)q-dot. Remove only the EE subscript from
+x-dot. Preserve the native editable Office equation, its 22 pt Cambria
+Math typography and original frame. The geometric linear/angular velocity
+interpretation remains unchanged; x-dot is not a vector of Euler-angle
+derivatives. Other EE notation on other slides is outside this request.
+
+The equation LaTeX source, PDF/PNG/SVG assets, native-equation catalog and
+manifest are synchronized. The speech and full notes were checked: they
+already use general wording without the EE subscript, so no wording
+change is needed. All 31 notes, all speech files, the other 30 slides,
+all 30 native equations and media are preserved. The slide and final PDF
+were rendered and visually checked. The PDF replaces only the equation's
+drawing block and matching font resources; pixel changes are confined
+to the equation. Other 30 pages and the supplementary PDF are unchanged.
+Active outputs and assets were installed atomically, and the saved open
+PowerPoint window was restored. Verification:
+experiments/slide6_velocity_no_ee_20261004/verification.json.
+
+For working space, speech_nullspace_velocity_position_20261004/updated.pptx
+and speech_damping_video_explanation_20261004/archive/original.pptx are
+preserved as adjacent byte-exact delta archives using the shared
+plot_heading_match_20261002/updated.pptx base. Speaking/build/clarity-revision/
+before-revision.pptx is likewise preserved in its adjacent delta using
+Speaking/build/pose-arrow-rings/before.pptx. Keep both bases. Restore with
+experiments/storage_dedup_20261002/archive_generated.py restore <delta-path>.
+Remaining regenerable PNG previews in nullspace_arrows_20261003 were removed;
+its original sources and verified deck/PDF delta archives remain intact.
+See storage_cleanup.json and scratch_cleanup.json in this experiment.
+
+## Explain the damping video through the manual push (2026-10-04)
+
+On the damping demonstration, footer 19 / physical 20, replace the former
+As you can see sentence after playback with these five simple sentences:
+The difference is easier to feel than to see.
+With null-space control off, the arm moves more easily.
+With damping on, the same push moves the arm more slowly.
+I need to push harder to move it at the same speed.
+The main controller still holds the tool pose.
+
+The full speaker note contains the same five sentences, one per paragraph.
+Keep the existing opening, OFF/ON introduction and video cue. This follows
+the user's qualitative account of the manual disturbance; do not claim
+that identical manual forces were measured between trials. Video, slide
+body, equations, other speech and all other notes remain unchanged.
+
+All 31 notes match 168 full spoken sentences. Current speech: ten pages,
+1,637 main words and 340 optional backup words. Including 95.946 seconds
+of videos and 30 seconds of pauses, duration is about 14.69 minutes at
+130 words/minute; at least 126.9 words/minute is needed for 15 minutes.
+Speech page 6 and the native note were rendered and visually checked.
+The other nine speech pages are pixel-identical. All other PPTX parts,
+full slide PDF and supplementary PDF are unchanged. Active outputs and
+editable sources were installed atomically; the saved PowerPoint window
+was restored at its previous slide position. Verification:
+experiments/speech_damping_video_explanation_20261004/verification.json.
+
+For working space, conclusion_rotation_sentence_20261004/updated.pptx and
+speech_nullspace_velocity_position_20261004/archive/original.pptx are
+preserved as adjacent byte-exact delta archives using the shared
+plot_heading_match_20261002/updated.pptx base. Speaking/build/
+before-remove-axis-definitions.pptx is likewise stored in its adjacent
+delta using Speaking/build/pose-arrow-rings/before.pptx. Keep both bases.
+Restore with experiments/storage_dedup_20261002/archive_generated.py
+restore <delta-path>. Only regenerable nullspace_arrows_20261003/
+native-2.png and native-3.png previews were removed; source files,
+verified deck/PDF delta archives and verification are retained.
+See storage_cleanup.json and scratch_cleanup.json in this experiment.
+
+## Null-space torque explanation in speech and notes (2026-10-04)
+
+On Null-space controller, footer 18 / physical 19, add this full sentence
+immediately after introducing the two torque terms:
+Damping is based on joint velocity, while conditioning is based on joint position.
+The speech and matching notes are synchronized. This describes the dependency
+of each term without implying that conditioning tracks a fixed joint-position
+setpoint. The following existing sentences explain damping and improving
+the minimum singular value. Every pre-existing spoken sentence is preserved.
+The wording is supported by the local null_controller_damping.tex and
+null_controller_conditioning.tex equations and existing explanatory material.
+
+All 31 notes now match 164 full spoken sentences. The ten-page speech has
+1,608 main words and 340 optional backup words. Including 95.946 seconds
+of videos and 30 seconds of pauses, the main talk is about 14.47 minutes
+at 130 words/minute or 14.96 minutes at 125 words/minute. Speech page 6
+and the native note were rendered and visually checked; the other nine
+speech pages are pixel-identical. Every other PPTX part, visible slide,
+equation, media item, full slide PDF and supplementary PDF is unchanged.
+Active outputs and editable sources were installed atomically; the saved
+PowerPoint window was restored at its previous slide position. Verification:
+experiments/speech_nullspace_velocity_position_20261004/verification.json.
+
+For working space, slide7_moment_above_tcp_20261003/updated.pptx and
+conclusion_rotation_sentence_20261004/archive/original.pptx are preserved
+as adjacent byte-exact delta archives using the plot_heading_match_20261002
+shared base. Speaking/build/pose-joints/staged.pptx is also preserved in
+its adjacent delta archive using Speaking/build/pose-arrow-rings/before.pptx.
+Keep both bases. Restore exact bytes using storage_dedup_20261002/
+archive_generated.py restore <delta-path>. Only regenerable after/ PNGs
+in heading_consistency_20261002 were removed; its original sources,
+verified deck/PDF delta archives and verification remain intact.
+See storage_cleanup.json and scratch_cleanup.json in this experiment.
+
+## Wording corrections always update notes; conclusion sentence (2026-10-04)
+
+Whenever the user asks to improve or correct presentation or speech wording,
+also update the matching speaker notes. Keep the corresponding speech and
+editable sources synchronized. This is an ongoing user preference.
+
+The Conclusion and future work speech, footer 24 / physical slide 25, now says:
+Allowing the tool to rotate during contact helps reduce the angular error.
+This replaces the unclear sentence about contact with the surface reducing
+the error. The matching full sentence in notesSlide24.xml is synchronized.
+The original sentence was in the speech and notes only; visible slide wording
+is unchanged. All other spoken sentences, notes, native equations, media,
+visible slides, full slide PDF and supplementary PDF are unchanged.
+
+The updated speech page 8 and conclusion note were rendered and visually
+checked. The other nine speech pages are pixel-identical. All 31 notes
+match all 163 full spoken sentences. The ten-page speech has 1,595 main
+words and 340 optional backup words. Main timing is about 14.37 minutes at
+130 words/minute, including 95.946 seconds of videos and 30 seconds of
+pauses; at least 123.6 words/minute is needed for 15 minutes.
+The active deck, speech PDF and editable sources were installed atomically.
+The saved open PowerPoint file was refreshed at its previous slide position.
+Verification: experiments/conclusion_rotation_sentence_20261004/verification.json.
+
+For working space, slide17_horizontal_legend_20261003/updated.pptx and
+slide7_moment_above_tcp_20261003/archive/original.pptx are preserved as
+adjacent byte-exact delta archives. Keep plot_heading_match_20261002/updated.pptx
+as their shared base. Restore using experiments/storage_dedup_20261002/
+archive_generated.py restore <delta-path>. Two byte-identical Speaking/build
+pairs were consolidated with hard links, retaining all original paths:
+remove-last-future/staged.pptx with split-stiffness-conclusion/before.pptx;
+restore-force-panel/before.pptx with split-stiffness-conclusion/staged.pptx.
+See storage_cleanup.json and identical_copy_dedup.json in the experiment.
+Continue replacing files atomically to preserve historical hard-linked copies.
+
+## Slide 7 moment centred above TCP and force (2026-10-03)
+
+On Centre of compliance: a virtual reference, footer 7 / physical 8, centre
+the clockwise moment arc and m_TCP label directly above TCP and the force
+arrow, following the arrangement on footer slide 8. In the editable
+coc_force_shift_general.tex, M = T + (0,0.50), the radius is 0.95 cm,
+and the label is at T + (0,2.00). The arc still runs clockwise, 150 to
+30 degrees. Its arrangement is raised 0.20 cm relative to the slide-8
+construction to keep the right arrowhead clear of the diagonal r_c label.
+This supersedes the earlier left-shifted moment position on this diagram.
+
+The force arrow remains at TCP. Surface, tool, normal axis, TCP/CoC points,
+displacement, colours, line widths, labels, figure canvas and slide placement
+are unchanged. Only three source lines change. The PDF/PNG/SVG diagram
+assets and manifest are synchronized. The deck changes only the existing
+diagram image payload; all native slide text, equations, notes, videos and
+other objects retain their exact package bytes. Speech and thesis are unchanged.
+
+The slide was rendered in PowerPoint and the final PDF and visually checked.
+The full PDF replaces only this diagram image; all other 30 pages are
+pixel-identical. The supplementary PDF is unchanged. Active files and
+editable sources were installed atomically. Verification:
+experiments/slide7_moment_above_tcp_20261003/verification.json.
+
+For export space, plausibility_remove_repeated_prediction_20261003/updated.pptx
+and slide17_horizontal_legend_20261003/archive/original.pptx are preserved in
+adjacent byte-exact delta archives using plot_heading_match_20261002/updated.pptx.
+Restore with experiments/storage_dedup_20261002/archive_generated.py restore
+<delta-path>; keep that shared base. Two pairs of identical Speaking/build
+copies were consolidated with hard links, preserving both original paths and
+all bytes: nullspace-conclusion/staged.pptx with translation-conclusion/before.pptx;
+remove-last-future/before.pptx with stiffness-one-sentence/staged.pptx.
+See identical_copy_dedup.json. Continue installing changes atomically to
+preserve historical hard-linked copies.
+
+## Restore the horizontal legend on slide 17 (2026-10-03)
+
+On Contact response at different CoC positions, footer 17 / physical 18,
+the three legend entries are again side by side in one horizontal row.
+Restore the existing contact_legend_balanced asset (ppt/media/image51.png),
+with its original labels, black/red/blue swatches and 15 pt typography.
+The visible entries are centred below the three plots at y = 410 pt.
+Use the existing Legend - normal force picture; only its image relationship
+and frame change. Original plot images, data, headings, notes and speech remain.
+
+The slide was rendered in PowerPoint and the full PDF and visually checked.
+The PDF changes only the legend image and its placement, preserving the
+original footer-logo rendering. All other 30 PDF pages and all other PPTX
+parts are unchanged. Existing legend assets and editable sources are reused
+without modification. Thesis and supplementary PDF remain unchanged.
+The active deck and PDF were installed atomically. Verification:
+experiments/slide17_horizontal_legend_20261003/verification.json.
+
+For export space, plausibility_two_curves_20261003/updated.pptx and its
+matching plausibility_remove_repeated_prediction_20261003/archive/original.pptx
+are preserved as adjacent byte-exact delta archives. Keep the shared
+plot_heading_match_20261002/updated.pptx base. Restore with
+experiments/storage_dedup_20261002/archive_generated.py restore <delta-path>.
+Two pairs of identical Speaking/build copies were consolidated with hard
+links, preserving both original paths and every byte: conclusion-plain-wording/
+before.pptx with future-work-wording/staged.pptx; conclusion-review/pushed.pptx
+with future-work-removal/last-pushed.pptx. See identical_copy_dedup.json.
+Only verified scratch duplicates of thesis figure inputs were removed from
+the preceding isolated thesis build; canonical sources and outputs remain.
+
+## Remove repeated predictions below the plausibility plots (2026-10-03)
+
+On footer slides 12 and 13 (physical 13 and 14), remove the complete
+Quasi-static mean box below each plot, including -19.65 N and 1.72 N.m.
+These predictions already appear in the equations above the plots. Keep
+both upper Quasi-static prediction headings and native equations. This
+supersedes the preceding instruction to keep the below-plot prediction means.
+The existing Commanded mean and Model-estimated mean boxes are centred in
+two columns beneath each plot, with unchanged wording, values and styles.
+Both plots still contain only the commanded and model-estimated curves.
+
+The force speech and full note now say The two values shown below the plot
+are mean values calculated over the shaded steady-state interval. Only
+three changes to two; every other spoken sentence and note is unchanged.
+All 31 notes still match 163 full sentences. The speech remains ten pages,
+1,597 main words and about 14.38 minutes at 130 words/minute including videos
+and pauses. Its changed page 4 and the changed note were visually checked;
+the other nine speech pages are pixel-identical.
+
+Thesis Figures 5.2/5.3 were checked on PDF page 87 / printed page 62.
+They have no duplicate prediction values beneath their plots. Each prediction
+is already stated in the preceding prose; no thesis edit is needed or made.
+Both revised slides were rendered and visually checked. All changes are
+confined to the bottom value row; the other 29 slide PDF pages are identical.
+Plots, equations, videos, other notes and supplementary PDF are preserved.
+Active PPTX, full PDF, speech PDF and editable sources were installed atomically.
+Verification: experiments/plausibility_remove_repeated_prediction_20261003/
+verification.json.
+
+For export space, speech_remove_contact_sentence_20261003/updated.pptx and
+plausibility_two_curves_20261003/archive/original.pptx are preserved in
+adjacent byte-exact delta archives, using plot_heading_match_20261002/updated.pptx.
+Speaking/build/null-torque-symbols/staged.pptx and pose-ee/staged.pptx are
+also preserved as exact adjacent deltas using Speaking/build/pose-arrow-rings/
+before.pptx. Keep both shared bases. Restore with experiments/storage_dedup_
+20261002/archive_generated.py restore <delta-path>. Two other candidate
+build copies were kept because their deltas would not save space. Only
+verified scratch duplicates of original withdrawn thesis figures were removed.
+
+## Two curves in the force and moment plausibility plots (2026-10-03)
+
+Footer slides 12 and 13 (physical slides 13 and 14) and thesis Figures 5.2
+and 5.3 now show only Commanded (black) and Model-estimated (red).
+Remove the blue Quasi-static prediction curve and its legend entry from
+both shared plots. Keep the quasi-static equations, numerical predictions,
+below-plot mean values, stationary shading, axes, ticks, limits and data.
+The notes and speech remain unchanged.
+
+The canonical generator is MyOwn/code/python/figures/
+make_wrench_evaluation_figures.py. It retains the original spring analysis
+and reported statistics, but no longer plots the prediction curve.
+MyOwn/FIGURE_STYLE.md records the two-series convention. Matching vector
+PDFs in both repositories and presentation PDF/PNG/SVG assets are synchronized.
+The original generator reproduced both old plots pixel-exactly; checks confirm
+that all remaining samples, colours, axis geometry and plot dimensions match.
+
+Both slides and the thesis page were rendered and visually checked. Changes
+on the slides are confined to the plot frames; the other 29 presentation
+PDF pages and 117 thesis PDF pages are pixel-identical. Thesis.pdf has 118
+pages; both figures are on PDF page 87 / printed page 62. All slide text,
+native equations, 31 notes, media, speech, thesis prose and supplementary PDF
+remain unchanged. Active files were installed atomically. Verification:
+experiments/plausibility_two_curves_20261003/verification.json.
+
+For export space, tcp_force_moment_20261003/updated.pptx and its matching
+historical copy in speech_remove_contact_sentence_20261003/archive/original.pptx
+are preserved in adjacent byte-exact .pptx.delta.zip archives. Keep the shared
+plot_heading_match_20261002/updated.pptx base. Restore using
+experiments/storage_dedup_20261002/archive_generated.py restore <delta-path>.
+
+## Remove the contact-point sentence from speech and notes (2026-10-03)
+
+On physical slide 8 / footer 7, remove exactly this spoken sentence:
+It is important to note that the physical contact point itself does not move.
+Its full-sentence note paragraph is also removed. Do not add replacement
+wording. Every other spoken sentence and note paragraph remains unchanged.
+
+Current speech: Final Presentation/Simple_speech_updated.pdf, ten pages,
+1,597 main spoken words, about 14.38 minutes at 130 words/minute including
+95.946 seconds of videos and 30 seconds for pauses. Approximately 124
+words/minute is needed for 15 minutes. All 31 notes match the 163 remaining
+full spoken sentences; no Next slide cues or sources are present.
+
+Speech page 3 and the changed note were rendered and visually checked.
+The other nine speech pages have identical content streams and pixels.
+Visible slides, equations, media, other 30 notes, full slide PDF and
+supplementary PDF are unchanged. Editable speech sources, sentence mapping
+and timing metadata are synchronized. Active files were installed atomically.
+Verification: experiments/speech_remove_contact_sentence_20261003/verification.json.
+
+For export space, tool_pose_generic_20261003/updated.pptx and its matching
+historical copy in tcp_force_moment_20261003/archive/original.pptx are
+preserved as adjacent byte-exact delta archives. Keep the shared base
+plot_heading_match_20261002/updated.pptx. Restore with
+experiments/storage_dedup_20261002/archive_generated.py restore <delta-path>.
+
+## Forces at TCP and moment labels m_TCP on slides 7 and 8 (2026-10-03)
+
+The latest user request supersedes the virtual-force arrow placement and
+m_CoC labels on footer slides 7 and 8 (physical slides 8 and 9).
+The force arrow f on slide 7 and both f_n arrows on slide 8 now act at TCP.
+All three curved-arrow moment labels are m_TCP. The native slide 7 equation
+is m_TCP = r_c cross f, under Additional moment about the TCP:. This remains
+the additional coupling contribution. p_CoC and r_c stay unchanged, as do
+the supporting/opposing moment directions and all other figure geometry.
+The general moment arc moves slightly left to clear the force arrow.
+
+The two existing captions now read The physical force acts at the TCP.
+and Curved arrows show the additional moment about the TCP. These align
+with the existing full speech and notes. All other slide wording, titles,
+typography and image frames are preserved. Both diagrams retain their
+original pixel dimensions; the cases source adds a small right border to
+preserve its canvas after moving the former outer force label.
+
+Editable TikZ/LaTeX and PDF/PNG/SVG assets for coc_force_shift_general,
+coc_force_shift_cases and coc_added_moment are synchronized, together with
+the figure manifest and native equation catalog. Both final slides were
+rendered in PowerPoint and the full PDF and visually checked. Only the
+two requested PDF pages change; the other 29 are pixel-identical. All 31
+notes, speech, media/playback, other slides and supplementary PDF remain
+unchanged. Active files were installed atomically. Verification:
+experiments/tcp_force_moment_20261003/verification.json.
+
+For export space, older notes_full_sentences_20261003/updated.pptx and
+quasistatic_prediction_20261003/updated.pptx and their matching historical
+hard-linked copies are preserved as adjacent byte-exact delta archives.
+See experiments/tcp_force_moment_20261003/storage_cleanup.json for exact
+paths. Keep plot_heading_match_20261002/updated.pptx as their shared base;
+restore with experiments/storage_dedup_20261002/archive_generated.py
+restore <delta-path>. No historical content was discarded.
+
+## Slide 3 describes the tool with generic pose notation (2026-10-03)
+
+On Cartesian pose, physical slide 4 / footer 3, use Cartesian pose of the
+tool: and remove EE from the pose definition, position vector and forward
+kinematics. The native equations are x = [x y z phi theta psi]^T and
+x = x(q). The position vector is p. Both diagram labels read Tool.
+This supersedes earlier EE-label/subscript requirements on this slide only.
+
+Both diagrams now include the same schematic rectangular grinding tool
+held by the original gripper. The marked tool reference point lies at the
+centre of its working face. The shared sources/pose_tool.tikz macro reuses
+pose_gripper.tikz; the existing gripper source is unchanged. Tool geometry
+is illustrative, without experimental dimensions or an exact tool model.
+Existing axes, projections, positive rotation curls, roll/pitch/yaw labels
+and scientific colors remain. Figure widths and top placement are retained,
+and their heights preserve the revised assets' proportions.
+
+Both equations remain native editable Office Math in the original 22 pt
+Cambria Math style. The four corresponding editable source files and their
+PDF/PNG/SVG assets, equation catalog and figure manifest are synchronized.
+The revised slide was rendered and visually checked in PowerPoint and the
+full PDF. The other 30 PDF pages are pixel-identical. All 31 full-sentence
+notes, speech files, other slide parts, media/playback and supplementary PDF
+are unchanged. Active files were installed atomically. Verification:
+experiments/tool_pose_generic_20261003/verification.json.
+
+## Full sentences in speaker notes; no next-slide cues (2026-10-03)
+
+The latest user request supersedes the short sentence-start/ellipsis format.
+All 31 slides now have the full spoken sentences from the current simple
+speech, including all six backup scripts. All 164 sentences match the speech
+exactly. Each sentence has its own paragraph, with the spoken opening in bold.
+All 24 [Next slide] cues are removed. Keep video cues and the final questions
+cue in their existing gray italic style. Sources remain absent.
+
+Only the 31 notes-body paragraph sequences change in the PPTX. Every other
+package part is byte-identical: visible slides, native equations, plots,
+media, playback, masters, layouts, slide order and hidden backup flags.
+Simple_speech_updated.pdf, both slide PDFs, spoken script and readable text
+remain unchanged. The sentence mapping now stores complete sentences as
+its prompt values, and its verification/documentation are synchronized.
+
+All 31 notes were rendered in PowerPoint, individually checked, and verified
+against the speech PDF. All text fits the original notes geometry without
+clipping. Active files were installed atomically. Verification:
+experiments/notes_full_sentences_20261003/verification.json.
+
+For working space, older speech_user_text_20261003/updated.pptx and
+wrench_plot_heading_20261003/updated.pptx plus their matching historical
+hard-linked copies are preserved as adjacent byte-exact delta archives.
+See experiments/notes_full_sentences_20261003/storage_cleanup.json for
+exact paths. Keep plot_heading_match_20261002/updated.pptx as the shared
+base. Restore with experiments/storage_dedup_20261002/archive_generated.py
+restore <delta-path>. Six regenerable authoring/preview PPTX files in
+speech_user_text_20261003 and quasistatic_prediction_20261003 were removed;
+their source archives, generators, PDFs and reviewed renders remain.
+
+## Quasi-static prediction headings match the speech (2026-10-03)
+
+On footer slides 12 and 13 (physical 13 and 14), replace the heading
+Quasi-static calculation: with Quasi-static prediction: above the equations.
+Keep the existing 19 pt bold navy Arial style and original box geometry.
+Quasi-static mean: below both plots is unchanged. Equations, plot assets,
+values, notes, speech, slide order and all other slide parts remain unchanged.
+The two slides were rendered and visually checked; both labels fit on one
+line. The full PDF is synchronized, and its other 29 pages are pixel-identical.
+The supplementary PDF is unchanged. Active files were installed atomically.
+Verification: experiments/quasistatic_prediction_20261003/verification.json.
+
+For export space, speech_nullspace_torques_20261003/updated.pptx and the
+matching speech_user_text_20261003/archive/original.pptx are now adjacent
+byte-exact delta archives. Keep plot_heading_match_20261002/updated.pptx
+as their shared base. Restore exact original bytes with
+experiments/storage_dedup_20261002/archive_generated.py restore <delta-path>.
+
+## Speech and notes follow the user's pasted script (2026-10-03)
+
+The latest pasted speech supersedes previous wording for all 25 main slides.
+Preserve its 1,611 spoken words exactly, apart from normalized whitespace.
+Three nonspoken audio-download link lines are omitted; do not copy their
+signed URLs into editable sources. All six existing backup scripts (340
+words) and their notes remain unchanged.
+
+Current speech: Final Presentation/Simple_speech_updated.pdf, ten pages:
+eight main-talk pages and two optional backup pages. With 95.946 seconds
+of videos and 30 seconds for pauses, the main talk is about 14.49 minutes
+at 130 words/minute. Approximately 125 words/minute is required to meet
+15 minutes; the previous 90-100 words/minute estimate no longer applies.
+
+The 25 main speaker notes now follow every sentence of this supplied text
+with its exact first 2-5 words and literal ellipses. All 31 notes match
+164 sentence prompts. Opening prompts remain bold; existing delivery cues
+are preserved and sources remain absent. Editable script, readable text,
+sentence mapping and builder are synchronized. All ten speech pages and
+25 changed note bodies were rendered and individually checked. Native
+text and bounds checks passed for all 31 notes.
+
+Only 25 notes parts changed in the PPTX. Visible slides, all equations,
+media and playback, slide order, hidden backups, full slide PDF and
+supplementary PDF are unchanged. Active files were installed atomically.
+Verification: experiments/speech_user_text_20261003/verification.json.
+
+For export space, twelve older Speaking/build before.pptx copies were
+losslessly archived to adjacent .pptx.delta.zip files; the exact list is
+experiments/speech_user_text_20261003/storage_cleanup.json. Keep their
+shared base Speaking/build/pose-arrow-rings/before.pptx. Restore exact
+original bytes with experiments/storage_dedup_20261002/archive_generated.py
+restore <delta-path>. No historical content was discarded.
+
+## Latest push storage preparation (2026-10-03)
+
+The earlier nullspace_plain_terms_20261003/updated.pptx and matching
+speech_nullspace_torques_20261003/archive/original.pptx are now adjacent
+byte-exact delta archives. Keep the plot_heading_match_20261002/updated.pptx
+base and restore with experiments/storage_dedup_20261002/archive_generated.py
+restore <delta-path>. This frees Git working space without altering active
+presentation or speech files. Local rollback archives remain ignored.
+
+## Null-space speech opening and two implemented torques (2026-10-03)
+
+On physical slide 19 / footer 18, the simple speech now opens:
+Next, I will explain the null-space controller.
+This replaces both That completes the contact results. and I will now
+turn to extra arm motion. Before the existing damping explanation, add:
+I added two torque terms: a damping torque and a conditioning torque.
+All other spoken sentences and cues remain unchanged. The matching notes
+use Next, I will explain ... and I added two torque terms ... . The opening
+prompt stays bold, the new explanation prompt uses the existing regular
+style, and all 31 notes still match 151 spoken-sentence prompts.
+
+Current speech: Final Presentation/Simple_speech_updated.pdf, nine pages,
+1,159 main words, about 13.69-14.98 minutes at 100-90 words/minute including
+full videos and 30 seconds for pauses. Editable speech sources and notes
+are synchronized. Speech page 6 and the changed note were rendered and
+visually checked. The other eight speech page content streams are unchanged.
+All visible slide parts, equations, media, other 30 notes, full slide PDF
+and supplementary PDF remain unchanged. Files were installed atomically.
+Verification: experiments/speech_nullspace_torques_20261003/verification.json.
+
+For export space, nullspace_plain_heading_20261003/updated.pptx and its
+matching nullspace_plain_terms_20261003/archive/original.pptx are preserved
+as adjacent byte-exact delta archives. Keep the plot_heading_match_20261002
+PPTX base. Regenerable authoring/preview decks and PNGs in the former folder
+were removed; its exact source archives, final PDF, generator and verification
+remain. Three older Speaking/build before.pptx files are also preserved as
+adjacent delta archives: pose-ee, pose-base, and overview-titles. Keep their
+pose-arrow-rings/before.pptx base. Restore all exact bytes using
+experiments/storage_dedup_20261002/archive_generated.py restore <delta-path>.
+
+## Remove remaining redundant terminology (2026-10-03)
+
+The repeated user request also applies to the remaining uses of redundant.
+On Conclusion and future work, physical 25 / footer 24, use:
+Null-space control reduced unwanted joint motion under disturbance
+On Null-space torques and projector, physical 27 / backup B2, use:
+Slows joint motion in the null space.
+Keep the following sentence, Zero at zero joint velocity., unchanged.
+The existing introduction heading remains Joint motion with a fixed tool
+pose:. No visible slide now uses redundancy or redundant. Exactly two
+additional text runs change, with original fonts, geometry and formatting.
+
+Both edited slides were rendered and checked. All other PPTX parts,
+equations, notes, speech, media, order and hidden flags are unchanged.
+Full and supplementary PDFs are synchronized: 29 full-deck pages and five
+backup pages retain identical content streams. Active files were installed
+atomically. See experiments/nullspace_plain_terms_20261003/verification.json.
+
+For export space, four older Speaking/build before.pptx files are now
+byte-exact adjacent delta archives: simplify-nullspace, restructure,
+remote-figures, and pose-joints. Keep their shared pose-arrow-rings/
+before.pptx base. Restore via experiments/storage_dedup_20261002/
+archive_generated.py restore <delta-path>. No historical content was lost.
+
+## Simpler null-space introduction heading (2026-10-03)
+
+On Null-space control: damping and conditioning, physical slide 19 /
+footer 18, replace Redundancy and null-space motion: with
+Joint motion with a fixed tool pose: . This directly summarizes the
+existing explanation about changing arm posture while keeping EE pose
+unchanged. Preserve the original 22 pt Arial navy bullet style and box.
+Only this one text run changes. No other slide text, equations, notes,
+speech, media, or supplementary PDF changes. The slide was rendered and
+visually checked; the full PDF has one updated page and 30 identical
+page content streams. Active PPTX/PDF were installed atomically. See
+experiments/nullspace_plain_heading_20261003/verification.json.
+
+For export space, three additional Speaking/build before.pptx copies
+were preserved losslessly as adjacent .pptx.delta.zip files:
+wrench-blocks, video-backups, and style-unification. Keep the shared
+Speaking/build/pose-arrow-rings/before.pptx base. Restore exact bytes
+with experiments/storage_dedup_20261002/archive_generated.py restore
+<delta-path>. A failed partial export was removed before rebuilding;
+all historical source files and active outputs remain preserved.
+
+## Push storage preparation (2026-10-03)
+
+PDF delta archives and full PDF ZIP archives under experiments are local
+rollback assets and are ignored by Git, like PPTX delta archives.
+For Git LFS working space, motivation_problem_wording_20261003/updated.pptx
+and its identical wrench_plot_heading_20261003/archive/original.pptx are
+preserved as adjacent byte-exact .pptx.delta.zip archives. Restore with
+experiments/storage_dedup_20261002/archive_generated.py restore <delta-path>.
+Keep experiments/plot_heading_match_20261002/updated.pptx as their base.
+Active deliverables remain unchanged by this storage preparation.
+
+## Consistent plot headings on slides 14-17 (2026-10-03)
+
+Use the existing heading style from footer slides 16 and 17: 21 pt bold
+Arial, navy #17365D, without a bullet. Footer 14 / physical 15 now has
+Commanded and model-estimated wrench: centered above its original plot.
+The plot moves down to y = 120 pt; its size, aspect ratio and asset are
+unchanged. Footer 15 / physical 16 keeps Resistance to rotation about t_1:
+with its mathematical run formatting, now in the same bold navy style
+without its former bullet. Footer slides 16 and 17 remain unchanged.
+
+All four slides were rendered and visually checked. Only two native slide
+parts change; the other 29 slides, notes, equations, media, speech and
+supplementary PDF are unchanged. The full PDF has two updated pages;
+the other 29 page content streams are identical. Active PPTX and full PDF
+were installed atomically. See experiments/wrench_plot_heading_20261003/
+verification.json and qa-ledger.txt.
+
+Storage: three additional Speaking/build before.pptx files are preserved
+losslessly as adjacent .pptx.delta.zip files: pose-moment-style,
+controller-headings, and conclusion-combined. Keep their shared base
+Speaking/build/pose-arrow-rings/before.pptx. The earlier
+motivation_single_problem_20261003/updated.pptx and its matching
+motivation_problem_wording_20261003/archive/original.pptx are now adjacent
+lossless delta archives using plot_heading_match_20261002/updated.pptx.
+Keep both plot_heading_match PPTX/PDF bases. Restore exact bytes using
+experiments/storage_dedup_20261002/archive_generated.py restore <delta-path>.
+Regenerable authoring/preview decks in the two Motivation experiment
+folders and nullspace_arrows_20261003 were removed; original archives,
+generators, final renders, PDFs and verification remain. The build-copy
+archiver now uses streamed copying and skips archives with little saving.
+
+## Motivation: calibration uncertainty and joint friction wording (2026-10-03)
+
+The latest user revision supersedes the one-problem-only change below.
+On Motivation, physical slide 2 / footer 1, the Problem bullets now read:
+Orientation uncertainty after surface calibration
+Joint friction can affect the tool orientation.
+Use this exact wording; do not use blockage. The restored friction bullet
+uses its original native 18 pt style and box. The original Idea group returns
+48 pt down to its pre-removal position. Requirement, Idea wording, video,
+titles, other slides, equations, media, and supplementary PDF are unchanged.
+
+The earlier simple speech sentence Joint friction can also affect the tool
+orientation. and its Joint friction can also affect ... note prompt are
+restored. All other spoken sentences and prompts are unchanged. The 31 notes
+again match 151 sentence prompts. Current speech: Simple_speech_updated.pdf,
+nine pages, 1,152 main words, about 13.62-14.90 minutes at 100-90 words/minute
+including the full videos and 30 seconds for pauses. Editable speech sources
+and documentation are synchronized. The changed slide, note, and speech page
+were rendered and checked; the other 30 slide PDF pages and eight speech PDF
+pages are unchanged. All active outputs were installed atomically. See
+experiments/motivation_problem_wording_20261003/verification.json.
+
+Storage: restore_original_slide_text_20261003/updated.pptx and its matching
+motivation_single_problem_20261003/archive/original.pptx are now byte-exact
+adjacent delta archives. Additional older full/supplementary PDFs under
+experiments are preserved as adjacent .pdf.delta.zip files, each recording
+its original path and SHA-256. Regenerable restore_original_slide_text PNGs
+were removed after preserving its full PDF and exact PPTX archive.
+
+To recover export space, six older Speaking/build before.pptx files were
+losslessly archived in their original folders: pose-linked-solid, pose-clarity,
+null-torque-symbols, future-work-removal, pose-gripper-left-3d, and
+angular-positive-arc. KEEP Final Presentation/Speaking/build/pose-arrow-rings/
+before.pptx as their shared base, plus both existing plot_heading_match bases.
+The reusable archiver is experiments/storage_dedup_20261002/
+archive_build_copies_20261003.py. All PPTX/PDF deltas restore exact original
+bytes with archive_generated.py restore <delta-path>. No historical content
+was discarded.
+
+## One problem in Motivation and the simple speech (2026-10-03)
+
+Motivation, physical slide 2 / footer 1, now presents one problem:
+The surface used in the controller may not match the real surface.
+This reuses the simple speech wording. The separate joint-friction bullet
+is removed. Keep Requirement and its aligned-tool-face statement, and both
+original Idea bullets. The Idea group is moved upward 48 pt to close the
+removed bullet gap. All other slide objects, including the contact video,
+are preserved. This targeted user-requested change supersedes the restored
+two-problem wording on Motivation only.
+
+The matching speech removes only Joint friction can also affect the tool
+orientation. Its corresponding Joint friction can also affect ... note
+prompt is removed. Every remaining spoken sentence, prompt, and cue is
+unchanged. All 31 notes match the 150 sentence prompts. The current speech
+PDF remains Final Presentation/Simple_speech_updated.pdf; its updated
+editable sources are under Final Presentation/Speaking/simple_speech.
+The nine-page speech has 1,144 main spoken words, about 13.54-14.81 minutes
+at 100-90 words/minute, including all main videos and 30 seconds for pauses.
+
+The Motivation slide, its notes, and speech page 1 were rendered and checked.
+The other 30 slide/PDF pages and eight speech PDF pages remain unchanged;
+native equations, all media, and the supplementary PDF are preserved.
+PowerPoint, full slide PDF, updated speech PDF, and editable sources were
+installed atomically. See experiments/motivation_single_problem_20261003/
+verification.json and speech_verification.json.
+
+For export space, speech_rotation_clarity_20261003/updated.pptx and the
+identical restore_original_slide_text_20261003/archive/original.pptx are
+stored losslessly as adjacent .pptx.delta.zip files. Three older archived
+full PDFs are likewise preserved in adjacent .pdf.delta.zip files:
+motivation_video_20261002/archive/Thesis_Defense_gg0_v3.pdf,
+reference_arrow_20261002/archive/original.pdf, and
+slide17_proportions_20261001/archive/Thesis_Defense_gg0_v3.pdf.
+Restore exact original bytes using storage_dedup_20261002/archive_generated.py
+restore <delta-path>; retain the existing shared PPTX/PDF bases. The PDF
+archiver now accepts any .pdf within experiments, with its original path
+recorded. Regenerable previews and old blue-style/internal-divider PNGs
+were removed; original archives, generators, and verification remain.
+
+## Restore original wording; styling must not rewrite content (2026-10-03)
+
+The user rejected the rewording and added claims introduced while making the
+slides look nicer. Styling requests must preserve the existing words and
+technical meaning. Do not add explanations, takeaways, captions, or synonyms
+unless the user specifically requests those content changes.
+
+The slide body and footer wording has been restored from
+experiments/visual_structure_20261003/archive/original_slides_and_notes.zip,
+the exact version before the visual refresh and concise academic copy pass.
+This restores 72 rewritten text boxes and 33 deleted original text boxes,
+and removes 37 newly added text boxes. The removed additions include plot
+interpretations, video commentary, conclusion summaries, and supplementary
+chapter labels. Original definitions, sentences, punctuation, and mathematical
+text runs are retained verbatim. Title-page line breaks were adjusted without
+changing any words. Layouts were adjusted only to fit the restored material
+and recenter figures/videos after removing added captions.
+
+Keep the separately requested current slide titles, date, Requirement block,
+Theory chapter, forward-kinematics label, separate Surface frame, quasi-static
+mean labels, null-space arrows and OFF/ON labels, backup order, and Point-shift
+adjoint matrix caption. Keep continuous navy title lines, no added green
+styling, no internal decorative dividers, and only the left Overview list.
+Original scientific media and colours remain intact. One archived Motivation
+sentence, Pressing a tilted tool creates a contact moment., remains omitted
+to respect the earlier no-tilt instruction; an optional question about restoring
+that exact sentence was left unanswered. Do not invent replacement wording.
+
+There remain 25 main slides and six hidden backups, 31 total. All 30 native
+equations, five videos, media assets, 31 speaker-note parts, and speech files
+are unchanged. Every slide was rendered and individually checked. PowerPoint,
+the 31-page full PDF, and six-page supplementary PDF were installed by atomic
+path replacement. See experiments/restore_original_slide_text_20261003/
+verification.json, restoration_audit.json, and visual_review.json.
+
+For export space, overview_left_only_20261003/updated.pptx and the identical
+speech_rotation_clarity_20261003/archive/original.pptx are preserved losslessly
+as adjacent .pptx.delta.zip files. Historical experiments/*/updated.pdf files
+with one filesystem link have been compacted into adjacent .pdf.delta.zip
+files using archive_pdf_streams_20261003.py. All restore exact original bytes
+with experiments/storage_dedup_20261002/archive_generated.py restore <delta-path>.
+Keep BOTH plot_heading_match_20261002/updated.pptx and its updated.pdf as
+shared bases. No source archives or historical content were discarded.
+
+## Clear rotational-compliance sentence in the speech (2026-10-03)
+
+The current speech PDF is Final Presentation/Simple_speech_updated.pdf.
+Windows denied atomic replacement of Simple_speech.pdf (WinError 5), also
+outside the sandbox, so that older PDF remains unchanged. Use the updated
+PDF together with the synchronized editable sources and PowerPoint notes.
+
+On Motivation, physical slide 2 / footer 1, the simple speech now says:
+The controller allows the tool to rotate during contact, helping it align
+with the surface. This replaces I let the tool give way in rotation, so
+contact helps alignment. The corresponding note prompt is The controller
+allows the tool ... . All other speech sentences and notes are unchanged.
+The editable script, readable text, sentence-prompts mapping and speech
+PDF are synchronized. All 31 notes still match every sentence opening.
+
+The nine-page speech has 1,152 main spoken words, about 13.62-14.90 minutes
+at 100-90 words/minute including full videos and 30 seconds for pauses.
+The changed first speech page and note were rendered and visually checked;
+speech pages 2-9 retain identical content streams. Visible slides, equations,
+videos, full slide PDF and supplementary PDF remain unchanged. Active
+PPTX/speech PDF and sources were installed atomically. Verification:
+experiments/speech_rotation_clarity_20261003/verification.json.
+
+For export space, remove_internal_dividers_20261003/updated.pptx and its
+matching overview_left_only_20261003/archive/original.pptx are now stored
+losslessly in adjacent .pptx.delta.zip files. Five historical updated.pdf
+files are preserved in adjacent .pdf.delta.zip files: pose_forward_kinematics_20261003,
+overview_theory_20261003, title_date_20261003, motivation_requirement_20261003,
+and joint_motion_phrases_20261002. Restore all these exact bytes/paths with
+experiments/storage_dedup_20261002/archive_generated.py restore <delta-path>.
+The PDF deltas use plot_heading_match_20261002/updated.pdf as their shared
+base; keep both that PDF and its updated.pptx base. The reusable PDF archiver
+is storage_dedup_20261002/archive_pdf_streams_20261003.py. Regenerable old
+slide PNGs in visual_structure_20261003, meaningful_titles_20261003,
+precise_titles_20261003 and concise_academic_text_20261003/renders were
+removed; their exact archived decks, generators and verification remain.
+
+## Overview keeps only the left chapter list (2026-10-03)
+
+On Overview, physical slide 3 / footer 2, remove all six right-hand Chapter
+purpose descriptions. Keep the six chapter names and numbers on the left
+at their existing positions, with their original typography, spacing and
+wording. Keep the title, continuous navy title line and footer unchanged.
+The slide and full PDF were rendered and visually checked. Pixel changes
+are confined to the six removed descriptions; the remaining 30 PDF pages,
+all other slides, notes, speech, equations, videos and supplementary PDF
+are unchanged. Active PPTX/PDF were installed atomically. Verification:
+experiments/overview_left_only_20261003/verification.json.
+
+For export space, adjoint_matrix_label_20261003/updated.pptx and its matching
+remove_internal_dividers_20261003/archive/original.pptx were losslessly
+compacted into adjacent .pptx.delta.zip files. The archived removed contact
+demonstration at motivation_video_20261002/archive/removed_contact_demonstration.pptx
+is likewise preserved as an adjacent .pptx.delta.zip, using identical compressed
+media payloads from the shared base. All three restore exact original bytes
+with experiments/storage_dedup_20261002/archive_generated.py restore <delta-path>.
+Keep plot_heading_match_20261002/updated.pptx. Historical updated.pdf files in
+contact_heading_spacing_20261003 and coupling_labels_removed_20261003 were
+preserved byte-for-byte in adjacent updated.pdf.zip archives; extract their
+single updated.pdf member to restore. The regenerable internal-divider
+native_preview.pptx was removed; source archives, PDFs and renders remain.
+
+## Remove added internal slide dividers (2026-10-03)
+
+The user dislikes the new separation lines inside slides. Remove all 23
+pale #DCE4E8 internal horizontal and vertical dividers introduced during
+the visual refresh, on physical slides 2, 3, 6, 11, 13, 14, 19, 22, 25 and
+27. Keep all 31 continuous navy title rules, existing diagram arrows and
+lines, plot axes, native equations and other slide objects unchanged.
+Retain the Point-shift adjoint matrix caption on footer 9. Do not re-add
+decorative internal section or column dividers.
+
+Every final slide was rendered. Pixel comparisons confirm that all changes
+are confined to the removed divider rectangles; all other pixels match
+the previously reviewed slides. All ten affected slides were individually
+checked. Native equations, media, notes, speech and slide order are unchanged.
+Full and supplementary PDFs are synchronized, and active files were installed
+atomically. Verification:
+experiments/remove_internal_dividers_20261003/verification.json.
+
+To recover export space, three generated updated.pptx copies were archived
+losslessly into adjacent .pptx.delta.zip files: overview_speech_opening_20261003,
+speech_angular_mismatch_20261003 and blue_style_no_tilt_20261003. Their matching
+hard-linked archive/original.pptx copies in speech_angular_mismatch_20261003,
+blue_style_no_tilt_20261003 and adjoint_matrix_label_20261003 are also preserved
+in adjacent .pptx.delta.zip files. Restore each exact original path with
+experiments/storage_dedup_20261002/archive_generated.py restore <delta-path>.
+Keep the shared plot_heading_match_20261002/updated.pptx base. Only a
+regenerable blue-style native_preview.pptx was removed; renders and PDFs remain.
+
+## Name the adjoint matrix on slide 9 (2026-10-03)
+
+On Translation-rotation coupling, physical slide 10 / footer 9, label
+A = Ad(r_c) with Point-shift adjoint matrix. The native editable caption
+matches the displacement description above: regular 19 pt Arial, #687680,
+at (285, 232) pt in a 600 x 28 pt box. This supersedes the earlier removal
+of the adjoint label. All original shapes, equations, notes, media and
+other slides remain unchanged. The slide and full PDF were rendered and
+visually checked; the other 30 PDF page content streams are unchanged.
+Supplementary PDF and all speech files are unchanged. Active PPTX/PDF
+were installed atomically. Verification:
+experiments/adjoint_matrix_label_20261003/verification.json.
+
+## Continuous blue title lines and presentation terminology (2026-10-03)
+
+The user clarified that removing green applies only to the styling added
+during the visual refresh. Preserve original scientific plot and diagram
+colors, including their existing green elements. Keep all current slide
+titles, typography and geometry. Remove each short Header accent segment.
+The Continuous title rule is solid navy #17365D, 1 pt high, x = 42 pt,
+width = 876 pt; y = 59 pt on the title slide and 67 pt on other slides.
+The newly introduced #197E83 accents are navy, with selective #C00000 red
+for key result statements. The three #F1F6F7 control-loop block fills are
+neutral #F2F2F2. This supersedes the earlier teal visual-refresh palette.
+
+Do not use tilt or its derivatives in the visible presentation or simple
+speech. Four text boxes on physical slides 16, 17, 29 and 30 now use angle
+error, angular error or entry offset. The CoC-position plot legend uses
+Positive entry offset (+9.33 degrees) and Negative entry offset (-9.38
+degrees). Its editable LaTeX, PDF/PNG/SVG and embedded picture agree; data,
+axes, error bars, colors, canvas and slide placement are unchanged. The
+PNG is 300 dpi. The thesis legend already uses Measured Angular Offset.
+Retain this terminology if regenerating the presentation-specific plot.
+
+The deck still has 25 main slides and six hidden backups. All 30 native
+equations, five videos/playback, notes and speech files are unchanged.
+All 31 slides were rendered and visually checked, and changed text bounds
+pass. Full and supplementary PDFs are synchronized. Active files were
+installed by atomic replacement. Build, originals and verification:
+experiments/blue_style_no_tilt_20261003.
+
+## Remove gray introductory text from the speech (2026-10-03)
+
+Simple_speech.pdf begins directly with Title slide | Opening and the spoken
+greeting below its normal document header. Remove both first-page gray
+paragraphs: the reading instructions and the timing/backup-page guidance.
+All spoken sentences, page grouping, video/end cues, backup introduction,
+headers and footers remain unchanged. PDF pages 2-9 have identical content
+streams. The revised first page was rendered and visually checked. The
+PowerPoint including notes, slide PDFs, script.json and speech text remain
+unchanged. The editable builder and verification are synchronized. The
+active PDF was installed by atomic replacement. Build and verification:
+tmp/pdfs/speech_no_intro_20261003.
+
+## Angular mismatch explained in the simple speech (2026-10-03)
+
+Do not use tilt, tilted or tilts in the active simple speech. Use angular
+offset for the starting condition and angular error for the remaining
+difference, with rotation/alignment where more natural. Motivation now
+explains that the real surface angle is not known exactly and the surface
+used in the controller may not match it. Joint friction remains a separate
+contribution to tool-orientation error.
+
+On Contact experiment, physical 11 / footer 10, the speech explicitly says:
+I deliberately start the tool with an angular offset. This represents the
+mismatch between the surface used in the controller and the real surface.
+The same purpose is reinforced in backup B5. The deliberate offset is a
+test representation of surface mismatch. Preserve the distinction between
+configured offset, measured entry offset and angular error relative to the
+calibrated surface. Do not claim exact knowledge of the real surface angle
+or that zero in one angular component guarantees perfect physical alignment.
+
+Ten speech entries changed (physical 2, 9, 11, 16, 17, 18, 25, 28, 29, 30).
+Seven notes bodies changed (2, 9, 11, 17, 18, 25, 30). All 31 notes still
+follow every spoken sentence with its exact first 2-5 words plus ellipses.
+Sources remain absent. All other PPTX parts, slide bodies, equations,
+diagrams, videos/playback, full slide PDF and supplementary PDF are unchanged.
+The speech PDF still omits slide-advance cues and retains nine pages.
+The main speech is 1,149 words: about 13.59-14.87 minutes at 90-100 wpm,
+including full videos and 30 seconds for pauses. All nine speech pages and
+seven changed notes were visually reviewed; all 31 note text boxes fit.
+Editable speech files in Final Presentation/Speaking/simple_speech are
+synchronized, including sentence_prompts.json. Active PPTX/PDF and source
+files were installed by atomic replacement. Build, originals and verification:
+experiments/speech_angular_mismatch_20261003.
+
 ## Versioned simple-speech source and push storage cleanup (2026-10-03)
 
 The current editable simple-speech package is also versioned at

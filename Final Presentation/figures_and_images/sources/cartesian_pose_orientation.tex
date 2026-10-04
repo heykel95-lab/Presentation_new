@@ -5,7 +5,7 @@
 \definecolor{xaxis}{HTML}{B6252D}
 \definecolor{yaxis}{HTML}{217A3C}
 \definecolor{zaxis}{HTML}{215AAB}
-\input{pose_gripper.tikz}
+\input{pose_tool.tikz}
 \begin{document}
 % Illustrative positive rotations around reference axes. Roll--pitch--yaw
 % convention in notes: R = R_z(psi) R_y(theta) R_x(phi).
@@ -46,7 +46,7 @@
 \draw[curl,zaxis,domain=350:500] plot ({0.7*cos(\t)},{0.7*sin(\t)},2.1);
 \draw[curl,xaxis,domain=25:115] plot (2.1,{0.7*cos(\t)},{0.7*sin(\t)});
 
-% Reference axes start at EE; the opaque gripper hides the portions behind it.
+% Reference axes start at the tool reference point; the opaque gripper hides the portions behind it.
 \draw[axis,xaxis] (0,0,0)--(3.2,0,0) node[right] {$x$};
 \draw[axis,yaxis] (0,0,0)--(0,3.6,0) node[below left] {$y$};
 \draw[axis,zaxis] (0,0,0)--(0,0,3) node[above] {$z$};
@@ -59,9 +59,9 @@
 \draw[white,line width=3pt,line cap=butt] (0,1.15,0)--(0,2.07,0);
 \draw[yaxis,line width=1pt,line cap=butt] (0,1.15,0)--(0,2.07,0);
 
-\PoseGripper
+\PoseTool
 \fill[navy] (0,0,0) circle (2.0pt);
-\node[anchor=west,navy] at (0.65,0,-0.45) {(EE)};
+\node[anchor=west,navy] at (0.65,0,-0.45) {Tool};
 
 \draw[casing,domain=498:650] plot ({0.7*cos(\t)},{0.7*sin(\t)},2.1);
 \draw[curl,curltip,zaxis,domain=498:650]
