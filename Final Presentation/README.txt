@@ -352,3 +352,7 @@ PDF, speaking script and notes match these media changes. Rebuild and checks:
 refer to the pre-media-update version.
 
 Latest update (2026-10-04): Expanded the first parenthetical EE on slide 7 to end effector (EE) in the existing TCP definition, and synchronized the matching full note and simple speech. Preserved layout, typography, equations and media. The revised slide, note and speech page 3 were visually checked; all other slide and speech PDF pages are pixel-identical. Main speech: 1,668 words, approximately 14.93 minutes at 130 words/minute including videos and pauses. Verification: experiments/slide7_expand_ee_20261004/verification.json.
+
+Latest update (2026-10-04): Removed the requested sentence about seeing and feeling the damping difference from slide 19 full notes and matching after-video speech, without replacement. The native note and speech page 6 were visually checked. All other wording, visible slides, media and slide PDFs remain unchanged. All 31 notes match 168 complete spoken sentences. Main speech: 1,651 words, approximately 14.80 minutes at 130 words/minute including videos and pauses. Verification: experiments/remove_damping_felt_sentence_20261004/verification.json.
+
+Latest update (2026-10-04): All 31 speaker notes are now 14 pt, increased from 12 pt as requested. Native PowerPoint confirms the size and fit; all rendered notes were visually checked. Wording, bold openings, playback cues, visible slides, slide PDFs and current speech files are preserved. Verification: experiments/notes_font_14pt_20261004/verification.json.

@@ -183,7 +183,7 @@
     "paragraphs": [
       "This video starts with the null-space controller switched off. Then, the damping torque is switched on."
     ],
-    "after_video": "The difference cannot be seen in the video, but it can be felt when pushing the arm. With null-space control off, the arm moves more easily. With damping on, the same push moves the arm more slowly. I need to push harder to move it at the same speed. The main controller still holds the tool pose."
+    "after_video": "With null-space control off, the arm moves more easily. With damping on, the same push moves the arm more slowly. I need to push harder to move it at the same speed. The main controller still holds the tool pose."
   },
   {
     "physical": 21,

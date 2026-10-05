@@ -496,11 +496,6 @@
   },
   {
     "slide": 20,
-    "sentence": "The difference cannot be seen in the video, but it can be felt when pushing the arm.",
-    "prompt": "The difference cannot be seen in the video, but it can be felt when pushing the arm."
-  },
-  {
-    "slide": 20,
     "sentence": "With null-space control off, the arm moves more easily.",
     "prompt": "With null-space control off, the arm moves more easily."
   },

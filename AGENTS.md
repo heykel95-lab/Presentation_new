@@ -1,5 +1,63 @@
 # Thesis and presentation workspace
 
+## Notes push storage preparation (2026-10-05)
+
+Removed three abandoned Git LFS temporary files only after verifying each
+was an exact prefix of a preserved complete presentation and confirming
+that no Git process was active. Active files and historical presentations
+are unchanged. Verification: tmp/push_notes_20261005/storage_cleanup.json.
+
+## Speaker notes at 14 pt (2026-10-04)
+
+The user selected 14 pt for all speaker notes. Increase the inherited notes
+master from 12 pt to 14 pt at all nine paragraph levels. All 31 active notes
+use the requested size, confirmed in native PowerPoint. Preserve every word,
+bold opening, italic playback cue, paragraph spacing and placeholder geometry.
+The removed felt-difference sentence remains absent. All 31 notes still match
+168 full spoken sentences. Current speech remains 1,651 main words.
+
+All 31 rendered note pages were visually checked; the maximum text height is
+302 pt in the unchanged 540 pt body. Only the notes master changes in the
+PPTX; every other package member is byte-identical. Slide PDFs, speech PDF
+and editable speech remain unchanged. The active PPTX was installed atomically.
+Verification: experiments/notes_font_14pt_20261004/verification.json.
+
+For working space, slide7_expand_ee_20261004/updated.pptx and
+remove_damping_felt_sentence_20261004/archive/original.pptx are preserved as
+byte-exact deltas using plot_heading_match_20261002/updated.pptx. The historical
+Speaking/build/coc-reference-order/before.pptx is similarly stored using
+Speaking/build/nullspace-headings/before.pptx. Keep those bases and all existing
+shared bases. Restore with experiments/storage_dedup_20261002/archive_generated.py
+restore <delta-path>. See storage_cleanup.json in this experiment.
+
+## Remove the felt-difference sentence from slide 19 notes (2026-10-04)
+
+On Null-space damping demonstration, footer 19 / physical 20, remove this
+complete sentence from the full note and matching after-video speech:
+The difference cannot be seen in the video, but it can be felt when pushing the arm.
+No replacement sentence is added. The after-video explanation now starts:
+With null-space control off, the arm moves more easily.
+The following same-push, harder-push and held-pose sentences, the opening,
+OFF/ON introduction and video cue are unchanged. This supersedes the earlier
+instruction adding the removed sentence.
+
+The native note and speech page 6 were rendered and visually checked.
+All 31 notes match 168 complete spoken sentences. The other nine speech
+pages are pixel-identical; all visible slides, equations, media, slide PDF
+and supplementary PDF are unchanged. Main speech: 1,651 words, about 14.80
+minutes at 130 words/minute including videos and pauses. At least 128.0
+words/minute is needed for 15 minutes. The active deck, speech PDF and editable
+sources were installed atomically. Verification:
+experiments/remove_damping_felt_sentence_20261004/verification.json.
+
+For working space, Speaking/build/define-ee/before.pptx and
+Speaking/build/jacobian-singularity/before.pptx are preserved as adjacent
+byte-exact delta archives using Speaking/build/nullspace-headings/before.pptx.
+Keep that base and the existing shared bases. Restore with
+experiments/storage_dedup_20261002/archive_generated.py restore <delta-path>.
+The complete original ZIP headers and compressed payload bytes are retained.
+See storage_cleanup.json and archive_old.py in this experiment.
+
 ## Slide 7 push storage preparation (2026-10-04)
 
 For Git LFS upload space, joint3_terminology_20261004/updated.pptx and
