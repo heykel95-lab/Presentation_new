@@ -1,0 +1,53 @@
+{
+  "decks": {
+    "Thesis_Defense_gg0_v3.pptx": {
+      "sha256": "c3ff59ebcda377d088aba9861670d46cae98c12ee2ebd4c939b9fdd5a5fbb8c2",
+      "changed_parts": 1,
+      "all_other_parts_byte_identical": true,
+      "notes_match_speech": true
+    },
+    "Thesis_Defense_Projector_Silent.pptx": {
+      "sha256": "2c630891d8a9adfd8993e052477258215232a6312daa2be06f9dd7262a0c61b3",
+      "changed_parts": 1,
+      "all_other_parts_byte_identical": true,
+      "notes_match_speech": true
+    },
+    "02_WebM_Silent.pptx": {
+      "sha256": "6b2068d70c78788ac360e0c032a8c80246237468a1387321a0c615465f230a87",
+      "changed_parts": 1,
+      "all_other_parts_byte_identical": true,
+      "notes_match_speech": true
+    },
+    "03_WMV_Silent.pptx": {
+      "sha256": "8407201c2e5f176ed0cfb7ba461eae6b27919a442c5f7a967ec08a74efaf5343",
+      "changed_parts": 1,
+      "all_other_parts_byte_identical": true,
+      "notes_match_speech": true
+    }
+  },
+  "fallback_unchanged": true,
+  "fallback_sha256": "d6dae65faa95ce70d3f7efeb82b6efe50b8bbda6017e11a117b24249661f2884",
+  "notes_font_pt": 18,
+  "max_notes_height_pt": 452,
+  "notes_body_height_pt": 540,
+  "slides_equations_media_and_static_pdfs_unchanged": true,
+  "all_31_notes_native_powerpoint_verified": true,
+  "installed": true,
+  "visual_review_passed": true,
+  "changed_physical_slide": 6,
+  "footer": 5,
+  "old_note_words": 196,
+  "new_note_words": 104,
+  "slide5_note_height_pt": 251.6,
+  "changed_speech_page": 2,
+  "other_ten_speech_pages_pixel_identical": true,
+  "all_other_30_scripts_unchanged": true,
+  "atomic_replacement": true,
+  "zip_updated": true,
+  "zip_sha256": "10deee4cd69db6dc80f775d27be3d35f3b573d06b78693d48a6335e8611b128e",
+  "speech_sha256": "04ab34bbedd80e3cc4e31a9ba532a85fcf8c68cf600727351053862dafbbd6ac",
+  "matching_speech_pdf_refreshed_in_acrobat": true,
+  "acrobat_unsaved_changes_checked": true,
+  "acrobat_page_preserved": true,
+  "acrobat_had_unsaved_changes": false
+}

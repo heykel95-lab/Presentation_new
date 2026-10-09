@@ -1,0 +1,1 @@
+PASS: revised physical slide 19 notes and speech page 7 visually reviewed individually. All notes remain 18 pt and fit. Only one note part changes per deck. All visible slides and media are byte-identical to the previously reviewed versions. Other thirty scripts unchanged; other ten speech pages pixel-identical. Original MP4 Light deck and original speech remain unchanged.

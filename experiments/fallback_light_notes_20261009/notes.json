@@ -1,0 +1,1052 @@
+[
+  [
+    {
+      "runs": [
+        {
+          "run": "Hello everyone, and thank you for being here.",
+          "textStyle": {
+            "fontSize": "18pt",
+            "bold": true,
+            "italic": false
+          }
+        }
+      ],
+      "kind": "opening"
+    },
+    {
+      "runs": [
+        {
+          "run": "Today, I will present my work on controlling a seven-joint robot for grinding. The main goal is to help the tool align with a surface and to reduce unwanted motion of the robot arm.",
+          "textStyle": {
+            "fontSize": "18pt",
+            "bold": false,
+            "italic": false
+          }
+        }
+      ],
+      "kind": "body"
+    }
+  ],
+  [
+    {
+      "runs": [
+        {
+          "run": "First, let me explain why tool alignment is important.",
+          "textStyle": {
+            "fontSize": "18pt",
+            "bold": true,
+            "italic": false
+          }
+        }
+      ],
+      "kind": "opening"
+    },
+    {
+      "runs": [
+        {
+          "run": "For grinding, the tool face needs to be properly aligned with the surface. However, in practice, the exact angle of the real surface is not always known. This means that the surface used by the controller may be slightly different from the actual surface. Moreover, joint friction can also affect the orientation of the tool. The controller therefore allows the tool to rotate passively during contact, which helps it align with the real surface. This video shows the basic idea.",
+          "textStyle": {
+            "fontSize": "18pt",
+            "bold": false,
+            "italic": false
+          }
+        }
+      ],
+      "kind": "body"
+    },
+    {
+      "runs": [
+        {
+          "run": "[Play video: 51 s]",
+          "textStyle": {
+            "fontSize": "18pt",
+            "bold": false,
+            "italic": true
+          }
+        }
+      ],
+      "kind": "cue"
+    },
+    {
+      "runs": [
+        {
+          "run": "As you can see, the tool rotates even though its desired orientation remains fixed.",
+          "textStyle": {
+            "fontSize": "18pt",
+            "bold": false,
+            "italic": false
+          }
+        }
+      ],
+      "kind": "body"
+    }
+  ],
+  [
+    {
+      "runs": [
+        {
+          "run": "Here is the plan for the presentation.",
+          "textStyle": {
+            "fontSize": "18pt",
+            "bold": true,
+            "italic": false
+          }
+        }
+      ],
+      "kind": "opening"
+    },
+    {
+      "runs": [
+        {
+          "run": "I will start by explaining the controller. Then, I will show the contact experiments and their results. After that, I will discuss the extra joint motion and the null-space controller. Finally, I will summarize the main findings.",
+          "textStyle": {
+            "fontSize": "18pt",
+            "bold": false,
+            "italic": false
+          }
+        }
+      ],
+      "kind": "body"
+    }
+  ],
+  [
+    {
+      "runs": [
+        {
+          "run": "I will start with how we describe the tool.",
+          "textStyle": {
+            "fontSize": "18pt",
+            "bold": true,
+            "italic": false
+          }
+        }
+      ],
+      "kind": "opening"
+    },
+    {
+      "runs": [
+        {
+          "run": "The pose of the tool consists of its position and orientation. In other words, it tells us where the tool is and how it is rotated. We use three coordinates for the position and three coordinates for the orientation. Using forward kinematics, we calculate the tool pose from all seven joint angles of the robot.",
+          "textStyle": {
+            "fontSize": "18pt",
+            "bold": false,
+            "italic": false
+          }
+        }
+      ],
+      "kind": "body"
+    }
+  ],
+  [
+    {
+      "runs": [
+        {
+          "run": "Now, we can describe the surface around the tool.",
+          "textStyle": {
+            "fontSize": "18pt",
+            "bold": true,
+            "italic": false
+          }
+        }
+      ],
+      "kind": "opening"
+    },
+    {
+      "runs": [
+        {
+          "run": "The normal direction points out of the surface, while the two tangent directions lie along the surface. These directions define the force and moment components. They also determine in which directions the tool should be compliant and in which directions it should remain stiff.",
+          "textStyle": {
+            "fontSize": "18pt",
+            "bold": false,
+            "italic": false
+          }
+        }
+      ],
+      "kind": "body"
+    }
+  ],
+  [
+    {
+      "runs": [
+        {
+          "run": "To control this behaviour, I use Cartesian impedance control.",
+          "textStyle": {
+            "fontSize": "18pt",
+            "bold": true,
+            "italic": false
+          }
+        }
+      ],
+      "kind": "opening"
+    },
+    {
+      "runs": [
+        {
+          "run": "Like a spring, stiffness pulls the tool towards its desired pose, while damping slows the motion. The force law is f equals K p times the position error e p, plus D p times the velocity error.",
+          "textStyle": {
+            "fontSize": "18pt",
+            "bold": false,
+            "italic": false
+          }
+        }
+      ],
+      "kind": "body"
+    },
+    {
+      "runs": [
+        {
+          "run": "The moment law is m equals K R times the orientation error e R, plus D R times the angular-velocity error. Together, force and moment form a wrench. Translation and rotation can be adjusted separately.",
+          "textStyle": {
+            "fontSize": "18pt",
+            "bold": false,
+            "italic": false
+          }
+        }
+      ],
+      "kind": "body"
+    }
+  ],
+  [
+    {
+      "runs": [
+        {
+          "run": "To apply this control law, we need to calculate the torques for the robot joints.",
+          "textStyle": {
+            "fontSize": "18pt",
+            "bold": true,
+            "italic": false
+          }
+        }
+      ],
+      "kind": "opening"
+    },
+    {
+      "runs": [
+        {
+          "run": "The equation tau equals J transpose F converts the Cartesian wrench into joint torques. We then add Coriolis compensation and the null-space torques, which I will explain later. However, gravity compensation is handled internally by the robot. The complete control loop runs every millisecond using the latest measured robot state.",
+          "textStyle": {
+            "fontSize": "18pt",
+            "bold": false,
+            "italic": false
+          }
+        }
+      ],
+      "kind": "body"
+    }
+  ],
+  [
+    {
+      "runs": [
+        {
+          "run": "Next, we can change how the force affects the rotation of the tool.",
+          "textStyle": {
+            "fontSize": "18pt",
+            "bold": true,
+            "italic": false
+          }
+        }
+      ],
+      "kind": "opening"
+    },
+    {
+      "runs": [
+        {
+          "run": "The tool centre point, or TCP, is our controlled point on the end effector, or EE. The centre of compliance, or CoC, is a virtual reference point used for stiffness and damping. Shifting the CoC couples translation and rotation, so a force can also create a turning moment.",
+          "textStyle": {
+            "fontSize": "18pt",
+            "bold": false,
+            "italic": false
+          }
+        }
+      ],
+      "kind": "body"
+    }
+  ],
+  [
+    {
+      "runs": [
+        {
+          "run": "This CoC shift can help the alignment, but it can also work against it.",
+          "textStyle": {
+            "fontSize": "18pt",
+            "bold": true,
+            "italic": false
+          }
+        }
+      ],
+      "kind": "opening"
+    },
+    {
+      "runs": [
+        {
+          "run": "On the left, the additional moment supports the alignment. On the right, the additional moment opposes the alignment. This means that the direction of the CoC shift has to match the initial angular offset of the tool.",
+          "textStyle": {
+            "fontSize": "18pt",
+            "bold": false,
+            "italic": false
+          }
+        }
+      ],
+      "kind": "body"
+    }
+  ],
+  [
+    {
+      "runs": [
+        {
+          "run": "The equations on this slide describe this connection.",
+          "textStyle": {
+            "fontSize": "18pt",
+            "bold": true,
+            "italic": false
+          }
+        }
+      ],
+      "kind": "opening"
+    },
+    {
+      "runs": [
+        {
+          "run": "A equals Ad of r c describes the CoC shift. We transform stiffness as K TCP equals A transpose K c A, and damping as D TCP equals A transpose D c A. The off-diagonal terms then couple translation and rotation: displacement can create a moment, and rotation can create a force.",
+          "textStyle": {
+            "fontSize": "18pt",
+            "bold": false,
+            "italic": false
+          }
+        }
+      ],
+      "kind": "body"
+    }
+  ],
+  [
+    {
+      "runs": [
+        {
+          "run": "With the controller defined, I can now show the contact experiment.",
+          "textStyle": {
+            "fontSize": "18pt",
+            "bold": true,
+            "italic": false
+          }
+        }
+      ],
+      "kind": "opening"
+    },
+    {
+      "runs": [
+        {
+          "run": "I deliberately start the tool with an angular offset. This represents the mismatch between the surface orientation used by the controller and the real surface orientation. The robot then approaches the surface, makes contact and performs the grinding motion. Motion in the normal direction and rotation about the two tangent axes are compliant. The other directions remain stiff.",
+          "textStyle": {
+            "fontSize": "18pt",
+            "bold": false,
+            "italic": false
+          }
+        }
+      ],
+      "kind": "body"
+    }
+  ],
+  [
+    {
+      "runs": [
+        {
+          "run": "Before looking at the alignment results, I first checked the basic response of the controller.",
+          "textStyle": {
+            "fontSize": "18pt",
+            "bold": true,
+            "italic": false
+          }
+        }
+      ],
+      "kind": "opening"
+    },
+    {
+      "runs": [
+        {
+          "run": "For this test, I pushed and rotated the tool by hand, as shown in the video.",
+          "textStyle": {
+            "fontSize": "18pt",
+            "bold": false,
+            "italic": false
+          }
+        }
+      ],
+      "kind": "body"
+    },
+    {
+      "runs": [
+        {
+          "run": "[Play video: 14 s]",
+          "textStyle": {
+            "fontSize": "18pt",
+            "bold": false,
+            "italic": true
+          }
+        }
+      ],
+      "kind": "cue"
+    },
+    {
+      "runs": [
+        {
+          "run": "The next two plots compare the commanded and estimated values with the values predicted by the spring equation. It is important to note that the estimated values are model-based measurements.",
+          "textStyle": {
+            "fontSize": "18pt",
+            "bold": false,
+            "italic": false
+          }
+        }
+      ],
+      "kind": "body"
+    }
+  ],
+  [
+    {
+      "runs": [
+        {
+          "run": "Let us first look at the force.",
+          "textStyle": {
+            "fontSize": "18pt",
+            "bold": true,
+            "italic": false
+          }
+        }
+      ],
+      "kind": "opening"
+    },
+    {
+      "runs": [
+        {
+          "run": "A displacement of about twenty millimetres gives a predicted force of approximately minus twenty newtons. The commanded mean is almost the same, while the model estimate is slightly larger. The two values shown below the plot are mean values calculated over the shaded steady-state interval.",
+          "textStyle": {
+            "fontSize": "18pt",
+            "bold": false,
+            "italic": false
+          }
+        }
+      ],
+      "kind": "body"
+    }
+  ],
+  [
+    {
+      "runs": [
+        {
+          "run": "Next, I repeated the same check for rotation.",
+          "textStyle": {
+            "fontSize": "18pt",
+            "bold": true,
+            "italic": false
+          }
+        }
+      ],
+      "kind": "opening"
+    },
+    {
+      "runs": [
+        {
+          "run": "A rotation of approximately six and a half degrees gives predicted and commanded mean moments of about one point seven newton metres. The estimated mean is slightly higher. Again, these values are calculated over the shaded interval. Overall, both tests support the expected spring behaviour of the controller.",
+          "textStyle": {
+            "fontSize": "18pt",
+            "bold": false,
+            "italic": false
+          }
+        }
+      ],
+      "kind": "body"
+    }
+  ],
+  [
+    {
+      "runs": [
+        {
+          "run": "Now, let us look at what happens during actual contact alignment.",
+          "textStyle": {
+            "fontSize": "18pt",
+            "bold": true,
+            "italic": false
+          }
+        }
+      ],
+      "kind": "opening"
+    },
+    {
+      "runs": [
+        {
+          "run": "In this separate test, the force curves remain close to each other. However, the model-estimated moment is larger during the alignment motion. It includes the contact moment from the surface, which helps turn the tool towards alignment. Once the motion settles, the values become close again.",
+          "textStyle": {
+            "fontSize": "18pt",
+            "bold": false,
+            "italic": false
+          }
+        }
+      ],
+      "kind": "body"
+    }
+  ],
+  [
+    {
+      "runs": [
+        {
+          "run": "To understand this turning behaviour better, I first changed the rotational stiffness.",
+          "textStyle": {
+            "fontSize": "18pt",
+            "bold": true,
+            "italic": false
+          }
+        }
+      ],
+      "kind": "opening"
+    },
+    {
+      "runs": [
+        {
+          "run": "The plot shows the remaining angular error relative to the calibrated surface. A value closer to zero means better alignment in this direction. We can see that a higher rotational stiffness leaves a larger remaining error. This happens because the higher stiffness resists rotation during contact.",
+          "textStyle": {
+            "fontSize": "18pt",
+            "bold": false,
+            "italic": false
+          }
+        }
+      ],
+      "kind": "body"
+    }
+  ],
+  [
+    {
+      "runs": [
+        {
+          "run": "Next, I changed the centre of compliance.",
+          "textStyle": {
+            "fontSize": "18pt",
+            "bold": true,
+            "italic": false
+          }
+        }
+      ],
+      "kind": "opening"
+    },
+    {
+      "runs": [
+        {
+          "run": "For a positive starting offset, a positive CoC shift helps the alignment. For a negative starting offset, a different CoC position is more useful. This also shows that a larger shift is not always better. The direction and size of the CoC shift have to match the initial angular offset.",
+          "textStyle": {
+            "fontSize": "18pt",
+            "bold": false,
+            "italic": false
+          }
+        }
+      ],
+      "kind": "body"
+    }
+  ],
+  [
+    {
+      "runs": [
+        {
+          "run": "Here, we can see the same effect over time.",
+          "textStyle": {
+            "fontSize": "18pt",
+            "bold": true,
+            "italic": false
+          }
+        }
+      ],
+      "kind": "opening"
+    },
+    {
+      "runs": [
+        {
+          "run": "The supporting CoC shift helps the alignment happen faster, while the opposing shift leaves much of the initial angular error. The normal forces are broadly similar between the different cases, but the moments are different. This means that the CoC mainly changes the rotational response of the tool.",
+          "textStyle": {
+            "fontSize": "18pt",
+            "bold": false,
+            "italic": false
+          }
+        }
+      ],
+      "kind": "body"
+    }
+  ],
+  [
+    {
+      "runs": [
+        {
+          "run": "So far, we have controlled the tool. Next, I will explain how we control the extra motion of the arm.",
+          "textStyle": {
+            "fontSize": "18pt",
+            "bold": true,
+            "italic": false
+          }
+        }
+      ],
+      "kind": "opening"
+    },
+    {
+      "runs": [
+        {
+          "run": "The robot has seven joints, but the tool pose uses six coordinates. This leaves one extra degree of freedom, so the arm can change its posture while keeping the tool pose almost unchanged.",
+          "textStyle": {
+            "fontSize": "18pt",
+            "bold": false,
+            "italic": false
+          }
+        }
+      ],
+      "kind": "body"
+    },
+    {
+      "runs": [
+        {
+          "run": "The two null-space torques have different roles. Damping opposes joint velocity and is zero at rest. Conditioning uses the joint configuration to improve sigma min, the minimum singular value of the Jacobian. A larger sigma min helps avoid postures where certain tool movements become difficult.",
+          "textStyle": {
+            "fontSize": "18pt",
+            "bold": false,
+            "italic": false
+          }
+        }
+      ],
+      "kind": "body"
+    }
+  ],
+  [
+    {
+      "runs": [
+        {
+          "run": "Let me first show what the damping torque does.",
+          "textStyle": {
+            "fontSize": "18pt",
+            "bold": true,
+            "italic": false
+          }
+        }
+      ],
+      "kind": "opening"
+    },
+    {
+      "runs": [
+        {
+          "run": "This video starts with the null-space controller switched off. Then, the damping torque is switched on.",
+          "textStyle": {
+            "fontSize": "18pt",
+            "bold": false,
+            "italic": false
+          }
+        }
+      ],
+      "kind": "body"
+    },
+    {
+      "runs": [
+        {
+          "run": "[Play video: 23 s]",
+          "textStyle": {
+            "fontSize": "18pt",
+            "bold": false,
+            "italic": true
+          }
+        }
+      ],
+      "kind": "cue"
+    },
+    {
+      "runs": [
+        {
+          "run": "With null-space control off, the arm moves more easily. With damping on, the same push moves the arm more slowly. I need to push harder to move it at the same speed. The main controller still holds the tool pose.",
+          "textStyle": {
+            "fontSize": "18pt",
+            "bold": false,
+            "italic": false
+          }
+        }
+      ],
+      "kind": "body"
+    }
+  ],
+  [
+    {
+      "runs": [
+        {
+          "run": "Now, let us compare this with conditioning.",
+          "textStyle": {
+            "fontSize": "18pt",
+            "bold": true,
+            "italic": false
+          }
+        }
+      ],
+      "kind": "opening"
+    },
+    {
+      "runs": [
+        {
+          "run": "In this video, the conditioning controller is active.",
+          "textStyle": {
+            "fontSize": "18pt",
+            "bold": false,
+            "italic": false
+          }
+        }
+      ],
+      "kind": "body"
+    },
+    {
+      "runs": [
+        {
+          "run": "[Play video: 8 s]",
+          "textStyle": {
+            "fontSize": "18pt",
+            "bold": false,
+            "italic": true
+          }
+        }
+      ],
+      "kind": "cue"
+    },
+    {
+      "runs": [
+        {
+          "run": "The purpose of conditioning is different from damping. Conditioning tries to improve the posture of the robot while keeping the tool pose. Damping, on the other hand, mainly opposes unnecessary motion.",
+          "textStyle": {
+            "fontSize": "18pt",
+            "bold": false,
+            "italic": false
+          }
+        }
+      ],
+      "kind": "body"
+    }
+  ],
+  [
+    {
+      "runs": [
+        {
+          "run": "To compare these effects, I used the same disturbance in each experiment.",
+          "textStyle": {
+            "fontSize": "18pt",
+            "bold": true,
+            "italic": false
+          }
+        }
+      ],
+      "kind": "opening"
+    },
+    {
+      "runs": [
+        {
+          "run": "The disturbance is created using joint torques that represent a virtual force of twenty newtons acting on joint three. I tested four different cases: no null-space control, damping only, conditioning only, and damping together with conditioning. Each case was tested three times. Joint one is shown because it receives the largest peak disturbance torque. The following plots show the mean results from the three trials over four seconds.",
+          "textStyle": {
+            "fontSize": "18pt",
+            "bold": false,
+            "italic": false
+          }
+        }
+      ],
+      "kind": "body"
+    }
+  ],
+  [
+    {
+      "runs": [
+        {
+          "run": "Let us first look at how much joint one moves.",
+          "textStyle": {
+            "fontSize": "18pt",
+            "bold": true,
+            "italic": false
+          }
+        }
+      ],
+      "kind": "opening"
+    },
+    {
+      "runs": [
+        {
+          "run": "Damping reduces the motion. Conditioning and the combined controller keep the motion much smaller. The plot on the right shows a zoomed view. We can see that the joint changes direction several times. Adding damping reduces the total amount of motion, although some reversals still remain.",
+          "textStyle": {
+            "fontSize": "18pt",
+            "bold": false,
+            "italic": false
+          }
+        }
+      ],
+      "kind": "body"
+    }
+  ],
+  [
+    {
+      "runs": [
+        {
+          "run": "Reducing the joint motion is useful, but we also need to check the posture of the robot.",
+          "textStyle": {
+            "fontSize": "18pt",
+            "bold": true,
+            "italic": false
+          }
+        }
+      ],
+      "kind": "opening"
+    },
+    {
+      "runs": [
+        {
+          "run": "For this, we look at sigma min. Without null-space control, sigma min decreases. The same happens when only damping is used. With conditioning, either alone or combined with damping, sigma min stays almost constant. This shows that damping and conditioning have different roles. Damping mainly limits unnecessary motion, while conditioning helps maintain the Jacobian conditioning.",
+          "textStyle": {
+            "fontSize": "18pt",
+            "bold": false,
+            "italic": false
+          }
+        }
+      ],
+      "kind": "body"
+    }
+  ],
+  [
+    {
+      "runs": [
+        {
+          "run": "These results bring me to the main conclusions.",
+          "textStyle": {
+            "fontSize": "18pt",
+            "bold": true,
+            "italic": false
+          }
+        }
+      ],
+      "kind": "opening"
+    },
+    {
+      "runs": [
+        {
+          "run": "Allowing the tool to rotate during contact helps reduce the angular error. The centre of compliance can support the alignment, but it can also oppose it if the direction is not chosen correctly. A higher rotational stiffness resists rotation more strongly and therefore leaves a larger angular error. The null-space controller helps reduce unwanted motion of the robot arm. Damping and conditioning have different roles and can also be combined.",
+          "textStyle": {
+            "fontSize": "18pt",
+            "bold": false,
+            "italic": false
+          }
+        }
+      ],
+      "kind": "body"
+    },
+    {
+      "runs": [
+        {
+          "run": "As future work, I would improve the mechanical tool mount. I would also adjust the centre of compliance during the alignment process and then return it to the TCP once the alignment is complete. Thank you for your attention. I am happy to take your questions.",
+          "textStyle": {
+            "fontSize": "18pt",
+            "bold": false,
+            "italic": false
+          }
+        }
+      ],
+      "kind": "body"
+    },
+    {
+      "runs": [
+        {
+          "run": "[End of talk / Questions]",
+          "textStyle": {
+            "fontSize": "18pt",
+            "bold": false,
+            "italic": true
+          }
+        }
+      ],
+      "kind": "cue"
+    }
+  ],
+  [
+    {
+      "runs": [
+        {
+          "run": "This extra video shows why the direction of the CoC shift matters.",
+          "textStyle": {
+            "fontSize": "18pt",
+            "bold": true,
+            "italic": false
+          }
+        }
+      ],
+      "kind": "opening"
+    },
+    {
+      "runs": [
+        {
+          "run": "Here, the added moment acts against alignment.",
+          "textStyle": {
+            "fontSize": "18pt",
+            "bold": false,
+            "italic": false
+          }
+        }
+      ],
+      "kind": "body"
+    },
+    {
+      "runs": [
+        {
+          "run": "[Play video: 10 s]",
+          "textStyle": {
+            "fontSize": "18pt",
+            "bold": false,
+            "italic": true
+          }
+        }
+      ],
+      "kind": "cue"
+    },
+    {
+      "runs": [
+        {
+          "run": "This is the opposing case from the earlier diagrams. It shows that a shift can hinder the turning motion. The result plots give the numerical comparison.",
+          "textStyle": {
+            "fontSize": "18pt",
+            "bold": false,
+            "italic": false
+          }
+        }
+      ],
+      "kind": "body"
+    }
+  ],
+  [
+    {
+      "runs": [
+        {
+          "run": "This slide gives more detail about the two null-space torques.",
+          "textStyle": {
+            "fontSize": "18pt",
+            "bold": true,
+            "italic": false
+          }
+        }
+      ],
+      "kind": "opening"
+    },
+    {
+      "runs": [
+        {
+          "run": "The projector selects directions for the secondary torque while preserving the main tool-pose task. Damping opposes the projected joint velocity and is zero when the joints stop. Conditioning chooses the direction with a better sigma min and can act at rest. A small deadband avoids unnecessary changes.",
+          "textStyle": {
+            "fontSize": "18pt",
+            "bold": false,
+            "italic": false
+          }
+        }
+      ],
+      "kind": "body"
+    }
+  ],
+  [
+    {
+      "runs": [
+        {
+          "run": "To make the angle measurement clear, let us look at this diagram.",
+          "textStyle": {
+            "fontSize": "18pt",
+            "bold": true,
+            "italic": false
+          }
+        }
+      ],
+      "kind": "opening"
+    },
+    {
+      "runs": [
+        {
+          "run": "The red arc is the angular offset at contact entry. The blue arc is the remaining angular error. Both use the calibrated surface as their reference. The plotted error is the component about the first surface tangent. Zero in this one component does not guarantee perfect physical alignment.",
+          "textStyle": {
+            "fontSize": "18pt",
+            "bold": false,
+            "italic": false
+          }
+        }
+      ],
+      "kind": "body"
+    }
+  ],
+  [
+    {
+      "runs": [
+        {
+          "run": "This is the baseline result with the CoC at the TCP.",
+          "textStyle": {
+            "fontSize": "18pt",
+            "bold": true,
+            "italic": false
+          }
+        }
+      ],
+      "kind": "opening"
+    },
+    {
+      "runs": [
+        {
+          "run": "Contact reduces the two large starting offsets, but a small angular error remains. The three final errors are around one and a half degrees. Friction, calibration and the tool mount may contribute. This comparison does not separate those causes.",
+          "textStyle": {
+            "fontSize": "18pt",
+            "bold": false,
+            "italic": false
+          }
+        }
+      ],
+      "kind": "body"
+    }
+  ],
+  [
+    {
+      "runs": [
+        {
+          "run": "This diagram explains two sources of angular mismatch.",
+          "textStyle": {
+            "fontSize": "18pt",
+            "bold": true,
+            "italic": false
+          }
+        }
+      ],
+      "kind": "opening"
+    },
+    {
+      "runs": [
+        {
+          "run": "The real surface may differ from the surface used in the controller. Also, the actual tool orientation may differ from the desired orientation. The green line shows the tool face, and the dashed line shows the desired orientation. Both differences affect the angle at contact entry. We use a deliberate angular offset to represent this mismatch in the contact tests.",
+          "textStyle": {
+            "fontSize": "18pt",
+            "bold": false,
+            "italic": false
+          }
+        }
+      ],
+      "kind": "body"
+    }
+  ],
+  [
+    {
+      "runs": [
+        {
+          "run": "This last comparison looks at total motion across all seven joints.",
+          "textStyle": {
+            "fontSize": "18pt",
+            "bold": true,
+            "italic": false
+          }
+        }
+      ],
+      "kind": "opening"
+    },
+    {
+      "runs": [
+        {
+          "run": "It adds up motion over time, so changes of direction do not cancel. Damping alone gives about twenty-five percent less motion than no null-space torque. Adding damping to conditioning gives about fifty percent less than conditioning alone, at a conditioning setting of two newton metres.",
+          "textStyle": {
+            "fontSize": "18pt",
+            "bold": false,
+            "italic": false
+          }
+        }
+      ],
+      "kind": "body"
+    }
+  ]
+]

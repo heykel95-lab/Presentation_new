@@ -1,0 +1,28 @@
+{
+  "baseline": "experiments\\connected_notes_20261009\\archive\\script.json",
+  "fallback_main_words": 1651,
+  "main_words": 1646,
+  "net_words_added": -5,
+  "minutes": {
+    "125": 15.27,
+    "130": 14.76
+  },
+  "changed_physical_slides_vs_fallback": [
+    3,
+    6,
+    7,
+    8,
+    10,
+    18,
+    19
+  ],
+  "unchanged_scripts_vs_fallback": 24,
+  "all_six_backup_scripts_equal_fallback": true,
+  "technical_note_words": {
+    "6": 82,
+    "7": 66,
+    "8": 61,
+    "10": 61,
+    "19": 99
+  }
+}

@@ -1,0 +1,772 @@
+[
+  {
+    "slide": 1,
+    "sentence": "Hello everyone, and thank you for being here.",
+    "prompt": "Hello everyone, and thank you for being here."
+  },
+  {
+    "slide": 1,
+    "sentence": "Today, I will present my work on controlling a seven-joint robot for grinding.",
+    "prompt": "Today, I will present my work on controlling a seven-joint robot for grinding."
+  },
+  {
+    "slide": 1,
+    "sentence": "The goal is to help the tool align with a surface while reducing unwanted motion of the arm.",
+    "prompt": "The goal is to help the tool align with a surface while reducing unwanted motion of the arm."
+  },
+  {
+    "slide": 2,
+    "sentence": "First, let me explain why tool alignment matters.",
+    "prompt": "First, let me explain why tool alignment matters."
+  },
+  {
+    "slide": 2,
+    "sentence": "For grinding, the tool face needs to align with the surface.",
+    "prompt": "For grinding, the tool face needs to align with the surface."
+  },
+  {
+    "slide": 2,
+    "sentence": "However, the real surface angle may differ from the angle used by the controller.",
+    "prompt": "However, the real surface angle may differ from the angle used by the controller."
+  },
+  {
+    "slide": 2,
+    "sentence": "Moreover, joint friction can also affect the tool orientation.",
+    "prompt": "Moreover, joint friction can also affect the tool orientation."
+  },
+  {
+    "slide": 2,
+    "sentence": "The controller therefore allows the tool to rotate passively during contact, helping it align with the real surface.",
+    "prompt": "The controller therefore allows the tool to rotate passively during contact, helping it align with the real surface."
+  },
+  {
+    "slide": 2,
+    "sentence": "This video shows the idea.",
+    "prompt": "This video shows the idea."
+  },
+  {
+    "slide": 2,
+    "sentence": "As you can see, the tool rotates even though its desired orientation remains fixed.",
+    "prompt": "As you can see, the tool rotates even though its desired orientation remains fixed."
+  },
+  {
+    "slide": 3,
+    "sentence": "With that goal in mind, here is the structure of the presentation.",
+    "prompt": "With that goal in mind, here is the structure of the presentation."
+  },
+  {
+    "slide": 3,
+    "sentence": "I will first explain the controller, then show the contact experiments and their results.",
+    "prompt": "I will first explain the controller, then show the contact experiments and their results."
+  },
+  {
+    "slide": 3,
+    "sentence": "After that, I will discuss the extra joint motion and the null-space controller, before summarizing the main findings.",
+    "prompt": "After that, I will discuss the extra joint motion and the null-space controller, before summarizing the main findings."
+  },
+  {
+    "slide": 4,
+    "sentence": "To explain the controller, I will start with the tool pose.",
+    "prompt": "To explain the controller, I will start with the tool pose."
+  },
+  {
+    "slide": 4,
+    "sentence": "The pose describes where the tool is and how it is rotated.",
+    "prompt": "The pose describes where the tool is and how it is rotated."
+  },
+  {
+    "slide": 4,
+    "sentence": "It has three position coordinates and three orientation coordinates.",
+    "prompt": "It has three position coordinates and three orientation coordinates."
+  },
+  {
+    "slide": 4,
+    "sentence": "Using forward kinematics, we calculate this pose from the seven measured joint angles.",
+    "prompt": "Using forward kinematics, we calculate this pose from the seven measured joint angles."
+  },
+  {
+    "slide": 5,
+    "sentence": "We can now describe the directions in which the tool interacts with the surface.",
+    "prompt": "We can now describe the directions in which the tool interacts with the surface."
+  },
+  {
+    "slide": 5,
+    "sentence": "The normal points out of the surface, while the two tangents lie along it.",
+    "prompt": "The normal points out of the surface, while the two tangents lie along it."
+  },
+  {
+    "slide": 5,
+    "sentence": "These directions define the force and moment components, allowing us to choose where the tool should be compliant and where it should remain stiff.",
+    "prompt": "These directions define the force and moment components, allowing us to choose where the tool should be compliant and where it should remain stiff."
+  },
+  {
+    "slide": 6,
+    "sentence": "Cartesian impedance control makes the tool behave like a spring and a damper.",
+    "prompt": "Cartesian impedance control makes the tool behave like a spring and a damper."
+  },
+  {
+    "slide": 6,
+    "sentence": "The force law is f equals K p times e p, plus D p times the velocity error.",
+    "prompt": "The force law is f equals K p times e p, plus D p times the velocity error."
+  },
+  {
+    "slide": 6,
+    "sentence": "Here, e p is desired minus measured position.",
+    "prompt": "Here, e p is desired minus measured position."
+  },
+  {
+    "slide": 6,
+    "sentence": "Stiffness pulls the tool towards its target, while damping opposes motion for a fixed target.",
+    "prompt": "Stiffness pulls the tool towards its target, while damping opposes motion for a fixed target."
+  },
+  {
+    "slide": 6,
+    "sentence": "The moment law has the same form: m equals K R times e R, plus D R times the angular-velocity error.",
+    "prompt": "The moment law has the same form: m equals K R times e R, plus D R times the angular-velocity error."
+  },
+  {
+    "slide": 6,
+    "sentence": "Here, e R is the rotation angle times its axis.",
+    "prompt": "Here, e R is the rotation angle times its axis."
+  },
+  {
+    "slide": 6,
+    "sentence": "Together, force and moment form the wrench F.",
+    "prompt": "Together, force and moment form the wrench F."
+  },
+  {
+    "slide": 6,
+    "sentence": "The zero off-diagonal blocks keep translation and rotation separate.",
+    "prompt": "The zero off-diagonal blocks keep translation and rotation separate."
+  },
+  {
+    "slide": 7,
+    "sentence": "To apply this wrench, the controller must convert it into joint torques.",
+    "prompt": "To apply this wrench, the controller must convert it into joint torques."
+  },
+  {
+    "slide": 7,
+    "sentence": "The first equation, tau equals J transpose F, maps the force and moment to all seven joints.",
+    "prompt": "The first equation, tau equals J transpose F, maps the force and moment to all seven joints."
+  },
+  {
+    "slide": 7,
+    "sentence": "In the feedback direction, x dot equals J times q dot gives the tool velocity from joint velocities.",
+    "prompt": "In the feedback direction, x dot equals J times q dot gives the tool velocity from joint velocities."
+  },
+  {
+    "slide": 7,
+    "sentence": "We then add the null-space torque and Coriolis compensation to the Cartesian torque.",
+    "prompt": "We then add the null-space torque and Coriolis compensation to the Cartesian torque."
+  },
+  {
+    "slide": 7,
+    "sentence": "However, gravity compensation is handled internally by the robot.",
+    "prompt": "However, gravity compensation is handled internally by the robot."
+  },
+  {
+    "slide": 7,
+    "sentence": "This loop repeats every millisecond.",
+    "prompt": "This loop repeats every millisecond."
+  },
+  {
+    "slide": 7,
+    "sentence": "After each update, we compare the reference and measured state again.",
+    "prompt": "After each update, we compare the reference and measured state again."
+  },
+  {
+    "slide": 7,
+    "sentence": "If contact changes the tool pose, these errors change the wrench in the next cycle, so the response adapts continuously.",
+    "prompt": "If contact changes the tool pose, these errors change the wrench in the next cycle, so the response adapts continuously."
+  },
+  {
+    "slide": 8,
+    "sentence": "We can also choose where the virtual spring and damper act.",
+    "prompt": "We can also choose where the virtual spring and damper act."
+  },
+  {
+    "slide": 8,
+    "sentence": "The tool centre point, or TCP, is our controlled point on the end effector, or EE.",
+    "prompt": "The tool centre point, or TCP, is our controlled point on the end effector, or EE."
+  },
+  {
+    "slide": 8,
+    "sentence": "The centre of compliance, or CoC, is the virtual reference for stiffness and damping.",
+    "prompt": "The centre of compliance, or CoC, is the virtual reference for stiffness and damping."
+  },
+  {
+    "slide": 8,
+    "sentence": "Shifting this reference introduces a lever effect.",
+    "prompt": "Shifting this reference introduces a lever effect."
+  },
+  {
+    "slide": 8,
+    "sentence": "The equation m at the TCP equals r c cross f describes the added moment: it depends on both the displacement and force directions.",
+    "prompt": "The equation m at the TCP equals r c cross f describes the added moment: it depends on both the displacement and force directions."
+  },
+  {
+    "slide": 8,
+    "sentence": "For a force parallel to r c, the cross product is zero, so this added moment vanishes.",
+    "prompt": "For a force parallel to r c, the cross product is zero, so this added moment vanishes."
+  },
+  {
+    "slide": 9,
+    "sentence": "Whether that moment helps depends on the direction of the shift.",
+    "prompt": "Whether that moment helps depends on the direction of the shift."
+  },
+  {
+    "slide": 9,
+    "sentence": "On the left, the added moment supports alignment, while on the right, it opposes alignment.",
+    "prompt": "On the left, the added moment supports alignment, while on the right, it opposes alignment."
+  },
+  {
+    "slide": 9,
+    "sentence": "The CoC shift must therefore be chosen to match the initial angular offset of the tool.",
+    "prompt": "The CoC shift must therefore be chosen to match the initial angular offset of the tool."
+  },
+  {
+    "slide": 10,
+    "sentence": "The equations here show how we introduce that coupling into the controller.",
+    "prompt": "The equations here show how we introduce that coupling into the controller."
+  },
+  {
+    "slide": 10,
+    "sentence": "The displacement r c runs from the TCP to the CoC.",
+    "prompt": "The displacement r c runs from the TCP to the CoC."
+  },
+  {
+    "slide": 10,
+    "sentence": "It defines the point-shift adjoint matrix A, written as Ad of r c.",
+    "prompt": "It defines the point-shift adjoint matrix A, written as Ad of r c."
+  },
+  {
+    "slide": 10,
+    "sentence": "We use it to transform both matrices: K at the TCP equals A transpose K c A, and D at the TCP equals A transpose D c A.",
+    "prompt": "We use it to transform both matrices: K at the TCP equals A transpose K c A, and D at the TCP equals A transpose D c A."
+  },
+  {
+    "slide": 10,
+    "sentence": "The right-hand A maps errors and velocities to the CoC, and A transpose maps the resulting wrench back to the TCP.",
+    "prompt": "The right-hand A maps errors and velocities to the CoC, and A transpose maps the resulting wrench back to the TCP."
+  },
+  {
+    "slide": 10,
+    "sentence": "These transformed matrices generally have nonzero off-diagonal blocks.",
+    "prompt": "These transformed matrices generally have nonzero off-diagonal blocks."
+  },
+  {
+    "slide": 10,
+    "sentence": "A position error can therefore create a moment, and an orientation error can create a force.",
+    "prompt": "A position error can therefore create a moment, and an orientation error can create a force."
+  },
+  {
+    "slide": 10,
+    "sentence": "The damping blocks similarly couple linear and angular velocity errors.",
+    "prompt": "The damping blocks similarly couple linear and angular velocity errors."
+  },
+  {
+    "slide": 10,
+    "sentence": "This is how the CoC shift changes the force and turning response together.",
+    "prompt": "This is how the CoC shift changes the force and turning response together."
+  },
+  {
+    "slide": 10,
+    "sentence": "We transform stiffness and damping separately.",
+    "prompt": "We transform stiffness and damping separately."
+  },
+  {
+    "slide": 10,
+    "sentence": "The coupling is between translation and rotation within each matrix.",
+    "prompt": "The coupling is between translation and rotation within each matrix."
+  },
+  {
+    "slide": 10,
+    "sentence": "When the CoC coincides with the TCP, r c is zero and A becomes the identity, recovering the original uncoupled matrices.",
+    "prompt": "When the CoC coincides with the TCP, r c is zero and A becomes the identity, recovering the original uncoupled matrices."
+  },
+  {
+    "slide": 11,
+    "sentence": "With the controller defined, I can now show the contact experiment.",
+    "prompt": "With the controller defined, I can now show the contact experiment."
+  },
+  {
+    "slide": 11,
+    "sentence": "I deliberately start with an angular offset to represent a mismatch between the assumed and real surface orientations.",
+    "prompt": "I deliberately start with an angular offset to represent a mismatch between the assumed and real surface orientations."
+  },
+  {
+    "slide": 11,
+    "sentence": "The robot then approaches, makes contact and performs the grinding motion.",
+    "prompt": "The robot then approaches, makes contact and performs the grinding motion."
+  },
+  {
+    "slide": 11,
+    "sentence": "Motion along the normal and rotation about the two tangent axes are compliant, while the other directions remain stiff.",
+    "prompt": "Motion along the normal and rotation about the two tangent axes are compliant, while the other directions remain stiff."
+  },
+  {
+    "slide": 12,
+    "sentence": "Before assessing alignment, I first checked the basic impedance response.",
+    "prompt": "Before assessing alignment, I first checked the basic impedance response."
+  },
+  {
+    "slide": 12,
+    "sentence": "For this test, I pushed and rotated the tool by hand, as shown in the video.",
+    "prompt": "For this test, I pushed and rotated the tool by hand, as shown in the video."
+  },
+  {
+    "slide": 12,
+    "sentence": "The next two plots compare the commanded and estimated values with the spring-law predictions.",
+    "prompt": "The next two plots compare the commanded and estimated values with the spring-law predictions."
+  },
+  {
+    "slide": 12,
+    "sentence": "It is important to note that the estimated values are model-based measurements.",
+    "prompt": "It is important to note that the estimated values are model-based measurements."
+  },
+  {
+    "slide": 13,
+    "sentence": "Let us first check the force against the spring term K p times e p.",
+    "prompt": "Let us first check the force against the spring term K p times e p."
+  },
+  {
+    "slide": 13,
+    "sentence": "A displacement of about twenty millimetres predicts approximately minus twenty newtons.",
+    "prompt": "A displacement of about twenty millimetres predicts approximately minus twenty newtons."
+  },
+  {
+    "slide": 13,
+    "sentence": "The commanded mean is almost the same, while the model estimate is slightly larger.",
+    "prompt": "The commanded mean is almost the same, while the model estimate is slightly larger."
+  },
+  {
+    "slide": 13,
+    "sentence": "Both means below the plot use the shaded steady-state interval.",
+    "prompt": "Both means below the plot use the shaded steady-state interval."
+  },
+  {
+    "slide": 14,
+    "sentence": "The rotational test checks the corresponding term K R times e R.",
+    "prompt": "The rotational test checks the corresponding term K R times e R."
+  },
+  {
+    "slide": 14,
+    "sentence": "A rotation of about six and a half degrees gives predicted and commanded mean moments of roughly one point seven newton metres.",
+    "prompt": "A rotation of about six and a half degrees gives predicted and commanded mean moments of roughly one point seven newton metres."
+  },
+  {
+    "slide": 14,
+    "sentence": "The estimated mean is slightly higher.",
+    "prompt": "The estimated mean is slightly higher."
+  },
+  {
+    "slide": 14,
+    "sentence": "Again, the means use the shaded interval.",
+    "prompt": "Again, the means use the shaded interval."
+  },
+  {
+    "slide": 14,
+    "sentence": "Together, these tests support the expected spring behaviour.",
+    "prompt": "Together, these tests support the expected spring behaviour."
+  },
+  {
+    "slide": 15,
+    "sentence": "We can now look at the wrench during actual contact alignment.",
+    "prompt": "We can now look at the wrench during actual contact alignment."
+  },
+  {
+    "slide": 15,
+    "sentence": "In this separate test, the force curves remain close.",
+    "prompt": "In this separate test, the force curves remain close."
+  },
+  {
+    "slide": 15,
+    "sentence": "However, the model-estimated moment is larger during alignment because it includes the contact moment from the surface, which helps turn the tool.",
+    "prompt": "However, the model-estimated moment is larger during alignment because it includes the contact moment from the surface, which helps turn the tool."
+  },
+  {
+    "slide": 15,
+    "sentence": "Once the motion settles, the values become close again.",
+    "prompt": "Once the motion settles, the values become close again."
+  },
+  {
+    "slide": 16,
+    "sentence": "To understand this turning response, I first varied the rotational stiffness.",
+    "prompt": "To understand this turning response, I first varied the rotational stiffness."
+  },
+  {
+    "slide": 16,
+    "sentence": "The plot shows the remaining angular error relative to the calibrated surface.",
+    "prompt": "The plot shows the remaining angular error relative to the calibrated surface."
+  },
+  {
+    "slide": 16,
+    "sentence": "Closer to zero means better alignment in this direction.",
+    "prompt": "Closer to zero means better alignment in this direction."
+  },
+  {
+    "slide": 16,
+    "sentence": "Higher rotational stiffness leaves a larger error because it resists the rotation caused by contact.",
+    "prompt": "Higher rotational stiffness leaves a larger error because it resists the rotation caused by contact."
+  },
+  {
+    "slide": 17,
+    "sentence": "Next, I varied the centre of compliance to change the coupling.",
+    "prompt": "Next, I varied the centre of compliance to change the coupling."
+  },
+  {
+    "slide": 17,
+    "sentence": "For a positive starting offset, a positive CoC shift helps alignment, whereas a negative starting offset benefits from a different CoC position.",
+    "prompt": "For a positive starting offset, a positive CoC shift helps alignment, whereas a negative starting offset benefits from a different CoC position."
+  },
+  {
+    "slide": 17,
+    "sentence": "A larger shift is therefore not always better: its direction and size must match the initial angular offset.",
+    "prompt": "A larger shift is therefore not always better: its direction and size must match the initial angular offset."
+  },
+  {
+    "slide": 18,
+    "sentence": "The time histories show how this difference develops.",
+    "prompt": "The time histories show how this difference develops."
+  },
+  {
+    "slide": 18,
+    "sentence": "A supporting CoC shift helps alignment happen faster, while an opposing shift leaves much of the initial angular error.",
+    "prompt": "A supporting CoC shift helps alignment happen faster, while an opposing shift leaves much of the initial angular error."
+  },
+  {
+    "slide": 18,
+    "sentence": "The normal forces are broadly similar, but the moments differ.",
+    "prompt": "The normal forces are broadly similar, but the moments differ."
+  },
+  {
+    "slide": 18,
+    "sentence": "In these tests, the CoC shift therefore mainly changes the rotational response.",
+    "prompt": "In these tests, the CoC shift therefore mainly changes the rotational response."
+  },
+  {
+    "slide": 19,
+    "sentence": "So far, we have controlled the tool, while the null-space controller manages the extra motion of the arm.",
+    "prompt": "So far, we have controlled the tool, while the null-space controller manages the extra motion of the arm."
+  },
+  {
+    "slide": 19,
+    "sentence": "With seven joints and six independent tool-pose coordinates, seven minus six leaves one extra degree of freedom.",
+    "prompt": "With seven joints and six independent tool-pose coordinates, seven minus six leaves one extra degree of freedom."
+  },
+  {
+    "slide": 19,
+    "sentence": "The condition J times q dot null equals zero means that these joint velocities produce no instantaneous tool motion.",
+    "prompt": "The condition J times q dot null equals zero means that these joint velocities produce no instantaneous tool motion."
+  },
+  {
+    "slide": 19,
+    "sentence": "The arm can therefore change posture while the main controller holds the tool pose.",
+    "prompt": "The arm can therefore change posture while the main controller holds the tool pose."
+  },
+  {
+    "slide": 19,
+    "sentence": "The secondary torques are projected to preserve the main tool-pose task in the controller model.",
+    "prompt": "The secondary torques are projected to preserve the main tool-pose task in the controller model."
+  },
+  {
+    "slide": 19,
+    "sentence": "Damping opposes the extra joint velocity and becomes zero at rest.",
+    "prompt": "Damping opposes the extra joint velocity and becomes zero at rest."
+  },
+  {
+    "slide": 19,
+    "sentence": "Conditioning instead depends on the joint configuration and can act even at rest.",
+    "prompt": "Conditioning instead depends on the joint configuration and can act even at rest."
+  },
+  {
+    "slide": 19,
+    "sentence": "It seeks a posture with a larger minimum singular value of J, called sigma min.",
+    "prompt": "It seeks a posture with a larger minimum singular value of J, called sigma min."
+  },
+  {
+    "slide": 19,
+    "sentence": "A small sigma min means that tool motion in one direction requires large joint velocities, so increasing it helps move away from such a posture.",
+    "prompt": "A small sigma min means that tool motion in one direction requires large joint velocities, so increasing it helps move away from such a posture."
+  },
+  {
+    "slide": 19,
+    "sentence": "The two torques thus address motion and posture, respectively.",
+    "prompt": "The two torques thus address motion and posture, respectively."
+  },
+  {
+    "slide": 19,
+    "sentence": "When combined, conditioning guides the arm towards a better configuration, while damping slows the resulting null-space motion.",
+    "prompt": "When combined, conditioning guides the arm towards a better configuration, while damping slows the resulting null-space motion."
+  },
+  {
+    "slide": 20,
+    "sentence": "The first video shows the effect of damping.",
+    "prompt": "The first video shows the effect of damping."
+  },
+  {
+    "slide": 20,
+    "sentence": "It starts with null-space control off, then switches the damping torque on.",
+    "prompt": "It starts with null-space control off, then switches the damping torque on."
+  },
+  {
+    "slide": 20,
+    "sentence": "With null-space control off, the arm moves more easily.",
+    "prompt": "With null-space control off, the arm moves more easily."
+  },
+  {
+    "slide": 20,
+    "sentence": "With damping on, the same push moves it more slowly, so I need to push harder to reach the same speed.",
+    "prompt": "With damping on, the same push moves it more slowly, so I need to push harder to reach the same speed."
+  },
+  {
+    "slide": 20,
+    "sentence": "Throughout this, the main controller still holds the tool pose.",
+    "prompt": "Throughout this, the main controller still holds the tool pose."
+  },
+  {
+    "slide": 21,
+    "sentence": "Conditioning has a different purpose, as this next video shows.",
+    "prompt": "Conditioning has a different purpose, as this next video shows."
+  },
+  {
+    "slide": 21,
+    "sentence": "Here, the conditioning controller is active.",
+    "prompt": "Here, the conditioning controller is active."
+  },
+  {
+    "slide": 21,
+    "sentence": "It changes the posture while keeping the tool pose.",
+    "prompt": "It changes the posture while keeping the tool pose."
+  },
+  {
+    "slide": 21,
+    "sentence": "Unlike damping, which mainly opposes motion, conditioning seeks a posture with better Jacobian conditioning.",
+    "prompt": "Unlike damping, which mainly opposes motion, conditioning seeks a posture with better Jacobian conditioning."
+  },
+  {
+    "slide": 22,
+    "sentence": "To compare these effects systematically, I applied the same disturbance in each experiment.",
+    "prompt": "To compare these effects systematically, I applied the same disturbance in each experiment."
+  },
+  {
+    "slide": 22,
+    "sentence": "Joint torques represent a virtual twenty-newton force acting on joint three.",
+    "prompt": "Joint torques represent a virtual twenty-newton force acting on joint three."
+  },
+  {
+    "slide": 22,
+    "sentence": "I tested no null-space control, damping only, conditioning only, and both together, with three trials per case.",
+    "prompt": "I tested no null-space control, damping only, conditioning only, and both together, with three trials per case."
+  },
+  {
+    "slide": 22,
+    "sentence": "Joint one receives the largest peak disturbance torque, so the next plots show its mean response over four seconds.",
+    "prompt": "Joint one receives the largest peak disturbance torque, so the next plots show its mean response over four seconds."
+  },
+  {
+    "slide": 23,
+    "sentence": "First, we compare how much joint one moves.",
+    "prompt": "First, we compare how much joint one moves."
+  },
+  {
+    "slide": 23,
+    "sentence": "Damping reduces the motion, while conditioning and the combined controller keep it much smaller.",
+    "prompt": "Damping reduces the motion, while conditioning and the combined controller keep it much smaller."
+  },
+  {
+    "slide": 23,
+    "sentence": "The zoom on the right reveals repeated direction changes.",
+    "prompt": "The zoom on the right reveals repeated direction changes."
+  },
+  {
+    "slide": 23,
+    "sentence": "Adding damping reduces the total motion, although some reversals remain.",
+    "prompt": "Adding damping reduces the total motion, although some reversals remain."
+  },
+  {
+    "slide": 24,
+    "sentence": "We also need to check whether the resulting posture remains well conditioned.",
+    "prompt": "We also need to check whether the resulting posture remains well conditioned."
+  },
+  {
+    "slide": 24,
+    "sentence": "Without null-space control, sigma min decreases, and damping alone gives the same trend.",
+    "prompt": "Without null-space control, sigma min decreases, and damping alone gives the same trend."
+  },
+  {
+    "slide": 24,
+    "sentence": "With conditioning, alone or combined with damping, it stays almost constant.",
+    "prompt": "With conditioning, alone or combined with damping, it stays almost constant."
+  },
+  {
+    "slide": 24,
+    "sentence": "This supports the distinction made earlier: damping limits motion, while conditioning helps maintain a usable posture.",
+    "prompt": "This supports the distinction made earlier: damping limits motion, while conditioning helps maintain a usable posture."
+  },
+  {
+    "slide": 25,
+    "sentence": "These results bring me to the main conclusions.",
+    "prompt": "These results bring me to the main conclusions."
+  },
+  {
+    "slide": 25,
+    "sentence": "Allowing the tool to rotate during contact helps reduce the angular error.",
+    "prompt": "Allowing the tool to rotate during contact helps reduce the angular error."
+  },
+  {
+    "slide": 25,
+    "sentence": "The CoC shift can support or oppose this alignment, while higher rotational stiffness resists it and leaves a larger error.",
+    "prompt": "The CoC shift can support or oppose this alignment, while higher rotational stiffness resists it and leaves a larger error."
+  },
+  {
+    "slide": 25,
+    "sentence": "For the arm, damping reduces unwanted motion and conditioning improves the posture response.",
+    "prompt": "For the arm, damping reduces unwanted motion and conditioning improves the posture response."
+  },
+  {
+    "slide": 25,
+    "sentence": "The two can be combined.",
+    "prompt": "The two can be combined."
+  },
+  {
+    "slide": 25,
+    "sentence": "As future work, I would improve the tool mount and adjust the CoC during alignment, returning it to the TCP afterwards.",
+    "prompt": "As future work, I would improve the tool mount and adjust the CoC during alignment, returning it to the TCP afterwards."
+  },
+  {
+    "slide": 25,
+    "sentence": "Thank you for your attention.",
+    "prompt": "Thank you for your attention."
+  },
+  {
+    "slide": 25,
+    "sentence": "I am happy to take your questions.",
+    "prompt": "I am happy to take your questions."
+  },
+  {
+    "slide": 26,
+    "sentence": "This extra video illustrates why the direction of the CoC shift matters.",
+    "prompt": "This extra video illustrates why the direction of the CoC shift matters."
+  },
+  {
+    "slide": 26,
+    "sentence": "Here, the added moment acts against alignment.",
+    "prompt": "Here, the added moment acts against alignment."
+  },
+  {
+    "slide": 26,
+    "sentence": "It is the opposing case from the earlier diagrams: the shift hinders the turning motion.",
+    "prompt": "It is the opposing case from the earlier diagrams: the shift hinders the turning motion."
+  },
+  {
+    "slide": 26,
+    "sentence": "The result plots provide the numerical comparison.",
+    "prompt": "The result plots provide the numerical comparison."
+  },
+  {
+    "slide": 27,
+    "sentence": "This slide gives the detailed equations for the two null-space torques.",
+    "prompt": "This slide gives the detailed equations for the two null-space torques."
+  },
+  {
+    "slide": 27,
+    "sentence": "The torque projector selects secondary directions that preserve the main tool-pose task in the controller model.",
+    "prompt": "The torque projector selects secondary directions that preserve the main tool-pose task in the controller model."
+  },
+  {
+    "slide": 27,
+    "sentence": "The damping term opposes projected joint velocity, so it vanishes when the joints stop.",
+    "prompt": "The damping term opposes projected joint velocity, so it vanishes when the joints stop."
+  },
+  {
+    "slide": 27,
+    "sentence": "The conditioning term instead selects the direction with a better sigma min and can act at rest.",
+    "prompt": "The conditioning term instead selects the direction with a better sigma min and can act at rest."
+  },
+  {
+    "slide": 27,
+    "sentence": "Its small deadband prevents unnecessary switching between directions.",
+    "prompt": "Its small deadband prevents unnecessary switching between directions."
+  },
+  {
+    "slide": 28,
+    "sentence": "This diagram distinguishes the two angular quantities used in the results.",
+    "prompt": "This diagram distinguishes the two angular quantities used in the results."
+  },
+  {
+    "slide": 28,
+    "sentence": "The red arc is the angular offset at contact entry, while the blue arc is the remaining angular error.",
+    "prompt": "The red arc is the angular offset at contact entry, while the blue arc is the remaining angular error."
+  },
+  {
+    "slide": 28,
+    "sentence": "Both are measured relative to the calibrated surface.",
+    "prompt": "Both are measured relative to the calibrated surface."
+  },
+  {
+    "slide": 28,
+    "sentence": "The plots show the component about the first surface tangent, so zero in that component alone does not guarantee perfect physical alignment.",
+    "prompt": "The plots show the component about the first surface tangent, so zero in that component alone does not guarantee perfect physical alignment."
+  },
+  {
+    "slide": 29,
+    "sentence": "This baseline keeps the CoC at the TCP.",
+    "prompt": "This baseline keeps the CoC at the TCP."
+  },
+  {
+    "slide": 29,
+    "sentence": "Contact reduces the two large starting offsets, but the three final errors remain around one and a half degrees.",
+    "prompt": "Contact reduces the two large starting offsets, but the three final errors remain around one and a half degrees."
+  },
+  {
+    "slide": 29,
+    "sentence": "Friction, calibration and the tool mount may contribute to the remaining error.",
+    "prompt": "Friction, calibration and the tool mount may contribute to the remaining error."
+  },
+  {
+    "slide": 29,
+    "sentence": "This comparison does not separate their effects.",
+    "prompt": "This comparison does not separate their effects."
+  },
+  {
+    "slide": 30,
+    "sentence": "The mismatch at contact entry can come from two sources.",
+    "prompt": "The mismatch at contact entry can come from two sources."
+  },
+  {
+    "slide": 30,
+    "sentence": "The real surface may differ from the surface assumed by the controller, and the actual tool orientation may differ from its desired orientation.",
+    "prompt": "The real surface may differ from the surface assumed by the controller, and the actual tool orientation may differ from its desired orientation."
+  },
+  {
+    "slide": 30,
+    "sentence": "The green tool face and dashed desired orientation illustrate the latter.",
+    "prompt": "The green tool face and dashed desired orientation illustrate the latter."
+  },
+  {
+    "slide": 30,
+    "sentence": "Both affect the entry angle, which is why the contact tests use a deliberate angular offset.",
+    "prompt": "Both affect the entry angle, which is why the contact tests use a deliberate angular offset."
+  },
+  {
+    "slide": 31,
+    "sentence": "Finally, this comparison adds up motion across all seven joints.",
+    "prompt": "Finally, this comparison adds up motion across all seven joints."
+  },
+  {
+    "slide": 31,
+    "sentence": "Because motion is accumulated over time, changes of direction do not cancel.",
+    "prompt": "Because motion is accumulated over time, changes of direction do not cancel."
+  },
+  {
+    "slide": 31,
+    "sentence": "Damping alone gives about twenty-five percent less motion than no null-space torque.",
+    "prompt": "Damping alone gives about twenty-five percent less motion than no null-space torque."
+  },
+  {
+    "slide": 31,
+    "sentence": "At a conditioning setting of two newton metres, adding damping gives about fifty percent less motion than conditioning alone.",
+    "prompt": "At a conditioning setting of two newton metres, adding damping gives about fifty percent less motion than conditioning alone."
+  }
+]

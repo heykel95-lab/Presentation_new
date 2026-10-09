@@ -1,0 +1,33 @@
+{
+  "main_slides": 25,
+  "optional_backup_slides": 6,
+  "pages": 11,
+  "main_talk_pages": 9,
+  "optional_backup_pages": 2,
+  "main_spoken_word_count": 1717,
+  "backup_spoken_word_count": 330,
+  "all_main_videos_seconds": 95.946,
+  "pause_allowance_seconds": 30,
+  "estimated_total_minutes_including_full_videos_separately": {
+    "90": 21.18,
+    "100": 19.27,
+    "110": 17.71,
+    "120": 16.41,
+    "125": 15.84,
+    "130": 15.31,
+    "140": 14.36,
+    "150": 13.55
+  },
+  "openings_for_all_slides": true,
+  "full_spoken_paragraphs_no_bullet_prompts": true,
+  "before_and_after_video_speech": true,
+  "all_spoken_text_verified_on_expected_pages": true,
+  "pdf_sha256": "e8cc2d6e1a93f98ccc56cbf10214ab5d93170ed90efe7966deac5697e3e7878d",
+  "installed": true,
+  "planned_words_per_minute": 130,
+  "minimum_words_per_minute_for_15_minutes": 133.1,
+  "visually_reviewed_pages": 11,
+  "notes_format": "connected_spoken_paragraphs",
+  "notes_match_all_spoken_text": true,
+  "unchanged_fallback": "Projector_Test_Versions/01_MP4_Light_Silent.pptx"
+}

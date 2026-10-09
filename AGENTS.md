@@ -1,5 +1,83 @@
 # Thesis and presentation workspace
 
+## Standalone video names by slide (2026-10-09)
+
+The five used standalone videos in Final Presentation/Video/Projector_compatible
+now have explicit Slide_ prefixes: Slide_01_Motivation_contact.mp4,
+Slide_11_Impedance_response.mp4, Slide_19_Nullspace_damping.mp4,
+Slide_20_Nullspace_conditioning.mp4 and Slide_B1_Opposing_CoC_moment.mp4.
+Numbers follow the printed footers. Their physical PowerPoint positions are
+2, 12, 20, 21 and 26. The folder README includes both numbering schemes.
+Only these standalone filenames changed. Every video remains byte-identical
+to the corresponding embedded main-deck payload. Presentations and original
+recordings are unchanged. Verification:
+experiments/video_slide_names_20261009/verification.json.
+
+## Return to fallback with minimal clarity edits (2026-10-09)
+
+The user rejected the expanded rewrite. Use the original fallback speech as
+the baseline and make only small storyline links and short impedance, CoC
+and null-space clarifications. This supersedes the broader expansion requests.
+Do not reintroduce extra examples, lengthy derivations or the damping/posture
+passage that the user disliked. Damping reduces motion; conditioning addresses
+the configuration. Keep future edits close to the original fallback wording.
+
+The fallback baseline was verified word-for-word against the protected MP4
+Light deck. Twenty-four of 31 scripts, including all six backups, now match
+it exactly. Physical slides 3, 6, 7, 8, 10, 18 and 19 have narrow edits.
+Related sentences share paragraphs. The main speech is 1,646 words versus
+1,651 in the fallback. The impedance-law note is 82 words. The speech PDF is
+back to ten pages, with eight main-talk and two backup pages. Main duration
+including videos and pauses is 14.76 minutes at 130 words/minute or 15.27 at
+125. The October 9 speech footer date remains current.
+
+The four working decks, speech sources and PDFs, and projector ZIP are
+synchronized. All 31 notes use 18 pt and fit, with maximum height 344 pt in
+the existing 540 pt body. The seven revised notes and ten speech pages were
+visually checked. All non-note PPTX parts and static slide PDFs are unchanged.
+The MP4 Light fallback deck and original fallback speech remain byte-identical.
+Verification: experiments/fallback_light_notes_20261009/verification.json.
+
+## Clear damping and conditioning roles (2026-10-09)
+
+On Null-space controller, footer 18 / physical 19, replace the final paragraph
+about damping stopping in an unfavourable posture with:
+When combined, conditioning guides the arm towards a better configuration,
+while damping slows the resulting null-space motion.
+The user wants configuration improvement attributed to conditioning and
+motion reduction attributed to damping. All other wording is unchanged.
+
+The four improved decks and matching speech are synchronized. Only one notes
+XML part changes per deck. Visible slides, equations, media and static PDFs
+remain byte-identical. Notes retain 18 pt and fit, with this note occupying
+452 pt of the 540 pt body. The changed note and speech page 7 were visually
+checked. The other 30 scripts and ten speech PDF pages are unchanged.
+Main speech is 1,717 words, about 15.31 minutes at 130 words/minute or 15.84
+at 125, including videos and pauses. The MP4 Light fallback and its original
+speech remain byte-identical. The projector ZIP is synchronized.
+Verification: experiments/nullspace_roles_20261009/verification.json.
+
+## Shorter slide 5 speaking text (2026-10-09)
+
+The user said slide 5 text was too long. Shorten the Cartesian impedance law
+note, footer 5 / physical 6, from 196 to 104 words. Retain the force and moment
+equations read aloud, position/rotation error definitions, stiffness/damping
+roles, wrench definition and the zero off-diagonal blocks. Remove the longer
+held/released-tool example and repeated explanations on this slide only.
+
+The four improved decks and their current speech are synchronized. The MP4
+Light fallback and original fallback speech remain byte-identical. Only one
+notes XML part changes per improved deck. All visible slides, equations,
+media, masters, geometry, controls and static PDFs are unchanged. Notes still
+use 18 pt; the shortened note occupies 251.6 pt of its 540 pt body. The note
+and speech page 2 were visually checked. The other 30 scripts are unchanged
+and the other ten speech PDF pages are pixel-identical.
+
+Main speech is now 1,724 words: 15.36 minutes at 130 words/minute or 15.89
+minutes at 125, including the videos and 30 seconds for pauses. The speech
+still has 11 pages. Outputs and the projector ZIP were installed atomically.
+Verification: experiments/slide5_shorter_notes_20261009/verification.json.
+
 ## Publication preparation and note punctuation (2026-10-09)
 
 Before publishing, replace seven semicolons in six improved note pages

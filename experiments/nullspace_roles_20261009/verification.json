@@ -1,0 +1,56 @@
+{
+  "decks": {
+    "Thesis_Defense_gg0_v3.pptx": {
+      "sha256": "f6965accdbd76862b7645a6da0d08c2a7b6fd00387689e49f8feadbac2385ff1",
+      "changed_parts": 1,
+      "all_other_parts_byte_identical": true,
+      "notes_match_speech": true
+    },
+    "Thesis_Defense_Projector_Silent.pptx": {
+      "sha256": "2072ee5a263ffa1768ad17cbeb57770599bc74e04946a49154d8dacb53d8061d",
+      "changed_parts": 1,
+      "all_other_parts_byte_identical": true,
+      "notes_match_speech": true
+    },
+    "02_WebM_Silent.pptx": {
+      "sha256": "edf7d3451b13b80d81f3bd974462920b5f24341545bcf7ab16d1f35dfc9fb4de",
+      "changed_parts": 1,
+      "all_other_parts_byte_identical": true,
+      "notes_match_speech": true
+    },
+    "03_WMV_Silent.pptx": {
+      "sha256": "31cc40b98284db1a4a122ad0ea8e91a51bf86ad6c2b73c09bbab4cfe746f408d",
+      "changed_parts": 1,
+      "all_other_parts_byte_identical": true,
+      "notes_match_speech": true
+    }
+  },
+  "fallback_unchanged": true,
+  "fallback_sha256": "d6dae65faa95ce70d3f7efeb82b6efe50b8bbda6017e11a117b24249661f2884",
+  "notes_font_pt": 18,
+  "max_notes_height_pt": 452,
+  "notes_body_height_pt": 540,
+  "slides_equations_media_and_static_pdfs_unchanged": true,
+  "all_31_notes_native_powerpoint_verified": true,
+  "installed": true,
+  "changed_physical_slide": 19,
+  "footer": 18,
+  "all_other_30_scripts_unchanged": true,
+  "changed_speech_page": 7,
+  "other_ten_speech_pages_pixel_identical": true,
+  "visual_review_passed": true,
+  "changed_note_and_speech_page_visually_checked": true,
+  "visible_slides_identical_to_previously_reviewed_renders": true,
+  "changed_note_height_pt": 452,
+  "atomic_replacement": true,
+  "zip_updated": true,
+  "open_pdfs_refreshed_without_unsaved_changes": [
+    {
+      "path": "Final Presentation\\Projector_Test_Versions\\02_03_Improved_Speech.pdf",
+      "page": 3
+    }
+  ],
+  "installed_outputs_verified": true,
+  "zip_entries_verified": true,
+  "zip_sha256": "fb9437185cd07a207f5e44c6ea3fbb9398d3d37f09bad5d9bb4f4374e53f85b4"
+}

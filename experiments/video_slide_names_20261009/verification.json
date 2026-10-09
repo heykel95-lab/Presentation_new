@@ -1,0 +1,47 @@
+{
+  "videos": [
+    {
+      "printed_slide": "1",
+      "powerpoint_position": 2,
+      "old_name": "01_Motivation_contact.mp4",
+      "new_name": "Slide_01_Motivation_contact.mp4",
+      "sha256": "415df397a63e352714e20dc0abbc1802e571fbc5c62fd84b1f2d01da4c40bc1f",
+      "matches_embedded_video": true
+    },
+    {
+      "printed_slide": "11",
+      "powerpoint_position": 12,
+      "old_name": "11_Impedance_response.mp4",
+      "new_name": "Slide_11_Impedance_response.mp4",
+      "sha256": "9dfb84ecaa937a169cf990096af35e1c6749db0ad0d2c581e6f99248f99af398",
+      "matches_embedded_video": true
+    },
+    {
+      "printed_slide": "19",
+      "powerpoint_position": 20,
+      "old_name": "19_Nullspace_damping.mp4",
+      "new_name": "Slide_19_Nullspace_damping.mp4",
+      "sha256": "4660edf52889b32428a511bf86ecc8a782905e1f8b89ac08794d286b2b67c7eb",
+      "matches_embedded_video": true
+    },
+    {
+      "printed_slide": "20",
+      "powerpoint_position": 21,
+      "old_name": "20_Nullspace_conditioning.mp4",
+      "new_name": "Slide_20_Nullspace_conditioning.mp4",
+      "sha256": "3d57e34a14f3a40393a8db0b73e4a883ef28eb54d5d1826a5211981e31f63577",
+      "matches_embedded_video": true
+    },
+    {
+      "printed_slide": "B1",
+      "powerpoint_position": 26,
+      "old_name": "B1_Opposing_CoC_moment.mp4",
+      "new_name": "Slide_B1_Opposing_CoC_moment.mp4",
+      "sha256": "78ffdf41c0e40f30ae5bd5ed6fd027749838707b1b97ccafe5ca7005ac10ce21",
+      "matches_embedded_video": true
+    }
+  ],
+  "main_deck_unchanged": true,
+  "video_content_unchanged": true,
+  "main_deck_sha256": "cb443e29ff7e52cfabe8e3d4e0d0deaab63d28d93083bbcc0475ff8f8c3f6018"
+}

@@ -1,0 +1,106 @@
+{
+  "decks": {
+    "Thesis_Defense_gg0_v3.pptx": {
+      "sha256": "cb443e29ff7e52cfabe8e3d4e0d0deaab63d28d93083bbcc0475ff8f8c3f6018",
+      "changed_parts": 31,
+      "all_other_parts_byte_identical": true,
+      "notes_match_speech": true
+    },
+    "Thesis_Defense_Projector_Silent.pptx": {
+      "sha256": "73aa73a499fc6155db2cf187ea130401b2e34f3e854d0000480741d78436298e",
+      "changed_parts": 31,
+      "all_other_parts_byte_identical": true,
+      "notes_match_speech": true
+    },
+    "02_WebM_Silent.pptx": {
+      "sha256": "2025752a8ed3a7e830363613c2e684e4beb72c20632b00aca1e400a4373d27e5",
+      "changed_parts": 31,
+      "all_other_parts_byte_identical": true,
+      "notes_match_speech": true
+    },
+    "03_WMV_Silent.pptx": {
+      "sha256": "baacbf8bb215c621de8a441eb9fb306ea648f3ec736503a299a3a3d1b9e622c8",
+      "changed_parts": 31,
+      "all_other_parts_byte_identical": true,
+      "notes_match_speech": true
+    }
+  },
+  "fallback_unchanged": true,
+  "fallback_sha256": "d6dae65faa95ce70d3f7efeb82b6efe50b8bbda6017e11a117b24249661f2884",
+  "notes_font_pt": 18,
+  "max_notes_height_pt": 344,
+  "notes_body_height_pt": 540,
+  "slides_equations_media_and_static_pdfs_unchanged": true,
+  "all_31_notes_native_powerpoint_verified": true,
+  "installed": true,
+  "baseline": "experiments\\connected_notes_20261009\\archive\\script.json",
+  "fallback_main_words": 1651,
+  "main_words": 1646,
+  "net_words_added": -5,
+  "minutes": {
+    "125": 15.27,
+    "130": 14.76
+  },
+  "changed_physical_slides_vs_fallback": [
+    3,
+    6,
+    7,
+    8,
+    10,
+    18,
+    19
+  ],
+  "unchanged_scripts_vs_fallback": 24,
+  "all_six_backup_scripts_equal_fallback": true,
+  "technical_note_words": {
+    "6": 82,
+    "7": 66,
+    "8": 61,
+    "10": 61,
+    "19": 99
+  },
+  "fallback_baseline_verified_word_for_word": true,
+  "changed_speech_pages_vs_fallback": [
+    1,
+    2,
+    3,
+    5,
+    6
+  ],
+  "other_five_speech_page_content_areas_pixel_identical_to_fallback": true,
+  "current_october_9_footer_date_retained": true,
+  "visual_review_passed": true,
+  "visually_reviewed_note_pages": [
+    3,
+    6,
+    7,
+    8,
+    10,
+    18,
+    19
+  ],
+  "visually_reviewed_speech_pages": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10
+  ],
+  "visible_slides_identical_to_previously_reviewed_renders": true,
+  "atomic_replacement": true,
+  "zip_updated": true,
+  "open_pdfs_refreshed_without_unsaved_changes": [
+    {
+      "path": "Final Presentation\\Projector_Test_Versions\\02_03_Improved_Speech.pdf",
+      "page": 3
+    }
+  ],
+  "installed_outputs_verified": true,
+  "zip_entries_verified": true,
+  "zip_sha256": "4af79b57f5c83eae7121440e84e2a944e229a77b340cc7f5bb37d584d617d15d"
+}
