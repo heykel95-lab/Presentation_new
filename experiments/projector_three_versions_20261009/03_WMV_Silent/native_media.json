@@ -1,0 +1,37 @@
+﻿[
+    {
+        "linked":  false,
+        "length":  51000,
+        "embedded":  true,
+        "id":  8,
+        "slide":  2
+    },
+    {
+        "linked":  false,
+        "length":  13966,
+        "embedded":  true,
+        "id":  22,
+        "slide":  12
+    },
+    {
+        "linked":  false,
+        "length":  23000,
+        "embedded":  true,
+        "id":  22,
+        "slide":  20
+    },
+    {
+        "linked":  false,
+        "length":  7933,
+        "embedded":  true,
+        "id":  22,
+        "slide":  21
+    },
+    {
+        "linked":  false,
+        "length":  10366,
+        "embedded":  true,
+        "id":  22,
+        "slide":  26
+    }
+]

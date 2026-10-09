@@ -1,0 +1,31 @@
+{
+  "variant": "03_WMV_Silent",
+  "source_sha256": "0c705bacce69566d27d3b86ce776df0cb6dfdfd36c7b09abc893b30fe55a3eb6",
+  "deck_sha256": "018b5d53191e408951cec2795f4e6b573d8c8e71f695ea85a07447e45611dc14",
+  "size_bytes": 71268389,
+  "media_count": 6,
+  "changed_parts": [
+    "ppt/slides/_rels/slide2.xml.rels",
+    "ppt/media/media1.mp4",
+    "ppt/media/Nullspace1_presentation.mp4",
+    "ppt/media/Nullspace2_part1_0000-0023.mp4",
+    "ppt/media/Nullspace2_part2_0023-end.mp4",
+    "ppt/slides/_rels/slide36.xml.rels",
+    "ppt/slides/_rels/slide37.xml.rels",
+    "ppt/media/Opposing_moment_presentation.mp4",
+    "ppt/media/Plausibility_experiment_presentation.mp4",
+    "ppt/slides/_rels/slide38.xml.rels",
+    "ppt/slides/_rels/slide39.xml.rels",
+    "[Content_Types].xml"
+  ],
+  "all_slide_note_master_and_poster_parts_byte_identical": true,
+  "all_original_frames_retained": true,
+  "audio_streams_removed": true,
+  "codec": "wmv2",
+  "resolution": [
+    720,
+    720
+  ],
+  "fps": 30,
+  "minimum_ssim": 0.965892
+}

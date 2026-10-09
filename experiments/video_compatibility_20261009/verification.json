@@ -1,0 +1,51 @@
+{
+  "date": "2026-10-09",
+  "active_file": "C:\\Users\\USER\\Desktop\\Presentation_new\\Final Presentation\\Thesis_Defense_gg0_v3.pptx",
+  "active_sha256": "0c705bacce69566d27d3b86ce776df0cb6dfdfd36c7b09abc893b30fe55a3eb6",
+  "original_sha256": "6a8c282a57e0125d572f3a6aa0e6d5c37db1b23b7b5c0c3e402b84ebced341be",
+  "old_size": 302695417,
+  "new_size": 84955015,
+  "changed_package_parts": [
+    "ppt/media/media1.mp4",
+    "ppt/media/Nullspace1_presentation.mp4",
+    "ppt/media/Nullspace2_part1_0000-0023.mp4",
+    "ppt/media/Nullspace2_part2_0023-end.mp4",
+    "ppt/media/Opposing_moment_presentation.mp4",
+    "ppt/media/Plausibility_experiment_presentation.mp4"
+  ],
+  "all_other_package_parts_byte_identical": true,
+  "notes_18pt_confirmed": 31,
+  "native_slide_renders_inspected": 31,
+  "regenerated_pdf_pages": 31,
+  "established_pdfs_retained": true,
+  "native_render_pixel_identity": false,
+  "render_note": "Native runs show small differences in isolated text rasterization despite byte-identical nonmedia parts. All slide layouts and video posters are preserved. Established PDFs retained.",
+  "powerpoint_playback_checks_passed": 15,
+  "used_video_slides": [
+    2,
+    12,
+    20,
+    21,
+    26
+  ],
+  "all_original_frames_retained": true,
+  "audio_packet_hashes_identical": true,
+  "original_loose_videos_speech_and_pdfs_unchanged": true,
+  "standalone_fallbacks": {
+    "media1.mp4": "01_Motivation_contact.mp4",
+    "Plausibility_experiment_presentation.mp4": "11_Impedance_response.mp4",
+    "Nullspace2_part1_0000-0023.mp4": "19_Nullspace_damping.mp4",
+    "Nullspace2_part2_0023-end.mp4": "20_Nullspace_conditioning.mp4",
+    "Opposing_moment_presentation.mp4": "B1_Opposing_CoC_moment.mp4"
+  },
+  "university_projector_tested": false,
+  "root_cause_confirmed": false,
+  "reported_setup": "Own PC with desktop PowerPoint",
+  "reported_error": "Cannot play media / Media unavailable",
+  "silent_fallback": {
+    "path": "C:\\Users\\USER\\Desktop\\Presentation_new\\Final Presentation\\Thesis_Defense_Projector_Silent.pptx",
+    "sha256": "e41312b67d6ca5a54c4c70d93e3265e5947388b6449738113a1f62e882f1e52e",
+    "powerpoint_playback_checks_passed": 15
+  },
+  "diagnostic_priority": "With projector connected, test laptop speakers as Windows audio output and restart PowerPoint. Display/audio connection issue plausible, unconfirmed."
+}

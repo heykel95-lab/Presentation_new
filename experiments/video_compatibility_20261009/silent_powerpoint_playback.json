@@ -1,0 +1,127 @@
+﻿[
+    {
+        "length_ms":  51000,
+        "tests":  [
+                      {
+                          "position_ms":  1210,
+                          "advanced":  true,
+                          "seek_ms":  0,
+                          "state":  0
+                      },
+                      {
+                          "position_ms":  26796,
+                          "advanced":  true,
+                          "seek_ms":  25500,
+                          "state":  0
+                      },
+                      {
+                          "position_ms":  50048,
+                          "advanced":  true,
+                          "seek_ms":  49000,
+                          "state":  0
+                      }
+                  ],
+        "shapeId":  8,
+        "slide":  2
+    },
+    {
+        "length_ms":  13967,
+        "tests":  [
+                      {
+                          "position_ms":  1125,
+                          "advanced":  true,
+                          "seek_ms":  0,
+                          "state":  0
+                      },
+                      {
+                          "position_ms":  8047,
+                          "advanced":  true,
+                          "seek_ms":  6984,
+                          "state":  0
+                      },
+                      {
+                          "position_ms":  12998,
+                          "advanced":  true,
+                          "seek_ms":  11967,
+                          "state":  0
+                      }
+                  ],
+        "shapeId":  22,
+        "slide":  12
+    },
+    {
+        "length_ms":  23000,
+        "tests":  [
+                      {
+                          "position_ms":  1146,
+                          "advanced":  true,
+                          "seek_ms":  0,
+                          "state":  0
+                      },
+                      {
+                          "position_ms":  12212,
+                          "advanced":  true,
+                          "seek_ms":  11500,
+                          "state":  0
+                      },
+                      {
+                          "position_ms":  22048,
+                          "advanced":  true,
+                          "seek_ms":  21000,
+                          "state":  0
+                      }
+                  ],
+        "shapeId":  22,
+        "slide":  20
+    },
+    {
+        "length_ms":  7934,
+        "tests":  [
+                      {
+                          "position_ms":  1134,
+                          "advanced":  true,
+                          "seek_ms":  0,
+                          "state":  0
+                      },
+                      {
+                          "position_ms":  4982,
+                          "advanced":  true,
+                          "seek_ms":  3967,
+                          "state":  0
+                      },
+                      {
+                          "position_ms":  6964,
+                          "advanced":  true,
+                          "seek_ms":  5934,
+                          "state":  0
+                      }
+                  ],
+        "shapeId":  22,
+        "slide":  21
+    },
+    {
+        "length_ms":  10367,
+        "tests":  [
+                      {
+                          "position_ms":  1124,
+                          "advanced":  true,
+                          "seek_ms":  0,
+                          "state":  0
+                      },
+                      {
+                          "position_ms":  6247,
+                          "advanced":  true,
+                          "seek_ms":  5184,
+                          "state":  0
+                      },
+                      {
+                          "position_ms":  9450,
+                          "advanced":  true,
+                          "seek_ms":  8367,
+                          "state":  0
+                      }
+                  ],
+        "shapeId":  22,
+        "slide":  26
+    }
+]

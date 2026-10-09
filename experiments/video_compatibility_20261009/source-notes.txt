@@ -1,0 +1,1 @@
+Media-only repair of the active deck. User requests a solution for failed projector video playback. Directly replace embedded MP4 payloads to preserve all slide and note XML byte-for-byte. No slide authoring, layout changes, or template reconstruction. Source evidence and Microsoft guidance are recorded in inventory.json and the final playback help file.

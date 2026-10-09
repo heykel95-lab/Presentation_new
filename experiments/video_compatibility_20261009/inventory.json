@@ -1,0 +1,317 @@
+{
+  "source": "C:\\Users\\USER\\Desktop\\Presentation_new\\Final Presentation\\Thesis_Defense_gg0_v3.pptx",
+  "source_sha256": "6a8c282a57e0125d572f3a6aa0e6d5c37db1b23b7b5c0c3e402b84ebced341be",
+  "ffmpeg": "C:\\Users\\USER\\Desktop\\Presentation_new\\tmp\\video_compatibility_deps\\imageio_ffmpeg\\binaries\\ffmpeg-win-x86_64-v7.1.exe",
+  "slides": [
+    {
+      "physical": 1,
+      "part": "ppt/slides/slide1.xml",
+      "title": "MASTER THESIS PRESENTATION",
+      "hidden": false,
+      "video": []
+    },
+    {
+      "physical": 2,
+      "part": "ppt/slides/slide2.xml",
+      "title": "Motivation",
+      "hidden": false,
+      "video": [
+        {
+          "Id": "rIdContactVideo",
+          "Type": "http://schemas.openxmlformats.org/officeDocument/2006/relationships/video",
+          "Target": "../media/media1.mp4"
+        },
+        {
+          "Id": "rIdContactMedia",
+          "Type": "http://schemas.microsoft.com/office/2007/relationships/media",
+          "Target": "../media/media1.mp4"
+        }
+      ]
+    },
+    {
+      "physical": 3,
+      "part": "ppt/slides/slide4.xml",
+      "title": "Overview",
+      "hidden": false,
+      "video": []
+    },
+    {
+      "physical": 4,
+      "part": "ppt/slides/slide5.xml",
+      "title": "Cartesian pose",
+      "hidden": false,
+      "video": []
+    },
+    {
+      "physical": 5,
+      "part": "ppt/slides/slide42.xml",
+      "title": "Surface frame",
+      "hidden": false,
+      "video": []
+    },
+    {
+      "physical": 6,
+      "part": "ppt/slides/slide6.xml",
+      "title": "Cartesian impedance law",
+      "hidden": false,
+      "video": []
+    },
+    {
+      "physical": 7,
+      "part": "ppt/slides/slide7.xml",
+      "title": "Real-time impedance control loop",
+      "hidden": false,
+      "video": []
+    },
+    {
+      "physical": 8,
+      "part": "ppt/slides/slide41.xml",
+      "title": "Centre of compliance: a virtual reference",
+      "hidden": false,
+      "video": []
+    },
+    {
+      "physical": 9,
+      "part": "ppt/slides/slide9.xml",
+      "title": "Supporting and opposing CoC moments",
+      "hidden": false,
+      "video": []
+    },
+    {
+      "physical": 10,
+      "part": "ppt/slides/slide8.xml",
+      "title": "Translation\u2013rotation coupling",
+      "hidden": false,
+      "video": []
+    },
+    {
+      "physical": 11,
+      "part": "ppt/slides/slide11.xml",
+      "title": "Contact phases and stiffness settings",
+      "hidden": false,
+      "video": []
+    },
+    {
+      "physical": 12,
+      "part": "ppt/slides/slide38.xml",
+      "title": "Impedance response to manual displacement",
+      "hidden": false,
+      "video": [
+        {
+          "Id": "rIdNullspace2Video",
+          "Type": "http://schemas.openxmlformats.org/officeDocument/2006/relationships/video",
+          "Target": "../media/Plausibility_experiment_presentation.mp4"
+        },
+        {
+          "Id": "rIdNullspace2Media",
+          "Type": "http://schemas.microsoft.com/office/2007/relationships/media",
+          "Target": "../media/Plausibility_experiment_presentation.mp4"
+        }
+      ]
+    },
+    {
+      "physical": 13,
+      "part": "ppt/slides/slide14.xml",
+      "title": "Normal-force plausibility assessment",
+      "hidden": false,
+      "video": []
+    },
+    {
+      "physical": 14,
+      "part": "ppt/slides/slide15.xml",
+      "title": "Moment plausibility assessment",
+      "hidden": false,
+      "video": []
+    },
+    {
+      "physical": 15,
+      "part": "ppt/slides/slide16.xml",
+      "title": "Force and moment during contact alignment",
+      "hidden": false,
+      "video": []
+    },
+    {
+      "physical": 16,
+      "part": "ppt/slides/slide18.xml",
+      "title": "Rotational stiffness and angular error",
+      "hidden": false,
+      "video": []
+    },
+    {
+      "physical": 17,
+      "part": "ppt/slides/slide19.xml",
+      "title": "Effect of CoC position on angular error",
+      "hidden": false,
+      "video": []
+    },
+    {
+      "physical": 18,
+      "part": "ppt/slides/slide20.xml",
+      "title": "Contact response at different CoC positions",
+      "hidden": false,
+      "video": []
+    },
+    {
+      "physical": 19,
+      "part": "ppt/slides/slide10.xml",
+      "title": "Null-space control: damping and conditioning",
+      "hidden": false,
+      "video": []
+    },
+    {
+      "physical": 20,
+      "part": "ppt/slides/slide36.xml",
+      "title": "Null-space damping demonstration",
+      "hidden": false,
+      "video": [
+        {
+          "Id": "rIdNullspace2Video",
+          "Type": "http://schemas.openxmlformats.org/officeDocument/2006/relationships/video",
+          "Target": "../media/Nullspace2_part1_0000-0023.mp4"
+        },
+        {
+          "Id": "rIdNullspace2Media",
+          "Type": "http://schemas.microsoft.com/office/2007/relationships/media",
+          "Target": "../media/Nullspace2_part1_0000-0023.mp4"
+        }
+      ]
+    },
+    {
+      "physical": 21,
+      "part": "ppt/slides/slide37.xml",
+      "title": "Null-space conditioning demonstration",
+      "hidden": false,
+      "video": [
+        {
+          "Id": "rIdNullspace2Video",
+          "Type": "http://schemas.openxmlformats.org/officeDocument/2006/relationships/video",
+          "Target": "../media/Nullspace2_part2_0023-end.mp4"
+        },
+        {
+          "Id": "rIdNullspace2Media",
+          "Type": "http://schemas.microsoft.com/office/2007/relationships/media",
+          "Target": "../media/Nullspace2_part2_0023-end.mp4"
+        }
+      ]
+    },
+    {
+      "physical": 22,
+      "part": "ppt/slides/slide13.xml",
+      "title": "Null-space experiment: setup and conditions",
+      "hidden": false,
+      "video": []
+    },
+    {
+      "physical": 23,
+      "part": "ppt/slides/slide33.xml",
+      "title": "Joint 1 motion under null-space control",
+      "hidden": false,
+      "video": []
+    },
+    {
+      "physical": 24,
+      "part": "ppt/slides/slide32.xml",
+      "title": "Jacobian conditioning: minimum singular value",
+      "hidden": false,
+      "video": []
+    },
+    {
+      "physical": 25,
+      "part": "ppt/slides/slide24.xml",
+      "title": "Conclusion and future work",
+      "hidden": false,
+      "video": []
+    },
+    {
+      "physical": 26,
+      "part": "ppt/slides/slide39.xml",
+      "title": "Opposing CoC moment during contact",
+      "hidden": true,
+      "video": [
+        {
+          "Id": "rIdNullspace2Video",
+          "Type": "http://schemas.openxmlformats.org/officeDocument/2006/relationships/video",
+          "Target": "../media/Opposing_moment_presentation.mp4"
+        },
+        {
+          "Id": "rIdNullspace2Media",
+          "Type": "http://schemas.microsoft.com/office/2007/relationships/media",
+          "Target": "../media/Opposing_moment_presentation.mp4"
+        }
+      ]
+    },
+    {
+      "physical": 27,
+      "part": "ppt/slides/slide25.xml",
+      "title": "Null-space torques and projector",
+      "hidden": true,
+      "video": []
+    },
+    {
+      "physical": 28,
+      "part": "ppt/slides/slide12.xml",
+      "title": "Entry offset and remaining angular error",
+      "hidden": true,
+      "video": []
+    },
+    {
+      "physical": 29,
+      "part": "ppt/slides/slide17.xml",
+      "title": "Angular error with CoC at the TCP",
+      "hidden": true,
+      "video": []
+    },
+    {
+      "physical": 30,
+      "part": "ppt/slides/slide40.xml",
+      "title": "Sources of angular offset",
+      "hidden": true,
+      "video": []
+    },
+    {
+      "physical": 31,
+      "part": "ppt/slides/slide31.xml",
+      "title": "Damping reduces cumulative joint motion",
+      "hidden": true,
+      "video": []
+    }
+  ],
+  "media": [
+    {
+      "part": "ppt/media/media1.mp4",
+      "size": 109024334,
+      "sha256": "0c8f084fd06c0269a3cb75543c75a02a1f5892c6a2795afd194828e64c4d3cb8",
+      "probe": "Input #0, mov,mp4,m4a,3gp,3g2,mj2, from 'C:\\Users\\USER\\Desktop\\Presentation_new\\experiments\\video_compatibility_20261009\\original_media\\media1.mp4':\n  Metadata:\n    major_brand     : mp42\n    minor_version   : 0\n    compatible_brands: isommp42\n    creation_time   : 2026-08-18T12:58:48.000000Z\n    com.android.version: 16\n    com.samsung.android.utc_offset: +0200\n  Duration: 00:00:51.00, start: 0.000000, bitrate: 17100 kb/s\n  Stream #0:0[0x1](eng): Video: h264 (High) (avc1 / 0x31637661), yuv420p(tv, bt709, progressive), 1440x1440, 16968 kb/s, 30 fps, 30 tbr, 90k tbn (default)\n      Metadata:\n        creation_time   : 2026-08-18T13:02:14.000000Z\n        handler_name    : VideoHandle\n        vendor_id       : [0][0][0][0]\n  Stream #0:1[0x2](eng): Audio: aac (LC) (mp4a / 0x6134706D), 48000 Hz, stereo, fltp, 128 kb/s (default)\n      Metadata:\n        creation_time   : 2026-08-18T13:02:14.000000Z\n        handler_name    : SoundHandle\n        vendor_id       : [0][0][0][0]\nAt least one output file must be specified\n"
+    },
+    {
+      "part": "ppt/media/Nullspace1_presentation.mp4",
+      "size": 70062428,
+      "sha256": "1120208df52bf632084f849842f810e779cf6e86ca70f9f64cb21ad911d0391e",
+      "probe": "Input #0, mov,mp4,m4a,3gp,3g2,mj2, from 'C:\\Users\\USER\\Desktop\\Presentation_new\\experiments\\video_compatibility_20261009\\original_media\\Nullspace1_presentation.mp4':\n  Metadata:\n    major_brand     : isom\n    minor_version   : 512\n    compatible_brands: isomiso2avc1mp41\n    encoder         : Lavf58.29.100\n  Duration: 00:00:32.33, start: 0.000000, bitrate: 17335 kb/s\n  Stream #0:0[0x1](eng): Video: h264 (High) (avc1 / 0x31637661), yuv420p(progressive), 1440x1440, 17070 kb/s, 29.94 fps, 30 tbr, 90k tbn (default)\n      Metadata:\n        handler_name    : VideoHandle\n        vendor_id       : [0][0][0][0]\n  Stream #0:1[0x2](eng): Audio: aac (LC) (mp4a / 0x6134706D), 48000 Hz, stereo, fltp, 256 kb/s (default)\n      Metadata:\n        handler_name    : SoundHandle\n        vendor_id       : [0][0][0][0]\nAt least one output file must be specified\n"
+    },
+    {
+      "part": "ppt/media/Nullspace2_part1_0000-0023.mp4",
+      "size": 42391751,
+      "sha256": "d651e9490e6a3ba0812be5f3be15d14f5a7231d1b0c4d8e3ccc7d99c0b1dae2f",
+      "probe": "Input #0, mov,mp4,m4a,3gp,3g2,mj2, from 'C:\\Users\\USER\\Desktop\\Presentation_new\\experiments\\video_compatibility_20261009\\original_media\\Nullspace2_part1_0000-0023.mp4':\n  Metadata:\n    major_brand     : isom\n    minor_version   : 512\n    compatible_brands: isomiso2avc1mp41\n    encoder         : Lavf58.29.100\n  Duration: 00:00:23.00, start: 0.000000, bitrate: 14744 kb/s\n  Stream #0:0[0x1](und): Video: h264 (High) (avc1 / 0x31637661), yuv420p(progressive), 1440x1440, 14478 kb/s, 30 fps, 30 tbr, 90k tbn (default)\n      Metadata:\n        handler_name    : VideoHandler\n        vendor_id       : [0][0][0][0]\n  Stream #0:1[0x2](und): Audio: aac (LC) (mp4a / 0x6134706D), 48000 Hz, stereo, fltp, 256 kb/s (default)\n      Metadata:\n        handler_name    : SoundHandler\n        vendor_id       : [0][0][0][0]\nAt least one output file must be specified\n"
+    },
+    {
+      "part": "ppt/media/Nullspace2_part2_0023-end.mp4",
+      "size": 14389812,
+      "sha256": "ec0bef0886518bd77adbd0cede74d5b9d3e2d249b03ea320680c9996c91d7672",
+      "probe": "Input #0, mov,mp4,m4a,3gp,3g2,mj2, from 'C:\\Users\\USER\\Desktop\\Presentation_new\\experiments\\video_compatibility_20261009\\original_media\\Nullspace2_part2_0023-end.mp4':\n  Metadata:\n    major_brand     : isom\n    minor_version   : 512\n    compatible_brands: isomiso2avc1mp41\n    encoder         : Lavf58.29.100\n  Duration: 00:00:07.93, start: 0.000000, bitrate: 14510 kb/s\n  Stream #0:0[0x1](und): Video: h264 (High) (avc1 / 0x31637661), yuv420p(progressive), 1440x1440, 14244 kb/s, 30 fps, 30 tbr, 90k tbn (default)\n      Metadata:\n        handler_name    : VideoHandler\n        vendor_id       : [0][0][0][0]\n  Stream #0:1[0x2](und): Audio: aac (LC) (mp4a / 0x6134706D), 48000 Hz, stereo, fltp, 255 kb/s (default)\n      Metadata:\n        handler_name    : SoundHandler\n        vendor_id       : [0][0][0][0]\nAt least one output file must be specified\n"
+    },
+    {
+      "part": "ppt/media/Opposing_moment_presentation.mp4",
+      "size": 14084287,
+      "sha256": "3fcc688a22248d66b783af4f2aa96af300f55894994d5918c295806fa40c3486",
+      "probe": "Input #0, mov,mp4,m4a,3gp,3g2,mj2, from 'C:\\Users\\USER\\Desktop\\Presentation_new\\experiments\\video_compatibility_20261009\\original_media\\Opposing_moment_presentation.mp4':\n  Metadata:\n    major_brand     : isom\n    minor_version   : 512\n    compatible_brands: isomiso2avc1mp41\n    encoder         : Lavf58.29.100\n  Duration: 00:00:10.37, start: 0.000000, bitrate: 10868 kb/s\n  Stream #0:0[0x1](eng): Video: h264 (High) (avc1 / 0x31637661), yuv420p(progressive), 1440x1440, 10603 kb/s, 30 fps, 30 tbr, 90k tbn (default)\n      Metadata:\n        handler_name    : VideoHandle\n        vendor_id       : [0][0][0][0]\n  Stream #0:1[0x2](eng): Audio: aac (LC) (mp4a / 0x6134706D), 48000 Hz, stereo, fltp, 256 kb/s (default)\n      Metadata:\n        handler_name    : SoundHandle\n        vendor_id       : [0][0][0][0]\nAt least one output file must be specified\n"
+    },
+    {
+      "part": "ppt/media/Plausibility_experiment_presentation.mp4",
+      "size": 30305380,
+      "sha256": "795f1398c4853b59a461e5452282fb7cf0289620a1ee79ab3bc19639a78d5559",
+      "probe": "Input #0, mov,mp4,m4a,3gp,3g2,mj2, from 'C:\\Users\\USER\\Desktop\\Presentation_new\\experiments\\video_compatibility_20261009\\original_media\\Plausibility_experiment_presentation.mp4':\n  Metadata:\n    major_brand     : isom\n    minor_version   : 512\n    compatible_brands: isomiso2avc1mp41\n    encoder         : Lavf58.29.100\n  Duration: 00:00:13.97, start: 0.000000, bitrate: 17358 kb/s\n  Stream #0:0[0x1](eng): Video: h264 (High) (avc1 / 0x31637661), yuv420p(progressive), 1440x1440, 17093 kb/s, 30 fps, 30 tbr, 90k tbn (default)\n      Metadata:\n        handler_name    : VideoHandle\n        vendor_id       : [0][0][0][0]\n  Stream #0:1[0x2](eng): Audio: aac (LC) (mp4a / 0x6134706D), 48000 Hz, stereo, fltp, 256 kb/s (default)\n      Metadata:\n        handler_name    : SoundHandle\n        vendor_id       : [0][0][0][0]\nAt least one output file must be specified\n"
+    }
+  ]
+}

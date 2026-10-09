@@ -1,0 +1,1 @@
+Standalone fallback videos for the active deck. Filenames use slide footer numbers. Open in your installed video player if PowerPoint playback fails. See ../../Projector_playback_help.txt. These files are byte-identical to the matching embedded compatibility videos.

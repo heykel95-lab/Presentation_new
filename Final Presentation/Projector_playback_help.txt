@@ -1,0 +1,95 @@
+VIDEO PLAYBACK AND PROJECTOR GUIDE - 9 October 2026
+
+Use Thesis_Defense_gg0_v3.pptx in desktop PowerPoint. The five videos used
+in the slides are embedded, so this PPTX does not depend on loose videos.
+The PDF contains still images of the videos and does not play them.
+
+Your reported symptom
+You used your own PC with desktop PowerPoint, and the university setup
+showed Cannot play media / Media unavailable. The same PC plays the videos
+locally and on a TV. This makes a projector-connection/display/audio issue
+plausible, but the precise cause cannot be confirmed away from that setup.
+When projecting the PC desktop, the PC decodes the video; the projector
+receives the screen signal rather than opening the MP4 itself.
+
+First test for this symptom
+Connect the projector, then open Windows Settings > System > Sound.
+Under Output, choose the laptop's own Speakers as a diagnostic test.
+Close and reopen PowerPoint with the projector still connected and retry.
+This checks the possibility of a problematic projector/HDMI audio output.
+The setting routes any sound to the laptop, not to the room's speakers.
+
+Silent fallback
+Thesis_Defense_Projector_Silent.pptx is a separate optional copy with
+audio tracks removed from its videos. Video frames and every slide/notes
+part match the compatibility deck. This does not just mute sound; it
+removes the audio streams, which can help isolate an audio-output issue.
+The main Thesis_Defense_gg0_v3.pptx keeps all original audio.
+Neither the audio-output theory nor success on the university projector
+is confirmed. Use the silent copy if sound is not needed and test it there.
+
+Before presenting
+1. Connect and switch on the projector, then open PowerPoint.
+2. Copy the PPTX to the computer's local drive before opening it.
+3. Start Slide Show and test the videos on footer slides 1, 11, 19, 20,
+   and backup B1. Click the video to play it, as before.
+4. Check the projected screen as well as the laptop screen.
+
+If a video still fails
+- Close and reopen PowerPoint with the projector already connected.
+- On Windows, test Windows+P > Duplicate. Both screens will show the
+  same presentation. This is a useful test of an extended-display issue.
+- Open the matching MP4 in Video/Projector_compatible with an installed
+  desktop video player, maximize it on the projected screen, and play it.
+  Return to PowerPoint after playback. Filenames use the printed slide
+  footer numbers, not PowerPoint's physical slide index.
+- If the MP4 plays but the embedded video does not, test PowerPoint's
+  File > Info > Optimize Compatibility on a copy, if the option appears.
+- If video plays on the laptop but not the projector, ask university IT
+  to check the display mode, graphics driver, adapter/dock and HDMI path.
+  This symptom needs testing on that equipment; changing video encoding
+  alone cannot guarantee a fix.
+
+What changed
+The original videos were already MP4/H.264 High Profile Level 4.0 with
+AAC audio, but used 1440 x 1440 pixels and approximately 11-17 Mb/s.
+The compatibility versions use 960 x 960 pixels, H.264 Constrained
+Baseline Level 3.1, 8-bit YUV 4:2:0, constant 30 fps, constrained bitrate,
+and fast-start MP4 layout. Every original frame is retained and the AAC
+audio stream is copied without re-encoding. The largest frame-timing
+adjustment is 33.3 ms in an unused legacy video; the used contact clip
+has at most 17.5 ms adjustment. No footage is cut or rotated.
+
+The PPTX is approximately 85 MB instead of 303 MB. Only its six MP4
+payloads changed (five used videos and one retained legacy payload).
+All other package parts are byte-identical: slides, notes, equations,
+posters, click-to-play settings, transitions, and slide order.
+Original loose recordings and the established PDFs are unchanged.
+The complete original PPTX is preserved in:
+../experiments/video_compatibility_20261009/archive/original.pptx
+
+Validation
+All six MP4s passed full decoding and frame/audio checks. Desktop
+PowerPoint played each of the five used videos at its start, middle,
+and near the end (15 checks). All 31 slides were rendered and inspected.
+PowerPoint confirmed that all notes still use 18 pt. A 31-page PDF was
+regenerated for checking; the established PDF is retained because its
+slide content is unchanged and native export introduces small unrelated
+text-rendering differences.
+
+The university setup was unavailable, and its exact failure is still
+unconfirmed. These changes reduce media requirements; test on the actual
+projector before relying on that setup.
+
+Microsoft references
+https://support.microsoft.com/en-us/office/video-and-audio-file-formats-supported-in-powerpoint-d8b12450-26db-4c7b-a5c1-593d3418fb59
+https://support.microsoft.com/en-us/powerpoint/are-you-having-video-or-audio-playback-issues
+https://support.microsoft.com/en-us/powerpoint/tips-for-improving-audio-and-video-playback-and-compatibility-in-powerpoint
+https://support.microsoft.com/en-gb/windows/hardware/audio/fix-sound-or-audio-problems-in-windows?nochrome=true
+https://support.microsoft.com/en-us/windows/hardware/display-graphics/troubleshoot-external-monitor-connections-in-windows
+
+Three additional silent variants are now available in Projector_Test_Versions.
+Try 01_MP4_Light_Silent, then 02_WebM_Silent, then 03_WMV_Silent.
+The folder and Projector_Test_Versions.zip include READ_ME_FIRST.txt with
+format limitations and a test record. All five videos in each deck passed
+PowerPoint playback locally. Each new variant contains no audio streams.

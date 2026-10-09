@@ -1,5 +1,181 @@
 # Thesis and presentation workspace
 
+## Publication preparation and note punctuation (2026-10-09)
+
+Before publishing, replace seven semicolons in six improved note pages
+with natural conjunctions or full stops, following the standing style rule.
+Physical slides 9, 10, 16, 19, 25 and 29 and their matching speech change.
+The four improved decks remain synchronized. Main speech is 1,816 words,
+approximately 16.07 minutes at 130 words/minute or 16.63 minutes at 125.
+All 31 notes still use 18 pt and fit. Six note and speech pages were visually
+checked, and the other five speech PDF pages are pixel-identical. Only six
+notes XML parts change per deck. The MP4 Light fallback and its original
+speech are byte-identical. See experiments/notes_punctuation_20261009/.
+
+The new final projector decks, ZIP bundle and compatible standalone MP4s
+use Git LFS. October 9 generated previews and duplicate intermediate media
+are ignored. Publish the finished files, editable sources and validation
+records, retaining local rollback archives and unrelated historical work.
+
+## Slightly longer explanations approved (2026-10-09)
+
+The user explicitly selected Allow a slightly longer explanation. This
+supersedes the earlier near-15-minute assumption. Expanded only physical
+slides 6, 7, 8, 10 and 19 (footers 5, 6, 7, 9 and 18): held/released-tool
+spring and damping behaviour, feedback updates, the zero lever moment for
+parallel force/displacement, separate K/D transformations and zero CoC
+shift, and the meaning of small sigma min plus complementary torque roles.
+
+The same four improved decks and their speech are synchronized. Keep
+01_MP4_Light_Silent.pptx AND 01_Fallback_Original_Speech.pdf unchanged.
+Main speech is now 1,813 words: 16.05 minutes at 130 words/minute or 16.60
+minutes at 125 words/minute, including 95.946 seconds of videos and 30
+seconds for pauses. Plan approximately 16-17 minutes. The speech PDF still
+has 11 pages; optional backup speech remains 330 words.
+
+Only five notes XML parts changed per improved deck. All other parts,
+media and static PDFs are unchanged. All four complete decks opened in
+native PowerPoint; all 124 notes use 18 pt and fit. Maximum height is
+467.6 pt within the existing 540 pt notes body. All 31 final slide renders
+match previously reviewed renders. Five changed note pages and five changed
+speech pages were visually checked; the other six speech pages are
+pixel-identical. Outputs and projector ZIP were installed atomically.
+Verification: experiments/expanded_explanations_20261009/verification.json.
+
+## Connected notes and clearer controller explanations (2026-10-09)
+
+The user requested smoother, linked speech and fuller explanations of the
+displayed impedance law, control loop, CoC transformation and null-space
+roles. Related sentences now share paragraphs. The equations are read aloud
+using their displayed symbols, then connected to their physical meaning.
+CoC notes explain A = Ad(r_c), K_TCP = A transpose K_c A, the equivalent D
+transformation, and the off-diagonal coupling of translation and rotation.
+The main null-space note explains the existing dimension and velocity
+condition; full secondary-torque formulas remain on backup B2.
+
+The main Thesis_Defense_gg0_v3.pptx, Thesis_Defense_Projector_Silent.pptx,
+Projector_Test_Versions/02_WebM_Silent.pptx and 03_WMV_Silent.pptx all contain
+the same revised notes. Preserve Projector_Test_Versions/01_MP4_Light_Silent.pptx
+as the exact unchanged original-notes fallback. Its SHA-256 is
+d6dae65faa95ce70d3f7efeb82b6efe50b8bbda6017e11a117b24249661f2884.
+The fallback speech is 01_Fallback_Original_Speech.pdf in that folder;
+02_03_Improved_Speech.pdf matches WebM and WMV. The ZIP includes both PDFs.
+
+All 31 notes retain 18 pt, bold openings, italic playback/question cues,
+paragraph spacing and the original placeholder geometry. Native PowerPoint
+opened all four complete decks and verified all 124 notes; maximum height
+is 359.6 pt in the unchanged 540 pt body. All five video objects per deck
+are recognized. Only 31 notes XML parts change per deck. Every other part,
+including slides, native equations, masters, media, playback controls,
+posters, chart data, hidden flags and order, is byte-identical. The existing
+slide PDFs and Figure 5.4 legend clearance remain unchanged.
+
+The matching Simple_speech_updated.pdf and editable simple_speech sources
+are synchronized. Speech is now 11 pages: nine main-talk and two backup.
+Main speech is 1,627 words, approximately 14.61 minutes at 130 words/minute
+including 95.946 seconds of videos and 30 seconds for pauses; about 126.1
+words/minute is needed for 15 minutes. Backup speech is 330 words. The legacy
+sentence_prompts.json maps complete sentences within connected paragraphs,
+not one paragraph per sentence. Do not reintroduce the removed felt-difference
+sentence or imply that manual push forces were experimentally identical.
+
+All 31 notes and 11 speech pages were rendered and visually checked. All
+31 final slides were rendered; 25 matched previously reviewed renders and
+six had only small native text rasterization differences, also reviewed.
+Outputs were installed atomically. Preserved originals, authoring source
+and verification: experiments/connected_notes_20261009/. No university
+projector test has been possible; the earlier media compatibility work is
+preserved, not newly proven to work on that projector.
+
+## Three additional silent projector test decks (2026-10-09)
+
+The user explicitly requested three additional presentations with different
+video solutions/formats and sound removed for later university testing.
+Final Presentation/Projector_Test_Versions contains 01_MP4_Light_Silent.pptx,
+02_WebM_Silent.pptx and 03_WMV_Silent.pptx, plus READ_ME_FIRST.txt. The same
+four files are bundled in Final Presentation/Projector_Test_Versions.zip.
+Try MP4 first, WebM second, and WMV as a legacy fallback. All are 720 x 720,
+30 fps and completely without audio streams, with every original frame
+retained. The codecs are H.264 Constrained Baseline Level 3.1, VP9 and WMV2.
+WMV support is limited/deprecated in newer PowerPoint versions, so do not
+describe it as universally compatible. It passed on this installed PC.
+
+All 31 slide, note, master, equation and poster parts are byte-identical to
+the current main deck. Only media payloads, extension-specific relationships
+and MIME declarations differ. All five used videos in each deck passed
+native PowerPoint start/middle/near-end checks, 45 checks total. WMV seeking
+needed a slightly longer bounded wait after the first 1.2-second check.
+All 18 payloads passed full decoding and frame counts, and contain no audio.
+All 93 slide renders and three complete QA PDFs were generated. Native
+PowerPoint confirmed 18 pt notes in each deck. Existing canonical PDFs,
+main deck, earlier silent copy, source videos and speech are unchanged.
+No university projector test has been possible. See
+experiments/projector_three_versions_20261009/verification.json and the
+variant-level conversion, package, native playback and render reports.
+
+## Video compatibility and projector fallback (2026-10-09)
+
+The user reported Cannot play media / Media unavailable in desktop PowerPoint
+on their own PC at the university, although the same PC plays the deck locally
+and on a TV. The external display/audio path is a possible cause, not confirmed.
+Do not describe the university projector problem as definitively reproduced
+or fixed without an on-site test.
+
+The active Thesis_Defense_gg0_v3.pptx now uses MP4/H.264 Constrained Baseline
+Level 3.1, 960 x 960, YUV420p, constant 30 fps and fast-start metadata. All six
+MP4 payloads were converted, including one retained unused legacy video.
+All original frames remain and AAC audio packets are unchanged. Frame timing
+was normalized, with at most 17.5 ms adjustment in the used contact clip and
+33.3 ms in the unused legacy clip. The deck decreased from 302,695,417 to
+84,955,015 bytes. Every nonvideo PPTX part is byte-identical, preserving
+all 31 slides, notes at 18 pt, native equations, posters, playback controls,
+hidden flags, slide order and the Figure 5.4 legend clearance.
+
+Native PowerPoint played all five used videos at start, middle and near-end
+positions. All six files passed full decoding, frame counts and audio hashes.
+All 31 slide renders were inspected. The full PDF was regenerated for QA.
+Established PDFs remain unchanged because visible contents are identical and
+native export introduces small unrelated text-rendering differences.
+
+Thesis_Defense_Projector_Silent.pptx is a clearly labelled optional fallback,
+with audio streams removed and video bitstreams unchanged. The main deck
+keeps sound. Compatible standalone videos are in Video/Projector_compatible.
+See Final Presentation/Projector_playback_help.txt for the projector-connected
+restart, Windows audio-output test and standalone playback instructions.
+Keep the original loose recordings and the exact original deck in
+experiments/video_compatibility_20261009/archive/original.pptx.
+Verification and media provenance are in that experiment's JSON reports.
+
+## Figure 5.4 legend clearance (2026-10-06)
+
+Leave a visible gap between the horizontal axis label and the legend in
+the shared CoC-at-TCP bar chart. Its legend now has an additional 6 pt
+downward offset. The thesis source, presentation source, embedded picture,
+full slide PDF and supplementary PDF are synchronized. Preserve the data,
+axis style, labels, notes and slide order.
+
+## Speaker notes at 18 pt (2026-10-05)
+
+The user selected 18 pt for the speaker notes inside the active presentation.
+This supersedes the previous 14 pt preference. All nine inherited notes-master
+paragraph levels are now 18 pt. Native PowerPoint confirms all 31 notes use
+18 pt and fit: maximum text height is 450.8 pt in the unchanged 540 pt body.
+All rendered notes were visually checked. Preserve every word, bold opening,
+italic playback cue, paragraph spacing and placeholder geometry.
+
+Only notesMaster1.xml changes in the PPTX; all other package members are
+byte-identical. All 31 notes still match 168 full spoken sentences. Slide
+PDFs, speech PDFs and editable speech remain unchanged. The active PPTX was
+installed atomically. Verification:
+experiments/notes_font_18pt_20261005/verification.json.
+
+For working space, remove_damping_felt_sentence_20261004/updated.pptx and
+notes_font_14pt_20261004/archive/original.pptx are preserved as adjacent
+byte-exact deltas using plot_heading_match_20261002/updated.pptx. Keep that
+base and all existing shared bases. Restore with
+experiments/storage_dedup_20261002/archive_generated.py restore <delta-path>.
+See storage_cleanup.json in this experiment.
+
 ## Notes push storage preparation (2026-10-05)
 
 Removed three abandoned Git LFS temporary files only after verifying each

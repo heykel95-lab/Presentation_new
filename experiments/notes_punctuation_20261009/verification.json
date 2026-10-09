@@ -1,0 +1,59 @@
+{
+  "decks": {
+    "Thesis_Defense_gg0_v3.pptx": {
+      "sha256": "a75055f30737d2aee07aca86c571a7ebfff2834d548657aee6ad313d3cdbcd40",
+      "changed_parts": 6,
+      "all_other_parts_byte_identical": true,
+      "notes_match_speech": true
+    },
+    "Thesis_Defense_Projector_Silent.pptx": {
+      "sha256": "b22f4c6818e928d3ecc7c9a29a4e77baa2c2196388e7e9d5553a3f4f3a26172d",
+      "changed_parts": 6,
+      "all_other_parts_byte_identical": true,
+      "notes_match_speech": true
+    },
+    "02_WebM_Silent.pptx": {
+      "sha256": "a72195f4596679942b798c3d54e10900366a405f0c904b4971b4fbb267839748",
+      "changed_parts": 6,
+      "all_other_parts_byte_identical": true,
+      "notes_match_speech": true
+    },
+    "03_WMV_Silent.pptx": {
+      "sha256": "fa2154efe4ebcd3c8784a7a63541f587eeae4d9838329931eed3a67532fdb900",
+      "changed_parts": 6,
+      "all_other_parts_byte_identical": true,
+      "notes_match_speech": true
+    }
+  },
+  "fallback_unchanged": true,
+  "fallback_sha256": "d6dae65faa95ce70d3f7efeb82b6efe50b8bbda6017e11a117b24249661f2884",
+  "notes_font_pt": 18,
+  "max_notes_height_pt": 467.6,
+  "notes_body_height_pt": 540,
+  "slides_equations_media_and_static_pdfs_unchanged": true,
+  "all_31_notes_native_powerpoint_verified": true,
+  "installed": true,
+  "visual_review_passed": true,
+  "notes_pages_reviewed": [
+    9,
+    10,
+    16,
+    19,
+    25,
+    29
+  ],
+  "speech_pages_reviewed": [
+    3,
+    4,
+    6,
+    7,
+    9,
+    11
+  ],
+  "other_five_speech_pages_pixel_identical": true,
+  "no_semicolons_in_spoken_text": true,
+  "main_words": 1816,
+  "minutes_at_130": 16.07,
+  "atomic_replacement": true,
+  "zip_updated": true
+}

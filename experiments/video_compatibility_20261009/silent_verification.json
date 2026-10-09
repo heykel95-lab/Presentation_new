@@ -1,0 +1,55 @@
+{
+  "source": "C:\\Users\\USER\\Desktop\\Presentation_new\\experiments\\video_compatibility_20261009\\updated.pptx",
+  "sha256": "e41312b67d6ca5a54c4c70d93e3265e5947388b6449738113a1f62e882f1e52e",
+  "changed_parts": [
+    "ppt/media/media1.mp4",
+    "ppt/media/Nullspace1_presentation.mp4",
+    "ppt/media/Nullspace2_part1_0000-0023.mp4",
+    "ppt/media/Nullspace2_part2_0023-end.mp4",
+    "ppt/media/Opposing_moment_presentation.mp4",
+    "ppt/media/Plausibility_experiment_presentation.mp4"
+  ],
+  "all_nonmedia_parts_byte_identical": true,
+  "media": [
+    {
+      "part": "ppt/media/media1.mp4",
+      "video_stream_identical": true,
+      "no_audio_stream": true,
+      "sha256": "2fe2765759c9781bfe2722d9ed9550b8678368392e2110032675029bb135aa5e"
+    },
+    {
+      "part": "ppt/media/Nullspace1_presentation.mp4",
+      "video_stream_identical": true,
+      "no_audio_stream": true,
+      "sha256": "017ac4e59e0293618665981e0ab2ac4c2f2f32e77ed43df40e87376faa943cbe"
+    },
+    {
+      "part": "ppt/media/Nullspace2_part1_0000-0023.mp4",
+      "video_stream_identical": true,
+      "no_audio_stream": true,
+      "sha256": "1efa8dde802e76a82b6f528ac58cd3068c27457b511b2b0b112abaf14635c6f3"
+    },
+    {
+      "part": "ppt/media/Nullspace2_part2_0023-end.mp4",
+      "video_stream_identical": true,
+      "no_audio_stream": true,
+      "sha256": "82f285d2dc95a159e468576f0b97f317245239377892727de0994f51c188d9b8"
+    },
+    {
+      "part": "ppt/media/Opposing_moment_presentation.mp4",
+      "video_stream_identical": true,
+      "no_audio_stream": true,
+      "sha256": "b72195d1ad6b22927073795f079b399a49c45f275262c7cc3f8172e6313cb66a"
+    },
+    {
+      "part": "ppt/media/Plausibility_experiment_presentation.mp4",
+      "video_stream_identical": true,
+      "no_audio_stream": true,
+      "sha256": "447361afa00e262ce149c57d787e887db0f2a9c10f78b4642e57b51ccf03373a"
+    }
+  ],
+  "purpose": "Optional fallback to test/remove video audio-stream playback when projection triggers Cannot play media. Main deck retains original audio. University root cause unconfirmed.",
+  "installed_path": "C:\\Users\\USER\\Desktop\\Presentation_new\\Final Presentation\\Thesis_Defense_Projector_Silent.pptx",
+  "powerpoint_playback_checks_passed": 15,
+  "university_projector_tested": false
+}

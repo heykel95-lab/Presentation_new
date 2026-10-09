@@ -1,0 +1,92 @@
+[
+  {
+    "slide": 4,
+    "bbox": [
+      468,
+      300,
+      672,
+      324
+    ],
+    "changed_pixels": 848
+  },
+  {
+    "slide": 6,
+    "bbox": [
+      79,
+      15,
+      182,
+      26
+    ],
+    "changed_pixels": 296
+  },
+  {
+    "slide": 8,
+    "bbox": [
+      138,
+      142,
+      547,
+      463
+    ],
+    "changed_pixels": 7230
+  },
+  {
+    "slide": 9,
+    "bbox": [
+      79,
+      15,
+      182,
+      26
+    ],
+    "changed_pixels": 296
+  },
+  {
+    "slide": 15,
+    "bbox": [
+      79,
+      15,
+      180,
+      26
+    ],
+    "changed_pixels": 176
+  },
+  {
+    "slide": 20,
+    "bbox": [
+      79,
+      15,
+      102,
+      26
+    ],
+    "changed_pixels": 151
+  },
+  {
+    "slide": 22,
+    "bbox": [
+      79,
+      15,
+      1232,
+      725
+    ],
+    "changed_pixels": 3488
+  },
+  {
+    "slide": 24,
+    "bbox": [
+      79,
+      15,
+      102,
+      26
+    ],
+    "changed_pixels": 151
+  },
+  {
+    "slide": 25,
+    "bbox": [
+      79,
+      15,
+      254,
+      26
+    ],
+    "changed_pixels": 410
+  }
+]

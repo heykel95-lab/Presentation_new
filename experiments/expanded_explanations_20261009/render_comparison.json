@@ -1,0 +1,137 @@
+{
+  "speech_changed_pages": [
+    2,
+    3,
+    4,
+    7,
+    10
+  ],
+  "speech_other_six_pages_pixel_identical": true,
+  "slide_matches": [
+    {
+      "slide": 1,
+      "previously_reviewed_render": "experiments\\connected_notes_20261009\\final_slides\\slide-01.png"
+    },
+    {
+      "slide": 2,
+      "previously_reviewed_render": "experiments\\connected_notes_20261009\\final_slides\\slide-02.png"
+    },
+    {
+      "slide": 3,
+      "previously_reviewed_render": "experiments\\connected_notes_20261009\\final_slides\\slide-03.png"
+    },
+    {
+      "slide": 4,
+      "previously_reviewed_render": "experiments\\connected_notes_20261009\\final_slides\\slide-04.png"
+    },
+    {
+      "slide": 5,
+      "previously_reviewed_render": "experiments\\connected_notes_20261009\\final_slides\\slide-05.png"
+    },
+    {
+      "slide": 6,
+      "previously_reviewed_render": "experiments\\connected_notes_20261009\\final_slides\\slide-06.png"
+    },
+    {
+      "slide": 7,
+      "previously_reviewed_render": "experiments\\connected_notes_20261009\\final_slides\\slide-07.png"
+    },
+    {
+      "slide": 8,
+      "previously_reviewed_render": "experiments\\connected_notes_20261009\\final_slides\\slide-08.png"
+    },
+    {
+      "slide": 9,
+      "previously_reviewed_render": "experiments\\connected_notes_20261009\\final_slides\\slide-09.png"
+    },
+    {
+      "slide": 10,
+      "previously_reviewed_render": "experiments\\connected_notes_20261009\\final_slides\\slide-10.png"
+    },
+    {
+      "slide": 11,
+      "previously_reviewed_render": "experiments\\connected_notes_20261009\\final_slides\\slide-11.png"
+    },
+    {
+      "slide": 12,
+      "previously_reviewed_render": "experiments\\connected_notes_20261009\\final_slides\\slide-12.png"
+    },
+    {
+      "slide": 13,
+      "previously_reviewed_render": "experiments\\connected_notes_20261009\\final_slides\\slide-13.png"
+    },
+    {
+      "slide": 14,
+      "previously_reviewed_render": "experiments\\connected_notes_20261009\\final_slides\\slide-14.png"
+    },
+    {
+      "slide": 15,
+      "previously_reviewed_render": "experiments\\connected_notes_20261009\\final_slides\\slide-15.png"
+    },
+    {
+      "slide": 16,
+      "previously_reviewed_render": "experiments\\connected_notes_20261009\\final_slides\\slide-16.png"
+    },
+    {
+      "slide": 17,
+      "previously_reviewed_render": "experiments\\connected_notes_20261009\\final_slides\\slide-17.png"
+    },
+    {
+      "slide": 18,
+      "previously_reviewed_render": "experiments\\connected_notes_20261009\\final_slides\\slide-18.png"
+    },
+    {
+      "slide": 19,
+      "previously_reviewed_render": "experiments\\connected_notes_20261009\\final_slides\\slide-19.png"
+    },
+    {
+      "slide": 20,
+      "previously_reviewed_render": "experiments\\connected_notes_20261009\\final_slides\\slide-20.png"
+    },
+    {
+      "slide": 21,
+      "previously_reviewed_render": "experiments\\connected_notes_20261009\\final_slides\\slide-21.png"
+    },
+    {
+      "slide": 22,
+      "previously_reviewed_render": "experiments\\connected_notes_20261009\\final_slides\\slide-22.png"
+    },
+    {
+      "slide": 23,
+      "previously_reviewed_render": "experiments\\connected_notes_20261009\\final_slides\\slide-23.png"
+    },
+    {
+      "slide": 24,
+      "previously_reviewed_render": "experiments\\connected_notes_20261009\\final_slides\\slide-24.png"
+    },
+    {
+      "slide": 25,
+      "previously_reviewed_render": "experiments\\connected_notes_20261009\\final_slides\\slide-25.png"
+    },
+    {
+      "slide": 26,
+      "previously_reviewed_render": "experiments\\connected_notes_20261009\\final_slides\\slide-26.png"
+    },
+    {
+      "slide": 27,
+      "previously_reviewed_render": "experiments\\connected_notes_20261009\\final_slides\\slide-27.png"
+    },
+    {
+      "slide": 28,
+      "previously_reviewed_render": "experiments\\connected_notes_20261009\\final_slides\\slide-28.png"
+    },
+    {
+      "slide": 29,
+      "previously_reviewed_render": "experiments\\connected_notes_20261009\\final_slides\\slide-29.png"
+    },
+    {
+      "slide": 30,
+      "previously_reviewed_render": "experiments\\connected_notes_20261009\\final_slides\\slide-30.png"
+    },
+    {
+      "slide": 31,
+      "previously_reviewed_render": "experiments\\connected_notes_20261009\\final_slides\\slide-31.png"
+    }
+  ],
+  "slides_needing_review": []
+}

@@ -1,0 +1,118 @@
+﻿[
+    {
+        "maxHeight":  468,
+        "fontSize":  18,
+        "slides":  31,
+        "notesChecked":  31,
+        "media":  [
+                      {
+                          "slide":  2,
+                          "durationMs":  51000
+                      },
+                      {
+                          "slide":  12,
+                          "durationMs":  13967
+                      },
+                      {
+                          "slide":  20,
+                          "durationMs":  23000
+                      },
+                      {
+                          "slide":  21,
+                          "durationMs":  7934
+                      },
+                      {
+                          "slide":  26,
+                          "durationMs":  10367
+                      }
+                  ],
+        "file":  "Thesis_Defense_gg0_v3.pptx"
+    },
+    {
+        "maxHeight":  468,
+        "fontSize":  18,
+        "slides":  31,
+        "notesChecked":  31,
+        "media":  [
+                      {
+                          "slide":  2,
+                          "durationMs":  51000
+                      },
+                      {
+                          "slide":  12,
+                          "durationMs":  13967
+                      },
+                      {
+                          "slide":  20,
+                          "durationMs":  23000
+                      },
+                      {
+                          "slide":  21,
+                          "durationMs":  7934
+                      },
+                      {
+                          "slide":  26,
+                          "durationMs":  10367
+                      }
+                  ],
+        "file":  "Thesis_Defense_Projector_Silent.pptx"
+    },
+    {
+        "maxHeight":  468,
+        "fontSize":  18,
+        "slides":  31,
+        "notesChecked":  31,
+        "media":  [
+                      {
+                          "slide":  2,
+                          "durationMs":  51000
+                      },
+                      {
+                          "slide":  12,
+                          "durationMs":  13966
+                      },
+                      {
+                          "slide":  20,
+                          "durationMs":  23000
+                      },
+                      {
+                          "slide":  21,
+                          "durationMs":  7933
+                      },
+                      {
+                          "slide":  26,
+                          "durationMs":  10366
+                      }
+                  ],
+        "file":  "02_WebM_Silent.pptx"
+    },
+    {
+        "maxHeight":  468,
+        "fontSize":  18,
+        "slides":  31,
+        "notesChecked":  31,
+        "media":  [
+                      {
+                          "slide":  2,
+                          "durationMs":  51000
+                      },
+                      {
+                          "slide":  12,
+                          "durationMs":  13966
+                      },
+                      {
+                          "slide":  20,
+                          "durationMs":  23000
+                      },
+                      {
+                          "slide":  21,
+                          "durationMs":  7933
+                      },
+                      {
+                          "slide":  26,
+                          "durationMs":  10366
+                      }
+                  ],
+        "file":  "03_WMV_Silent.pptx"
+    }
+]

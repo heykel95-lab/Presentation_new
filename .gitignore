@@ -79,3 +79,17 @@ node_modules/
 # Rebuilt simple-speech PDF is published in Final Presentation
 /Final Presentation/Speaking/simple_speech/archive/
 /Final Presentation/Speaking/simple_speech/Simple_speech.pdf
+
+# October 9 media conversion, note-authoring previews and duplicate bundles
+/experiments/*_20261009/**/*.pptx
+/experiments/*_20261009/**/*.pdf
+/experiments/*_20261009/**/*.png
+/experiments/*_20261009/**/*.jpg
+/experiments/*_20261009/**/*.mp4
+/experiments/*_20261009/**/*.webm
+/experiments/*_20261009/**/*.wmv
+/experiments/*_20261009/**/*.zip
+/experiments/*_20261009/**/*.ndjson
+/experiments/*_20261009/**/logs/
+/experiments/*_20261009/Simple_speech.txt
+/experiments/*_20261009/**/*_error.txt

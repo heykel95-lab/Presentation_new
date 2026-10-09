@@ -1,0 +1,400 @@
+{
+  "date": "2026-10-09",
+  "variants": [
+    {
+      "variant": "01_MP4_Light_Silent",
+      "source_sha256": "0c705bacce69566d27d3b86ce776df0cb6dfdfd36c7b09abc893b30fe55a3eb6",
+      "deck_sha256": "d6dae65faa95ce70d3f7efeb82b6efe50b8bbda6017e11a117b24249661f2884",
+      "size_bytes": 50519653,
+      "media_count": 6,
+      "changed_parts": [
+        "ppt/media/media1.mp4",
+        "ppt/media/Nullspace1_presentation.mp4",
+        "ppt/media/Nullspace2_part1_0000-0023.mp4",
+        "ppt/media/Nullspace2_part2_0023-end.mp4",
+        "ppt/media/Opposing_moment_presentation.mp4",
+        "ppt/media/Plausibility_experiment_presentation.mp4"
+      ],
+      "all_slide_note_master_and_poster_parts_byte_identical": true,
+      "all_original_frames_retained": true,
+      "audio_streams_removed": true,
+      "codec": "h264",
+      "resolution": [
+        720,
+        720
+      ],
+      "fps": 30,
+      "minimum_ssim": 0.97177,
+      "native_playback_checks_passed": 15,
+      "slide_renders": 31,
+      "notes_18pt_checked": 31,
+      "regenerated_pdf_pages": 31,
+      "render_comparison": [
+        {
+          "slide": 4,
+          "bbox": [
+            468,
+            300,
+            672,
+            324
+          ],
+          "changed_pixels": 848
+        },
+        {
+          "slide": 6,
+          "bbox": [
+            79,
+            15,
+            182,
+            26
+          ],
+          "changed_pixels": 296
+        },
+        {
+          "slide": 8,
+          "bbox": [
+            148,
+            242,
+            547,
+            463
+          ],
+          "changed_pixels": 3759
+        },
+        {
+          "slide": 9,
+          "bbox": [
+            79,
+            15,
+            182,
+            26
+          ],
+          "changed_pixels": 296
+        },
+        {
+          "slide": 13,
+          "bbox": [
+            971,
+            713,
+            1001,
+            733
+          ],
+          "changed_pixels": 295
+        },
+        {
+          "slide": 20,
+          "bbox": [
+            79,
+            15,
+            102,
+            26
+          ],
+          "changed_pixels": 151
+        },
+        {
+          "slide": 22,
+          "bbox": [
+            335,
+            663,
+            1232,
+            725
+          ],
+          "changed_pixels": 2361
+        },
+        {
+          "slide": 25,
+          "bbox": [
+            79,
+            15,
+            885,
+            240
+          ],
+          "changed_pixels": 2603
+        },
+        {
+          "slide": 27,
+          "bbox": [
+            322,
+            623,
+            498,
+            647
+          ],
+          "changed_pixels": 1019
+        }
+      ],
+      "final_filename": "01_MP4_Light_Silent.pptx"
+    },
+    {
+      "variant": "02_WebM_Silent",
+      "source_sha256": "0c705bacce69566d27d3b86ce776df0cb6dfdfd36c7b09abc893b30fe55a3eb6",
+      "deck_sha256": "1f7a939e2fa7b24e77417fc890c36c3e290ef6f1f37835e071df0028e47c4d2f",
+      "size_bytes": 51315973,
+      "media_count": 6,
+      "changed_parts": [
+        "ppt/slides/_rels/slide2.xml.rels",
+        "ppt/media/media1.mp4",
+        "ppt/media/Nullspace1_presentation.mp4",
+        "ppt/media/Nullspace2_part1_0000-0023.mp4",
+        "ppt/media/Nullspace2_part2_0023-end.mp4",
+        "ppt/slides/_rels/slide36.xml.rels",
+        "ppt/slides/_rels/slide37.xml.rels",
+        "ppt/media/Opposing_moment_presentation.mp4",
+        "ppt/media/Plausibility_experiment_presentation.mp4",
+        "ppt/slides/_rels/slide38.xml.rels",
+        "ppt/slides/_rels/slide39.xml.rels",
+        "[Content_Types].xml"
+      ],
+      "all_slide_note_master_and_poster_parts_byte_identical": true,
+      "all_original_frames_retained": true,
+      "audio_streams_removed": true,
+      "codec": "vp9",
+      "resolution": [
+        720,
+        720
+      ],
+      "fps": 30,
+      "minimum_ssim": 0.979094,
+      "native_playback_checks_passed": 15,
+      "slide_renders": 31,
+      "notes_18pt_checked": 31,
+      "regenerated_pdf_pages": 31,
+      "render_comparison": [
+        {
+          "slide": 4,
+          "bbox": [
+            468,
+            300,
+            672,
+            324
+          ],
+          "changed_pixels": 848
+        },
+        {
+          "slide": 8,
+          "bbox": [
+            148,
+            398,
+            547,
+            463
+          ],
+          "changed_pixels": 2692
+        },
+        {
+          "slide": 9,
+          "bbox": [
+            79,
+            15,
+            182,
+            26
+          ],
+          "changed_pixels": 296
+        },
+        {
+          "slide": 12,
+          "bbox": [
+            79,
+            15,
+            205,
+            26
+          ],
+          "changed_pixels": 293
+        },
+        {
+          "slide": 14,
+          "bbox": [
+            79,
+            15,
+            180,
+            26
+          ],
+          "changed_pixels": 176
+        },
+        {
+          "slide": 16,
+          "bbox": [
+            79,
+            15,
+            180,
+            26
+          ],
+          "changed_pixels": 176
+        },
+        {
+          "slide": 20,
+          "bbox": [
+            79,
+            15,
+            102,
+            26
+          ],
+          "changed_pixels": 151
+        },
+        {
+          "slide": 22,
+          "bbox": [
+            165,
+            419,
+            1232,
+            725
+          ],
+          "changed_pixels": 7466
+        },
+        {
+          "slide": 25,
+          "bbox": [
+            79,
+            15,
+            254,
+            26
+          ],
+          "changed_pixels": 410
+        },
+        {
+          "slide": 31,
+          "bbox": [
+            101,
+            651,
+            738,
+            680
+          ],
+          "changed_pixels": 3558
+        }
+      ],
+      "final_filename": "02_WebM_Silent.pptx"
+    },
+    {
+      "variant": "03_WMV_Silent",
+      "source_sha256": "0c705bacce69566d27d3b86ce776df0cb6dfdfd36c7b09abc893b30fe55a3eb6",
+      "deck_sha256": "018b5d53191e408951cec2795f4e6b573d8c8e71f695ea85a07447e45611dc14",
+      "size_bytes": 71268389,
+      "media_count": 6,
+      "changed_parts": [
+        "ppt/slides/_rels/slide2.xml.rels",
+        "ppt/media/media1.mp4",
+        "ppt/media/Nullspace1_presentation.mp4",
+        "ppt/media/Nullspace2_part1_0000-0023.mp4",
+        "ppt/media/Nullspace2_part2_0023-end.mp4",
+        "ppt/slides/_rels/slide36.xml.rels",
+        "ppt/slides/_rels/slide37.xml.rels",
+        "ppt/media/Opposing_moment_presentation.mp4",
+        "ppt/media/Plausibility_experiment_presentation.mp4",
+        "ppt/slides/_rels/slide38.xml.rels",
+        "ppt/slides/_rels/slide39.xml.rels",
+        "[Content_Types].xml"
+      ],
+      "all_slide_note_master_and_poster_parts_byte_identical": true,
+      "all_original_frames_retained": true,
+      "audio_streams_removed": true,
+      "codec": "wmv2",
+      "resolution": [
+        720,
+        720
+      ],
+      "fps": 30,
+      "minimum_ssim": 0.965892,
+      "native_playback_checks_passed": 15,
+      "slide_renders": 31,
+      "notes_18pt_checked": 31,
+      "regenerated_pdf_pages": 31,
+      "render_comparison": [
+        {
+          "slide": 4,
+          "bbox": [
+            468,
+            300,
+            672,
+            324
+          ],
+          "changed_pixels": 848
+        },
+        {
+          "slide": 6,
+          "bbox": [
+            79,
+            15,
+            182,
+            26
+          ],
+          "changed_pixels": 296
+        },
+        {
+          "slide": 8,
+          "bbox": [
+            138,
+            142,
+            547,
+            463
+          ],
+          "changed_pixels": 7230
+        },
+        {
+          "slide": 9,
+          "bbox": [
+            79,
+            15,
+            182,
+            26
+          ],
+          "changed_pixels": 296
+        },
+        {
+          "slide": 15,
+          "bbox": [
+            79,
+            15,
+            180,
+            26
+          ],
+          "changed_pixels": 176
+        },
+        {
+          "slide": 20,
+          "bbox": [
+            79,
+            15,
+            102,
+            26
+          ],
+          "changed_pixels": 151
+        },
+        {
+          "slide": 22,
+          "bbox": [
+            79,
+            15,
+            1232,
+            725
+          ],
+          "changed_pixels": 3488
+        },
+        {
+          "slide": 24,
+          "bbox": [
+            79,
+            15,
+            102,
+            26
+          ],
+          "changed_pixels": 151
+        },
+        {
+          "slide": 25,
+          "bbox": [
+            79,
+            15,
+            254,
+            26
+          ],
+          "changed_pixels": 410
+        }
+      ],
+      "final_filename": "03_WMV_Silent.pptx"
+    }
+  ],
+  "total_native_playback_checks": 45,
+  "main_and_prior_silent_unchanged": true,
+  "university_projector_tested": false,
+  "output_folder": "C:\\Users\\USER\\Desktop\\Presentation_new\\Final Presentation\\Projector_Test_Versions",
+  "zip": "C:\\Users\\USER\\Desktop\\Presentation_new\\Final Presentation\\Projector_Test_Versions.zip",
+  "zip_sha256": "307369cec6fbcb06261db7b95c4fdda69782066cbaf8a25c1e5a5a92bdd14d1a",
+  "wmv_seek_note": "Initial 1200 ms seek wait was insufficient; final bounded wait succeeded. Timing for each checkpoint is in native_playback.json."
+}

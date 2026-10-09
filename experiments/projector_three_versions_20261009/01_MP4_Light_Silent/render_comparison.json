@@ -1,0 +1,92 @@
+[
+  {
+    "slide": 4,
+    "bbox": [
+      468,
+      300,
+      672,
+      324
+    ],
+    "changed_pixels": 848
+  },
+  {
+    "slide": 6,
+    "bbox": [
+      79,
+      15,
+      182,
+      26
+    ],
+    "changed_pixels": 296
+  },
+  {
+    "slide": 8,
+    "bbox": [
+      148,
+      242,
+      547,
+      463
+    ],
+    "changed_pixels": 3759
+  },
+  {
+    "slide": 9,
+    "bbox": [
+      79,
+      15,
+      182,
+      26
+    ],
+    "changed_pixels": 296
+  },
+  {
+    "slide": 13,
+    "bbox": [
+      971,
+      713,
+      1001,
+      733
+    ],
+    "changed_pixels": 295
+  },
+  {
+    "slide": 20,
+    "bbox": [
+      79,
+      15,
+      102,
+      26
+    ],
+    "changed_pixels": 151
+  },
+  {
+    "slide": 22,
+    "bbox": [
+      335,
+      663,
+      1232,
+      725
+    ],
+    "changed_pixels": 2361
+  },
+  {
+    "slide": 25,
+    "bbox": [
+      79,
+      15,
+      885,
+      240
+    ],
+    "changed_pixels": 2603
+  },
+  {
+    "slide": 27,
+    "bbox": [
+      322,
+      623,
+      498,
+      647
+    ],
+    "changed_pixels": 1019
+  }
+]

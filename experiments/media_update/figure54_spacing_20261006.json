@@ -1,0 +1,81 @@
+{
+  "original_hashes": {
+    "Thesis_Defense_gg0_v3.pptx": "031dfb058fe522cda2b359917c2b5433bfeee26532c297f5f087fc373dc02f31",
+    "Thesis_Defense_gg0_v3.pdf": "009a78e4af11ff2da52d77fa716e403f242062dacfe0a6d8ebec0e24007ea2bb",
+    "Supplementary_slides.pdf": "ea573057852c09fd7d20ed67f3e8807b52ca085891f01094d24d2c7df9c699d5"
+  },
+  "guide_hash": "9809e26aa47af0647687327997c9525a7dcf734cf68347242966cdbceda5d9e4",
+  "changed_slide": 29,
+  "changed_parts": [
+    "ppt/media/image45.png",
+    "ppt/slides/slide17.xml"
+  ],
+  "old_box": [
+    216.83826771653543,
+    87.41740157480315,
+    743.161653543307,
+    462.58259842519686
+  ],
+  "new_box": [
+    216.83826771653543,
+    87.41740157480315,
+    743.161653543307,
+    474.44171783403345
+  ],
+  "all_other_pages_pixel_identical": true,
+  "outside_figure_unchanged": true,
+  "supplementary_matches": true,
+  "notes_equations_videos_unchanged": true,
+  "copies": [
+    {
+      "source": "C:\\Users\\USER\\Desktop\\MyOwn\\tmp\\figure54-spacing-20261006\\updated.pptx",
+      "target": "C:\\Users\\USER\\Desktop\\Presentation_new\\Final Presentation\\Thesis_Defense_gg0_v3.pptx"
+    },
+    {
+      "source": "C:\\Users\\USER\\Desktop\\MyOwn\\tmp\\figure54-spacing-20261006\\updated.pdf",
+      "target": "C:\\Users\\USER\\Desktop\\Presentation_new\\Final Presentation\\Thesis_Defense_gg0_v3.pdf"
+    },
+    {
+      "source": "C:\\Users\\USER\\Desktop\\MyOwn\\tmp\\figure54-spacing-20261006\\supplementary.pdf",
+      "target": "C:\\Users\\USER\\Desktop\\Presentation_new\\Final Presentation\\Supplementary_slides.pdf"
+    },
+    {
+      "source": "C:\\Users\\USER\\Desktop\\MyOwn\\tmp\\figure54-spacing-20261006\\baseline_response.tex",
+      "target": "C:\\Users\\USER\\Desktop\\Presentation_new\\Final Presentation\\figures_and_images\\sources\\baseline_response.tex"
+    },
+    {
+      "source": "C:\\Users\\USER\\Desktop\\MyOwn\\tmp\\figure54-spacing-20261006\\baseline_response.pdf",
+      "target": "C:\\Users\\USER\\Desktop\\Presentation_new\\Final Presentation\\figures_and_images\\baseline_response.pdf"
+    },
+    {
+      "source": "C:\\Users\\USER\\Desktop\\MyOwn\\tmp\\figure54-spacing-20261006\\baseline_response.png",
+      "target": "C:\\Users\\USER\\Desktop\\Presentation_new\\Final Presentation\\figures_and_images\\baseline_response.png"
+    },
+    {
+      "source": "C:\\Users\\USER\\Desktop\\MyOwn\\tmp\\figure54-spacing-20261006\\baseline_response.svg",
+      "target": "C:\\Users\\USER\\Desktop\\Presentation_new\\Final Presentation\\figures_and_images\\baseline_response.svg"
+    },
+    {
+      "source": "C:\\Users\\USER\\Desktop\\MyOwn\\figures\\ch05\\results_case_a_bars.tex",
+      "target": "C:\\Users\\USER\\Desktop\\Presentation_new\\figures\\ch05\\results_case_a_bars.tex"
+    },
+    {
+      "source": "C:\\Users\\USER\\Desktop\\MyOwn\\figures\\ch05\\results_case_a_bars.tex",
+      "target": "C:\\Users\\USER\\Desktop\\Presentation_new\\Final Presentation\\figures_and_images\\sources\\originals\\ch05\\results_case_a_bars.tex"
+    },
+    {
+      "source": "C:\\Users\\USER\\Desktop\\MyOwn\\figures\\ch05\\results_case_a_bars.pdf",
+      "target": "C:\\Users\\USER\\Desktop\\Presentation_new\\figures\\ch05\\results_case_a_bars.pdf"
+    },
+    {
+      "source": "C:\\Users\\USER\\Desktop\\MyOwn\\figures\\ch05\\results_case_a_bars.pdf",
+      "target": "C:\\Users\\USER\\Desktop\\Presentation_new\\Final Presentation\\figures_and_images\\sources\\originals\\ch05\\results_case_a_bars.pdf"
+    },
+    {
+      "source": "C:\\Users\\USER\\Desktop\\MyOwn\\tmp\\figure54-spacing-20261006\\presentation-AGENTS.md",
+      "target": "C:\\Users\\USER\\Desktop\\Presentation_new\\AGENTS.md"
+    }
+  ],
+  "installed": true,
+  "native_slide_visually_verified": true
+}

@@ -1,0 +1,30 @@
+{
+  "font_size_before_pt": 14,
+  "font_size_after_pt": 18,
+  "all_31_notes_native_font_18pt": true,
+  "all_31_notes_fit": true,
+  "maximum_bound_height_pt": 450.8,
+  "available_height_pt": 540,
+  "densest_notes": [
+    25,
+    2,
+    19
+  ],
+  "all_31_notes_match_168_full_sentences": true,
+  "changed_parts": [
+    "ppt/notesMasters/notesMaster1.xml"
+  ],
+  "all_other_pptx_parts_byte_identical": true,
+  "all_slide_and_speech_pdfs_and_editable_speech_unchanged": true,
+  "source_pptx_sha256": "19b151e04644c50448b6910f5af89e463b01c4664563025c7ad16f5a5069ad1f",
+  "pptx_sha256": "031dfb058fe522cda2b359917c2b5433bfeee26532c297f5f087fc373dc02f31",
+  "installed": true,
+  "visual_review_passed": true,
+  "visually_reviewed_notes": 31,
+  "full_page_checks": [
+    25,
+    2,
+    19
+  ],
+  "atomic_replacement": true
+}

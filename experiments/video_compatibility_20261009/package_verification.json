@@ -1,0 +1,14 @@
+{
+  "changed_parts": [
+    "ppt/media/media1.mp4",
+    "ppt/media/Nullspace1_presentation.mp4",
+    "ppt/media/Nullspace2_part1_0000-0023.mp4",
+    "ppt/media/Nullspace2_part2_0023-end.mp4",
+    "ppt/media/Opposing_moment_presentation.mp4",
+    "ppt/media/Plausibility_experiment_presentation.mp4"
+  ],
+  "all_nonvideo_parts_byte_identical": true,
+  "source_sha256": "6a8c282a57e0125d572f3a6aa0e6d5c37db1b23b7b5c0c3e402b84ebced341be",
+  "updated_sha256": "0c705bacce69566d27d3b86ce776df0cb6dfdfd36c7b09abc893b30fe55a3eb6",
+  "updated_size": 84955015
+}
